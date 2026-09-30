@@ -5,6 +5,6 @@
   "zip_sha256": "decb7da10a329462f0c87c6817e667191c4316b8a90899f9431d837ef50bbd20",
   "zip_bytes": 2100306,
   "destination": "https://chatgpt.com/c/6abd01e3-4184-83ed-9ff0-e9475053b958",
-  "status": "Ready; browser security rejected file upload despite direct user approval, citing a prior denial. No attachments were uploaded and the second-round prompt has not been sent.",
+  "status": "Browser security rejected file upload despite direct user approval, citing a prior denial. No attachments were uploaded. A materially safer public-repository-link review request was submitted to the same conversation; the UI confirms ChatGPT is responding. Exact prompt: round-2-link-prompt.md. Referee access/execution limits must be reported; full-file review is not claimed.",
   "acceptance_achieved": false
 }
