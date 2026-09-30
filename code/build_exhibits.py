@@ -35,8 +35,12 @@ def regression_table(filename,data,outcomes,columns,key='arm',correction='p_max_
             stars='^{***}' if p<.01 else ('^{**}' if p<.05 else ('^{*}' if p<.1 else ''))
             vals.append('$'+f(r['estimate'])+stars+'$');ses.append('('+f(r.se)+')');ps.append('['+pf(p)+']')
         rows.extend([[label,*vals],['',*ses],['',*ps]])
-    rows += [['Households',*[str(int(data.loc[(data.outcome==outcomes[0][0])&(data[key]==c),'N'].iloc[0])) for c in columns]],
-             ['Villages',*['248']*len(columns)]]
+    for field,label in [('N','Households (range across outcomes)'),('villages','Villages (range across outcomes)')]:
+        vals=[]
+        for col in columns:
+            sample=data.loc[data.outcome.isin([o[0] for o in outcomes])&(data[key]==col),field]
+            vals.append(str(int(sample.min())) if sample.min()==sample.max() else f'{int(sample.min())}--{int(sample.max())}')
+        rows.append([label,*vals])
     headers=['',*[c.replace('Control+Large','Control + large').replace('+',' + ').replace('GK_minus_','').replace('Gikuriro','Gikuriro') for c in columns]]
     tex_table(filename,headers,rows)
 
@@ -53,7 +57,7 @@ for label,k in [('Baseline diet (groups)','dietarydiversity'),('Consumption (IHS
 tex_table('baseline.tex',['',*ARMS],rows)
 regression_table('diet_itt.tex',arm,[('diet_mean','Dietary diversity'),('shortfall_6','Diet-shortfall reduction ($z=6$)'),('shortfall_sq_6','Squared-shortfall reduction'),('diet_atleast_4','At least 4 food groups'),('diet_atleast_6','At least 6 food groups'),('diet_atleast_8','At least 8 food groups')],ARMS[1:])
 regression_table('budget_comparisons.tex',pol,[('diet_mean','Dietary diversity'),('shortfall_4','Shortfall reduction ($z=4$)'),('shortfall_6','Shortfall reduction ($z=6$)'),('shortfall_8','Shortfall reduction ($z=8$)'),('shortfall_sq_6','Squared-shortfall reduction'),('diet_atleast_6','At least 6 food groups')],['Control+Large','Lower+Large','Middle+Large','Upper+Large'],key='policy')
-regression_table('secondary.tex',sec,[('consumption_asinh','Consumption (IHS)'),('productiveassets_asinh','Productive assets (IHS)'),('savingsstock_asinh','Saving stock (IHS)'),('borrowingstock_asinh','Borrowing stock (IHS)'),('health_knowledge','Health knowledge index'),('sanitation_practices','Sanitation practices index')],ARMS[1:],correction='p_holm')
+regression_table('secondary.tex',sec,[('consumption_asinh','Consumption (IHS)'),('productiveassets_asinh','Productive assets (IHS)'),('savingsstock_asinh','Saving stock (IHS)'),('borrowingstock_asinh','Borrowing stock (IHS)'),('health_knowledge','Health knowledge index'),('sanitation_practices','Sanitation practices index'),('foodexpenditure','Purchased food (IHS)'),('foodownconsumption','Own-produced food (IHS)')],ARMS[1:],correction='p_holm')
 rows=[]
 for label,p in policy['vertices'].items():
     spent=sum(costs[a]*q for a,q in p.items())
@@ -74,7 +78,8 @@ for a in ARMS[1:]:
     rows.extend([[a,*[f(s.loc[k,'estimate']) for k in ['dietarydiversity','consumption_asinh']]],['',*['('+f(s.loc[k,'se'])+')' for k in ['dietarydiversity','consumption_asinh']]],['Holm $p$',*[f(s.loc[k,'p_holm']) for k in ['dietarydiversity','consumption_asinh']]]])
 tex_table('heterogeneity.tex',['Arm','Low baseline diet','Low baseline consumption'],rows)
 foods=pd.read_csv(OUT/'food_groups.csv')
-tex_table('foods.tex',['Food group','Large-cash ITT','SE','Holm $p$'],[[r.food.replace('m9_','').replace('vitaafruits','Vitamin A fruits').replace('vitaveg','Vitamin A vegetables'),f(r.estimate),f(r.se),pf(r.p_holm)] for r in foods[foods.arm=='Large'].itertuples()])
+foodlabels=dict(zip(['cereals','tubers','vitaveg','leafyveg','otherveg','vitaafruits','otherfruits','organmeat','fleshmeat','eggs','fish','legumes','milk','oils','sweets','spices'],['Cereals','Roots and tubers','Vitamin A vegetables','Leafy vegetables','Other vegetables','Vitamin A fruits','Other fruits','Organ meat','Other meat','Eggs','Fish','Legumes','Milk','Oils','Sweets','Spices and condiments']))
+tex_table('foods.tex',['Food category','Large-cash ITT','SE','Holm $p$'],[[foodlabels[r.food.replace('m9_','')],f(r.estimate),f(r.se),pf(r.p_holm)] for r in foods[foods.arm=='Large'].itertuples()])
 ret=pd.read_csv(OUT/'attrition_effects.csv')
 tex_table('retention.tex',['Arm','Observed-diet effect','SE','Holm $p$'],[[r.arm,f(100*r.estimate,2),f(100*r.se,2),pf(r.p_holm)] for r in ret.itertuples()])
 
@@ -121,13 +126,13 @@ r=ret[ret.arm=='Upper'].iloc[0]
 macros.update({'UpperRetention':f(100*r.estimate,2),'UpperRetentionSE':f(100*r.se,2),'UpperRetentionHolmP':pf(r.p_holm)})
 for name,frame,key,label,outcome in [
     ('LargeDiet',arm,'arm','Large','diet_mean'),('GikuriroDiet',arm,'arm','Gikuriro','diet_mean'),
-    ('ControlLargeDiet',pol,'policy','Control+Large','diet_mean'),('UpperLargeDiet',pol,'policy','Upper+Large','diet_mean'),
+    ('ControlLargeDiet',pol,'policy','Control+Large','diet_mean'),('UpperLargeDiet',pol,'policy','Upper+Large','diet_mean'),('LowerLargeDiet',pol,'policy','Lower+Large','diet_mean'),
     ('LargeShortfall',arm,'arm','Large','shortfall_6'),('ControlLargeShortfall',pol,'policy','Control+Large','shortfall_6'),
     ('GikuriroSaving',sec,'arm','Gikuriro','savingsstock_asinh'),('LargeAssets',sec,'arm','Large','productiveassets_asinh')]:
     r=frame[(frame[key]==label)&(frame.outcome==outcome)].iloc[0]
-    for field,suffix in [('estimate','Estimate'),('se','SE'),('lo','Lo'),('hi','Hi'),('p','P')]:macros[name+suffix]=f(r[field],4 if field=='p' else 3)
+    for field,suffix in [('estimate','Estimate'),('se','SE'),('lo','Lo'),('hi','Hi'),('p','P')]:macros[name+suffix]=pf(r[field]) if field=='p' else f(r[field])
     if 'sim_lo' in r:
-        for field,suffix in [('sim_lo','SimLo'),('sim_hi','SimHi'),('p_max_t','JointP')]:macros[name+suffix]=f(r[field],4 if field=='p_max_t' else 3)
+        for field,suffix in [('sim_lo','SimLo'),('sim_hi','SimHi'),('p_max_t','JointP')]:macros[name+suffix]=pf(r[field]) if field=='p_max_t' else f(r[field])
     if 'p_holm' in r:macros[name+'HolmP']=pf(r.p_holm)
 macros['UpperLargeBreakEven']=f(max(-float(pol[(pol.policy=='Upper+Large')&(pol.outcome=='diet_mean')]['estimate'].iloc[0]),0))
 macros['LargeDietBudgetGain']=f(policy['vertices']['Control+Large']['Large']*mu['Large'])

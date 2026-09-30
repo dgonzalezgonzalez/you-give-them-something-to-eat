@@ -16,7 +16,7 @@ for n,page in enumerate(doc):
     cell.paste(img,((285-img.width)//2,25))
     ImageDraw.Draw(cell).text((12,7),str(n+1),fill='black')
     thumbs.append(cell)
-    print(n+1, page.get_text().splitlines()[0],len(page.get_text()))
+    print('Page',n+1,'characters',len(page.get_text()))
 for start in range(0,len(thumbs),8):
     sheet=Image.new('RGB',(1140,790),'white')
     for j,img in enumerate(thumbs[start:start+8]):sheet.paste(img,((j%4)*285,(j//4)*395))

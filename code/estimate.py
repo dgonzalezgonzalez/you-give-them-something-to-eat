@@ -72,10 +72,11 @@ def policy_vertices(costs,budget):
             vertices[a]={a:1.}
     for i,a in enumerate(names):
         for b in names[i+1:]:
-            ca,cb=costs[a],costs[b]
+            low,high=sorted((a,b),key=lambda k:costs[k])
+            ca,cb=costs[low],costs[high]
             if ca < budget < cb:
                 q=(budget-ca)/(cb-ca)
-                vertices[f'{a}+{b}']={a:1-q,b:q}
+                vertices[f'{a}+{b}']={low:1-q,high:q}
     return vertices
 
 def policy_c(fit,policy):
@@ -89,9 +90,11 @@ def holm(p):
     adj[order]=np.minimum(1,np.maximum.accumulate((len(p)-np.arange(len(p)))*p[order]))
     return adj
 
-def simultaneous(rows, influences):
+def simultaneous(rows, influences, keys=None):
     """Joint max-t Rademacher multiplier bands, shared cluster draws."""
-    I=np.column_stack(influences);se=np.sqrt((I*I).sum(axis=0))
+    keys=keys or list(range(len(rows)))
+    unique=list(dict.fromkeys(keys));first=[keys.index(k) for k in unique]
+    I=np.column_stack([influences[i] for i in first]);se=np.sqrt((I*I).sum(axis=0))
     active=se>1e-12
     Z=I[:,active]/se[active]
     rng=np.random.default_rng(SEED)
@@ -102,11 +105,15 @@ def simultaneous(rows, influences):
         maxima.extend(np.max(np.abs(e@Z),axis=1))
     maxima=np.asarray(maxima)
     crit=float(np.quantile(maxima,.95,method='higher'))
-    for row,s in zip(rows,se):
+    all_se=np.array([np.linalg.norm(u) for u in influences])
+    for row,s in zip(rows,all_se):
         row['sim_lo']=row['estimate']-crit*s;row['sim_hi']=row['estimate']+crit*s
         row['p_max_t']=float((1+(maxima>=abs(row['estimate']/s)).sum())/(BOOT+1)) if s>1e-12 else 1.
         row['joint_critical']=crit
-    for row,p in zip(rows,holm([r['p'] for r in rows])): row['p_holm']=float(p)
+    for ix,p in zip(first,holm([rows[i]['p'] for i in first])): rows[ix]['p_holm']=float(p)
+    for i,key in enumerate(keys):
+        reference=rows[first[unique.index(key)]]
+        rows[i]['p_holm']=reference['p_holm']
     return rows
 
 def main():
@@ -122,7 +129,7 @@ def main():
     baseline=d[(d['round']==1)&(d.eligible==1)].copy()
     end=d[(d['round']==2)&(d.eligible==1)&(d.sample_panel==1)].copy()
     assert baseline.hhid.nunique()==len(baseline)
-    # Original preconstructed baseline variables supplement any absent panel rows.
+    # Map observed baseline rows; missing baseline values are handled inside regress.
     base=baseline.set_index('hhid')
     for k in ['dietarydiversity','consumption_asinh','productiveassets_asinh','savingsstock_asinh',
               'borrowingstock_asinh','health_knowledge','sanitation_practices','foodexpenditure','foodownconsumption']:
@@ -167,7 +174,8 @@ def main():
             policy_rows.append({'outcome':name,'policy':label,**contrast(fit,c)})
             ifs.append(fit['influence']@c)
     # One family includes every primary outcome and every feasible cash vertex.
-    simultaneous(arm_rows+policy_rows,arm_ifs+ifs)
+    family_keys=[(r['outcome'],r['arm']) for r in arm_rows]+[(r['outcome'],'Gikuriro' if r['policy']=='Control' else 'GK_minus_'+r['policy']) for r in policy_rows]
+    simultaneous(arm_rows+policy_rows,arm_ifs+ifs,family_keys)
     pd.DataFrame(arm_rows).to_csv(out/'arm_effects.csv',index=False)
     pd.DataFrame(policy_rows).to_csv(out/'policy_effects.csv',index=False)
     secondary=[]
@@ -182,7 +190,10 @@ def main():
             secondary.append({'outcome':k,'arm':a,**contrast(fit,c)})
         for label,policy in vertices.items():
             secondary.append({'outcome':k,'arm':f'GK_minus_{label}',**contrast(fit,policy_c(fit,policy))})
-    for row,p in zip(secondary,holm([r['p'] for r in secondary])):row['p_holm']=p
+    secondary_keys=[(r['outcome'],'Gikuriro' if r['arm']=='GK_minus_Control' else r['arm']) for r in secondary]
+    unique=list(dict.fromkeys(secondary_keys));first=[secondary_keys.index(k) for k in unique]
+    adjusted=holm([secondary[i]['p'] for i in first])
+    for row,key in zip(secondary,secondary_keys):row['p_holm']=float(adjusted[unique.index(key)])
     pd.DataFrame(secondary).to_csv(out/'secondary.csv',index=False)
     robust=[]
     for spec,adjust,weight in [('unadjusted',False,'survey'),('equal_households',True,'equal'),('equal_villages',True,'village')]:
@@ -266,7 +277,8 @@ def main():
     meta={'python':platform.python_version(),'numpy':np.__version__,'pandas':pd.__version__,
           'scipy':scipy.__version__,'seed':SEED,'bootstrap_draws':BOOT,'baseline_eligible':len(baseline),
           'endline_eligible_panel':len(end),'blocks':int(d.block.nunique()),'villages':248,
-          'seconds':time.time()-begin,'family_size':len(arm_rows)+len(policy_rows)}
+          'seconds':time.time()-begin,'family_size':len(set(family_keys)),
+          'display_primary_rows':len(arm_rows)+len(policy_rows),'secondary_family_size':len(unique)}
     (out/'run_metadata.json').write_text(json.dumps(meta,indent=2))
     print(json.dumps(meta,indent=2))
     print(pd.DataFrame(policy_rows).query("outcome in ['diet_mean','shortfall_6']")[['outcome','policy','estimate','se','p','p_holm','sim_lo','sim_hi']].to_string(index=False))

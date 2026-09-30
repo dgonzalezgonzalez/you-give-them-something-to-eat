@@ -1,0 +1,8 @@
+{
+  "frozen_commit": "046ce79f32f7099c7ee3ffb52b1f84a141c7e002",
+  "files": {
+    "households.csv": "e4ac2298b37e7f428a3bb095d4bc43767a4a74c22ea05401d00f696945fc2156",
+    "costs.csv": "5a4ef59498b23cb337b9060ae76e793d50229284a49f9af545f55b0e99ff09bc",
+    "codebook.json": "acb895c12da36aa5113c37b9ef8ecc527069c1c82262238c4f459d62bc573a28"
+  }
+}

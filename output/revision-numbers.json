@@ -1,0 +1,17 @@
+{
+  "IdentifiedDietN": "1730",
+  "PairFamilyN": "828",
+  "BoundFamilyN": "1656",
+  "GKFittedRegret": "0.237",
+  "GKObservedRegretUpper": "0.878",
+  "GKPopulationRegretUpper": "1.283",
+  "LowerLargeFittedRegret": "0.000",
+  "LowerLargeObservedRegretUpper": "0.616",
+  "LowerLargePopulationRegretUpper": "0.898",
+  "HajekControlLargeEstimate": "0.039",
+  "HajekControlLargeSimLo": "-0.399",
+  "HajekControlLargeSimHi": "0.476",
+  "HajekLowerLargeEstimate": "-0.237",
+  "HajekLowerLargeSimLo": "-0.785",
+  "HajekLowerLargeSimHi": "0.310"
+}

@@ -1,0 +1,32 @@
+{
+  "retrieved": "2026-09-30",
+  "source_api": "https://zenodo.org/api/records/15881329",
+  "record_url": "https://zenodo.org/records/15881329",
+  "source_api_bytes_sha256": "95676a147e7556ed1f423d08d047016bb10a5a4749aed4fb4a051efa9d07d6fc",
+  "doi": "10.5281/zenodo.15881329",
+  "conceptdoi": "10.5281/zenodo.15881328",
+  "created": "2025-07-15T18:14:13.455794+00:00",
+  "modified": "2025-07-15T18:14:13.562460+00:00",
+  "title": "replication package EJ MS 20220682",
+  "creators": [
+    {
+      "name": "McIntosh, Craig",
+      "affiliation": "University of California, San Diego",
+      "orcid": "0000-0002-8038-2648"
+    }
+  ],
+  "publication_date": "2024-05-23",
+  "access_right": "open",
+  "license": {
+    "id": "cc-by-4.0"
+  },
+  "correction_description": "<p>This is an updated replication package for EJ MS 20220682, removing several instances of personally identifying information that had inadvertently been left in the original data.&nbsp; </p>\n<p>&nbsp;</p>",
+  "files": [
+    {
+      "key": "McIntosh and Zeitlin.zip",
+      "size": 11550462,
+      "checksum": "md5:35fe28d475e1913e993a8305f19b4625"
+    }
+  ],
+  "scope": "Curated record of actual public source rights and correction, not a new license grant or rights inference"
+}

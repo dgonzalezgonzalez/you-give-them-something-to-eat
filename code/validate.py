@@ -23,7 +23,8 @@ checks['all_policies_feasible']=all(abs(sum(q.values())-1)<1e-10 and min(q.value
 checks['budget_mixtures_exact']=all(abs(sum(costs[a]*v for a,v in q.items())-budget)<1e-9 for q in p['vertices'].values() if len(q)>1)
 checks['eight_cash_vertices']=len(p['vertices'])==8
 r=pd.read_csv(OUT/'arm_effects.csv');q=pd.read_csv(OUT/'policy_effects.csv')
-checks['expected_primary_family']=len(r)+len(q)==221
+checks['expected_primary_display_rows']=len(r)+len(q)==221
+checks['expected_distinct_primary_family']=json.loads((OUT/'run_metadata.json').read_text())['family_size']==204
 checks['simultaneous_bands_contain_pointwise']=bool(((q.sim_lo<=q.lo+1e-10)&(q.sim_hi>=q.hi-1e-10)).all())
 checks['missing_diet_eligible_n']=int(r.loc[r.outcome=='diet_mean','N'].iloc[0])==int(d.loc[(d['round']==2)&(d.eligible==1)&(d.sample_panel==1),'dietarydiversity'].notna().sum())
 for outcome in ['diet_mean','shortfall_6']:

@@ -1,0 +1,15 @@
+{
+  "population": "baseline eligible households, source sampling expansion weights; no invented intensive-tracking factor",
+  "assignment_adjusted": true,
+  "max_frame_weight_discrepancy": 4.76840000374068e-07,
+  "identified_diet_N": 1730,
+  "baseline_N": 1793,
+  "point_family_size": 184,
+  "pair_family_size": 828,
+  "endpoint_family_size": 1656,
+  "display_point_rows": 200,
+  "display_pair_rows": 900,
+  "display_endpoint_rows": 1800,
+  "fitted_mean_best": "Lower+Large",
+  "inference": "Village cluster linearization / shared max-t; asymptotic, not exact blocked-design inference"
+}

@@ -10,12 +10,22 @@ def main():
     parser.add_argument('--pdf',action='store_true',help='Compile manuscript with pdflatex.')
     args=parser.parse_args();begin=time.time()
     os.chdir(ROOT)
-    if args.from_source:subprocess.run([sys.executable,'code/prepare_data.py'],check=True)
+    if args.from_source:
+        for script in ['code/prepare_data.py','code/prepare_revision_data.py']:
+            subprocess.run([sys.executable,script],check=True)
     manifest=json.loads((ROOT/'data/input/provenance.json').read_text())
     for filename,expected in manifest['files'].items():
         actual=hashlib.sha256((ROOT/'data/input'/filename).read_bytes()).hexdigest()
         if actual!=expected:raise RuntimeError('Input hash mismatch: '+filename)
-    for script in ['code/estimate.py','code/build_exhibits.py','code/validate.py']:
+    reference=json.loads((ROOT/'data/input/input-reference.json').read_text())
+    for filename,expected in reference['files'].items():
+        if hashlib.sha256((ROOT/'data/input'/filename).read_bytes()).hexdigest()!=expected:
+            raise RuntimeError('Immutable reference mismatch: '+filename)
+    revision=json.loads((ROOT/'data/input/revision-reference.json').read_text())
+    for filename,expected in revision['files'].items():
+        if hashlib.sha256((ROOT/'data/input'/filename).read_bytes()).hexdigest()!=expected:
+            raise RuntimeError('Supplementary reference mismatch: '+filename)
+    for script in ['code/estimate.py','code/referee_revision.py','code/finite_cluster.py','code/build_exhibits.py','code/build_revision_exhibits.py','code/validate.py','code/validate_revision.py']:
         subprocess.run([sys.executable,script],check=True)
     if args.pdf:
         compiler=os.environ.get('PDFLATEX') or shutil.which('pdflatex')

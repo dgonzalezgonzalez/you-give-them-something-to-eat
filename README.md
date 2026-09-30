@@ -1,43 +1,38 @@
-# Data and Code for: You give them something to eat: Nutrition, Saving, and the Reach of Catholic Aid
+# Data and Code for: You give them something to eat: Dietary Diversity, Coverage, and Catholic Aid in Rwanda
 
-Author: Diego González-González. Research draft, 30 September 2026.
+Diego González-González. Research draft, 30 September 2026. First referee revision.
 
-This package reproduces a secondary analysis of the village-randomized Gikuriro trial in Rwanda, implemented by Catholic Relief Services and SNV. It compares universal Gikuriro with village lotteries over observed cash packages at an equal expected provider budget. It does not report a new experiment. The original study is Craig McIntosh and Andrew Zeitlin (2024), *Economic Journal* 134(664), 3360–3389, [doi:10.1093/ej/ueae050](https://doi.org/10.1093/ej/ueae050).
+This package reanalyzes the village-randomized Gikuriro evaluation implemented by Catholic Relief Services and SNV in Rwanda. It compares lotteries over observed aid packages at a fixed expected provider budget. It adds coherent dietary distributions, incomplete-outcome bounds, finite-policy regret and explicit inference diagnostics. It introduces no new experiment or identification strategy. The original study already discusses cost effectiveness and coverage: McIntosh and Zeitlin (2024), *Economic Journal* 134(664):3360–3389, [doi:10.1093/ej/ueae050](https://doi.org/10.1093/ej/ueae050).
 
-The manuscript is [paper/paper.pdf](paper/paper.pdf); its editable source is [paper/paper.tex](paper/paper.tex). The public repository is [dgonzalezgonzalez/you-give-them-something-to-eat](https://github.com/dgonzalezgonzalez/you-give-them-something-to-eat), branch `codex/research`. This is a research and replication package, not a journal acceptance or official JPE replication report. Codex assisted coding and drafting. Statistical computation uses no language model.
+Read [the PDF](paper/paper.pdf) or [editable LaTeX](paper/paper.tex). Public repository: [dgonzalezgonzalez/you-give-them-something-to-eat](https://github.com/dgonzalezgonzalez/you-give-them-something-to-eat), default branch `codex/research`. Codex assisted code and drafting; no language model processes data or enters scientific computation. This is a research package, not a journal decision or official JPE audit.
 
-## Data availability, provenance, and rights
+## Data availability, rights and scope
 
-All inputs needed to reproduce this paper are included in `data/input/`. No account, restricted data application, proprietary statistical software, or external API is needed for the default run.
+All default inputs are included; no credentials, restricted-data application, proprietary statistical software or external API is required. Only the **corrected** public [Zenodo deposit 15881329](https://zenodo.org/records/15881329), concept DOI 15881328, is used. Its actual CC BY 4.0 rights, public-access status, correction statement and archive checksum are preserved in [zenodo-rights.json](docs/sources/zenodo-rights.json), retrieved from the official API. It was created 15 July 2025 with nominal publication date 23 May 2024. The old restricted deposit 11265230 is not used or redistributed.
 
-The source is the **corrected** public McIntosh replication deposit, [doi:10.5281/zenodo.15881329](https://doi.org/10.5281/zenodo.15881329), concept DOI 10.5281/zenodo.15881328. The record names Craig McIntosh as creator and covers the joint McIntosh–Zeitlin study. It was created 15 July 2025 and has a nominal publication date of 23 May 2024. Accessed 30 September 2026. The corrected deposit licenses its data CC BY 4.0. Do not use the old, restricted deposit 11265230, which was withdrawn from public access because it contained personally identifying information.
+| Supplied input | Contents / origin |
+|---|---|
+| `households.csv` | Frozen 5,506 household-round rows and 52 numeric fields from corrected `household_panel.dta`; food module, economic outcomes, sampling weights, eligibility and randomized assignments |
+| `costs.csv` | All source cost/compliance accounting columns from `CostsAndCompliance.xlsx` |
+| `codebook.json` | Frozen original source labels plus initial reconstruction definitions |
+| `revision_households.csv` | 5,506 matching rows of village frame counts, sampling probability, original selected diet controls and food-spending transformations |
+| `children.csv` | 7,356 numeric child-round records marked for/source-observed anthropometry; arbitrary keys, eligible status, age/sex and source growth scores |
+| `analytical-codebook.json` | Definitions, units, recall, zero handling, source preprocessing caveats, sampling versus assignment probabilities and actual sample rules |
+| `provenance.json` | Generated source/member provenance and initial extract hashes |
+| `input-reference.json` | Immutable reference for three original input byte streams at commit `046ce79` |
+| `revision-reference.json` | Reference for two supplementary extracts and their corrected archive members |
 
-| Input | Contents | Source and access |
-|---|---|---|
-| `data/input/households.csv` | 5,506 household-round records, 52 numeric fields, including 16 food responses, 12-group diet score, source score, source sampling weights, treatment and block indicators, demographic controls, and economic outcomes | Derived from corrected `3-replication/data/household_panel.dta`; CC BY 4.0 |
-| `data/input/costs.csv` | Provider-accounting rows, original cost and compliance columns | Corrected `CostsAndCompliance.xlsx`; CC BY 4.0 |
-| `data/input/codebook.json` | Original variable labels and explicit definitions of reconstructed diet and retained source score | Source labels plus this project's transformation documentation |
-| `data/input/provenance.json` | DOI, archive MD5/SHA256, input SHA256 values, field list | Generated by `code/prepare_data.py` |
+All files above are under `data/input/`. Core and supplementary research data remain **CC BY 4.0**. Cite the original article and corrected deposit and identify this project's transformations. Original code is MIT licensed ([LICENSE](LICENSE)); the manuscript is furnished for reading/review without a separate reuse license. JPE template attribution/license are retained under `docs/sources/`. The full original archive and original manuscript are not redistributed.
 
-The extract retains no names, contact details, geographic codes, exact dates, free text, or administrative recipient lists. Household, village, and block identifiers are replaced with arbitrary sequential numeric keys. These keys permit panel linkage and clustered inference within the extract. Numeric-only validation is an additional check, not a general proof against reidentification. The extract derives solely from the source provider's corrected public release.
+No names, contacts, geographic codes, coordinates, exact dates, free text or administrative recipient lists are exported. Household, child, village and block keys are arbitrary sequential replacements. Field selection was reviewed; numeric-type checks alone are not a proof against reidentification.
 
-The 12-group score combines vegetables, fruits, and meats within their respective groups and leaves nine other groups separate. Any nonbinary or missing response in the 16-category module makes the reconstructed score missing. It matches the supplied score on all 5,414 complete records. The supplied score contains seven noninteger endline values; `diet_source` preserves it for sensitivity. All 92 incomplete food modules, across rounds and populations, retain missingness in the reconstructed score. The corrected extract contains 1,793 baseline eligible households, one fewer than the original paper's 1,794, and 1,728 eligible endline observations with complete diet. This discrepancy is documented rather than silently repaired.
+The initial core score is missing whenever any of 16 categories is nonbinary. It exactly matches source scores on 5,414 complete modules; 92 modules across rounds/populations are incomplete. Seven source endline scores are noninteger replacements. The revision retains item information: an observed positive subcategory identifies its combined group even if another is unknown. This identifies 1,730 eligible endline diets rather than 1,728 complete modules. Full-population bounds keep all 1,793 baseline eligibles, including absent endline households. The original paper's 1,794 baseline count differs by one household in the corrected release; no record is invented to repair it.
 
-Data and derived data remain under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Cite both the original paper and corrected deposit, and identify this project's transformations. Original code in this repository is MIT licensed; see [LICENSE](LICENSE). The draft manuscript is supplied for reading and review; no separate manuscript reuse license is granted here. Third-party template files retain their source license and attribution in `docs/sources/`. The full source archive and the original authors' paper are not redistributed here.
+At eligible baseline the source expansion weight equals village frame eligible count divided by released sample count, within 4.77e-7. It is fixed across rounds. No unavailable intensive-tracking factor is manufactured. Known village assignment probabilities are separately published in `output/assignment_probabilities.csv`. Source monetary fields and anthropometric scores retain inherited cleaning/replacement. No upstream survey-cleaning replication, unverified dollar conversion or percentage interpretation of IHS coefficients is asserted.
 
-## Software and computing requirements
+## Software and one-command reproduction
 
-Tested: Python **3.12.10**, NumPy **2.5.2**, pandas **3.0.5**, SciPy **1.18.1**, Matplotlib **3.11.1**. The four direct dependencies are in `requirements.txt`; `requirements-lock.txt` also pins all tested transitive dependencies. Source extraction additionally uses openpyxl **3.1.5**; optional PDF visual inspection uses PyMuPDF **1.28.2** and Pillow. The master requires no optional analysis software.
-
-PDF compilation requires `pdflatex` and standard packages: amsmath, amssymb, amsthm, booktabs, graphicx, array, natbib, setspace, hyperref, caption, geometry, and lmodern. Tested with existing MiKTeX 25.12. The source is a multi-file LaTeX project; the master compiles it three times so references resolve. Set the environment variable `PDFLATEX` to the executable if it is not on PATH. The master also recognizes the standard per-user Windows MiKTeX path.
-
-Optional independent validation: Stata/MP 19, using only built-in commands. Stata is not required to regenerate any manuscript exhibit. The independent validation output from the actual Stata run is included as a reference in `output/stata-validation.csv`.
-
-Tested system: Windows 11, x64, Python platform build 10.0.26200; Intel64 Family 6 Model 140 processor, eight available logical processors. No GPU or cluster required. Allow 2 GB RAM and 100 MB disk for default reproduction; allow 150 MB disk for optional source files and rendered PDF inspection. The complete master with PDF took approximately 19 seconds in this environment; performance varies by machine and TeX installation. Package installation time is additional. Detailed physical memory was unavailable to the sandbox and is not asserted.
-
-## Reproduce every table, figure, and in-text estimate
-
-From the repository root, in a Python 3.12 virtual environment:
+Tested Python **3.12.10**, NumPy **2.5.2**, pandas **3.0.5**, SciPy **1.18.1**, Matplotlib **3.11.1**. Four direct dependencies: `requirements.txt`; exact direct/transitive environment: `requirements-lock.txt`. Windows 11 x64, eight available logical processors. No GPU is needed. Allow 2 GB RAM and 150 MB for reproduction/rendered inspection; package installation adds storage. Default numerical/PDF master took approximately 38 seconds on this system. Physical RAM was not measured.
 
 ```text
 python -m venv .venv
@@ -45,63 +40,36 @@ python -m venv .venv
 .venv\Scripts\python.exe run.py --pdf
 ```
 
-On macOS/Linux activate `.venv/bin/activate`, then use `python -m pip install -r requirements-lock.txt` and `python run.py --pdf`. To regenerate numerical results and exhibits without TeX, use `python run.py`. No hard-coded personal paths occur in the scientific scripts. Inputs are hash-checked before estimation. Default execution needs no network after dependencies are installed. A fresh Windows virtual environment installed from the four direct requirements reproduced the published Git commit; its complete dependency versions are now locked.
+On macOS/Linux activate `.venv/bin/activate`, then use `python -m pip install -r requirements-lock.txt` and `python run.py --pdf`. Without TeX, `python run.py` reproduces all numerical exhibits. There are no personal hardcoded scientific paths. After dependency installation, the default master needs no network.
 
-The master executes, in order:
+PDF compilation uses existing `pdflatex` (tested MiKTeX 25.12), three passes, and standard packages: amsmath, amssymb, amsthm, booktabs, graphicx, array, natbib, setspace, hyperref, caption, geometry and lmodern. Set `PDFLATEX` if needed; the master recognizes the standard per-user Windows MiKTeX path. This is a multi-file project; standalone native compilation cannot supply its generated companion files.
 
-1. Verify the three supplied input hashes against `provenance.json`.
-2. `code/estimate.py`: sample definition, WLS ANCOVA, village CR1 inference, 9,999 shared Rademacher draws with NumPy seed **20260930**, joint 221-comparison diet family, secondary Holm families, policy costs/weights, descriptive statistics, balance, attrition, bounds, heterogeneity, and sensitivities.
-3. `code/build_exhibits.py`: all eleven tables, two figures, and `paper/results.tex` numerical macros.
-4. `code/validate.py`: input/sample and policy identities, score support, band checks, and comparison against the included independent Stata reference. Nonzero exit on failure.
-5. With `--pdf`, compile `paper/paper.tex` three times and save `paper/paper.pdf`.
+The master performs:
 
-Logs and machine-readable estimates are under `output/`; `master_run.json` records runtime and platform. Bootstrap draws and all statistical choices are fixed. Numerical outputs, generated tables and in-text macros are deterministic with the tested packages. Runtime metadata and PDF creation timestamps can vary and are not used for scientific results.
+1. Check input bytes against generated provenance **and independent immutable references**.
+2. `estimate.py`: original WLS ANCOVA/CR1, 204 distinct primary tests (221 display rows), 96 distinct secondary Holm tests, foods (80), heterogeneity (10), observation (5), original sensitivities.
+3. `referee_revision.py`: explicit assignment probabilities, positive-weight Hájek distributions, item-informed baseline-population bounds, all 36 policy pairs, regret/tolerances, source-specification crosswalk, cost scenarios, child/ineligible analyses.
+4. `finite_cluster.py`: CR2/Satterthwaite working-model correction, concentration/leverage and all village/block omission fits.
+5. Two exhibit builders: **19 tables, four figures**, both empirical macro files, and [complete output map](docs/output-map.csv) derived from current manuscript numbering.
+6. `validate.py` and `validate_revision.py`: nonzero exit on failed scientific invariants, independent LP comparisons or adversarial provenance checks.
+7. Optional three-pass LaTeX compilation to `paper/paper.pdf`.
 
-Optional Stata validation from the repository root:
+Statistical seed **20260930**, **9,999** shared Rademacher draws. Revision families have 184 distinct Gikuriro/cash tests, 828 all-policy pairwise tests and 1,656 bound endpoints. Mean/shortfall-12 and survival-1/shortfall-1 affine duplicates enter only once. Child and ineligible extensions each have fifteen Holm tests. All extensions after first review are exploratory and logged in [plan amendments](docs/plan-amendments.md); the original plan is preserved unchanged. No blind or prospective registration claim is made.
 
-```text
-do code/validate_stata.do
-```
+## Source reconstruction and verification
 
-Run it in Stata, then `python code/validate.py` to compare freshly generated coefficients and standard errors. The actual reference run agrees with Python within 1.3e-13 for coefficients and 5.2e-15 for standard errors. Stata validates the main mean-score specification; it does not independently replicate all 221 comparisons.
+Optional source reconstruction requires `openpyxl==3.1.5`. Download the corrected deposit's `McIntosh and Zeitlin.zip` to `data/raw/source.zip`, then run `python run.py --from-source --pdf`. Extraction verifies archive MD5 **35fe28d475e1913e993a8305f19b4625** and SHA256 **84ce805316fef0d36466e75844afe521fb9a6dfe1fe33f454e1aa2dc71413a7e**, reads exact members directly and compares expected derived hashes before replacing analytical bytes. A stale manually extracted directory cannot substitute for the verified archive. Raw files are Git ignored.
 
-## Optional reconstruction from the corrected source
+The source-to-extract route begins with the authors' corrected processed panels, not raw questionnaires and upstream cleaning. Source economic preprocessing that cannot be recovered is explicitly documented. Reference files must not be regenerated to make a failed check pass.
 
-Download `McIntosh and Zeitlin.zip` from the corrected DOI page to `data/raw/source.zip`. The program verifies archive MD5 **35fe28d475e1913e993a8305f19b4625** and SHA256 **84ce805316fef0d36466e75844afe521fb9a6dfe1fe33f454e1aa2dc71413a7e** and reads `household_panel.dta` and `CostsAndCompliance.xlsx` directly from the verified archive. No manual extraction is required. Install `openpyxl==3.1.5`, then:
+Actual checks: original main WLS matches independent Stata/MP 19 within 1.3e-13 for coefficients and 5.2e-15 for standard errors. Stata checks those five coefficients only. To rerun: `do code/validate_stata.do`, then `python code/validate.py`; Stata is optional. Core validation passes 33 checks; revision validation passes 92, including discrete CDF identities and 100 independently solved LPs. Isolated tampered-data/re-written-manifest and corrupt-source fixtures are rejected. Those invariants are numerical evidence, not proof that an asymptotic interval has exact finite-design coverage.
 
-```text
-python run.py --from-source --pdf
-```
+Optional `python code/clean_check.py` (PyMuPDF/Pillow) runs a source copy with no outputs and compares CSVs, tables, macros, PNGs and PDF page text. `verify_environment.py` compares `tmp/published-clean/` exported from the commit recorded in `tmp/published-commit.txt` and run in the separate locked environment. Runtime metadata and PDF timestamps are excluded. Audit results are recorded under `output/`. First-submission fresh-install evidence is historical; new source-copy results are distinct and dated.
 
-`prepare_data.py` regenerates the numeric extract, label codebook and provenance. It does not reproduce upstream cleaning from original survey files; those are not this package's inputs. Raw files are ignored by Git. The default package deliberately avoids depending on network download behavior.
+## Outputs and interpretation
 
-## Output map
+The [output map](docs/output-map.csv) maps every current table/figure and both in-text macro sets to script lines and numerical sources. Estimates and diagnostics are inspectable CSVs under `output/`; tables and plots are in `output/tables/` and `output/figures/`. `paper/results.tex` and `paper/revision-results.tex` contain all reported new empirical macros. External trial facts, bibliography and theory require source/mathematical review.
 
-All table/figure numbers refer to the included manuscript. [docs/output-map.csv](docs/output-map.csv) supplies the program locations and underlying numerical files. `code/build_exhibits.py` produces every display; `code/estimate.py` produces every underlying estimate.
+Diet is a household food-access proxy, not measured child nutrient adequacy. All mean candidate policies remain compatible with optimality. Missing-diet envelopes include sampling uncertainty, while the original coarse sample bounds are retained only as an audit crosswalk. The ratio/multiplier inference is cluster asymptotic, not an exact blocked-design randomization procedure. CR2 is a specified working-model sensitivity. Costs are fixed in inference; cost/take-up grids are accounting assumptions with effects held fixed. Transport requires stable package delivery and no cross-village interference. Hard realized caps and true fixed activation costs require additional inputs.
 
-| Manuscript output | Generated file | Numerical source |
-|---|---|---|
-| Table 1: Design, costs, sample | `output/tables/design.tex` | `attrition.csv`, `policies.json` |
-| Table 2: Diet package ITTs | `output/tables/diet_itt.tex` | `arm_effects.csv` |
-| Table 3: Equal-budget cash comparisons | `output/tables/budget_comparisons.tex` | `policy_effects.csv` |
-| Table 4: Secondary outcomes | `output/tables/secondary.tex` | `secondary.csv` |
-| Table 5: Baseline characteristics | `output/tables/baseline.tex` | `descriptives.csv` |
-| Table 6: Feasible policy vertices | `output/tables/policies.tex` | `policies.json` |
-| Table 7: Weighting/measurement sensitivities | `output/tables/robustness.tex` | `robustness.csv` |
-| Table 8: Missing-diet identification regions | `output/tables/attrition_bounds.tex` | `attrition_bounds.csv` |
-| Table 9: Heterogeneity | `output/tables/heterogeneity.tex` | `heterogeneity.csv` |
-| Table 10: Food categories | `output/tables/foods.tex` | `food_groups.csv` |
-| Table 11: Observed-diet selection | `output/tables/retention.tex` | `attrition_effects.csv` |
-| Figure 1: Threshold contrasts | `output/figures/diet_thresholds.pdf` | `policy_effects.csv` |
-| Figure 2: Diet-budget envelope | `output/figures/budget_frontier.pdf` | `arm_effects.csv`, `policies.json` |
-| In-text empirical numbers | `paper/results.tex`, `output/numbers.json` | Above estimates, costs, and `run_metadata.json` |
-
-`balance.csv`, `attrition_effects.csv`, and `distributions.csv` provide supplementary audit evidence. Source design facts, survey dates, 12-group definitions and literature citations are documented externally; they are not estimates generated by this project's code. Theory statements and proofs require mathematical review.
-
-Optional requested prose screen: see `docs/writing-audit.md` and `output/style-lr.json`. To reproduce the LR component, clone `https://github.com/paulgp/econ-ai-detector` under `.detector/source/`, check out commit `11285447a3ccdc300bef25bc0a4a1eb42fd489cb`, and run `python code/style_screen.py` in a separate environment with NumPy 2.5.2, SciPy 1.18.1, scikit-learn 1.9.0, joblib 1.6.0, pysbd 0.3.4, and PyMuPDF 1.28.2. No neural score is asserted. This optional screen has no role in the data, treatment assignment, estimation, inference, or default master.
-
-## Interpretation and audit scope
-
-HDDS is a household diet-variety/food-access proxy, not child nutrition or a clinical hunger measure. Scores, thresholds, IHS outcomes, expected budgets, complete-case assumptions, and transport restrictions are stated in the manuscript. Equal-budget policy intervals leave the ranking unresolved; null rejection is not equivalence. Costs are original provider accounting inputs, held fixed in inference. Worst-case attrition bounds are sample identification regions without sampling uncertainty.
-
-See the dated [analysis plan](docs/analysis-plan.md), [amendments](docs/plan-amendments.md), and [JPE-style self-audit](docs/replication-report.qmd). The self-audit follows the public JPE template's requirements, output mapping, data-access and run checks; it is not issued or endorsed by JPE. `output/clean-run.json` records cold-output comparisons; `output/fresh-environment.json` records the actual published-source test after a fresh official-PyPI install: all 29 numerical/display/PDF-text comparisons passed. `code/verify_environment.py` compares that audit copy at `tmp/published-clean/`; this optional audit path is not needed by the master. Referee reports and responses are preserved under `docs/referee/`. Simulated referee advice cannot establish real journal acceptance.
+Read [the JPE-style self-audit](docs/replication-report.qmd), [research status](docs/research-status.md) and [referee reports/responses](docs/referee/). The first genuine ChatGPT Pro report recommended reject at a leading general-interest journal. No report, acceptance, field observation or mechanism identification is manufactured. The requested optional prose screen is documented in [writing audit](docs/writing-audit.md); it uses the released logistic-regression component and is not evidence of human authorship.

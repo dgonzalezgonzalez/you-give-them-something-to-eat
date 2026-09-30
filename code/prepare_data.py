@@ -14,6 +14,10 @@ panel_bytes=source_zip.read(member_prefix+'household_panel.dta')
 cost_bytes=source_zip.read(member_prefix+'CostsAndCompliance.xlsx')
 DEST = ROOT / 'data/input'
 DEST.mkdir(parents=True, exist_ok=True)
+reference=json.loads((DEST/'input-reference.json').read_text())['files']
+def checked_write(name,payload):
+    assert hashlib.sha256(payload).hexdigest()==reference[name], 'Frozen input reference mismatch: '+name
+    (DEST/name).write_bytes(payload)
 reader = pd.io.stata.StataReader(io.BytesIO(panel_bytes), convert_categoricals=False)
 labels = reader.variable_labels()
 data = reader.read()
@@ -42,12 +46,12 @@ for k in ['hhid','vid','block']:
     keys = sorted(data[k].dropna().unique())
     data[k] = data[k].map({a:i+1 for i,a in enumerate(keys)})
 assert not data.duplicated(['hhid','round']).any()
-data.to_csv(DEST/'households.csv',index=False,float_format='%.12g',lineterminator='\n')
+checked_write('households.csv',data.to_csv(index=False,float_format='%.12g',lineterminator='\n').encode('utf8'))
 costs = pd.read_excel(io.BytesIO(cost_bytes))
-costs.to_csv(DEST/'costs.csv',index=False,float_format='%.12g',lineterminator='\n')
-(DEST/'codebook.json').write_text(json.dumps({**{k:labels[k] for k in fields},
+checked_write('costs.csv',costs.to_csv(index=False,float_format='%.12g',lineterminator='\n').encode('utf8'))
+checked_write('codebook.json',json.dumps({**{k:labels[k] for k in fields},
     'dietarydiversity':'Reconstructed 12 food-group score; missing if any component is not binary 0/1',
-    'diet_source':'Unmodified source dietarydiversity field, retained for sensitivity'},indent=2),encoding='utf8',newline='\n')
+    'diet_source':'Unmodified source dietarydiversity field, retained for sensitivity'},indent=2).encode('utf8'))
 manifest = {'source_doi':'10.5281/zenodo.15881329','license':'CC-BY-4.0',
             'source_archive_md5': '35fe28d475e1913e993a8305f19b4625',
             'source_sha256': hashlib.sha256(archive_bytes).hexdigest(),
