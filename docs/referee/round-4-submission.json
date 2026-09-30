@@ -17,8 +17,8 @@
     "sha256": "1e37c9a9e0728ec2ce5823115211cb995b3bc02c5d44c85046b7423d83b1992e"
   },
   "pdf_pages": 34,
-  "delivery": "Public repository link; no local attachments uploaded",
-  "status": "Prepared, not yet submitted",
+  "delivery": "Public repository link; no paper/data attachments delivered",
+  "status": "Submitted through ordinary-text public links; genuine Pro 5/5 response running",
   "previous_recommendations": [
     "Provisional reject, round 1",
     "Reject, round 2",
@@ -36,5 +36,15 @@
   },
   "independent_external_full_replication": false,
   "durable_DOI_archive": false,
-  "scientific_changes_between_tested_source_and_freeze": false
+  "scientific_changes_between_tested_source_and_freeze": false,
+  "prompt_paste_interface_event": "Initial long public-link instruction prompt appeared as uploading Texto pegado.txt. Removed from composer without sending; upload completion unverified. No paper or data file was selected. Final shorter request was entered as ordinary text and all eleven public links were verified in the actually delivered copy.",
+  "submission_observed_at_utc": "2026-09-30T20:17:58.506387+00:00",
+  "model_setting_observed": "Pro, 5 de 5",
+  "proof_screenshot": "docs/referee/round-4-link-submitted.png (local, Git ignored)",
+  "delivered_prompt": {
+    "path": "docs/referee/round-4-delivered-prompt.md",
+    "sha256": "34d0188f3805a301c0d48ea02e38554d9a84e8d2f23999e7aa5310be4715e67d",
+    "text_matches_prepared_after_UI_markdown_and_whitespace_normalization": true,
+    "public_GitHub_link_targets": 11
+  }
 }
