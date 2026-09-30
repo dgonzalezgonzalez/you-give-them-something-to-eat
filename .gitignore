@@ -8,9 +8,13 @@ __pycache__/
 .node_repl*
 .dependencies/
 .venv-stat/
+.venv-replication/
+.venv-detector/
+.detector/
 tmp/
 replication-check/
 docs/repository-*.png
+docs/referee/*.png
 docs/sources/*-metadata.json
 docs/sources/20220682*.txt
 docs/sources/ReadMe.txt
