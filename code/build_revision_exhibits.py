@@ -28,9 +28,9 @@ def main():
             r=h[(h.outcome==obj)&(h.policy==pol)].iloc[0]
             b=bound[(bound.outcome==obj)&(bound.left=='Gikuriro')&(bound.right==pol)].set_index('endpoint')
             rows.append(['HDDS' if obj=='mean' else 'Shortfall ($z=6$)',label(pol),f(r['estimate']),f(b.loc['lower','estimate']),f(b.loc['upper','estimate']),f(b.loc['lower','sim_lo']),f(b.loc['upper','sim_hi'])])
-    table('population_bounds.tex',['Outcome','Cash policy','Observed','Bound lo.','Bound hi.',r'95\% lo.',r'95\% hi.'],rows)
+    table('population_bounds.tex',['Outcome','Cash policy','Observed','Bound lo.','Bound hi.','Approx. lo.','Approx. hi.'],rows)
     reg=pd.read_csv(OUT/'policy_regret.csv');mean=reg[reg.outcome=='mean'].copy()
-    table('regret.tex',['Policy','Fitted HDDS','Fitted regret',r'Observed 95\% upper',r'Population 95\% upper'],
+    table('regret.tex',['Policy','Fitted HDDS','Fitted regret','Observed approx. upper','Baseline approx. upper'],
           [[label(r.policy),f(r.fitted_value),f(r.fitted_regret),f(r.regret_upper_95),f(r.population_regret_upper_95)] for r in mean.itertuples()])
     for pol,stem in [('Gikuriro','GK'),('Lower+Large','LowerLarge')]:
         r=mean[mean.policy==pol].iloc[0]
@@ -72,14 +72,14 @@ def main():
         s=h[(h.policy==pol)&h.outcome.str.startswith('survival_')].copy();s['k']=s.outcome.str.split('_').str[-1].astype(int);s=s.sort_values('k')
         b=bound[(bound.left=='Gikuriro')&(bound.right==pol)&bound.outcome.str.startswith('survival_')].copy();b['k']=b.outcome.str.split('_').str[-1].astype(int)
         lo=b[b.endpoint=='lower'].sort_values('k');hi=b[b.endpoint=='upper'].sort_values('k')
-        ax.fill_between(lo.k,lo.sim_lo*100,hi.sim_hi*100,color='#1a4673',alpha=.12,label='Baseline-population band')
+        ax.fill_between(lo.k,lo.sim_lo*100,hi.sim_hi*100,color='#1a4673',alpha=.12,label='Exploratory baseline band')
         ax.plot(s.k,s.estimate*100,'o-',color='#ab422f',ms=3,label='Identified-diet point estimate')
         ax.axhline(0,color='.4',lw=.8);ax.set_title('Gikuriro minus '+label(pol).lower(),fontsize=9)
         ax.set_xlabel('At least this many food groups');ax.set_xticks([2,4,6,8,10,12]);ax.grid(axis='y',color='.9',lw=.5)
     axes[0].set_ylabel('Difference (percentage points)');axes[0].legend(frameon=False,fontsize=6.5)
     fig.tight_layout();fig.savefig(FIGS/'coherent_thresholds.pdf');fig.savefig(FIGS/'coherent_thresholds.png',dpi=180);plt.close(fig)
     fig,ax=plt.subplots(figsize=(6.5,3.7));y=np.arange(len(mean))
-    ax.barh(y,mean.population_regret_upper_95,color='#d9e1e9',label='Population 95% regret upper bound')
+    ax.barh(y,mean.population_regret_upper_95,color='#d9e1e9',label='Exploratory baseline regret bound')
     ax.barh(y,mean.fitted_regret,color='#ab422f',label='Fitted observed-sample regret')
     ax.set_yticks(y,[label(x) for x in mean.policy]);ax.invert_yaxis();ax.set_xlabel('HDDS groups relative to best feasible policy')
     ax.legend(frameon=False,fontsize=7,loc='lower right');ax.grid(axis='x',color='.9',lw=.5)

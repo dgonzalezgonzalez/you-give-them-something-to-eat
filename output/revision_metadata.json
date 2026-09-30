@@ -11,5 +11,11 @@
   "display_pair_rows": 900,
   "display_endpoint_rows": 1800,
   "fitted_mean_best": "Lower+Large",
-  "inference": "Village cluster linearization / shared max-t; asymptotic, not exact blocked-design inference"
+  "inference_blocks": 22,
+  "bootstrap_draws": 99999,
+  "zero_variance_rows_guarded": 121,
+  "assignment_probability_scope": "Conditional within-block exchangeability given realized counts; original randomization program unavailable",
+  "mc_critical_scope": "99% Monte Carlo upper order statistic for the 95% multiplier quantile, within each declared family",
+  "inference": "Exploratory independent-block ratio max-t; finite-block stress undercoverage documented. Separate finite conditional-assignment outer regions supplied.",
+  "finite_region_scope": "Fixed weighted released baseline sample under independent, conditional exchangeable quota assignment; not unconditional proof of full-frame sampling representativeness"
 }

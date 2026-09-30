@@ -50,3 +50,38 @@ Adversarial tests use isolated fixtures, never altered research inputs. The firs
 CDF validation draft accidentally aligned different pandas row labels instead
 of ordered threshold arrays; the validator was corrected and every identity
 then passed. This was a verification-code error, not a revision of estimates.
+
+2026-09-30, after the genuine second referee report: arm-exclusive village Hájek
+scores omitted fixed-quota cross-arm covariance. Replace them by shared 22-block
+ratio vectors and preserve the exact referee counterexample. Increase exploratory
+multipliers to 99,999, add a 99% Monte Carlo upper quantile/nested-draw sensitivity,
+and replace zero-variance intervals by deterministic support. Conditional label
+exchangeability given released counts is now explicit; original assignment code
+and all restrictions are not recovered. Fixed expansion weights do not prove
+full-frame sampling representativeness.
+
+Synthetic stress uses actual block quotas, seed 20261001, 800 assignments/scenario
+and 4,999 diagnostic draws. Coverage 695/800 (equal weights) and 592/800 (unequal)
+fails nominal coverage. Failures remain in the package; reliable one-/half-group
+certification claims are withdrawn, without ad hoc critical-value inflation.
+
+Add separately derived finite conditional-assignment outer regions using bounded
+sampling without replacement, fixed positive weights and a 276-primitive endpoint
+family (138 for a separate observed family). Independent exchangeable quota
+assignment and stable potential outcomes are assumptions. Broad outer regions
+are not sharp bounds or an impossibility result. These choices follow the observed
+inferential flaw/failures; no prospective-registration claim is made.
+
+Optimize region regret over every feasible allocation share, retaining vertices
+only for the known-mean adversary. Independent primal verification checks the
+dual certificates. Align 32 cost settings to coherent means/regions and disclose
+separate national-scale overhead at 56,127 beneficiary households for each cash
+amount. Add baseline source-flag child cohort accounting/observed-follow-up
+sensitivity with a separate fifteen-test Holm family.
+
+Reorient the main manuscript toward the conditional weighted-baseline decision;
+move initial ANCOVA/coarse bounds and saving illustration to appendices. Add
+Manski (2007)/Stoye (2007), derive exhibit counts and preserve genuine reports.
+Twenty smaller public CSV parts reconstruct existing immutable input bytes for
+file-size-limited readers; scientific data and external replication status do
+not change.

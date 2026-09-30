@@ -1,0 +1,7 @@
+arm,baseline_flagged_cohort,linked_endline_rows,baseline_cohort_due_endline,baseline_cohort_measured_endline,all_endline_due,endline_due_outside_baseline_cohort,baseline_cohort_available_haz06,baseline_cohort_available_waz06,baseline_cohort_available_muacz,all_due_available_haz06,all_due_available_waz06,all_due_available_muacz
+Control,676,654,654,628,893,239,624,619,527,765,758,632
+Gikuriro,672,659,659,650,913,254,646,644,553,787,783,647
+Lower,199,193,193,189,262,69,188,189,162,222,223,181
+Middle,196,190,190,187,253,63,185,182,162,222,219,189
+Upper,204,204,203,199,287,84,197,198,174,254,255,214
+Large,318,313,312,303,409,97,301,299,259,357,355,299

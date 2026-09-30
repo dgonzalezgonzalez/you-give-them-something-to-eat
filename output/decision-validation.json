@@ -1,0 +1,27 @@
+{
+  "checks": {
+    "exhaustive_without_replacement_exponential_comparison": true,
+    "finite_ratio_inversion_exhaustive_36_assignments": true,
+    "finite_intervals_weight_scale_invariant": true,
+    "zero_denominator_full_support": true,
+    "exact_cross_arm_referee_counterexample": true,
+    "finite_endpoint_order": true,
+    "eight_certificates_independent_primal_adversaries": true,
+    "diversification_no_worse_than_best_vertex": true,
+    "32_cost_cases_recomputed_both_methods": true,
+    "scenario_feasibility": true,
+    "child_due_cohort_partition": true,
+    "child_cohort_membership_precedes_endline": true,
+    "failed_block_coverage_retained": true,
+    "all_manuscript_references_defined": true
+  },
+  "all_passed": true,
+  "exhaustive_assignment_coverage": [
+    36,
+    36
+  ],
+  "max_weight_scale_error": 0.0,
+  "max_exponential_moment_violation": 0.0,
+  "max_primal_certificate_gap": 5.473399511402022e-14,
+  "scope": "Implementation and finite-bound sanity checks; exhaustive small fixture is not proof of actual sample representativeness. Exploratory multiplier undercoverage is retained, not certified."
+}

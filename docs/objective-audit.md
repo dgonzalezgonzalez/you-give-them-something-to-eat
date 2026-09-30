@@ -1,24 +1,23 @@
-# Objective audit before second referee report
+# Objective audit for the third submission
 
-Audit date: 30 September 2026. Objective remains active. This is a requirements audit of inspected current artifacts, not a claim of journal acceptance or independent certification.
+30 September 2026. Objective active. This records inspected artifacts and actual checks, not acceptance or independent certification.
 
-| Objective requirement | Inspected evidence | Current conclusion |
+| Requirement | Actual evidence/scope | State |
 |---|---|---|
-| Public Git repository with paper and replication package | Published scientific/audit commit 52e7d7e799c639acce45a1d8c61259dc5d366f5b; public repository dgonzalezgonzalez/you-give-them-something-to-eat; successful Git push output | Published; subsequent review-process documentation does not alter the frozen submission |
-| LaTeX and compiled PDF | paper/paper.tex and paper/paper.pdf; output/fresh-environment.json records actual successful PDF compilation and matching text on all 32 pages | Artifact present and reproducibly compiled; mathematical correctness still requires review |
-| Required title prefix, author, abstract, keywords and JEL codes | paper/paper.tex title/author/abstract and keyword/JEL lines | Present; subtitle Dietary Diversity, Coverage, and Catholic Aid in Rwanda |
-| Catholic food-security intervention in developing setting | Manuscript setting/data sections and corrected McIntosh–Zeitlin experiment source | CRS/SNV Gikuriro in Rwanda; religious affiliation itself is not randomized |
-| Introduction, literature, theory, data, methodology, results, discussion, conclusion, appendices | Inspected manuscript section declarations and substantive text; three propositions and three proofs; bibliography | Required structure present; substantive contribution remains subject to referee judgment |
-| Causal empirical evaluation with robustness and magnitude | Village-randomized source; code/estimate.py, code/referee_revision.py, code/finite_cluster.py; manuscript estimands, assumptions, results and limitations | Assignment effects evaluated; missingness, transport and approximate cluster inference remain stated limits |
-| Theory linked to empirical findings | Household allocation model and donor allocation framework; proofs in theoretical appendix | Conditional illustration and decision accounting; saving mechanism is not identified |
-| Reviewable empirical exhibits | docs/output-map.csv maps 19 tables, 4 figures, and both generated empirical macro files to code and numerical sources | Complete exhibit map present; inspectability does not establish novelty |
-| JPE-style reproducibility | README, requirements-lock.txt, run.py, immutable input references, codebooks, docs/replication-report.qmd; published-source audit JSON | Internal core 33/33, revision 92/92, clean-copy 60/60 and separate-environment published-source 60/60 checks; no official JPE certification |
-| Legitimate public data and provider costs | Corrected Zenodo rights/correction metadata, fixed archive hashes, deidentified numeric extracts and cost file | Corrected open CC BY source only; restricted predecessor excluded |
-| Diego academic writing and requested detector check | docs/writing-audit.md; output/style-lr.json bound to actual PDF SHA256 113e38748b8bd034bcb648dba9be77b8b03bdc40538488adcf32bac240e3ed05 | Released LR screen second-highest 0.230204 below necessary 0.33489 threshold; neural/full-ensemble scores not measured and human authorship not inferred |
-| Deterministic scientific computation | Fixed seed 20260930, 9,999 resampling draws, pinned numerical environment; inspected master and empirical scripts | No language-model classification enters estimates |
-| Genuine Pro referee process and all-point revision | Verbatim docs/referee/round-1-report.md and all 18 responses; round-2-link-prompt.md submitted to the same live conversation after publishing | First report rejects; second response confirmed running in UI; no fabricated report or acceptance |
-| Acceptance recommendation after iterative improvements | No acceptance report exists; first report explicitly rejects at leading general-interest standard | Incomplete; cannot mark goal achieved |
+| Public Git repository | Existing public dgonzalezgonzalez/you-give-them-something-to-eat, codex/research; frozen submissions 046ce79/52e7d7e | Current revision needs final freeze/push |
+| LaTeX/PDF | Source, three macros, successful master/three MiKTeX passes, rendered 31-page PDF | Present; mathematics still subject to review |
+| Title/author/abstract/keywords/JEL | Required prefix, Diego González-González, four JEL codes | Present |
+| Catholic food-security intervention/developing setting | CRS/SNV Gikuriro in Rwanda and corrected randomized experiment | Present; no Catholic-specific identified channel |
+| Economic structure/literature | Introduction, allocation theory, data, strategy, results, robustness, discussion/conclusion, proofs/appendices; Manski/Stoye | Present; journal merit not inferred |
+| Causal evaluation/robustness | Conditional exchangeable quota assumption, fixed weighted-baseline target, item intervals, coherent distributions, covariance falsifier, cost/cohort/CR2/omission analyses | Conditional assignment inference; representativeness/transport limits |
+| Theory/magnitude | Three propositions/proofs, coverage corollary, diversified LP, saving illustration, reach/break-even accounting | Present; no new decision theorem or identified saving channel |
+| Exhibits | Output map derives 24 cited tables/one figure and three macros; total 26 tables/five figures generated | Present; uncited outputs labeled |
+| JPE reproducibility | README, lock, one master, immutable inputs/codebooks/self-audit; core 33 (32 without Stata), revision 92, decision 14; cold-copy 80/80 | Local checks pass; current separate published-source scope in README/JSON |
+| Legitimate data | Corrected CC BY release only; unchanged input bytes; 20 exact small views | Present; restricted predecessor excluded |
+| Honest inference | Synthetic block coverage fails (0.869/0.740); finite conditional diversified bound 9.440 groups; approximate 0.570 explicitly unvalidated | Reliable small-loss claims withdrawn; no impossibility theorem |
+| Diego style/screen | Writing skill applied; actual PDF LR necessary condition fails at threshold 0.33489, SHA in output | No neural/full-ensemble scores or authorship proof |
+| Determinism | Fixed seeds, locks, 99,999 revised multipliers, retained stress settings; no LLM data classification | Present |
+| Genuine review/all-point response | Both Pro reports reject; response covers ten major/eight minor second-report points | No external full microdata/PDF execution asserted |
+| Acceptance | Neither genuine report recommends acceptance | Incomplete; cannot mark goal achieved |
 
-Local file uploads were rejected by browser security despite direct user approval. No upload occurred and no upload workaround was attempted. The second review uses the already public repository by link, a materially safer permitted route. Its eventual report must state actual retrieval/execution coverage. Whether that route now permits independent microdata/PDF inspection is not yet known.
-
-Update after completed review: the genuine second report is now preserved verbatim in docs/referee/round-2-report.md and rejects again. It independently reproduces published-output arithmetic and identifies a blocked-design covariance flaw in the headline inference; it does not reproduce household records or inspect the PDF. The open eighteen-point response tracker is round-2-response.md. Earlier numerical checks establish computational reproduction, not validity of those coverage claims. The decisive remaining requirements are implemented point-by-point repairs and continued honest iteration toward acceptance. Technical checks alone do not resolve the substantive contribution objection or prove the requested end state.
+Direct public publication/review-upload approval is in chat. Browser security nevertheless rejected local attachments; no upload/workaround occurred. Public-link review remains permitted. Complete independent microdata/PDF verification and durable DOI archive remain unavailable. Freeze and honest third review are next; changed standards or better internal checks cannot manufacture acceptance.

@@ -1,0 +1,10 @@
+distinct_tests,draws,empirical_95_quantile,mc_upper_rank,mc_upper_critical,scope
+184,9999,2.8614639819007466,9550,2.886019651040998,Nested-draw Monte Carlo sensitivity only; no sampling-coverage validation
+184,29999,2.8746865480728703,28587,2.890039136451412,Nested-draw Monte Carlo sensitivity only; no sampling-coverage validation
+184,99999,2.8747113603221766,95160,2.882001343218609,Nested-draw Monte Carlo sensitivity only; no sampling-coverage validation
+828,9999,3.0678571956417118,9550,3.0865995615758437,Nested-draw Monte Carlo sensitivity only; no sampling-coverage validation
+828,29999,3.068750781341788,28587,3.080209145352252,Nested-draw Monte Carlo sensitivity only; no sampling-coverage validation
+828,99999,3.0663410121987456,95160,3.07229711993869,Nested-draw Monte Carlo sensitivity only; no sampling-coverage validation
+1656,9999,3.192270279371821,9550,3.207112593292243,Nested-draw Monte Carlo sensitivity only; no sampling-coverage validation
+1656,29999,3.1962466578809976,28587,3.207503135168559,Nested-draw Monte Carlo sensitivity only; no sampling-coverage validation
+1656,99999,3.1901636456755327,95160,3.1960059321162877,Nested-draw Monte Carlo sensitivity only; no sampling-coverage validation

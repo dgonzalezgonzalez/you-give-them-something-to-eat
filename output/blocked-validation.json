@@ -1,0 +1,106 @@
+{
+  "scope": "Synthetic 15-arm-pair mean family under actual 22-block quota structure; independent conditional exchangeable assignment and fixed weighted baseline target. Not a proof of actual 25-objective endpoint-family coverage.",
+  "seed": 20261001,
+  "diagnostic_multiplier_draws": 4999,
+  "headline_multiplier_draws": 99999,
+  "quota_file_sha256": "625ae829cf914213ac28c96504cf48891ac27d529f1d6db63cf3d9c8a4a88253",
+  "exact_referee_counterexample": {
+    "blocks": 22,
+    "assignments_per_block": 90,
+    "true_difference_variance": 0.10101010101010101,
+    "expected_independent_arm_estimate": 0.09090909090909091,
+    "independent_to_true_ratio": 0.9,
+    "expected_block_covariance_estimate": [
+      [
+        0.045454545454545456,
+        -0.005050505050505051
+      ],
+      [
+        -0.005050505050505051,
+        0.045454545454545456
+      ]
+    ],
+    "expected_block_difference_variance": 0.10101010101010101
+  },
+  "vectorized_vs_module_max_error": 1.3877787807814457e-17,
+  "simulation_cases": [
+    {
+      "scenario": "balanced_equal_weights",
+      "replications": 800,
+      "joint_coverage_count": 695,
+      "joint_coverage": 0.86875,
+      "coverage_binomial_95_interval": [
+        0.843362786293649,
+        0.8913809519946684
+      ],
+      "zero_variance_contrasts_guarded": 0,
+      "ratio_bias_by_arm": {
+        "Control": 0.0019321236559184385,
+        "Gikuriro": -0.0053061995967738085,
+        "Lower": 0.004697580645166788,
+        "Middle": 0.0014969758064538041,
+        "Upper": -0.0025151209677414244,
+        "Large": 0.004667338709677615
+      }
+    },
+    {
+      "scenario": "block_heterogeneity",
+      "replications": 800,
+      "joint_coverage_count": 695,
+      "joint_coverage": 0.86875,
+      "coverage_binomial_95_interval": [
+        0.843362786293649,
+        0.8913809519946684
+      ],
+      "zero_variance_contrasts_guarded": 0,
+      "ratio_bias_by_arm": {
+        "Control": 0.0013524865591501012,
+        "Gikuriro": -0.0037143397177388238,
+        "Lower": 0.003288306451616485,
+        "Middle": 0.0010478830645226367,
+        "Upper": -0.0017605846774193523,
+        "Large": 0.0032671370967696234
+      }
+    },
+    {
+      "scenario": "unequal_frame_weights",
+      "replications": 800,
+      "joint_coverage_count": 592,
+      "joint_coverage": 0.74,
+      "coverage_binomial_95_interval": [
+        0.7081305003613273,
+        0.7700893077843926
+      ],
+      "zero_variance_contrasts_guarded": 0,
+      "ratio_bias_by_arm": {
+        "Control": -0.000609096581049684,
+        "Gikuriro": 0.00566053794910637,
+        "Lower": 0.011128197025353614,
+        "Middle": 0.015424663563740282,
+        "Upper": 0.009782168793875279,
+        "Large": 0.00804638946885472
+      }
+    },
+    {
+      "scenario": "rare_positive_effect",
+      "replications": 800,
+      "joint_coverage_count": 800,
+      "joint_coverage": 1.0,
+      "coverage_binomial_95_interval": [
+        0.9953995154792545,
+        1.0
+      ],
+      "zero_variance_contrasts_guarded": 10845,
+      "ratio_bias_by_arm": {
+        "Control": 0.0,
+        "Gikuriro": 0.0,
+        "Lower": -0.001239919354838661,
+        "Middle": 0.0,
+        "Upper": 0.0,
+        "Large": 0.0
+      }
+    }
+  ],
+  "all_implementation_checks_passed": true,
+  "coverage_certified": false
+}

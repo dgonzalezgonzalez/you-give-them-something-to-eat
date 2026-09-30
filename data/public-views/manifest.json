@@ -1,0 +1,120 @@
+{
+  "households.csv": {
+    "original_sha256": "e4ac2298b37e7f428a3bb095d4bc43767a4a74c22ea05401d00f696945fc2156",
+    "original_rows": 5506,
+    "parts": [
+      {
+        "path": "households-001.csv",
+        "data_rows": 1000,
+        "sha256": "580f04b8e2a6740f3074a08dd70c70b713dbd3713155bc215528034d5663e1c9"
+      },
+      {
+        "path": "households-002.csv",
+        "data_rows": 1000,
+        "sha256": "833f2a7317058173f389536150cff4b6b2f5aa8928758e0f391591aceab1740c"
+      },
+      {
+        "path": "households-003.csv",
+        "data_rows": 1000,
+        "sha256": "2a45d6789316feadc481bb13fa4f748822bf4eb6b4afd6db7e6902a8693a8ed3"
+      },
+      {
+        "path": "households-004.csv",
+        "data_rows": 1000,
+        "sha256": "4431329e4c53c2c81a8607c38dccdad6cdeb8d8712ca3feb178cb25e9b081f33"
+      },
+      {
+        "path": "households-005.csv",
+        "data_rows": 1000,
+        "sha256": "bd7d989e123148f9810559f8fe833f8273129dcc66ad7ae828197d1680591d87"
+      },
+      {
+        "path": "households-006.csv",
+        "data_rows": 506,
+        "sha256": "a77a4f8f687f4708055dbc9d408a0574874e394f0e94a03953245b7048bc4b14"
+      }
+    ]
+  },
+  "revision_households.csv": {
+    "original_sha256": "8bb609a361e1b8f8ab914750c69ddc59d3d8308ffb58529922eff22d7675ec74",
+    "original_rows": 5506,
+    "parts": [
+      {
+        "path": "revision_households-001.csv",
+        "data_rows": 1000,
+        "sha256": "6e3921e44212a1b4370252dbf6042880323d5a5cd9242c9fb88c3dcca060b620"
+      },
+      {
+        "path": "revision_households-002.csv",
+        "data_rows": 1000,
+        "sha256": "d52578eb1be123e8e5fc88a8622226cfc5ad437d9d3f1a9fb12a62b81005e1ea"
+      },
+      {
+        "path": "revision_households-003.csv",
+        "data_rows": 1000,
+        "sha256": "3cc08525cb413f56a9e408f6b96010ef24ed1269c2c92bcaece9ad0ff72be438"
+      },
+      {
+        "path": "revision_households-004.csv",
+        "data_rows": 1000,
+        "sha256": "25f789e51ea4babe79d62cb8b171e5743dde4ceeed6235dfef3bfab1766891bb"
+      },
+      {
+        "path": "revision_households-005.csv",
+        "data_rows": 1000,
+        "sha256": "dc11101f8964208fd6d1eab974d0ccd226eb45ebe23a2e057221e8a98ff1a5d6"
+      },
+      {
+        "path": "revision_households-006.csv",
+        "data_rows": 506,
+        "sha256": "133081bd1d3b99e4c1e7f408f6d1f21a20f618a9566d58814bc3a6dcdfdd5cc5"
+      }
+    ]
+  },
+  "children.csv": {
+    "original_sha256": "de053d7a0bf87a2e0b142a4094968bc9a41804fdb4ea42c4d02874a98eacf570",
+    "original_rows": 7356,
+    "parts": [
+      {
+        "path": "children-001.csv",
+        "data_rows": 1000,
+        "sha256": "45e093f3964144e3aa198f7877c154affac73f412ad911d43f0b2d8be02ab86d"
+      },
+      {
+        "path": "children-002.csv",
+        "data_rows": 1000,
+        "sha256": "0bb8c66ae71b2dea79b6caa2fb1bf390f57f8baba805d16f99c0a21e3b909e21"
+      },
+      {
+        "path": "children-003.csv",
+        "data_rows": 1000,
+        "sha256": "c08704abf32c650fcde8b515f6bfdcd144f8965c03ed57f2cb95315a54df0372"
+      },
+      {
+        "path": "children-004.csv",
+        "data_rows": 1000,
+        "sha256": "659d2d37c4b7dbbbda5dab323d3941cefafaaf74bc40dbdfbecfed16f618ce2f"
+      },
+      {
+        "path": "children-005.csv",
+        "data_rows": 1000,
+        "sha256": "7e53f0b44937529dbeaace1f7eeaf592158a886ccf2f5c81ef579d7463b8ea30"
+      },
+      {
+        "path": "children-006.csv",
+        "data_rows": 1000,
+        "sha256": "10b93de0291b9697d5a0eee94d44b6c5c787738c305bb04bb3d4940ad7c7fef6"
+      },
+      {
+        "path": "children-007.csv",
+        "data_rows": 1000,
+        "sha256": "16dcb5b68ba45e1294ec1c5424b2f0d87135f23793a524e8e0f36c10c73d1c70"
+      },
+      {
+        "path": "children-008.csv",
+        "data_rows": 356,
+        "sha256": "97f82a3147bcd20d72681b0d8040d935e63d419f113ff553dfd27e4a66150ac0"
+      }
+    ]
+  }
+}

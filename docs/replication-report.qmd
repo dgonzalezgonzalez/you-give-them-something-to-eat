@@ -6,58 +6,52 @@ format: html
 number-sections: true
 ---
 
-# Paper identification and audit scope
+# Paper and audit scope
 
-Title: *You give them something to eat: Dietary Diversity, Coverage, and Catholic Aid in Rwanda*. First genuine referee revision; public default branch codex/research. No journal manuscript ID. Internal self-audit follows the public JPE TEMPLATE.qmd criteria and retained MIT template attribution; not JPE certification or an independent referee replication.
+*You give them something to eat: Dietary Diversity, Coverage, and Catholic Aid in Rwanda*. Second genuine referee revision, preparing third submission. Public branch codex/research. Internal self-audit follows the retained public JPE TEMPLATE.qmd criteria/MIT attribution. No journal manuscript ID, official JPE certification or independent full replication is asserted.
 
-# Data, rights and access
+# Data, rights and sources
 
-Default inputs are all public and supplied under data/input. No access application or credentials. Original corrected deposit: Zenodo DOI 10.5281/zenodo.15881329, actual CC BY 4.0/open metadata preserved in docs/sources/zenodo-rights.json. Old restricted deposit is excluded. Core household panel has 5,506 rows/52 numeric fields. Supplementary household panel has 5,506 matched rows; child extract 7,356 numeric rows. Names, contacts, geographic/date identifiers, free text and administrative lists are not exported. Arbitrary keys preserve linkage/assignment. Numeric checks supplement field review, not universal anonymity proof.
+All default inputs are supplied. Corrected Zenodo DOI 10.5281/zenodo.15881329 is open CC BY 4.0; actual metadata/correction/checksum are in docs/sources/zenodo-rights.json. Withdrawn/restricted predecessor excluded. Household panel: 5,506 rows/52 numeric fields; supplementary household panel: 5,506 matching rows; child panel: 7,356 numeric rows. Arbitrary linkage keys replace source identifiers; contacts, exact geography/dates, free text and administrative lists are excluded. Field review supplements numeric checks without guaranteeing universal anonymity.
 
-Source extraction verifies corrected archive MD5 and SHA256, reads exact members and checks independently pinned derived bytes before replacing inputs. Generated provenance cannot silently overwrite the immutable reference. The adversarial audit rejects altered data with a rewritten generated manifest and rejects a corrupt archive. Raw archive excluded from Git. Both source extractors are supplied; no manually extracted file can replace their verified member reads.
+Both source extractors verify archive MD5/SHA256, exact source members and independently pinned output bytes. Altered data plus rewritten generated provenance and a corrupt source archive are rejected. Original source ZIP is ignored. Source-to-extract replication starts from corrected processed panels, not all upstream questionnaire cleaning. Codebooks distinguish inherited economic/anthropometric preprocessing, food recall/transforms and unrecovered monetary price base.
 
-Upstream survey cleaning is outside the inputs. Original labels plus analytical-codebook.json document source preprocessing limits, missing replacements, monetary transformations and anthropometric scope. Initial integer diet matches all 5,414 complete source modules. Item-informed revision identifies two additional eligible endline diets; full-population intervals retain every 1,793 baseline eligible household. One-household discrepancy from published baseline count remains disclosed.
+Item information identifies 1,730 endline diets; 1,728 complete modules are the initial sample. All 1,793 baseline eligibles receive interval endpoints. The one-household discrepancy from the original 1,794 is retained. Twenty smaller public CSV views reconstruct three immutable inputs byte for byte; they are aliases for inspection, not extra observations or evidence of independent execution.
 
-- [x] Data access, origin, actual rights, transformations and codebooks supplied.
-- [x] Source/member/extract hashes and immutable references supplied.
-- [x] Corrected source only; original restricted survey release excluded.
-- [ ] Upstream raw-survey cleaning independently reconstructed (outside supplied input scope).
+# Software and execution
 
-# Software, requirements and master
+Python 3.12.10, NumPy 2.5.2, pandas 3.0.5, SciPy 1.18.1, Matplotlib 3.11.1; exact tested direct/transitive packages in requirements-lock.txt. Existing MiKTeX 25.12 supplies optional pdflatex. Optional extraction openpyxl 3.1.5; visual/cold-copy tools PyMuPDF/Pillow; initial independent Stata/MP 19 reference uses built-in commands. Requested optional LR prose screen is separate. No language model processes data or enters scientific estimates.
 
-Python 3.12.10 with NumPy 2.5.2, pandas 3.0.5, SciPy 1.18.1 and Matplotlib 3.11.1; requirements-lock.txt pins all tested transitive dependencies. Existing MiKTeX 25.12 provides optional pdflatex; no TeX installation required here. Optional source extraction openpyxl 3.1.5; visual/cold-copy checks PyMuPDF/Pillow; separate optional prose screen dependencies documented. Optional Stata/MP 19 uses built-in commands only. No language model enters scientific estimates.
+Windows 11 x64, eight available logical processors; no GPU/API/network after installation. Allow 2 GB RAM/150 MB reproduction space plus packages; physical RAM not measured. Current master/PDF runtime 56.40 seconds. Single command `python run.py --pdf`; omit --pdf for all numerical outputs; --from-source runs direct-ZIP reconstruction.
 
-Windows 11 x64, eight available logical processors. No GPU, API or network after installation. Practical allowance 2 GB RAM/150 MB reproduction space, plus packages. Physical RAM not measured. Complete revised master/PDF takes approximately 38 seconds here; installation additional.
+Master checks references, estimates initial ANCOVA, constructs conditional ratio/finite regions, solves diversified allocation and cost scenarios, accounts for child cohorts, computes ANCOVA CR2/omissions, records failed block stress tests, builds exhibits, runs three validators and compiles three times. Scientific paths are project relative. Initial 9,999 village multipliers and revised 99,999 block multipliers use seed 20260930; synthetic stress uses seed 20261001, 800 assignments/scenario and 4,999 diagnostic multipliers.
 
-Single command python run.py --pdf verifies input references, invokes initial estimate, referee_revision, finite_cluster, both exhibit builders and both validators, then compiles three times. python run.py omits PDF only. --from-source invokes both direct-ZIP extractors. Random seed 20260930, 9,999 draws. All scripts use project-relative paths.
+# Exhibits and inferential scope
 
-- [x] Human-readable README, optional software, installation and exact execution instructions.
-- [x] One master, fixed seed, documented samples/transforms/inference families.
-- [x] Distinct source reconstruction versus original data-cleaning scope.
+Output map derives actual manuscript numbering: 24 cited tables, 1 cited figure, three generated macro sets. Total generated output is 26 tables/five figures; unused supplementary plots/tables are labeled uncited. Numerical sources and builder lines are provided. Source facts, mathematical claims and citations need review beyond successful execution.
 
-# Output mapping
+Initial families: 204 primary, 96 economic, 80 food, ten heterogeneity, five observation. Revised exploratory block families: 184 GK/cash, 828 pairwise and 1,656 endpoints after affine deduplication. Separate finite families: 276 full-baseline primitive arm/endpoints and 138 observed primitives. Child baseline-cohort, endline-due and ineligible estimates each have separate fifteen-test Holm families. Separate events do not create one paper-wide 95% guarantee. All extensions retain exploratory amendment history.
 
-docs/output-map.csv derives numbering from the actual manuscript and maps all nineteen tables, four figures and both empirical macro files to builder locations and numerical outputs. Initial tables/macro values come from estimate.py; new coherent distributions, bounds, regret, costs and populations from referee_revision.py; CR2/omissions from finite_cluster.py. Source experiment facts, theory proofs and citations require source/mathematical review; a script exit does not establish them.
+# Actual verification
 
-The initially repeated nulls are deduplicated: 204 primary tests (221 display rows), 96 secondary (104 rows). Food categories 80, baseline heterogeneity ten, observation five. Revision families 184 GK/cash, 828 pairwise, 1,656 endpoint tests, removing affine repetitions. Child and ineligible outcomes have separate fifteen-test Holm families. New analyses are exploratory after genuine review; dated plan amendments retained.
+Core 33/33 with optional independent Stata output (32/32 in cold copy without it); revision 92/92; decision 14/14. Initial five ANCOVA coefficients/SEs agree with Stata within 1.3e-13/5.2e-15. Coherent CDF identities, independent vertex/adversary LPs, ratio inversion fixtures, bounded-sampling exponential comparisons, weight scaling, zero denominators, child partition and provenance checks pass. CR2 working-model expectation identities pass. These are implementation checks, not a validation of the failed multiplier approximation.
 
-# Performed checks
+Synthetic 22-block joint coverage is 695/800 with equal weights and 592/800 with unequal weights for fifteen mean comparisons. The sparse-effect scenario covers 800/800 after full-support guards. Failures remain in blocked-validation.json; the master prints them and does not pretend they are passed nominal-coverage tests. The finite conditional bound is derived separately under exchangeable quota assignment/independent blocks/fixed weights and stable potential outcomes. Full-frame sampling representativeness is not proved.
 
-Core validation: 33/33 including actual independent Stata agreement for five unchanged mean-ANCOVA effects (coefficient error below 1.3e-13, SE below 5.2e-15). Revision validation: 92/92, including coherent CDF/mean/shortfall identities, cohort partition, interval ordering, known probabilities, 100 independent LP comparisons (max error below 4.5e-15), tamper rejection and numeric child extract keys. CR2 checks its stated working-model sandwich expectation identities. These tests do not prove selection ignorability or exact finite-design interval coverage.
+Current cold-output comparison: 80/80, including 31-page PDF text. Separate-environment published-source check for this third submission remains pending. The existing fresh-environment JSON records the earlier scientific commit 63987ae and its 32-page PDF; it must not be interpreted as checking the current source. Runtime metadata, PDF timestamps and optional Stata reference are excluded from byte comparisons. Historical first-submission fresh-install and second-submission 60-comparison audits remain recoverable in Git.
 
-Final cold-output audit used the installed interpreter and passed all 60 estimate/table/macro/PNG/PDF-text comparisons for the current revision. Each audit JSON records actual scope. First-submission published commit 046ce79 separately passed 29 comparisons after a genuinely fresh official-PyPI install. Published revision commit 63987ae075eb314b1b771cdb930d5d4ec21caed9 was exported with git archive, run in that separately installed locked environment, and passed all 60 comparisons, including 32-page PDF text. The master took 34.45 seconds. Optional PyMuPDF 1.28.2 was added from official PyPI for PDF comparison; no fresh reinstallation of the scientific environment is asserted for this revision. Runtime metadata, PDF timestamps and optional Stata reference excluded from byte checks.
+All 31 rendered pages/contact sheets were inspected; main decision tables, figure, title and proofs checked at higher resolution. Current log has no overfull boxes or unresolved references. Compilation and visual review are distinct checks.
 
-Rendered contact sheets and higher-resolution title/tables were visually reviewed. The overlong compound anthropometric label and a lone bibliography spill page were repaired in source. Final 32-page PDF was rerendered after all edits and inspected; no clipped content or unresolved references remain. Render checks are independent of compilation success.
+# Limits and classification
 
-# Interpretation and classification
+HDDS is household food access rather than child nutrition. The finite allocation bound is conditional, wide, and not an impossibility theorem. Smaller block-region losses are explicitly exploratory. Transport needs comparable weighting, original delivery, stable proportional costs and no changed cross-village interference. Cash overhead was standardized to a separate national program of 56,127 beneficiary households for each transfer amount. Mixed-program marginal/activation costs and hard realized budgets are not observed. Cost/take-up scenarios hold effects fixed. Saving theory is illustrative and not identified mediation.
 
-HDDS is household food access, not child nutritional adequacy. Coherent ratio inference is village-cluster asymptotic, not exact blocked randomization; CR2 is a defined working-model sensitivity. Full-baseline missing-diet endpoints have sampling bands; initial coarse regions do not. Costs fixed; take-up/cost grids hold effects fixed and are accounting scenarios, not causal forecasts. Transport requires stable package delivery/no cross-village interference. Hard realized caps/activation overhead need further inputs. Model is an illustration, not identified saving mediation.
+- [x] Internal checks and current cold-output reproduction.
+- [x] Corrected processed-source extraction and independent immutable references.
+- [x] Independent Stata check of five initial mean coefficients/SEs only.
+- [x] Historical fresh official-PyPI installation, scope recorded.
+- [ ] Independent external full replication or official JPE certification.
+- [ ] Durable DOI archive (no repository tag is represented as one).
+- [ ] Genuine simulated acceptance recommendation.
 
-- [x] Full internal reproduction of checked scientific outputs.
-- [x] Independent Stata confirmation of the five initial mean coefficients/SE only.
-- [x] Corrected processed-source-to-extract verification.
-- [x] Historical first-submission fresh-install reproduction, scope recorded.
-- [ ] Independent external replication or official JPE certification.
-- [ ] ChatGPT simulated recommendation of acceptance (first report rejects).
-
-The genuine first report, all eighteen responses and future reports are preserved under docs/referee. Simulated acceptance would remain distinct from a real journal decision. Technical repairs alone do not establish a leading-general-interest contribution.
+Both genuine Pro reports reject at the unchanged leading general-interest standard. Verbatim reports and all-point responses are preserved. Third-submission review has not yet occurred. No recommendation, execution coverage or real journal decision is fabricated.

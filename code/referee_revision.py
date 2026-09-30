@@ -10,8 +10,10 @@ import numpy as np
 import pandas as pd
 from scipy.stats import t
 from estimate import ARMS, TX, policy_vertices, regress, contrast, policy_c, simultaneous, holm
+from blocked_inference import hajek_block,bounded_hajek_outer
 
 ROOT=Path(__file__).resolve().parents[1]; OUT=ROOT/'output'
+REVISION_DRAWS=99999
 GROUPS=[['cereals'],['tubers'],['vitaveg','leafyveg','otherveg'],['vitaafruits','otherfruits'],
         ['organmeat','fleshmeat'],['eggs'],['fish'],['legumes'],['milk'],['oils'],['sweets'],['spices']]
 
@@ -31,26 +33,19 @@ def objective(score,name):
     return -np.maximum(k-score,0)/k
 
 def hajek(sample,values,assignment):
-    """Six normalized arm totals; one distribution supplies every transformation.
-
-    Village linearization scores under independent-cluster working inference.
-    Unequal block probabilities enter weights; no outcome-specific regression.
-    """
-    means=np.zeros(6); influence=np.zeros((248,6))
-    for i,a in enumerate(ARMS):
-        keep=(sample.arm==a).to_numpy()&np.isfinite(values)
-        s=sample.loc[keep];v=np.asarray(values)[keep]
-        w=s.samp_wgt.to_numpy()/s.block.map(assignment[a]).to_numpy()
-        means[i]=np.average(v,weights=w)
-        np.add.at(influence[:,i],s.vid.to_numpy(dtype=int)-1,w*(v-means[i])/w.sum())
-        g=s.vid.nunique()
-        influence[:,i]*=np.sqrt(g/(g-1))
+    """One distribution, shared block scores, and retained cross-arm covariance."""
+    means,influence,_=hajek_block(sample,values,assignment,ARMS)
     return means,influence
 
 def row_from(means,inf,c,**labels):
-    b=float(c@means);u=inf@c;s=float(np.linalg.norm(u));critical=float(t.ppf(.975,247))
-    return {**labels,'estimate':b,'se':s,'p':float(2*t.sf(abs(b/s),247)) if s>1e-12 else 1.,
-            'lo':b-critical*s,'hi':b+critical*s},u
+    df=inf.shape[0]-1
+    b=float(c@means);u=inf@c;s=float(np.linalg.norm(u));critical=float(t.ppf(.975,df))
+    row={**labels,'estimate':b,'se':s,'p':float(2*t.sf(abs(b/s),df)) if s>1e-12 else 1.,
+         'lo':b-critical*s,'hi':b+critical*s,'inference_blocks':inf.shape[0],'pointwise_df':df}
+    if s<=1e-12 and abs(c.sum())<1e-12:
+        radius=(12. if labels.get('outcome')=='mean' else 1.)*np.maximum(c,0.).sum()
+        row['lo'],row['hi']=-radius,radius
+    return row,u
 
 def policy_vector(q):return np.array([q.get(a,0.) for a in ARMS])
 
@@ -83,13 +78,25 @@ def main():
     p=json.loads((OUT/'policies.json').read_text());vertices=p['vertices']
     allpol={'Gikuriro':{'Gikuriro':1.},**vertices}
     points=[];pointinf=[];bounds=[];boundinf=[];distributions=[];hajek_arm=[];pairrows=[];pairinf=[]
-    fitted={};endpoint_fits={}
+    fitted={};endpoint_fits={};finite_rows=[];finite_pairs=[]
     for name in objects:
         vals=objective(score,name);vals[~np.isfinite(score)]=np.nan
         mu,I=hajek(full,vals,assignment);fitted[name]=(mu,I)
+        if name=='mean':
+            pd.DataFrame(I,columns=ARMS,index=sorted(full.block.unique())).rename_axis('block').to_csv(OUT/'block_scores_mean.csv')
+            pd.DataFrame(I.T@I,columns=ARMS,index=ARMS).rename_axis('arm').to_csv(OUT/'block_covariance_mean.csv')
         mlo,Ilo=hajek(full,objective(lower,name),assignment)
         mhi,Ihi=hajek(full,objective(upper,name),assignment)
         endpoint_fits[name]=(mlo,Ilo,mhi,Ihi)
+        support_range=(0.,12.) if name=='mean' else ((0.,1.) if name.startswith('survival') else (-1.,0.))
+        finite={}
+        for scope,observed,family in [('identified_diets',vals,138),('lower_endpoint',objective(lower,name),276),('upper_endpoint',objective(upper,name),276)]:
+            center,lc,uc,info=bounded_hajek_outer(full,observed,assignment,ARMS,full,support_range,multiplicity=family)
+            finite[scope]=(lc,uc)
+            for ai,a in enumerate(ARMS):
+                finite_rows.append({'outcome':name,'arm':a,'scope':scope,'estimate':center[ai],
+                                    'finite_lower':lc[ai],'finite_upper':uc[ai],'alpha':.05,
+                                    'primitive_family_size':family})
         for ai,a in enumerate(ARMS[1:]):
             c=np.zeros(6);c[ai+1]=1;c[0]=-1
             rr,uu=row_from(mu,I,c,outcome=name,arm=a);hajek_arm.append(rr)
@@ -98,6 +105,12 @@ def main():
             rr,uu=row_from(mu,I,c,outcome=name,policy=label);points.append(rr);pointinf.append(uu)
         for left,right in itertools.combinations(allpol,2):
             c=policy_vector(allpol[left])-policy_vector(allpol[right])
+            cp=np.maximum(c,0.);cn=np.minimum(c,0.)
+            for scope,(lc,uc) in [('identified_diets',finite['identified_diets']),
+                                   ('weighted_baseline', (finite['lower_endpoint'][0],finite['upper_endpoint'][1]))]:
+                finite_pairs.append({'outcome':name,'left':left,'right':right,'scope':scope,
+                                     'finite_lower':float(cp@lc+cn@uc),'finite_upper':float(cp@uc+cn@lc),
+                                     'alpha':.05})
             rr,uu=row_from(mu,I,c,outcome=name,left=left,right=right);pairrows.append(rr);pairinf.append(uu)
             pos=np.maximum(c,0);neg=np.minimum(c,0)
             for side,aa,bb,IA,IB in [('lower',mlo,mhi,Ilo,Ihi),('upper',mhi,mlo,Ihi,Ilo)]:
@@ -107,8 +120,22 @@ def main():
     pointkeys=[(canonical(r['outcome']),r['policy']) for r in points]
     pairkeys=[(canonical(r['outcome']),r['left'],r['right']) for r in pairrows]
     boundkeys=[(canonical(r['outcome']),r['left'],r['right'],r['endpoint']) for r in bounds]
-    simultaneous(points,pointinf,pointkeys);simultaneous(pairrows,pairinf,pairkeys);simultaneous(bounds,boundinf,boundkeys)
+    def support(rows):
+        limits=[]
+        for row in rows:
+            left='Gikuriro' if 'policy' in row else row['left']
+            right=row.get('policy',row.get('right'))
+            c=policy_vector(allpol[left])-policy_vector(allpol[right])
+            radius=(12. if row['outcome']=='mean' else 1.)*np.maximum(c,0.).sum()
+            limits.append((-radius,radius))
+        return limits
+    critical_diagnostics=[]
+    for rr,ii,kk in [(points,pointinf,pointkeys),(pairrows,pairinf,pairkeys),(bounds,boundinf,boundkeys)]:
+        simultaneous(rr,ii,kk,draws=REVISION_DRAWS,mc_upper=True,zero_bounds=support(rr),critical_diagnostics=critical_diagnostics)
+    pd.DataFrame(critical_diagnostics).to_csv(OUT/'multiplier_quantile_sensitivity.csv',index=False)
     pd.DataFrame(points).to_csv(OUT/'hajek_policy_effects.csv',index=False)
+    pd.DataFrame(finite_rows).to_csv(OUT/'finite_arm_regions.csv',index=False)
+    pd.DataFrame(finite_pairs).to_csv(OUT/'finite_policy_regions.csv',index=False)
     pd.DataFrame(hajek_arm).to_csv(OUT/'hajek_arm_effects.csv',index=False)
     pairs=pd.DataFrame(pairrows);pairs.to_csv(OUT/'policy_pairwise.csv',index=False)
     bounded=pd.DataFrame(bounds);bounded.to_csv(OUT/'population_bounds.csv',index=False)
@@ -149,8 +176,10 @@ def main():
     tolerances=[]
     for tolerance in [.25,.5,1.]:
         for r in reg[reg.outcome=='mean'].itertuples():
-            tolerances.append({'tolerance_groups':tolerance,'policy':r.policy,'observed_sample_certified':r.regret_upper_95<=tolerance,
-                               'baseline_population_certified':r.population_regret_upper_95<=tolerance})
+            tolerances.append({'tolerance_groups':tolerance,'policy':r.policy,
+                               'observed_satisfies_exploratory_bound':r.regret_upper_95<=tolerance,
+                               'weighted_baseline_satisfies_exploratory_bound':r.population_regret_upper_95<=tolerance,
+                               'coverage_validated':False,'scope':'Illustrative block-region tolerance arithmetic, not a reliable finite-design certificate'})
     pd.DataFrame(tolerances).to_csv(OUT/'policy_tolerances.csv',index=False)
     # Explicit missing-mean sensitivity stays within each individual's observed interval.
     sensitivity=[]
@@ -178,6 +207,7 @@ def main():
         cc=p['costs'].copy();r=costframe.loc['Gikuriro']
         cc['Gikuriro']=float(r.cost_beneficiary*(1-avert+avert*r.compliance_eligibles))
         settings.append((f'GK_avertable_share_{avert}',cc))
+    (OUT/'cost_inputs.json').write_text(json.dumps({label:{'costs':cc,'budget':cc['Gikuriro']} for label,cc in settings},indent=2),encoding='utf8')
     for label,cc in settings:
         vv=policy_vertices(cc,cc['Gikuriro'])
         gain={a:sum(effects[k]*q for k,q in mix.items()) for a,mix in vv.items()}
@@ -246,7 +276,12 @@ def main():
               'endpoint_family_size':len(set(boundkeys)),
               'display_point_rows':len(points),'display_pair_rows':len(pairs),'display_endpoint_rows':len(bounds),
               'fitted_mean_best':reg[reg.outcome=='mean'].sort_values('fitted_regret').iloc[0].policy,
-              'inference':'Village cluster linearization / shared max-t; asymptotic, not exact blocked-design inference'}
+              'inference_blocks':int(full.block.nunique()),'bootstrap_draws':REVISION_DRAWS,
+              'zero_variance_rows_guarded':sum(r['zero_variance_guard'] for r in points+pairrows+bounds),
+              'assignment_probability_scope':'Conditional within-block exchangeability given realized counts; original randomization program unavailable',
+              'mc_critical_scope':'99% Monte Carlo upper order statistic for the 95% multiplier quantile, within each declared family',
+              'inference':'Exploratory independent-block ratio max-t; finite-block stress undercoverage documented. Separate finite conditional-assignment outer regions supplied.',
+              'finite_region_scope':'Fixed weighted released baseline sample under independent, conditional exchangeable quota assignment; not unconditional proof of full-frame sampling representativeness'}
     (OUT/'revision_metadata.json').write_text(json.dumps(metadata,indent=2),encoding='utf8')
     print(json.dumps(metadata,indent=2));print(reg.to_string(index=False))
 

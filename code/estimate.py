@@ -90,26 +90,54 @@ def holm(p):
     adj[order]=np.minimum(1,np.maximum.accumulate((len(p)-np.arange(len(p)))*p[order]))
     return adj
 
-def simultaneous(rows, influences, keys=None):
+def simultaneous(rows, influences, keys=None, *, draws=None, seed=SEED,
+                 mc_upper=False, zero_bounds=None, critical_diagnostics=None):
     """Joint max-t Rademacher multiplier bands, shared cluster draws."""
     keys=keys or list(range(len(rows)))
     unique=list(dict.fromkeys(keys));first=[keys.index(k) for k in unique]
     I=np.column_stack([influences[i] for i in first]);se=np.sqrt((I*I).sum(axis=0))
     active=se>1e-12
     Z=I[:,active]/se[active]
-    rng=np.random.default_rng(SEED)
+    draws=BOOT if draws is None else draws
+    rng=np.random.default_rng(seed)
     maxima=[]
-    for start in range(0,BOOT,400):
-        B=min(400,BOOT-start)
-        e=rng.choice([-1.,1.],size=(B,248))
-        maxima.extend(np.max(np.abs(e@Z),axis=1))
+    for start in range(0,draws,400):
+        B=min(400,draws-start)
+        e=rng.choice([-1.,1.],size=(B,I.shape[0]))
+        maxima.extend(np.max(np.abs(e@Z),axis=1) if active.any() else np.zeros(B))
     maxima=np.asarray(maxima)
     crit=float(np.quantile(maxima,.95,method='higher'))
+    empirical_critical=crit
+    if mc_upper:
+        from scipy.stats import binom
+        rank=min(draws,int(binom.ppf(.99,draws,.95))+1)
+        crit=float(np.sort(maxima)[rank-1])
+        if critical_diagnostics is not None:
+            for n in [9999,29999,99999]:
+                if n>draws:continue
+                prefix=maxima[:n];upper_rank=min(n,int(binom.ppf(.99,n,.95))+1)
+                critical_diagnostics.append({'distinct_tests':len(unique),'draws':n,
+                    'empirical_95_quantile':float(np.quantile(prefix,.95,method='higher')),
+                    'mc_upper_rank':upper_rank,'mc_upper_critical':float(np.sort(prefix)[upper_rank-1]),
+                    'scope':'Nested-draw Monte Carlo sensitivity only; no sampling-coverage validation'})
     all_se=np.array([np.linalg.norm(u) for u in influences])
-    for row,s in zip(rows,all_se):
+    for i,(row,s) in enumerate(zip(rows,all_se)):
         row['sim_lo']=row['estimate']-crit*s;row['sim_hi']=row['estimate']+crit*s
-        row['p_max_t']=float((1+(maxima>=abs(row['estimate']/s)).sum())/(BOOT+1)) if s>1e-12 else 1.
+        row['p_max_t']=float((1+(maxima>=abs(row['estimate']/s)).sum())/(draws+1)) if s>1e-12 else 1.
         row['joint_critical']=crit
+        if mc_upper:
+            row['empirical_critical']=empirical_critical
+            row['multiplier_draws']=draws
+            row['mc_upper_rank']=rank
+        if zero_bounds is not None:
+            lower,upper=zero_bounds[i]
+            row['zero_variance_guard']=bool(s<=1e-12)
+            if s<=1e-12:
+                row['sim_lo'],row['sim_hi']=lower,upper
+                row['lo'],row['hi']=lower,upper
+            else:
+                row['sim_lo']=max(lower,row['sim_lo'])
+                row['sim_hi']=min(upper,row['sim_hi'])
     for ix,p in zip(first,holm([rows[i]['p'] for i in first])): rows[ix]['p_holm']=float(p)
     for i,key in enumerate(keys):
         reference=rows[first[unique.index(key)]]

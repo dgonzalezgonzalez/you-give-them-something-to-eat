@@ -1,0 +1,10 @@
+{
+  "baseline_flagged_cohort": 2265,
+  "all_endline_due": 3017,
+  "baseline_cohort_linked_endline": 2213,
+  "endline_due_baseline_cohort": 2211,
+  "endline_due_outside_baseline_cohort": 806,
+  "scope": "Baseline source anthropometry flag fixes membership and assignment; observed follow-up source scores still select regressions. Not a complete birth cohort or selection-robust nutrition effect.",
+  "multiplicity": "Separate fifteen-test Holm family for the exploratory baseline-cohort sensitivity",
+  "holm_rejections_05": 0
+}

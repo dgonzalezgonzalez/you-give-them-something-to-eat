@@ -1,28 +1,53 @@
-# Response tracker for the genuine second report
+# Response to the genuine second referee report
 
-Report: round-2-report.md, preserved verbatim. Frozen submission: 52e7d7e799c639acce45a1d8c61259dc5d366f5b. Recommendation: reject at the unchanged leading general-interest standard. The referee inspected source/code and independently checked published-output arithmetic and a synthetic design counterexample; it did not execute household/child records or inspect/compile the PDF.
+Report: [round-2-report.md](round-2-report.md), preserved verbatim. Reviewed submission: **52e7d7e799c639acce45a1d8c61259dc5d366f5b**. Recommendation: **reject**, at the unchanged leading general-interest standard. This response accompanies the second-report revision, preparing a third submission. It does not claim that repairs establish acceptance, recover unavailable assignment restrictions, or independently reproduce the household analysis.
 
-This is an open implementation tracker, not a completed response letter. Previously reported numerical certificates inherit the unresolved inference objection and must be recomputed before any revised guarantee is emphasized.
+The main change is withdrawal of unsupported guarantees. The original village-ratio procedure omitted blocked cross-arm covariance. Its replacement retains that dependence but still fails finite-block stress tests. Smaller block-region losses now appear only as exploratory sensitivities. A separate, proved finite conditional-assignment outer region supplies the stated coverage calculation, with a wide loss bound. The chosen allocation may diversify over the entire six-package polytope.
 
-| Point | Required response | Current state |
-|---|---|---|
-| M1 | Specify the decision problem and economic implication; directly engage missing-outcome/multiple-treatment decision literature | Open; technical repairs cannot establish journal merit |
-| M2 | Trace assignment probabilities to design/protocol or an explicit conditional-exchangeability assumption; distinguish expanded sample from frame | Source assignment section inspected; original randomization code not found in released replication scripts; open |
-| M3 | Qualify affirmative effects consistently and display large-cash/control full-baseline identification region and confidence envelope | Open; old bands require corrected inference |
-| M4 | Optimize a regret certificate over the convex hull; separate fitted optimum, certificate optimum, and statistical minimax rule | Exploratory LP independently agrees with referee's 0.655955 under old bands; not yet a revised headline result |
-| M5 | Child cohort accounting and baseline-defined cohort sensitivity where flags permit | Open |
-| M6 | Justify ratio/endpoint inference under blocked assignment; preserve cross-arm dependence; sparse outcomes and Monte Carlo sensitivity | Open; central methodological repair; ANCOVA CR2 is insufficient |
-| M7 | Local transport restrictions and explicit deployment target | Open; conditional deployment in comparable villages is intended, not demonstrated scale invariance |
-| M8 | Apply cost scenarios to headline estimands and certificates; state nationally standardized overhead convention | Original source costing section inspected; implementation open |
-| M9 | Retain or relocate illustrative saving theory; no identified mechanism or significance threshold claim | Open; no new identifying variation available |
-| M10 | Independently executable frozen assessment, durable archive and recovered monetary units where possible | Public package present; local uploads remain blocked; no independent household replication or new archive claimed |
-| m1 | Maintain title/context distinction | Already explicit; retain during restructuring |
-| m2 | Keep assignment/selection qualifications local | Open editorial audit |
-| m3 | Preserve dietary ceiling qualification | Already repaired; no new fix needed |
-| m4 | Preserve derived exhibit/sample counts | Already generated; new exhibits require updated output map |
-| m5 | Preserve accurate baseline mapping description | Already repaired |
-| m6 | Correct genuine UTF-8 mojibake in self-audit author field; inspect final PDF | Author field corrected; future PDF QA pending substantive revision |
-| m7 | Lead with population/decision analysis, consolidate original ANCOVA/coarse crosswalk in appendix, qualify variance terminology and add literature | Open |
-| m8 | Preserve exploratory amendment history | Open new amendment, original history retained |
+## Major points
 
-The leading-general-interest contribution objection remains a distinct scientific judgment. No acceptance, R&R, independently reproduced household analysis, or exact 95% coverage is claimed. Independent preliminary optimization has been kept outside the frozen submission; it is conditional on the old bands and cannot resolve M6 by itself.
+**M1. Contribution and treatment-choice literature.** The introduction and decision section specify the donor, fixed weighted-baseline target, expected standardized-unit budget, probabilities, diet objective, regret comparator and uncertainty region. They directly engage Manski (2007), *Minimax-Regret Treatment Choice with Missing Outcome Data*, and Stoye (2007), *Minimax Regret Treatment Choice with Incomplete Data and Many Treatments*. The economic implication is the distinction between a known-mean vertex and a diversified region-protected choice; empirical protection depends sharply on inference. I claim an empirical decision reanalysis, not new identification or statistical minimax theory. **General-interest merit remains for the referee to judge; technical corrections are not proof of sufficient novelty.** No new field variation is invented.
+
+**M2. Assignment probabilities and population.** The setting distinguishes observed counts from the assignment law. The parent describes computer randomization in 22 blocks; its inspected release lacks the assignment program. The public registry does not establish quotas and lists smaller-cash counts inconsistent with its stated total; the design note preserves that discrepancy. Conditional inference explicitly assumes exchangeable labels given released block counts and independent block assignments. Uniform quota assignment justifies n_ba/n_b under that assumption; more restrictive mechanisms need not. The target is the released baseline sample with fixed positive weights. Full-frame representativeness requires additional household sampling/observation assumptions, not merely matching expansion weights.
+
+**M3. Affirmative large-cash effects.** Main Table 3 includes large cash minus control for the weighted baseline sample. Its estimated item-informed region is [0.171, 0.731] groups, while the finite conditional envelope is [-11.257, 12.000]. The text distinguishes higher observed outcomes/initial ANCOVA from an established positive full-baseline effect, which is not claimed. Pure large cash is unaffordable; no out-of-class nine-policy multiplier band is fabricated. Selection and target qualifications accompany all budget comparisons.
+
+**M4. Choice over the convex hull.** `policy_allocation.py` solves region-based regret over all six probabilities. Proposition 2/proof limit only the known-mean comparator to vertices. Fitted maximization, confidence-region minimization and repeated-sampling statistical minimax regret are distinguished. Independent primal adversaries match each dual certificate. Weighted-baseline block sensitivity improves from 0.907607 at its best vertex to 0.570058 with diversification; the finite region improves from 12 to 9.440422. The former is unvalidated, the latter broad and conditional. Neither proves all valid procedures must fail at a half-group tolerance. The claim that failed vertex certificates necessitate more data is withdrawn. Main Tables 4–5/Figure 1 show shares and fixed-Gikuriro frontiers.
+
+**M5. Child cohorts.** `child_cohorts.py` fixes membership using baseline eligibility and the pre-treatment source anthropometry flag. The cohort has 2,265 children; 2,213 have endline rows. The 3,017 endline-due children include 2,211 cohort members and 806 outside it. The latter are not all labeled newborns. Main Table 7 shows assignment counts, distinguishing physical measurement from nonmissing follow-up scores. Baseline-cohort sensitivity retains baseline assignment/weights regardless of endline eligibility/due status. Follow-up availability still selects observations. No coefficient survives its own fifteen-test Holm family (Appendix Table 11); this establishes neither zero full-cohort effects nor equivalence to the parent's child specification.
+
+**M6. Blocked ratio/endpoint inference, sparse outcomes and Monte Carlo error.** `hajek_block` aggregates common vectors at 22 assignment blocks before covariance. The exact 90-assignment counterexample verifies the omitted dependence and 90% variance result. The appendix derives asymptotic positive-semidefinite excess covariance under independent blocks and stable ratio denominators, with no finite-22-block coverage guarantee. Sensitivities use 99,999 shared block multipliers, a 99% Monte Carlo upper quantile, and nested 9,999/29,999/99,999 diagnostics. Zero variances receive deterministic support; 121 displayed rows are guarded. Pure lower's historical one-group result disappears even in current exploratory arithmetic (upper 1.019257).
+
+Coverage stress **fails**: actual quota structure, 800 synthetic assignments/scenario and fifteen arm-pair mean contrasts yield 695/800 with equal weights and 592/800 with unequal weights. Main Table 2 and `blocked-validation.json` retain these failures; no inflation is tuned to erase them. The separate finite outer intervals use Hoeffding's without-replacement exponential comparison and invert the fixed true-mean residual with the realized ratio denominator. A 276-primitive full-baseline union bound permits cross-arm dependence. Its assumptions/proof are explicit, and its conservatism is not confused with a sharp identified set. Independent small-assignment, scaling, exponential-moment and zero-denominator checks pass; they do not prove actual sampling representativeness. ANCOVA CR2 remains a different-estimator diagnostic.
+
+**M7. Deployment.** Comparable villages must retain original eligibility, saturation, weighting and delivery. Stable proportional costs and unchanged cross-village price/network interference are maintained transport restrictions. Internal assignment validity does not identify new-scale effects or guarantee implementability. Expected costs, exact finite caps, universal assistance and sample targets are distinguished locally.
+
+**M8. Aligned costs and overhead.** All 32 settings rebuild vertices and optimize using headline coherent means and the same common arm regions. `allocation_cost_sensitivity.csv` records both methods, expenditures, shares, fitted winner and upper feasibility margin; Main Table 6 summarizes selected settings. Original ANCOVA cost results are an uncited audit crosswalk. The parent costs each cash amount as a separate national-scale program for 56,127 beneficiary households across eight districts. This average-unit convention is stated beside the budget constraint, not interpreted as mixed-program marginal/activation costs. Effects stay fixed in scenarios; take-up forecasts or hard budgets require other inputs.
+
+**M9. Saving theory.** Model/proof move to Appendix B. Interior comparative statics and the dietary ceiling remain; no structural parameters are calibrated. Initial saving has pointwise p<0.001 and economic-family Holm p=0.052. The declared five-percent family supports no claim of significance; threshold rhetoric supplies no mechanism identification. Bundled assignment cannot separate returns, fees, risk, commitment or other components.
+
+**M10. Independent assessment, archive and units.** The master includes all allocation/cohort/finite calculations and failed stress tests: core 33 checks (32 without optional Stata output), revision 92, decision 14 and cold-copy 80/80. Current proof/data/figure/PDF provenance is supplied. Twenty smaller public CSV views reconstruct three existing immutable numeric extracts; they may help file-limited readers but do not prove independent household execution. Separate-environment published-source audit scope is recorded in the current README/JSON. Optional Stata checks only five unchanged initial mean effects.
+
+The second referee did not inspect microdata/PDF; no contrary execution claim is made. Browser security blocked local attachments despite direct approval; no workaround upload occurred. The permitted route remains public repository links. Genuine report artifact links are preserved; an inbound arithmetic-file download timed out, so no locally retrieved referee script/JSON is claimed. Inspected monetary labels still do not establish a defensible conversion price base; transforms/recall are stated without invented dollars/PPP. **Independent external full replication and a durable DOI archive remain unfulfilled.** A versioned repository/bundle is not an immutable external archive or JPE certification.
+
+## Minor points
+
+**m1. Context.** Required title/Mark 6:37/CRS context remain; religious affiliation was not randomized.
+
+**m2. Assignment/selection.** Qualifications accompany large-cash, budget, child and ineligible results. Assignment is not receipt; observed ratios are not full-baseline causal means by randomization alone; score availability is not zero attrition.
+
+**m3. Ceiling.** Saving illustration retains reachable-threshold and already-at-twelve qualifications. No strict dietary response at the ceiling.
+
+**m4. Counts.** Three generated macro sets and actual output map: 24 cited tables/one figure, 26 tables/five figures generated in total, unused outputs labeled. Cohort partitions and estimation counts are generated rather than guessed from linkage.
+
+**m5. Baselines.** Actual baseline-row mapping, weighted within-block imputation and missing indicators are described. Source lags are not mislabeled reconstructed observed baselines.
+
+**m6. Encoding/PDF.** Author field is actual UTF-8; accented names render correctly. Current 31-page PDF/contact sheets and detailed tables/figure/proofs were inspected. No overfull boxes or undefined references remain. Actual LR screen is bound to that PDF, with no human-authorship inference or unmeasured neural score.
+
+**m7. Ordering/variance.** Conditional target and allocation problem lead, followed by finite regions/block failures and results. Saving, initial ANCOVA and coarse bounds are in appendices. Original village CR1, exploratory block ratio and CR2 working-model SEs are labeled separately; finite outer intervals do not rely on sandwich SEs.
+
+**m8. History.** Original analysis plan remains unchanged. Dated amendments record the covariance flaw, coverage failures, finite regions, diversified class, cohort/cost changes and exact public views. Frozen submissions/genuine reports preserve abandoned claims. No retrospective preregistration is claimed.
+
+## Remaining judgment
+
+Every comment has a substantive response without manufactured evidence. Conditional design, broad finite protection, unreliable smaller approximation, full external replication, archive and general-interest contribution remain limitations. A genuine third review is needed; this response does not lower the journal standard or supply acceptance.
