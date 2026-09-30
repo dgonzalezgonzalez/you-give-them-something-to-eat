@@ -34,7 +34,7 @@
     "paper_pdf_page_text": true
   },
   "all_passed": true,
-  "pdf_pages": 25,
+  "pdf_pages": 24,
   "excluded_from_byte_comparison": [
     "runtime metadata",
     "PDF creation timestamps",
@@ -43,7 +43,7 @@
   "master": {
     "python": "3.12.10",
     "platform": "Windows-11-10.0.26200-SP0",
-    "seconds": 17.04798698425293,
+    "seconds": 15.032562732696533,
     "pdf_compiled": true,
     "source_reextracted": false
   }
