@@ -1,0 +1,18 @@
+{
+  "round": 5,
+  "status": "prepared_not_submitted",
+  "prepared_UTC": "2026-09-30T23:03:09.086254+00:00",
+  "destination": "https://chatgpt.com/c/6abd01e3-4184-83ed-9ff0-e9475053b958",
+  "referee_setting": "Pro 5 of5 visibly confirmed before submission",
+  "review_tag": "v0.5.0",
+  "scientific_commit": "fd958c196d6b68a36430890ca28c30e349031dff",
+  "review_freeze_commit": null,
+  "paper_sha256": "f8f46c5fc0c0db2db6507a24b0b32f55fccd315a24724b55a9936a2312b5272c",
+  "paper_bytes": 573280,
+  "prompt_sha256": "bedf97b9b11df3b6eb4f05c27d0a5e635c4576d7e06943a908dfb034f2421ed1",
+  "prompt_characters": 7455,
+  "canonical_quota_receipt_sha256": "adb0a6c4abb40fc3079a85ab42077918ebc7f9324912aa013c5de7bfeb841399",
+  "hosted_run_id": 36788039531,
+  "hosted_receipt": "docs/hosted-reproduction-fd958c1.json",
+  "scope": "Public-link ordinary-text review request only. Earlier security-denied local scientific uploads are not retried or worked around. No fifth recommendation or household/PDF execution is asserted before the actual response."
+}

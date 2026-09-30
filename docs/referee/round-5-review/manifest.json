@@ -1,0 +1,132 @@
+{
+  "canonical_source": "output/quota-loss-bound.json",
+  "canonical_sha256": "adb0a6c4abb40fc3079a85ab42077918ebc7f9324912aa013c5de7bfeb841399",
+  "files": [
+    {
+      "path": "docs/referee/round-5-review/model-Control.json",
+      "bytes": 14835,
+      "sha256": "45c0da3f7f7fc88989e9c3ea636fec5f975670cca98c669d925554d6fc7fc546"
+    },
+    {
+      "path": "docs/referee/round-5-review/model-Gikuriro.json",
+      "bytes": 15019,
+      "sha256": "d89dab100a1a7f40f685ab6258e9834185633a8a29b26c1a2cc52350dcdf1ab8"
+    },
+    {
+      "path": "docs/referee/round-5-review/model-Lower.json",
+      "bytes": 15151,
+      "sha256": "3a3e7d606560571992020ae8a9ad4471e2109202431a65aae9a4ac403690a07b"
+    },
+    {
+      "path": "docs/referee/round-5-review/model-Middle.json",
+      "bytes": 15118,
+      "sha256": "a97f5d14c51e52f826ac22519f276ea5a90ab856b8fb077a83f5b6b66cfb0435"
+    },
+    {
+      "path": "docs/referee/round-5-review/model-Upper.json",
+      "bytes": 15161,
+      "sha256": "467a59d24917e4eee1b1922b63ef5140af665dca6cec38c78ca91062b77e9ed4"
+    },
+    {
+      "path": "docs/referee/round-5-review/model-Large.json",
+      "bytes": 15143,
+      "sha256": "481bbbade17b36236125639d8a732a5a42f449a8cf7355adf3eeb50d9c42dfea"
+    },
+    {
+      "path": "docs/referee/round-5-review/witness-mean-Control.json",
+      "bytes": 8552,
+      "sha256": "ca608c015c6de87cca2f109f51e08bd8c2f442abaaeff984992753f34c370f78"
+    },
+    {
+      "path": "docs/referee/round-5-review/witness-mean-Gikuriro.json",
+      "bytes": 8471,
+      "sha256": "38cc76d20aae489d82d689f710c3ad4ed23f1216ea5de5fd275f6aa1a0df18b9"
+    },
+    {
+      "path": "docs/referee/round-5-review/witness-mean-Lower.json",
+      "bytes": 8713,
+      "sha256": "42c15347bb0cd34ae42505dbec21bb22d63ab182341a177d5bd27cfe6faadd38"
+    },
+    {
+      "path": "docs/referee/round-5-review/witness-mean-Middle.json",
+      "bytes": 8653,
+      "sha256": "447340baa16a117dcb8529f52d67af59e672ec32824f5eb99f111ded659be32b"
+    },
+    {
+      "path": "docs/referee/round-5-review/witness-mean-Upper.json",
+      "bytes": 8607,
+      "sha256": "c46b3fefe663e4c710cc4beeaa3a3a6b7b3027ae627dda46a9b27c1918a60331"
+    },
+    {
+      "path": "docs/referee/round-5-review/witness-mean-Control-Large.json",
+      "bytes": 8724,
+      "sha256": "e896af3772cbffd7acecd99991ce5809085e83586e2295b90788181dfeb5038c"
+    },
+    {
+      "path": "docs/referee/round-5-review/witness-mean-Lower-Large.json",
+      "bytes": 8702,
+      "sha256": "46aa8da09a06762869d059bce9ac2377e98fbeb9c0d273e21f999d9d4344d474"
+    },
+    {
+      "path": "docs/referee/round-5-review/witness-mean-Middle-Large.json",
+      "bytes": 8865,
+      "sha256": "71f73ab689ca99a8b819d1dc68692234e0d6bd76a35d6c675a1e013697d580b7"
+    },
+    {
+      "path": "docs/referee/round-5-review/witness-mean-Upper-Large.json",
+      "bytes": 8839,
+      "sha256": "e773130b64a284c96d0fd7bd5aad31268423ceca4708cce2a86d333c2433fc53"
+    },
+    {
+      "path": "docs/referee/round-5-review/witness-shortfall_6-Control.json",
+      "bytes": 8395,
+      "sha256": "599213056e25516c33edb1478e8b3c20d85e97b447c05504f9a7eacaa7c25fdb"
+    },
+    {
+      "path": "docs/referee/round-5-review/witness-shortfall_6-Gikuriro.json",
+      "bytes": 8346,
+      "sha256": "bc5ffdbe6d0406993bbf25c8d487b3df53557f634ec1954ffb7f3d3b69c785d1"
+    },
+    {
+      "path": "docs/referee/round-5-review/witness-shortfall_6-Lower.json",
+      "bytes": 8412,
+      "sha256": "2f2dc6b75f955086fdb8d52171c4c44be0ef1c616468db2d805f64463210605c"
+    },
+    {
+      "path": "docs/referee/round-5-review/witness-shortfall_6-Middle.json",
+      "bytes": 8416,
+      "sha256": "9c79839ab8adb809c5da6350ff5691a48209e3783105bd8b3a7ecba1905cfb9b"
+    },
+    {
+      "path": "docs/referee/round-5-review/witness-shortfall_6-Upper.json",
+      "bytes": 8505,
+      "sha256": "c62269e2bbfe5c4013a5c13b798f6bfcb3ba7f3b1bd94086485d22b4e7d446cb"
+    },
+    {
+      "path": "docs/referee/round-5-review/witness-shortfall_6-Control-Large.json",
+      "bytes": 8338,
+      "sha256": "c1134ac527cafd9510b899f829f1091851409b78765ee09a27d33b1e0f8b0b36"
+    },
+    {
+      "path": "docs/referee/round-5-review/witness-shortfall_6-Lower-Large.json",
+      "bytes": 8374,
+      "sha256": "15361936b24feeb24e2fd3afd5ccaa137e18f8e9b5191c4705e2f06e1ab916ae"
+    },
+    {
+      "path": "docs/referee/round-5-review/witness-shortfall_6-Middle-Large.json",
+      "bytes": 8312,
+      "sha256": "e1bc01c84ada475c1f0f0fa3ba41aefd53015aaaf03b8685a2ee6ff5a484b155"
+    },
+    {
+      "path": "docs/referee/round-5-review/witness-shortfall_6-Upper-Large.json",
+      "bytes": 8426,
+      "sha256": "ef348effc909957e326f697a2b4d3aff08644d295639d0a3ceb00fd2e7d98749"
+    },
+    {
+      "path": "docs/referee/round-5-review/summary.json",
+      "bytes": 7322,
+      "sha256": "4e746b171f8280b95ec2c224922ce319f0e7cdc548b598ef9cc06d5db395bb2e"
+    }
+  ],
+  "scope": "Lossless public views for inspection only; default master uses canonical inputs and recomputes the receipt. No independently executed household or referee result is asserted."
+}

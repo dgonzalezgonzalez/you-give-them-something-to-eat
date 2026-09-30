@@ -1,0 +1,7372 @@
+{
+  "scope": "Approximate exchange-search receipt on the quota mixture region. Floating tangents, support cushions and witness feasibility are diagnostics, not formal numerical enclosures. The separately enclosed production verification certifies allocation upper bounds; this search does not certify minimax optimality. No sharpness or novelty claim.",
+  "scenarios": [
+    {
+      "objective": "mean",
+      "lower_optimization_bound": 5.866984976040214,
+      "upper_loss_bound": 5.867182445638634,
+      "optimization_gap": 0.00019746959841970835,
+      "q": {
+        "Control": 0.1025984658876536,
+        "Gikuriro": 0.05833204062259577,
+        "Lower": 0.29286065934848704,
+        "Middle": 0.2490669577412795,
+        "Upper": 0.2923709296374794,
+        "Large": 0.004770946762504613
+      },
+      "expected_cost": 84.74451721303258,
+      "iterations": [
+        {
+          "iteration": 1,
+          "lower": 0.0,
+          "upper": 8.565771596623927,
+          "gap": 8.565771596623927,
+          "cuts": 0
+        },
+        {
+          "iteration": 2,
+          "lower": 3.978281877553612,
+          "upper": 6.594926800898226,
+          "gap": 2.616644923344614,
+          "cuts": 0
+        },
+        {
+          "iteration": 3,
+          "lower": 5.006693546751964,
+          "upper": 6.997662067916091,
+          "gap": 1.9909685211641266,
+          "cuts": 0
+        },
+        {
+          "iteration": 4,
+          "lower": 5.598505177145149,
+          "upper": 6.073796972227162,
+          "gap": 0.475291795082013,
+          "cuts": 0
+        },
+        {
+          "iteration": 5,
+          "lower": 5.718624542769301,
+          "upper": 5.907422924964355,
+          "gap": 0.18879838219505451,
+          "cuts": 0
+        },
+        {
+          "iteration": 6,
+          "lower": 5.864412094687,
+          "upper": 5.86872175732259,
+          "gap": 0.0043096626355900725,
+          "cuts": 0
+        },
+        {
+          "iteration": 7,
+          "lower": 5.864913312655392,
+          "upper": 5.868099832273207,
+          "gap": 0.003186519617814909,
+          "cuts": 0
+        },
+        {
+          "iteration": 8,
+          "lower": 5.866384650204085,
+          "upper": 5.86765926060388,
+          "gap": 0.0012746103997951508,
+          "cuts": 0
+        },
+        {
+          "iteration": 9,
+          "lower": 5.866822093285298,
+          "upper": 5.867162596722611,
+          "gap": 0.00034050343731362176,
+          "cuts": 0
+        },
+        {
+          "iteration": 10,
+          "lower": 5.866984976040214,
+          "upper": 5.867182445638634,
+          "gap": 0.00019746959841970835,
+          "cuts": 0
+        }
+      ]
+    },
+    {
+      "objective": "shortfall_6",
+      "lower_optimization_bound": 0.5024255929400809,
+      "upper_loss_bound": 0.5025619383117969,
+      "optimization_gap": 0.00013634537171591798,
+      "q": {
+        "Control": 0.21171158352018982,
+        "Gikuriro": 0.19264593876990757,
+        "Lower": 0.2084828733695301,
+        "Middle": 0.1802115804877636,
+        "Upper": 0.20612728529290708,
+        "Large": 0.0008207385597018835
+      },
+      "expected_cost": 77.84331277808616,
+      "iterations": [
+        {
+          "iteration": 1,
+          "lower": 0.0,
+          "upper": 0.7780062754032107,
+          "gap": 0.7780062754032107,
+          "cuts": 0
+        },
+        {
+          "iteration": 2,
+          "lower": 0.1789724204709407,
+          "upper": 0.7600927488561946,
+          "gap": 0.581120328385254,
+          "cuts": 0
+        },
+        {
+          "iteration": 3,
+          "lower": 0.213443135008157,
+          "upper": 0.5414815182720188,
+          "gap": 0.3280383832638618,
+          "cuts": 0
+        },
+        {
+          "iteration": 4,
+          "lower": 0.27484433211012416,
+          "upper": 0.8070765935354438,
+          "gap": 0.5322322614253197,
+          "cuts": 0
+        },
+        {
+          "iteration": 5,
+          "lower": 0.31630786970459457,
+          "upper": 0.5528731718043969,
+          "gap": 0.2365653020998023,
+          "cuts": 0
+        },
+        {
+          "iteration": 6,
+          "lower": 0.38220308933238134,
+          "upper": 0.5368264942232562,
+          "gap": 0.1546234048908749,
+          "cuts": 0
+        },
+        {
+          "iteration": 7,
+          "lower": 0.4909162996616084,
+          "upper": 0.5280935468236664,
+          "gap": 0.037177247162058,
+          "cuts": 0
+        },
+        {
+          "iteration": 8,
+          "lower": 0.4936831257935027,
+          "upper": 0.5066822771374594,
+          "gap": 0.012999151343956683,
+          "cuts": 0
+        },
+        {
+          "iteration": 9,
+          "lower": 0.500725465869386,
+          "upper": 0.5039427546180077,
+          "gap": 0.003217288748621705,
+          "cuts": 0
+        },
+        {
+          "iteration": 10,
+          "lower": 0.5017254772804658,
+          "upper": 0.5026181688311092,
+          "gap": 0.0008926915506434208,
+          "cuts": 0
+        },
+        {
+          "iteration": 11,
+          "lower": 0.5024255929400809,
+          "upper": 0.5025619383117969,
+          "gap": 0.00013634537171591798,
+          "cuts": 0
+        }
+      ]
+    }
+  ],
+  "total_cuts": 0,
+  "support_calls": [
+    {
+      "dual_tau": 0.32696880961267183,
+      "outer_inner_gap": 0.0009793866795746453,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.021405182655144e-14
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 1.2390088954816747e-13
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -0.0029878744255125156
+    },
+    {
+      "dual_tau": 0.32717202756816066,
+      "outer_inner_gap": 0.00017070004685404427,
+      "tau_evaluations": 19,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 5.995204332975845e-15
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 1.3100631690576847e-14
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 4.440892098500626e-16
+        }
+      ],
+      "log_witness_constraint": -0.0005074684427324172
+    },
+    {
+      "dual_tau": 0.06366083347543697,
+      "outer_inner_gap": 2.9482358425036992e-05,
+      "tau_evaluations": 22,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 25,
+          "feasibility": 8.881784197001252e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 6.661338147750939e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000054118108892e-09
+    },
+    {
+      "dual_tau": 0.45184494615975446,
+      "outer_inner_gap": 0.00014816968912434447,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 8.326672684688674e-14
+        },
+        {
+          "success": true,
+          "nit": 30,
+          "feasibility": 2.0650148258027912e-14
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 8.881784197001252e-16
+        }
+      ],
+      "log_witness_constraint": -1.000000082740371e-09
+    },
+    {
+      "dual_tau": 0.4303693984462619,
+      "outer_inner_gap": 0.00019562145756779614,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 1.1102230246251565e-14
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 27,
+          "feasibility": 3.1086244689504383e-15
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -1.0000125172382468e-09
+    },
+    {
+      "dual_tau": 0.2812553288946297,
+      "outer_inner_gap": 0.00012696024787484106,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 25,
+          "feasibility": 5.88418203051333e-15
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 3.5083047578154947e-14
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 4.440892098500626e-16
+        }
+      ],
+      "log_witness_constraint": -1.000000082740371e-09
+    },
+    {
+      "dual_tau": 0.0012893366254778137,
+      "outer_inner_gap": 0.0012893942281530216,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -13.195262912240603
+    },
+    {
+      "dual_tau": 0.419408529031172,
+      "outer_inner_gap": 9.866508367295523e-05,
+      "tau_evaluations": 20,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 3.4861002973229915e-14
+        },
+        {
+          "success": true,
+          "nit": 29,
+          "feasibility": 1.0658141036401503e-14
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 17,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000125172382468e-09
+    },
+    {
+      "dual_tau": 0.4276283602101914,
+      "outer_inner_gap": 0.00026170852655305055,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 3.419486915845482e-14
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 27,
+          "feasibility": 7.993605777301127e-15
+        },
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 1.3183898417423734e-16
+        }
+      ],
+      "log_witness_constraint": -0.0006023599525093459
+    },
+    {
+      "dual_tau": 0.32559028663670564,
+      "outer_inner_gap": 0.00014220206616943898,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 18,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 26,
+          "feasibility": 2.6645352591003757e-15
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 1.9984014443252818e-15
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 1.9984014443252818e-15
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 6.8833827526759706e-15
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000036354540498e-09
+    },
+    {
+      "dual_tau": 0.3192067552787088,
+      "outer_inner_gap": 0.00011274979814324126,
+      "tau_evaluations": 22,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 7.549516567451064e-15
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 1.5543122344752192e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 2.220446049250313e-15
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 1.3322676295501878e-15
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000036354540498e-09
+    },
+    {
+      "dual_tau": 0.31081354238981834,
+      "outer_inner_gap": 0.00012341269412452505,
+      "tau_evaluations": 17,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 18,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 1.554312234475219e-14
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 3.774758283725532e-15
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 1.532107773982716e-14
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -0.0003864369721533478
+    },
+    {
+      "dual_tau": 0.3110354788646404,
+      "outer_inner_gap": 5.715737386147168e-05,
+      "tau_evaluations": 20,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 18,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 1.5543122344752192e-15
+        },
+        {
+          "success": true,
+          "nit": 29,
+          "feasibility": 3.3306690738754696e-15
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 2.886579864025407e-15
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000107408814074e-09
+    },
+    {
+      "dual_tau": 0.23890270796055832,
+      "outer_inner_gap": 6.976054243779117e-05,
+      "tau_evaluations": 23,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.3322676295501878e-15
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 1.5543122344752192e-15
+        },
+        {
+          "success": true,
+          "nit": 29,
+          "feasibility": 9.325873406851315e-15
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000107408814074e-09
+    },
+    {
+      "dual_tau": 0.3437865819875012,
+      "outer_inner_gap": 3.706698337424541e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 3.552713678800501e-15
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 2.4424906541753444e-15
+        },
+        {
+          "success": true,
+          "nit": 25,
+          "feasibility": 1.9984014443252818e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 4.440892098500626e-16
+        }
+      ],
+      "log_witness_constraint": -1.000000082740371e-09
+    },
+    {
+      "dual_tau": 0.3102177646195541,
+      "outer_inner_gap": 0.0002252810986087539,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 18,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 26,
+          "feasibility": 1.2434497875801753e-14
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 3.1086244689504383e-15
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 2.886579864025407e-15
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 1.887379141862766e-15
+        }
+      ],
+      "log_witness_constraint": -1.0000054118108892e-09
+    },
+    {
+      "dual_tau": 0.3104955825704012,
+      "outer_inner_gap": 0.0009294795234353614,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 18,
+          "feasibility": 4.85722573273506e-17
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 1.5543122344752192e-15
+        },
+        {
+          "success": true,
+          "nit": 27,
+          "feasibility": 7.993605777301127e-15
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 1.7763568394002505e-15
+        },
+        {
+          "success": true,
+          "nit": 18,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -0.0029852065764366387
+    },
+    {
+      "dual_tau": 0.2389814628333177,
+      "outer_inner_gap": 9.181700177141039e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 8.881784197001252e-16
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 3.1086244689504383e-15
+        },
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 1.1546319456101628e-14
+        },
+        {
+          "success": true,
+          "nit": 31,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000054118108892e-09
+    },
+    {
+      "dual_tau": 0.03280562862149573,
+      "outer_inner_gap": 4.234993606011539e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 40,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -0.0012654436812358227
+    },
+    {
+      "dual_tau": 0.25486900986679256,
+      "outer_inner_gap": 1.4392029012988417e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 7.549516567451064e-15
+        },
+        {
+          "success": true,
+          "nit": 27,
+          "feasibility": 8.37108160567368e-14
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 46,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -3.117604088131998e-05
+    },
+    {
+      "dual_tau": 0.3218144606956826,
+      "outer_inner_gap": 0.00026834447763235403,
+      "tau_evaluations": 23,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 2.9976021664879227e-14
+        },
+        {
+          "success": true,
+          "nit": 25,
+          "feasibility": 4.884981308350689e-15
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 2.42861286636753e-17
+        },
+        {
+          "success": true,
+          "nit": 44,
+          "feasibility": 1.1102230246251565e-16
+        }
+      ],
+      "log_witness_constraint": -0.0008214352210895726
+    },
+    {
+      "dual_tau": 0.37557573225119495,
+      "outer_inner_gap": 8.39171036339792e-05,
+      "tau_evaluations": 22,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 4.4853010194856324e-14
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 4.440892098500626e-16
+        },
+        {
+          "success": true,
+          "nit": 29,
+          "feasibility": 1.532107773982716e-14
+        },
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 45,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -1.0000107408814074e-09
+    },
+    {
+      "dual_tau": 0.33406733400014943,
+      "outer_inner_gap": 0.000506021450772387,
+      "tau_evaluations": 23,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 9.103828801926284e-15
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 6.661338147750939e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 27,
+          "feasibility": 4.884981308350689e-15
+        },
+        {
+          "success": true,
+          "nit": 44,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -0.001503586156283987
+    },
+    {
+      "dual_tau": 0.27710963081354983,
+      "outer_inner_gap": 3.059192151866341e-05,
+      "tau_evaluations": 22,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 26,
+          "feasibility": 9.103828801926284e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 3.019806626980426e-14
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 4.440892098500626e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 4.440892098500626e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000036354540498e-09
+    },
+    {
+      "dual_tau": 0.32082271024863057,
+      "outer_inner_gap": 0.00010370107210277979,
+      "tau_evaluations": 19,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 9.325873406851315e-15
+        },
+        {
+          "success": true,
+          "nit": 25,
+          "feasibility": 5.10702591327572e-15
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 4.440892098500626e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000107408814074e-09
+    },
+    {
+      "dual_tau": 0.3733758510939928,
+      "outer_inner_gap": 7.994552465451221e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 1.9984014443252818e-14
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 1.5654144647214707e-14
+        },
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 19,
+          "feasibility": 4.440892098500626e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000054118108892e-09
+    },
+    {
+      "dual_tau": 0.3358835411227937,
+      "outer_inner_gap": 0.002937547432091847,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 2.4424906541753444e-15
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 1.354472090042691e-14
+        },
+        {
+          "success": true,
+          "nit": 34,
+          "feasibility": 1.1102230246251565e-16
+        }
+      ],
+      "log_witness_constraint": -0.008775884026420044
+    },
+    {
+      "dual_tau": 0.283122106541658,
+      "outer_inner_gap": 6.423105151842634e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 27,
+          "feasibility": 4.884981308350689e-15
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 1.3322676295501878e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 8.659739592076221e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 3.1086244689504383e-15
+        },
+        {
+          "success": true,
+          "nit": 16,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000018590972104e-09
+    },
+    {
+      "dual_tau": 0.32015309071246917,
+      "outer_inner_gap": 0.00021131764772075456,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 8.659739592076221e-15
+        },
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 1.1102230246251565e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.5543122344752192e-15
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 1.5543122344752192e-15
+        },
+        {
+          "success": true,
+          "nit": 17,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -0.0006428815505614693
+    },
+    {
+      "dual_tau": 0.29099837332675077,
+      "outer_inner_gap": 0.00021940989624980034,
+      "tau_evaluations": 22,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 25,
+          "feasibility": 6.217248937900877e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 2.4424906541753444e-15
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 1.1102230246251565e-15
+        },
+        {
+          "success": true,
+          "nit": 15,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -0.0007444330546686473
+    },
+    {
+      "dual_tau": 0.3308419418283082,
+      "outer_inner_gap": 0.00021307974493289805,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 4.440892098500626e-16
+        },
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 4.440892098500626e-15
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 18,
+          "feasibility": 2.2551405187698492e-17
+        }
+      ],
+      "log_witness_constraint": -0.0006325907311737211
+    },
+    {
+      "dual_tau": 0.29807198894158515,
+      "outer_inner_gap": 1.4842629456168766e-05,
+      "tau_evaluations": 19,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 4.440892098500626e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.1102230246251565e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.3322676295501878e-15
+        },
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 1.9984014443252818e-15
+        },
+        {
+          "success": true,
+          "nit": 17,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -1.0000071881677286e-09
+    },
+    {
+      "dual_tau": 0.31902118550452013,
+      "outer_inner_gap": 0.005618559817939683,
+      "tau_evaluations": 20,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 1.6653345369377348e-15
+        },
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 1.3322676295501878e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 3.774758283725532e-15
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 4.440892098500626e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 8.881784197001252e-16
+        }
+      ],
+      "log_witness_constraint": -0.0177574208110034
+    },
+    {
+      "dual_tau": 0.26167562990814286,
+      "outer_inner_gap": 4.762702440253008e-05,
+      "tau_evaluations": 17,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 27,
+          "feasibility": 1.3322676295501878e-15
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 1.9984014443252818e-15
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 8.881784197001252e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -1.000008964524568e-09
+    },
+    {
+      "dual_tau": 0.2995214727735958,
+      "outer_inner_gap": 3.0905981582840525e-05,
+      "tau_evaluations": 17,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 4.440892098500626e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.5543122344752192e-15
+        },
+        {
+          "success": true,
+          "nit": 27,
+          "feasibility": 1.2878587085651816e-14
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 44,
+          "feasibility": 1.1102230246251565e-16
+        }
+      ],
+      "log_witness_constraint": -8.971248606570725e-05
+    },
+    {
+      "dual_tau": 0.2944690845553043,
+      "outer_inner_gap": 2.1662530637733823e-05,
+      "tau_evaluations": 17,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 4.440892098500626e-16
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 1.3322676295501878e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.7763568394002505e-15
+        },
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 2.6645352591003757e-15
+        },
+        {
+          "success": true,
+          "nit": 17,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -1.000000082740371e-09
+    },
+    {
+      "dual_tau": 0.29885262333125046,
+      "outer_inner_gap": 2.3831068508783915e-05,
+      "tau_evaluations": 21,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 2.886579864025407e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 6.661338147750939e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.3322676295501878e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.3322676295501878e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -1.0000018590972104e-09
+    },
+    {
+      "dual_tau": 0.29195042856889747,
+      "outer_inner_gap": 1.4291893800866262e-05,
+      "tau_evaluations": 17,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.7763568394002505e-14
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 1.3322676295501878e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 8.881784197001252e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.9984014443252818e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -1.0000054118108892e-09
+    },
+    {
+      "dual_tau": 0.28200964009514723,
+      "outer_inner_gap": 2.6972036111239106e-05,
+      "tau_evaluations": 20,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 26,
+          "feasibility": 5.329070518200751e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 4.6629367034256575e-15
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 6.661338147750939e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.1102230246251565e-16
+        }
+      ],
+      "log_witness_constraint": -1.000000082740371e-09
+    },
+    {
+      "dual_tau": 0.33596147429638235,
+      "outer_inner_gap": 0.00017521300046929866,
+      "tau_evaluations": 21,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 6.661338147750939e-16
+        },
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 7.549516567451064e-15
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 8.881784197001252e-16
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -0.0005113348575509491
+    },
+    {
+      "dual_tau": 0.28887470255058945,
+      "outer_inner_gap": 2.238199834625476e-05,
+      "tau_evaluations": 17,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 6.938893903907228e-18
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 1.1102230246251565e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 6.661338147750939e-16
+        },
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 1.8207657603852567e-14
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.1102230246251565e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000071881677286e-09
+    },
+    {
+      "dual_tau": 0.3074479730366205,
+      "outer_inner_gap": 0.0009595009247664876,
+      "tau_evaluations": 18,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 1.7763568394002505e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.3322676295501878e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 2.6645352591003757e-15
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 1.1102230246251565e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 8.881784197001252e-16
+        }
+      ],
+      "log_witness_constraint": -0.003074382258152042
+    },
+    {
+      "dual_tau": 0.27454864418292907,
+      "outer_inner_gap": 0.0006558695271268178,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 25,
+          "feasibility": 4.884981308350689e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.1102230246251565e-15
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 3.552713678800501e-15
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 4.440892098500626e-16
+        }
+      ],
+      "log_witness_constraint": -0.0023719751136379585
+    },
+    {
+      "dual_tau": 0.32567056527732496,
+      "outer_inner_gap": 2.9554883485438666e-05,
+      "tau_evaluations": 23,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 29,
+          "feasibility": 3.1086244689504383e-15
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 2.4424906541753444e-15
+        },
+        {
+          "success": true,
+          "nit": 16,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -1.000008964524568e-09
+    },
+    {
+      "dual_tau": 0.28530602069878147,
+      "outer_inner_gap": 2.041798654062177e-05,
+      "tau_evaluations": 18,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 8.881784197001252e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.5543122344752192e-15
+        },
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 2.6645352591003757e-15
+        },
+        {
+          "success": true,
+          "nit": 27,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -1.0000054118108892e-09
+    },
+    {
+      "dual_tau": 0.30224117471461565,
+      "outer_inner_gap": 0.0005918382522560606,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 6.661338147750939e-16
+        },
+        {
+          "success": true,
+          "nit": 25,
+          "feasibility": 2.3092638912203256e-14
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 1.3322676295501878e-15
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 2.220446049250313e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 3.1086244689504383e-15
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -0.0019461887092848684
+    },
+    {
+      "dual_tau": 0.2902090417549788,
+      "outer_inner_gap": 1.4129166152621053e-05,
+      "tau_evaluations": 17,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 2.6645352591003757e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 8.881784197001252e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 6.661338147750939e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -1.000008964524568e-09
+    },
+    {
+      "dual_tau": 0.2780584869859435,
+      "outer_inner_gap": 0.00011100369225669482,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 4.440892098500626e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 26,
+          "feasibility": 6.217248937900877e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.1102230246251565e-15
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 1.1102230246251565e-15
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -1.000000082740371e-09
+    },
+    {
+      "dual_tau": 0.3322620209053446,
+      "outer_inner_gap": 0.00012345527499935116,
+      "tau_evaluations": 21,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 8.881784197001252e-16
+        },
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 4.6629367034256575e-15
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 1.3322676295501878e-15
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -0.0003541129126478637
+    },
+    {
+      "dual_tau": 0.28501499536660985,
+      "outer_inner_gap": 2.9503293920818408e-05,
+      "tau_evaluations": 17,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 4.440892098500626e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 4.440892098500626e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 4.6629367034256575e-15
+        },
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 2.6645352591003757e-15
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000071881677286e-09
+    },
+    {
+      "dual_tau": 0.31371574876510455,
+      "outer_inner_gap": 0.00035939091731318484,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 1.9984014443252818e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 6.661338147750939e-16
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 3.1086244689504383e-15
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 1.3322676295501878e-15
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 8.881784197001252e-16
+        }
+      ],
+      "log_witness_constraint": -0.001125241069289018
+    },
+    {
+      "dual_tau": 0.2786371266569713,
+      "outer_inner_gap": 9.091410168693415e-06,
+      "tau_evaluations": 21,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 26,
+          "feasibility": 7.771561172376096e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.3322676295501878e-15
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 6.661338147750939e-16
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 4.440892098500626e-16
+        }
+      ],
+      "log_witness_constraint": -1.000008964524568e-09
+    },
+    {
+      "dual_tau": 0.33009848224683186,
+      "outer_inner_gap": 0.000106978519057499,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.1102230246251565e-15
+        },
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 7.66053886991358e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.7763568394002505e-15
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 4.440892098500626e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000107408814074e-09
+    },
+    {
+      "dual_tau": 0.2853696129321205,
+      "outer_inner_gap": 0.00011444200218058143,
+      "tau_evaluations": 19,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 4.440892098500626e-16
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 2.6645352591003757e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.9984014443252818e-15
+        },
+        {
+          "success": true,
+          "nit": 29,
+          "feasibility": 2.0650148258027912e-14
+        },
+        {
+          "success": true,
+          "nit": 31,
+          "feasibility": 1.1102230246251565e-16
+        }
+      ],
+      "log_witness_constraint": -0.00037926453931014237
+    },
+    {
+      "dual_tau": 0.30078297646629176,
+      "outer_inner_gap": 0.00025372219568975396,
+      "tau_evaluations": 22,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 25,
+          "feasibility": 1.7763568394002505e-15
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 8.881784197001252e-16
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 1.1102230246251565e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 5.620504062164855e-16
+        },
+        {
+          "success": true,
+          "nit": 44,
+          "feasibility": 1.1102230246251565e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000107408814074e-09
+    },
+    {
+      "dual_tau": 0.29087753450400006,
+      "outer_inner_gap": 1.224125255649966e-05,
+      "tau_evaluations": 17,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 9.992007221626409e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 3.1086244689504383e-15
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 8.881784197001252e-16
+        },
+        {
+          "success": true,
+          "nit": 44,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000107408814074e-09
+    },
+    {
+      "dual_tau": 0.27874853771896885,
+      "outer_inner_gap": 0.00014632342678577714,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 27,
+          "feasibility": 3.3306690738754696e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 8.881784197001252e-16
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 1.5543122344752192e-15
+        },
+        {
+          "success": true,
+          "nit": 44,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -0.0005004705350284411
+    },
+    {
+      "dual_tau": 0.3324394006093302,
+      "outer_inner_gap": 0.0001263156118138653,
+      "tau_evaluations": 22,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.7763568394002505e-15
+        },
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 3.9968028886505635e-15
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 1.1102230246251565e-15
+        },
+        {
+          "success": true,
+          "nit": 44,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -0.00036228949680250366
+    },
+    {
+      "dual_tau": 0.2852001244998615,
+      "outer_inner_gap": 2.7960897095447024e-05,
+      "tau_evaluations": 18,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 5.329070518200751e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.7763568394002505e-15
+        },
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 1.3322676295501878e-15
+        },
+        {
+          "success": true,
+          "nit": 45,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -1.0000107408814074e-09
+    },
+    {
+      "dual_tau": 0.3133854129670276,
+      "outer_inner_gap": 5.092861251920766e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 2.4424906541753444e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 4.884981308350689e-15
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 6.217248937900877e-15
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 1.9984014443252818e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 8.881784197001252e-16
+        }
+      ],
+      "log_witness_constraint": -0.00013702637591883615
+    },
+    {
+      "dual_tau": 0.27792798150692705,
+      "outer_inner_gap": 7.400889992492665e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 4.440892098500626e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 26,
+          "feasibility": 1.7763568394002505e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 6.661338147750939e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 8.881784197001252e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000018590972104e-09
+    },
+    {
+      "dual_tau": 0.32996881613358336,
+      "outer_inner_gap": 2.594449183668246e-05,
+      "tau_evaluations": 23,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 8.881784197001252e-16
+        },
+        {
+          "success": true,
+          "nit": 27,
+          "feasibility": 1.9984014443252818e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.3322676295501878e-15
+        },
+        {
+          "success": true,
+          "nit": 19,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -1.000008964524568e-09
+    },
+    {
+      "dual_tau": 0.2846785055374493,
+      "outer_inner_gap": 2.2257327347396938e-05,
+      "tau_evaluations": 18,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 4.440892098500626e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 3.552713678800501e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 5.10702591327572e-15
+        },
+        {
+          "success": true,
+          "nit": 29,
+          "feasibility": 1.9984014443252818e-15
+        },
+        {
+          "success": true,
+          "nit": 34,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000107408814074e-09
+    },
+    {
+      "dual_tau": 0.30200807666824886,
+      "outer_inner_gap": 9.421594565139912e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 6.661338147750939e-16
+        },
+        {
+          "success": true,
+          "nit": 25,
+          "feasibility": 3.552713678800501e-15
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 1.1102230246251565e-15
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 2.220446049250313e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.3322676295501878e-15
+        },
+        {
+          "success": true,
+          "nit": 34,
+          "feasibility": 2.0816681711721685e-17
+        }
+      ],
+      "log_witness_constraint": -1.0000071881677286e-09
+    },
+    {
+      "dual_tau": 0.29336675869851964,
+      "outer_inner_gap": 1.0315801419302773e-05,
+      "tau_evaluations": 17,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 2.220446049250313e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 3.552713678800501e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.1102230246251565e-15
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 4.440892098500626e-16
+        },
+        {
+          "success": true,
+          "nit": 34,
+          "feasibility": 3.469446951953614e-18
+        }
+      ],
+      "log_witness_constraint": -1.0000071881677286e-09
+    },
+    {
+      "dual_tau": 0.27890394138344593,
+      "outer_inner_gap": 8.088882295353983e-05,
+      "tau_evaluations": 20,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 27,
+          "feasibility": 9.325873406851315e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 5.10702591327572e-15
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 8.881784197001252e-16
+        },
+        {
+          "success": true,
+          "nit": 33,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -1.0000071881677286e-09
+    },
+    {
+      "dual_tau": 0.3330652050907977,
+      "outer_inner_gap": 0.0001636514427350022,
+      "tau_evaluations": 20,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 4.440892098500626e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 4.440892098500626e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 4.440892098500626e-15
+        },
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 3.3306690738754696e-15
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 8.881784197001252e-16
+        },
+        {
+          "success": true,
+          "nit": 33,
+          "feasibility": 6.938893903907228e-18
+        }
+      ],
+      "log_witness_constraint": -0.0004767316424629797
+    },
+    {
+      "dual_tau": 0.2857740417476285,
+      "outer_inner_gap": 3.1485320953983376e-05,
+      "tau_evaluations": 17,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 8.881784197001252e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.3322676295501878e-15
+        },
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 2.220446049250313e-15
+        },
+        {
+          "success": true,
+          "nit": 34,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000018590972104e-09
+    },
+    {
+      "dual_tau": 0.31250125537526646,
+      "outer_inner_gap": 0.00022277620758792693,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 1.3322676295501878e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 3.3306690738754696e-15
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 2.4424906541753444e-15
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 4.440892098500626e-16
+        },
+        {
+          "success": true,
+          "nit": 25,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000054118108892e-09
+    },
+    {
+      "dual_tau": 0.27524610628906554,
+      "outer_inner_gap": 0.00034044930775589677,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 25,
+          "feasibility": 1.9984014443252818e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.7763568394002505e-15
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 2.886579864025407e-15
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 1.1102230246251565e-15
+        }
+      ],
+      "log_witness_constraint": -1.000000082740371e-09
+    },
+    {
+      "dual_tau": 0.3281160749141388,
+      "outer_inner_gap": 5.169587285092092e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.1102230246251565e-15
+        },
+        {
+          "success": true,
+          "nit": 30,
+          "feasibility": 7.549516567451064e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 16,
+          "feasibility": 1.1102230246251565e-16
+        }
+      ],
+      "log_witness_constraint": -1.000000082740371e-09
+    },
+    {
+      "dual_tau": 0.28274644602110327,
+      "outer_inner_gap": 2.80832602843617e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 4.440892098500626e-16
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 1.1102230246251565e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 4.440892098500626e-16
+        },
+        {
+          "success": true,
+          "nit": 29,
+          "feasibility": 1.9984014443252818e-15
+        },
+        {
+          "success": true,
+          "nit": 43,
+          "feasibility": 1.1102230246251565e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000107408814074e-09
+    },
+    {
+      "dual_tau": 0.30284774197137193,
+      "outer_inner_gap": 0.0008171923996842523,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 26,
+          "feasibility": 4.884981308350689e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 2.6645352591003757e-15
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 1.1102230246251565e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 4.3194614551822497e-16
+        },
+        {
+          "success": true,
+          "nit": 39,
+          "feasibility": 1.1102230246251565e-16
+        }
+      ],
+      "log_witness_constraint": -0.0026966468798317322
+    },
+    {
+      "dual_tau": 0.2918856531564626,
+      "outer_inner_gap": 1.0985041373423599e-05,
+      "tau_evaluations": 17,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.7763568394002505e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 1.9984014443252818e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 2.220446049250313e-15
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 2.220446049250313e-15
+        },
+        {
+          "success": true,
+          "nit": 39,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -2.975246754743921e-06
+    },
+    {
+      "dual_tau": 0.2786298123116021,
+      "outer_inner_gap": 5.725485802088315e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 27,
+          "feasibility": 1.554312234475219e-14
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.5543122344752192e-15
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 1.5543122344752192e-15
+        },
+        {
+          "success": true,
+          "nit": 39,
+          "feasibility": 1.3877787807814457e-17
+        }
+      ],
+      "log_witness_constraint": -1.000008964524568e-09
+    },
+    {
+      "dual_tau": 0.3326436657200917,
+      "outer_inner_gap": 0.0001353785912190375,
+      "tau_evaluations": 20,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.3322676295501878e-15
+        },
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 1.5543122344752192e-15
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 2.6645352591003757e-15
+        },
+        {
+          "success": true,
+          "nit": 38,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -0.00039114888130598047
+    },
+    {
+      "dual_tau": 0.2854734614387532,
+      "outer_inner_gap": 2.649559733214346e-05,
+      "tau_evaluations": 17,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 4.440892098500626e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 2.886579864025407e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.9984014443252818e-15
+        },
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 3.197442310920451e-14
+        },
+        {
+          "success": true,
+          "nit": 39,
+          "feasibility": 3.122502256758253e-17
+        }
+      ],
+      "log_witness_constraint": -1.0000142935950862e-09
+    },
+    {
+      "dual_tau": 0.3135583564860711,
+      "outer_inner_gap": 0.0001140663116059315,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 4.884981308350689e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 6.938893903907228e-18
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 2.220446049250313e-15
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 1.5543122344752192e-15
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 1.1102230246251565e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 4.440892098500626e-16
+        }
+      ],
+      "log_witness_constraint": -0.00034506736564487994
+    },
+    {
+      "dual_tau": 0.2777011237440908,
+      "outer_inner_gap": 0.00020121708846154718,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 6.661338147750939e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 26,
+          "feasibility": 2.220446049250313e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.1102230246251565e-15
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 2.6645352591003757e-15
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 8.881784197001252e-16
+        }
+      ],
+      "log_witness_constraint": -0.0007052925274990685
+    },
+    {
+      "dual_tau": 0.3288254969294894,
+      "outer_inner_gap": 0.00013594432980745808,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 4.440892098500626e-15
+        },
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 1.9984014443252818e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 8.881784197001252e-16
+        },
+        {
+          "success": true,
+          "nit": 19,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000071881677286e-09
+    },
+    {
+      "dual_tau": 0.28396052606310834,
+      "outer_inner_gap": 3.41218341022298e-05,
+      "tau_evaluations": 17,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 4.440892098500626e-16
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.7763568394002505e-15
+        },
+        {
+          "success": true,
+          "nit": 29,
+          "feasibility": 2.220446049250313e-15
+        },
+        {
+          "success": true,
+          "nit": 35,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -1.000008964524568e-09
+    },
+    {
+      "dual_tau": 0.30234549566916613,
+      "outer_inner_gap": 0.0001641657236426397,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 4.440892098500626e-16
+        },
+        {
+          "success": true,
+          "nit": 26,
+          "feasibility": 2.120525977034049e-14
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 2.6645352591003757e-15
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 1.1102230246251565e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 3.9968028886505635e-15
+        },
+        {
+          "success": true,
+          "nit": 35,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -0.0005383294076768408
+    },
+    {
+      "dual_tau": 0.2926086742042824,
+      "outer_inner_gap": 4.603097528388389e-05,
+      "tau_evaluations": 17,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 3.9968028886505635e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 1.1102230246251565e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.3322676295501878e-15
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 35,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -0.00012304695707854307
+    },
+    {
+      "dual_tau": 0.27860788995250935,
+      "outer_inner_gap": 0.00011036073032233418,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 2.7755575615628914e-17
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 27,
+          "feasibility": 6.661338147750939e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.3322676295501878e-15
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 1.5543122344752192e-15
+        },
+        {
+          "success": true,
+          "nit": 35,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -1.0000054118108892e-09
+    },
+    {
+      "dual_tau": 0.3328330862021069,
+      "outer_inner_gap": 0.0001543052249655119,
+      "tau_evaluations": 20,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 6.661338147750939e-16
+        },
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 1.7541523789077473e-14
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 4.440892098500626e-16
+        },
+        {
+          "success": true,
+          "nit": 35,
+          "feasibility": 1.3877787807814457e-17
+        }
+      ],
+      "log_witness_constraint": -0.0004483495422729078
+    },
+    {
+      "dual_tau": 0.2856520648011325,
+      "outer_inner_gap": 2.3497460484023236e-05,
+      "tau_evaluations": 17,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 8.881784197001252e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.5543122344752192e-15
+        },
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 1.6431300764452317e-14
+        },
+        {
+          "success": true,
+          "nit": 36,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -1.000000082740371e-09
+    },
+    {
+      "dual_tau": 0.3137425198681241,
+      "outer_inner_gap": 0.0002705573101069447,
+      "tau_evaluations": 20,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 2.6645352591003757e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 2.220446049250313e-15
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 1.3322676295501878e-15
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 2.886579864025407e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 6.661338147750939e-16
+        }
+      ],
+      "log_witness_constraint": -0.0008339344664420878
+    },
+    {
+      "dual_tau": 0.27583490892434814,
+      "outer_inner_gap": 0.0003402735961923753,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 25,
+          "feasibility": 8.659739592076221e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 3.3306690738754696e-15
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 1.7763568394002505e-15
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 1.4432899320127035e-15
+        }
+      ],
+      "log_witness_constraint": -1.0000036354540498e-09
+    },
+    {
+      "dual_tau": 0.3287823517950764,
+      "outer_inner_gap": 3.431864779024352e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.3322676295501878e-15
+        },
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 1.199040866595169e-14
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 2.220446049250313e-15
+        },
+        {
+          "success": true,
+          "nit": 17,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000036354540498e-09
+    },
+    {
+      "dual_tau": 0.2834384320818648,
+      "outer_inner_gap": 3.13134119513947e-05,
+      "tau_evaluations": 17,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 1.5543122344752192e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 2.220446049250313e-15
+        },
+        {
+          "success": true,
+          "nit": 29,
+          "feasibility": 2.220446049250313e-15
+        },
+        {
+          "success": true,
+          "nit": 38,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000071881677286e-09
+    },
+    {
+      "dual_tau": 0.03316165783002208,
+      "outer_inner_gap": 6.649104466771583e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 42,
+          "feasibility": 4.440892098500626e-15
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 43,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -0.0019712306595636164
+    },
+    {
+      "dual_tau": 0.03354458031061065,
+      "outer_inner_gap": 1.14212363451216e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 46,
+          "feasibility": 5.88418203051333e-15
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 44,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -1.0000018590972104e-09
+    },
+    {
+      "dual_tau": 0.029033406063204113,
+      "outer_inner_gap": 8.935373656626666e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 18,
+          "feasibility": 6.661338147750939e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 42,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000036354540498e-09
+    },
+    {
+      "dual_tau": 0.035656387444568505,
+      "outer_inner_gap": 7.368493391002318e-07,
+      "tau_evaluations": 22,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 34,
+          "feasibility": 4.418687638008123e-14
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 44,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -6.405376890228354e-06
+    },
+    {
+      "dual_tau": 0.0012893366254778137,
+      "outer_inner_gap": 0.00102514254100158,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 30,
+          "feasibility": 3.1086244689504383e-15
+        },
+        {
+          "success": true,
+          "nit": 44,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -1.5849566898635592
+    },
+    {
+      "dual_tau": 0.03268091730586932,
+      "outer_inner_gap": 0.0001262026791949422,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 39,
+          "feasibility": 3.9968028886505635e-15
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 19,
+          "feasibility": 4.440892098500626e-16
+        }
+      ],
+      "log_witness_constraint": -0.0038277219394782236
+    },
+    {
+      "dual_tau": 0.02897341561757158,
+      "outer_inner_gap": 3.229009607363942e-06,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 18,
+          "feasibility": 8.881784197001252e-15
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 4.440892098500626e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000036354540498e-09
+    },
+    {
+      "dual_tau": 0.035031908426621995,
+      "outer_inner_gap": 1.6607079593722318e-06,
+      "tau_evaluations": 22,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 35,
+          "feasibility": 7.793765632868599e-14
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 4.440892098500626e-16
+        }
+      ],
+      "log_witness_constraint": -3.066859756906126e-05
+    },
+    {
+      "dual_tau": 0.0012893366254778137,
+      "outer_inner_gap": 0.001289394228100649,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -13.195262912240603
+    },
+    {
+      "dual_tau": 0.032161768389535425,
+      "outer_inner_gap": 0.0001447268972916138,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 40,
+          "feasibility": 1.8318679906315083e-14
+        },
+        {
+          "success": true,
+          "nit": 14,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 38,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -0.004469836424355833
+    },
+    {
+      "dual_tau": 0.03243471008456119,
+      "outer_inner_gap": 1.454824226188034e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 49,
+          "feasibility": 5.551115123125783e-15
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 14,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 35,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000054118108892e-09
+    },
+    {
+      "dual_tau": 0.0012893366254778137,
+      "outer_inner_gap": 0.0008278956934753279,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 29,
+          "feasibility": 4.440892098500626e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 37,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -1.027227576265994
+    },
+    {
+      "dual_tau": 0.03462318270664581,
+      "outer_inner_gap": 2.399159971799847e-06,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 14,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 34,
+          "feasibility": 2.7533531010703882e-14
+        },
+        {
+          "success": true,
+          "nit": 35,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000036354540498e-09
+    },
+    {
+      "dual_tau": 0.027478278600653095,
+      "outer_inner_gap": 1.6048922761968676e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 14,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 17,
+          "feasibility": 4.1744385725905886e-14
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000018590972104e-09
+    },
+    {
+      "dual_tau": 0.0319116677979352,
+      "outer_inner_gap": 0.00015441632265600358,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 51,
+          "feasibility": 4.440892098500626e-15
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 14,
+          "feasibility": 4.440892098500626e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 36,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 19,
+          "feasibility": 4.440892098500626e-16
+        }
+      ],
+      "log_witness_constraint": -0.004838168807557608
+    },
+    {
+      "dual_tau": 0.004375176699286331,
+      "outer_inner_gap": 4.873928859380761e-06,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 36,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 8.881784197001252e-15
+        }
+      ],
+      "log_witness_constraint": -1.0000054118108892e-09
+    },
+    {
+      "dual_tau": 0.03420850821238379,
+      "outer_inner_gap": 3.952780543048373e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 14,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 35,
+          "feasibility": 4.263256414560601e-14
+        },
+        {
+          "success": true,
+          "nit": 40,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 6.661338147750939e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000125172382468e-09
+    },
+    {
+      "dual_tau": 0.027560238649061375,
+      "outer_inner_gap": 2.6009656466374764e-06,
+      "tau_evaluations": 21,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 14,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 17,
+          "feasibility": 2.7977620220553945e-14
+        },
+        {
+          "success": true,
+          "nit": 33,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -6.547424038672034e-05
+    },
+    {
+      "dual_tau": 0.0012893366254778137,
+      "outer_inner_gap": 0.0012682791093688952,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 80,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 46,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 69,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 88,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -4.091217639526802
+    },
+    {
+      "dual_tau": 0.020768405023687424,
+      "outer_inner_gap": 1.4068891710738995e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 42,
+          "feasibility": 6.439293542825908e-15
+        },
+        {
+          "success": true,
+          "nit": 31,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 87,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 95,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -1.0000054118108892e-09
+    },
+    {
+      "dual_tau": 0.01693614009548929,
+      "outer_inner_gap": 1.797785714408029e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 74,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 31,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 18,
+          "feasibility": 3.397282455352979e-14
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 102,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -1.0000071881677286e-09
+    },
+    {
+      "dual_tau": 0.021354179578273135,
+      "outer_inner_gap": 5.97471589062204e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 77,
+          "feasibility": 3.3306690738754696e-16
+        },
+        {
+          "success": true,
+          "nit": 32,
+          "feasibility": 2.7755575615628914e-17
+        },
+        {
+          "success": true,
+          "nit": 87,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 2.5979218776228663e-14
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 112,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000071881677286e-09
+    },
+    {
+      "dual_tau": 0.016901281278743005,
+      "outer_inner_gap": 4.63126208701814e-05,
+      "tau_evaluations": 23,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 74,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 31,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 101,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 18,
+          "feasibility": 2.9976021664879227e-15
+        },
+        {
+          "success": true,
+          "nit": 97,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -1.0000071881677286e-09
+    },
+    {
+      "dual_tau": 0.020160857612104083,
+      "outer_inner_gap": 9.139949856973306e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 42,
+          "feasibility": 8.43769498715119e-15
+        },
+        {
+          "success": true,
+          "nit": 32,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 81,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 19,
+          "feasibility": 6.661338147750939e-16
+        }
+      ],
+      "log_witness_constraint": -0.004490927209547024
+    },
+    {
+      "dual_tau": 0.016913449143244545,
+      "outer_inner_gap": 7.239471218134508e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 74,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 31,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 18,
+          "feasibility": 2.886579864025407e-15
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -1.000008964524568e-09
+    },
+    {
+      "dual_tau": 0.021828406728857625,
+      "outer_inner_gap": 0.00021249671114065283,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 68,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 31,
+          "feasibility": 4.440892098500626e-16
+        },
+        {
+          "success": true,
+          "nit": 85,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 2.919886554764162e-14
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -0.009699795508973708
+    },
+    {
+      "dual_tau": 0.017089307871768086,
+      "outer_inner_gap": 8.180904485499685e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 76,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 30,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 94,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 16,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 31,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -0.004682265817613995
+    },
+    {
+      "dual_tau": 0.02633235697849784,
+      "outer_inner_gap": 7.361199358801862e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 59,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 73,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 13,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 71,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 102,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000107408814074e-09
+    },
+    {
+      "dual_tau": 0.026913547055331073,
+      "outer_inner_gap": 4.008324341109315e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 49,
+          "feasibility": 1.7319479184152442e-14
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 77,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 11,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 73,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 105,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -0.0013946055266824686
+    },
+    {
+      "dual_tau": 0.02231174793088697,
+      "outer_inner_gap": 3.254753001469268e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 18,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 13,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 79,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 86,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -1.0000071881677286e-09
+    },
+    {
+      "dual_tau": 0.0012893366254778137,
+      "outer_inner_gap": 0.0012701923040379732,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 71,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 49,
+          "feasibility": 4.440892098500626e-16
+        },
+        {
+          "success": true,
+          "nit": 72,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 90,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -4.153867275351104
+    },
+    {
+      "dual_tau": 0.022331095982136735,
+      "outer_inner_gap": 1.8634258893146516e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 83,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 13,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 17,
+          "feasibility": 1.4876988529977098e-14
+        },
+        {
+          "success": true,
+          "nit": 101,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -1.000008964524568e-09
+    },
+    {
+      "dual_tau": 0.026229408638567146,
+      "outer_inner_gap": 0.00014240270944876343,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 44,
+          "feasibility": 2.2870594307278225e-14
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 86,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 14,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 87,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 19,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -0.005379638530351727
+    },
+    {
+      "dual_tau": 0.022483979164476666,
+      "outer_inner_gap": 5.124484390472972e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 18,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 13,
+          "feasibility": 4.440892098500626e-16
+        },
+        {
+          "success": true,
+          "nit": 81,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 4.440892098500626e-16
+        }
+      ],
+      "log_witness_constraint": -0.0021958907574450848
+    },
+    {
+      "dual_tau": 0.0015547721927071819,
+      "outer_inner_gap": 3.3845445479636915e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 72,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 99,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 2.1094237467877974e-14
+        }
+      ],
+      "log_witness_constraint": -0.021522988734934856
+    },
+    {
+      "dual_tau": 0.022356958853516035,
+      "outer_inner_gap": 3.863130192072184e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 86,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 13,
+          "feasibility": 4.440892098500626e-16
+        },
+        {
+          "success": true,
+          "nit": 17,
+          "feasibility": 6.661338147750939e-16
+        },
+        {
+          "success": true,
+          "nit": 33,
+          "feasibility": 4.440892098500626e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000036354540498e-09
+    },
+    {
+      "dual_tau": 0.026054753431107497,
+      "outer_inner_gap": 2.3181584705267433e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 43,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 43,
+          "feasibility": 2.353672812205332e-14
+        },
+        {
+          "success": true,
+          "nit": 26,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 93,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -1.0000036354540498e-09
+    },
+    {
+      "dual_tau": 0.013835154692688666,
+      "outer_inner_gap": 1.5460318553484065e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 32,
+          "feasibility": 9.992007221626409e-15
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 26,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 26,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 94,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -1.000000082740371e-09
+    },
+    {
+      "dual_tau": 0.019323051335855223,
+      "outer_inner_gap": 0.00016984761099925194,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 36,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 18,
+          "feasibility": 7.571721027943568e-14
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 33,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 111,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -0.008740381852080148
+    },
+    {
+      "dual_tau": 0.02406685617102212,
+      "outer_inner_gap": 4.008610658434719e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 45,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 25,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 1.7319479184152442e-14
+        },
+        {
+          "success": true,
+          "nit": 30,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 98,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -1.000000082740371e-09
+    },
+    {
+      "dual_tau": 0.015873036346663802,
+      "outer_inner_gap": 9.343285381546718e-06,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 36,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 27,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 4.440892098500626e-16
+        },
+        {
+          "success": true,
+          "nit": 18,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 83,
+          "feasibility": 1.1102230246251565e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000054118108892e-09
+    },
+    {
+      "dual_tau": 0.013146325842003034,
+      "outer_inner_gap": 5.940133290754934e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 35,
+          "feasibility": 6.661338147750939e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 26,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 19,
+          "feasibility": 1.0547118733938987e-14
+        }
+      ],
+      "log_witness_constraint": -0.004382621419509292
+    },
+    {
+      "dual_tau": 0.019397956477122134,
+      "outer_inner_gap": 0.00018205645414692828,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 36,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 16,
+          "feasibility": 1.3322676295501878e-15
+        },
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 31,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 3.3306690738754696e-15
+        }
+      ],
+      "log_witness_constraint": -0.009377642161609856
+    },
+    {
+      "dual_tau": 0.02420278170623486,
+      "outer_inner_gap": 2.2892817420627765e-06,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 45,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 25,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 29,
+          "feasibility": 1.0436096431476471e-14
+        },
+        {
+          "success": true,
+          "nit": 29,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 1.3322676295501878e-15
+        }
+      ],
+      "log_witness_constraint": -1.0000036354540498e-09
+    },
+    {
+      "dual_tau": 0.015919418490016504,
+      "outer_inner_gap": 7.738227733145031e-06,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 36,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 27,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 19,
+          "feasibility": 2.353672812205332e-14
+        },
+        {
+          "success": true,
+          "nit": 30,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000018590972104e-09
+    },
+    {
+      "dual_tau": 0.017173447412897117,
+      "outer_inner_gap": 5.185443949895507e-06,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 42,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 34,
+          "feasibility": 3.1086244689504383e-15
+        },
+        {
+          "success": true,
+          "nit": 25,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 26,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 30,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -0.0002495504389159464
+    },
+    {
+      "dual_tau": 0.026954255665545494,
+      "outer_inner_gap": 2.306618019420892e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 45,
+          "feasibility": 5.10702591327572e-15
+        },
+        {
+          "success": true,
+          "nit": 33,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 25,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 3.3306690738754696e-16
+        },
+        {
+          "success": true,
+          "nit": 30,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -1.000008964524568e-09
+    },
+    {
+      "dual_tau": 0.019793288437961624,
+      "outer_inner_gap": 4.513513692905313e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 41,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 35,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 18,
+          "feasibility": 1.0436096431476471e-14
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 25,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 32,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -0.002248852768371279
+    },
+    {
+      "dual_tau": 0.027231132265176733,
+      "outer_inner_gap": 0.0001202006191570737,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 41,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 33,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 25,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 29,
+          "feasibility": 8.215650382226158e-15
+        },
+        {
+          "success": true,
+          "nit": 25,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 30,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -0.004381891168760532
+    },
+    {
+      "dual_tau": 0.016475621623314382,
+      "outer_inner_gap": 3.269669852340451e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 42,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 34,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 25,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 19,
+          "feasibility": 1.2212453270876722e-15
+        },
+        {
+          "success": true,
+          "nit": 30,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -0.0019590368369435396
+    },
+    {
+      "dual_tau": 0.02516896531409221,
+      "outer_inner_gap": 1.087363180618528e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 42,
+          "feasibility": 4.218847493575595e-15
+        },
+        {
+          "success": true,
+          "nit": 33,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 25,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 4.163336342344337e-17
+        },
+        {
+          "success": true,
+          "nit": 19,
+          "feasibility": 9.992007221626409e-15
+        }
+      ],
+      "log_witness_constraint": -0.00035815181973397614
+    },
+    {
+      "dual_tau": 0.01866713307519937,
+      "outer_inner_gap": 4.2448943459727495e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 43,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 27,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 19,
+          "feasibility": 3.1086244689504383e-15
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 27,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 7.105427357601002e-15
+        }
+      ],
+      "log_witness_constraint": -1.0000018590972104e-09
+    },
+    {
+      "dual_tau": 0.0255978920020002,
+      "outer_inner_gap": 2.969554332843405e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 39,
+          "feasibility": 1.3877787807814457e-17
+        },
+        {
+          "success": true,
+          "nit": 33,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 25,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 29,
+          "feasibility": 1.5210055437364645e-14
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.1102230246251565e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000036354540498e-09
+    },
+    {
+      "dual_tau": 0.016158334378337167,
+      "outer_inner_gap": 1.583911980723718e-05,
+      "tau_evaluations": 23,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 43,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 26,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 3.469446951953614e-18
+        },
+        {
+          "success": true,
+          "nit": 19,
+          "feasibility": 1.554312234475219e-14
+        },
+        {
+          "success": true,
+          "nit": 36,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000107408814074e-09
+    },
+    {
+      "dual_tau": 0.01879473413614164,
+      "outer_inner_gap": 0.00031081598835247526,
+      "tau_evaluations": 22,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 33,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 35,
+          "feasibility": 7.549516567451064e-15
+        },
+        {
+          "success": true,
+          "nit": 32,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 39,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 64,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -0.01662307684590658
+    },
+    {
+      "dual_tau": 0.0043148081425376,
+      "outer_inner_gap": 4.299580506812728e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 1.1102230246251565e-15
+        },
+        {
+          "success": true,
+          "nit": 29,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 34,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 36,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 54,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -0.009837512724562458
+    },
+    {
+      "dual_tau": 0.016617293920677144,
+      "outer_inner_gap": 3.5310779196606745e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 33,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 30,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 18,
+          "feasibility": 4.6629367034256575e-15
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 33,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 76,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -1.0000071881677286e-09
+    },
+    {
+      "dual_tau": 0.02218076833208272,
+      "outer_inner_gap": 0.00012700477432803225,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 31,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 30,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 34,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 3.4416913763379853e-15
+        },
+        {
+          "success": true,
+          "nit": 36,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 66,
+          "feasibility": 1.1102230246251565e-16
+        }
+      ],
+      "log_witness_constraint": -0.005651445675074029
+    },
+    {
+      "dual_tau": 0.01645116369958337,
+      "outer_inner_gap": 3.7465888261922764e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 32,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 29,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 34,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 18,
+          "feasibility": 4.440892098500626e-16
+        },
+        {
+          "success": true,
+          "nit": 75,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000018590972104e-09
+    },
+    {
+      "dual_tau": 0.004799505144349619,
+      "outer_inner_gap": 1.804704690022696e-06,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 29,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 32,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 36,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 6.661338147750939e-16
+        }
+      ],
+      "log_witness_constraint": -0.00029689170584568103
+    },
+    {
+      "dual_tau": 0.016622786031057567,
+      "outer_inner_gap": 1.2546217898590228e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 33,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 30,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 18,
+          "feasibility": 3.907985046680551e-14
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 33,
+          "feasibility": 1.734723475976807e-17
+        },
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 5.551115123125783e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000036354540498e-09
+    },
+    {
+      "dual_tau": 0.02217507141722192,
+      "outer_inner_gap": 0.00012723626309485425,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 31,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 30,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 34,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 5.10702591327572e-15
+        },
+        {
+          "success": true,
+          "nit": 36,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 4.440892098500626e-16
+        }
+      ],
+      "log_witness_constraint": -0.005677031813791089
+    },
+    {
+      "dual_tau": 0.016436080687316564,
+      "outer_inner_gap": 1.845957283219679e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 32,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 34,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 1,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 18,
+          "feasibility": 1.2434497875801753e-14
+        },
+        {
+          "success": true,
+          "nit": 33,
+          "feasibility": 4.440892098500626e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000142935950862e-09
+    },
+    {
+      "dual_tau": 0.023934603009197124,
+      "outer_inner_gap": 3.959721361079804e-06,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 36,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 37,
+          "feasibility": 8.881784197001252e-16
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 33,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 70,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -1.0000036354540498e-09
+    },
+    {
+      "dual_tau": 0.01868757091018629,
+      "outer_inner_gap": 8.124844550683186e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 39,
+          "feasibility": 1.9984014443252818e-15
+        },
+        {
+          "success": true,
+          "nit": 27,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 19,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 25,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 73,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -0.004296813062847349
+    },
+    {
+      "dual_tau": 0.01782014710571532,
+      "outer_inner_gap": 6.656982479724682e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 35,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 18,
+          "feasibility": 2.6201263381153694e-14
+        },
+        {
+          "success": true,
+          "nit": 19,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 32,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 71,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -1.0000125172382468e-09
+    },
+    {
+      "dual_tau": 0.02510494609461787,
+      "outer_inner_gap": 3.0071144318855048e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 35,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 26,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 1.84297022087776e-14
+        },
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 73,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -0.0011461456759391808
+    },
+    {
+      "dual_tau": 0.017839416112400586,
+      "outer_inner_gap": 4.106412678872573e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 35,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 19,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 17,
+          "feasibility": 1.3322676295501878e-15
+        },
+        {
+          "success": true,
+          "nit": 71,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -0.002257231241555857
+    },
+    {
+      "dual_tau": 0.01778291196340747,
+      "outer_inner_gap": 4.763007793340268e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 36,
+          "feasibility": 1.1102230246251565e-15
+        },
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 19,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 32,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 19,
+          "feasibility": 5.329070518200751e-15
+        }
+      ],
+      "log_witness_constraint": -0.002635683885332085
+    },
+    {
+      "dual_tau": 0.01784289054435505,
+      "outer_inner_gap": 3.202621539233341e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 35,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 18,
+          "feasibility": 1.1102230246251565e-15
+        },
+        {
+          "success": true,
+          "nit": 19,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 32,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 1.5543122344752192e-15
+        }
+      ],
+      "log_witness_constraint": -1.0000054118108892e-09
+    },
+    {
+      "dual_tau": 0.024736373291680266,
+      "outer_inner_gap": 2.6316437357176703e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 34,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 26,
+          "feasibility": 1.3877787807814457e-17
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 29,
+          "feasibility": 2.930988785010413e-14
+        },
+        {
+          "success": true,
+          "nit": 30,
+          "feasibility": 2.0816681711721685e-17
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 4.440892098500626e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000071881677286e-09
+    },
+    {
+      "dual_tau": 0.017757040252315563,
+      "outer_inner_gap": 7.393804994371145e-06,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 35,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 17,
+          "feasibility": 1.4654943925052066e-14
+        },
+        {
+          "success": true,
+          "nit": 33,
+          "feasibility": 6.661338147750939e-16
+        }
+      ],
+      "log_witness_constraint": -0.0003560215435705061
+    },
+    {
+      "dual_tau": 0.02097812548629711,
+      "outer_inner_gap": 1.1418629995096907e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 34,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 32,
+          "feasibility": 6.661338147750939e-16
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 73,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000018590972104e-09
+    },
+    {
+      "dual_tau": 0.024777359699860953,
+      "outer_inner_gap": 1.0863508102532116e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 43,
+          "feasibility": 7.327471962526033e-15
+        },
+        {
+          "success": true,
+          "nit": 29,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 30,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 79,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -1.0000071881677286e-09
+    },
+    {
+      "dual_tau": 0.018260411781173193,
+      "outer_inner_gap": 0.0001315859911155126,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 34,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 18,
+          "feasibility": 1.3877787807814457e-17
+        },
+        {
+          "success": true,
+          "nit": 18,
+          "feasibility": 8.104628079763643e-14
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 30,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 80,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -0.007162921395677202
+    },
+    {
+      "dual_tau": 0.02572886043705895,
+      "outer_inner_gap": 0.00016049215220959034,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 32,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 30,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 29,
+          "feasibility": 3.4416913763379853e-15
+        },
+        {
+          "success": true,
+          "nit": 29,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 77,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -0.006225891550679208
+    },
+    {
+      "dual_tau": 0.018121023359494184,
+      "outer_inner_gap": 1.980545840862824e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 34,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 18,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 17,
+          "feasibility": 4.3076653355456074e-14
+        },
+        {
+          "success": true,
+          "nit": 84,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -0.000989374310702118
+    },
+    {
+      "dual_tau": 0.024018127144951534,
+      "outer_inner_gap": 1.66515088956265e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 40,
+          "feasibility": 6.8833827526759706e-15
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 30,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 19,
+          "feasibility": 2.220446049250313e-15
+        }
+      ],
+      "log_witness_constraint": -0.000631615116713391
+    },
+    {
+      "dual_tau": 0.01805698410401737,
+      "outer_inner_gap": 3.4760335292594036e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 34,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 19,
+          "feasibility": 1.3877787807814457e-17
+        },
+        {
+          "success": true,
+          "nit": 19,
+          "feasibility": 1.1102230246251565e-15
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 31,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000125172382468e-09
+    },
+    {
+      "dual_tau": 0.02518073088600258,
+      "outer_inner_gap": 3.320824246311194e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 31,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 29,
+          "feasibility": 1.1324274851176597e-14
+        },
+        {
+          "success": true,
+          "nit": 29,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 8.881784197001252e-16
+        }
+      ],
+      "log_witness_constraint": -0.0012348950463874075
+    },
+    {
+      "dual_tau": 0.0180514521487992,
+      "outer_inner_gap": 1.4104975785023122e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 34,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 19,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 16,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 33,
+          "feasibility": 4.440892098500626e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000036354540498e-09
+    },
+    {
+      "dual_tau": 0.024712598401506553,
+      "outer_inner_gap": 1.3694161994370901e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 37,
+          "feasibility": 7.438494264988549e-15
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 76,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -1.000000082740371e-09
+    },
+    {
+      "dual_tau": 0.024891825211649912,
+      "outer_inner_gap": 3.217800734367504e-06,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 36,
+          "feasibility": 1.4876988529977098e-14
+        },
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 18,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 76,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000036354540498e-09
+    },
+    {
+      "dual_tau": 0.018281414277671246,
+      "outer_inner_gap": 0.00012838675448956227,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 30,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 25,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 18,
+          "feasibility": 4.440892098500626e-16
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 68,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -0.006976360413908367
+    },
+    {
+      "dual_tau": 0.025760799465273324,
+      "outer_inner_gap": 6.763681804933253e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 29,
+          "feasibility": 5.773159728050814e-15
+        },
+        {
+          "success": true,
+          "nit": 19,
+          "feasibility": 1.734723475976807e-17
+        },
+        {
+          "success": true,
+          "nit": 82,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -0.0025212058989865227
+    },
+    {
+      "dual_tau": 0.018284841393494174,
+      "outer_inner_gap": 0.0001355864922450989,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 30,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 25,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 19,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 18,
+          "feasibility": 6.661338147750939e-15
+        },
+        {
+          "success": true,
+          "nit": 68,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -0.007331426040147804
+    },
+    {
+      "dual_tau": 0.02408597080809293,
+      "outer_inner_gap": 6.7329160755580375e-06,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 30,
+          "feasibility": 7.549516567451064e-15
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 2.7755575615628914e-17
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 19,
+          "feasibility": 3.552713678800501e-15
+        }
+      ],
+      "log_witness_constraint": -1.000000082740371e-09
+    },
+    {
+      "dual_tau": 0.01828935789923738,
+      "outer_inner_gap": 0.00011526799993988313,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 30,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 25,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 19,
+          "feasibility": 4.440892098500626e-15
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.0408340855860843e-17
+        },
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 5.551115123125783e-15
+        }
+      ],
+      "log_witness_constraint": -0.006276789564072516
+    },
+    {
+      "dual_tau": 0.025156749396478537,
+      "outer_inner_gap": 5.5707148907235826e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 19,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 1.9984014443252818e-15
+        },
+        {
+          "success": true,
+          "nit": 18,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000107408814074e-09
+    },
+    {
+      "dual_tau": 0.018084343328975204,
+      "outer_inner_gap": 3.8699559911758996e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 29,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 25,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 19,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 18,
+          "feasibility": 1.4210854715202004e-14
+        },
+        {
+          "success": true,
+          "nit": 33,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000071881677286e-09
+    },
+    {
+      "dual_tau": 0.024739087479742485,
+      "outer_inner_gap": 1.4015695044222731e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 29,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 35,
+          "feasibility": 6.217248937900877e-15
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 18,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 90,
+          "feasibility": 0.0
+        }
+      ],
+      "log_witness_constraint": -1.000008964524568e-09
+    },
+    {
+      "dual_tau": 0.0248202735544373,
+      "outer_inner_gap": 2.9139904636599212e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 36,
+          "feasibility": 7.327471962526033e-15
+        },
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 2.7755575615628914e-17
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 18,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 95,
+          "feasibility": 1.1102230246251565e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000071881677286e-09
+    },
+    {
+      "dual_tau": 0.01798703680086117,
+      "outer_inner_gap": 0.00010399260468163529,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 30,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 18,
+          "feasibility": 1.7763568394002505e-15
+        },
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 92,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000071881677286e-09
+    },
+    {
+      "dual_tau": 0.025727226915926063,
+      "outer_inner_gap": 4.586799712336109e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 29,
+          "feasibility": 8.659739592076221e-15
+        },
+        {
+          "success": true,
+          "nit": 19,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 88,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -0.0016248332073640626
+    },
+    {
+      "dual_tau": 0.01817011065012509,
+      "outer_inner_gap": 3.0163622218748465e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 29,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 19,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 18,
+          "feasibility": 7.771561172376096e-16
+        },
+        {
+          "success": true,
+          "nit": 74,
+          "feasibility": 2.220446049250313e-16
+        }
+      ],
+      "log_witness_constraint": -0.001555729172032727
+    },
+    {
+      "dual_tau": 0.024108389463932182,
+      "outer_inner_gap": 7.447870155607994e-06,
+      "tau_evaluations": 23,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 30,
+          "feasibility": 4.440892098500626e-16
+        },
+        {
+          "success": true,
+          "nit": 24,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 19,
+          "feasibility": 4.440892098500626e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000071881677286e-09
+    },
+    {
+      "dual_tau": 0.0181172794531511,
+      "outer_inner_gap": 3.635228251808176e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 30,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 19,
+          "feasibility": 9.992007221626409e-15
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 3.469446951953614e-18
+        },
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 1.887379141862766e-15
+        }
+      ],
+      "log_witness_constraint": -1.000008964524568e-09
+    },
+    {
+      "dual_tau": 0.025237535913057395,
+      "outer_inner_gap": 2.2896222402923883e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 1.1102230246251565e-16
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 28,
+          "feasibility": 6.772360450213455e-15
+        },
+        {
+          "success": true,
+          "nit": 20,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 22,
+          "feasibility": 3.3306690738754696e-15
+        }
+      ],
+      "log_witness_constraint": -1.000000082740371e-09
+    },
+    {
+      "dual_tau": 0.018102263049749656,
+      "outer_inner_gap": 3.522503977360092e-05,
+      "tau_evaluations": 24,
+      "inner_statuses": [
+        {
+          "success": true,
+          "nit": 30,
+          "feasibility": 1.3877787807814457e-17
+        },
+        {
+          "success": true,
+          "nit": 23,
+          "feasibility": 1.3877787807814457e-17
+        },
+        {
+          "success": true,
+          "nit": 19,
+          "feasibility": 0.0
+        },
+        {
+          "success": true,
+          "nit": 21,
+          "feasibility": 2.220446049250313e-16
+        },
+        {
+          "success": true,
+          "nit": 18,
+          "feasibility": 2.4646951146678475e-14
+        },
+        {
+          "success": true,
+          "nit": 33,
+          "feasibility": 1.1102230246251565e-16
+        }
+      ],
+      "log_witness_constraint": -1.0000107408814074e-09
+    }
+  ],
+  "seconds": 387.29152846336365
+}
