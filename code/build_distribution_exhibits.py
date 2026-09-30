@@ -30,7 +30,10 @@ def main():
            'NoOutcomeCost':f(selected.loc[('support_only','mean')].expected_cost,2),
            'TightAllocationCost':f(selected.loc[('finite_consistency_distribution','mean')].expected_cost,2),
            'TotalInformationTightening':f(values['support_only']['mean']-values['finite_consistency_distribution']['mean']),
-           'TotalInformationPercent':f(100*(1-values['finite_consistency_distribution']['mean']/values['support_only']['mean']),1)}
+           'TotalInformationPercent':f(100*(1-values['finite_consistency_distribution']['mean']/values['support_only']['mean']),1),
+           'ConsistencyTightening':f(values['support_only']['mean']-values['logical_distribution']['mean']),
+           'FiniteIncrementOverConsistency':f(values['logical_distribution']['mean']-values['finite_consistency_distribution']['mean']),
+           'FiniteIncrementPercent':f(100*(1-values['finite_consistency_distribution']['mean']/values['logical_distribution']['mean']),2)}
     rows=[]
     for method in ['support_only','logical_distribution','finite_distribution','finite_consistency_distribution']:
         r=selected.loc[(method,'mean')]

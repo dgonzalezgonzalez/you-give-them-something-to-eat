@@ -8,6 +8,9 @@
   "TightAllocationCost": "80.75",
   "TotalInformationTightening": "1.880",
   "TotalInformationPercent": "19.6",
+  "ConsistencyTightening": "1.526",
+  "FiniteIncrementOverConsistency": "0.353",
+  "FiniteIncrementPercent": "4.38",
   "UniversalCommonLoss": "8.138",
   "BindingCommonLoss": "7.848",
   "MinimumGKOwnLoss": "5.790"

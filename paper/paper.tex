@@ -26,7 +26,7 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-\noindent How much does a food-security experiment add to the choice between reaching more households and providing more to each? I reanalyze the 248-village evaluation of Catholic Relief Services' Gikuriro program in Rwanda. At its expected provider budget, a lower/large-cash lottery has the highest fitted mean diet, exceeding Gikuriro by \GKFittedRegret\ food groups among identified diets. This ranking does not establish a positive full-baseline advantage. I combine item-level missing-diet intervals, coherent score distributions and a finite conditional-assignment event to bound the loss from choosing an allocation. Support and costs alone permit a diversified bound of \SupportMeanLoss\ groups. Observed-outcome consistency lowers it to \LogicalMeanLoss; incorporating all protected distributional information lowers it further to \TightMeanLoss. The total tightening is \TotalInformationPercent\ percent, but the remaining bound is too wide for a small-loss recommendation. An approximation giving a much smaller bound fails synthetic coverage tests. Hypothetical universal assistance raises the optimized bound against the original comparator menu to \UniversalCommonLoss; smaller regret within the restricted menu does not imply better outcomes. These comparisons distinguish diversification, empirical information and institutional opportunity costs under explicit assignment, weighting and delivery assumptions.
+\noindent How much does a food-security experiment add to the choice between reaching more households and providing more to each? I reanalyze the 248-village evaluation of Catholic Relief Services' Gikuriro program in Rwanda. At its expected provider budget, a lower/large-cash lottery has the highest fitted mean diet, exceeding Gikuriro by \GKFittedRegret\ food groups among identified diets. This ranking does not establish a positive full-baseline advantage. I combine item-level missing-diet intervals, coherent score distributions and a finite conditional-assignment event to bound the loss from choosing an allocation. Support and costs alone permit a diversified bound of \SupportMeanLoss\ groups. Observed-outcome consistency lowers it to \LogicalMeanLoss; incorporating all protected distributional information lowers it further to \TightMeanLoss. Finite inference adds \FiniteIncrementOverConsistency\ groups beyond consistency; the remaining bound is too wide for a small-loss recommendation. An approximation giving a much smaller bound fails synthetic coverage tests. Hypothetical universal assistance raises the optimized bound against the original comparator menu to \UniversalCommonLoss; smaller regret within the restricted menu does not imply better outcomes. These comparisons distinguish diversification, incremental empirical information and regret protection under hypothetical institutional rules, conditional on explicit assignment, weighting and delivery assumptions.
 \end{abstract}
 \noindent\textbf{Keywords:} food security; Catholic Relief Services; cash transfers; dietary diversity; treatment allocation.\\
 \textbf{JEL codes:} C93, D61, I32, O12.
@@ -48,7 +48,7 @@ Observed-outcome consistency tightens the bound to \LogicalMeanLoss\ groups for 
 
 The much smaller exploratory block bound, \ApproxMeanAllocation\ groups, remains unvalidated. Fixed quotas induce dependence across arms within 22 assignment blocks. Common block scores retain that covariance, but synthetic fifteen-comparison coverage is still \EqualWeightCoverage\ with equal weights and \UnequalWeightCoverage\ with unequal frame weights. Those failures falsify a general nominal-coverage interpretation of the approximation; they do not estimate its unknown coverage for Rwanda. The finite event instead assumes exchangeable labels conditional on each released block's counts, independent blocks and fixed baseline weights. It covers that released target, not unsampled households or deployment by itself.
 
-The relevant opportunity cost also depends on the organization's rules. Eliminating control raises the smallest mean-loss bound against the original menu from \TightMeanLoss\ to \UniversalCommonLoss. Comparing only among universally assisted allocations produces a smaller regret number because the benchmark changes. Similarly, requiring a Gikuriro share can mechanically scale regret when it restricts both the choice and comparator. I distinguish these effects rather than treating a smaller within-menu bound as evidence that an assistance mandate improves diet. The rules are hypothetical institutional sensitivities, not observed CRS requirements.
+The relevant opportunity cost also depends on the organization's rules. Eliminating control raises the smallest mean-loss bound against the original menu from \TightMeanLoss\ to \UniversalCommonLoss. Comparing only among universally assisted allocations produces a smaller regret number because the benchmark changes. Similarly, requiring a Gikuriro share can mechanically scale regret when it restricts both the choice and comparator. I distinguish these effects rather than treating a smaller within-menu bound as evidence that an assistance mandate improves diet. This is a change in the optimized worst-case bound, rather than a measured dietary opportunity cost. The rules are hypothetical institutional sensitivities, not observed CRS requirements.
 
 The decision problem draws directly on \citet{manski2004,manski2007} and \citet{stoye2007}. Their work makes missing outcomes and multiple treatments part of treatment choice. \citet{kitagawa2018} studies empirical welfare maximization in richer policy classes. Here I minimize a confidence-region bound after observing the data. I do not establish a rule that minimizes worst-case expected regret over repeated samples. The contribution is the empirical accounting of diversification, selection, and inferential scope in an important cash-benchmarking experiment. The underlying treatment-choice logic is established; the empirical question is how much protection it supplies at the trial's budget and inferential support.
 
@@ -239,7 +239,7 @@ Lower/large cash has the highest fitted mean across the nine original-budget ver
 
 The support-only mean bound is \SupportMeanLoss. Equal probability on control, Gikuriro and the three small cash packages attains it at expected expenditure \$\NoOutcomeCost. At least one of those five pure feasible packages has share no greater than one fifth under any allocation. Giving it mean twelve and every other package mean zero produces loss at least $12(1-1/5)=9.6$. Thus much of the reduction from a single package's twelve-group worst case follows from diversification alone.
 
-The observed consistency restrictions lower the bound to \LogicalMeanLoss. A finite mean box alone gives \FiniteMeanAllocation, whereas using its protected survival and shortfall information gives \ProjectedMeanLoss. Intersecting coherent finite and consistency restrictions yields \TightMeanLoss, a total tightening of \TotalInformationTightening\ groups relative to support alone. This last improvement is useful for assessing the implementation, but the remaining width still precludes a small-loss recommendation from this procedure. The six-group shortfall bound is \TightShortfallLoss, also wide relative to its unit range. Figure \ref{fig:sharefrontier} displays these distinctions.
+The observed consistency restrictions lower the bound to \LogicalMeanLoss. A finite mean box alone gives \FiniteMeanAllocation, whereas using its protected survival and shortfall information gives \ProjectedMeanLoss. Intersecting coherent finite and consistency restrictions yields \TightMeanLoss, a total tightening of \TotalInformationTightening\ groups relative to support alone. Along the nested sequence from support to consistency to their finite intersection, consistency supplies \ConsistencyTightening\ groups of tightening and finite inference adds \FiniteIncrementOverConsistency\ groups, or \FiniteIncrementPercent\ percent of the preceding bound. This accounting depends on the sequence: the finite-only and consistency regions are not nested. It is a diagnostic of this procedure, rather than a general valuation of conducting an experiment. The remaining width still precludes a small-loss recommendation. The six-group shortfall bound is \TightShortfallLoss, also wide relative to its unit range. Figure \ref{fig:sharefrontier} displays these distinctions.
 
 \begin{figure}[t]
 \centering\includegraphics[width=\textwidth]{../output/figures/information_regions.pdf}
@@ -257,15 +257,15 @@ The intersected mean allocation spends \$\TightAllocationCost\ and retains a con
 
 \subsection{Assistance requirements and the comparator}
 
-CRS implemented the bundled programme; the experiment does not reveal a CRS mandate to optimize only HDDS or to randomize the listed packages at scale. I therefore treat \eqref{eq:planner} as a benchmark rather than an observed organizational rule. Table \ref{tab:institutional} makes several alternative hypothetical rules explicit. A minimum assisted share excludes some control allocations; universal assistance excludes them all. A binding expected budget is different from a hard realized spending cap. Every own-menu calculation changes both choice and comparator to the stated class.
+CRS implemented the bundled programme; the experiment does not reveal a CRS mandate to optimize only HDDS or to randomize the listed packages at scale. I therefore treat \eqref{eq:planner} as a benchmark rather than an observed organizational rule. Table \ref{tab:institutional} makes several alternative hypothetical rules explicit. A minimum assisted share excludes some control allocations; universal assistance excludes them all. Here assistance means village assignment or an offer under the original participation pattern, rather than verified receipt by every household. A binding expected budget is different from a hard realized spending cap. Every own-menu calculation changes both choice and comparator to the stated class.
 
 \begin{table}[t]
-\centering\caption{Hypothetical institutional restrictions and opportunity costs}\label{tab:institutional}
+\centering\caption{Regret protection under hypothetical institutional rules}\label{tab:institutional}
 \resizebox{\textwidth}{!}{\input{../output/tables/institutional_rules.tex}}
 \begin{minipage}{\textwidth}\footnotesize\emph{Notes:} Coherent finite-and-consistency mean region. ``Own-menu'' minimizes loss when both allocation and comparator obey the stated rule. ``Common-menu'' constrains the choice but retains the original unrestricted comparator; its separately optimized expenditure is shown. The columns therefore need not select the same allocation. Constraints and costs are hypothetical benchmarks, not measured donor preferences or mixed-rollout costs.\end{minipage}
 \end{table}
 
-Universal assistance increases the optimized loss against the common menu from \TightMeanLoss\ to \UniversalCommonLoss. Binding expected expenditure gives \BindingCommonLoss. In contrast, own-menu bounds can fall because alternatives are excluded from the comparator. Those smaller numbers do not establish that a restriction improves measured outcomes.
+Universal assistance increases the optimized worst-case loss bound against the common menu from \TightMeanLoss\ to \UniversalCommonLoss. Binding expected expenditure gives \BindingCommonLoss. In contrast, own-menu bounds can fall because alternatives are excluded from the comparator. Those smaller numbers do not establish that a restriction improves measured outcomes. This comparison also differs from the actual dietary opportunity cost at a fixed true mean vector. For a restricted choice class $\mathcal K\subseteq\mathcal Q$, that cost is $\max_{r\in\mathcal Q}r'\mu-\max_{q\in\mathcal K}q'\mu$. The difference between separately optimized worst-case bounds is another object. All six means equal to five are admitted by the displayed outer region; at that vector every nonempty restriction has zero actual dietary opportunity cost, even though its optimized regret bound can be larger.
 
 \begin{corollary}[A fixed package share and a changing comparator]\label{cor:mandate}
 For $0\leq\gamma\leq1$ and $c_g=b$, imposing $q_g\geq\gamma$ on both allocation and comparator makes the feasible set $\gamma e_g+(1-\gamma)\mathcal Q(b)$. For any fixed common mean region, the minimized own-menu regret is $(1-\gamma)$ times the original minimum.
@@ -293,7 +293,7 @@ Upper cash costs only \$\ProviderSavingUpper\ less than the original budget, so 
 
 \subsection{Regression crosswalk and weight sensitivity}
 
-The appendix retains the original-style ANCOVA, its frozen early analysis family, and the coarse missing-outcome crosswalk. The regression conditions on baseline transformations, a missing indicator, and assignment blocks. It imputes missing baseline controls by the weighted within-block mean and never fills a missing endline outcome for the integer analysis. Village CR1 standard errors and maximum-studentized bands are working asymptotic assessments. CR2/Satterthwaite corrections use a specified inverse-weight working covariance. These estimators have different scopes from the block ratio and finite conditional calculation.
+The appendix compares the original-style ANCOVA with the current specification. Complete-case families, coarse missing-outcome calculations and influence diagnostics remain in the replication tables; they are auxiliary checks rather than additional main findings. The regression conditions on baseline transformations, a missing indicator, and assignment blocks. It imputes missing baseline controls by the weighted within-block mean and never fills a missing endline outcome for the integer analysis. Village CR1 standard errors and maximum-studentized bands are working asymptotic assessments. CR2/Satterthwaite corrections use a specified inverse-weight working covariance. These estimators have different scopes from the block ratio and finite conditional calculation.
 
 The source-pooled crosswalk reproduces the original study's rounded Gikuriro and large-cash mean coefficients. Subsequent columns split the smaller cash arms, remove the original source-selected control list, and change the outcome and baseline measurement. No new LASSO selection is run. Equal-household and equal-village specifications also change which households or villages receive representation. Their signs provide composition sensitivity rather than independent estimates of the same weighted target. Weight concentration and village/block omission diagnostics expose influential units without making the remaining ratios selection robust.
 
@@ -309,23 +309,23 @@ The endline anthropometry sample combines children with different cohort histori
 
 To assess cohort composition, I retain those baseline children regardless of endline eligibility or due status and estimate follow-up score regressions using their baseline assignment, weights, and source lagged scores. Missing follow-up scores still select observations. No estimate in the separate fifteen-test Holm family is significant at five percent (Appendix Table \ref{tab:baselinechildren}). This does not identify a zero full-cohort nutritional effect or replace the parent's prespecified child analysis. The original exploratory endline-due regressions and ineligible-household estimates remain in Appendix Table \ref{tab:populations}; neither establishes zero nutrition benefits or zero spillovers.
 
-Saving and productive assets describe possible consequences beyond current food access. The Gikuriro saving coefficient in the initial exploratory specification has pointwise $p$-value \GikuriroSavingP\ and Holm $p$-value \GikuriroSavingHolmP. It does not survive the stated economic-outcome family at five percent. A saving interpretation is therefore a hypothesis. Appendix \ref{app:saving} shows that improved returns to saving could raise intertemporal utility while reducing current food spending, and discrete food thresholds could leave variety unchanged. The experiment bundles saving groups with other activities, so its assignment cannot identify that channel or calibrate its structural parameters.
+The auxiliary saving-stock regression gives a Gikuriro coefficient of \GikuriroSavingEstimate\ IHS units, with standard error \GikuriroSavingSE\ (Appendix Table \ref{tab:secondary}). Its pointwise $p$-value is \GikuriroSavingP; Holm adjustment across the economic outcomes gives \GikuriroSavingHolmP. The response is compatible with a household shifting resources toward future consumption. Appendix \ref{app:saving} develops that possibility: a higher return to saving can raise intertemporal utility and reduce current food spending, while discrete group thresholds leave variety unchanged. Testing this explanation would require variation in saving-group access or terms separately from the nutrition, agriculture and sanitation activities. The bundled assignment supplies no such comparison, irrespective of the saving coefficient's significance.
 
 \subsection{Deployment and omitted value}
 
-An allocation based on these estimates refers to villages comparable to the original trial, under its eligibility rule and within-village saturation. It assumes the same package delivery, stable proportional costs, and no response of cross-village prices or networks to the changed treatment shares. Random assignment identifies the original assignment comparisons under its design; it does not identify this scale margin. A requirement of universal assistance, geographic continuity, or a guaranteed minimum package must enter the feasible set explicitly.
+The deployment benchmark holds eligibility, participation and package delivery at their trial values. A different mix of villages could change prices, networks or provider capacity. Those responses enter the allocation problem through outcomes and costs; estimating them would require variation in coverage beyond the original assignments. A donor's minimum-assistance rule would instead change the feasible menu directly, as in Table \ref{tab:institutional}.
 
-If a broader objective adds unmeasured benefits $H_a$ in the same units as measured diet value, Gikuriro exceeds a lottery $q$ when $H_g-\sum_aq_aH_a\geq-(\mu_g-q'\mu)$. The fitted mean shortfall against lower/large cash is \GKFittedRegret\ diet-equivalent groups. That is a break-even accounting quantity, not an estimate of health, saving returns, or social welfare. The full-baseline comparison can already reverse sign. Monetizing unspecified benefits cannot repair identification or select a preferred ranking.
+For benefits outside current diet, let $H_a$ denote an additional package value in diet-equivalent units. Gikuriro exceeds lottery $q$ under that broader criterion when $H_g-\sum_aq_aH_a\geq-(\mu_g-q'\mu)$. At the fitted identified-diet means, the required differential relative to lower/large cash is \GKFittedRegret\ groups. This gives an accounting threshold for a specified extra benefit. Health outcomes, saving returns and preferences would be needed to estimate it; selection uncertainty already permits the full-baseline diet comparison to reverse sign.
 
 \section{Discussion and conclusion}
 
-The fitted ranking, a feasible allocation and a defensible loss bound answer different questions. Lower/large cash is the identified-diet mean winner at the source's expected budget. Most of the initial diversified protection, however, was available from support and costs alone. Observed consistency and the full protected distributional information tighten the mean bound from \SupportMeanLoss\ to \TightMeanLoss\ groups. The remaining width belongs to this conservative outer construction; it is not a proof that the experiment necessarily prevents useful decisions. The smaller block bound lacks demonstrated nominal coverage.
+At Gikuriro's expected provider budget, a lottery combining lower and large cash has the highest fitted mean among identified diets. It exceeds Gikuriro by \GKFittedRegret\ food groups. Assigning villages to that lottery maintains broad coverage and concentrates the larger package in \LowerLargeShare\ percent of them. The comparison uses the original participation and average-cost convention; it does not establish the dietary ranking for households whose follow-up diets remain unidentified.
 
-Institutional rules also change what is forgone. Restricting both choice and comparator can reduce within-menu regret mechanically, while restricting choice against a common comparator weakly worsens its optimized bound. A village lottery describes mixtures of observed package distributions, rather than a measured response to giving everyone the lottery's average transfer. These distinctions make cash benchmarking more explicit without establishing a new general treatment-choice method or a preferred organizational welfare function.
+The uncertainty calculation is much less decisive than the fitted ranking. Equal shares on the five individually affordable packages already attain a \SupportMeanLoss-group bound using support and costs alone. Factual-outcome consistency supplies \ConsistencyTightening\ groups of tightening; the conditional finite intersection adds \FiniteIncrementOverConsistency. The remaining \TightMeanLoss-group bound allows large losses. These numbers describe the specified outer region. A sharper valid analysis of the same experiment could give a different assessment. The much smaller block approximation cannot support that assessment because its nominal coverage fails the reported stress tests.
 
-The empirical limits remain substantial. Household food access is not child nutrient intake. Endline timing differs across packages, the observation period is short, and later treatment of control limits sustained comparisons. Eligible-sample weights do not by themselves establish representativeness of unobserved households. Source assignment details leave conditional exchangeability as an explicit assumption. National-scale average costs do not identify mixed-program activation costs, and changed coverage can alter spillovers. None of these concerns is resolved by a favorable coefficient or a new transformation of the same diet data.
+The corresponding allocation assigns some villages to control and leaves expected resources unused. Requiring assistance in every village raises optimized regret against the original menu to \UniversalCommonLoss. A donor must therefore specify which packages and uses of funds are admissible before applying the calculation. Changing that menu also changes the comparator; the difference between optimized bounds cannot measure the actual dietary cost of a mandate at the unknown true means.
 
-Further evidence could distinguish durable dietary responses, future returns, and coverage spillovers. That agenda motivates repeated diet measures, saving-group terms, and saturation variation. It does not follow as a mathematical necessity from the width of the particular outer bound reported here. The present evidence supports conditional comparisons and exposes the uncertainty an organization must face. It does not establish a general superiority of cash, a Catholic-specific mechanism, or a statistically minimax allocation rule.
+Gikuriro's stated objective concerns maternal and child nutrition, whereas the main outcome records household food-group variety. The child follow-up regressions and saving illustration address parts of that gap but do not identify the full nutritional or intertemporal benefit of the package. Repeated dietary measures and separate variation in saving terms or program saturation could examine those responses. Original assignment documentation, provider objectives and rollout costs would also make the decision benchmark more informative. The current evidence supports conditional dietary comparisons and quantifies the remaining loss bound; it leaves the wider welfare ranking open.
 \clearpage
 \begin{singlespace}\small
 \begin{thebibliography}{99}
@@ -452,18 +452,9 @@ For comparison with the original study, the supplementary weighted ANCOVA is
 \end{equation}
 The baseline transformation is replaced by its weighted within-block mean where missing, with indicator $M_i$; constant regressors are omitted. Source expansion weights enter WLS. CR1 uses $G/(G-1)(N-1)/(N-K)$, with pointwise $t_{G-1}$ intervals. The original 204-test maximum-studentized family uses 9,999 village-score Rademacher draws; these are working asymptotic bands. Secondary outcomes have 96 distinct Holm tests, food indicators 80, baseline heterogeneity ten, and observation five. Every child and ineligible sensitivity has its own fifteen-test family. These separate families do not supply one paper-wide coverage claim.
 
-The common-slope ANCOVA need not preserve assignment-adjusted target weights under heterogeneous effects. Complete-case selection remains unresolved. The coarse all-or-nothing bounds are retained solely as the initial sample crosswalk; the main item-informed conditional regions supersede their inferential interpretation. No statistical significance is required to retain an analysis, and every referee-driven extension is exploratory.
+The common-slope ANCOVA need not preserve assignment-adjusted target weights under heterogeneous effects. Complete-case selection remains unresolved. The coarse all-or-nothing bounds are retained in the replication tables solely as the initial sample crosswalk; the main item-informed conditional regions supersede their inferential interpretation. No statistical significance is required to retain an analysis, and every referee-driven extension is exploratory.
 
-\begin{table}[p]
-\centering\caption{Initial complete-case diet ANCOVA by assignment}\label{tab:diet}
-\resizebox{\textwidth}{!}{\input{../output/tables/diet_itt.tex}}
-\begin{minipage}{\textwidth}\footnotesize\emph{Notes:} Assignment effects, baseline transformation, missing-baseline indicator, blocks, and source weights. Parenthesized SEs are village CR1. Displayed simultaneous corrections are the original working asymptotic family, not validated full-baseline bounds.\end{minipage}
-\end{table}
-\begin{table}[p]
-\centering\caption{Initial ANCOVA comparisons at the Gikuriro budget}\label{tab:budget}
-\resizebox{\textwidth}{!}{\input{../output/tables/budget_comparisons.tex}}
-\begin{minipage}{\textwidth}\footnotesize\emph{Notes:} Positive values favor Gikuriro over the named cash lottery. Coefficients and village CR1 SEs use the initial complete-case ANCOVA. Inference and target composition differ from the main conditional baseline calculation.\end{minipage}
-\end{table}
+
 \begin{table}[p]
 \centering\caption{Source economic outcomes: exploratory assignment regressions}\label{tab:secondary}
 \resizebox{\textwidth}{!}{\input{../output/tables/secondary.tex}}
@@ -492,29 +483,6 @@ The common-slope ANCOVA need not preserve assignment-adjusted target weights und
 \end{minipage}
 \end{table}
 
-\begin{table}[htbp]
-\centering\caption{Mean-diet small-cluster sensitivity}\label{tab:cr2}
-\resizebox{\textwidth}{!}{\input{../output/tables/cr2.tex}}
-\begin{minipage}{\textwidth}\footnotesize
-\emph{Notes:} Same WLS coefficient specification as the initial ANCOVA; CR2 changes its variance estimate. Satterthwaite degrees of freedom use the independent, homoskedastic whitened-error working model. Effective clusters are the inverse concentration of squared cluster scores for the indicated contrast. These are pointwise diagnostic $p$-values, not the primary simultaneous policy family or exact randomization tests. Working-model sandwich expectation identities are verified in code.
-\end{minipage}
-\end{table}
-
-\begin{table}[htbp]
-\centering\caption{Village weight support among complete diets}\label{tab:weightsupport}
-\resizebox{\textwidth}{!}{\input{../output/tables/weight_support.tex}}
-\begin{minipage}{\textwidth}\footnotesize
-\emph{Notes:} Village weights sum source sampling weights over observed eligible diets. Effective support is $(\sum_j W_j)^2/\sum_j W_j^2$. It concerns weight concentration, not the contrast-specific score concentration in Table \ref{tab:cr2}.
-\end{minipage}
-\end{table}
-
-\begin{table}[htbp]
-\centering\caption{Omitting each village and each randomization block}\label{tab:leaveout}
-\input{../output/tables/leave_out.tex}
-\begin{minipage}{\textwidth}\footnotesize
-\emph{Notes:} Minimum and maximum reestimated Gikuriro-minus-policy mean coefficients. Each fit recomputes baseline imputation, block indicators and covariance on the remaining data, holding original package costs fixed. Omission ranges are sensitivity diagnostics, not confidence intervals.
-\end{minipage}
-\end{table}
 
 \begin{table}[htbp]
 \centering\caption{Available child growth and ineligible-household outcomes}\label{tab:populations}
@@ -524,53 +492,6 @@ The common-slope ANCOVA need not preserve assignment-adjusted target weights und
 \end{minipage}
 \end{table}
 
-\begin{table}[h!]
-\centering\caption{Baseline characteristics of eligible households}\label{tab:baseline}
-\resizebox{\textwidth}{!}{\input{../output/tables/baseline.tex}}
-\begin{minipage}{\textwidth}\footnotesize
-\emph{Notes:} Baseline survey-weighted means with weighted population standard deviations in parentheses. Diet uses the reconstructed complete food module. Each variable is summarized over its nonmissing baseline observations. The replication output reports those counts and a separate set of block-adjusted balance tests.
-\end{minipage}
-\end{table}
-
-\begin{table}[h!]
-\centering\caption{Feasible cash/control vertices at the Gikuriro budget}\label{tab:policies}
-\input{../output/tables/policies.tex}
-\begin{minipage}{\textwidth}\footnotesize
-\emph{Notes:} Coverage denotes assignment to any cash package, not verified household take-up. Lotteries operate on whole villages. Expected cost is per eligible household at original accounting costs. Pure lower, middle, and upper policies leave resources unspent.
-\end{minipage}
-\end{table}
-
-\begin{table}[p]
-\centering\caption{Sensitivity of mean-diet contrasts}\label{tab:robustness}
-\input{../output/tables/robustness.tex}
-\begin{minipage}{\textwidth}\footnotesize
-\emph{Notes:} Each entry is Gikuriro minus the indicated cash policy. Standard errors clustered by village are in parentheses. All specifications retain block fixed effects. Equal-village weighting normalizes survey weights to sum to one within each observed village. Complete-baseline analysis excludes missing baseline food modules; supplied-score analysis keeps the original replacements. These sensitivity estimates are not selected for significance.
-\end{minipage}
-\end{table}
-
-\begin{table}[p]
-\centering\caption{Sample identification regions allowing arbitrary missing diets}\label{tab:bounds}
-\resizebox{\textwidth}{!}{\input{../output/tables/attrition_bounds.tex}}
-\begin{minipage}{\textwidth}\footnotesize
-\emph{Notes:} Worst-case bounds use the full baseline eligible sample and baseline sampling weights. Score bounds are 0 and 12; negative normalized-shortfall bounds are $-1$ and 0. The bounds have no adjustment for block composition or sampling uncertainty. They are sample identification regions, not confidence intervals or evidence of a significant policy ranking.
-\end{minipage}
-\end{table}
-
-\begin{table}[p]
-\centering\caption{Baseline heterogeneity in package diet impacts}\label{tab:heterogeneity}
-\input{../output/tables/heterogeneity.tex}
-\begin{minipage}{\textwidth}\footnotesize
-\emph{Notes:} Coefficients are low-minus-high differences in HDDS ITT. Low status is defined strictly below the median of observed baseline diet or source consumption-IHS. Interactions are included for every package; sample selection uses only the observed baseline split variable. Standard errors are in parentheses. Holm adjustment covers all ten interaction tests. Thresholds and observations are stored in the machine-readable output.
-\end{minipage}
-\end{table}
-
-\begin{table}[p]
-\centering\caption{Large-cash effects on individual food categories}\label{tab:foods}
-\input{../output/tables/foods.tex}
-\begin{minipage}{\textwidth}\footnotesize
-\emph{Notes:} Outcomes are binary category responses in the original 16-category module, so vegetable, fruit, and meat subcategories remain separate here. Responses outside $\{0,1\}$ are missing. Effects are changes in probability, with weighted ANCOVA and village-clustered standard errors. Holm adjustment covers 16 categories and five treatment arms, including estimates not displayed in this table. These are household consumption reports, not measured child nutrients.
-\end{minipage}
-\end{table}
 
 \begin{table}[p]
 \centering\caption{Assignment effects on observing an endline diet}\label{tab:retention}

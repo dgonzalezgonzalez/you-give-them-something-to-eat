@@ -73,5 +73,10 @@
     "full_public_partition_reconstruction": false
   },
   "decision_summary": "Principal third-round technical requests satisfied within inspected scope; consequential economic contribution remains insufficient. More routine technical repairs alone would not change recommendation.",
-  "result_screenshot": "docs/referee/round-4-result.png (local, Git ignored)"
+  "result_screenshot": "docs/referee/round-4-result.png (local, Git ignored)",
+  "referee_artifact_retrieval": {
+    "JSON_preview": "Read visible tail of numerical receipt in native preview, including six resource scenarios, homothetic and interpretation checks. This is not complete JSON retrieval.",
+    "download_received": false,
+    "download_attempt": "One visible native-preview download attempt timed out after 15 seconds. No referee audit program was received or executed."
+  }
 }
