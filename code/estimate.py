@@ -28,7 +28,11 @@ def regress(df, y, base=None, weighting='survey', interactions=None):
     if base is not None:
         b = np.asarray(base)[keep].copy()
         missing = ~np.isfinite(b)
-        b[missing] = np.nanmean(b)
+        global_mean=np.average(b[~missing],weights=w[~missing]) if (~missing).any() else 0.
+        for group in d.block.unique():
+            ix=(d.block.to_numpy()==group)
+            valid=ix & ~missing
+            b[ix & missing]=np.average(b[valid],weights=w[valid]) if valid.any() else global_mean
         if np.ptp(b)>1e-12: columns.append(b)
         if missing.any(): columns.append(missing.astype(float))
     block = pd.get_dummies(d.block,drop_first=True,dtype=float)
@@ -142,7 +146,7 @@ def main():
                          'sd':float(np.sqrt(np.average((z-np.average(z,weights=w))**2,weights=w)))})
     pd.DataFrame(attrs).to_csv(out/'attrition.csv',index=False)
     pd.DataFrame(desc).to_csv(out/'descriptives.csv',index=False)
-    fits={};arm_rows=[];policy_rows=[];ifs=[]
+    fits={};arm_rows=[];arm_ifs=[];policy_rows=[];ifs=[]
     outcomes={'diet_mean':(end.dietarydiversity.to_numpy(),end.base_dietarydiversity.to_numpy())}
     for z in [4,6,8]:
         outcomes[f'shortfall_{z}']=(-np.maximum(z-end.dietarydiversity,0).to_numpy()/z,
@@ -157,12 +161,13 @@ def main():
         for a in ARMS[1:]:
             c=np.zeros(len(fit['beta']));c[ARMS.index(a)]=1
             arm_rows.append({'outcome':name,'arm':a,**contrast(fit,c)})
+            arm_ifs.append(fit['influence']@c)
         for label,policy in vertices.items():
             c=policy_c(fit,policy)
             policy_rows.append({'outcome':name,'policy':label,**contrast(fit,c)})
             ifs.append(fit['influence']@c)
     # One family includes every primary outcome and every feasible cash vertex.
-    simultaneous(policy_rows,ifs)
+    simultaneous(arm_rows+policy_rows,arm_ifs+ifs)
     pd.DataFrame(arm_rows).to_csv(out/'arm_effects.csv',index=False)
     pd.DataFrame(policy_rows).to_csv(out/'policy_effects.csv',index=False)
     secondary=[]
@@ -185,7 +190,40 @@ def main():
             y,b=outcomes[name];fit=regress(end,y,b if adjust else None,weighting=weight)
             for label,policy in vertices.items():
                 robust.append({'spec':spec,'outcome':name,'policy':label,**contrast(fit,policy_c(fit,policy))})
+    for spec in ['source_score','complete_baseline']:
+        sample=end.copy()
+        if spec=='source_score':
+            sample['dietarydiversity']=sample.diet_source
+            sample['base_dietarydiversity']=sample.hhid.map(base.diet_source)
+        else:sample=sample.loc[sample.base_dietarydiversity.notna()].copy()
+        for name in ['diet_mean','shortfall_6']:
+            y=sample.dietarydiversity.to_numpy();b=sample.base_dietarydiversity.to_numpy()
+            if name=='shortfall_6':y=-np.maximum(6-y,0)/6;b=-np.maximum(6-b,0)/6
+            fit=regress(sample,y,b)
+            for label,policy in vertices.items():
+                robust.append({'spec':spec,'outcome':name,'policy':label,**contrast(fit,policy_c(fit,policy))})
     pd.DataFrame(robust).to_csv(out/'robustness.csv',index=False)
+    hetero=[]
+    for split in ['dietarydiversity','consumption_asinh']:
+        cutoff=float(base[split].median())
+        sample=end.loc[end['base_'+split].notna()].copy()
+        h=(sample['base_'+split]<cutoff).astype(float).to_numpy()
+        fit=regress(sample,sample.dietarydiversity.to_numpy(),sample.base_dietarydiversity.to_numpy(),interactions=h)
+        for a in ARMS[1:]:
+            c=np.zeros(len(fit['beta']));c[-5+ARMS.index(a)-1]=1
+            hetero.append({'split':split,'cutoff':cutoff,'arm':a,**contrast(fit,c)})
+    for row,p in zip(hetero,holm([r['p'] for r in hetero])):row['p_holm']=p
+    pd.DataFrame(hetero).to_csv(out/'heterogeneity.csv',index=False)
+    foods=[]
+    for k in [k for k in end if k.startswith('m9_')]:
+        y=np.where(end[k].isin([0,1]),end[k],np.nan)
+        b0=end.hhid.map(base[k]);b=np.where(b0.isin([0,1]),b0,np.nan)
+        fit=regress(end,y,b)
+        for a in ARMS[1:]:
+            c=np.zeros(len(fit['beta']));c[ARMS.index(a)]=1
+            foods.append({'food':k,'arm':a,**contrast(fit,c)})
+    for row,p in zip(foods,holm([r['p'] for r in foods])):row['p_holm']=p
+    pd.DataFrame(foods).to_csv(out/'food_groups.csv',index=False)
     # Bounds use full baseline sample, no monotonicity of attrition assumption.
     bounds=[]
     for name,z in [('diet_mean',None),('shortfall_6',6)]:
@@ -227,7 +265,7 @@ def main():
     meta={'python':platform.python_version(),'numpy':np.__version__,'pandas':pd.__version__,
           'scipy':scipy.__version__,'seed':SEED,'bootstrap_draws':BOOT,'baseline_eligible':len(baseline),
           'endline_eligible_panel':len(end),'blocks':int(d.block.nunique()),'villages':248,
-          'seconds':time.time()-begin,'family_size':len(policy_rows)}
+          'seconds':time.time()-begin,'family_size':len(arm_rows)+len(policy_rows)}
     (out/'run_metadata.json').write_text(json.dumps(meta,indent=2))
     print(json.dumps(meta,indent=2))
     print(pd.DataFrame(policy_rows).query("outcome in ['diet_mean','shortfall_6']")[['outcome','policy','estimate','se','p','p_holm','sim_lo','sim_hi']].to_string(index=False))

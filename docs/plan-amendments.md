@@ -15,3 +15,10 @@ and SciPy t-distribution functions rather than adding statsmodels dependencies.
 Joint primary family includes all 17 transformations and all 8 feasible cash/control
 vertices (including control and feasible pure cash policies), rather than a
 selected subset. This protects both threshold and policy selection.
+
+2026-09-30, after the first estimates: extend the joint max-t family to the
+85 arm-versus-control comparisons as well as 136 policy contrasts, yielding 221
+comparisons. This conservative expansion prevents recipient-level diet claims
+from escaping the multiplicity correction. Correct baseline imputation to the
+prespecified weighted within-block mean; global imputation in the first code
+draft was an implementation error. All estimates regenerated after correction.
