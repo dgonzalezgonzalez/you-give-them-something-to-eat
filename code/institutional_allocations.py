@@ -2,7 +2,8 @@
 
 No CRS donor mandate, mixed-rollout marginal costs or opportunity value is
 observed. These are normative sensitivities to the published benchmark menu.
-Chosen and comparator classes always use the same feasible polytope.
+Own-menu calculations impose the same class on choice and comparator.
+Common-menu calculations restrict choice while retaining the original comparator.
 """
 from pathlib import Path
 import itertools,json
