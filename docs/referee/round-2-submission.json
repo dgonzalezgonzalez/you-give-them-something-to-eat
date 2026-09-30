@@ -1,0 +1,10 @@
+{
+  "source_commit": "52e7d7e799c639acce45a1d8c61259dc5d366f5b",
+  "scientific_commit_replicated": "63987ae075eb314b1b771cdb930d5d4ec21caed9",
+  "pdf_sha256": "113e38748b8bd034bcb648dba9be77b8b03bdc40538488adcf32bac240e3ed05",
+  "zip_sha256": "decb7da10a329462f0c87c6817e667191c4316b8a90899f9431d837ef50bbd20",
+  "zip_bytes": 2100306,
+  "destination": "https://chatgpt.com/c/6abd01e3-4184-83ed-9ff0-e9475053b958",
+  "status": "Ready; browser security rejected file upload despite direct user approval, citing a prior denial. No attachments were uploaded and the second-round prompt has not been sent.",
+  "acceptance_achieved": false
+}
