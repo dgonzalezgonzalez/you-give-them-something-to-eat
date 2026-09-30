@@ -6,3 +6,5 @@ __pycache__/
 *.out
 *.toc
 .node_repl*
+.dependencies/
+.venv-stat/
