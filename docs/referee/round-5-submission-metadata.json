@@ -22,7 +22,8 @@
     "public_link_count": 13,
     "all_links_present_in_actual_copied_message": true,
     "characters": 8970,
-    "scope": "Actual latest user-message Copy control read through the browser clipboard after sending. UI converts links/whitespace; link destinations and substantive text are checked. No scientific attachment selected or delivered."
+    "scope": "Actual latest user-message Copy control read through the browser clipboard after sending. UI converts links/whitespace; link destinations and substantive text are checked. No scientific attachment selected or delivered.",
+    "canonical_text_equal_after_UI_link_and_whitespace_formatting": true
   },
   "response_state": "Visible Pensando; referee states it will verify the frozen tag, coverage/numerical arguments and attempt public-file execution. No recommendation received."
 }
