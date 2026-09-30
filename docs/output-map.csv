@@ -1,35 +1,43 @@
 exhibit,generated_file,builder,builder_line,estimator,numerical_source
 Table 1,output/tables/design.tex,code/build_exhibits.py,52,code/estimate.py,attrition.csv; policies.json
-Table 8,output/tables/diet_itt.tex,code/build_exhibits.py,58,code/estimate.py,arm_effects.csv
-Table 9,output/tables/budget_comparisons.tex,code/build_exhibits.py,59,code/estimate.py,policy_effects.csv
-Table 10,output/tables/secondary.tex,code/build_exhibits.py,60,code/estimate.py,secondary.csv
-Table 18,output/tables/baseline.tex,code/build_exhibits.py,57,code/estimate.py,descriptives.csv
-Table 19,output/tables/policies.tex,code/build_exhibits.py,65,code/estimate.py,policies.json
-Table 20,output/tables/robustness.tex,code/build_exhibits.py,71,code/estimate.py,robustness.csv
-Table 21,output/tables/attrition_bounds.tex,code/build_exhibits.py,73,code/estimate.py,attrition_bounds.csv
-Table 22,output/tables/heterogeneity.tex,code/build_exhibits.py,79,code/estimate.py,heterogeneity.csv
-Table 23,output/tables/foods.tex,code/build_exhibits.py,82,code/estimate.py,food_groups.csv
-Table 24,output/tables/retention.tex,code/build_exhibits.py,84,code/estimate.py,attrition_effects.csv
+Table 11,output/tables/diet_itt.tex,code/build_exhibits.py,58,code/estimate.py,arm_effects.csv
+Table 12,output/tables/budget_comparisons.tex,code/build_exhibits.py,59,code/estimate.py,policy_effects.csv
+Table 13,output/tables/secondary.tex,code/build_exhibits.py,60,code/estimate.py,secondary.csv
+Table 21,output/tables/baseline.tex,code/build_exhibits.py,57,code/estimate.py,descriptives.csv
+Table 22,output/tables/policies.tex,code/build_exhibits.py,65,code/estimate.py,policies.json
+Table 23,output/tables/robustness.tex,code/build_exhibits.py,71,code/estimate.py,robustness.csv
+Table 24,output/tables/attrition_bounds.tex,code/build_exhibits.py,73,code/estimate.py,attrition_bounds.csv
+Table 25,output/tables/heterogeneity.tex,code/build_exhibits.py,79,code/estimate.py,heterogeneity.csv
+Table 26,output/tables/foods.tex,code/build_exhibits.py,82,code/estimate.py,food_groups.csv
+Table 27,output/tables/retention.tex,code/build_exhibits.py,84,code/estimate.py,attrition_effects.csv
 Uncited supplementary output: Figure 1,output/figures/diet_thresholds.pdf,code/build_exhibits.py,98,code/estimate.py,policy_effects.csv
 Uncited supplementary output: Figure 2,output/figures/budget_frontier.pdf,code/build_exhibits.py,115,code/estimate.py,arm_effects.csv; policies.json
 In-text estimates,paper/results.tex,code/build_exhibits.py,141,code/estimate.py,numbers.json
-Table 12,output/tables/diet_intervals.tex,code/build_revision_exhibits.py,23,code/referee_revision.py; code/finite_cluster.py,diet_observation_intervals.csv
+Table 15,output/tables/diet_intervals.tex,code/build_revision_exhibits.py,23,code/referee_revision.py; code/finite_cluster.py,diet_observation_intervals.csv
 Uncited supplementary output: Population bounds,output/tables/population_bounds.tex,code/build_revision_exhibits.py,31,code/referee_revision.py; code/finite_cluster.py,population_bounds.csv; hajek_policy_effects.csv
 Uncited supplementary output: Policy regret,output/tables/regret.tex,code/build_revision_exhibits.py,33,code/referee_revision.py; code/finite_cluster.py,policy_regret.csv
-Table 13,output/tables/original_crosswalk.tex,code/build_revision_exhibits.py,46,code/referee_revision.py; code/finite_cluster.py,original_crosswalk.csv; arm_effects.csv
-Table 14,output/tables/cr2.tex,code/build_revision_exhibits.py,51,code/referee_revision.py; code/finite_cluster.py,cr2_sensitivity.csv
-Table 17,output/tables/additional_populations.tex,code/build_revision_exhibits.py,59,code/referee_revision.py; code/finite_cluster.py,child_effects.csv; ineligible_effects.csv
-Table 15,output/tables/weight_support.tex,code/build_revision_exhibits.py,61,code/referee_revision.py; code/finite_cluster.py,weight_concentration.csv
-Table 16,output/tables/leave_out.tex,code/build_revision_exhibits.py,68,code/referee_revision.py; code/finite_cluster.py,leave_out_sensitivity.csv
+Table 16,output/tables/original_crosswalk.tex,code/build_revision_exhibits.py,46,code/referee_revision.py; code/finite_cluster.py,original_crosswalk.csv; arm_effects.csv
+Table 17,output/tables/cr2.tex,code/build_revision_exhibits.py,51,code/referee_revision.py; code/finite_cluster.py,cr2_sensitivity.csv
+Table 20,output/tables/additional_populations.tex,code/build_revision_exhibits.py,59,code/referee_revision.py; code/finite_cluster.py,child_effects.csv; ineligible_effects.csv
+Table 18,output/tables/weight_support.tex,code/build_revision_exhibits.py,61,code/referee_revision.py; code/finite_cluster.py,weight_concentration.csv
+Table 19,output/tables/leave_out.tex,code/build_revision_exhibits.py,68,code/referee_revision.py; code/finite_cluster.py,leave_out_sensitivity.csv
 Uncited supplementary output: Coherent diet thresholds,output/figures/coherent_thresholds.pdf,code/build_revision_exhibits.py,80,code/referee_revision.py; code/finite_cluster.py,population_bounds.csv; hajek_policy_effects.csv
 Uncited supplementary output: Policy-regret figure,output/figures/policy_regret.pdf,code/build_revision_exhibits.py,86,code/referee_revision.py; code/finite_cluster.py,policy_regret.csv
 Revision in-text numbers,paper/revision-results.tex,code/build_revision_exhibits.py,88,code/referee_revision.py; code/finite_cluster.py,revision-numbers.json
-Table 3,output/tables/decision_bounds.tex,code/build_decision_exhibits.py,42,code/blocked_inference.py; code/policy_allocation.py; code/child_cohorts.py,finite_arm_regions.csv; finite_policy_regions.csv; population_bounds.csv
-Table 4,output/tables/allocation_certificates.tex,code/build_decision_exhibits.py,53,code/blocked_inference.py; code/policy_allocation.py; code/child_cohorts.py,allocation_certificates.csv
-Table 5,output/tables/diversified_allocations.tex,code/build_decision_exhibits.py,59,code/blocked_inference.py; code/policy_allocation.py; code/child_cohorts.py,allocation_certificates.csv
-Table 7,output/tables/child_cohorts.tex,code/build_decision_exhibits.py,65,code/blocked_inference.py; code/policy_allocation.py; code/child_cohorts.py,child_cohort_accounting.csv
-Table 11,output/tables/baseline_child_effects.tex,code/build_decision_exhibits.py,72,code/blocked_inference.py; code/policy_allocation.py; code/child_cohorts.py,baseline_child_effects.csv
-Table 2,output/tables/block_stress.tex,code/build_decision_exhibits.py,80,code/blocked_inference.py; code/policy_allocation.py; code/child_cohorts.py,blocked-validation.json
-Table 6,output/tables/decision_costs.tex,code/build_decision_exhibits.py,87,code/blocked_inference.py; code/policy_allocation.py; code/child_cohorts.py,allocation_cost_sensitivity.csv
-Figure 1,output/figures/allocation_frontier.pdf,code/build_decision_exhibits.py,98,code/blocked_inference.py; code/policy_allocation.py; code/child_cohorts.py,allocation_frontier.csv
+Table 4,output/tables/decision_bounds.tex,code/build_decision_exhibits.py,42,code/blocked_inference.py; code/policy_allocation.py; code/child_cohorts.py,finite_arm_regions.csv; finite_policy_regions.csv; population_bounds.csv
+Uncited supplementary output: Allocation certificates,output/tables/allocation_certificates.tex,code/build_decision_exhibits.py,53,code/blocked_inference.py; code/policy_allocation.py; code/child_cohorts.py,allocation_certificates.csv
+Uncited supplementary output: Diversified allocations,output/tables/diversified_allocations.tex,code/build_decision_exhibits.py,59,code/blocked_inference.py; code/policy_allocation.py; code/child_cohorts.py,allocation_certificates.csv
+Table 9,output/tables/child_cohorts.tex,code/build_decision_exhibits.py,65,code/blocked_inference.py; code/policy_allocation.py; code/child_cohorts.py,child_cohort_accounting.csv
+Table 14,output/tables/baseline_child_effects.tex,code/build_decision_exhibits.py,72,code/blocked_inference.py; code/policy_allocation.py; code/child_cohorts.py,baseline_child_effects.csv
+Table 3,output/tables/block_stress.tex,code/build_decision_exhibits.py,80,code/blocked_inference.py; code/policy_allocation.py; code/child_cohorts.py,blocked-validation.json
+Uncited supplementary output: Aligned cost scenarios,output/tables/decision_costs.tex,code/build_decision_exhibits.py,87,code/blocked_inference.py; code/policy_allocation.py; code/child_cohorts.py,allocation_cost_sensitivity.csv
+Uncited supplementary output: Gikuriro share frontier,output/figures/allocation_frontier.pdf,code/build_decision_exhibits.py,98,code/blocked_inference.py; code/policy_allocation.py; code/child_cohorts.py,allocation_frontier.csv
 Decision in-text numbers,paper/decision-results.tex,code/build_decision_exhibits.py,101,code/blocked_inference.py; code/policy_allocation.py; code/child_cohorts.py,decision-numbers.json
+Table 5,output/tables/information_benchmarks.tex,code/build_distribution_exhibits.py,24,code/distribution_regions.py; code/institutional_allocations.py,distribution_allocation_certificates.csv; allocation_certificates.csv
+Table 6,output/tables/distribution_allocations.tex,code/build_distribution_exhibits.py,38,code/distribution_regions.py; code/institutional_allocations.py,distribution_allocation_certificates.csv
+Table 7,output/tables/institutional_rules.tex,code/build_distribution_exhibits.py,45,code/distribution_regions.py; code/institutional_allocations.py,institutional_allocation_sensitivity.csv
+Table 10,output/tables/unused_resource_values.tex,code/build_distribution_exhibits.py,50,code/distribution_regions.py; code/institutional_allocations.py,unused_resource_sensitivity.csv
+Table 8,output/tables/distribution_costs.tex,code/build_distribution_exhibits.py,57,code/distribution_regions.py; code/institutional_allocations.py,distribution_cost_sensitivity.csv
+Table 2,output/tables/estimand_scope.tex,code/build_distribution_exhibits.py,70,code/distribution_regions.py; code/institutional_allocations.py,Explicit method definitions
+Figure 1,output/figures/information_regions.pdf,code/build_distribution_exhibits.py,81,code/distribution_regions.py; code/institutional_allocations.py,distribution_allocation_certificates.csv; allocation_certificates.csv
+Distribution in-text numbers,paper/distribution-results.tex,code/build_distribution_exhibits.py,82,code/distribution_regions.py; code/institutional_allocations.py,distribution-numbers.json

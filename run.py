@@ -25,7 +25,7 @@ def main():
     for filename,expected in revision['files'].items():
         if hashlib.sha256((ROOT/'data/input'/filename).read_bytes()).hexdigest()!=expected:
             raise RuntimeError('Supplementary reference mismatch: '+filename)
-    for script in ['code/estimate.py','code/referee_revision.py','code/policy_allocation.py','code/child_cohorts.py','code/finite_cluster.py','code/validate_blocked_inference.py','code/build_exhibits.py','code/build_revision_exhibits.py','code/build_decision_exhibits.py','code/validate.py','code/validate_revision.py','code/validate_decision.py']:
+    for script in ['code/estimate.py','code/referee_revision.py','code/policy_allocation.py','code/distribution_regions.py','code/institutional_allocations.py','code/child_cohorts.py','code/finite_cluster.py','code/validate_blocked_inference.py','code/build_exhibits.py','code/build_revision_exhibits.py','code/build_decision_exhibits.py','code/build_distribution_exhibits.py','code/validate.py','code/validate_revision.py','code/validate_decision.py','code/validate_distribution_regions.py','code/validate_institutional_allocations.py']:
         subprocess.run([sys.executable,script],check=True)
     if args.pdf:
         compiler=os.environ.get('PDFLATEX') or shutil.which('pdflatex')

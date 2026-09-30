@@ -17,7 +17,7 @@ files=list((root/'output').glob('*.csv'))
 files=[p for p in files if p.name!='stata-validation.csv']
 files+=list((root/'output/tables').glob('*.tex'))
 files+=list((root/'output/figures').glob('*.png'))
-files+=[root/'output/policies.json',root/'output/numbers.json',root/'output/revision-numbers.json',root/'output/decision-numbers.json',root/'paper/results.tex',root/'paper/revision-results.tex',root/'paper/decision-results.tex',root/'docs/output-map.csv']
+files+=[root/'output/policies.json',root/'output/numbers.json',root/'output/revision-numbers.json',root/'output/decision-numbers.json',root/'output/distribution-numbers.json',root/'paper/results.tex',root/'paper/revision-results.tex',root/'paper/decision-results.tex',root/'paper/distribution-results.tex',root/'docs/output-map.csv']
 checks={}
 for file in files:
     relative=file.relative_to(root)

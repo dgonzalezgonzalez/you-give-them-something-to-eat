@@ -18,7 +18,7 @@ for file in (root/'output').glob('*.csv'):
     checks['output/'+file.name]=True
 for file in (root/'output/tables').glob('*.tex'):
     checks['output/tables/'+file.name]=file.read_text()==(rep/'output/tables'/file.name).read_text()
-for file in ['output/numbers.json','output/revision-numbers.json','output/decision-numbers.json','output/policies.json','paper/results.tex','paper/revision-results.tex','paper/decision-results.tex','docs/output-map.csv']:
+for file in ['output/numbers.json','output/revision-numbers.json','output/decision-numbers.json','output/distribution-numbers.json','output/policies.json','paper/results.tex','paper/revision-results.tex','paper/decision-results.tex','paper/distribution-results.tex','docs/output-map.csv']:
     checks[file]=(root/file).read_text()==(rep/file).read_text()
 for file in (root/'output/figures').glob('*.png'):
     checks['output/figures/'+file.name]=file.read_bytes()==(rep/'output/figures'/file.name).read_bytes()

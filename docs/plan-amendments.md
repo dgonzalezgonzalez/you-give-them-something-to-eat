@@ -85,3 +85,13 @@ Manski (2007)/Stoye (2007), derive exhibit counts and preserve genuine reports.
 Twenty smaller public CSV parts reconstruct existing immutable input bytes for
 file-size-limited readers; scientific data and external replication status do
 not change.
+
+## Fourth revision after the genuine third rejection
+
+The third referee accepts the finite proof and allocation formulation within its inspected scope, but rejects the economic contribution at the unchanged leading general-interest standard. It independently demonstrates support-only regret 9.6 and a tighter 8.151078 projection using already-protected distributional constraints. No household/child microdata or manuscript PDF execution is attributed to that review.
+
+The fourth revision adds the no-outcome benchmark, deterministic item/outcome-consistency restrictions and discrete score-distribution polytopes using all 25 displayed/23 distinct transformations. Projection inherits the existing conditional event, without a new multiplicity penalty. Their intersection gives mean loss 7.720305, still too wide for a small-loss conclusion. Exact scalar projection of this outer polytope is not joint potential-outcome sharpness. No additional-data necessity or new statistical minimax-regret theorem is claimed.
+
+Six hypothetical assistance/spending classes are evaluated with both own-menu and common original comparators. A minimum Gikuriro share can mechanically scale own-menu regret; the manuscript proves and labels that effect. Six unestimated unused-resource values expose the baseline objective's omission. Thirty-two cost scenarios per current finite method retain fixed outcomes and national-scale average units. These choices are referee-driven exploration, not discovered institutional mandates or calibrated welfare preferences.
+
+The analytical codebook separately documents baseline child membership/inference and explicit assignment assumptions. A compact scope table consolidates targets while positive claims retain local selection qualifiers. The same manuscript file and existing compiler remain in use. Four generated macro sets, actual exhibit numbering and all historical analyses/reports remain recoverable. Internal cold-copy and future separate-source verification are reported with their actual scope; neither is independent full replication or a path guaranteed to simulated acceptance.

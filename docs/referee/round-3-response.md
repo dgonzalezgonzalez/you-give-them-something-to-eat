@@ -1,81 +1,91 @@
-# Response to the third referee report: revision in progress
+# Response to the third referee report
 
-30 September 2026. The genuine third report reviews public commit 8213fbc76411d736806d902613e5b507689f4f04 and recommends **Reject at the unchanged leading general-interest economics-journal standard**. It accepts the finite conditional-assignment argument and allocation formulation within its inspected scope. It does not regard the remaining contribution as sufficient. Technical repairs are not a guaranteed route to acceptance. This working response records all ten major and eight minor points and distinguishes implemented documentation from analyses still in progress.
+30 September 2026. The genuine third report reviews frozen public commit 8213fbc76411d736806d902613e5b507689f4f04 and recommends **Reject at the unchanged leading general-interest economics-journal standard**. It accepts the inspected finite argument and LP, but does not find sufficient economic contribution. We retain that recommendation and standard. The fourth revision uses the report's demonstrated projection, adds observed consistency and institutional opportunity-cost comparisons, and revises the paper accordingly. These repairs do not guarantee acceptance.
 
-The report is preserved verbatim in `round-3-report.md`; native citation and sandbox-artifact placeholders remain as copied. One visible inbound download attempt for the referee audit bundle timed out. The bundle has not been received or executed. The referee independently executed summary-input allocation/projection calculations and synthetic inference fixtures, not household or child microdata or the manuscript PDF. Its reported 8.151078 distributional projection therefore remains a referee computation to reproduce independently, not an author-verified household result.
+The report is preserved verbatim. Its native citation and sandbox-artifact placeholders remain as copied. One visible inbound audit-bundle download attempt timed out; that bundle was not received or executed. The referee independently performed summary-input LPs and synthetic inference checks, not household/child microdata or manuscript-PDF execution. We independently reproduce its rounded 8.151078 result with 8.151077610089386. Current internal master, fixture, cold-copy and visual checks are distinct from external replication. Publication and the separate current-source audit are still pending at this working version; their actual identities/results will be recorded before the review freeze.
 
-## M1. Incremental economic information and the support-only benchmark
+## M1. Economic contribution and incremental information
 
-The report demonstrates that a support-only region already gives a 9.6-group optimized regret bound. The fourth revision will report that benchmark beside outcome-informed regions and separate diversification from empirical learning. An independent author-side scratch LP reproduces 9.6 and the submitted 9.440422. Deterministic consistency restrictions from assigned observed outcomes give 8.073764 before a coherent distributional projection. These calculations are not yet the revised manuscript. The main unresolved point is economic significance and general-interest contribution; no numerical tightening alone resolves it.
+The revised abstract, introduction, main Table 5 and Figure 1 now lead with the support-only benchmark, rather than presenting diversification as information learned from the experiment. Support and source costs alone give mean loss 9.6 and shortfall loss 0.8. An explicit lower-bound argument and attaining equal-share allocation establish the mean benchmark. It spends $79.03 under the original average-cost convention.
 
-## M2. Conditional assignment and target population
+Actual outcome consistency gives mean bound 8.073764; the coherent finite event alone gives 8.151078; their intersection gives 7.720305. The total tightening relative to support is 1.879695 groups, about 19.58%. We distinguish nested-region improvement under this criterion from the general value of an experiment. The remaining bound is wide and the methodological ingredients are established. Whether this application demonstrates a consequential general-interest contribution remains the referee's scientific judgment; it is not resolved by a test count or stronger presentation.
 
-The analytical codebook now states the maintained conditional exchangeability and block independence assumptions, rather than only a count formula. The original assignment program and additional restrictions remain unrecovered. The revision will continue to distinguish the released weighted baseline target, wider-frame representation and deployment prediction. Source/registry documentation will be searched for assignment restrictions; investigators will not be contacted without specific authorization to send that communication. Weight identities do not validate assignment or transport.
+## M2. Assignment and target population
 
-## M3. Missing outcomes and affirmative claims
+The codebook explicitly states conditional exchangeability given released block counts and independent blocks. The manuscript continues to distinguish fixed weighted released-baseline inference, wider-frame representation and deployment prediction. We searched all 38 code scripts in the corrected archive for dedicated assignment filenames and common assignment commands; none was found. This search does not prove absence of all restrictions or verify the original probability-generating mechanism. The already-inspected live registry describes computer randomization and retains a count discrepancy; it does not resolve the law. Original assignment code/protocol or investigator confirmation remains unrecovered. No investigator was contacted without specific communication authorization.
 
-The report regards the central item-interval and signed-net-weight implementation repairs as satisfactory. The fourth revision will preserve the local observed-follow-up qualifier on positive large-cash results and the absence of an established positive full-baseline effect. Deterministic consistency constraints will retain all baseline households, partial food-item information and the distinction between potential item-identified ratios and full-baseline means. HDDS remains household food-group recall, not individual nutritional intake.
+## M3. Missing outcomes and positive claims
 
-## M4. Unused simultaneous distributional information
+The accepted item-interval and signed-net-weight repairs remain. Consistency bounds retain all baseline eligible households and their partial item information. The potential identified-diet ratio keeps its original observation indicator: equality of a transformed endpoint cannot silently turn an unidentified diet into an observed one. Positive large-cash observed-follow-up comparisons retain their selection qualifier. Neither the new region nor another complete-case specification establishes a positive unrestricted full-baseline effect. HDDS remains household food-group recall, not child nutrient intake.
 
-This is a substantive correctable inefficiency. The revised finite allocation region will introduce each arm's probabilities over scores 0 through 12, impose all already-protected survival/shortfall/mean interval constraints and project onto the objective mean. This requires no additional multiplicity penalty on the existing event. It will also impose logical consistency restrictions and report feasible-set emptiness rather than silently dropping incompatible constraints. Independent primal/dual checks and a separate summary-input reconstruction will compare the new projection with the referee's 8.151078. No sharp joint-region or new general decision-theory result will be claimed.
+## M4. Propagate all protected distributional information
 
-## M5. Measurement and child cohorts
+Implemented in `code/distribution_regions.py`. Each arm has thirteen nonnegative score probabilities summing to one and constraints for every protected mean, survival and shortfall interval. Projecting onto an objective uses the existing 276-target baseline event or separate 138-target observed event without extra multiplicity. The manuscript's new Proposition 3 and proof show coverage preservation and exact scalar projection of the specified arm-separable outer polytope. Joint potential-outcome sharpness is not claimed. Incompatible distribution constraints fail explicitly.
 
-The codebook now separately defines the fixed pre-treatment cohort, linkage, physical measurement, standardized-score availability and its fifteen-test follow-up sensitivity. The original endline-due analysis remains separately documented. Follow-up selection and upstream anthropometric cleaning remain unresolved. The fourth revision will retain the composition-sensitivity interpretation, without converting Holm nonrejection into a zero nutritional effect or interpreting every outside-cohort child as a newborn.
+The finite-only mean projection exactly reproduces the referee's result. We additionally intersect valid deterministic outcome-consistency restrictions before projection, giving 7.720305 groups and shortfall 0.636567. The package retains endpoint distribution witnesses. A separately implemented epigraph LP over all 64 projected mean-box corners agrees for all sixteen region/objective/scope allocations within about 1.78e-15. These check implementation; the mathematical coverage claim comes from the original event and valid restrictions.
 
-## M6. Finite inference and the failed approximation
+## M5. Child measurement and cohorts
 
-The report independently accepts the finite proof under the maintained assignment model and reproduces the exact covariance example and equal-weight 695/800 undercoverage. The new projection will use that finite event, while the block approximation remains exploratory. The revision will not tune an inflation factor to selected simulations or present the wide submitted box as inevitable. More informative justified inference may be possible with the same data; no additional-data necessity or impossibility theorem is claimed.
+The baseline-flagged cohort analysis and accepted accounting remain. The analytical codebook now separately states membership, linkage, physical measurement, standardized-score availability and the fixed-cohort follow-up sensitivity, retaining the original endline-due analysis as a different specification. Baseline flags are not described as proof of measurement for every child. The 806 outside-cohort children are not all assumed newborns. Missing follow-up scores and inherited cleaning continue to select observations; the fifteen-test Holm nonrejection does not identify zero full-cohort nutritional effects.
 
-## M7. Institution, feasible sets and deployment
+## M6. Finite proof, approximation and sharper analysis
 
-The original benchmark is a hypothetical expected-cost menu under stable original delivery, not an established CRS operational allocation rule. The fourth revision will name that distinction and examine assistance constraints such as eliminating the no-assistance package and imposing a minimum assistance share, with both chosen allocations and comparators using the same feasible set. Those are explicit hypothetical rules, not measured donor mandates. Geographic continuity, a realized spending cap, deployment interference and capacity require further evidence or a different model; reweighting arms does not establish them.
+The finite proof and conditional assumptions remain intact. The same protected primitive family now supplies a stronger distributional construction, demonstrating improvement without new observations or a new coverage assumption. We preserve the exact covariance falsifier and failed block diagnostics, including 695/800 equal-weight and 592/800 unequal-weight coverage. No inflation factor is tuned to pass selected simulations. The small block-region loss stays exploratory; the broad finite intersection is not an impossibility theorem, optimal procedure or proof that additional data are necessary.
+
+## M7. Institution, feasible sets and transport
+
+The paper now names its decision as a hypothetical HDDS/expected-cost benchmark using CRS's trial setting, not an observed organizational mandate. Six explicit normative classes address minimum assistance, universal assistance, binding expected spending and a Gikuriro minimum. `institutional_allocations.py` constructs both own-class comparators and the common original menu. Both columns optimize separately. It also evaluates each own-menu optimum against the common menu.
+
+Universal assistance gives optimized common-menu mean bound 8.138075, above the unrestricted 7.720305. Its smaller own-menu bound reflects excluded alternatives. When Gikuriro cost equals budget, a minimum share on both sides shrinks the menu homothetically and mechanically scales regret. The paper proves this identity; it is not evidence favoring a mandate. Geographic continuity, a hard realized cap, new-scale capacity and changed spillovers remain different questions needing additional modelling/evidence. No reweighting claim removes those limits.
 
 ## M8. Costs and unused resources
 
-The original loss objective contains dietary outcomes only and allows spending below the expected-cost ceiling. It assigns no value to unused resources. The fourth revision will explain this exclusion and compare a binding expected-spending rule with the baseline ceiling where feasible. This is a normative sensitivity, not evidence of the institution's preference or of a redesigned programme's marginal costs. Cost cases will retain the published average-cost convention and fixed-outcome accounting scope, with no estimated cost-confidence interpretation.
+The paper explains that the baseline diet objective gives unspent resources no value. A binding expected-spending rule is now evaluated separately; against the common comparator its mean bound is 7.848443. Six unestimated values of unused dollars augment both allocation and comparator objectives. Their loss units belong to that augmented criterion, not diet alone or an identified welfare function. This exposes the normative exclusion without recommending that an organization withhold funds.
+
+All 32 cost cases per current finite method use the same coherent regions and source point means as the main analysis, with reenumerated comparator vertices. National-scale average overhead, separate-package costing, fixed outcomes and the absence of observed mixed-rollout marginal/activation costs remain explicit. Independent corner LPs check all 64 current cost calculations. Cost scenarios are accounting sensitivities, not cost confidence intervals or causal forecasts under changed participation.
 
 ## M9. Theory and saving
 
-The referee accepts the inspected mathematical propositions and limited saving illustration. The revision will keep the model in the appendix, retain pointwise p<0.001 and Holm p=0.052 as actual values, and state that the bundled design lacks mechanism variation. The missing-benefit calculation remains an accounting identity, not a structural welfare calibration. No saving-access effect or structural parameters are identified by the revised decision region.
+The accepted saving illustration stays in its appendix. Actual pointwise p<0.001 and Holm p=0.052 remain reported. The bundled design does not identify saving access, changes in returns or structural parameters. The missing-benefit exercise remains a break-even accounting identity. New projection/comparator propositions clarify the decision analysis but are not presented as new general decision theory or a tested saving mechanism.
 
-## M10. Independent replication and archival preservation
+## M10. Replication and preservation
 
-Full external household/child execution, manuscript-PDF inspection and a durable archival deposit remain unfulfilled. Exact public partitions solve part of the connector's readability problem, but the referee did not reconstruct them. The new source will receive internal clean-copy, locked-environment and visual checks; these will be labeled internal. No upload workaround will be attempted. A Git tag is a versioned repository snapshot and is not described as a DOI archive. Completing these verification tasks would not itself resolve the report's contribution objection.
+Current master/PDF compilation succeeds in 80.47 seconds. Core 33/33, revision 92/92, decision 14/14, distribution 31/31 and institutional 178/178 pass within their stated scopes. A cold source copy with no prior outputs passes 95/95 comparisons, including the 34-page PDF text. All pages were rendered and contact sheets inspected, with main tables, figure and proofs checked at higher resolution. No overfull boxes or unresolved references appear in the current log.
+
+These are author-side checks, not external full replication. The referee read part of one public CSV partition but did not reconstruct inputs or execute the household/child master or manuscript PDF. Its downloadable audit was not received. Public parts retain original bytes and rights; the source archive is not redistributed. Current separate-environment git-archive verification is pending at this source version. Durable DOI preservation, independent full execution and the original assignment law remain unfulfilled. A repository tag will not be described as a DOI archive. Completing those tasks alone would not answer M1.
 
 ## m1. Title and religious context
 
-The accepted setting interpretation remains: Catholic affiliation is not a randomized attribute and no Catholic-specific mechanism is identified. The required title prefix will be preserved.
+The required title and accepted setting interpretation remain. Catholic affiliation is not randomized and supplies no identified Catholic-specific channel.
 
-## m2. Assignment, receipt and selection language
+## m2. Assignment, receipt and selection
 
-Local qualifiers will remain beside positive empirical claims. The compact scope table proposed under m7 will supplement those qualifiers, not replace them.
+The scope table supplements local qualifiers beside positive results. Original assignment, package receipt, potential observed-diet composition and full-baseline inference remain distinct.
 
 ## m3. Dietary ceiling
 
-The accepted reachable-threshold qualification and twelve-group ceiling remain in the illustrative model. No mathematical amendment is required on this point.
+The accepted reachable-threshold qualification and twelve-group ceiling remain in the illustrative model. No further mathematical amendment was required.
 
 ## m4. Counts and output mapping
 
-The current 24 cited tables and one figure are the third submission's source-level count. The fourth revision will regenerate the map and verify actual rendered numbering/placement after exhibits change. The third referee's source inspection is not claimed as visual PDF verification.
+The updated map derives 27 cited tables and one cited figure from the actual source. Four macro files supply numerical text. Thirty-two tables and six figures are generated in total; uncited historical exhibits are labeled. Main numbering and readability were checked on rendered pages, without attributing those checks to the referee.
 
 ## m5. Analytical codebook
 
-Implemented: `data/input/analytical-codebook.json` now documents the conditional assignment assumption and separately defines baseline child membership and inference, while retaining the earlier endline-due analysis. Frozen empirical input bytes are unchanged. Counts and definitions were checked against `child_cohorts.py` and its actual output; this documentation edit does not claim new microdata execution.
+Implemented: conditional assignment assumptions and distinct baseline child cohort/inference entries now match the programs. Original frozen scientific input bytes are unchanged. The earlier endline-due definition remains as a separate crosswalk.
 
-## m6. Encoding and PDF verification
+## m6. Encoding and PDF
 
-Author encoding remains corrected. The revised PDF will be compiled and rendered internally with the existing runtime. Those checks cannot be attributed to the third referee, who did not receive a usable PDF.
+Author encoding remains correct. The same source and existing compiler produce the 34-page PDF; rendered layout and log checks are recorded. Optional LR screening is bound to the actual PDF hash, uses only its logistic component, and supplies no authorship claim or inferred neural/full-ensemble score.
 
-## m7. Organization and inference labels
+## m7. Organization and variance labels
 
-The fourth revision will consolidate repeated scope statements into an estimand/inference table while retaining local qualifiers. Historical diagnostic tables will be shortened or moved to the appendix when they do not advance the current economic question. The decision, empirical information, assumptions and failed approximation will remain distinct.
+The new compact target/inference table distinguishes weighted baseline, potential identified diets, observed regressions, failed block sensitivity and deployment. The main exhibits prioritize incremental information and institutional opportunity costs. The earlier share-frontier plot and finite-box allocation exhibits remain generated historical diagnostics rather than headline claims. Original ANCOVA and saving theory remain in appendices; local selection qualifiers are preserved.
 
 ## m8. History and exploratory status
 
-All frozen submissions and genuine reports remain recoverable. The fourth revision is referee-driven exploration. No scientific claim will depend on the number of review rounds, a simulated endorsement or changed journal standards.
+All frozen sources, three genuine reports and amendment history remain recoverable. This is referee-driven exploration, not prospective registration. No scientific claim depends on the review count, a simulated endorsement or lowered journal standards.
 
-## Outstanding conditions
+## Remaining conditions
 
-The fourth revision is not complete, and no new genuine acceptance recommendation exists. Immediate code/paper tasks are the benchmark, simultaneous-distribution projection, logical consistency restrictions, feasible-set/resource-value sensitivities and refreshed presentation/audits. Original assignment restrictions, operational mixed costs, deployment interference, sustained outcomes, individual nutritional intake and a tested saving channel remain substantive information limits. A sufficiently important additional economic implication must be demonstrated rather than asserted.
+The scientific merit objection remains distinct from correctable implementation defects. No genuine acceptance exists. Original assignment restrictions, mixed-rollout costs, deployment interference, sustained outcomes, individual intake and an identified saving channel require additional information. External full microdata/PDF execution and DOI preservation remain unfulfilled. The fourth paper demonstrates stronger use of existing information and explicit institutional comparisons; it does not assert that those improvements suffice for the requested journal.

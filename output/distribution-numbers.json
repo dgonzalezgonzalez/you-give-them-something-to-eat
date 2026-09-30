@@ -1,0 +1,14 @@
+{
+  "SupportMeanLoss": "9.600",
+  "LogicalMeanLoss": "8.074",
+  "ProjectedMeanLoss": "8.151",
+  "TightMeanLoss": "7.720",
+  "TightShortfallLoss": "0.637",
+  "NoOutcomeCost": "79.03",
+  "TightAllocationCost": "80.75",
+  "TotalInformationTightening": "1.880",
+  "TotalInformationPercent": "19.6",
+  "UniversalCommonLoss": "8.138",
+  "BindingCommonLoss": "7.848",
+  "MinimumGKOwnLoss": "5.790"
+}
