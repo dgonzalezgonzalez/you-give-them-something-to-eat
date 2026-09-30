@@ -6,7 +6,7 @@ ROOT=Path(__file__).resolve().parent
 
 def main():
     parser=argparse.ArgumentParser()
-    parser.add_argument('--from-source',action='store_true',help='Re-extract the corrected archive already under data/raw/source.')
+    parser.add_argument('--from-source',action='store_true',help='Re-extract directly from the verified data/raw/source.zip.')
     parser.add_argument('--pdf',action='store_true',help='Compile manuscript with pdflatex.')
     args=parser.parse_args();begin=time.time()
     os.chdir(ROOT)

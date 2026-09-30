@@ -14,6 +14,10 @@ checks['diet_integer_support']=d.dietarydiversity.dropna().between(0,12).all() a
 checks['random_assignment_constant']=d.groupby('vid')[TX].nunique().max().max()==1
 checks['single_assignment']=np.isin(d[TX].sum(axis=1),[0,1]).all()
 checks['blocks_constant']=d.groupby('vid').block.nunique().max()==1
+checks['eligibility_fixed_across_rounds']=bool(d.groupby('hhid').eligible.nunique().le(1).all())
+checks['sampling_weights_fixed_across_rounds']=bool(d.groupby('hhid').samp_wgt.nunique().le(1).all())
+baseline_ids=d.loc[(d['round']==1)&(d.eligible==1),'hhid']
+checks['endline_eligibles_link_to_baseline']=bool(d.loc[(d['round']==2)&(d.eligible==1),'hhid'].isin(baseline_ids).all())
 p=json.loads((OUT/'policies.json').read_text());budget=p['budget'];costs=p['costs']
 checks['all_policies_feasible']=all(abs(sum(q.values())-1)<1e-10 and min(q.values())>=0 and sum(costs[a]*v for a,v in q.items())<=budget+1e-9 for q in p['vertices'].values())
 checks['budget_mixtures_exact']=all(abs(sum(costs[a]*v for a,v in q.items())-budget)<1e-9 for q in p['vertices'].values() if len(q)>1)

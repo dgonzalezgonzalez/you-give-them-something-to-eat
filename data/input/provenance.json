@@ -3,6 +3,10 @@
   "license": "CC-BY-4.0",
   "source_archive_md5": "35fe28d475e1913e993a8305f19b4625",
   "source_sha256": "84ce805316fef0d36466e75844afe521fb9a6dfe1fe33f454e1aa2dc71413a7e",
+  "source_members": {
+    "McIntosh and Zeitlin/3-replication/data/household_panel.dta": "ae21b9766e303b55667bb5deab26a10b494bd06fc70ed2bc36d245e7df31e4db",
+    "McIntosh and Zeitlin/3-replication/data/CostsAndCompliance.xlsx": "1cc34e8dd3f9634adfa3513266bbff00cb3168ee0a34bb9ae18534d1e5ff556c"
+  },
   "rows": 5506,
   "fields": [
     "hhid",

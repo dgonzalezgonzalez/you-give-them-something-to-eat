@@ -67,7 +67,7 @@ Run it in Stata, then `python code/validate.py` to compare freshly generated coe
 
 ## Optional reconstruction from the corrected source
 
-Download `McIntosh and Zeitlin.zip` from the corrected DOI page to `data/raw/source.zip`. Verify archive MD5 **35fe28d475e1913e993a8305f19b4625**, SHA256 **84ce805316fef0d36466e75844afe521fb9a6dfe1fe33f454e1aa2dc71413a7e**. Extract under `data/raw/source/` so `McIntosh and Zeitlin/3-replication/data/household_panel.dta` and `CostsAndCompliance.xlsx` exist. Install `openpyxl==3.1.5`, then:
+Download `McIntosh and Zeitlin.zip` from the corrected DOI page to `data/raw/source.zip`. The program verifies archive MD5 **35fe28d475e1913e993a8305f19b4625** and SHA256 **84ce805316fef0d36466e75844afe521fb9a6dfe1fe33f454e1aa2dc71413a7e** and reads `household_panel.dta` and `CostsAndCompliance.xlsx` directly from the verified archive. No manual extraction is required. Install `openpyxl==3.1.5`, then:
 
 ```text
 python run.py --from-source --pdf

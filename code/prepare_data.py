@@ -1,15 +1,20 @@
 """Extract documented numeric fields from the corrected, CC BY 4.0 panel."""
 from pathlib import Path
-import hashlib, json
+import hashlib, io, json, zipfile
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 archive=ROOT/'data/raw/source.zip'
-assert hashlib.md5(archive.read_bytes()).hexdigest()=='35fe28d475e1913e993a8305f19b4625', 'Corrected source archive checksum mismatch'
-SRC = ROOT / 'data/raw/source/McIntosh and Zeitlin/3-replication/data'
+archive_bytes=archive.read_bytes()
+assert hashlib.md5(archive_bytes).hexdigest()=='35fe28d475e1913e993a8305f19b4625', 'Corrected source archive MD5 mismatch'
+assert hashlib.sha256(archive_bytes).hexdigest()=='84ce805316fef0d36466e75844afe521fb9a6dfe1fe33f454e1aa2dc71413a7e', 'Corrected source archive SHA256 mismatch'
+source_zip=zipfile.ZipFile(io.BytesIO(archive_bytes))
+member_prefix='McIntosh and Zeitlin/3-replication/data/'
+panel_bytes=source_zip.read(member_prefix+'household_panel.dta')
+cost_bytes=source_zip.read(member_prefix+'CostsAndCompliance.xlsx')
 DEST = ROOT / 'data/input'
 DEST.mkdir(parents=True, exist_ok=True)
-reader = pd.io.stata.StataReader(SRC/'household_panel.dta', convert_categoricals=False)
+reader = pd.io.stata.StataReader(io.BytesIO(panel_bytes), convert_categoricals=False)
 labels = reader.variable_labels()
 data = reader.read()
 fields = ['hhid','round','vid','block','eligible','samp_wgt','sample_panel','attrites',
@@ -38,14 +43,16 @@ for k in ['hhid','vid','block']:
     data[k] = data[k].map({a:i+1 for i,a in enumerate(keys)})
 assert not data.duplicated(['hhid','round']).any()
 data.to_csv(DEST/'households.csv',index=False,float_format='%.12g',lineterminator='\n')
-costs = pd.read_excel(SRC/'CostsAndCompliance.xlsx')
+costs = pd.read_excel(io.BytesIO(cost_bytes))
 costs.to_csv(DEST/'costs.csv',index=False,float_format='%.12g',lineterminator='\n')
 (DEST/'codebook.json').write_text(json.dumps({**{k:labels[k] for k in fields},
     'dietarydiversity':'Reconstructed 12 food-group score; missing if any component is not binary 0/1',
     'diet_source':'Unmodified source dietarydiversity field, retained for sensitivity'},indent=2),encoding='utf8',newline='\n')
 manifest = {'source_doi':'10.5281/zenodo.15881329','license':'CC-BY-4.0',
             'source_archive_md5': '35fe28d475e1913e993a8305f19b4625',
-            'source_sha256': hashlib.sha256((ROOT/'data/raw/source.zip').read_bytes()).hexdigest(),
+            'source_sha256': hashlib.sha256(archive_bytes).hexdigest(),
+            'source_members':{member_prefix+'household_panel.dta':hashlib.sha256(panel_bytes).hexdigest(),
+                              member_prefix+'CostsAndCompliance.xlsx':hashlib.sha256(cost_bytes).hexdigest()},
             'rows':len(data),'fields':list(data.columns),
             'files':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in
                      [DEST/'households.csv',DEST/'costs.csv',DEST/'codebook.json']}}
