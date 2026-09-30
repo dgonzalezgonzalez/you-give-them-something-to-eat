@@ -1,0 +1,35 @@
+{
+  "round": 3,
+  "frozen_review_commit": "8213fbc76411d736806d902613e5b507689f4f04",
+  "tested_scientific_commit": "95d3e2f536de19b40bfb3f7e6718bbb8fb7c741a",
+  "repository": "https://github.com/dgonzalezgonzalez/you-give-them-something-to-eat",
+  "default_branch": "codex/research",
+  "review_destination": "https://chatgpt.com/c/6abd01e3-4184-83ed-9ff0-e9475053b958",
+  "paper": {
+    "path": "paper/paper.pdf",
+    "bytes": 539712,
+    "sha256": "170d9108814256b209f48a65cf8ac38360a1d4868715de25c7f564620f270bf5"
+  },
+  "bundle": {
+    "path": "docs/referee/round-3-submission.zip",
+    "bytes": 2927406,
+    "sha256": "6bf429020cd58d1cb16e0f6ad07adbf8faa47423c5128cb1d9d0446a7c07a382"
+  },
+  "pdf_pages": 31,
+  "delivery": "Public repository link; no local attachments uploaded",
+  "status": "Prepared; genuine third review not yet submitted",
+  "previous_recommendations": [
+    "Provisional reject, round 1",
+    "Reject, round 2"
+  ],
+  "unchanged_standard": "Leading general-interest economics journal",
+  "audits": {
+    "core_with_optional_Stata": 33,
+    "revision": 92,
+    "decision": 14,
+    "cold_output_comparisons": 80,
+    "separate_environment_published_source_comparisons": 80
+  },
+  "independent_external_full_replication": false,
+  "durable_DOI_archive": false
+}
