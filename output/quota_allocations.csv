@@ -1,0 +1,3 @@
+objective,reported_conservative_loss_upper,expected_cost_USD,Control_probability,Gikuriro_probability,Lower_probability,Middle_probability,Upper_probability,Large_probability
+mean,5.868,84.269627,0.103747744257,0.058226316832,0.292797321646,0.249008856471,0.292309421021,0.003910339773
+shortfall_6,0.503,77.8773,0.211562566021,0.192570449276,0.208562541161,0.180187224115,0.206243633928,0.000873585499

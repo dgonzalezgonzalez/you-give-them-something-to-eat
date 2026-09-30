@@ -1,6 +1,6 @@
 {
   "scope": "Fresh copy with no prior outputs; same installed interpreter and pinned statistical package versions, not a fresh package installation",
-  "checked_files": 94,
+  "checked_files": 95,
   "checks": {
     "output/allocation_certificates.csv": true,
     "output/allocation_cost_sensitivity.csv": true,
@@ -44,6 +44,7 @@
     "output/policy_regret.csv": true,
     "output/policy_tolerances.csv": true,
     "output/population_bounds.csv": true,
+    "output/quota_allocations.csv": true,
     "output/robustness.csv": true,
     "output/secondary.csv": true,
     "output/unused_resource_sensitivity.csv": true,
@@ -99,7 +100,7 @@
     "paper_pdf_page_text": true
   },
   "all_passed": true,
-  "pdf_pages": 34,
+  "pdf_pages": 31,
   "excluded_from_byte_comparison": [
     "runtime metadata",
     "PDF creation timestamps",
@@ -108,7 +109,7 @@
   "master": {
     "python": "3.12.10",
     "platform": "Windows-11-10.0.26200-SP0",
-    "seconds": 72.30674290657043,
+    "seconds": 111.39041376113892,
     "pdf_compiled": true,
     "source_reextracted": false
   }

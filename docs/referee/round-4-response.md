@@ -1,6 +1,6 @@
 # Response to the fourth referee report: revision in progress
 
-30 September 2026. The genuine fourth report reviews frozen `a8e6a43244bfaf9c8fc1c337a5e6ce1c8fe67f4e`, tag `v0.4.0`, and recommends **Reject at the unchanged leading general-interest standard**. It accepts the principal third-report technical requests within its inspected scope, but finds insufficient economic contribution. We preserve that distinction. This document records completed interpretation and presentation changes and unresolved substantive work; it is not a claim that a fifth scientific submission is ready or accepted.
+1 October 2026. The genuine fourth report reviews frozen `a8e6a43244bfaf9c8fc1c337a5e6ce1c8fe67f4e`, tag `v0.4.0`, and recommends **Reject at the unchanged leading general-interest standard**. It accepts the principal third-report technical requests within its inspected scope, but finds insufficient economic contribution. We preserve that distinction. This document records completed interpretation and presentation changes and unresolved substantive work; it is not a claim that a fifth scientific submission is ready or accepted.
 
 The report is preserved verbatim. Its independent execution covers published-summary optimization and synthetic logical fixtures, not empirical household projections, household/child execution, the full master, Stata, coverage simulations in this round, source-archive inspection or PDF review. The native JSON preview displayed selected resource, homothetic and interpretation receipts; its download timed out. No referee program was received or executed.
 
@@ -18,7 +18,7 @@ The accepted scalar consistency restrictions and observation-indicator preservat
 
 ## M4. Coherent projection
 
-The accepted thirteen-bin construction, incompatibility failure, coverage-preserving consistency intersection and exact scalar image of the specified arm-separable outer set remain. The frozen fourth source is unchanged. No arbitrary additional constraints or validation counts are treated as a new economic contribution. A separate, stronger finite-region exploration is still in progress and is not substituted for the reviewed result.
+The accepted thirteen-bin construction, incompatibility failure, coverage-preserving consistency intersection and exact scalar image of the specified arm-separable outer set remain. The frozen fourth source is unchanged. No arbitrary additional constraints or validation counts are treated as a new economic contribution. A separate quota-mixture region now retains the common exponential budget across six arm distributions. Its standalone conditional proof, outward constants and optimizer-free support/dual replay are implemented. It is not intersected with the earlier 95% event. Reported bounds of 5.868 groups and 0.503 shortfall units verify numerical proposals without claiming exact minimax optimality or joint sharpness; the frozen fourth result is retained as an earlier construction.
 
 ## M5. Diet and child measurement
 
@@ -26,7 +26,7 @@ The codebook continues to distinguish pre-treatment child membership, linkage, p
 
 ## M6. Finite coverage and failed approximation
 
-The reviewed finite proof and its conditional design assumptions remain; the approximation's 695/800 and 592/800 failures are retained. No larger draw count or fitted inflation factor turns them into nominal coverage. Sharper finite inference is being explored using only known baseline weights and quota geometry to choose exponential-moment constants. Preliminary bounds and optimization output remain scratch work pending derivation and independent validation. No novelty, sharpness, optimal inference or impossibility claim is made from them.
+The reviewed finite proof and its conditional design assumptions remain; the approximation's 695/800 and 592/800 failures are retained. No larger draw count or fitted inflation factor turns them into nominal coverage. Sharper finite inference now uses a four-point exponential grid selected by known baseline weights and quota geometry alone. Convex binary-box moment enumeration, missing-endpoint ordering and Markov supply a separate 276-term conditional event. Outward Decimal/IEEE constants, interval tangents, exact-rational allocation feasibility and feasible LP duals verify the selected bounds. Actual checks pass 1,076 arithmetic fixtures and 248 allocation/event checks; the latter include independent optimizer-free replay and exhaustive small-design missingness fixtures. Fixture execution is internal evidence and does not substitute for the mathematical coverage proof or external review. No novelty, sharpness, optimal inference or impossibility claim is made from them.
 
 ## M7. Institutional rules and actual opportunity costs
 
@@ -38,7 +38,7 @@ The accepted resource-value sign, common objective and 32 aligned fixed-outcome 
 
 ## M9. Theory, literature and saving
 
-The established decision proofs and accurate Manski/Stoye positioning remain. No additional theory is added to create apparent generality. The saving discussion now explicitly states that stronger adjusted significance would not identify the bundled mechanism: missing channel-specific variation is the identification issue. The appendix's illustration and omitted-benefit break-even accounting remain subordinate to identified dietary comparisons.
+The established decision proofs and accurate Manski/Stoye positioning remain. The new quota proposition derives a specific conditional procedure using elementary convexity and Markov, without claiming a new general theorem or statistical minimax-regret rule. The saving discussion now explicitly states that stronger adjusted significance would not identify the bundled mechanism: missing channel-specific variation is the identification issue. The appendix's illustration and omitted-benefit break-even accounting remain subordinate to identified dietary comparisons.
 
 ## M10. Reproduction and preservation
 
@@ -51,7 +51,7 @@ This improves fresh-environment evidence but remains author-initiated CI, not in
 1. **Religious context:** retained; affiliation is not randomized and no Catholic-specific effect is identified.
 2. **Assignment, receipt and population:** universal assistance now explicitly means village assignment/offer at original participation. Local population qualifications remain.
 3. **Dietary ceiling:** accepted reachable-threshold/twelve-group qualifications remain; no new mechanism is inferred.
-4. **Exhibit mapping:** all four builders regenerate numbering and distinguish cited from uncited outputs. Current compiled PDF has 27 pages, 16 tables and one figure; all contact sheets were inspected and no overfull or unresolved-reference message occurs.
+4. **Exhibit mapping:** all four builders regenerate numbering and distinguish cited from uncited outputs. Current compiled PDF has 31 pages, 16 tables and one figure; all contact sheets were inspected and no overfull or unresolved-reference message occurs.
 5. **Codebook/header:** accepted cohort/design entries retained. `institutional_allocations.py` now correctly distinguishes own-menu and common-menu comparator classes in its header.
 6. **Encoding/display:** actual compilation and rendered pages checked; no new numerical rounding or encoding issue observed. Referee-side PDF inspection remains outside completed external scope.
 7. **Organization:** eleven repetitive historical/diagnostic table displays removed from the paper; generated numerical tables remain reproducible in the package. Main text distinguishes economic results from technical diagnostics.
@@ -59,4 +59,4 @@ This improves fresh-environment evidence but remains author-initiated CI, not in
 
 The economic-contribution objection, verified original assignment law, operational decision evidence, independent scientific full replication and DOI preservation remain unresolved. Four genuine rejections are not acceptance, and no change of journal standard is proposed.
 
-Current 27-page presentation source ceacefc4babba55aa1fafa5d126cafd8edfeaad4 passed a new hosted cold run, https://github.com/dgonzalezgonzalez/you-give-them-something-to-eat/actions/runs/36778586648: all 90 comparisons passed and its full master/PDF took 39.32 seconds. Actual receipt docs/hosted-reproduction-ceacefc.json records the downloaded artifact digest and exclusions. Author/committer metadata of the three post-fourth-report workflow/presentation commits was corrected to the repository's existing no-reply identity; the complete ceacefc tree is byte-identical to current equivalent source bc289ec429fd1545b2367654ef28b41b965d0926 (tree 8c8b209f7d4f75f18380a57e919b2099696ab6b8). Original hosted-run hashes are retained rather than rewritten in the receipts. All four frozen scientific review sources/tags are unchanged. Hosted verification remains author-initiated rather than independent scientific replication; temporary artifacts do not provide DOI preservation.
+Preceding 27-page presentation source ceacefc4babba55aa1fafa5d126cafd8edfeaad4 passed a new hosted cold run, https://github.com/dgonzalezgonzalez/you-give-them-something-to-eat/actions/runs/36778586648: all 90 comparisons passed and its full master/PDF took 39.32 seconds. Actual receipt docs/hosted-reproduction-ceacefc.json records the downloaded artifact digest and exclusions. Author/committer metadata of the three post-fourth-report workflow/presentation commits was corrected to the repository's existing no-reply identity; the complete ceacefc tree is byte-identical to current equivalent source bc289ec429fd1545b2367654ef28b41b965d0926 (tree 8c8b209f7d4f75f18380a57e919b2099696ab6b8). Original hosted-run hashes are retained rather than rewritten in the receipts. All four frozen scientific review sources/tags are unchanged. Hosted verification remains author-initiated rather than independent scientific replication; temporary artifacts do not provide DOI preservation.

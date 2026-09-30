@@ -31,6 +31,13 @@ try:
         checks[relative.as_posix()]=file.read_text(encoding='utf8')==(dest/relative).read_text(encoding='utf8')
     for relative in ['output/policies.json','output/numbers.json','output/revision-numbers.json','output/decision-numbers.json','output/distribution-numbers.json','paper/results.tex','paper/revision-results.tex','paper/decision-results.tex','paper/distribution-results.tex','docs/output-map.csv']:
         checks[relative]=(root/relative).read_text(encoding='utf8')==(dest/relative).read_text(encoding='utf8')
+    for leaf in ['quota-enclosure-validation.json','quota-allocation-validation.json']:
+        actual=json.loads((dest/'output'/leaf).read_text())
+        checks['cold_'+leaf]=actual['all_passed'] and bool(actual['checks']) and all(actual['checks'].values())
+    baseline=json.loads((root/'output/quota-loss-bound.json').read_text())
+    cold=json.loads((dest/'output/quota-loss-bound.json').read_text())
+    checks['quota_event_and_outward_constants']=all(baseline[key]==cold[key] for key in ['event_terms','event_cap','transformations','models'])
+    checks['quota_display_bounds']=all(a['reported_conservative_loss_upper']==b['reported_conservative_loss_upper'] and b['conditional_loss_upper']<=float(a['reported_conservative_loss_upper']) for a,b in zip(baseline['scenarios'],cold['scenarios']))
     with pymupdf.open(dest/'paper/paper.pdf') as pdf:
         pages=len(pdf)
         pdf_text='\n'.join(page.get_text() for page in pdf)
@@ -48,7 +55,7 @@ receipt={'scope':'Author-initiated full public microdata-to-manuscript run in a 
          'checks':checks,'all_passed':execution_error is None and bool(checks) and all(checks.values()),
          'execution_error':execution_error,'pdf_pages':pages,
          'master':json.loads(master_path.read_text()) if master_path.exists() else None,
-         'comparison_scope':'CSV rtol=1e-10/atol=1e-12; exact generated table/macro/definition text; successful cold PDF compilation with title/author. No PNG-byte, PDF-byte or cross-platform PDF-text identity claim.'}
+         'comparison_scope':'CSV rtol=1e-10/atol=1e-12; exact generated table/macro/definition text; exact quota event/model constants, cold interval and dual validation, equal outward display thresholds with actual upper bounds below them; successful cold PDF compilation with title/author. Solver tangent candidates, runtime metadata, PNG/PDF bytes and cross-platform PDF-text identity are excluded.'}
 (root/'output').mkdir(exist_ok=True)
 (root/'output/hosted-run.json').write_text(json.dumps(receipt,indent=2)+'\n',encoding='utf8')
 print(json.dumps(receipt,indent=2))

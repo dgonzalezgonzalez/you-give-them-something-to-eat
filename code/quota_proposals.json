@@ -1,0 +1,64 @@
+{
+  "scope": "Outcome-dependent numerical allocation and dual proposals selected by a convex exchange search. Conditional coverage is uniform over allocations and permits this selection. The master verifies their loss bounds from data; it does not claim certified minimax optimality or reproduce the approximate search gap.",
+  "search_settings": {
+    "outer_iterations": 30,
+    "per_support_tau_evaluations": 24,
+    "tau_interval": [
+      0.001,
+      30.0
+    ],
+    "SLSQP_ftol": 1e-11
+  },
+  "proposals": [
+    {
+      "objective": "mean",
+      "denominator": 1000000000000,
+      "allocation_numerators": [
+        103747744257,
+        58226316832,
+        292797321646,
+        249008856471,
+        292309421021,
+        3910339773
+      ],
+      "support_dual_taus": {
+        "Gikuriro": 0.3027222702422235,
+        "Control": 0.2923003855370881,
+        "Lower": 0.2786181169734756,
+        "Middle": 0.33285609529384724,
+        "Upper": 0.2860450922426733,
+        "Control+Large": 0.3136360921732499,
+        "Lower+Large": 0.2757940798120505,
+        "Middle+Large": 0.329240452973188,
+        "Upper+Large": 0.2837452585400482
+      },
+      "exploratory_search_upper": 5.867131232877093,
+      "exploratory_search_gap": 0.00011431061447098045
+    },
+    {
+      "objective": "shortfall_6",
+      "denominator": 1000000000000,
+      "allocation_numerators": [
+        211562566021,
+        192570449276,
+        208562541161,
+        180187224115,
+        206243633928,
+        873585499
+      ],
+      "support_dual_taus": {
+        "Gikuriro": 0.024794909943333075,
+        "Control": 0.024968357254953208,
+        "Lower": 0.018216745555564122,
+        "Middle": 0.025538672862261445,
+        "Upper": 0.018217799136005693,
+        "Control+Large": 0.0241554886397815,
+        "Lower+Large": 0.018238772034060498,
+        "Middle+Large": 0.02519869555265883,
+        "Upper+Large": 0.01826567345600273
+      },
+      "exploratory_search_upper": 0.5025501140928853,
+      "exploratory_search_gap": 4.7232386994111586e-05
+    }
+  ]
+}

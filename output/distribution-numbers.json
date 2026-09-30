@@ -11,6 +11,11 @@
   "ConsistencyTightening": "1.526",
   "FiniteIncrementOverConsistency": "0.353",
   "FiniteIncrementPercent": "4.38",
+  "QuotaMeanLoss": "5.868",
+  "QuotaShortfallLoss": "0.503",
+  "QuotaAllocationCost": "84.27",
+  "QuotaMeanImprovement": "1.852",
+  "QuotaRelativeImprovement": "24.0",
   "UniversalCommonLoss": "8.138",
   "BindingCommonLoss": "7.848",
   "MinimumGKOwnLoss": "5.790"

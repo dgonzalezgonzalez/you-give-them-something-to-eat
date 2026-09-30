@@ -1,14 +1,14 @@
 ---
 title: "Replication self-audit: You give them something to eat"
 author: "Diego González-González; execution assisted by Codex"
-date: "2026-09-30"
+date: "2026-10-01"
 format: html
 number-sections: true
 ---
 
 # Paper and audit scope
 
-*You give them something to eat: Dietary Diversity, Coverage, and Catholic Aid in Rwanda*. Third genuine referee revision, preparing fourth submission; third recommendation Reject. Public branch codex/research. Internal self-audit follows the retained public JPE TEMPLATE.qmd criteria/MIT attribution. No journal manuscript ID, official JPE certification or independent full replication is asserted.
+*You give them something to eat: Dietary Diversity, Coverage, and Catholic Aid in Rwanda*. Fourth-report revision, preparing fifth scientific submission; all four genuine recommendations Reject. Public branch codex/research. Internal self-audit follows the retained public JPE TEMPLATE.qmd criteria/MIT attribution. No journal manuscript ID, official JPE certification or independent full replication is asserted.
 
 # Data, rights and sources
 
@@ -24,7 +24,7 @@ Python 3.12.10, NumPy 2.5.2, pandas 3.0.5, SciPy 1.18.1, Matplotlib 3.11.1; exac
 
 Windows 11 x64, eight available logical processors; no GPU/API/network after installation. Allow 2 GB RAM/150 MB reproduction space plus packages; physical RAM not measured. Fourth-reviewed Windows master/PDF runtime 80.47 seconds; hosted source e14eb65 master 35.46 seconds. Single command `python run.py --pdf`; omit --pdf for all numerical outputs; --from-source runs direct-ZIP reconstruction.
 
-Master checks references, estimates initial ANCOVA, constructs conditional ratio/finite regions, solves diversified allocation and cost scenarios, accounts for child cohorts, computes ANCOVA CR2/omissions, records failed block stress tests, projects coherent distributions, examines institutional/resource-value rules, builds exhibits, runs five validators and compiles three times. Scientific paths are project relative. Initial 9,999 village multipliers and revised 99,999 block multipliers use seed 20260930; synthetic stress uses seed 20261001, 800 assignments/scenario and 4,999 diagnostic multipliers.
+Master checks references, estimates initial ANCOVA, constructs conditional ratio/finite regions, solves diversified allocation and cost scenarios, accounts for child cohorts, computes ANCOVA CR2/omissions, records failed block stress tests, projects coherent distributions, examines institutional/resource-value rules, selects quota moment scales from baseline weights only, encloses a shared exponential event, verifies numerical allocation proposals, builds exhibits, runs all core and quota validators and compiles three times. Scientific paths are project relative. Initial 9,999 village multipliers and revised 99,999 block multipliers use seed 20260930; synthetic stress uses seed 20261001, 800 assignments/scenario and 4,999 diagnostic multipliers.
 
 # Exhibits and inferential scope
 
@@ -40,11 +40,11 @@ Synthetic 22-block joint coverage is 695/800 with equal weights and 592/800 with
 
 Fourth-reviewed cold-output comparison: 95/95, including 34-page PDF text. Fourth-reviewed published source `4c3ed91945245b91deb5afddb80625573cdf3857` was exported with git archive and run in the separate locked environment: 95/95 comparisons passed, including 34-page PDF text, in 63.98 master seconds. Public-part reconstruction was also verified against immutable references in that export. Historical third scientific source 95d3e2f passed 80 comparisons in the separate locked environment, reused from its original official-PyPI installation; that run is not attributed to the fourth source. Runtime metadata, PDF timestamps and optional Stata reference are excluded from byte comparisons.
 
-All 27 current rendered pages/contact sheets were inspected; the earlier reviewed PDF had 34 pages; main decision tables, figure, title and proofs checked at higher resolution. Current log has no overfull boxes or unresolved references. Compilation and visual review are distinct checks.
+All 31 current rendered pages and four current contact sheets were inspected; new method, main allocation tables and numerical proofs were inspected at higher resolution. The preceding presentation revision had 27 pages and the fourth-reviewed PDF had 34 pages; main decision tables, figure, title and proofs checked at higher resolution. Current log has no overfull boxes or unresolved references. Compilation and visual review are distinct checks.
 
 # Limits and classification
 
-HDDS is household food access rather than child nutrition. The finite allocation bound is conditional, wide, and not an impossibility theorem. Smaller block-region losses are explicitly exploratory. Transport needs comparable weighting, original delivery, stable proportional costs and no changed cross-village interference. Cash overhead was standardized to a separate national program of 56,127 beneficiary households for each transfer amount. Mixed-program marginal/activation costs and hard realized budgets are not observed. Cost/take-up scenarios hold effects fixed. Saving theory is illustrative and not identified mediation.
+HDDS is household food access rather than child nutrition. The new quota allocation bound is conditional, wide, and not an impossibility theorem; it is a separate 95% event from the earlier finite constructions. Institutional/cost sensitivities remain explicitly tied to the earlier coherent region. Smaller block-region losses are explicitly exploratory. Transport needs comparable weighting, original delivery, stable proportional costs and no changed cross-village interference. Cash overhead was standardized to a separate national program of 56,127 beneficiary households for each transfer amount. Mixed-program marginal/activation costs and hard realized budgets are not observed. Cost/take-up scenarios hold effects fixed. Saving theory is illustrative and not identified mediation.
 
 - [x] Internal checks and current cold-output reproduction.
 - [x] Corrected processed-source extraction and independent immutable references.
@@ -61,3 +61,9 @@ Current information benchmark: support-only 9.600; logical consistency 8.073764;
 The author-initiated Ubuntu hosted run e14eb656ceebaef2e0dbd5f4ea87f441c45f9f5d installs a new Python/statistical/TeX environment, reconstructs public partitions and runs the entire cold microdata-to-manuscript master. Actual receipt docs/hosted-reproduction-e14eb65.json records 90 passed numeric/text/PDF-content comparisons and downloaded artifact verification. It is a new hosted environment, not an independent scientific replicator. The first workflow-only source 6361ad7 failed because the helper was absent; the completed source passed. No expired artifact is a durable archive. Current 27-page presentation changes postdate that 34-page run.
 
 Current 27-page presentation source ceacefc4babba55aa1fafa5d126cafd8edfeaad4 passed a new hosted cold run, https://github.com/dgonzalezgonzalez/you-give-them-something-to-eat/actions/runs/36778586648: all 90 comparisons passed and its full master/PDF took 39.32 seconds. Actual receipt docs/hosted-reproduction-ceacefc.json records the downloaded artifact digest and exclusions. Author/committer metadata of the three post-fourth-report workflow/presentation commits was corrected to the repository's existing no-reply identity; the complete ceacefc tree is byte-identical to current equivalent source bc289ec429fd1545b2367654ef28b41b965d0926 (tree 8c8b209f7d4f75f18380a57e919b2099696ab6b8). Original hosted-run hashes are retained rather than rewritten in the receipts. All four frozen scientific review sources/tags are unchanged. Hosted verification remains author-initiated rather than independent scientific replication; temporary artifacts do not provide DOI preservation.
+
+# Fifth-revision quota update
+
+The current full numerical/PDF master takes 124.34 seconds on Windows. New quota validators pass 1,076 independent arithmetic fixtures and 248 optimizer-free allocation/dual/missing-diet checks. Cold-output reproduction passes 96/96 including the 31-page PDF text, with 111.39 master seconds. This is an internal fresh source copy using the existing interpreter. New source-specific hosted execution remains pending; historical hosted runs are not attributed to this source.
+
+The shared 276-term event verifies 5.8671294071 mean groups and 0.5025483675 shortfall units, rounded upward to 5.868/0.503. Exact-rational shares, ideal cost vertices, directed constants and feasible dual tangents are retained for replay. The default master verifies published numerical proposals; optional exchange search does not establish a certified minimax gap. Baseline-only lambda selection and missing-endpoint event validity are derived in docs/quota-inference.md and the manuscript appendix. The new event is not intersected with the earlier nominal 95% regions. Current bound width, unrecovered original assignment law and economic-contribution objection remain material. Fifth genuine review is not yet submitted.
