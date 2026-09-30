@@ -1,0 +1,50 @@
+{
+  "scope": "Fresh copy with no prior outputs; same installed interpreter and pinned statistical package versions, not a fresh package installation",
+  "checked_files": 29,
+  "checks": {
+    "output/arm_effects.csv": true,
+    "output/attrition.csv": true,
+    "output/attrition_bounds.csv": true,
+    "output/attrition_effects.csv": true,
+    "output/balance.csv": true,
+    "output/descriptives.csv": true,
+    "output/distributions.csv": true,
+    "output/food_groups.csv": true,
+    "output/heterogeneity.csv": true,
+    "output/policy_effects.csv": true,
+    "output/robustness.csv": true,
+    "output/secondary.csv": true,
+    "output/tables/attrition_bounds.tex": true,
+    "output/tables/baseline.tex": true,
+    "output/tables/budget_comparisons.tex": true,
+    "output/tables/design.tex": true,
+    "output/tables/diet_itt.tex": true,
+    "output/tables/foods.tex": true,
+    "output/tables/heterogeneity.tex": true,
+    "output/tables/policies.tex": true,
+    "output/tables/retention.tex": true,
+    "output/tables/robustness.tex": true,
+    "output/tables/secondary.tex": true,
+    "output/figures/budget_frontier.png": true,
+    "output/figures/diet_thresholds.png": true,
+    "output/policies.json": true,
+    "output/numbers.json": true,
+    "paper/results.tex": true,
+    "docs/output-map.csv": true,
+    "paper_pdf_page_text": true
+  },
+  "all_passed": true,
+  "pdf_pages": 25,
+  "excluded_from_byte_comparison": [
+    "runtime metadata",
+    "PDF creation timestamps",
+    "optional Stata reference"
+  ],
+  "master": {
+    "python": "3.12.10",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "seconds": 17.04798698425293,
+    "pdf_compiled": true,
+    "source_reextracted": false
+  }
+}

@@ -22,3 +22,5 @@ comparisons. This conservative expansion prevents recipient-level diet claims
 from escaping the multiplicity correction. Correct baseline imputation to the
 prespecified weighted within-block mean; global imputation in the first code
 draft was an implementation error. All estimates regenerated after correction.
+
+2026-09-30, after inspecting observation diagnostics: display all five observed-diet retention effects with a separate five-test Holm family. Upper cash has higher observation. This diagnostic does not change the primary family or establish selection ignorability. Added explicitly to manuscript so the observed-case limitation is concrete.

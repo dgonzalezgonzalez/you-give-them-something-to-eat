@@ -1,0 +1,56 @@
+{
+  "checks": {
+    "no_duplicate_household_round": true,
+    "no_text_or_direct_identifiers": true,
+    "diet_integer_support": true,
+    "random_assignment_constant": true,
+    "single_assignment": true,
+    "blocks_constant": true,
+    "all_policies_feasible": true,
+    "budget_mixtures_exact": true,
+    "eight_cash_vertices": true,
+    "expected_primary_family": true,
+    "simultaneous_bands_contain_pointwise": true,
+    "missing_diet_eligible_n": true,
+    "mixture_identity_diet_mean_Control": true,
+    "mixture_identity_diet_mean_Lower": true,
+    "mixture_identity_diet_mean_Middle": true,
+    "mixture_identity_diet_mean_Upper": true,
+    "mixture_identity_diet_mean_Control+Large": true,
+    "mixture_identity_diet_mean_Lower+Large": true,
+    "mixture_identity_diet_mean_Middle+Large": true,
+    "mixture_identity_diet_mean_Upper+Large": true,
+    "mixture_identity_shortfall_6_Control": true,
+    "mixture_identity_shortfall_6_Lower": true,
+    "mixture_identity_shortfall_6_Middle": true,
+    "mixture_identity_shortfall_6_Upper": true,
+    "mixture_identity_shortfall_6_Control+Large": true,
+    "mixture_identity_shortfall_6_Lower+Large": true,
+    "mixture_identity_shortfall_6_Middle+Large": true,
+    "mixture_identity_shortfall_6_Upper+Large": true,
+    "independent_stata_agreement": true
+  },
+  "independent_stata": {
+    "Gikuriro": {
+      "coefficient_error": 1.1712852909795402e-14,
+      "se_error": 4.801714581503802e-15
+    },
+    "Lower": {
+      "coefficient_error": 1.6986412276764895e-14,
+      "se_error": 0.0
+    },
+    "Middle": {
+      "coefficient_error": 1.2079226507921703e-13,
+      "se_error": 5.10702591327572e-15
+    },
+    "Upper": {
+      "coefficient_error": 2.070565940925917e-14,
+      "se_error": 2.6922908347160046e-15
+    },
+    "Large": {
+      "coefficient_error": 1.9317880628477724e-14,
+      "se_error": 2.4980018054066022e-15
+    }
+  },
+  "all_passed": true
+}

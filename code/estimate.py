@@ -261,6 +261,7 @@ def main():
     for a in ARMS[1:]:
         c=np.zeros(len(fit['beta']));c[ARMS.index(a)]=1
         ar.append({'arm':a,**contrast(fit,c)})
+    for row,p in zip(ar,holm([r['p'] for r in ar])):row['p_holm']=p
     pd.DataFrame(ar).to_csv(out/'attrition_effects.csv',index=False)
     meta={'python':platform.python_version(),'numpy':np.__version__,'pandas':pd.__version__,
           'scipy':scipy.__version__,'seed':SEED,'bootstrap_draws':BOOT,'baseline_eligible':len(baseline),

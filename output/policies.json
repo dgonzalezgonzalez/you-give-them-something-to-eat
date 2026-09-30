@@ -1,0 +1,41 @@
+{
+  "costs": {
+    "Control": 0.0,
+    "Gikuriro": 124.487701416,
+    "Lower": 53.5771102905,
+    "Middle": 95.8629302979,
+    "Upper": 121.24092865,
+    "Large": 517.435302734
+  },
+  "budget": 124.487701416,
+  "vertices": {
+    "Control": {
+      "Control": 1.0
+    },
+    "Lower": {
+      "Lower": 1.0
+    },
+    "Middle": {
+      "Middle": 1.0
+    },
+    "Upper": {
+      "Upper": 1.0
+    },
+    "Control+Large": {
+      "Control": 0.7594139774417443,
+      "Large": 0.24058602255825573
+    },
+    "Lower+Large": {
+      "Lower": 0.8471287296836151,
+      "Large": 0.15287127031638495
+    },
+    "Middle+Large": {
+      "Middle": 0.9320999833250724,
+      "Large": 0.06790001667492766
+    },
+    "Upper+Large": {
+      "Upper": 0.9918051012877037,
+      "Large": 0.008194898712296256
+    }
+  }
+}

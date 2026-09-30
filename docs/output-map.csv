@@ -1,0 +1,15 @@
+exhibit,generated_file,builder,builder_line,estimator,numerical_source
+Table 1,output/tables/design.tex,code/build_exhibits.py,48,code/estimate.py,attrition.csv; policies.json
+Table 2,output/tables/diet_itt.tex,code/build_exhibits.py,54,code/estimate.py,arm_effects.csv
+Table 3,output/tables/budget_comparisons.tex,code/build_exhibits.py,55,code/estimate.py,policy_effects.csv
+Table 4,output/tables/secondary.tex,code/build_exhibits.py,56,code/estimate.py,secondary.csv
+Table 5,output/tables/baseline.tex,code/build_exhibits.py,53,code/estimate.py,descriptives.csv
+Table 6,output/tables/policies.tex,code/build_exhibits.py,61,code/estimate.py,policies.json
+Table 7,output/tables/robustness.tex,code/build_exhibits.py,67,code/estimate.py,robustness.csv
+Table 8,output/tables/attrition_bounds.tex,code/build_exhibits.py,69,code/estimate.py,attrition_bounds.csv
+Table 9,output/tables/heterogeneity.tex,code/build_exhibits.py,75,code/estimate.py,heterogeneity.csv
+Table 10,output/tables/foods.tex,code/build_exhibits.py,77,code/estimate.py,food_groups.csv
+Table 11,output/tables/retention.tex,code/build_exhibits.py,79,code/estimate.py,attrition_effects.csv
+Figure 1,output/figures/diet_thresholds.pdf,code/build_exhibits.py,93,code/estimate.py,policy_effects.csv
+Figure 2,output/figures/budget_frontier.pdf,code/build_exhibits.py,110,code/estimate.py,arm_effects.csv; policies.json
+In-text estimates,paper/results.tex,code/build_exhibits.py,136,code/estimate.py,numbers.json

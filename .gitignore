@@ -8,3 +8,9 @@ __pycache__/
 .node_repl*
 .dependencies/
 .venv-stat/
+tmp/
+replication-check/
+docs/repository-*.png
+docs/sources/*-metadata.json
+docs/sources/20220682*.txt
+docs/sources/ReadMe.txt
