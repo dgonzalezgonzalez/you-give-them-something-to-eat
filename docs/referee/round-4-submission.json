@@ -18,7 +18,7 @@
   },
   "pdf_pages": 34,
   "delivery": "Public repository link; no paper/data attachments delivered",
-  "status": "Submitted through ordinary-text public links; genuine Pro 5/5 response running",
+  "status": "Completed genuine Pro 5/5 fourth report: Reject at unchanged leading general-interest standard",
   "previous_recommendations": [
     "Provisional reject, round 1",
     "Reject, round 2",
@@ -46,5 +46,32 @@
     "sha256": "34d0188f3805a301c0d48ea02e38554d9a84e8d2f23999e7aa5310be4715e67d",
     "text_matches_prepared_after_UI_markdown_and_whitespace_normalization": true,
     "public_GitHub_link_targets": 11
-  }
+  },
+  "recommendation": "Reject",
+  "report": {
+    "path": "docs/referee/round-4-report.md",
+    "sha256": "8456b0331f97cbacef04667bd8445e9438a4169268c61495d9921f792a0509eb",
+    "characters": 29617,
+    "preservation": "Verbatim browser Copy response, including native citation/artifact placeholders"
+  },
+  "completed_report_observed_by_utc": "2026-09-30T20:40:19Z",
+  "report_time_note": "Observation bound, not the exact generation-completion timestamp.",
+  "referee_execution_scope": {
+    "summary_input_main_bounds": 8,
+    "institutional_own_common_solutions": 48,
+    "selected_published_institutional_checks": 10,
+    "resource_value_scenarios": 6,
+    "independent_synthetic_completions": true,
+    "empirical_microdata_projection": false,
+    "household_or_child_execution": false,
+    "full_master": false,
+    "Stata": false,
+    "PDF_compilation_or_visual_review": false,
+    "coverage_simulations_this_round": false,
+    "source_archive_fresh_inspection": false,
+    "PDF_or_ZIP_hash_verification": false,
+    "full_public_partition_reconstruction": false
+  },
+  "decision_summary": "Principal third-round technical requests satisfied within inspected scope; consequential economic contribution remains insufficient. More routine technical repairs alone would not change recommendation.",
+  "result_screenshot": "docs/referee/round-4-result.png (local, Git ignored)"
 }
