@@ -1,0 +1,8 @@
+.venv/
+data/raw/
+__pycache__/
+*.aux
+*.log
+*.out
+*.toc
+.node_repl*
