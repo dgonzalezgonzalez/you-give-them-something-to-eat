@@ -1,0 +1,66 @@
+{
+  "freeze": "f13190f7e6e668cfd20b9c3c370047286dc85340",
+  "scope": "Six authenticated published models plus transcribed proposal shares/tau values; fresh candidate optimization and directed tangent/dual evaluation. NOT microdata execution, upstream constant regeneration, or replay of all original candidate witnesses.",
+  "model_files_authenticated": 6,
+  "executed_environment": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "mpmath": "1.3.0"
+  },
+  "recomputed_bounds": [
+    {
+      "objective": "mean",
+      "upper_recomputed": 5.867129398437479,
+      "upward_display": "5.868",
+      "canonical_upper": 5.86712940709943,
+      "maximum_absolute_comparator_difference": 7.917493061171399e-8,
+      "expected_cost_float": 84.26962689233036
+    },
+    {
+      "objective": "shortfall_6",
+      "upper_recomputed": 0.5025483675290228,
+      "upward_display": "0.503",
+      "canonical_upper": 0.5025483675290233,
+      "maximum_absolute_comparator_difference": 3.557824179711844e-8,
+      "expected_cost_float": 77.8772998498943
+    }
+  ],
+  "independent_arithmetic_checks": {
+    "moment_fixture_count": 60,
+    "HT_fixtures": 20,
+    "affine_inequalities": 200,
+    "nonlinear_and_exact_dual_checks": 108,
+    "all_passed": true
+  },
+  "equal_mean_witness": {
+    "all_arm_means": 5,
+    "exact_rational_unit_mass": true,
+    "all_logical_constraints_and_bin_floors_exactly_verified": true,
+    "shared_mixture_upper": "0.018032101463054512927134118626908874490874780619180930964492476115764970090272437",
+    "cap": 5520,
+    "scope": "Exactly rational, same distribution in all six arms, exactly mean five. Exact linear feasibility and outward 80-digit mixture enclosure for authenticated stored model constants. NOT a proof of feasible fixed-individual-weight potential outcomes."
+  },
+  "not_executed": [
+    "Household or child microdata reconstruction or regressions",
+    "Actual-data quota normalizer or HT model constant regeneration",
+    "Full master",
+    "Stata",
+    "Canonical 18 tangent witness-file replay",
+    "Manuscript PDF retrieval, visual inspection, compilation or hash verification",
+    "Original source-archive reconstruction",
+    "Unequal-weight coverage simulation",
+    "Hosted CI artifact download or independent digest recomputation"
+  ],
+  "hosted_evidence": "GitHub API independently returned success for author-initiated run 36788039531 on scientific fd958c1. This is metadata verification, not independent scientific replication.",
+  "source_module_hashes": {
+    "quota_arithmetic.py": {
+      "Git_blob": "eb512ff802a1c62dceaed5426df0c6b86ee9ffd3",
+      "SHA256": "58721670ec1896f58e1e55f6fb749d7400685e0db3895960b6f927be4f93e829"
+    },
+    "quota_moments.py": {
+      "Git_blob": "e5ef29cdac726700ccf472404dc8932856539497",
+      "SHA256": "b6fd74bb1db56cddfc67531e28c4e5321de8587d8d72c4d15eb9ede861456c4d"
+    }
+  }
+}

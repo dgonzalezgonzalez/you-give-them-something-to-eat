@@ -1,6 +1,6 @@
 {
   "round": 5,
-  "status": "submitted_response_running",
+  "status": "completed_reject",
   "prepared_UTC": "2026-09-30T23:03:09.086254+00:00",
   "destination": "https://chatgpt.com/c/6abd01e3-4184-83ed-9ff0-e9475053b958",
   "referee_setting": "Pro 5 of5 visibly confirmed before submission",
@@ -14,7 +14,7 @@
   "canonical_quota_receipt_sha256": "adb0a6c4abb40fc3079a85ab42077918ebc7f9324912aa013c5de7bfeb841399",
   "hosted_run_id": 36788039531,
   "hosted_receipt": "docs/hosted-reproduction-fd958c1.json",
-  "scope": "Public-link ordinary-text review request only. Earlier security-denied local scientific uploads are not retried or worked around. No fifth recommendation or household/PDF execution is asserted before the actual response.",
+  "scope": "Public-link ordinary-text review completed. No scientific attachment delivered. Genuine report preserved verbatim; simulated recommendation is not a journal decision.",
   "submitted_UTC": "2026-09-30T23:06:24.938076+00:00",
   "tag_object": "83a06bfba67945026735e470a11c9e7df30ed33e",
   "delivered_request_sha256": "5fbdca21d6bc93611b0ead4cc305696b6ae2335825b15c7d3e7683436b138995",
@@ -25,5 +25,14 @@
     "scope": "Actual latest user-message Copy control read through the browser clipboard after sending. UI converts links/whitespace; link destinations and substantive text are checked. No scientific attachment selected or delivered.",
     "canonical_text_equal_after_UI_link_and_whitespace_formatting": true
   },
-  "response_state": "Visible Pensando; referee states it will verify the frozen tag, coverage/numerical arguments and attempt public-file execution. No recommendation received."
+  "response_state": "Completed genuine fifth Pro 5/5 report; no acceptance.",
+  "recommendation": "Reject at unchanged leading general-interest economics-journal standard",
+  "report_preserved_UTC": "2026-09-30T23:41:11.309052+00:00",
+  "report_path": "docs/referee/round-5-report.md",
+  "report_sha256": "fe81b88fb42b68be5c547a4fbb52c067bb7692d54d3bf04af5b24475ddcf2fea",
+  "report_characters": 30004,
+  "independent_execution_scope": "Authenticated six published model views and two modules; fresh candidate optimization and outward tangent/dual evaluation reproduce 18 comparator bounds and both upward displays. Independent synthetic checks and a rational common-distribution witness. No microdata/upstream constant regeneration, full master, Stata or manuscript PDF execution/inspection.",
+  "audit_preview_path": "docs/referee/round-5-audit-preview.json",
+  "audit_preview_scope": "JSON reconstructed from the visible native summary preview; not a byte-authenticated downloaded original.",
+  "audit_bundle_download": "One supported visible download attempt timed out after 15 seconds; ZIP not received or executed."
 }
