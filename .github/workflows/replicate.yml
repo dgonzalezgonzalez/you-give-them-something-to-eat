@@ -1,0 +1,55 @@
+name: Public microdata reproduction
+
+on:
+  push:
+    branches: [codex/research]
+    paths:
+      - 'code/**'
+      - 'data/input/**'
+      - 'data/public-views/**'
+      - 'paper/paper.tex'
+      - 'requirements*'
+      - 'run.py'
+      - '.github/workflows/replicate.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  reproduce:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
+        with:
+          python-version: '3.12.10'
+      - name: Install statistical lock and PDF reader from PyPI
+        run: python -m pip install --index-url https://pypi.org/simple -r requirements-lock.txt PyMuPDF==1.28.2
+      - name: Install TeX from the Ubuntu distribution
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y texlive-latex-base texlive-latex-recommended texlive-fonts-recommended lmodern
+      - name: Verify public partition reconstruction
+        run: python code/public_data_views.py --verify
+      - name: Cold microdata-to-manuscript execution and comparison
+        env:
+          OMP_NUM_THREADS: '1'
+          OPENBLAS_NUM_THREADS: '1'
+          MKL_NUM_THREADS: '1'
+          MPLBACKEND: Agg
+        run: python code/verify_hosted_run.py
+      - name: Preserve actual outputs and execution receipt
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: microdata-reproduction-${{ github.sha }}
+          path: |
+            output/hosted-run.json
+            tmp/hosted-cold/output/
+            tmp/hosted-cold/paper/paper.pdf
+          retention-days: 30
+          if-no-files-found: error
