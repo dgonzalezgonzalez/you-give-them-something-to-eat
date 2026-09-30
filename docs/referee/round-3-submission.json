@@ -17,7 +17,7 @@
   },
   "pdf_pages": 31,
   "delivery": "Public repository link; no local attachments uploaded",
-  "status": "Prepared; genuine third review not yet submitted",
+  "status": "Submitted through public repository link; genuine Pro 5/5 response running",
   "previous_recommendations": [
     "Provisional reject, round 1",
     "Reject, round 2"
@@ -31,5 +31,8 @@
     "separate_environment_published_source_comparisons": 80
   },
   "independent_external_full_replication": false,
-  "durable_DOI_archive": false
+  "durable_DOI_archive": false,
+  "submitted_at_utc": "2026-09-30T18:44:51.674702+00:00",
+  "model_setting_observed": "Pro, 5 de 5",
+  "proof_screenshot": "docs/referee/round-3-link-submitted.png (local, Git ignored)"
 }
