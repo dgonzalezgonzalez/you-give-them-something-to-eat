@@ -29,7 +29,7 @@ def regress(df, y, base=None, weighting='survey', interactions=None):
         b = np.asarray(base)[keep].copy()
         missing = ~np.isfinite(b)
         b[missing] = np.nanmean(b)
-        columns.append(b)
+        if np.ptp(b)>1e-12: columns.append(b)
         if missing.any(): columns.append(missing.astype(float))
     block = pd.get_dummies(d.block,drop_first=True,dtype=float)
     columns += [block[k].to_numpy() for k in block]
