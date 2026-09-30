@@ -17,7 +17,7 @@
 | Honest inference | Synthetic block coverage fails (0.869/0.740); finite conditional diversified bound 9.440 groups; approximate 0.570 explicitly unvalidated | Reliable small-loss claims withdrawn; no impossibility theorem |
 | Diego style/screen | Writing skill applied; actual PDF LR necessary condition fails at threshold 0.33489, SHA in output | No neural/full-ensemble scores or authorship proof |
 | Determinism | Fixed seeds, locks, 99,999 revised multipliers, retained stress settings; no LLM data classification | Present |
-| Genuine review/all-point response | Both Pro reports reject; response covers ten major/eight minor second-report points | No external full microdata/PDF execution asserted |
-| Acceptance | Neither genuine report recommends acceptance | Incomplete; cannot mark goal achieved |
+| Genuine review/all-point response | All three Pro reports reject; response covers ten major/eight minor second-report points | No external full microdata/PDF execution asserted |
+| Acceptance | None of the three genuine reports recommends acceptance | Incomplete; cannot mark goal achieved |
 
-Direct public publication/review-upload approval is in chat. Browser security nevertheless rejected local attachments; no upload/workaround occurred. Public-link review remains permitted. Complete independent microdata/PDF verification and durable DOI archive remain unavailable. Freeze and honest third review are next; changed standards or better internal checks cannot manufacture acceptance.
+Direct public publication/review-upload approval is in chat. Browser security nevertheless rejected local attachments; no upload/workaround occurred. Public-link review remains permitted. Complete independent microdata/PDF verification and durable DOI archive remain unavailable. Third review is preserved verbatim and the fourth revision is in progress; changed standards or better internal checks cannot manufacture acceptance.

@@ -17,7 +17,7 @@
   },
   "pdf_pages": 31,
   "delivery": "Public repository link; no local attachments uploaded",
-  "status": "Submitted through public repository link; genuine Pro 5/5 response running",
+  "status": "Genuine third Pro 5/5 report completed: Reject at unchanged leading general-interest standard",
   "previous_recommendations": [
     "Provisional reject, round 1",
     "Reject, round 2"
@@ -34,5 +34,16 @@
   "durable_DOI_archive": false,
   "submitted_at_utc": "2026-09-30T18:44:51.674702+00:00",
   "model_setting_observed": "Pro, 5 de 5",
-  "proof_screenshot": "docs/referee/round-3-link-submitted.png (local, Git ignored)"
+  "proof_screenshot": "docs/referee/round-3-link-submitted.png (local, Git ignored)",
+  "report": {
+    "path": "docs/referee/round-3-report.md",
+    "sha256": "a25cc9930f7106656fede852384f5b9bdf99e4bd78a79e3a90dea844664c219c",
+    "bytes": 31698,
+    "captured_at_utc": "2026-09-30T19:08:36.483407+00:00",
+    "recommendation": "Reject",
+    "verbatim_copy_from_referee": true
+  },
+  "referee_execution_scope": "Independent summary-input allocation LP and coherent-distribution projection; exact retrieved inference module on synthetic fixtures; independently reproduced equal-weight 695/800 coverage. No household/child microdata, complete master, Stata, manuscript PDF, original archive, unequal-weight stress rerun or hash verification.",
+  "referee_audit_bundle_retrieved": false,
+  "referee_audit_download_attempt": "Visible inbound download control clicked once; supported download event timed out after 15 seconds. Bundle not received or executed."
 }
