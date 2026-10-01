@@ -1,0 +1,195 @@
+{
+  "status": "actual_completed_eighth_audit_download_received_and_compared",
+  "received_at_utc": "2026-10-01T14:10:22Z",
+  "destination_chat_id": "6abd01e3-4184-83ed-9ff0-e9475053b958",
+  "original_review_turn_id": "ada88880-abe0-43d6-bbbe-46962582b1e4",
+  "review_ref": "v0.8.0",
+  "scientific_source": "aa8667ccde0e00d4c5aa182a89d88b4065a6dda6",
+  "recommendation": "Reject at unchanged leading general-interest standard",
+  "new_review": false,
+  "acceptance": false,
+  "zip_path": "docs/referee/round-8-received-audit/referee_round8_audit_v0.8.0.zip",
+  "zip_actual_bytes": 568276,
+  "zip_actual_sha256": "f45106edeebd61a5d74391dc8796555282c805709d6d8c737719f44c33542eb7",
+  "separate_summary_path": "docs/referee/round-8-received-audit/summary.json",
+  "separate_summary_actual_bytes": 5405,
+  "separate_summary_actual_sha256": "cc89ad49d99ae34523367c5de3cd03bece8629d6f5b1fdd908e0ff8715a34d5d",
+  "summary_exact_named_archive_member_byte_equal": true,
+  "archive_crc_check": true,
+  "archive_members": 18,
+  "supplied_manifest_checks": [
+    {
+      "file": "cost_reconstruction.json",
+      "expected_sha256": "244a235f87aa324db02f6a1b78a200a0fe5511e05e12a085c9ba7e9ca65d8847",
+      "actual_sha256": "244a235f87aa324db02f6a1b78a200a0fe5511e05e12a085c9ba7e9ca65d8847",
+      "matches": true
+    },
+    {
+      "file": "README.md",
+      "expected_sha256": "14791e40b2106bfb1095b15f4ec3e6356ca2a28bc3501a36a25b402ff2464ab0",
+      "actual_sha256": "14791e40b2106bfb1095b15f4ec3e6356ca2a28bc3501a36a25b402ff2464ab0",
+      "matches": true
+    },
+    {
+      "file": "verify_summaries.py",
+      "expected_sha256": "29234a3df47b0780e83b2048e24dac36e070a02f4b06070c7cd253d63711694d",
+      "actual_sha256": "29234a3df47b0780e83b2048e24dac36e070a02f4b06070c7cd253d63711694d",
+      "matches": true
+    },
+    {
+      "file": "summary.json",
+      "expected_sha256": "cc89ad49d99ae34523367c5de3cd03bece8629d6f5b1fdd908e0ff8715a34d5d",
+      "actual_sha256": "cc89ad49d99ae34523367c5de3cd03bece8629d6f5b1fdd908e0ff8715a34d5d",
+      "matches": true
+    },
+    {
+      "file": "rebuild_cost.py",
+      "expected_sha256": "1dd5907150bd67d4b46063188edcfe94e989fd79fdc9f0bce831ae268a244caa",
+      "actual_sha256": "1dd5907150bd67d4b46063188edcfe94e989fd79fdc9f0bce831ae268a244caa",
+      "matches": true
+    },
+    {
+      "file": "midpoint_bias.csv",
+      "expected_sha256": "0ef9e5f798254cc77c7e6be1cc0d312727115ec2438dd60b7e7d90e3d5e2028a",
+      "actual_sha256": "0ef9e5f798254cc77c7e6be1cc0d312727115ec2438dd60b7e7d90e3d5e2028a",
+      "matches": true
+    },
+    {
+      "file": "synthetic_pairs.csv",
+      "expected_sha256": "1afdbc46e252d468b03c320a47432406134b53f9d7e092dbbf387a7e863391ae",
+      "actual_sha256": "1afdbc46e252d468b03c320a47432406134b53f9d7e092dbbf387a7e863391ae",
+      "matches": true
+    },
+    {
+      "file": "synthetic_log.txt",
+      "expected_sha256": "8684df280e7fbdd47633132fe94cdc2d6114d84b9840e2b8305e68ed9d422889",
+      "actual_sha256": "8684df280e7fbdd47633132fe94cdc2d6114d84b9840e2b8305e68ed9d422889",
+      "matches": true
+    },
+    {
+      "file": "synthetic_results.csv",
+      "expected_sha256": "a68d026b757379d26b9da605b824c1bc8463b64a7d4b1fde44b406fb52834251",
+      "actual_sha256": "a68d026b757379d26b9da605b824c1bc8463b64a7d4b1fde44b406fb52834251",
+      "matches": true
+    },
+    {
+      "file": "independent_designs.py",
+      "expected_sha256": "454acb0208b648d5f32fe6bd107d9ea46b09d5ec0cfa81f7d96eaaae92073198",
+      "actual_sha256": "454acb0208b648d5f32fe6bd107d9ea46b09d5ec0cfa81f7d96eaaae92073198",
+      "matches": true
+    },
+    {
+      "file": "synthetic_draws.csv",
+      "expected_sha256": "f74ad5ed59ff21566e089c939314c19f138c56f16fe3e0241895b5b087b94274",
+      "actual_sha256": "f74ad5ed59ff21566e089c939314c19f138c56f16fe3e0241895b5b087b94274",
+      "matches": true
+    },
+    {
+      "file": "hosted_metadata.json",
+      "expected_sha256": "4cc681d4ec78228e43c84ff00837b0536d2913c1a0ef5860fd00e8edf39dd46c",
+      "actual_sha256": "4cc681d4ec78228e43c84ff00837b0536d2913c1a0ef5860fd00e8edf39dd46c",
+      "matches": true
+    },
+    {
+      "file": "source_identity.json",
+      "expected_sha256": "1b4d5e2086a13d8fe1d0a4432ec5018ec124b31c7f84f82f28cc4c7b516a0edf",
+      "actual_sha256": "1b4d5e2086a13d8fe1d0a4432ec5018ec124b31c7f84f82f28cc4c7b516a0edf",
+      "matches": true
+    },
+    {
+      "file": "costs.csv",
+      "expected_sha256": "5a4ef59498b23cb337b9060ae76e793d50229284a49f9af545f55b0e99ff09bc",
+      "actual_sha256": "5a4ef59498b23cb337b9060ae76e793d50229284a49f9af545f55b0e99ff09bc",
+      "matches": true
+    },
+    {
+      "file": "download_attempts.json",
+      "expected_sha256": "880eea6edfe4c01304d1bc0670c15d1942f1a23e61c95e2db42ab8b1743c98f8",
+      "actual_sha256": "880eea6edfe4c01304d1bc0670c15d1942f1a23e61c95e2db42ab8b1743c98f8",
+      "matches": true
+    },
+    {
+      "file": "synthetic_settings.json",
+      "expected_sha256": "df9d80b9ad8c0f6fe3bad72d90fd8c82b185e5289164fed4da32cf504e523154",
+      "actual_sha256": "df9d80b9ad8c0f6fe3bad72d90fd8c82b185e5289164fed4da32cf504e523154",
+      "matches": true
+    },
+    {
+      "file": "synthetic_summary.json",
+      "expected_sha256": "3f191bc3b79d148adf184fbad3c734a34c801a04ae6f960d40a5b486aed287cb",
+      "actual_sha256": "3f191bc3b79d148adf184fbad3c734a34c801a04ae6f960d40a5b486aed287cb",
+      "matches": true
+    }
+  ],
+  "supplied_manifest_checks_passed": 17,
+  "retrieval_scope": "Downloaded by the original completed reportâ€™s browser controls. Browser event observation timed out, but exact expected Windows files were created at the click times and actually hashed/read. No local upload, private endpoint, alternate request or new review was used.",
+  "retrieval_diagnostic_correction": "An initial endswith(summary.json) test returned false because it matched both summary.json and synthetic_summary.json. Exact named member comparison passes. A viewer-only text reconstruction remained incomplete and was not used as the received artifact.",
+  "author_archive_comparison": {
+    "executed_by": "Author-side Python 3.12 environment, comparing downloaded referee outputs to frozen eighth Git blobs; not new independent referee execution.",
+    "draw_rows": 36864,
+    "methods": 7,
+    "draw_values_compared": 258048,
+    "maximum_draw_errors_by_method": {
+      "empirical_bernstein_fixed_forecast": 1.1102230246251565e-16,
+      "empirical_best_midpoint": 0.0,
+      "harmonic_martingale": 1.6000000001292758e-07,
+      "no_learning_half": 0.0,
+      "quota": 1.1102230246251565e-16,
+      "weight_sensitive_hybrid": 1.1102230246251565e-16,
+      "weight_sensitive_product": 1.599999999990498e-07
+    },
+    "result_rows": 1008,
+    "result_errors": {
+      "mean_actual_regret": 7.499999996052331e-09,
+      "mc_standard_error": 1.7753379999820365e-10
+    },
+    "pair_rows": 3024,
+    "pair_errors": {
+      "mean_regret_difference": 7.500000001256502e-09,
+      "paired_mc_standard_error": 1.8488459997993353e-10
+    },
+    "pair_orientation": "Canonical alphabetical method order; mean sign reversed when swapping methods, paired SE unchanged.",
+    "confidence_rows": 720,
+    "maximum_mean_certificate_difference": 3.955078098361042e-09,
+    "count_mismatches": {
+      "certificates_at_most_010": 0,
+      "joint_mean_interval_coverage_count": 0,
+      "empty_region_fallback_count": 0
+    },
+    "frozen_canonical_costs_byte_equal": true,
+    "referee_programs_rerun_by_author": false,
+    "rounding_differences_file": "docs/referee/round-8-received-audit/rounding-differences.json",
+    "draw_values_differing_by_more_than_1e_14": 50,
+    "all_50_discrepancies_exact_half_grid_ties": true,
+    "rounding_scope": "Exact author-side replay uses unchanged frozen eighth functions/stored directed radii and assignment seed. It confirms the stored author probabilities. The ordinary floating-point implementation rounds on the other side at these half-grid ties; no exact byte/numerical equality claim is made."
+  },
+  "independent_referee_scope": "Independent floating reconstruction of the full declared synthetic catalogue (144 cells x256 assignments,seven rules); no field microdata/master/PDF execution. It does not replace directed certificates or exact per-draw author validators.",
+  "original_referee_effect_pairs_checked": 12,
+  "original_referee_paired_draw_checks": 32,
+  "original_referee_not_executed": [
+    "household or child microdata",
+    "other eight canonical input reconstructions",
+    "empirical moment/model regeneration",
+    "field population membership/dual replay",
+    "full master",
+    "Stata",
+    "author exact synthetic validators",
+    "manuscript PDF inspection/compilation",
+    "hosted artifact download/hash"
+  ],
+  "exclusions": [
+    "No completed supplemental eighth field report received.",
+    "No ninth assessment delivered.",
+    "No independent full field/master/Stata/PDF replication inferred.",
+    "Archive self-manifest matching is not third-party signed authenticity or scientific validation.",
+    "No simulated acceptance, real journal decision or DOI deposition."
+  ],
+  "comparison_programs": [
+    "docs/referee/compare_round8_received_audit.py",
+    "docs/referee/replay_round8_audit_rounding.py"
+  ],
+  "preparation_failure": "A one-line PowerShell/Python quoting error prevented the optional scripts from being written on the first attempt; consequent checks reported missing files. A later documentation update stopped on a Windows cp1252 decoding error before appending status/request text. Repaired with a saved script and explicit UTF-8 reads; no completed comparison or complete publication was inferred from those failed commands.",
+  "published_optional_comparison_programs_executed_successfully": true,
+  "published_optional_rounding_replay_executed_successfully": true,
+  "original_zip_and_summary_unchanged_after_replay": true
+}

@@ -1,0 +1,164 @@
+{
+  "review_tag": "v0.8.0",
+  "review_commit": "50c96dcea50b5aac25e5beb0912f54ff26e1b47b",
+  "scientific_source": "aa8667ccde0e00d4c5aa182a89d88b4065a6dda6",
+  "runtime": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "scope": "Independent floating reconstruction of the full declared synthetic catalogue (144 cells x256 assignments,seven rules); no field microdata/master/PDF execution. It does not replace directed certificates or exact per-draw author validators.",
+  "effect_pairs_checked": [
+    {
+      "reporting": "assignment_dependent",
+      "effect": -160,
+      "recomputed_mean": 0.00026557703125001665,
+      "published_mean": 0.00026557703125,
+      "recomputed_mc_se": 8.587638157380898e-06,
+      "published_mc_se": 8.587638157380891e-06,
+      "mean_error": 1.6642503347652493e-17,
+      "se_error": 6.776263578034403e-21
+    },
+    {
+      "reporting": "assignment_dependent",
+      "effect": 0,
+      "recomputed_mean": 0.0,
+      "published_mean": 0.0,
+      "recomputed_mc_se": 0.0,
+      "published_mc_se": 0.0,
+      "mean_error": 0.0,
+      "se_error": 0.0
+    },
+    {
+      "reporting": "assignment_dependent",
+      "effect": 40,
+      "recomputed_mean": 1.8652083333083388e-06,
+      "published_mean": 1.8652083333333424e-06,
+      "recomputed_mc_se": 3.3431323003950486e-06,
+      "published_mc_se": 3.3431323003950486e-06,
+      "mean_error": 2.5003565569999692e-17,
+      "se_error": 0.0
+    },
+    {
+      "reporting": "assignment_dependent",
+      "effect": 160,
+      "recomputed_mean": 3.05501041666249e-05,
+      "published_mean": 3.05501041666668e-05,
+      "recomputed_mc_se": 1.9071555527359e-05,
+      "published_mc_se": 1.9071555527363552e-05,
+      "mean_error": 4.189763770298671e-17,
+      "se_error": 4.553649124439119e-18
+    },
+    {
+      "reporting": "coarse_interval",
+      "effect": -160,
+      "recomputed_mean": 0.004232481822916658,
+      "published_mean": 0.0042324818229166,
+      "recomputed_mc_se": 2.718196639758429e-05,
+      "published_mc_se": 2.718196639759331e-05,
+      "mean_error": 5.811323644522304e-17,
+      "se_error": 9.01920682236379e-18
+    },
+    {
+      "reporting": "coarse_interval",
+      "effect": 0,
+      "recomputed_mean": 0.0,
+      "published_mean": 0.0,
+      "recomputed_mc_se": 0.0,
+      "published_mc_se": 0.0,
+      "mean_error": 0.0,
+      "se_error": 0.0
+    },
+    {
+      "reporting": "coarse_interval",
+      "effect": 40,
+      "recomputed_mean": 0.00023232682291664998,
+      "published_mean": 0.0002323268229166,
+      "recomputed_mc_se": 5.872838872629242e-06,
+      "published_mc_se": 5.872838872629242e-06,
+      "mean_error": 4.9981720151581754e-17,
+      "se_error": 0.0
+    },
+    {
+      "reporting": "coarse_interval",
+      "effect": 160,
+      "recomputed_mean": 0.0038459731249999834,
+      "published_mean": 0.003845973125,
+      "recomputed_mc_se": 2.5597357888426477e-05,
+      "published_mc_se": 2.5597357888430933e-05,
+      "mean_error": 1.6479873021779667e-17,
+      "se_error": 4.45539330255762e-18
+    },
+    {
+      "reporting": "complete",
+      "effect": -160,
+      "recomputed_mean": 0.0031081015104166675,
+      "published_mean": 0.0031081015104166,
+      "recomputed_mc_se": 6.575931097554136e-05,
+      "published_mc_se": 6.57593109755502e-05,
+      "mean_error": 6.765421556309548e-17,
+      "se_error": 8.84980023291293e-18
+    },
+    {
+      "reporting": "complete",
+      "effect": 0,
+      "recomputed_mean": 0.0,
+      "published_mean": 0.0,
+      "recomputed_mc_se": 0.0,
+      "published_mc_se": 0.0,
+      "mean_error": 0.0,
+      "se_error": 0.0
+    },
+    {
+      "reporting": "complete",
+      "effect": 40,
+      "recomputed_mean": 0.0023038690494791665,
+      "published_mean": 0.0023038690494791,
+      "recomputed_mc_se": 2.2247638600836513e-05,
+      "published_mc_se": 2.2247638600843977e-05,
+      "mean_error": 6.635317295611287e-17,
+      "se_error": 7.464054331204895e-18
+    },
+    {
+      "reporting": "complete",
+      "effect": 160,
+      "recomputed_mean": 0.0030591203124999827,
+      "published_mean": 0.0030591203125,
+      "recomputed_mc_se": 7.255906748461652e-05,
+      "published_mc_se": 7.25590674846272e-05,
+      "mean_error": 1.734723475976807e-17,
+      "se_error": 1.0679391398982219e-17
+    }
+  ],
+  "maximum_effect_mean_error": 6.765421556309548e-17,
+  "maximum_effect_se_error": 1.0679391398982219e-17,
+  "published_draw_spotcheck": {
+    "case": 0,
+    "repetitions": "0-31",
+    "methods": [
+      "quota",
+      "empirical_bernstein_fixed_forecast"
+    ],
+    "maximum_error": 1.0408340855860843e-16,
+    "paired_mean": 0.001187705,
+    "paired_mc_se": 0.0001355649196433327
+  },
+  "exact_no_learning_average": "9/200",
+  "cost_reconstruction": {
+    "part_sha256": "cec4a7d64719e210705fb637074afad65f619a9e9f95104136f96ae1467b3002",
+    "original_sha256": "5a4ef59498b23cb337b9060ae76e793d50229284a49f9af545f55b0e99ff09bc",
+    "original_bytes": 531,
+    "scope": "Only canonical costs.csv reconstructed; not household or child microdata"
+  },
+  "not_executed": [
+    "household or child microdata",
+    "other eight canonical input reconstructions",
+    "empirical moment/model regeneration",
+    "field population membership/dual replay",
+    "full master",
+    "Stata",
+    "author exact synthetic validators",
+    "manuscript PDF inspection/compilation",
+    "hosted artifact download/hash"
+  ]
+}

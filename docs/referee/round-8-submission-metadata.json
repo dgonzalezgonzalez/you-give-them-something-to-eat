@@ -34,8 +34,8 @@
   "original_report_turn_id": "ada88880-abe0-43d6-bbbe-46962582b1e4",
   "tail_retrieval_turn_id": "30d4796d-7cd5-4c88-9c67-81c729c89e1d",
   "overlap_characters": 985,
-  "report_reconstruction_scope": "Original completed report prefix retrieved directly through supported reader. Same Pro conversation reproduced its tail without reassessment. Exact overlap verifies assembly; no independent authentication of full original tail bytes. Audit sandbox attachments were not downloaded.",
-  "audit_zip_or_summary_downloaded": false,
+  "report_reconstruction_scope": "Original completed report prefix retrieved directly through supported reader. Same Pro conversation reproduced its tail without reassessment. Exact overlap verifies assembly; no independent authentication of full original tail bytes. Audit sandbox attachments were not downloaded at original report retrieval; their later actual recovery is recorded separately below.",
+  "audit_zip_or_summary_downloaded": true,
   "independent_referee_scope": {
     "synthetic_cells": 144,
     "draws_per_cell": 256,
@@ -54,5 +54,10 @@
     "hosted_artifact_download_or_hash": false,
     "public_registry_independently_retrieved": false,
     "source_freeze_git_tree_correspondence_verified": true
-  }
+  },
+  "audit_download_received_at_utc": "2026-10-01T14:10:22Z",
+  "audit_download_receipt": "docs/referee/round-8-received-audit/receipt.json",
+  "audit_zip_actual_sha256": "f45106edeebd61a5d74391dc8796555282c805709d6d8c737719f44c33542eb7",
+  "audit_summary_actual_sha256": "cc89ad49d99ae34523367c5de3cd03bece8629d6f5b1fdd908e0ff8715a34d5d",
+  "audit_scope": "Original completed eighth audit now actually downloaded and archived. Original independent execution scope and Reject recommendation unchanged; unfinished supplemental field execution remains separate."
 }

@@ -23,8 +23,8 @@
     "requirements-lock.txt"
   ],
   "request_path": "docs/referee/round-9-prepared-request.txt",
-  "prepared_request_characters_lf": 7890,
-  "prepared_request_sha256_lf": "daedcbc0aa2f78ccf79b3d56d9d81c412d1081c47075021bc6bb2c897bf46475",
+  "prepared_request_characters_lf": 8860,
+  "prepared_request_sha256_lf": "96c2ed9513433adc886796f670da3a96c2c74f15ec298dac4b9fe26f708e16d5",
   "send_accepted": false,
   "delivery_confirmed": false,
   "recommendation": null,
@@ -49,5 +49,7 @@
   "pdf_pages": 41,
   "author_actual_hosted_all_page_render_inspection": true,
   "independent_referee_pdf_rendering": false,
-  "scope": "A public freeze and prepared request, not delivery, a ninth report, independent field replication, acceptance or a DOI archive."
+  "scope": "A public freeze and prepared request, not delivery, a ninth report, independent field replication, acceptance or a DOI archive.",
+  "prepared_request_updated_after_freeze": true,
+  "post_freeze_eighth_audit_receipt": "docs/referee/round-8-received-audit/receipt.json"
 }
