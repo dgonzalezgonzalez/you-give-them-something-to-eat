@@ -1,0 +1,2671 @@
+{
+  "canonical_sources": {
+    "output/quota-benchmarks.json": "5523d6a930cc4e45c571e16dbe3f818258be7c4de29bfd388216d653be559353",
+    "output/regional-minimax-brackets.json": "99cefc52248e94099d6065c62777c9a76fef66a1aad973b2e497d95c7c4d5b20",
+    "output/designed-decisions.json": "260b06711a17608919ab0a0f7f18381a6442380c42f34e41782b5adbe938522f"
+  },
+  "hash_convention": "SHA256 of the published UTF-8 LF byte stream. Windows CRLF is normalized explicitly before canonical hashes; every alias is written LF. Historical sixth aliases remain frozen and are not rewritten.",
+  "scope": "Inspection aliases only; canonical immutable microdata remain default scientific inputs. Models regenerated; all receipt/population/case objects round-trip canonical JSON.",
+  "files": [
+    {
+      "path": "docs/referee/round-7-review/model-quota-shared-floors-Control.json",
+      "bytes": 14946,
+      "sha256": "0abeaa823bc761c7ea224839449b7c0a9c424e3ec8bfb9d52f182254f5f81313"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-quota-shared-floors-Gikuriro.json",
+      "bytes": 15128,
+      "sha256": "e5584b53d920dd82a93f44e3ca107779b25e8d93f5a51b00865918993b598e59"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-quota-shared-floors-Lower.json",
+      "bytes": 15266,
+      "sha256": "da10ea9bcf418175b5209a62ba772e2634958ebd6b5c60257888a8d015acb915"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-quota-shared-floors-Middle.json",
+      "bytes": 15226,
+      "sha256": "9a903c712f9f37d3f02f1012abcc5de4ed51e7ed4adb4ca599175507a8a934ca"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-quota-shared-floors-Upper.json",
+      "bytes": 15269,
+      "sha256": "88bd23ec38f977d027ac28593bfb39268053e6ebaee18cc0bd9d2836329c4413"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-quota-shared-floors-Large.json",
+      "bytes": 15255,
+      "sha256": "f49e90cdbd4db04b0fdc71d94a5c784a378d92c1c01b5e9a7ae63d946622db38"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-shared-floors-mean-Control.json",
+      "bytes": 8623,
+      "sha256": "dc40d367c6059159ae5a33b20b74723cee0a208bed4e7a4c7a1504060d38831e"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-shared-floors-mean-Gikuriro.json",
+      "bytes": 8573,
+      "sha256": "735c0b09726a935e50c0344a12a129201a7c4408a0efd06587489f40f5157680"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-shared-floors-mean-Lower.json",
+      "bytes": 8606,
+      "sha256": "fbe105b0073afccdc4d58241ee3b5764c4fa1f921a16b60560052a4e72fd248a"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-shared-floors-mean-Middle.json",
+      "bytes": 8665,
+      "sha256": "c96499e64a97f43a3e681318af9b5735aeac73436481fe336599ad7337b15bca"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-shared-floors-mean-Upper.json",
+      "bytes": 8552,
+      "sha256": "c76c0f212b506fd4b710fcbd59be428cca07b0b839e19f503036674d22456cd4"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-shared-floors-mean-Control-Large.json",
+      "bytes": 8738,
+      "sha256": "fc13e9f7297fefe5fa34d58b13e964b894cb87379f4963c5fe7c208c3c504bfb"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-shared-floors-mean-Lower-Large.json",
+      "bytes": 8686,
+      "sha256": "0c6d7fdcc3cae496fd503b624aea71361504cc332c446f0ea1593d7f5bf57051"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-shared-floors-mean-Middle-Large.json",
+      "bytes": 8799,
+      "sha256": "fa5585f2928ccac5cc1b2acfcfc4d291a5fad223dc8ccf61fc3d600fca69411c"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-shared-floors-mean-Upper-Large.json",
+      "bytes": 8905,
+      "sha256": "57b48d4f7238a4438c21ac0ee478390ab8a5eb93badeed686ad30153e15d06a9"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-shared-floors-shortfall_6-Control.json",
+      "bytes": 8366,
+      "sha256": "7c78a7b4c62f7bf623303e148fa8260119c3aafa462dec69c216796041250895"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-shared-floors-shortfall_6-Gikuriro.json",
+      "bytes": 8349,
+      "sha256": "45713669729d9cccae42e2d12cde31161459d4e536bc1994f14b614c0dde3b84"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-shared-floors-shortfall_6-Lower.json",
+      "bytes": 8513,
+      "sha256": "8431de08515cbbefeeef6a2c1a70e6937270e4371dbb324923cdba9fd8e1af69"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-shared-floors-shortfall_6-Middle.json",
+      "bytes": 8421,
+      "sha256": "7c00477d99bbbca767bf7b3637b226ed2c26b39bef4dcd35e6f244b5aca6f16f"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-shared-floors-shortfall_6-Upper.json",
+      "bytes": 8452,
+      "sha256": "5b2b7247fa5d5db3ea302ad9ff32f1f7207fd0a221bccc342ef6e765c3e5c354"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-shared-floors-shortfall_6-Control-Large.json",
+      "bytes": 8367,
+      "sha256": "a3c4c36335d3a7d499ea341c17174ee464d36fdaa0caf6d79f5ac982297874dd"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-shared-floors-shortfall_6-Lower-Large.json",
+      "bytes": 8426,
+      "sha256": "a14336d572ec225866443e04f70f0a7babaa7322ac56e05de38b2d34b39ea3ec"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-shared-floors-shortfall_6-Middle-Large.json",
+      "bytes": 8334,
+      "sha256": "21b9f6266f58a251b611493e93e241b4f29a3e968952b5df7193a351671cb186"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-shared-floors-shortfall_6-Upper-Large.json",
+      "bytes": 8400,
+      "sha256": "f1c2a1034152ed1afa3eb326930bfd0631884735093cffa3d60ecaff379cafab"
+    },
+    {
+      "path": "docs/referee/round-7-review/summary-quota-shared-floors.json",
+      "bytes": 6050,
+      "sha256": "8aa74d0ddf9cace3c8a612c0999f2fff93559bbfd21330d05e267a829aff3dc7"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-separate-floors-mean-Control.json",
+      "bytes": 59,
+      "sha256": "130dbb9198505deadbde7138ce6676a6fd186722139e3c4c29303e6857fb00b2"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-separate-floors-mean-Gikuriro.json",
+      "bytes": 61,
+      "sha256": "bbd3a31c2a591589f8d468342c322734f99e022e7202366625a019ef9c7a6baa"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-separate-floors-mean-Lower.json",
+      "bytes": 57,
+      "sha256": "eba0f11fa74983dd868332bac8475f924d3211fe4f03ea365344273d49361217"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-separate-floors-mean-Middle.json",
+      "bytes": 58,
+      "sha256": "f54b36b6c567ffa24e2f1b1ffbf48cba2a2495ff33195054556736616ae49174"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-separate-floors-mean-Upper.json",
+      "bytes": 57,
+      "sha256": "b6bf7c8c793f6fac5cde994314eb298c4d6e1634848367412ed277332f2edf33"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-separate-floors-mean-Control-Large.json",
+      "bytes": 65,
+      "sha256": "2e0273e75d6f451b3e74589a997832913a2d0af1800262e609ea93c9581c1841"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-separate-floors-mean-Lower-Large.json",
+      "bytes": 63,
+      "sha256": "16496691ec14e3991c5c53be14a11d91e2d4681b10b629763efc1c9bc9e80a09"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-separate-floors-mean-Middle-Large.json",
+      "bytes": 65,
+      "sha256": "5bfe159f2dbf34c239a2de8cd286665d3a05c4e97834792ccb05820d0b60ea7d"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-separate-floors-mean-Upper-Large.json",
+      "bytes": 63,
+      "sha256": "d2610d9b9fc1e8a4ac808102dca2e62cb0bcec648f1ad5fa6ebd12eaf2bef1ba"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-separate-floors-shortfall_6-Control.json",
+      "bytes": 60,
+      "sha256": "72fc417211a092fa9bd0b71884653990efb6dd5287bada7c266120e44d8a09bf"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-separate-floors-shortfall_6-Gikuriro.json",
+      "bytes": 61,
+      "sha256": "25963d10e2982f65f65ce4b5b1d08fd46585033735da0d79d6fabbe86a8f4357"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-separate-floors-shortfall_6-Lower.json",
+      "bytes": 58,
+      "sha256": "11711b87b6ed8b76fc09aa91e93c050f74465673b6ee10d7f4f5f252c27a8671"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-separate-floors-shortfall_6-Middle.json",
+      "bytes": 59,
+      "sha256": "56c76311b38ec246a699fb5807eadb356f7d7c4ae3b6962f6d38540da1be824d"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-separate-floors-shortfall_6-Upper.json",
+      "bytes": 58,
+      "sha256": "33e69068151bb9dc788c020c3758a912861d7214b2224ac7cd0702fa565129cc"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-separate-floors-shortfall_6-Control-Large.json",
+      "bytes": 66,
+      "sha256": "37601f3ddc8470fd751bceee393308266684adee890c2664ea4d21470a0829b2"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-separate-floors-shortfall_6-Lower-Large.json",
+      "bytes": 64,
+      "sha256": "788e483ecbffa25519a9eeb9daea99f63d902f3110e6f37792e2f357453724da"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-separate-floors-shortfall_6-Middle-Large.json",
+      "bytes": 65,
+      "sha256": "27269db9b1fcfb9f38bc5e75ac216bffd587cc0d1c97b54fe69f4b3a578b6672"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-separate-floors-shortfall_6-Upper-Large.json",
+      "bytes": 64,
+      "sha256": "d5f87c8de51ea40d9a0ebc5e9a7d3da8325861a8a6f342c615afce62d1506d5e"
+    },
+    {
+      "path": "docs/referee/round-7-review/summary-quota-separate-floors.json",
+      "bytes": 5232,
+      "sha256": "889bbd8afaf3c5765026f21f89372b216e15df1d09f0a978a2ace9180176fd98"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-quota-shared-no-floors-Control.json",
+      "bytes": 14759,
+      "sha256": "92dc6ad31bf9f1886763a0e37ed175dfecc000631723c518c32980692c2b5aa7"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-quota-shared-no-floors-Gikuriro.json",
+      "bytes": 14944,
+      "sha256": "0248a42d32224e3a7a6a36c7e8152d18c02d252efefcb9dc1d0632f007a7caed"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-quota-shared-no-floors-Lower.json",
+      "bytes": 15093,
+      "sha256": "9f15191271cf686a7facc04f9983144183fc67d74d2a59aacc338b3574ac5bae"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-quota-shared-no-floors-Middle.json",
+      "bytes": 15074,
+      "sha256": "a39da2df15f1e3d1278aa87a26e2d2990d952bd55174225cae14da06230d1617"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-quota-shared-no-floors-Upper.json",
+      "bytes": 15081,
+      "sha256": "35d75fe76d956f7a98f6828c6d70bb3e93294eec846332dfdb3fa9fd6fafa38c"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-quota-shared-no-floors-Large.json",
+      "bytes": 15082,
+      "sha256": "a1abca62d12d8fd6b3d64be36eed7a815173e3c47ae4adac6c2e6a30d7d5b058"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-shared-no-floors-mean-Control.json",
+      "bytes": 9077,
+      "sha256": "239de7cbc1e52011acd5eff74968a8207d2bc864396bfea399ca5f9d1088ad48"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-shared-no-floors-mean-Gikuriro.json",
+      "bytes": 9051,
+      "sha256": "e56e5429ea569ae2c7418dfa74141fdcf887cb92e7df8d911cf750444e910137"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-shared-no-floors-mean-Lower.json",
+      "bytes": 8917,
+      "sha256": "5215c24dbc07d935d55283362856302a8529cdcb7905860373b40d9d685bda8d"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-shared-no-floors-mean-Middle.json",
+      "bytes": 9108,
+      "sha256": "d5782d54e01a1331fa2023fc971cbddc369bad01278aed796821443b8fb811b3"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-shared-no-floors-mean-Upper.json",
+      "bytes": 9060,
+      "sha256": "263d02c893f2a31448b7e316344539f67d49c678eaa3cd0d82718b3a710d68d4"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-shared-no-floors-mean-Control-Large.json",
+      "bytes": 9120,
+      "sha256": "090aba723958fbfa11b37325bdbe758890a0bd044d72b6067446775375adb8ba"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-shared-no-floors-mean-Lower-Large.json",
+      "bytes": 8996,
+      "sha256": "3523120b8b6ed54a8542f311dd4cbc34b7b36ed8abf4c98ec6d87e6d25102668"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-shared-no-floors-mean-Middle-Large.json",
+      "bytes": 9255,
+      "sha256": "0a35c5c3b556d30567934a30660e0c48bffb178741ffbfeda82baeba97b0e4c3"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-shared-no-floors-mean-Upper-Large.json",
+      "bytes": 9123,
+      "sha256": "2bd36bd21558dee16b8504539590cb7862f48bc93713251041afe3ddb9a30755"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-shared-no-floors-shortfall_6-Control.json",
+      "bytes": 8376,
+      "sha256": "6e9855e6e3c7355f9cfb243579705d47323960bbbbdd9d0c6dd32031643927af"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-shared-no-floors-shortfall_6-Gikuriro.json",
+      "bytes": 8449,
+      "sha256": "bf968c71ff4e84975805832048cf115a37c01c6e2f60a5dd10655086ac472726"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-shared-no-floors-shortfall_6-Lower.json",
+      "bytes": 8537,
+      "sha256": "8af6c73dbbd035e93cee809074464a19f3abad9abe7bd5638d69a4ec3fa4fadf"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-shared-no-floors-shortfall_6-Middle.json",
+      "bytes": 8446,
+      "sha256": "d65ffc7b4d8ee6d33a5e4c4906a65782e18f966380aec746bef67a46ce15ea56"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-shared-no-floors-shortfall_6-Upper.json",
+      "bytes": 8697,
+      "sha256": "ebc4e413f5ac37a8d39c916d340f08ab209650c6ec6f5313208e829d00d22ade"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-shared-no-floors-shortfall_6-Control-Large.json",
+      "bytes": 8712,
+      "sha256": "d7678e778cac8cd0c14e373a167131fd2d6331f5ed1c2033e2406a76bd7ddf3b"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-shared-no-floors-shortfall_6-Lower-Large.json",
+      "bytes": 8739,
+      "sha256": "9af07a4d9c109bd09bedd7e95e0a4d6c9e86045c71d3f097ce4f7f4839d78d2a"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-shared-no-floors-shortfall_6-Middle-Large.json",
+      "bytes": 8524,
+      "sha256": "2243ab5adead6b569b4617418299a6b4047e5991fec0c533c4c44a12f20610f2"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-quota-shared-no-floors-shortfall_6-Upper-Large.json",
+      "bytes": 8816,
+      "sha256": "a2960b84b78ae84bf03881a9b5acb2f6aa46e401cf990cb5438f988f3eda2059"
+    },
+    {
+      "path": "docs/referee/round-7-review/summary-quota-shared-no-floors.json",
+      "bytes": 6105,
+      "sha256": "a701217314b7deeb815ace50d4bfce2b67e60ca4e5c88ef054b4bb12bc6812cb"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-hoeffding_baseline_optimized-shared-floors-Control.json",
+      "bytes": 15122,
+      "sha256": "6beb2dadaabcfa1e40b1970fa804c0458dc6e1542daed16236d6f0f6410e4774"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-hoeffding_baseline_optimized-shared-floors-Gikuriro.json",
+      "bytes": 15151,
+      "sha256": "84d019776c81448c929e95bfffa0b1d11c16fd0da1ff197f4c7ffd7dbb3c2a52"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-hoeffding_baseline_optimized-shared-floors-Lower.json",
+      "bytes": 14963,
+      "sha256": "91821c747dfc49c4cac86e4683cbe4564a108a2c914644e3fe2b24286fed41cd"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-hoeffding_baseline_optimized-shared-floors-Middle.json",
+      "bytes": 14935,
+      "sha256": "9a72a0e463be6978761a1be3428c1e9f755d4db45ffea48a10199af291b84699"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-hoeffding_baseline_optimized-shared-floors-Upper.json",
+      "bytes": 14948,
+      "sha256": "f927231a3221f06c83fd113281a0ac0692334f57dc3b1cae2be19962586b17f8"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-hoeffding_baseline_optimized-shared-floors-Large.json",
+      "bytes": 14966,
+      "sha256": "426c533e80597934a31a2d129fdb26ba4b93371d4e098397841477a1d5a34038"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-hoeffding_baseline_optimized-shared-floors-mean-Control.json",
+      "bytes": 8611,
+      "sha256": "ba330d0e9e58f87108cbb025e3fef141aafcfce6889dd215b18193bb61140529"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-hoeffding_baseline_optimized-shared-floors-mean-Gikuriro.json",
+      "bytes": 8555,
+      "sha256": "50d32bfb44aa16a1f6bcb8978fe10a86808de8a77f8b868c90f44813001c6c89"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-hoeffding_baseline_optimized-shared-floors-mean-Lower.json",
+      "bytes": 8842,
+      "sha256": "334d9d0fd20be78629a07cf810589eb6b7e4201b1a96f466dd6e59ac3a541a86"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-hoeffding_baseline_optimized-shared-floors-mean-Middle.json",
+      "bytes": 8606,
+      "sha256": "05059a706920e389ba361085752198898961aa35465ed1ca6413295ac324cd2e"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-hoeffding_baseline_optimized-shared-floors-mean-Upper.json",
+      "bytes": 8722,
+      "sha256": "e98eb8cc94084209450d69826448d10e3abcc55f4c5c9932832deef96729f270"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-hoeffding_baseline_optimized-shared-floors-mean-Control-Large.json",
+      "bytes": 8591,
+      "sha256": "0dfd0039c5e32756549885eca821c240155e73692db5d6bb91a23ce268d6c79a"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-hoeffding_baseline_optimized-shared-floors-mean-Lower-Large.json",
+      "bytes": 8862,
+      "sha256": "5c85169c2c27d4d66c21a2c0940a0735d903adb8508b3aa4b6ed4eb6fad01396"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-hoeffding_baseline_optimized-shared-floors-mean-Middle-Large.json",
+      "bytes": 8766,
+      "sha256": "b2a3287eb7e47ed7f407ead7e29fd9dc41ddfee1c6c26f8d37b1d2316ac6c956"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-hoeffding_baseline_optimized-shared-floors-mean-Upper-Large.json",
+      "bytes": 8832,
+      "sha256": "889c7f72a6d1e2d207a188c0da47983d3f0f90d0a8ea9cfdbb105bf2da0bcc93"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-hoeffding_baseline_optimized-shared-floors-shortfall_6-Control.json",
+      "bytes": 8412,
+      "sha256": "c6113eac56d5befb0359900af7ef4f1a9337b9f6819f30b96d6f24cb3894a867"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-hoeffding_baseline_optimized-shared-floors-shortfall_6-Gikuriro.json",
+      "bytes": 8403,
+      "sha256": "d5633850ea8a28e5d0b8aa4afe88b4d98b973b5ad4cc2756863ebd9208ec3415"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-hoeffding_baseline_optimized-shared-floors-shortfall_6-Lower.json",
+      "bytes": 8461,
+      "sha256": "33d63ba2d4da7abcfb6aee15d8350e6e3d92179f234ab8709de75d490c8fca55"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-hoeffding_baseline_optimized-shared-floors-shortfall_6-Middle.json",
+      "bytes": 8394,
+      "sha256": "a8ff07b5e9c65602caa6f24e3efca9a2c5b596c237c0698d3b6b1b8a97e0369e"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-hoeffding_baseline_optimized-shared-floors-shortfall_6-Upper.json",
+      "bytes": 8466,
+      "sha256": "3f22388cfa3b991ee59e1d6f640eaeb10d1852874151b162508ea1e8fa143ca5"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-hoeffding_baseline_optimized-shared-floors-shortfall_6-Control-Large.json",
+      "bytes": 8402,
+      "sha256": "4731bd3f5ae10ee9d4148625e61e643da559e0964a4a7db7a2638ac89fc8a309"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-hoeffding_baseline_optimized-shared-floors-shortfall_6-Lower-Large.json",
+      "bytes": 8367,
+      "sha256": "5d0796ba0f938a2e086299627814bededf1b2baa93bced347005e9966fba252c"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-hoeffding_baseline_optimized-shared-floors-shortfall_6-Middle-Large.json",
+      "bytes": 8367,
+      "sha256": "0878cba4b908b62213ef3d6cb3e97fe9cf23f64525a5a80bfdcca0556f86c9eb"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-hoeffding_baseline_optimized-shared-floors-shortfall_6-Upper-Large.json",
+      "bytes": 8402,
+      "sha256": "a88b907dd8b44c3c018bcb6b5bade265f9f0e3829749c77fb02ecc404baddcc2"
+    },
+    {
+      "path": "docs/referee/round-7-review/summary-hoeffding_baseline_optimized-shared-floors.json",
+      "bytes": 6940,
+      "sha256": "9cff49df3594cf3e537fc1c0190c4033b3fe7e76dcf1f3af966142ea33c46a5d"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-serfling_baseline_optimized-shared-floors-Control.json",
+      "bytes": 14967,
+      "sha256": "243192010add3a12d02b0ba09d7904c40ea8a8fac6d24545cd61ffb59dcfb249"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-serfling_baseline_optimized-shared-floors-Gikuriro.json",
+      "bytes": 14998,
+      "sha256": "6cc9245f16a3a7a0be4300454131e78fbc1113e574e9dd95100b9fdac3ae2479"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-serfling_baseline_optimized-shared-floors-Lower.json",
+      "bytes": 14962,
+      "sha256": "5cbc59a3a0a49036935ef23e2797860a943db465bc1620a0b23dcc333d5945a6"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-serfling_baseline_optimized-shared-floors-Middle.json",
+      "bytes": 14934,
+      "sha256": "67579e9bcf2a726f4d7f4d4622f7ff836882392d587e05b41f93e404c8c5db15"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-serfling_baseline_optimized-shared-floors-Upper.json",
+      "bytes": 14947,
+      "sha256": "3c94c2c62c377af4245efdd2cd42cda8636caa936b8cdd3ce20a9527d6f096ca"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-serfling_baseline_optimized-shared-floors-Large.json",
+      "bytes": 15232,
+      "sha256": "ed3d4b3673a8152797431196dc4e79ecd965e5133713ceeece692259fe5dddb4"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-serfling_baseline_optimized-shared-floors-mean-Control.json",
+      "bytes": 8565,
+      "sha256": "5da403cc8f75098cd56c5d1e85be98724b4962c48747b0c81457f9d70e040838"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-serfling_baseline_optimized-shared-floors-mean-Gikuriro.json",
+      "bytes": 8467,
+      "sha256": "7664c622eaf9ddd71efc4f1719de677dba2a2ba2b757bc8ac9fb38ac3b61a847"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-serfling_baseline_optimized-shared-floors-mean-Lower.json",
+      "bytes": 8731,
+      "sha256": "7ae215fc4d9f7914bc6012aabe247deee6183f6601848830b5d228778ce32038"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-serfling_baseline_optimized-shared-floors-mean-Middle.json",
+      "bytes": 8561,
+      "sha256": "645f5564a8944f8ff874725e4547a0cf9afcc832058928b0da9c420ecc37f340"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-serfling_baseline_optimized-shared-floors-mean-Upper.json",
+      "bytes": 8734,
+      "sha256": "d6b6776ce60c90ade9f1ebeab3ba05ef4a3db8e7459316d45ce5f4ac0248edc8"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-serfling_baseline_optimized-shared-floors-mean-Control-Large.json",
+      "bytes": 8697,
+      "sha256": "67dc65aa2acd7f0248cd4cc407213d7a3d526caf9cacbe4756722c8092f45e8e"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-serfling_baseline_optimized-shared-floors-mean-Lower-Large.json",
+      "bytes": 8860,
+      "sha256": "2bbcf9b1916396d03a483d1643a799279b35e233e8215c40573d93542ee721bf"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-serfling_baseline_optimized-shared-floors-mean-Middle-Large.json",
+      "bytes": 8752,
+      "sha256": "3ccf4e4c5f0287c6ff8906fc0ff066c1e9284a2bbe43da75d794af084c44a682"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-serfling_baseline_optimized-shared-floors-mean-Upper-Large.json",
+      "bytes": 8867,
+      "sha256": "994f5a1fff40b0da3b1ac71dbcef6b63dfa1fbc28840a8ca675ea76b2500b20a"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-serfling_baseline_optimized-shared-floors-shortfall_6-Control.json",
+      "bytes": 8353,
+      "sha256": "f0ff376a0c413f6e91dfb87518defc481eb875cb8f4645d93b09584c93a9a8f0"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-serfling_baseline_optimized-shared-floors-shortfall_6-Gikuriro.json",
+      "bytes": 8360,
+      "sha256": "25333919eb969aa72dab01c432635e8e597aabd298dfc19bffd47ca64237eeb5"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-serfling_baseline_optimized-shared-floors-shortfall_6-Lower.json",
+      "bytes": 8349,
+      "sha256": "005172f3944b22a22445bb0d38295cff5cdc1c4cccf2e9978625ef4b85e2822c"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-serfling_baseline_optimized-shared-floors-shortfall_6-Middle.json",
+      "bytes": 8429,
+      "sha256": "6001bc7633ad94fdff25abeb03b5d52ded9b6cc21f2ac593a6b8b5171bd0cdeb"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-serfling_baseline_optimized-shared-floors-shortfall_6-Upper.json",
+      "bytes": 8457,
+      "sha256": "4c5263b7fab5bea494f126cee5b35e8a0511e24fcfedbeb58ab1f16f466c7b3d"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-serfling_baseline_optimized-shared-floors-shortfall_6-Control-Large.json",
+      "bytes": 8419,
+      "sha256": "cf3bf0ec726ab84b754ac3f5c87a382aa1342fbf7db2fe4aa010aa9a3bf67b55"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-serfling_baseline_optimized-shared-floors-shortfall_6-Lower-Large.json",
+      "bytes": 8359,
+      "sha256": "45db72e42b203a3cc29950edbb147abdcfed7de02b05d16b56dcefdee66f98cd"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-serfling_baseline_optimized-shared-floors-shortfall_6-Middle-Large.json",
+      "bytes": 8345,
+      "sha256": "ddf55ac48990f4d9b62a921cf12e0caf35cf1cef4041d14eff7b00b303d594a7"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-serfling_baseline_optimized-shared-floors-shortfall_6-Upper-Large.json",
+      "bytes": 8439,
+      "sha256": "1f04b91815403050d38438103d6bf5831fae0f9de83a18ff65cb87c94112d564"
+    },
+    {
+      "path": "docs/referee/round-7-review/summary-serfling_baseline_optimized-shared-floors.json",
+      "bytes": 6914,
+      "sha256": "736fb88eb0a115d1d9a78ff9877c9cede1b21bcb760d9012b8d326e253f2b0d3"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-harmonic_martingale_baseline_optimized-shared-floors-Control.json",
+      "bytes": 15135,
+      "sha256": "c7f90233536add59860d986f38de47163e66531597cef551c46d1103d8b03c8b"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-harmonic_martingale_baseline_optimized-shared-floors-Gikuriro.json",
+      "bytes": 15154,
+      "sha256": "925aca5934fe21aa9ed9857af9bac10b472ac3f592c3f3619595b8bf5e0c75dc"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-harmonic_martingale_baseline_optimized-shared-floors-Lower.json",
+      "bytes": 14973,
+      "sha256": "5b5431977ee4ba2c4d606eed1f1ac90ecc6de21a9a2c91d7562ecdc1445788bc"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-harmonic_martingale_baseline_optimized-shared-floors-Middle.json",
+      "bytes": 14945,
+      "sha256": "221c1f2ad64fccba0eb9e76f13ed5a837c786fb88ac795ffd6b563108182bff3"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-harmonic_martingale_baseline_optimized-shared-floors-Upper.json",
+      "bytes": 14958,
+      "sha256": "4454936b64f7a5ed334e0f53f125cdb10ea52d43a534a209c4f39438506c9425"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-harmonic_martingale_baseline_optimized-shared-floors-Large.json",
+      "bytes": 15271,
+      "sha256": "a2aecb495c3db5a26cc4240863af9f930b20729b9efddbd6677f936ce968154c"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-harmonic_martingale_baseline_optimized-shared-floors-mean-Control.json",
+      "bytes": 8475,
+      "sha256": "06e3db4d3b5e56bb630fe78660793fe08e287734674e04bae5c106398e05d364"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-harmonic_martingale_baseline_optimized-shared-floors-mean-Gikuriro.json",
+      "bytes": 8550,
+      "sha256": "e0e6c5eaf6074de404ca474cc76e93092ebf005fbd5d235c84307b1be19ab032"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-harmonic_martingale_baseline_optimized-shared-floors-mean-Lower.json",
+      "bytes": 8723,
+      "sha256": "57da69dfbbaad15ad09f0410e3d4c65c63fe4cd2bb9debce5d5723c38c8ac577"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-harmonic_martingale_baseline_optimized-shared-floors-mean-Middle.json",
+      "bytes": 8604,
+      "sha256": "e597b3699ed40a9f6a5ea82af52333c3c537792b0d0818e65f05343100e5b828"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-harmonic_martingale_baseline_optimized-shared-floors-mean-Upper.json",
+      "bytes": 8682,
+      "sha256": "6be17ea551f2f8eb4467b093843ada25fb46441c65ade51f0c78878c71fc1704"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-harmonic_martingale_baseline_optimized-shared-floors-mean-Control-Large.json",
+      "bytes": 8710,
+      "sha256": "5b5619ccae193ce349a343eac92ff4c7b4ce92d9c35f09817ddec6de53fd8627"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-harmonic_martingale_baseline_optimized-shared-floors-mean-Lower-Large.json",
+      "bytes": 8802,
+      "sha256": "e66b519ae3f099c60df12dedb19dbb10761850cfd9dc776097a67fe25c71319a"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-harmonic_martingale_baseline_optimized-shared-floors-mean-Middle-Large.json",
+      "bytes": 8851,
+      "sha256": "d5217cf397dbf3b298938d3574a555136cae45c8674d369f99c6f9da0d53ea25"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-harmonic_martingale_baseline_optimized-shared-floors-mean-Upper-Large.json",
+      "bytes": 8855,
+      "sha256": "5cadf70e1d7a7e2411be13ec171826effef97d0991fa574766c7e7cd094aaaff"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-harmonic_martingale_baseline_optimized-shared-floors-shortfall_6-Control.json",
+      "bytes": 8376,
+      "sha256": "67efc064c70f88ecb0e21ec958b0cff6b8cb913b40b81491ff3b455505363a17"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-harmonic_martingale_baseline_optimized-shared-floors-shortfall_6-Gikuriro.json",
+      "bytes": 8415,
+      "sha256": "1bae8c94874849348983d4847fd4e5ae8134b320c58ab66b4b9cdbb752254fc3"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-harmonic_martingale_baseline_optimized-shared-floors-shortfall_6-Lower.json",
+      "bytes": 8426,
+      "sha256": "8ff5acf3377c972d9485f6431bed66b464876c703cf9ea39714f03495ea80f7f"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-harmonic_martingale_baseline_optimized-shared-floors-shortfall_6-Middle.json",
+      "bytes": 8332,
+      "sha256": "7562e115784c7f1453976463b92aa88b7b1fe737b1cac339e5fdd634cf95fd9d"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-harmonic_martingale_baseline_optimized-shared-floors-shortfall_6-Upper.json",
+      "bytes": 8356,
+      "sha256": "0f166ceea0ab540ca394542cdcb9e14f6c5bef57442efed7c4f5527c4c52d29a"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-harmonic_martingale_baseline_optimized-shared-floors-shortfall_6-Control-Large.json",
+      "bytes": 8348,
+      "sha256": "eaf1be092de7495528fc5e5df2ad1f48913c50dc514b4b0b44a300588cdb9405"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-harmonic_martingale_baseline_optimized-shared-floors-shortfall_6-Lower-Large.json",
+      "bytes": 8315,
+      "sha256": "83585de96b2e51f003322d6e155f301134736e4dd10d151d5871118a4d33fb75"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-harmonic_martingale_baseline_optimized-shared-floors-shortfall_6-Middle-Large.json",
+      "bytes": 8425,
+      "sha256": "f132a167f13d14eceb9d0ac926d8390c1975e73546169fb0fe92cfadcc570981"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-harmonic_martingale_baseline_optimized-shared-floors-shortfall_6-Upper-Large.json",
+      "bytes": 8414,
+      "sha256": "cb6b93ddcb6c646ec03a0e4ec07efd330fdee6930b00394913833945a9453a31"
+    },
+    {
+      "path": "docs/referee/round-7-review/summary-harmonic_martingale_baseline_optimized-shared-floors.json",
+      "bytes": 7186,
+      "sha256": "cb1d30a468656bc39ae18a64e29aba3bf8e5a4732f3f4fbb70ff36ef7ed7eac9"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-weight_sensitive_product_baseline_optimized-shared-floors-Control.json",
+      "bytes": 14994,
+      "sha256": "484d202175c96b8187fd123d68ac2abcf1f9ebf21882c3c625ba6a63f737cd2b"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-weight_sensitive_product_baseline_optimized-shared-floors-Gikuriro.json",
+      "bytes": 15306,
+      "sha256": "d2c3a3682171dc4a4e7892729201cd4441a227fd0a7e8904e52575e768df805c"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-weight_sensitive_product_baseline_optimized-shared-floors-Lower.json",
+      "bytes": 15131,
+      "sha256": "db277cd06bac6f30c5b2baf75d640aed6d9e8fb41672766e494a0141fd4f5555"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-weight_sensitive_product_baseline_optimized-shared-floors-Middle.json",
+      "bytes": 15224,
+      "sha256": "345a713f160d21bd496a1f22e3ea7918c4aaa70df6f8ad3375565f15ab0774bb"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-weight_sensitive_product_baseline_optimized-shared-floors-Upper.json",
+      "bytes": 15274,
+      "sha256": "11decabf96f6920ca57f11aba408fb53a650050e4d22b5e82c96863ae9ada7c2"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-weight_sensitive_product_baseline_optimized-shared-floors-Large.json",
+      "bytes": 15264,
+      "sha256": "99e3046493acbd2b2eef30a847e5fa3369961c836f8b51015b99c32d859ec2e0"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-weight_sensitive_product_baseline_optimized-shared-floors-mean-Control.json",
+      "bytes": 8473,
+      "sha256": "28602b186e03449f7977b9d03730d8769aaca80503a4d2e54f0ef416c53375e1"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-weight_sensitive_product_baseline_optimized-shared-floors-mean-Gikuriro.json",
+      "bytes": 8557,
+      "sha256": "0865cbec0b88ba83203ebae2bbcbd7aaf26be8193d9011d04de90e71f1ffec8a"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-weight_sensitive_product_baseline_optimized-shared-floors-mean-Lower.json",
+      "bytes": 8575,
+      "sha256": "1f7d02a611a38047b823d95f383afadb94b6c20e91bc512bf57105f380e5ec19"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-weight_sensitive_product_baseline_optimized-shared-floors-mean-Middle.json",
+      "bytes": 8396,
+      "sha256": "06db4874029f72e2bd7e6fd4edc4c746af2d8e6fd341a1dbd4a40169f0b78447"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-weight_sensitive_product_baseline_optimized-shared-floors-mean-Upper.json",
+      "bytes": 8612,
+      "sha256": "5dad524e159c8e212d47ec9d259e78d6a0937212470d4f2fb7c2c0bbdd6df66b"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-weight_sensitive_product_baseline_optimized-shared-floors-mean-Control-Large.json",
+      "bytes": 8700,
+      "sha256": "c923f7b6313148d3ba0953e3031d69703f69ed85913d6a33196fea8cb496a63b"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-weight_sensitive_product_baseline_optimized-shared-floors-mean-Lower-Large.json",
+      "bytes": 8658,
+      "sha256": "3ed227864f19a421ba54c992b32e933105921a0019e3b306cb027bd6482e944a"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-weight_sensitive_product_baseline_optimized-shared-floors-mean-Middle-Large.json",
+      "bytes": 8611,
+      "sha256": "54ded3639f0e4ebc31efb100955c777bcdcc821f87607ce7ab1c51cf1ee98701"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-weight_sensitive_product_baseline_optimized-shared-floors-mean-Upper-Large.json",
+      "bytes": 8737,
+      "sha256": "1f221745269faf6b4f3b5ad0120bb3c6b02b0c7111d4f9ff2f5e52f6cfd6583b"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-weight_sensitive_product_baseline_optimized-shared-floors-shortfall_6-Control.json",
+      "bytes": 8451,
+      "sha256": "86a86c610db68c041a09005c78233b0226885483e7826669e239bc6ec69b6182"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-weight_sensitive_product_baseline_optimized-shared-floors-shortfall_6-Gikuriro.json",
+      "bytes": 8521,
+      "sha256": "cdffef76f7ef2181772a367d3a9cb14f32b6c4165afa8fbf39a2c69bb9ece5a4"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-weight_sensitive_product_baseline_optimized-shared-floors-shortfall_6-Lower.json",
+      "bytes": 8421,
+      "sha256": "b5c8b67cf4b590f7a8931e49ad54c53c7dc9aefe94c22c73a414ba42bd0de2c6"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-weight_sensitive_product_baseline_optimized-shared-floors-shortfall_6-Middle.json",
+      "bytes": 8523,
+      "sha256": "56794a933fe616ac9fd1fcdbdba9c3869a46ace98fffd132d6466555c616567a"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-weight_sensitive_product_baseline_optimized-shared-floors-shortfall_6-Upper.json",
+      "bytes": 8496,
+      "sha256": "b013a40cd13661fb44989a5ad6ec6789f75b887317b9436f7fbb776e45cecc81"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-weight_sensitive_product_baseline_optimized-shared-floors-shortfall_6-Control-Large.json",
+      "bytes": 8400,
+      "sha256": "5a86758f73e0ba7d1908ab20b2aa2e95c92419b93c80a753e26401f72cbfa314"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-weight_sensitive_product_baseline_optimized-shared-floors-shortfall_6-Lower-Large.json",
+      "bytes": 8474,
+      "sha256": "2919cabfa85f1937f90554008f20713a84ac21cd35edd12d7e2ea22f3b978344"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-weight_sensitive_product_baseline_optimized-shared-floors-shortfall_6-Middle-Large.json",
+      "bytes": 8509,
+      "sha256": "ff2092c1baa78c6266d60fd40a8d260d3f84ab7a5572a11cf702008cbb53dcbd"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-weight_sensitive_product_baseline_optimized-shared-floors-shortfall_6-Upper-Large.json",
+      "bytes": 8510,
+      "sha256": "f054cde3a7293872ff376e8ff2ebb6741239ec9e4463457e5776ce86c5dac0b5"
+    },
+    {
+      "path": "docs/referee/round-7-review/summary-weight_sensitive_product_baseline_optimized-shared-floors.json",
+      "bytes": 8502,
+      "sha256": "be0d1d433569aa1ff720065b4cf8337e13c665d06866e8b892c2e14ab23d939e"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-weight_sensitive_hybrid_baseline_optimized-shared-floors-Control.json",
+      "bytes": 15132,
+      "sha256": "307048b20bae0c49c3f97131a0ba9d44b961c9819ecf17e45b20102dc818b485"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-weight_sensitive_hybrid_baseline_optimized-shared-floors-Gikuriro.json",
+      "bytes": 15012,
+      "sha256": "7d6eb45b08ecb3d7e069f0deaaa0e7172dc2811d71c10847418578ac4073aa4e"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-weight_sensitive_hybrid_baseline_optimized-shared-floors-Lower.json",
+      "bytes": 15294,
+      "sha256": "719b414f111e7d1b97f4d0665cbc21f0c10a252282a81cc256893ecc0fd69eea"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-weight_sensitive_hybrid_baseline_optimized-shared-floors-Middle.json",
+      "bytes": 15260,
+      "sha256": "9d9c037249b9f6b4913d5402fe91da498d5b366747bbbd394e7e3ffa2ac0622f"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-weight_sensitive_hybrid_baseline_optimized-shared-floors-Upper.json",
+      "bytes": 14987,
+      "sha256": "9037ede25fb5669979151db907c656b1cae7a99a5402230ae05a62c71ed645bc"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-weight_sensitive_hybrid_baseline_optimized-shared-floors-Large.json",
+      "bytes": 15294,
+      "sha256": "5bb68b7f37174076c70760291587f76a9da1486491478c8a6aec829f01026e49"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-weight_sensitive_hybrid_baseline_optimized-shared-floors-mean-Control.json",
+      "bytes": 8598,
+      "sha256": "3fedfdc58dc824e8f9b60674c9120edc54e1ad72a64858adf02c6dbfee215079"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-weight_sensitive_hybrid_baseline_optimized-shared-floors-mean-Gikuriro.json",
+      "bytes": 8513,
+      "sha256": "47c4ab80b538f42a9699ad75cf5cf3e9e4a6620c9f1fdcd9ae1c02637f10bdd0"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-weight_sensitive_hybrid_baseline_optimized-shared-floors-mean-Lower.json",
+      "bytes": 8574,
+      "sha256": "94ba5675c8b111d55923f44f7e8b3696d7e08118b55c65946bdefc7fd64dd006"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-weight_sensitive_hybrid_baseline_optimized-shared-floors-mean-Middle.json",
+      "bytes": 8736,
+      "sha256": "5eaf012940456899d9d1f7508c674485056adb908af292a7b471c43749c2c3b6"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-weight_sensitive_hybrid_baseline_optimized-shared-floors-mean-Upper.json",
+      "bytes": 8636,
+      "sha256": "a37a57ee9a89cb428ad7e3fd13faa7381449be37fb51ab3293f226a6e33fa9e8"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-weight_sensitive_hybrid_baseline_optimized-shared-floors-mean-Control-Large.json",
+      "bytes": 8702,
+      "sha256": "7ac1b1a5e8edb06cef9d85176e7d8a73c23af04ab7bdae6d7d224ff0f119b377"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-weight_sensitive_hybrid_baseline_optimized-shared-floors-mean-Lower-Large.json",
+      "bytes": 8737,
+      "sha256": "50847a81d497551476f8d3c9e284bee74ddab4c92ab378dfbe4a01d3e833f861"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-weight_sensitive_hybrid_baseline_optimized-shared-floors-mean-Middle-Large.json",
+      "bytes": 8771,
+      "sha256": "517a0f3429106c6322535e9cdf22a2b24c70b0c6253a0b0f16702242746d9475"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-weight_sensitive_hybrid_baseline_optimized-shared-floors-mean-Upper-Large.json",
+      "bytes": 8929,
+      "sha256": "1e7ec0868f7a4a75597d9040f8c9b253be02410f84580871ed5d3aac5acf8a3d"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-weight_sensitive_hybrid_baseline_optimized-shared-floors-shortfall_6-Control.json",
+      "bytes": 8376,
+      "sha256": "49dda6b5a518fac156dd3f961d6311a88f83331f7abebeee568671cc48c38a61"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-weight_sensitive_hybrid_baseline_optimized-shared-floors-shortfall_6-Gikuriro.json",
+      "bytes": 8392,
+      "sha256": "22585d1c3762313632d59a008c2ef0a8281f2ead2afbe767fbf5d86cc4af57a7"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-weight_sensitive_hybrid_baseline_optimized-shared-floors-shortfall_6-Lower.json",
+      "bytes": 8415,
+      "sha256": "83d27cbc8f1ff07059d25580462cf40c990c13e467b8f574554e27e47a6cb75f"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-weight_sensitive_hybrid_baseline_optimized-shared-floors-shortfall_6-Middle.json",
+      "bytes": 8404,
+      "sha256": "8f9fc74cd11eabd91b1ea3ab124f2c0a3afad6aa71ec40d64174561356947631"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-weight_sensitive_hybrid_baseline_optimized-shared-floors-shortfall_6-Upper.json",
+      "bytes": 8390,
+      "sha256": "8a4fb29e3f903eb930fe3b64d219494c6a669a97c57d164371317b6faa43e1ed"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-weight_sensitive_hybrid_baseline_optimized-shared-floors-shortfall_6-Control-Large.json",
+      "bytes": 8361,
+      "sha256": "b87aae5c2fcb010c56365a91f92b21c0a0355c93aaf4f2861c27fb348c295618"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-weight_sensitive_hybrid_baseline_optimized-shared-floors-shortfall_6-Lower-Large.json",
+      "bytes": 8330,
+      "sha256": "03495581c8b6cbe985054fe7751bd0216f792a80b4cd2b3224780be6255bf0d3"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-weight_sensitive_hybrid_baseline_optimized-shared-floors-shortfall_6-Middle-Large.json",
+      "bytes": 8407,
+      "sha256": "306a2d88d2a976dfcf7ee6dde8b9d0d8c21411c65c4809fcae2c37a06345c590"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-weight_sensitive_hybrid_baseline_optimized-shared-floors-shortfall_6-Upper-Large.json",
+      "bytes": 8445,
+      "sha256": "7347ca02dad14acf7bb2ab9e78c83cbc4b88b1c237080f2c4c712aae8b94a8d3"
+    },
+    {
+      "path": "docs/referee/round-7-review/summary-weight_sensitive_hybrid_baseline_optimized-shared-floors.json",
+      "bytes": 8517,
+      "sha256": "1ee91f2b9870e79c7d3763dee20039ffed84dd298e30cf5054e974c07a51ec53"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-empirical_bernstein_fixed_forecast-shared-floors-Control.json",
+      "bytes": 15450,
+      "sha256": "d95c01d06b9817a12b4275e75b934f28ae702b10c636866bd4edf9d253f4b781"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-empirical_bernstein_fixed_forecast-shared-floors-Gikuriro.json",
+      "bytes": 15459,
+      "sha256": "fecd5118b5201832e073949aec194fa2646a997b5090866bd993283ace3ac0c1"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-empirical_bernstein_fixed_forecast-shared-floors-Lower.json",
+      "bytes": 15149,
+      "sha256": "50b7964b0c538b19f63c1775ae720634011a45cccfc3b3e9bbf794207835a5f9"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-empirical_bernstein_fixed_forecast-shared-floors-Middle.json",
+      "bytes": 15110,
+      "sha256": "527179c8acbbfa9b78e54a20227fcca0ea504da31be2b1965b07acf8c9fa8e1d"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-empirical_bernstein_fixed_forecast-shared-floors-Upper.json",
+      "bytes": 15148,
+      "sha256": "cac4eabeda803ad0c5b05786bfd0323c772e08bb7e1d39ceab30e089c6d2bf76"
+    },
+    {
+      "path": "docs/referee/round-7-review/model-empirical_bernstein_fixed_forecast-shared-floors-Large.json",
+      "bytes": 15147,
+      "sha256": "305368fe5907b1daca1d413e6fc47d6fbbe50df7a958ae9037ecfe383f766d9a"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-empirical_bernstein_fixed_forecast-shared-floors-mean-Control.json",
+      "bytes": 8585,
+      "sha256": "b4d693ada8477ea09db6821291e7999df5dd8d64a1b1b55b3aece810d4b87ead"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-empirical_bernstein_fixed_forecast-shared-floors-mean-Gikuriro.json",
+      "bytes": 8321,
+      "sha256": "03eb4f09a20e667d7e0c0a526496c93df3658b57e7a0e16ffeeeb311d6c3936d"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-empirical_bernstein_fixed_forecast-shared-floors-mean-Lower.json",
+      "bytes": 8595,
+      "sha256": "15c9e3a5452ae174edbb07b622756a87ad1855c01d05603de2a28d326dd5eb64"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-empirical_bernstein_fixed_forecast-shared-floors-mean-Middle.json",
+      "bytes": 8526,
+      "sha256": "5232d5844e93ebb6c8b3458ccc067988624c7c9a69f1fd07c056fdbb62dc3ae7"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-empirical_bernstein_fixed_forecast-shared-floors-mean-Upper.json",
+      "bytes": 8510,
+      "sha256": "a66b989e95ed3e14aa069189ba0022b63b7d25250e01a3604e229ece23cce6c5"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-empirical_bernstein_fixed_forecast-shared-floors-mean-Control-Large.json",
+      "bytes": 8675,
+      "sha256": "0f7255f651297c4b094aebd4d0c952ce3d7109a900f4e2d4e0670d51372f9b3e"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-empirical_bernstein_fixed_forecast-shared-floors-mean-Lower-Large.json",
+      "bytes": 8672,
+      "sha256": "9fd9c47739e355244c79360b91eeb48c118418ec512ad63d16ba8719e680c402"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-empirical_bernstein_fixed_forecast-shared-floors-mean-Middle-Large.json",
+      "bytes": 8715,
+      "sha256": "3214ae8f96058ab19817a3507181c1db9e679881d63255eae9261c7dfa13f5be"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-empirical_bernstein_fixed_forecast-shared-floors-mean-Upper-Large.json",
+      "bytes": 8813,
+      "sha256": "492106a2b454a4a4189a99f012a26513b5bc71a719fc84bc6d7e53441d308cf2"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-empirical_bernstein_fixed_forecast-shared-floors-shortfall_6-Control.json",
+      "bytes": 8413,
+      "sha256": "ad9efb5a0b264006a9bd646fd6ba853af75ec1bdcc1fd7ddc74201c0bb1bf45e"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-empirical_bernstein_fixed_forecast-shared-floors-shortfall_6-Gikuriro.json",
+      "bytes": 8349,
+      "sha256": "03b3e7381aa65befd4b117575f308cc961420da384aa7a36f95b698c37be1b9a"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-empirical_bernstein_fixed_forecast-shared-floors-shortfall_6-Lower.json",
+      "bytes": 8494,
+      "sha256": "2f69b3f5d0d1922f54d372fae24651928dc9c7bd553255790e55b47056d31c00"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-empirical_bernstein_fixed_forecast-shared-floors-shortfall_6-Middle.json",
+      "bytes": 8378,
+      "sha256": "873b52f896e450fe4ec7894d0e3c01caa647f71f11fbaf9089d7df9c5385d754"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-empirical_bernstein_fixed_forecast-shared-floors-shortfall_6-Upper.json",
+      "bytes": 8446,
+      "sha256": "4842e05e492d3cb778bb66200ed5de84122e3ce619632df1b2bf574558813d15"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-empirical_bernstein_fixed_forecast-shared-floors-shortfall_6-Control-Large.json",
+      "bytes": 8437,
+      "sha256": "ae8bea548393f3fee1c9600949f4fc44025fdd218390f7f70e287030e5f5316d"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-empirical_bernstein_fixed_forecast-shared-floors-shortfall_6-Lower-Large.json",
+      "bytes": 8472,
+      "sha256": "cb132d1d1e6cbd5caeca3f11d672e0d1e2eac83d5c689293c2d0c281a7545211"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-empirical_bernstein_fixed_forecast-shared-floors-shortfall_6-Middle-Large.json",
+      "bytes": 8419,
+      "sha256": "9e13b563c6425996a8b69a314fed6a181daf23578dc8bd72ffd6484ad5209198"
+    },
+    {
+      "path": "docs/referee/round-7-review/witness-empirical_bernstein_fixed_forecast-shared-floors-shortfall_6-Upper-Large.json",
+      "bytes": 8416,
+      "sha256": "83632eaefc0abb944814d9b9d77aca82ef6f4afbd894a97ff6e8637873820180"
+    },
+    {
+      "path": "docs/referee/round-7-review/summary-empirical_bernstein_fixed_forecast-shared-floors.json",
+      "bytes": 10091,
+      "sha256": "4fe21aa0ff70a52b6cdb802cdb4123bffbb0dedbd3003a8fdbaf6d4b9128d3d6"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-quota-floors-000.json",
+      "bytes": 4856,
+      "sha256": "b9daa2d45306c6d5bcef3d37f0c8a4682a05c2d2b9fb3d28dc6b6ddacf2ed168"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-quota-floors-001.json",
+      "bytes": 4830,
+      "sha256": "bade6504e4106b61ffe3f110038feb2906cf57dd499b2fcb5d57227371c094d4"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-quota-floors-002.json",
+      "bytes": 4829,
+      "sha256": "f1dd362ba992e792ae23015e4dd7f1571072fb68cd68501874728ef1c06592eb"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-quota-floors-003.json",
+      "bytes": 4831,
+      "sha256": "5d14c99c60980b2c57136ab03d5136d916b20bdf749877aa63a0fad17de14445"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-quota-floors-004.json",
+      "bytes": 4822,
+      "sha256": "6e15221b7dd0d49a45c063d7a1d5925282126fa50ff0179b5ccc682c064b670e"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-quota-floors-005.json",
+      "bytes": 4820,
+      "sha256": "f51a8d237381d89a0987ea007587282391a8d3b642baf1896d76a87fad000c02"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-quota-floors-006.json",
+      "bytes": 4836,
+      "sha256": "f5b621da01027eb1503e24656001495508f221b3eeb475913b1b1992225d0bcb"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-quota-floors-007.json",
+      "bytes": 6537,
+      "sha256": "b16f965c269af008560ee0016144f692bab4d64fbbe1e3c5adcae9b610dc2ba8"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-quota-floors-008.json",
+      "bytes": 4828,
+      "sha256": "1615ce8bc56ae48d12bbc2570dd5caefb7657ba49a6b37dcde3c5f769b020f28"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-quota-floors-009.json",
+      "bytes": 4829,
+      "sha256": "15f9b94f40982a46e76c16baad90a91c25309459894c4f3effc55184e09bbee1"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-quota-floors-010.json",
+      "bytes": 4841,
+      "sha256": "99ab6fedf18e9cc11166b6aa80cc6672cb12bddd79325323a8ba2b0c136189a4"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-quota-floors-011.json",
+      "bytes": 4847,
+      "sha256": "cd39d8ffd3c148244fdcb36757adee2b904963487e018099c8bb3cbd7a677233"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-quota-floors-012.json",
+      "bytes": 4861,
+      "sha256": "20f76a9a06c05db4cb785c007a95a889e494478e9ba324d9fecfba1dd96fbecd"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-quota-floors-013.json",
+      "bytes": 6555,
+      "sha256": "0270960d59653b6c94db181061cc7da4b3e55c0aa677791063b94cff0c3af2ec"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-quota-floors-014.json",
+      "bytes": 4839,
+      "sha256": "5ff8f40b09e024ea00e3b829d97952afe15cf55562a69c092b2fb18088832284"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-quota-floors-015.json",
+      "bytes": 4837,
+      "sha256": "3cb8a33158bebf7c50b886cec5a386991e8fee6561e6548b727ef3a9ada65c1a"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-quota-floors-016.json",
+      "bytes": 4852,
+      "sha256": "f1ead4637aad691f78a80b0ec0c018ef2cfe0e76214e7649c102206639e4385e"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-quota-floors-017.json",
+      "bytes": 6501,
+      "sha256": "0f2b4e39b378a9e705762bc1ea9aebbc3770a195564b458f420c22d84c753ffc"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-quota-floors-018.json",
+      "bytes": 4850,
+      "sha256": "7237234e9948e91140419fb33756867090f896f52e0756bcfee3b4b455e9f83c"
+    },
+    {
+      "path": "docs/referee/round-7-review/regional-dual-quota-floors-mean.json",
+      "bytes": 10788,
+      "sha256": "25242fd42e2fc2f14701bee754583045a42cf573dcf55b8aa909fe15ba42c295"
+    },
+    {
+      "path": "docs/referee/round-7-review/regional-dual-quota-floors-shortfall_6.json",
+      "bytes": 11012,
+      "sha256": "5518453febefa33c9358fbff74bab8807058288dc7b25f67a1483f9bf7457aaf"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-quota-no-floors-000.json",
+      "bytes": 2029,
+      "sha256": "649860be67eba9021e8379caba36a7c384497f418b2a5b68932a470da6eff9ce"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-quota-no-floors-001.json",
+      "bytes": 1984,
+      "sha256": "4c4a2c49731b5bbdd8dff3d062955bdcd2f842b6d70f2b938f696ff62abbccd6"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-quota-no-floors-002.json",
+      "bytes": 3691,
+      "sha256": "1acddf69672fda1c1f878f31c00259f3c5d490bd13b53096b56e2e6c645fd798"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-quota-no-floors-003.json",
+      "bytes": 1983,
+      "sha256": "c1e09f842114ac7c225296592d4a5e1b66f255054619813b72c7141ec99ae06e"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-quota-no-floors-004.json",
+      "bytes": 1992,
+      "sha256": "dfd71326054b9d6842f99aeb1d5d91f3268319216a21c47c80878dd997d53e80"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-quota-no-floors-005.json",
+      "bytes": 1988,
+      "sha256": "4545c404afdc82ac2f7b25642c1ecc1c3aa061dda82b7a72d51523d2d0781df9"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-quota-no-floors-006.json",
+      "bytes": 2005,
+      "sha256": "ad400217fadc2bf69ced035f02d3f2fdd35def70692ed67f0c0b62839921e62e"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-quota-no-floors-007.json",
+      "bytes": 1989,
+      "sha256": "9162d32e77c5dd6449865aa3874fe8802bb72bad552e793548a5e3312e8fc2e5"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-quota-no-floors-008.json",
+      "bytes": 3643,
+      "sha256": "403188c8f0c259ca0a3a04c5207669e683f388528c6ab542143f8d2c0829dd94"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-quota-no-floors-009.json",
+      "bytes": 2006,
+      "sha256": "25193ba9918f9a6be7e521acaf88f425ef951a3d9b03c53e129e5cfaea0abcbe"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-quota-no-floors-010.json",
+      "bytes": 1965,
+      "sha256": "c68ae7c1c703cfa8b3cf42af2e47086cb9241e65e2c002b7021334364cd3516c"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-quota-no-floors-011.json",
+      "bytes": 2004,
+      "sha256": "955c43ccaf105a208050fc5546197834f154499021ec8c43f7e33e616770bf63"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-quota-no-floors-012.json",
+      "bytes": 1979,
+      "sha256": "31925facc1f759a7a5427432c57ffa277c8c4182d4504b08ce1f2e1263d8e7f9"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-quota-no-floors-013.json",
+      "bytes": 1955,
+      "sha256": "edf1c3ba28f028c3c78a618fbd5e27fbbba6c8977a6a6dafe609b6edd8133644"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-quota-no-floors-014.json",
+      "bytes": 1980,
+      "sha256": "2c0e2b1950b0ca9d6fd4949cfacb3764cc37d569b65f844c2be7ad5dcb73c66e"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-quota-no-floors-015.json",
+      "bytes": 1975,
+      "sha256": "6031466f7b39a7238413f8f97b0a748000e1a7f43c4285b1aa88fcc7e9e60a60"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-quota-no-floors-016.json",
+      "bytes": 3579,
+      "sha256": "7e82e9ecec1190482b0243c7c3cd4e86ec33e278ecb21cdc08ec61c40657e093"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-quota-no-floors-017.json",
+      "bytes": 1973,
+      "sha256": "0dda8041045d1cc59c78f3061f097c9454f5d4ba498e5245d8e69e743ac7aff8"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-quota-no-floors-018.json",
+      "bytes": 1990,
+      "sha256": "db66122b13af69163b1d158ebf68654d2c3b3fe89fa602d24781b03724da7976"
+    },
+    {
+      "path": "docs/referee/round-7-review/regional-dual-quota-no-floors-mean.json",
+      "bytes": 6578,
+      "sha256": "d7f0e6c99b4aeb2ee64d098516747d09fc82da1e645573e8ea3269de468fbbfc"
+    },
+    {
+      "path": "docs/referee/round-7-review/regional-dual-quota-no-floors-shortfall_6.json",
+      "bytes": 6773,
+      "sha256": "ce7cfb9d12ae03619acece5a4b0fc9645b2aa4ff36f1ba25c73230c015f1e212"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-hoeffding_baseline_optimized-floors-000.json",
+      "bytes": 4848,
+      "sha256": "98fb00add8be0eb05eaeec71389d38f8b41e796940896c484634bf91d261a796"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-hoeffding_baseline_optimized-floors-001.json",
+      "bytes": 4831,
+      "sha256": "e549c121bf6d7e718337fc7f57fec29e7ab0b65bb2272e9509c84f18aa1bdc36"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-hoeffding_baseline_optimized-floors-002.json",
+      "bytes": 4820,
+      "sha256": "d9d10b28205e82a0b44d87434f8a1aff036e389f608974526d05bacb4560536f"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-hoeffding_baseline_optimized-floors-003.json",
+      "bytes": 6496,
+      "sha256": "4bf9f0a92cfcc5a98c367f283a505a248c78b4a446c3d5c217e48d7a24b9828b"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-hoeffding_baseline_optimized-floors-004.json",
+      "bytes": 6569,
+      "sha256": "ad54904fbc1aaa1f56cd49a9e0b0acf6b84137d6d0f3994052f8a7ac46c574e7"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-hoeffding_baseline_optimized-floors-005.json",
+      "bytes": 4816,
+      "sha256": "867927815a71b646dd847344a5c0887b2e526c68a13b0fafdd383a2f0a29b58f"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-hoeffding_baseline_optimized-floors-006.json",
+      "bytes": 4823,
+      "sha256": "844489e6a7e6988e7727c48c04433b427a05f5708c194474bd94cb8c59e2edb0"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-hoeffding_baseline_optimized-floors-007.json",
+      "bytes": 6441,
+      "sha256": "74c2b4bf785b979dcab97e668c14869eea294e7eadcab7e9428e143fff38b041"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-hoeffding_baseline_optimized-floors-008.json",
+      "bytes": 6543,
+      "sha256": "56ce2bd0d0e3db69f4b5b34eb624f7db01e22ed03c3354a34761f5f60cfc3a91"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-hoeffding_baseline_optimized-floors-009.json",
+      "bytes": 4846,
+      "sha256": "f02797a55efb5b756f4e6e6022d2d775080d95ffd84f830bc19390cac00f6758"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-hoeffding_baseline_optimized-floors-010.json",
+      "bytes": 6518,
+      "sha256": "3c5e3d26467e4a4e65791d474c0f8e04d56a3ca00457418b4f24532837b34885"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-hoeffding_baseline_optimized-floors-011.json",
+      "bytes": 4837,
+      "sha256": "cc67d0142c2f855a49eca1f5e60ad1b39bc07206f65814cf728f309fb0b99e0e"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-hoeffding_baseline_optimized-floors-012.json",
+      "bytes": 4848,
+      "sha256": "0c46512f87f3bd3a7eb516d8ad3f2365bb0861b642926571031483c8977e80a7"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-hoeffding_baseline_optimized-floors-013.json",
+      "bytes": 4856,
+      "sha256": "ccf21e3f74e3a6a17fb2c238c94de185373c921e8e4b2c54f2059a52eaa7f97e"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-hoeffding_baseline_optimized-floors-014.json",
+      "bytes": 4856,
+      "sha256": "57547698e130ebb152bae7a462a6d87b7ef6a9abd7a5f25d9bd28e8903bd78f9"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-hoeffding_baseline_optimized-floors-015.json",
+      "bytes": 6561,
+      "sha256": "19c3dcb75e789bdb4b0d97498b528f87d8fc137a82b8c341c0abeb4504c748d7"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-hoeffding_baseline_optimized-floors-016.json",
+      "bytes": 4845,
+      "sha256": "265632c25081f09f90f9e5ddc509a3c9f7059bc3b18c3a0088905aea652b9008"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-hoeffding_baseline_optimized-floors-017.json",
+      "bytes": 4842,
+      "sha256": "9fbac48d4f94c74c30991413baacd9673a838474e3991bc9fa13e7a3b918fe45"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-hoeffding_baseline_optimized-floors-018.json",
+      "bytes": 6541,
+      "sha256": "79e0db2e60952bb48a41eefb5a1739ae78df2c6570e82a946dc7b1f3b90a37dd"
+    },
+    {
+      "path": "docs/referee/round-7-review/regional-dual-hoeffding_baseline_optimized-floors-mean.json",
+      "bytes": 11783,
+      "sha256": "a2011f8b9b33c33a8e11e46bd5ff8104d6ead284d2c2e0ef18982e1467383d3c"
+    },
+    {
+      "path": "docs/referee/round-7-review/regional-dual-hoeffding_baseline_optimized-floors-shortfall_6.json",
+      "bytes": 11882,
+      "sha256": "5b1c2fb37a2c1f77d740c28689eb987adfcffca3f5471e65f6ee51a1e61ae53f"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-serfling_baseline_optimized-floors-000.json",
+      "bytes": 4840,
+      "sha256": "56cabba4ef92151f5710d9cbd5eaebbe79251475cdef0505b98cbd1152da1e3e"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-serfling_baseline_optimized-floors-001.json",
+      "bytes": 6533,
+      "sha256": "a56f9609a1bb04d1a2f9ab67376c4f01f485664300b143bb1cb211f3bf3b8d84"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-serfling_baseline_optimized-floors-002.json",
+      "bytes": 6538,
+      "sha256": "d2ae894db65eb28935b13a156e782ea4949bda1751ffad719514f8e111c8114d"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-serfling_baseline_optimized-floors-003.json",
+      "bytes": 4827,
+      "sha256": "0f3ec4557b91fcc5c3dd9762ee99fc70a8761b81757f92593e21dff708932e2e"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-serfling_baseline_optimized-floors-004.json",
+      "bytes": 4836,
+      "sha256": "9c5d13e5beed86e8ce29566da4dffba280bf226433d7860e6029357076329e18"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-serfling_baseline_optimized-floors-005.json",
+      "bytes": 4842,
+      "sha256": "f7828f462b34b773cc0e327dcbad18ed643225fbfe789e4103fed9010820f17f"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-serfling_baseline_optimized-floors-006.json",
+      "bytes": 6500,
+      "sha256": "2495f755815d2ac45042359e13eff065ea8d296e6d8e08eb249ce4b8a76c85a2"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-serfling_baseline_optimized-floors-007.json",
+      "bytes": 4835,
+      "sha256": "cafbea817c0bd0de0c014f266812784358ef24f554f1260e60a641d89f9d9b06"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-serfling_baseline_optimized-floors-008.json",
+      "bytes": 6496,
+      "sha256": "08aaa560d03fad63fab6e81d63534f4b0c8f8f28c5558898420cddde7db63763"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-serfling_baseline_optimized-floors-009.json",
+      "bytes": 4832,
+      "sha256": "12a4a89bd95ee3a2969735ae5bb7c17994b51590b2a0932c03d7470fee040b3e"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-serfling_baseline_optimized-floors-010.json",
+      "bytes": 6561,
+      "sha256": "995447434696f0dfd94c3b7263e13da073531eea58e29988dc2f65eb048e5cd2"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-serfling_baseline_optimized-floors-011.json",
+      "bytes": 6454,
+      "sha256": "9f4b8d5b05551875850904a6dedd993ad853f99130f952d95326dcb8cb9b7927"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-serfling_baseline_optimized-floors-012.json",
+      "bytes": 4862,
+      "sha256": "59d858e2eba3b18a36840858186014678c65809416e257e27e894affcae5bc13"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-serfling_baseline_optimized-floors-013.json",
+      "bytes": 6506,
+      "sha256": "757a529885d52a5f82bf6f7519f17a199e21ab2af4d9440034178240f5644c68"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-serfling_baseline_optimized-floors-014.json",
+      "bytes": 4854,
+      "sha256": "2f5fd2056e113812c39ebc8d54d29875fffc8720fb455996de8cd13a88095db4"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-serfling_baseline_optimized-floors-015.json",
+      "bytes": 6509,
+      "sha256": "1b485e28e6c2d460f0f24546c3a169e3bda29f03b90399c1a6fa1b09d9d6027b"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-serfling_baseline_optimized-floors-016.json",
+      "bytes": 6409,
+      "sha256": "5ddeeb31cc05e47606f607d2e545a55b3241318a348101250fe371b6ca80d7da"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-serfling_baseline_optimized-floors-017.json",
+      "bytes": 4848,
+      "sha256": "0638e7e13093be4e778229135c5ff7af7f269e9fcff6e23e567ec4708e98910e"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-serfling_baseline_optimized-floors-018.json",
+      "bytes": 6551,
+      "sha256": "eaa7447ea147d60ce2e42f0bea34a985ce28f55c37a0540cc2f61c00288dd31f"
+    },
+    {
+      "path": "docs/referee/round-7-review/regional-dual-serfling_baseline_optimized-floors-mean.json",
+      "bytes": 12133,
+      "sha256": "a5b839aacb15f7f9d46d47de01d82e536a73ff5610d82768aecd20fac80af592"
+    },
+    {
+      "path": "docs/referee/round-7-review/regional-dual-serfling_baseline_optimized-floors-shortfall_6.json",
+      "bytes": 12289,
+      "sha256": "ace3f290b6c06ad8d435c23686d8b2aec3685f7ee425ef3c1f096e77e483e120"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-harmonic_martingale_baseline_optimized-floors-000.json",
+      "bytes": 4842,
+      "sha256": "c867c4c64d931880d5353238bbc7478d132cbea720a8eeb2e318130489a26f0d"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-harmonic_martingale_baseline_optimized-floors-001.json",
+      "bytes": 4842,
+      "sha256": "c2ca15bb9a787d3247b5d887599764ba9ba8c91123031f80b6ca123681128a62"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-harmonic_martingale_baseline_optimized-floors-002.json",
+      "bytes": 4817,
+      "sha256": "cc13de549adca571673604f0ef08957a3ef64a954961158c6aa61a29842c706f"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-harmonic_martingale_baseline_optimized-floors-003.json",
+      "bytes": 4819,
+      "sha256": "c5c5c07e4f33e217b6c672fa209af46afb26884990a16759f91b5e7614cb2982"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-harmonic_martingale_baseline_optimized-floors-004.json",
+      "bytes": 6534,
+      "sha256": "15bd6c7b7a57e5c19d35c652f6242e2a9f95eb8f8df83eca074a6937b3f1a5e7"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-harmonic_martingale_baseline_optimized-floors-005.json",
+      "bytes": 4830,
+      "sha256": "3ace452d66fff924e375b341a46bda8970e9fa78ec512e719e171b4588f42692"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-harmonic_martingale_baseline_optimized-floors-006.json",
+      "bytes": 4838,
+      "sha256": "1bdfcc49eef13130acb732db17aa1ed95e09cefe4e47a79ce1cbfa7d1cb1362f"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-harmonic_martingale_baseline_optimized-floors-007.json",
+      "bytes": 4831,
+      "sha256": "da8e37fae7ea15ef4c3de36ae50c2228d01c8edadc224e610e202fea254e5350"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-harmonic_martingale_baseline_optimized-floors-008.json",
+      "bytes": 6494,
+      "sha256": "9429dd8c2d212b0501c90ebd9fd8c83ee4ca27d1b10021380786d5e702fa3bf6"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-harmonic_martingale_baseline_optimized-floors-009.json",
+      "bytes": 4825,
+      "sha256": "7c8f97082a3285a397ea1173872708ca2de6cd83431994a4d4eb50d15f96a0fb"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-harmonic_martingale_baseline_optimized-floors-010.json",
+      "bytes": 6263,
+      "sha256": "b2ee38a2f72f492f56c38e600b08e6e2ce377ca2e94e025ff7f727ac3b1e0a09"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-harmonic_martingale_baseline_optimized-floors-011.json",
+      "bytes": 4840,
+      "sha256": "5b53ad3a17915f0f13bdb61f7cc7686f7bde2117a530e76cf2f46cdb18b47f78"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-harmonic_martingale_baseline_optimized-floors-012.json",
+      "bytes": 6568,
+      "sha256": "940a2db6b6d318b4196055e8e09c7506ca0e7db6d442f3390979917ee4a81a74"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-harmonic_martingale_baseline_optimized-floors-013.json",
+      "bytes": 4843,
+      "sha256": "729eb3e98f79e6689d9a2fcb9d3682ebbe34c86c1b0c08cf3af542cfd549efff"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-harmonic_martingale_baseline_optimized-floors-014.json",
+      "bytes": 4837,
+      "sha256": "bb7526f1a4976f4bac57387723395500fb5ab035f65105969ca9c3e5c830ad05"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-harmonic_martingale_baseline_optimized-floors-015.json",
+      "bytes": 4844,
+      "sha256": "d6d8fc18e8bfae65fb4be260cce3302dbacfde6f01841272d41d5073ffc4ba48"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-harmonic_martingale_baseline_optimized-floors-016.json",
+      "bytes": 6553,
+      "sha256": "f996e12a0eb84455a8954cbee523a714f7c91862b776730cbb0a7edd48d8e42c"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-harmonic_martingale_baseline_optimized-floors-017.json",
+      "bytes": 4850,
+      "sha256": "26e6b412051846d9d3f8568219641f412c05647d0939611a469e57e683a222d8"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-harmonic_martingale_baseline_optimized-floors-018.json",
+      "bytes": 6545,
+      "sha256": "191567e57f7f7fda5400b1e1f3e91cf39856e099935252485fede76f8eeda5a3"
+    },
+    {
+      "path": "docs/referee/round-7-review/regional-dual-harmonic_martingale_baseline_optimized-floors-mean.json",
+      "bytes": 11845,
+      "sha256": "93c8077d3fe843022c213fc866ccbadfc9dc412a6ccc07f288f3add2b782b1ca"
+    },
+    {
+      "path": "docs/referee/round-7-review/regional-dual-harmonic_martingale_baseline_optimized-floors-shortfall_6.json",
+      "bytes": 11972,
+      "sha256": "75b801b8816295a2c8c0fda78363d4370ae162edd8eca403e571b5077c738a7e"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-weight_sensitive_product_baseline_optimized-floors-000.json",
+      "bytes": 4865,
+      "sha256": "5f85ed05ef94c3d8ebcd67a47b022f4d6a2408411f082dab141b671fadbfbeea"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-weight_sensitive_product_baseline_optimized-floors-001.json",
+      "bytes": 4813,
+      "sha256": "bfab398f3a98646446cd5ab09586c885b84709f651cc6594cce76faf58af33bd"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-weight_sensitive_product_baseline_optimized-floors-002.json",
+      "bytes": 6511,
+      "sha256": "e675ddd3bb19a7ffddf4abbbda3a8bbc1eb9783bff3daedf2c6153765aceff32"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-weight_sensitive_product_baseline_optimized-floors-003.json",
+      "bytes": 6507,
+      "sha256": "f382e5cfb3ea5057be3e6f6ace131eb53cdcd5bccb277d86fa050d4ffbef0de0"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-weight_sensitive_product_baseline_optimized-floors-004.json",
+      "bytes": 4812,
+      "sha256": "04d7e47d1185386a455921208c1ff9045cc022729aafaead6998181f86bfef41"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-weight_sensitive_product_baseline_optimized-floors-005.json",
+      "bytes": 6517,
+      "sha256": "f7cb8295b9652326bf4c69664e1bf22d8593db7cc21a13ef2a6288cf38534e3e"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-weight_sensitive_product_baseline_optimized-floors-006.json",
+      "bytes": 4825,
+      "sha256": "58868e43c33be34876b7ac55756c47444a185891e52bc9e4ab9ead2fb3c89dc6"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-weight_sensitive_product_baseline_optimized-floors-007.json",
+      "bytes": 4817,
+      "sha256": "2dee92685a04889335dd16a76d70c61d3e149e0edeeeaf395e3dce93fb86442b"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-weight_sensitive_product_baseline_optimized-floors-008.json",
+      "bytes": 4819,
+      "sha256": "fd92ebd990f704ad5ff7330506346d469d8fafddc2f762ce4e00d602e1071a0a"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-weight_sensitive_product_baseline_optimized-floors-009.json",
+      "bytes": 4813,
+      "sha256": "7c8e5e3289dc2b42ee0519738cae81ab3cfb2c11615551bb361278c9ac244f1a"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-weight_sensitive_product_baseline_optimized-floors-010.json",
+      "bytes": 4847,
+      "sha256": "2bfdd1970812b84230ff494ecf4b1e0ed904b414bed0b2718ff01838cf5c97cc"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-weight_sensitive_product_baseline_optimized-floors-011.json",
+      "bytes": 4848,
+      "sha256": "1ef758c5dc2589040fa20f816ffab6b95b2016cc96b023730e7dc7c0b435ed42"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-weight_sensitive_product_baseline_optimized-floors-012.json",
+      "bytes": 4853,
+      "sha256": "64d0c32a5d74b22f984f2222c6483ee9f4474ed78b670311831c3b102b37b627"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-weight_sensitive_product_baseline_optimized-floors-013.json",
+      "bytes": 6346,
+      "sha256": "0c12740aba7821428743aef15d3ee3ae1bda56dce3ada47c34e674eabbedc3d7"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-weight_sensitive_product_baseline_optimized-floors-014.json",
+      "bytes": 4832,
+      "sha256": "1e4e9ddd64fb3b4eaeae8890d19461f33a73d3c011afaa157b817fb62a6a3752"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-weight_sensitive_product_baseline_optimized-floors-015.json",
+      "bytes": 4811,
+      "sha256": "093ee31e4fe250b7cd00d8b0382a11fa4d60763b169cb5cf09eecf898e9c9ae6"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-weight_sensitive_product_baseline_optimized-floors-016.json",
+      "bytes": 6556,
+      "sha256": "4483de8e1ed5ee6fa0e1722f6bbca785aa17e25a9ed4284180576d4cf11e82e6"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-weight_sensitive_product_baseline_optimized-floors-017.json",
+      "bytes": 4835,
+      "sha256": "c942c658068520b8014828d726abb0ffe25d22482a972394e7a34700e248597f"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-weight_sensitive_product_baseline_optimized-floors-018.json",
+      "bytes": 6379,
+      "sha256": "7b394b11065ca7bec44c03c9a36efac67e3a6c432f6d6142ab37f64e30963453"
+    },
+    {
+      "path": "docs/referee/round-7-review/regional-dual-weight_sensitive_product_baseline_optimized-floors-mean.json",
+      "bytes": 11944,
+      "sha256": "f855698ccb2ae9a5a217e3b79fb2797343b0254ce5f0640aa843272af02d1c5d"
+    },
+    {
+      "path": "docs/referee/round-7-review/regional-dual-weight_sensitive_product_baseline_optimized-floors-shortfall_6.json",
+      "bytes": 12142,
+      "sha256": "5523b24e52bb8620704ec70e07b184209a8902ad9f20958b60e497ab71444aad"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-weight_sensitive_hybrid_baseline_optimized-floors-000.json",
+      "bytes": 4865,
+      "sha256": "72ba5cb5b526a4a0f9f24b19b397e5acaa021d95abbd067c36ec670b4ad265e7"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-weight_sensitive_hybrid_baseline_optimized-floors-001.json",
+      "bytes": 4827,
+      "sha256": "54d59e7f95585c0fa9a62bc493803e5466c4b0f0177c3e983aa44a8645f24252"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-weight_sensitive_hybrid_baseline_optimized-floors-002.json",
+      "bytes": 4836,
+      "sha256": "57997b320befbf1f67557ad227da3a55629034de3767ab5fe3eb9f690da56bbb"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-weight_sensitive_hybrid_baseline_optimized-floors-003.json",
+      "bytes": 4809,
+      "sha256": "4c0442a0f920f924a32164258da2de1d01ac96730fe568830812ead1a3953de7"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-weight_sensitive_hybrid_baseline_optimized-floors-004.json",
+      "bytes": 4837,
+      "sha256": "e9aae904da0573ac8143737b5c3b4e5a7595d82453afb4e94fb6263cf6f0069d"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-weight_sensitive_hybrid_baseline_optimized-floors-005.json",
+      "bytes": 4826,
+      "sha256": "dbbaba7d28d9f5a83ca6748f49b8620716f02a5b05a4fbea1285abb52a79959a"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-weight_sensitive_hybrid_baseline_optimized-floors-006.json",
+      "bytes": 4834,
+      "sha256": "fa5402fca96c710a2cf5556be5f3bf22ffb27a1c06a39e2bccaa7dfbbf5ead7e"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-weight_sensitive_hybrid_baseline_optimized-floors-007.json",
+      "bytes": 4833,
+      "sha256": "eb13b04dc49b792c352810ca85d2ef4227c0050fb558208a22a56d6fd7a1f2fc"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-weight_sensitive_hybrid_baseline_optimized-floors-008.json",
+      "bytes": 4839,
+      "sha256": "677a21206c9a3e4f0819d1daad53d3b902d0fac69b4170fde15c52867fe43c05"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-weight_sensitive_hybrid_baseline_optimized-floors-009.json",
+      "bytes": 4835,
+      "sha256": "63c4782a18406ea0fb732cdac72b44b493973d2f941ddb94b8bb2ad4500efc8b"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-weight_sensitive_hybrid_baseline_optimized-floors-010.json",
+      "bytes": 4832,
+      "sha256": "04d57fd56475fa92b8e7f217419d2e607ac76155e7df82ae51266616b051664d"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-weight_sensitive_hybrid_baseline_optimized-floors-011.json",
+      "bytes": 4840,
+      "sha256": "8ae7c38701040c58123d2cedf37c937cb429f5db51a3713ce107fcec0ae374d9"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-weight_sensitive_hybrid_baseline_optimized-floors-012.json",
+      "bytes": 4848,
+      "sha256": "087c9ee3798a468dd5aa6a9e839774ec9a09e0d72a52dcdc3979f05688f538bf"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-weight_sensitive_hybrid_baseline_optimized-floors-013.json",
+      "bytes": 4848,
+      "sha256": "40f89975ef80852e1c5a3de0f0668671abec4701b9560b846ded2efd56d80e51"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-weight_sensitive_hybrid_baseline_optimized-floors-014.json",
+      "bytes": 6246,
+      "sha256": "986a899a4fa9330ab8bd87a36fa9291973451060e26d86f083dd253234464523"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-weight_sensitive_hybrid_baseline_optimized-floors-015.json",
+      "bytes": 6551,
+      "sha256": "727b4dd052eda757c2fc133f98ef0ab9e6ed7d495d351170702871616909b677"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-weight_sensitive_hybrid_baseline_optimized-floors-016.json",
+      "bytes": 4848,
+      "sha256": "03167d08f7494e5ae71cbb4776b52b6c9931e8ff7a3a2039ea332a2ad1cec492"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-weight_sensitive_hybrid_baseline_optimized-floors-017.json",
+      "bytes": 4833,
+      "sha256": "2c0f9b13dc18da247e888a2c887195a1405e2b3fcdca1041aeb5011e947cc03d"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-weight_sensitive_hybrid_baseline_optimized-floors-018.json",
+      "bytes": 6550,
+      "sha256": "91625245ccd1a5ad36d76e25fc47f617bf31f45c04c8011a1f8de4c9e8f8bd03"
+    },
+    {
+      "path": "docs/referee/round-7-review/regional-dual-weight_sensitive_hybrid_baseline_optimized-floors-mean.json",
+      "bytes": 11471,
+      "sha256": "12c39ce3280b4e8084667c26ae35fb2c00f6cd87c79d167bef78c794f9a03582"
+    },
+    {
+      "path": "docs/referee/round-7-review/regional-dual-weight_sensitive_hybrid_baseline_optimized-floors-shortfall_6.json",
+      "bytes": 11657,
+      "sha256": "534f3e5b97623e930bbd1c2468b5f304d7a49c67d3a53b5f5ef2f2457b328abc"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-empirical_bernstein_fixed_forecast-floors-000.json",
+      "bytes": 4859,
+      "sha256": "8006872c51806d52a256787403860f124cde03c09a7c96ae6c56695de6b60348"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-empirical_bernstein_fixed_forecast-floors-001.json",
+      "bytes": 4818,
+      "sha256": "0bd95bc1e7f645f652803ed9b92726b380ba88d37dac7e5791f14d553442229b"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-empirical_bernstein_fixed_forecast-floors-002.json",
+      "bytes": 4812,
+      "sha256": "e456aa568a0853c3ae0cfb1fcdad561f7ef8be0d2c0f326bf0cf075cadb2f27b"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-empirical_bernstein_fixed_forecast-floors-003.json",
+      "bytes": 4803,
+      "sha256": "f7dae74f20b814b7a8a2e28bb5ceaf67d365cf32706eb5043823ef5cc8d94615"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-empirical_bernstein_fixed_forecast-floors-004.json",
+      "bytes": 4806,
+      "sha256": "d6a6c4dc4219d14f34328dbd415101cd891d40ae03e7a35efb29edb20f34ee32"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-empirical_bernstein_fixed_forecast-floors-005.json",
+      "bytes": 4816,
+      "sha256": "ef5ea63372ffd49f3946da0a3aeb5cdaec73110ebab7342ab1908c82cf66e9b8"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-empirical_bernstein_fixed_forecast-floors-006.json",
+      "bytes": 4822,
+      "sha256": "d06e5cb0c45da1a40ee92a3214b7867f185e12598e0b342b6c088cd473700de7"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-empirical_bernstein_fixed_forecast-floors-007.json",
+      "bytes": 4812,
+      "sha256": "5a6806cbcc171bc537d8d99b74b246cde1e7103c9e22daaaa49919adccb2bf0e"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-empirical_bernstein_fixed_forecast-floors-008.json",
+      "bytes": 4809,
+      "sha256": "f67995b8237bb4ab8948be519fb1d22a6ab483bdf1179d8a29a4ba7c114b67bb"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-empirical_bernstein_fixed_forecast-floors-009.json",
+      "bytes": 6486,
+      "sha256": "bdac1115c65bed979e75ab2e1fa389f3402874d71c6184cbe53572c58a4db1b9"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-empirical_bernstein_fixed_forecast-floors-010.json",
+      "bytes": 4842,
+      "sha256": "8a4c7b88852b0082bad0cd7bb72fce242d7c94a845ab2a8900a05da444b8582c"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-empirical_bernstein_fixed_forecast-floors-011.json",
+      "bytes": 4840,
+      "sha256": "562dc9262bad335a777d1e83b879117d1a30dc50db05cead06c200db5c74531e"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-empirical_bernstein_fixed_forecast-floors-012.json",
+      "bytes": 4853,
+      "sha256": "8100c2bc6a0931382c61b016708c4a11f99e41510d48c6dd9e0c792b803bd06a"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-empirical_bernstein_fixed_forecast-floors-013.json",
+      "bytes": 6552,
+      "sha256": "b3117f85da1443d03737748a19ecabf0a36a6f7aefc12e1c03421f7597b0829c"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-empirical_bernstein_fixed_forecast-floors-014.json",
+      "bytes": 4838,
+      "sha256": "83792e1a6fabd5c5e1f8366282b15a6c4138aa3d64606a2645b592b96e8244b6"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-empirical_bernstein_fixed_forecast-floors-015.json",
+      "bytes": 4825,
+      "sha256": "38b4e88635d38f0caf780febd1b56cd65cb04a0907c6ff0c793532a98b5f6d64"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-empirical_bernstein_fixed_forecast-floors-016.json",
+      "bytes": 4821,
+      "sha256": "a777c6cc76c70e29086328da7256980d4ed65aaaa083d68c5e8e4f47b9ba027b"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-empirical_bernstein_fixed_forecast-floors-017.json",
+      "bytes": 6535,
+      "sha256": "ae2df98e2d384e6df5cbdedae264883d5149ddc959298c55294b9d8d5944055c"
+    },
+    {
+      "path": "docs/referee/round-7-review/population-empirical_bernstein_fixed_forecast-floors-018.json",
+      "bytes": 4817,
+      "sha256": "706b6df6ad893de1775f602c0bdc40fa71186ee4522f5f95b376a5380e8987fb"
+    },
+    {
+      "path": "docs/referee/round-7-review/regional-dual-empirical_bernstein_fixed_forecast-floors-mean.json",
+      "bytes": 11377,
+      "sha256": "f5ad03061f9ead17bccd2dc7314f3751d09a5ddc5dd4b6b4a9bb1b8f2f6e68a9"
+    },
+    {
+      "path": "docs/referee/round-7-review/regional-dual-empirical_bernstein_fixed_forecast-floors-shortfall_6.json",
+      "bytes": 11529,
+      "sha256": "aea003dccc18a83b80be243eef7cfb5ab12d27c102fd2d96c811d35475e405c8"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-000.json",
+      "bytes": 3244,
+      "sha256": "9b4cb15b5334b27865a61ff311c58e3f5db0287063dd8050e08da03adfb3d12f"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-001.json",
+      "bytes": 3288,
+      "sha256": "8a23f2b47614375b26dc085532515fd7ecdc12e8e25ad1b198c09400e9953833"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-002.json",
+      "bytes": 3284,
+      "sha256": "c8350aa01b0617ecce93c9759d43935cdda4e427b1b0052c11bb45071a4b2d8c"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-003.json",
+      "bytes": 3118,
+      "sha256": "ecffd9287f334feff3bc7457813043411069f6d11db1e508b86d10f22402a4ec"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-004.json",
+      "bytes": 3165,
+      "sha256": "bf75b667fcdee022eba34597ab29a06e1ccc337134e9a39b8013ee71f429a938"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-005.json",
+      "bytes": 3192,
+      "sha256": "5537b450783793809b30e414c48bea5071d432cb7abebcbd9e51222ab6db7d07"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-006.json",
+      "bytes": 3260,
+      "sha256": "696be9e0d2ac6f38df44b216bfdc013bdb333d7b7df7d1e1c6d1ea3d8f285b30"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-007.json",
+      "bytes": 3280,
+      "sha256": "02a0299157ec5a3b305645c83e241a640c05f377184c97288de4e9c1042e4f04"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-008.json",
+      "bytes": 3240,
+      "sha256": "fb88dfb087c112748c00058af25f375f3aa13e27b833726b18c4b199e8c0852d"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-009.json",
+      "bytes": 3243,
+      "sha256": "02ca0dd1a1e0e063237da990909768ddd32c98e4829bd7436ea29e822fff1e83"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-010.json",
+      "bytes": 3261,
+      "sha256": "6bd7d8ba702b2ee51a4c6a89a4ecb93b91900380c388f6c7f6bf6baf579c91ca"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-011.json",
+      "bytes": 3300,
+      "sha256": "6a3608ee5ed10e8bd0fc4ae6f55d672ccdbde75769655efacbd8abdc0b10ad80"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-012.json",
+      "bytes": 3281,
+      "sha256": "b98c78782ba8c6453af415d49565dd77c03c49a8883dab64de5a3ffe83450871"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-013.json",
+      "bytes": 3343,
+      "sha256": "1fcf3eee9723400861c2d05d6e05bfe92c1ba4b4205494fa48b98eab5e71a750"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-014.json",
+      "bytes": 3354,
+      "sha256": "c170b95b68ec212b663f71b05b4482b01a9b78b5574d1c14059cab390a7bf193"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-015.json",
+      "bytes": 3172,
+      "sha256": "0afbdbab31a4a09fa23d8a90a14658cd7d5a6fa824413b3834d08d31aa1525f5"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-016.json",
+      "bytes": 3202,
+      "sha256": "03426bbc41bd9b929cfe375a21abd2def591cc19322204db6299859eca4a7138"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-017.json",
+      "bytes": 3225,
+      "sha256": "c7eff7d1860d8b9d4d13c1713cb6cd40d98cec9ecf5befdd06238e3742420105"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-018.json",
+      "bytes": 3283,
+      "sha256": "adb6b515fe7c53727351f312d9071550a989881544d7c2925a9d527e12131a17"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-019.json",
+      "bytes": 3321,
+      "sha256": "eee3d51851ca3d378e1a0d058e4ed2613145d4899644673d33090f187c9950fb"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-020.json",
+      "bytes": 3316,
+      "sha256": "cdba92c6658aedb4d69f3ce88949304ec18ab431a0bb67c4a0ceda51aa1a2d80"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-021.json",
+      "bytes": 3299,
+      "sha256": "487749c5bb2e296c04a4b3a831b49b491c87e8a00d6a486e5e01f159b8e857ba"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-022.json",
+      "bytes": 3315,
+      "sha256": "ad07606b29cfb55bb9e976eb39ef716fb474ddf47d01fc5ec6b64f9663c60933"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-023.json",
+      "bytes": 3332,
+      "sha256": "8c614cc3a30d79bc4fd70a1ad09e8e7c0d3b5adc1eeb4f3b903e7555d966de62"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-024.json",
+      "bytes": 3299,
+      "sha256": "bea7fc7f9b2cc651e34d10d173bcdde0298007a43db829b3de034a8189c80964"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-025.json",
+      "bytes": 3281,
+      "sha256": "f8659108ee0235dc8712ee19c88a32055f9da2f0cc23afe76638b42663ec7198"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-026.json",
+      "bytes": 3312,
+      "sha256": "61210352dd497d1c76c961b275fbb469615488bcb5cf1d861ef58ea1c50880e2"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-027.json",
+      "bytes": 3138,
+      "sha256": "9764f782cc7eca35b1f4580efce6355d388a9c6204160486ddd70101d6e4dd86"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-028.json",
+      "bytes": 3171,
+      "sha256": "fea638ddb8e34915c1844c2d97cbac7f05e026ce82b9f3ef38a7b4407da19a41"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-029.json",
+      "bytes": 3201,
+      "sha256": "0d581d89ca386dde35315bf92c2c0e4938ee762ef0ef0b30161e17ddee88c442"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-030.json",
+      "bytes": 3313,
+      "sha256": "43da6c2ed29f8d97a5c3828a9b4e1c8ae261bd2db7586345911d1e8b7a3abb3a"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-031.json",
+      "bytes": 3301,
+      "sha256": "b50453fce2265a58019c46e0a2c9b2374bc8058be85e28157b3939e7da6db231"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-032.json",
+      "bytes": 3319,
+      "sha256": "ff974c03ba1d3945d39329d7c42114e1d5d9d09ef192217a1553c369cb264e18"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-033.json",
+      "bytes": 3254,
+      "sha256": "c0f85b74f58c9a71ec6ad5001c5fc7b09431c96d1872a07f0ab0076c698226e4"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-034.json",
+      "bytes": 3285,
+      "sha256": "f79640f462ff233175fb5abcd66450f4539b90068fe1f225a2c96a2781d8566c"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-035.json",
+      "bytes": 3301,
+      "sha256": "eff6f83e012ddf110f87353c3ee86c3fcef822e9f84649833abdc667bb43e7cb"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-036.json",
+      "bytes": 3290,
+      "sha256": "0bab911c331301769a7af1cebad211f0ae2fa2822da99a95ab99932792162eea"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-037.json",
+      "bytes": 3318,
+      "sha256": "5d8c6adb61f21924d6c599541b2acfc59b242b03f5ee3aa3b199c872e382786d"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-038.json",
+      "bytes": 3357,
+      "sha256": "7dd92661fd708621959001607d5a42d3fa2bcb28ebed0a407ed6337bf80cf94d"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-039.json",
+      "bytes": 3176,
+      "sha256": "cc228cc4d901a25f52f98aa212079578a979a37d94a3ef53b995c72fd27b1d37"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-040.json",
+      "bytes": 3197,
+      "sha256": "f5dd5112cb670d704638cb6be54b1a9f6bd10d59928c47291fa1c02b1d1da3ea"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-041.json",
+      "bytes": 3228,
+      "sha256": "75e68340fb4743900ec176bd0bd9ad86070b841a1aca2f0814dc145ce29aaeaa"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-042.json",
+      "bytes": 3297,
+      "sha256": "f3d9c7e82a492eab62ceead0b0988d8bf690903ae5ffb8ab6392d097f705525e"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-043.json",
+      "bytes": 3321,
+      "sha256": "9a70db805b34272c5fb36371d20dd91201c7dfc8d0cb2793c977a1c015a17993"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-044.json",
+      "bytes": 3309,
+      "sha256": "fe0a22bd7669792bb3691f5fb78c68dd9bc3714466d87f86c9b57d6d26d09dce"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-045.json",
+      "bytes": 3311,
+      "sha256": "5dafb5ee9d16cd18e757bd19be8eb6134eb0f14a7a2993c7d0bcf6ac12def669"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-046.json",
+      "bytes": 3322,
+      "sha256": "62d8997ea6cc2c9ef6dd5ba384f08014e30598cd82bc66c796443f736539ae75"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-047.json",
+      "bytes": 3344,
+      "sha256": "72f86d8925d91769d4da22b910a2b7753f0002dc46472d602bd62a9e47eb4fa6"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-048.json",
+      "bytes": 3282,
+      "sha256": "dcb576150b080e37b63bcaeeb35566686befaab6e8f99df8ec7056e9ef03f1c8"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-049.json",
+      "bytes": 3296,
+      "sha256": "b6c42587e0d8f24a7163698c0f81b6ff5e39fc1f4d3c1d478ad40f6a36156b92"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-050.json",
+      "bytes": 3312,
+      "sha256": "2bf751039169d46fc74c977b8386e3abd80fecf3150b5d8396a736c61a0c76c0"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-051.json",
+      "bytes": 3134,
+      "sha256": "7a076011247ee74a6407a9633c2f1b81d8edbccd9a9b67ee78a08a4c0ddd430d"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-052.json",
+      "bytes": 3167,
+      "sha256": "e1d35e0034abd3108e3c1ae7d68f1bf65d0991c1fd7535a5ad33ef7366a45048"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-053.json",
+      "bytes": 3202,
+      "sha256": "9bc479a097a89a0826bd9f8ee9f5f6694a57a4dcd056c97270409c65d3c87934"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-054.json",
+      "bytes": 3245,
+      "sha256": "38cf3b89aa6dfc7e31210c24e2c87b81fa2da2ae99c8234f57e60b626a20e269"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-055.json",
+      "bytes": 3281,
+      "sha256": "3bf1ce1c996f6f395ba65a85a75af8740519ed9a78698f0baf038051e9f9f8f8"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-056.json",
+      "bytes": 3329,
+      "sha256": "aad4bdba8fd44d907ab1a5bc90c0354fd5829d7daffa34e7ed6db61e9098590d"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-057.json",
+      "bytes": 3293,
+      "sha256": "3ac40740d44e213d02675bc58dfe943a4c28827f534c3508f7186c0234b2a884"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-058.json",
+      "bytes": 3305,
+      "sha256": "a6632c21cb2ce6143a3f5780d9760057e10a9d5e62c7ac19d0236304be0355f1"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-059.json",
+      "bytes": 3301,
+      "sha256": "a93680497d7f702550e68d3b8ac57e8795e0067987879b6779c68db15fa5f2e5"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-060.json",
+      "bytes": 3299,
+      "sha256": "2dd29db568daa7469418858033ff3df5cb04d5e505c08a92bd91c4b7f8a3b9a7"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-061.json",
+      "bytes": 3343,
+      "sha256": "86d57dcac7fe3a1950eb3433135a02621c206b0ad9a6887c4c624295e2d840c5"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-062.json",
+      "bytes": 3336,
+      "sha256": "72ff3fc3adbbcc2e2ce948e95b1622ddd372210bc90d72fc5455abb73eb7dd07"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-063.json",
+      "bytes": 3168,
+      "sha256": "14da91e9fb18f49cf727f209b2920db3953e6cbaa4a35af6483ff02a3e17dad1"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-064.json",
+      "bytes": 3198,
+      "sha256": "215e3b8092d194ec034c8f707e82dc014b8442c128454383e61c2193c25593e5"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-065.json",
+      "bytes": 3237,
+      "sha256": "7e1efd204c7107a49c734b638a850c3857e19c25398b2197036ab409bd7698f7"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-066.json",
+      "bytes": 3302,
+      "sha256": "6e341449b6592b08c62f0abdcbefd4bccbd7558cf6d2c78b22950f11611fbb2e"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-067.json",
+      "bytes": 3315,
+      "sha256": "f387048c15f140452a30eebd0498203332e870bca0609ee319945d52e3d95f43"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-068.json",
+      "bytes": 3316,
+      "sha256": "8c1e43cdd191a89da5eafbad466d2452e8f2ca5bfe22936677060e57b4064d9c"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-069.json",
+      "bytes": 3266,
+      "sha256": "38aba0985739f49e7b79e7c858c317e781d94d74ab59c7e13021cfce5fcf52b2"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-070.json",
+      "bytes": 3317,
+      "sha256": "052cb4e9d832bdae34ecbb06cffcc944d4985fd2db82d9542a6c93e5535817b1"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-071.json",
+      "bytes": 3348,
+      "sha256": "b33673feeecbd8c8441c3c88ad1628d014b46709fdf4a5795a2161b4538d6b4b"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-072.json",
+      "bytes": 3017,
+      "sha256": "8dbd8a899dd87c5bb36e0a394c3f10ff86d4a9f1ee33ad913573a21af512d8c2"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-073.json",
+      "bytes": 3321,
+      "sha256": "a9a2fe9cb72c8a9a2b9fbfece03d623cca8dd3c40ffc342d7605330977196ffa"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-074.json",
+      "bytes": 3353,
+      "sha256": "e494de229222c649b731032ab99d11f27de4ea9f4ab748b341f35e44a0ffa698"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-075.json",
+      "bytes": 3141,
+      "sha256": "acf265d36dad03e5ed867327057037f58a044f96d03871a24ab3caa64c482769"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-076.json",
+      "bytes": 3175,
+      "sha256": "3ffcbf10fa7a97dac4570f2732198c8a2cf28b16bd578a4af10959632a0ba0a8"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-077.json",
+      "bytes": 3201,
+      "sha256": "6b41da21f385e769be95209e6c295c4ad8ad0dfe4cf4f70cb9e9d72864028b89"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-078.json",
+      "bytes": 3280,
+      "sha256": "6e2ad617d0b49c8e388054eab2fb484ec478bd81cb9bcd6ebc7f0f47b772e9ab"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-079.json",
+      "bytes": 3298,
+      "sha256": "6e4bc3856d114a31f7295377fac9dcd118c0039e96318dd5df6ebd58f6848547"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-080.json",
+      "bytes": 3321,
+      "sha256": "e2a3eba1ad5029af387a06743e30f4c5ef5c0daacd9291363a50c6389a951fe6"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-081.json",
+      "bytes": 3007,
+      "sha256": "f6d515dbf9e1ce7c411b29867bcecde801cedd640beb75b839a49a9a55e00025"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-082.json",
+      "bytes": 3298,
+      "sha256": "ec9f04069da50c3b17eb54f94a901d305659fe69e15571308ab1db27530c658c"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-083.json",
+      "bytes": 3327,
+      "sha256": "bfe650fbe12636bdf8c0ae903246ff272fe56b2f927f268a2a314c9e3c1c2119"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-084.json",
+      "bytes": 3315,
+      "sha256": "b53d8e2f87e32fde3a15c248865a538394a07c10d0928eae38df19f82a48a39a"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-085.json",
+      "bytes": 3321,
+      "sha256": "3a3c76d8bc3be1fbcb60f1cde47d6b4b07d37397a3ca272c37e0a4bd3c5d456b"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-086.json",
+      "bytes": 3351,
+      "sha256": "76bcc123aad0258817db7dc1c206267177520db4c44fd43058a66df9a2114ce1"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-087.json",
+      "bytes": 3173,
+      "sha256": "699aa78ff36ff1ec8c81c5e232112b3eb84c86ef4cd054cb555384b2d525ca21"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-088.json",
+      "bytes": 3208,
+      "sha256": "6c544b84a8c32be2583750962ace7eca7e3ade7b44a19c6f3fd7eefaa7791cc1"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-089.json",
+      "bytes": 3241,
+      "sha256": "b91d09809a95960dc122d0d99b065cf0c1ce145f6c693586d2ee1d63f4c27f73"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-090.json",
+      "bytes": 3303,
+      "sha256": "09e6a0a82739cbe931720c1dc86329d5789a23122275e38f4baa30cf187032b6"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-091.json",
+      "bytes": 3335,
+      "sha256": "54de3213bd145f9f04f532120d081abbfc515ac6ba6fe6167bcf6a20b969dad8"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-092.json",
+      "bytes": 3383,
+      "sha256": "401096076d97926c53c5f6b8dae894d29a8a7f071b47f18f692b13eaca0a500a"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-093.json",
+      "bytes": 3269,
+      "sha256": "2ad2a478a0948d2a98b1705203fe2c069b55d6b87cab93071e16b081de0b1b04"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-094.json",
+      "bytes": 3329,
+      "sha256": "0494eee779b2de4fb56ec450a3c117a037558d5e5577cfbc19bee2d45eac4090"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-095.json",
+      "bytes": 3337,
+      "sha256": "ae6edff4e5316fb370146f49c4e352ef83c6a9cf0f06b4e24a32ed131d984dd2"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-096.json",
+      "bytes": 3206,
+      "sha256": "85ac5aa4c778389e230c81055d7ad16a502902cb980683a34f90178f033bbcd7"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-097.json",
+      "bytes": 3293,
+      "sha256": "1b5bbd965e6692c82b1b04b54353a4831c0313ae72bbfa71962b6a9fd3b91680"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-098.json",
+      "bytes": 3349,
+      "sha256": "39fa57ace6e7cf79b646a0bcbdbf2003b1253bd67c62bf351f03accb0bc16568"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-099.json",
+      "bytes": 3134,
+      "sha256": "e198de89b6a3118917d6a41e8fda2f6ef42f5a09ad3ddd41335710890d280fbd"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-100.json",
+      "bytes": 3162,
+      "sha256": "ef7ede1651ee4b9433e4b4d5cc13b9fa9fcce21cb142805cffa21c2c14e95545"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-101.json",
+      "bytes": 3200,
+      "sha256": "6d43be071242f8b66dd8a8d43aa397832e58bc04e732645228fafc7a0c82714a"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-102.json",
+      "bytes": 3261,
+      "sha256": "6891238c94769b5b9bbe181e42e195173dada2c9670f1e998ad74a566afd9a10"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-103.json",
+      "bytes": 3287,
+      "sha256": "db7a2ca00b3ff2cd6f56d271f99c7148e8c978b9cccd2c53d5c8be5df20acefb"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-104.json",
+      "bytes": 3314,
+      "sha256": "7c78a02291df2de8afc5b68331d67eb70f8e6eacda4ed57034c989e74c364f09"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-105.json",
+      "bytes": 3174,
+      "sha256": "50648ddac16299090e33f32e268cd1865e6ab24550ef494b70b39bda0d1cdfcf"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-106.json",
+      "bytes": 3277,
+      "sha256": "2fd9399c9c9eb29345ec1d928c367bcfec0305fc8a4efe3368d15d549d21804d"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-107.json",
+      "bytes": 3333,
+      "sha256": "5075f832c9d266a8d1fa5b4cbb3ae1f177ce341201b675ce5d5760f5d88d0a8a"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-108.json",
+      "bytes": 3293,
+      "sha256": "e8662a3e53c125e06578f4e4bcf65316a7875a6a372dcc2074a041cf1bf0c6ed"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-109.json",
+      "bytes": 3324,
+      "sha256": "7662f350d98ca8d871e5d476ef4276520cb1eea269937f33a08b69d7228cc4a5"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-110.json",
+      "bytes": 3353,
+      "sha256": "645289c3a4689188216e34de7e6ac239298f643b2a8b259b5de45979cec20749"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-111.json",
+      "bytes": 3188,
+      "sha256": "cd143ebf81b4e609e7f5668c44babd8581547b23e5d7d8fe1c80346d6b304def"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-112.json",
+      "bytes": 3217,
+      "sha256": "c673f60076a2f803e7e1a35c28b92f6bfab0ef6a8fa473f15a6bd47250a2e9e2"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-113.json",
+      "bytes": 3225,
+      "sha256": "7ecc231e629fa1681b50246f59f7b438493d9c5c7206e3257245161f773263e2"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-114.json",
+      "bytes": 3323,
+      "sha256": "0a4a5b75a7d1f95d11b643d90edb5a13b115bd9b55854740b55120d6af615466"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-115.json",
+      "bytes": 3318,
+      "sha256": "74c0b87f0daecd4a5cfc675a086097c3ac48af27a798c1c20d6bcefc8911e378"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-116.json",
+      "bytes": 3347,
+      "sha256": "ae3a8b542e25fc1a79bc52f941cedd8c7e17e54725d81bbb2d74fcc0549c3958"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-117.json",
+      "bytes": 3294,
+      "sha256": "ac32abe1c40d2e6ab1544bdd9670e8284ac95302357142bba336abe4d5c28517"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-118.json",
+      "bytes": 3305,
+      "sha256": "57a36364d75a742dadb3df3fb153d3aa9d6023ba634b672d2556c388f3191651"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-119.json",
+      "bytes": 3365,
+      "sha256": "d9b9dbbf528e7fbf985d1d7a1d945f6dd97f86941bd22ccb5efd3a004247ca29"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-120.json",
+      "bytes": 2951,
+      "sha256": "6f0fa6b5009e7fea11259c35d65c4821ccf061237f085cf93ca916faae6a9545"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-121.json",
+      "bytes": 3324,
+      "sha256": "3e89a43fcbf5f3eca67284867896ec1a47bfbdab8b1f0fc408df0b090ae5093b"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-122.json",
+      "bytes": 3329,
+      "sha256": "190f15d05eef3dda87516a104de7d8214c994e686028b705a8c3aacd17771e55"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-123.json",
+      "bytes": 3161,
+      "sha256": "af3335e72736312cc70f9202a8f011e7f4f42e68acb578986b9adb1925604af7"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-124.json",
+      "bytes": 3192,
+      "sha256": "fc765600616298f96a6c67cee5d84c5874cd46aea886bd6f8c33a88d41df16f2"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-125.json",
+      "bytes": 3211,
+      "sha256": "47eb051f6287fe17bf745c6faa1c250d9ff6fb396cbba4c0f6f99eb795deea59"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-126.json",
+      "bytes": 3270,
+      "sha256": "3516cd483ce0a790ca39216ba78055f226b361a23b56cd8b1ab13cd8d7bce1bd"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-127.json",
+      "bytes": 3293,
+      "sha256": "18f19597b073fb82e295b589a1a423b13827ae1a477522466e5754c3fe549400"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-128.json",
+      "bytes": 3305,
+      "sha256": "92bfa94e7e523a39bcd5568309209034c5458a6657a95dd6aad5a752ac913b3d"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-129.json",
+      "bytes": 2941,
+      "sha256": "da41ecd27049722b302d2a07b8ab4a7ccad051237e8132c3812c602c740e8cc1"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-130.json",
+      "bytes": 3315,
+      "sha256": "f3d818815b9346b865e566f32651f8a8af3beca3449c59b64a4d5b8a2b838a04"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-131.json",
+      "bytes": 3309,
+      "sha256": "1208dc05f261a116c0fad717dd3687810faa3d734f992d78073eb3f7190856d1"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-132.json",
+      "bytes": 3268,
+      "sha256": "a6ff753d73683ae84b939142c9c49c4eea6d9f7ee8543002280eb2d07cca9f1a"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-133.json",
+      "bytes": 3334,
+      "sha256": "bb8307fbbedb8d2c653fe6a8e2d2fd462465702b3e47efc817331c5f8daa0c5c"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-134.json",
+      "bytes": 3389,
+      "sha256": "736e15fd1ee904140d25e614dac2daad49ef0a64b4e0e07b0ddd02f178b9295a"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-135.json",
+      "bytes": 3189,
+      "sha256": "886fd279c70712548dc28957c6e88d883e941cacde8420c98e6962223314fe07"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-136.json",
+      "bytes": 3208,
+      "sha256": "9162ae1eebfc1399b3ddd42684943441e84c3d2cc945b01d6a2cddbe900aefd0"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-137.json",
+      "bytes": 3222,
+      "sha256": "e9ab4b0ec5c6485087d8a5187dc6a83db4320cfe31a0930fb525a7fc278442c1"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-138.json",
+      "bytes": 3295,
+      "sha256": "ae3082fdd8849f1accba767dd067f66aa481c766f1404d7a72c3af9772c76991"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-139.json",
+      "bytes": 3345,
+      "sha256": "4812e1220cb6a646aec85f43acc392da362a536787cb1ea03cbe3469efe33023"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-140.json",
+      "bytes": 3363,
+      "sha256": "15c71004b38772e04359ce76b9e007f9c747e49d3ea5c71904ef0cdc4c3b0dfa"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-141.json",
+      "bytes": 3313,
+      "sha256": "9a0fe3ab482254a6a7d13977f3b0ef0e6572c20583c94a3a643fc9de9e871d08"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-142.json",
+      "bytes": 3327,
+      "sha256": "06895693007db9d84cb7bc25f178529bc37f92e69dc4e065eae38722fef30d00"
+    },
+    {
+      "path": "docs/referee/round-7-review/decision-case-143.json",
+      "bytes": 3354,
+      "sha256": "708cbe1232bfe56af8faec2895e528872ad3f67e2ea7dff94d5490f949748d89"
+    },
+    {
+      "path": "docs/referee/round-7-review/summary.json",
+      "bytes": 10981,
+      "sha256": "9ebd70a8fbb80b2f653d90d1eaacffe6674f77c8c754dab14fa5b45d8398a34e"
+    }
+  ]
+}

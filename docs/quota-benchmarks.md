@@ -1,4 +1,6 @@
-# Method comparisons and component ablations
+# Historical sixth-revision method comparisons
+
+The current seventh comparison, including the omitted product/hybrid benchmark, restricted empirical Bernstein and exact regional brackets, is in [quota-methods-round7.md](quota-methods-round7.md). This file preserves the sixth-revision derivation and omissions; its omission statements and 49.23% comparison are historical.
 
 This analysis responds to the fifth report's methodological-positioning concern. It does not change the frozen fifth submission, introduce observations, identify an operational CRS objective, or establish a leading-journal contribution. All results are separately scoped. The empirical table compares valid upper certificates for the **same rational allocation proposals**. It does not compare method-specific minimax optima, and differences between upper certificates need not equal differences in exact worst-case loss.
 

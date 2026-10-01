@@ -14,6 +14,7 @@ from scipy.optimize import linprog,minimize,minimize_scalar
 from quota_arithmetic import I,lp_dual_lower
 from quota_models import build_models,ARMS
 from quota_allocation import verify_proposals,exact_vertices
+from weighted_product_moments import product_log_float,product_log_upper
 
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'output'
@@ -58,6 +59,55 @@ def classical_rows(method,fixed_lambdas=None):
         rows.append({'arm':arm,'fixed_lambda_normalized':lam,'certified_upper_log_normalizer':B,
                      'variance_proxy_upper':str(variance.hi),'method':method})
     return rows
+
+def weight_sensitive_rows(hybrid=False):
+    """Select each arm's scale from baseline design, then enclose all moments.
+
+    The hybrid takes a minimum of two bounds on the same block moment before
+    observing any endpoint. It does not intersect confidence regions.
+    """
+    weights=baseline_weights();design=pd.read_csv(OUT/'assignment_probabilities.csv');rows=[]
+    for arm in ARMS:
+        blocks=[(weights[int(r.block)],int(r.villages),range_coefficient(int(r.block_villages),int(r.villages),'harmonic_martingale'))
+                for r in design[design.arm==arm].itertuples()]
+        V=sum(float(coef)*float(max(w))**2 for w,k,coef in blocks)
+        base=float(np.sqrt(8*np.log(5520.)/V));cache={}
+        def diagnostic(loglam):
+            lam=float(np.exp(loglam))
+            B=sum(product_log_float(w,k,lam,coef if hybrid else None) for w,k,coef in blocks)
+            value=(B+np.log(5520.))/lam;cache[lam]=value
+            return value
+        for scale in [.5,.75,1.,1.25,1.5,2.]:diagnostic(np.log(base*scale))
+        minimize_scalar(diagnostic,bounds=(np.log(base/1000),np.log(base*100)),method='bounded',options={'xatol':1e-8,'maxiter':64})
+        lam=min(cache,key=cache.get)
+        B=sum((I(product_log_upper(w,k,lam,coef if hybrid else None)) for w,k,coef in blocks),I(0)).upper_float()
+        rows.append({'arm':arm,'fixed_lambda_normalized':lam,'certified_upper_log_normalizer':B,
+                     'method':'weight_sensitive_product_harmonic' if hybrid else 'weight_sensitive_product',
+                     'baseline_scale_selection':{'bounds_relative_to_harmonic':[.001,100.],
+                         'candidate_evaluations':len(cache),'floating_radius_numerator':cache[lam],
+                         'scope':'Baseline-only floating search selects a fixed valid lambda; neither global optimality nor a numerical certificate is inferred from its diagnostic.'}})
+    return rows
+
+def empirical_bernstein_rows():
+    from empbern_quota import select_empbern_scale
+    weights=baseline_weights();design=pd.read_csv(OUT/'assignment_probabilities.csv');rows=[]
+    for arm in ARMS:
+        blocks=[(weights[int(r.block)],int(r.villages)) for r in design[design.arm==arm].itertuples()]
+        selection=select_empbern_scale(blocks,5520)
+        rows.append({'arm':arm,'fixed_lambda_normalized':selection['lambda'],'certified_upper_log_normalizer':0.,
+                     'method':'empirical_bernstein_fixed_forecast','baseline_scale_selection':selection['scale_search'],
+                     'normalizer_scope':'No fixed log-normalizer is used. build_models regenerates per-score directed empirical compensation and averages all assigned-village orders; affine coefficients use total fixed population weight rather than the realized HT denominator.'})
+    return rows
+
+def label_source_search(proposals):
+    """Retain provenance without attributing quota diagnostics to other methods."""
+    result=copy.deepcopy(proposals)
+    for proposal in result:
+        diagnostic={key:proposal.pop(key) for key in ['exploratory_search_upper','exploratory_search_gap'] if key in proposal}
+        if diagnostic:proposal['source_quota_proposal_search_diagnostic']={
+            'moment_method':'quota','diagnostic':diagnostic,
+            'scope':'Historical floating search that supplied the common rational proposal. Not this comparator method\'s search result or a certified optimality gap.'}
+    return result
 
 def separate_support(models,proposals):
     policies=json.loads((OUT/'policies.json').read_text());cost=[Fraction(policies['costs'][a]) for a in ARMS]
@@ -126,12 +176,15 @@ def select_support_taus(models,proposals):
 
 def main():
     start=time.time();original=json.loads((OUT/'quota-normalizers.json').read_text())['rows']
-    proposals=json.loads((ROOT/'code/quota_proposals.json').read_text())['proposals'];rows=[];receipts=[]
+    proposals=label_source_search(json.loads((ROOT/'code/quota_proposals.json').read_text())['proposals']);rows=[];receipts=[]
     fixed={x['arm']:x['fixed_lambda_normalized'] for x in original}
     settings=[('quota','shared',True,original),('quota','separate',True,original),('quota','shared',False,original)]
     for method in ['hoeffding','serfling','harmonic_martingale']:
         for scales in ['baseline_optimized']:
             settings.append((method+'_'+scales,'shared',True,classical_rows(method,fixed if scales=='quota_fixed' else None)))
+    settings.extend([('weight_sensitive_product_baseline_optimized','shared',True,weight_sensitive_rows()),
+                     ('weight_sensitive_hybrid_baseline_optimized','shared',True,weight_sensitive_rows(hybrid=True)),
+                     ('empirical_bernstein_fixed_forecast','shared',True,empirical_bernstein_rows())])
     for method,event,floors,moments in settings:
         models,_=build_models(moments)
         if not floors:
@@ -146,7 +199,7 @@ def main():
             rows.append(row);print(json.dumps(row),flush=True)
         receipts.append({'method':method,'event':event,'bin_floors':floors,'moments':moments,'support_scale_selection':diagnostics,'selected_proposals':selected,'scenarios':results})
     report={'scope':'Same existing-data rational proposals, costs, targets, missing-item envelopes and 23 transformations. Baseline-only moment/scale alternatives; independently valid 95% events, never intersected or selected by observed tighter bound. Shared/separate and bin-floor ablations use the same quota constants. Upper certificates are enclosed; no method-specific minimax optima or global superiority asserted.',
-            'sources':['https://arxiv.org/pdf/1309.4029','https://proceedings.neurips.cc/paper_files/paper/2020/file/e96c7de8f6390b1e6c71556e4e0a4959-Paper.pdf','https://www.alrw.net/e/02.pdf'],
+            'sources':['https://arxiv.org/pdf/1309.4029','https://doi.org/10.1214/aos/1176346079','https://proceedings.neurips.cc/paper_files/paper/2020/file/e96c7de8f6390b1e6c71556e4e0a4959-Paper.pdf','https://www.alrw.net/e/02.pdf'],
             'rows':rows,'receipts':receipts,'seconds':time.time()-start}
     (OUT/'quota-benchmarks.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf8')
     displayed=[]

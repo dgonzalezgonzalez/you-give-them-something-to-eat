@@ -1,6 +1,6 @@
 # Conditional quota-mixture inference and numerical verification
 
-1 October 2026. This fifth-revision procedure uses the same public observations as the fourth submission. It is a new standalone conditional event. It does not intersect two nominal 95% confidence sets and claim their intersection remains 95%. The main target is the fixed weighted released baseline; the potential identified-diet ratio retains a different target and event. No recovered assignment protocol, new observations, sharp potential-outcome region, optimal general inference theorem or statistical minimax-regret rule is claimed.
+1 October 2026. The fifth-revision procedure introduced here uses the same public observations as the fourth submission. It is a new standalone conditional event. It does not intersect two nominal 95% confidence sets and claim their intersection remains 95%. The main target is the fixed weighted released baseline; the potential identified-diet ratio retains a different target and event. No recovered assignment protocol, new observations, sharp potential-outcome region, optimal general inference theorem or statistical minimax-regret rule is claimed.
 
 ## Coverage argument
 
@@ -23,6 +23,8 @@ The four-point exponential grid {1, 1.25, 1.5, 2} times sqrt[8 log(5520)/V_a] is
 The original randomization code is still unavailable. Released counts do not prove uniform quota assignment or block independence. Those assumptions remain explicit. Fixed released weights do not prove full-frame representativeness, and stable deployment costs and outcomes need additional evidence.
 
 ## Outward arithmetic
+
+The current seventh default uses directed actual-weight sorted thresholds and a positive symmetric-mean recurrence. The following proxy description is historical/reference only. Current implementation and regional optimization brackets are in [quota-methods-round7.md](quota-methods-round7.md).
 
 `quota_moments.py` uses rounded integer proxy village weights. Binary centered residuals then have exact int64 numerators over the integer quota. Directed 80-digit Decimal arguments, correctly rounded Decimal exp/ln with adjacent-value enclosures, and an IEEE positive-sum error bound enclose each proxy quota average upward. Finite normal exponentials and nonoverflowing sums are checked. A deterministic log allowance lambda*(n/k+1)*sum|W-W_proxy| accounts for actual fixed weights. Exact stored household weights are summed at 100 digits; actual inputs fit that precision. Summation and float conversion of block constants are outward.
 

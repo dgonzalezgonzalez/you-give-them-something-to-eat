@@ -31,7 +31,7 @@ try:
         checks[relative.as_posix()]=file.read_text(encoding='utf8')==(dest/relative).read_text(encoding='utf8')
     for relative in ['output/policies.json','output/numbers.json','output/revision-numbers.json','output/decision-numbers.json','output/distribution-numbers.json','output/quota-comparison-numbers.json','paper/results.tex','paper/revision-results.tex','paper/decision-results.tex','paper/distribution-results.tex','paper/quota-comparison-results.tex','docs/output-map.csv']:
         checks[relative]=(root/relative).read_text(encoding='utf8')==(dest/relative).read_text(encoding='utf8')
-    for leaf in ['quota-enclosure-validation.json','quota-allocation-validation.json']:
+    for leaf in ['quota-enclosure-validation.json','quota-dp-validation.json','empbern-quota-validation.json','designed-decision-validation.json','regional-minimax-validation.json','quota-allocation-validation.json']:
         actual=json.loads((dest/'output'/leaf).read_text())
         checks['cold_'+leaf]=actual['all_passed'] and bool(actual['checks']) and all(actual['checks'].values())
     baseline=json.loads((root/'output/quota-loss-bound.json').read_text())

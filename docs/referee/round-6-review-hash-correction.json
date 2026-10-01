@@ -1,0 +1,1028 @@
+{
+  "frozen_tag": "v0.6.0",
+  "frozen_commit": "50b87f33654b080ee3d554d827ae8786b7708f20",
+  "scope": "Correction of historical inspection-manifest file SHA256/byte conventions only. All frozen sixth files remain unchanged. Original manifest hashed generated Windows CRLF streams, whereas Git text attributes published LF. Parsed JSON/model/receipt values are unchanged; the independent sixth referee authenticated Git blobs rather than relying on these SHA256 fields.",
+  "original_manifest_published_sha256": "9eebcae9a27a6a436a919dbd3a6fa5244ce331ddc2b3904a0e62d37b72c015b0",
+  "canonical_source": "output/quota-benchmarks.json",
+  "canonical_original_windows_sha256": "944e104a5bfb066c4efb51c877da569bb952b363c525d7e202c8a0ba536ff9fc",
+  "canonical_published_lf_sha256": "9bac83353cb40ae9cbadbb17bccb3795548c9853ca4bbe40c9e67e75371e6573",
+  "canonical_crlf_reconstruction_matches_original": true,
+  "all_alias_crlf_reconstructions_match": true,
+  "aliases": [
+    {
+      "path": "docs/referee/round-6-review/model-quota-shared-floors-Control.json",
+      "original_manifest_windows_sha256": "45c0da3f7f7fc88989e9c3ea636fec5f975670cca98c669d925554d6fc7fc546",
+      "published_lf_sha256": "366b536c82f7ce656d7d01844ab03fb3d6bbae9eea40744f5ba5e1ca510dd8c2",
+      "published_bytes": 14834,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/model-quota-shared-floors-Gikuriro.json",
+      "original_manifest_windows_sha256": "d89dab100a1a7f40f685ab6258e9834185633a8a29b26c1a2cc52350dcdf1ab8",
+      "published_lf_sha256": "267cc37d3f5da1e96bb1d93183b8a1762c9f5b5865f8609195493cb0acd3f035",
+      "published_bytes": 15018,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/model-quota-shared-floors-Lower.json",
+      "original_manifest_windows_sha256": "3a3e7d606560571992020ae8a9ad4471e2109202431a65aae9a4ac403690a07b",
+      "published_lf_sha256": "cc7d443aa6a48b8e520d159d25144e1069282635ef147def385b3f7b3752cbd5",
+      "published_bytes": 15150,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/model-quota-shared-floors-Middle.json",
+      "original_manifest_windows_sha256": "a97f5d14c51e52f826ac22519f276ea5a90ab856b8fb077a83f5b6b66cfb0435",
+      "published_lf_sha256": "9afc395b73403182fb87b30fd7b9ee610f0caadc3b0ca7f67ff95dfb08484e64",
+      "published_bytes": 15117,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/model-quota-shared-floors-Upper.json",
+      "original_manifest_windows_sha256": "467a59d24917e4eee1b1922b63ef5140af665dca6cec38c78ca91062b77e9ed4",
+      "published_lf_sha256": "7d4db12c5012fbf24d3e29648949f539326d024197c3cf01de2d4847a1baf30b",
+      "published_bytes": 15160,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/model-quota-shared-floors-Large.json",
+      "original_manifest_windows_sha256": "481bbbade17b36236125639d8a732a5a42f449a8cf7355adf3eeb50d9c42dfea",
+      "published_lf_sha256": "0bedbcb21ccaff659b9541d1431c46279aba44f8b8b5fc14d81e5659e0c82946",
+      "published_bytes": 15142,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-floors-mean-Control.json",
+      "original_manifest_windows_sha256": "ca608c015c6de87cca2f109f51e08bd8c2f442abaaeff984992753f34c370f78",
+      "published_lf_sha256": "24feb113f13bd34e9cd50f9fdcd00251782ecf8ad3ae5477cc41ab873b2c277d",
+      "published_bytes": 8551,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-floors-mean-Gikuriro.json",
+      "original_manifest_windows_sha256": "38cc76d20aae489d82d689f710c3ad4ed23f1216ea5de5fd275f6aa1a0df18b9",
+      "published_lf_sha256": "5010e763039eece5028359df00b9a03807442290f573b9c847a12444df82552f",
+      "published_bytes": 8470,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-floors-mean-Lower.json",
+      "original_manifest_windows_sha256": "42c15347bb0cd34ae42505dbec21bb22d63ab182341a177d5bd27cfe6faadd38",
+      "published_lf_sha256": "46f65ccc7b823df83daafd92a5f540e24f5bafef0b4a622071a660662c560eaf",
+      "published_bytes": 8712,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-floors-mean-Middle.json",
+      "original_manifest_windows_sha256": "447340baa16a117dcb8529f52d67af59e672ec32824f5eb99f111ded659be32b",
+      "published_lf_sha256": "32c5c16e47f36aa2a3e1c077df00c535f5d3def67f723ccdaab8f286845e895c",
+      "published_bytes": 8652,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-floors-mean-Upper.json",
+      "original_manifest_windows_sha256": "c46b3fefe663e4c710cc4beeaa3a3a6b7b3027ae627dda46a9b27c1918a60331",
+      "published_lf_sha256": "f9b90121bb3b7149425a29b801493d8d7d05045dfe4fb3f82e362ee9a2054992",
+      "published_bytes": 8606,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-floors-mean-Control-Large.json",
+      "original_manifest_windows_sha256": "e896af3772cbffd7acecd99991ce5809085e83586e2295b90788181dfeb5038c",
+      "published_lf_sha256": "30060cd052971ec9cf70bd2e528a5071fdd18ddfa63cf33ae86cc0051c7b2503",
+      "published_bytes": 8723,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-floors-mean-Lower-Large.json",
+      "original_manifest_windows_sha256": "46aa8da09a06762869d059bce9ac2377e98fbeb9c0d273e21f999d9d4344d474",
+      "published_lf_sha256": "8db876c1cc1dd68d6f3d8298d80edfa617b2315efdb271d8d9cbe6bb63d956f8",
+      "published_bytes": 8701,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-floors-mean-Middle-Large.json",
+      "original_manifest_windows_sha256": "71f73ab689ca99a8b819d1dc68692234e0d6bd76a35d6c675a1e013697d580b7",
+      "published_lf_sha256": "4965cbc2046b7360f1e6cea5c752d969ed515629a81b03a7739630632ebcd715",
+      "published_bytes": 8864,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-floors-mean-Upper-Large.json",
+      "original_manifest_windows_sha256": "e773130b64a284c96d0fd7bd5aad31268423ceca4708cce2a86d333c2433fc53",
+      "published_lf_sha256": "0529c3adebc6a71aeebdd22a9fee82263756436cd304547e7547a19ad2ae3404",
+      "published_bytes": 8838,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-floors-shortfall_6-Control.json",
+      "original_manifest_windows_sha256": "599213056e25516c33edb1478e8b3c20d85e97b447c05504f9a7eacaa7c25fdb",
+      "published_lf_sha256": "644566d404a4bda4587ccbc4f051ab916f04e609a0a37daf570101d6399c3634",
+      "published_bytes": 8394,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-floors-shortfall_6-Gikuriro.json",
+      "original_manifest_windows_sha256": "bc5ffdbe6d0406993bbf25c8d487b3df53557f634ec1954ffb7f3d3b69c785d1",
+      "published_lf_sha256": "3ef592ccbf77ab532b6af6744eebca53aab00107af71e692873380c4cce75fd5",
+      "published_bytes": 8345,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-floors-shortfall_6-Lower.json",
+      "original_manifest_windows_sha256": "2f2dc6b75f955086fdb8d52171c4c44be0ef1c616468db2d805f64463210605c",
+      "published_lf_sha256": "0bc28f04a8ead0dfbbde42b5a1ff1d215378631a06fe6718dd100928f4ec679f",
+      "published_bytes": 8411,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-floors-shortfall_6-Middle.json",
+      "original_manifest_windows_sha256": "9c79839ab8adb809c5da6350ff5691a48209e3783105bd8b3a7ecba1905cfb9b",
+      "published_lf_sha256": "c82f022ec6ed68349c217bd92effa2d5be9925cf7f6b6746447c89da33cc315a",
+      "published_bytes": 8415,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-floors-shortfall_6-Upper.json",
+      "original_manifest_windows_sha256": "c62269e2bbfe5c4013a5c13b798f6bfcb3ba7f3b1bd94086485d22b4e7d446cb",
+      "published_lf_sha256": "f19b415c6bb6d35dde6803157a722aa6d10a98b72178a779675dea9aa41b3703",
+      "published_bytes": 8504,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-floors-shortfall_6-Control-Large.json",
+      "original_manifest_windows_sha256": "c1134ac527cafd9510b899f829f1091851409b78765ee09a27d33b1e0f8b0b36",
+      "published_lf_sha256": "1b02eab56a959b69817d87a9394569898d13801195e1d201ee4ee10bd74ed468",
+      "published_bytes": 8337,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-floors-shortfall_6-Lower-Large.json",
+      "original_manifest_windows_sha256": "15361936b24feeb24e2fd3afd5ccaa137e18f8e9b5191c4705e2f06e1ab916ae",
+      "published_lf_sha256": "e39a3f1d1719794db9ab9f0ee5971714a0cf178b6bdca505962f09cd3405ad53",
+      "published_bytes": 8373,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-floors-shortfall_6-Middle-Large.json",
+      "original_manifest_windows_sha256": "e1bc01c84ada475c1f0f0fa3ba41aefd53015aaaf03b8685a2ee6ff5a484b155",
+      "published_lf_sha256": "ded5654d61a75ef680c6535f57f7ffeccc82218adf5b60735751cda4af74b618",
+      "published_bytes": 8311,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-floors-shortfall_6-Upper-Large.json",
+      "original_manifest_windows_sha256": "ef348effc909957e326f697a2b4d3aff08644d295639d0a3ceb00fd2e7d98749",
+      "published_lf_sha256": "12ae80e823e15d3be1f16059b08393add3357b9e4b522a65163fadec9de849fb",
+      "published_bytes": 8425,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/summary-quota-shared-floors.json",
+      "original_manifest_windows_sha256": "293f63f5b8423ca07f1d234ec1632ca010a4d66a6eb2261ad23ada2a4fb537be",
+      "published_lf_sha256": "78766ab5a5c2ae30cb82c551ef34d83536936fddd97cc041e76d06608b33b0a6",
+      "published_bytes": 5570,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-separate-floors-mean-Control.json",
+      "original_manifest_windows_sha256": "27913aca272333a4a52346271c22fe4f4ad07b7e80d0be1b103c60bc345e95f0",
+      "published_lf_sha256": "3565636331b14a1a49f19562d91b36e63610c61f0a44ff94a638346cb15040dd",
+      "published_bytes": 59,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-separate-floors-mean-Gikuriro.json",
+      "original_manifest_windows_sha256": "8f7e4d9db734bcb1503c1dcdaf00316caddac448c5d4fc2a3099118619ba200f",
+      "published_lf_sha256": "a6a1d4bdb69a9d807aff64e92146543630badd3c5c58f0cc3056ecadf227d7a9",
+      "published_bytes": 60,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-separate-floors-mean-Lower.json",
+      "original_manifest_windows_sha256": "78692cd972e7846a32dfea151fc5607f810970afb565462e74dd5cf9dec44797",
+      "published_lf_sha256": "ac6905e675db621f2858232c96d8cc86ee293716f0af7f30f6f7ae04a1690bae",
+      "published_bytes": 56,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-separate-floors-mean-Middle.json",
+      "original_manifest_windows_sha256": "b7b2c5731ac61eeb8604773c4ceeaae51cc68033ed91933699b5838e288c1b75",
+      "published_lf_sha256": "3885d5946057bccdd09623797a72b17e16bc6f73d5cbf37b5dad97e5806a353d",
+      "published_bytes": 58,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-separate-floors-mean-Upper.json",
+      "original_manifest_windows_sha256": "de3d1ab2e4cb7a4faaa7953d8217b43a4a35a94aec901e9e24a66ab4c75296b1",
+      "published_lf_sha256": "91a4f1f46cfb803fced5a57ff719a22c5010d8f56da2fe93423f7f2f07ace440",
+      "published_bytes": 57,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-separate-floors-mean-Control-Large.json",
+      "original_manifest_windows_sha256": "dbe12af59f6588d4855c7bd040881f964cd483dd9461191df3d9a331d325faa0",
+      "published_lf_sha256": "9b79899f46d6beb93490a5f75593212133a4c28ba18031b22353a81c85e2b206",
+      "published_bytes": 64,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-separate-floors-mean-Lower-Large.json",
+      "original_manifest_windows_sha256": "2b031e6b5689d702f91ac5fa1115aa571afd9ec2c6179df5aff79faef7182b22",
+      "published_lf_sha256": "26e0cbe48fcaefec7b69a025c344fdc69299d4b123c1b11e616932079fbc448e",
+      "published_bytes": 63,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-separate-floors-mean-Middle-Large.json",
+      "original_manifest_windows_sha256": "ee74c927324bf0299ad140cc8f5733d43eecc0d3407bb548bacceef6c344f466",
+      "published_lf_sha256": "e33aab62383df7ef42e56a85320fd2d9c91103f1a7e115bb7efa505946682bca",
+      "published_bytes": 65,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-separate-floors-mean-Upper-Large.json",
+      "original_manifest_windows_sha256": "c302fa26f64a9cbbdfee4ff4c6c9bd2193a1414f0877b591c2943d21e4572151",
+      "published_lf_sha256": "c371b6698433a90ae1ea7fe5cd5b5a71b160358d15b3c8d258479ce125307b8f",
+      "published_bytes": 63,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-separate-floors-shortfall_6-Control.json",
+      "original_manifest_windows_sha256": "8a335de0b9769374c7cb33697939dd39e207391500264451c67538890b39dd13",
+      "published_lf_sha256": "a22d5371f9149f33783494b05b62ea64d9b17f2f81d7591038a34b708d000a4d",
+      "published_bytes": 60,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-separate-floors-shortfall_6-Gikuriro.json",
+      "original_manifest_windows_sha256": "737c214a393fad342e0e563003285bf86a928fcf8f59f3ec1b08a81929febcd0",
+      "published_lf_sha256": "fcb6d0aa1ac5da35dad5ed80752489e694852033be2bf58bd73d4a4cda96d8d6",
+      "published_bytes": 61,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-separate-floors-shortfall_6-Lower.json",
+      "original_manifest_windows_sha256": "2deea567069f1fcdf4700eab1af47537030f8d1052d0e7680a82fbf7b9f0a1cb",
+      "published_lf_sha256": "ace901858efd49a1fc067837ee10c2afe289157bf73b9c06c07267ff8a121c98",
+      "published_bytes": 57,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-separate-floors-shortfall_6-Middle.json",
+      "original_manifest_windows_sha256": "9ab350d64df109a266f96b11d82806fb11dc1576507b8fa301c20028295d46ff",
+      "published_lf_sha256": "049672cda5c7fcc36eebd3c47a2fd463b6584d5900cea189e64194935edae41f",
+      "published_bytes": 59,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-separate-floors-shortfall_6-Upper.json",
+      "original_manifest_windows_sha256": "d7b6ed8c5ba98c5177316dec1848e832828f2f84cb8f1845aec6e90e4bce0a48",
+      "published_lf_sha256": "18a6022d5a14e97c37c02d3f307493745be42a593543a2aae56cfeb71a798ab9",
+      "published_bytes": 58,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-separate-floors-shortfall_6-Control-Large.json",
+      "original_manifest_windows_sha256": "ad3db3157fdb3c904cef14b595af089be08bc9c69d661ff1dd898ddddab08966",
+      "published_lf_sha256": "3e8fb5e7d634447e5b0c66883eadd251d884e5d3aa6c3005056c57b8dbdc7932",
+      "published_bytes": 66,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-separate-floors-shortfall_6-Lower-Large.json",
+      "original_manifest_windows_sha256": "b222440392f81aa83907222c9fdeec117720bf964b65034ac6782498e68beae9",
+      "published_lf_sha256": "1bd29884eef86637f19f335dba0c1429ff80bb8f67a4a7750f5f9b52576df566",
+      "published_bytes": 64,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-separate-floors-shortfall_6-Middle-Large.json",
+      "original_manifest_windows_sha256": "77fc43e522539ee5bf162b50d75014d7655bdf0fc98f1d7102b0247c570dce09",
+      "published_lf_sha256": "8bbe9416be1831147ef2046d9880ba92bc3d843487b5c9dd4796a3b7f3f8a4c2",
+      "published_bytes": 65,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-separate-floors-shortfall_6-Upper-Large.json",
+      "original_manifest_windows_sha256": "4b02d56ce7547bb62407fb836358c0d2c9bae800b68e4a6f1053f6e173b25224",
+      "published_lf_sha256": "5524c2032578abba99644ec337179937e4e51095fb929de1e0e523b0186b6fce",
+      "published_bytes": 64,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/summary-quota-separate-floors.json",
+      "original_manifest_windows_sha256": "1bd3bb649f867364a13583d6e624e3e73c4bbf0e40af590ca3abf896ab92c72e",
+      "published_lf_sha256": "63d112c4802d9e2dcd25459bb8fb86f681f90444e394b95897fb11c0cfeb2c50",
+      "published_bytes": 4746,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/model-quota-shared-no-floors-Control.json",
+      "original_manifest_windows_sha256": "ac16bb004488d851e344e7d234d0f3a2680c4a1b7011f088a030b44ea14de5e6",
+      "published_lf_sha256": "1be4959d639192b2985ca528993b2281b4c51892bc7e34742d8c1fc49d99c529",
+      "published_bytes": 14647,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/model-quota-shared-no-floors-Gikuriro.json",
+      "original_manifest_windows_sha256": "be4d6292b45f7febc97805198d33371b0632d2868470a172f893505a94883f07",
+      "published_lf_sha256": "b7a8455546dbfbf70316b1bab8a85b379d9e7b480304c184bbdfc80ff614b3b7",
+      "published_bytes": 14834,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/model-quota-shared-no-floors-Lower.json",
+      "original_manifest_windows_sha256": "b23bc247a9b916aaa53681b3923b9108fcc3a70336387f0dc50d2d831ee0777a",
+      "published_lf_sha256": "4a5fc30a00753c410359db6d211dcc4f7a70ca7dbe7fe80584e6ba9dc2003890",
+      "published_bytes": 14977,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/model-quota-shared-no-floors-Middle.json",
+      "original_manifest_windows_sha256": "e46234f6ccb6f998ef91c2fcee8064982be37573cafcc2f643af1baae340c5b3",
+      "published_lf_sha256": "751f07e560a111519aa4a4f9c591544d1206f68e3eb77e3ca36393f31e28d2ea",
+      "published_bytes": 14965,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/model-quota-shared-no-floors-Upper.json",
+      "original_manifest_windows_sha256": "380c265c6f4874bc4a49220f05b8d979dda995edb825aceee972dca14cada033",
+      "published_lf_sha256": "58d9f59f387e1fff42da40f5624e03bbeb63a042c39a209f8634ca5db5d69525",
+      "published_bytes": 14972,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/model-quota-shared-no-floors-Large.json",
+      "original_manifest_windows_sha256": "df7d624d5ca2c0d8e676cee29b0abc4672b41b8012fcfcc628e5b3caa28470c9",
+      "published_lf_sha256": "1b43b1d5b55e4776a2b1e2518fd96307ebf642d746a8b9e5cb4145cb71b64dfc",
+      "published_bytes": 14969,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-no-floors-mean-Control.json",
+      "original_manifest_windows_sha256": "6e8f1dadfa8fc836eb43c75961a3d08ca6371ddae17d653de8c148dfdd1c85c1",
+      "published_lf_sha256": "aa11a6cab4d5599c63fc29a123c4fd7e2a1a7fe6f116743a8803a3659a73fb4d",
+      "published_bytes": 9031,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-no-floors-mean-Gikuriro.json",
+      "original_manifest_windows_sha256": "b85e462428c9e09b5e49815763e9c9dae15f2b409381a3fe4acc7005b04b1f08",
+      "published_lf_sha256": "c01acea037e2debc63affb9f57b41c90f9b29404daa34b19a6ec4a8ecfb58967",
+      "published_bytes": 9017,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-no-floors-mean-Lower.json",
+      "original_manifest_windows_sha256": "b69b6b0eadb8b14e709ee117affecd8b277d4b9012d11d8a9916393d76e2e024",
+      "published_lf_sha256": "132f0c5b104cdb3a635b10fcb33fd4b90dd811ed959182a17f91517246eb21fd",
+      "published_bytes": 8941,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-no-floors-mean-Middle.json",
+      "original_manifest_windows_sha256": "cfe5df01d2f845fdc0210dac0bd72a5fca067d086ffbb7783632a1c1cce47d56",
+      "published_lf_sha256": "157776ad76c37f69ea6f314c95e643e095436a3812377418865ab8a01b18e6ca",
+      "published_bytes": 9127,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-no-floors-mean-Upper.json",
+      "original_manifest_windows_sha256": "b5ef874d9e420f26a312b6768b57d30e29b76ed6619f82d104b85c4cff7c6787",
+      "published_lf_sha256": "64ed927f89e535a94c5f32ca8f66a9ea51482bd67e1f77622f2a0fa27ac6cbbd",
+      "published_bytes": 9082,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-no-floors-mean-Control-Large.json",
+      "original_manifest_windows_sha256": "b4e5ddcb12426c5375ebc99c11f696529a81b1ee28b3b57d0a237a6691f40772",
+      "published_lf_sha256": "9ec4fb51158c8bf23408e1ca52fa550696a52ab61f610f311de1b49152e1727c",
+      "published_bytes": 9183,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-no-floors-mean-Lower-Large.json",
+      "original_manifest_windows_sha256": "38f418fd47aa08901e525a842d52fe987ffde9009fe6e628d95fb880087a2cb8",
+      "published_lf_sha256": "6da1940875293faa71cf1d70cf8d4250b46763fb9e486fec3c7364974f511fd9",
+      "published_bytes": 9229,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-no-floors-mean-Middle-Large.json",
+      "original_manifest_windows_sha256": "515f393cec9173d74b95cdfafc512eabed1ce30483eee18251b7c0232a204e27",
+      "published_lf_sha256": "58f9b9f6dad0dae62bd09af67f20188d75414e1fe9380c7c9ac151a5f83e3c0d",
+      "published_bytes": 9187,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-no-floors-mean-Upper-Large.json",
+      "original_manifest_windows_sha256": "24d450f1fa253ca88c3e4d682949cda8d80ace17dbfbe71d9d209a412b691cca",
+      "published_lf_sha256": "b53a2482b00c475dc465b60f45f5b7c74d2060617a3a172d8abec5749d4849a6",
+      "published_bytes": 9183,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-no-floors-shortfall_6-Control.json",
+      "original_manifest_windows_sha256": "8bc3d4d724dcc48e440d32dd3e2adbf957382f2dc6a9c0b052c4dddd3622a959",
+      "published_lf_sha256": "f0340ba6a985d490f1aa57e3f46f4bd29bfa802dd3e8830363ab85edd460ba3c",
+      "published_bytes": 8465,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-no-floors-shortfall_6-Gikuriro.json",
+      "original_manifest_windows_sha256": "2e6c202233b9d4f697e14713711b417e08ca0389a8f9de9cf913145d246809db",
+      "published_lf_sha256": "76c0f90fee6a9c9513d32e7486a96bb780aedfeda265495b90c27760c9c5aeaf",
+      "published_bytes": 8547,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-no-floors-shortfall_6-Lower.json",
+      "original_manifest_windows_sha256": "62c3380a1f6a27e05b614a4e9b8877069f3979b9c4705d5d9dafe63134f34991",
+      "published_lf_sha256": "bc277ef7c100e441b0dfb015ef6e9616b211eb5475145495043b9092bf779082",
+      "published_bytes": 8555,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-no-floors-shortfall_6-Middle.json",
+      "original_manifest_windows_sha256": "d6d0498a524cd28db7610aae2d5b0c61dd00aa484c948d517eff6e6ab0f66eb6",
+      "published_lf_sha256": "50bd7ae42fb8b9671b2e57186e0f15bb5d27ce60c8c27de89544b7eea196bc1e",
+      "published_bytes": 8354,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-no-floors-shortfall_6-Upper.json",
+      "original_manifest_windows_sha256": "ddf6ce3e57c8af1a7fdf0253ffef3e4f66b240a8b92d2789f90c2768858d773a",
+      "published_lf_sha256": "d3de94b1037f86e165d4b7f101ac197e29e8172073d816ba7f6760063b27be34",
+      "published_bytes": 8654,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-no-floors-shortfall_6-Control-Large.json",
+      "original_manifest_windows_sha256": "240bc59644fcaf6ebb98eea1f06e49fb1c5c4a80d13a5c5c80d4a942c3d216bd",
+      "published_lf_sha256": "b04d165c5a830db8be1f1adc152bb38d11abcad32d69fb724d23b8c1501ad496",
+      "published_bytes": 8783,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-no-floors-shortfall_6-Lower-Large.json",
+      "original_manifest_windows_sha256": "cab852c2b9af7e265c2ad5d70ec55d164a343a08197f8fffc44c89f63fd031f6",
+      "published_lf_sha256": "9159f294996e509195bb625ca5f6c45bbce43c4d7e3122e245865c1e3ecb41ac",
+      "published_bytes": 8671,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-no-floors-shortfall_6-Middle-Large.json",
+      "original_manifest_windows_sha256": "6437463e88fde4581438c2d547ec7936c905b807486731ff03b09294ef71b82c",
+      "published_lf_sha256": "2dea97ed020220538afcc360e8fe2ae6ec03ea3d9674ff032a7c8d9b12da1045",
+      "published_bytes": 8530,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-no-floors-shortfall_6-Upper-Large.json",
+      "original_manifest_windows_sha256": "5394ee7091f3a2f983df536654fdee391a105f6585f7b52966f16e45e92f715b",
+      "published_lf_sha256": "9db8d9f97e4dc5e8a6f877f7189dfa18baa46e39d5a8de07e3e1dbaf3dce3367",
+      "published_bytes": 8832,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/summary-quota-shared-no-floors.json",
+      "original_manifest_windows_sha256": "c05f37b9e2c4f8b17e8cd7a31cfbbaeaa21fd7712da19f7419e8902ee05efe05",
+      "published_lf_sha256": "f62673ec4b1b091e26836f03b3cd892ce75f2dd39019e79ae04d46d777ed2f38",
+      "published_bytes": 5629,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/model-hoeffding_baseline_optimized-shared-floors-Control.json",
+      "original_manifest_windows_sha256": "473fd490437f1653728a686ea0f3cea2e17d49cce3bfbea85ce38d0c055edaa2",
+      "published_lf_sha256": "e66ffb52d11a2c38f51df3b5cba4081095f05f340494b8ec6c33d9ff6fe91058",
+      "published_bytes": 15008,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/model-hoeffding_baseline_optimized-shared-floors-Gikuriro.json",
+      "original_manifest_windows_sha256": "b1ed54d509da1fcb0e924d4e9409d9207a88b7a40724b9b4f7d694df411b2761",
+      "published_lf_sha256": "6bc051d38a9a6861f824e81741d79d9008f4914a455e4fbb5b54dee09123ef42",
+      "published_bytes": 15037,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/model-hoeffding_baseline_optimized-shared-floors-Lower.json",
+      "original_manifest_windows_sha256": "5278f0ceac04932838f89007960afc88ffc15b79672b32026799086d1b03fd8b",
+      "published_lf_sha256": "3a30165d390618660666c9f3aff4239502c88731883e73466547f976e3613509",
+      "published_bytes": 14849,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/model-hoeffding_baseline_optimized-shared-floors-Middle.json",
+      "original_manifest_windows_sha256": "b3f1f60894f8cf989cadb811916b7361af0efe159a0e053ca3bace765ca2708f",
+      "published_lf_sha256": "ace967a67657c6c4831924a63ff63f616c497782705241ab1ef98dc99d0825d6",
+      "published_bytes": 14821,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/model-hoeffding_baseline_optimized-shared-floors-Upper.json",
+      "original_manifest_windows_sha256": "f8137c6fea06efdd84bd61beeff3b6edc89653acfb22ad23380572ad8772e5d6",
+      "published_lf_sha256": "ff8b9e0a9cf690b35b4d1fcb91650e9dab223ccd0b7149b9339b344462ce5690",
+      "published_bytes": 14834,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/model-hoeffding_baseline_optimized-shared-floors-Large.json",
+      "original_manifest_windows_sha256": "f67db690911ba7ea5ee4d17d368c527eff6f1f5376744a2f4f56ae8ee6e79cc7",
+      "published_lf_sha256": "0ec1b89e2e4c5b1fd1ce7845a86606608076315f57f77ff28de38446296587c9",
+      "published_bytes": 14852,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-hoeffding_baseline_optimized-shared-floors-mean-Control.json",
+      "original_manifest_windows_sha256": "d5093569d4d9dd2221a41d1a571106c96c623209ef6e826657e83804421337f7",
+      "published_lf_sha256": "ba330d0e9e58f87108cbb025e3fef141aafcfce6889dd215b18193bb61140529",
+      "published_bytes": 8611,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-hoeffding_baseline_optimized-shared-floors-mean-Gikuriro.json",
+      "original_manifest_windows_sha256": "0979c83136d6b9fc7b4309c5ed0a96a97469289940602fe16f2932e59ae3a28e",
+      "published_lf_sha256": "50d32bfb44aa16a1f6bcb8978fe10a86808de8a77f8b868c90f44813001c6c89",
+      "published_bytes": 8555,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-hoeffding_baseline_optimized-shared-floors-mean-Lower.json",
+      "original_manifest_windows_sha256": "0751df886383ab0178d51c51b88ded407a6390e78a4021ccba5f94483658c7e6",
+      "published_lf_sha256": "334d9d0fd20be78629a07cf810589eb6b7e4201b1a96f466dd6e59ac3a541a86",
+      "published_bytes": 8842,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-hoeffding_baseline_optimized-shared-floors-mean-Middle.json",
+      "original_manifest_windows_sha256": "465c117b1549f9234c638d6ba0f7c8e98ff72f8bf92d4ab09e454e2b1976412b",
+      "published_lf_sha256": "05059a706920e389ba361085752198898961aa35465ed1ca6413295ac324cd2e",
+      "published_bytes": 8606,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-hoeffding_baseline_optimized-shared-floors-mean-Upper.json",
+      "original_manifest_windows_sha256": "174cb9c1752b9f400faf886cdd8a83612dae1a63ff0a401b47e6247440d730e4",
+      "published_lf_sha256": "e98eb8cc94084209450d69826448d10e3abcc55f4c5c9932832deef96729f270",
+      "published_bytes": 8722,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-hoeffding_baseline_optimized-shared-floors-mean-Control-Large.json",
+      "original_manifest_windows_sha256": "f3d68c07acd031dc7cd350bea6f1ccf0501179f9fc14f5701939006814489936",
+      "published_lf_sha256": "0dfd0039c5e32756549885eca821c240155e73692db5d6bb91a23ce268d6c79a",
+      "published_bytes": 8591,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-hoeffding_baseline_optimized-shared-floors-mean-Lower-Large.json",
+      "original_manifest_windows_sha256": "17fc8eb64aae92e18c4da37061c5d1cc1260fb591f31382ab1015b3f14266611",
+      "published_lf_sha256": "5c85169c2c27d4d66c21a2c0940a0735d903adb8508b3aa4b6ed4eb6fad01396",
+      "published_bytes": 8862,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-hoeffding_baseline_optimized-shared-floors-mean-Middle-Large.json",
+      "original_manifest_windows_sha256": "ff6eacf11a0bc1a7e11aaab6353be82a666238cd8f207e0d1456ea64cd5f5b51",
+      "published_lf_sha256": "b2a3287eb7e47ed7f407ead7e29fd9dc41ddfee1c6c26f8d37b1d2316ac6c956",
+      "published_bytes": 8766,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-hoeffding_baseline_optimized-shared-floors-mean-Upper-Large.json",
+      "original_manifest_windows_sha256": "8be46890d507a02881425a68f5d3f613b1762fb41f9bdd4b59bb202430c724c4",
+      "published_lf_sha256": "889c7f72a6d1e2d207a188c0da47983d3f0f90d0a8ea9cfdbb105bf2da0bcc93",
+      "published_bytes": 8832,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-hoeffding_baseline_optimized-shared-floors-shortfall_6-Control.json",
+      "original_manifest_windows_sha256": "d12c79ff1e58c9154acd6a6139bf2a89b6533c5c6ce4d85bfe1e3c808834b245",
+      "published_lf_sha256": "c6113eac56d5befb0359900af7ef4f1a9337b9f6819f30b96d6f24cb3894a867",
+      "published_bytes": 8412,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-hoeffding_baseline_optimized-shared-floors-shortfall_6-Gikuriro.json",
+      "original_manifest_windows_sha256": "7dfa16ab6e3f4bb3735cf812661d151feb9d99180b383a993b469e7fe9879f47",
+      "published_lf_sha256": "d5633850ea8a28e5d0b8aa4afe88b4d98b973b5ad4cc2756863ebd9208ec3415",
+      "published_bytes": 8403,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-hoeffding_baseline_optimized-shared-floors-shortfall_6-Lower.json",
+      "original_manifest_windows_sha256": "bf29aa2765ced279f3fab90baafa500273c9c2aba2b68606904dfba8d7aa5911",
+      "published_lf_sha256": "33d63ba2d4da7abcfb6aee15d8350e6e3d92179f234ab8709de75d490c8fca55",
+      "published_bytes": 8461,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-hoeffding_baseline_optimized-shared-floors-shortfall_6-Middle.json",
+      "original_manifest_windows_sha256": "a1c130d61becf8b125ce690590bf2cf118181f29fe96742e6b9d02c945ba075b",
+      "published_lf_sha256": "a8ff07b5e9c65602caa6f24e3efca9a2c5b596c237c0698d3b6b1b8a97e0369e",
+      "published_bytes": 8394,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-hoeffding_baseline_optimized-shared-floors-shortfall_6-Upper.json",
+      "original_manifest_windows_sha256": "f5901dd45d681ba032474f42a85f9492f3ee3a5d34d15b73c20c44b6085edfd4",
+      "published_lf_sha256": "3f22388cfa3b991ee59e1d6f640eaeb10d1852874151b162508ea1e8fa143ca5",
+      "published_bytes": 8466,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-hoeffding_baseline_optimized-shared-floors-shortfall_6-Control-Large.json",
+      "original_manifest_windows_sha256": "096b943748794872c19b0acd82e61c032533ada3faff505074f615c06cfede67",
+      "published_lf_sha256": "4731bd3f5ae10ee9d4148625e61e643da559e0964a4a7db7a2638ac89fc8a309",
+      "published_bytes": 8402,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-hoeffding_baseline_optimized-shared-floors-shortfall_6-Lower-Large.json",
+      "original_manifest_windows_sha256": "bde22449107a5396fccfe59d21d3ba387cb9820b4652834b8421c7abb4f49331",
+      "published_lf_sha256": "5d0796ba0f938a2e086299627814bededf1b2baa93bced347005e9966fba252c",
+      "published_bytes": 8367,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-hoeffding_baseline_optimized-shared-floors-shortfall_6-Middle-Large.json",
+      "original_manifest_windows_sha256": "2cb41ca3b8824cce8fe6ae9f28a443c81a3f36250f44268912faa2531fd22099",
+      "published_lf_sha256": "0878cba4b908b62213ef3d6cb3e97fe9cf23f64525a5a80bfdcca0556f86c9eb",
+      "published_bytes": 8367,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-hoeffding_baseline_optimized-shared-floors-shortfall_6-Upper-Large.json",
+      "original_manifest_windows_sha256": "af0eca8ca49d38ad44d1d61d9a351aedb434d43ec20490140cf3cb6cca129240",
+      "published_lf_sha256": "a88b907dd8b44c3c018bcb6b5bade265f9f0e3829749c77fb02ecc404baddcc2",
+      "published_bytes": 8402,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/summary-hoeffding_baseline_optimized-shared-floors.json",
+      "original_manifest_windows_sha256": "78dd04064af89b6b2d1e17a43be769d7f20d2ea92e0d43309b513baedaa72997",
+      "published_lf_sha256": "8ac0ce0ae3bb96767181ce5b0788dd1343fda989b50697919aafef735e890275",
+      "published_bytes": 6464,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/model-serfling_baseline_optimized-shared-floors-Control.json",
+      "original_manifest_windows_sha256": "9ba1ba38c373487f1005c957a45827d2cdcb8980a1b3ad18abe9cef23323fa30",
+      "published_lf_sha256": "1f7505e432f961ad2a8b0d80401b88c5cb1084ed87a2ed41d554b0805bd66f4b",
+      "published_bytes": 14854,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/model-serfling_baseline_optimized-shared-floors-Gikuriro.json",
+      "original_manifest_windows_sha256": "c525c0010aab775eb39c9c1ea48aff8edd6577b62a8e73902c0c3e5804e8ab50",
+      "published_lf_sha256": "8d7a2f76d733ba821a138536ceb5ff8ce51f8562c14aa6ff3fa8889b97fb6e54",
+      "published_bytes": 14885,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/model-serfling_baseline_optimized-shared-floors-Lower.json",
+      "original_manifest_windows_sha256": "5278f0ceac04932838f89007960afc88ffc15b79672b32026799086d1b03fd8b",
+      "published_lf_sha256": "3a30165d390618660666c9f3aff4239502c88731883e73466547f976e3613509",
+      "published_bytes": 14849,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/model-serfling_baseline_optimized-shared-floors-Middle.json",
+      "original_manifest_windows_sha256": "b3f1f60894f8cf989cadb811916b7361af0efe159a0e053ca3bace765ca2708f",
+      "published_lf_sha256": "ace967a67657c6c4831924a63ff63f616c497782705241ab1ef98dc99d0825d6",
+      "published_bytes": 14821,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/model-serfling_baseline_optimized-shared-floors-Upper.json",
+      "original_manifest_windows_sha256": "f8137c6fea06efdd84bd61beeff3b6edc89653acfb22ad23380572ad8772e5d6",
+      "published_lf_sha256": "ff8b9e0a9cf690b35b4d1fcb91650e9dab223ccd0b7149b9339b344462ce5690",
+      "published_bytes": 14834,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/model-serfling_baseline_optimized-shared-floors-Large.json",
+      "original_manifest_windows_sha256": "b3f9c15cfa41b08abfb8d340a9db50c06237132dce9ce7aa65b76b4c949d503b",
+      "published_lf_sha256": "671aab68dd453eec42c86a66e1f78684c71359d4dde016cb785be7234cafb220",
+      "published_bytes": 15119,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-serfling_baseline_optimized-shared-floors-mean-Control.json",
+      "original_manifest_windows_sha256": "3796e48d665bf7e8f142f4208ddbc17ec337cdb33a363c0b439fa61201d332fa",
+      "published_lf_sha256": "5da403cc8f75098cd56c5d1e85be98724b4962c48747b0c81457f9d70e040838",
+      "published_bytes": 8565,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-serfling_baseline_optimized-shared-floors-mean-Gikuriro.json",
+      "original_manifest_windows_sha256": "752a81cbb4b9378f7d97104107d92bc61319715ebcb6c25de8dcc3b1649a7eac",
+      "published_lf_sha256": "7664c622eaf9ddd71efc4f1719de677dba2a2ba2b757bc8ac9fb38ac3b61a847",
+      "published_bytes": 8467,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-serfling_baseline_optimized-shared-floors-mean-Lower.json",
+      "original_manifest_windows_sha256": "eb30c1459c65d763f05ef8096fbdcaf3a375d25c5b057353cab94931d9e9de84",
+      "published_lf_sha256": "7ae215fc4d9f7914bc6012aabe247deee6183f6601848830b5d228778ce32038",
+      "published_bytes": 8731,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-serfling_baseline_optimized-shared-floors-mean-Middle.json",
+      "original_manifest_windows_sha256": "4e927f865596bba91aef7a452beb470efc8457d5f7f64dca5e627faf36ea14f4",
+      "published_lf_sha256": "645f5564a8944f8ff874725e4547a0cf9afcc832058928b0da9c420ecc37f340",
+      "published_bytes": 8561,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-serfling_baseline_optimized-shared-floors-mean-Upper.json",
+      "original_manifest_windows_sha256": "6a84cb1673c6a391d125155a8becb91dec8b06f014dd1005fa78e51d86d80bff",
+      "published_lf_sha256": "d6b6776ce60c90ade9f1ebeab3ba05ef4a3db8e7459316d45ce5f4ac0248edc8",
+      "published_bytes": 8734,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-serfling_baseline_optimized-shared-floors-mean-Control-Large.json",
+      "original_manifest_windows_sha256": "c1134214641c3f9cc4a5a948c7b74c8889c45bd5e1c1e8b3f70e0cf2ce173168",
+      "published_lf_sha256": "67dc65aa2acd7f0248cd4cc407213d7a3d526caf9cacbe4756722c8092f45e8e",
+      "published_bytes": 8697,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-serfling_baseline_optimized-shared-floors-mean-Lower-Large.json",
+      "original_manifest_windows_sha256": "c7593a1f8f24df2935c9f42d9c385c91f28e67f53c21acff5413eb6397b81b8a",
+      "published_lf_sha256": "2bbcf9b1916396d03a483d1643a799279b35e233e8215c40573d93542ee721bf",
+      "published_bytes": 8860,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-serfling_baseline_optimized-shared-floors-mean-Middle-Large.json",
+      "original_manifest_windows_sha256": "f6477604e09989c9f486ce019fa0fcd999ea4360630ea190895981e943421d46",
+      "published_lf_sha256": "3ccf4e4c5f0287c6ff8906fc0ff066c1e9284a2bbe43da75d794af084c44a682",
+      "published_bytes": 8752,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-serfling_baseline_optimized-shared-floors-mean-Upper-Large.json",
+      "original_manifest_windows_sha256": "17e415f0440c993317a126cf2307f3da46aa099b1f069b42c01302b8fb2f81b4",
+      "published_lf_sha256": "994f5a1fff40b0da3b1ac71dbcef6b63dfa1fbc28840a8ca675ea76b2500b20a",
+      "published_bytes": 8867,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-serfling_baseline_optimized-shared-floors-shortfall_6-Control.json",
+      "original_manifest_windows_sha256": "90f400ba78eb3d8eabc0530e79e44affb3881001d737a99c89f3e20c038c9b48",
+      "published_lf_sha256": "f0ff376a0c413f6e91dfb87518defc481eb875cb8f4645d93b09584c93a9a8f0",
+      "published_bytes": 8353,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-serfling_baseline_optimized-shared-floors-shortfall_6-Gikuriro.json",
+      "original_manifest_windows_sha256": "eb6faeb89a965bafdac5a376715394a5e554339925f993a73408246470a9d41f",
+      "published_lf_sha256": "25333919eb969aa72dab01c432635e8e597aabd298dfc19bffd47ca64237eeb5",
+      "published_bytes": 8360,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-serfling_baseline_optimized-shared-floors-shortfall_6-Lower.json",
+      "original_manifest_windows_sha256": "30b2f1cdfe893c567fe76bd561744d1ed179fd6fee66123b28bddef6efed3bce",
+      "published_lf_sha256": "005172f3944b22a22445bb0d38295cff5cdc1c4cccf2e9978625ef4b85e2822c",
+      "published_bytes": 8349,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-serfling_baseline_optimized-shared-floors-shortfall_6-Middle.json",
+      "original_manifest_windows_sha256": "b03b393ae1c836d379473d1deffeae63b9e089fac20f885380bcd3629d5799d6",
+      "published_lf_sha256": "6001bc7633ad94fdff25abeb03b5d52ded9b6cc21f2ac593a6b8b5171bd0cdeb",
+      "published_bytes": 8429,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-serfling_baseline_optimized-shared-floors-shortfall_6-Upper.json",
+      "original_manifest_windows_sha256": "5f973c762f432caa2f5c743501bbbdb332c6c64f9c63c4972601439afd6ac986",
+      "published_lf_sha256": "4c5263b7fab5bea494f126cee5b35e8a0511e24fcfedbeb58ab1f16f466c7b3d",
+      "published_bytes": 8457,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-serfling_baseline_optimized-shared-floors-shortfall_6-Control-Large.json",
+      "original_manifest_windows_sha256": "2ee1225001421d4ba83d001933520b97b9f6adb8a7a081c868434052ae948c1f",
+      "published_lf_sha256": "cf3bf0ec726ab84b754ac3f5c87a382aa1342fbf7db2fe4aa010aa9a3bf67b55",
+      "published_bytes": 8419,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-serfling_baseline_optimized-shared-floors-shortfall_6-Lower-Large.json",
+      "original_manifest_windows_sha256": "d5e8adf22d875a075dc0295d201cb6299270b1ad784638a05f4e7de881b88f6d",
+      "published_lf_sha256": "45db72e42b203a3cc29950edbb147abdcfed7de02b05d16b56dcefdee66f98cd",
+      "published_bytes": 8359,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-serfling_baseline_optimized-shared-floors-shortfall_6-Middle-Large.json",
+      "original_manifest_windows_sha256": "639d1792a25ea4e7c83059ba7cc45ca2c3671960d764d0da0e35c1bd397401c4",
+      "published_lf_sha256": "ddf55ac48990f4d9b62a921cf12e0caf35cf1cef4041d14eff7b00b303d594a7",
+      "published_bytes": 8345,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-serfling_baseline_optimized-shared-floors-shortfall_6-Upper-Large.json",
+      "original_manifest_windows_sha256": "bbb961ac224e5a5252999de0842f4e128a7bbbccff35fbd3e006876cc0b7d960",
+      "published_lf_sha256": "1f04b91815403050d38438103d6bf5831fae0f9de83a18ff65cb87c94112d564",
+      "published_bytes": 8439,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/summary-serfling_baseline_optimized-shared-floors.json",
+      "original_manifest_windows_sha256": "341432733957078d10250aa927f33d885c6415ee1cd57d75c0d9668cc540c663",
+      "published_lf_sha256": "818de120e5dd196ac8821de7ef8c7d1324c223bc9bac62f3671d504f311d73fb",
+      "published_bytes": 6438,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/model-harmonic_martingale_baseline_optimized-shared-floors-Control.json",
+      "original_manifest_windows_sha256": "623935e493359c96190ea7f27c5f98913037ce40b6cb1533cca8512bc6b83cac",
+      "published_lf_sha256": "a35411130c5e96b15537768d36896edd43ae60ec9e08eb83ba1723b045dfa7a0",
+      "published_bytes": 15011,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/model-harmonic_martingale_baseline_optimized-shared-floors-Gikuriro.json",
+      "original_manifest_windows_sha256": "4ee58ca3de932695ddffa112fef661962214980fe36462b9eb1763e8f3902041",
+      "published_lf_sha256": "2b277d115c7f4c9ec93c84ef72631a64ee4d9fd003f4cb126980d96fa02c625d",
+      "published_bytes": 15030,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/model-harmonic_martingale_baseline_optimized-shared-floors-Lower.json",
+      "original_manifest_windows_sha256": "5278f0ceac04932838f89007960afc88ffc15b79672b32026799086d1b03fd8b",
+      "published_lf_sha256": "3a30165d390618660666c9f3aff4239502c88731883e73466547f976e3613509",
+      "published_bytes": 14849,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/model-harmonic_martingale_baseline_optimized-shared-floors-Middle.json",
+      "original_manifest_windows_sha256": "b3f1f60894f8cf989cadb811916b7361af0efe159a0e053ca3bace765ca2708f",
+      "published_lf_sha256": "ace967a67657c6c4831924a63ff63f616c497782705241ab1ef98dc99d0825d6",
+      "published_bytes": 14821,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/model-harmonic_martingale_baseline_optimized-shared-floors-Upper.json",
+      "original_manifest_windows_sha256": "f8137c6fea06efdd84bd61beeff3b6edc89653acfb22ad23380572ad8772e5d6",
+      "published_lf_sha256": "ff8b9e0a9cf690b35b4d1fcb91650e9dab223ccd0b7149b9339b344462ce5690",
+      "published_bytes": 14834,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/model-harmonic_martingale_baseline_optimized-shared-floors-Large.json",
+      "original_manifest_windows_sha256": "0ec7a23689a7ca4e751d67e186d1e9916f38470bb2f6ac1f2cf2c924dac2c514",
+      "published_lf_sha256": "762da0038f8b13b5aea3da8a14b2a3f722b441345958b02aeb0196f4e275c773",
+      "published_bytes": 15147,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-harmonic_martingale_baseline_optimized-shared-floors-mean-Control.json",
+      "original_manifest_windows_sha256": "aece2a654e540bb627535cf480549ca488c65f2db0b0883dbab9afdd0550b90d",
+      "published_lf_sha256": "06e3db4d3b5e56bb630fe78660793fe08e287734674e04bae5c106398e05d364",
+      "published_bytes": 8475,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-harmonic_martingale_baseline_optimized-shared-floors-mean-Gikuriro.json",
+      "original_manifest_windows_sha256": "ad9dafbd6e5ffd29f73da59528c656afb9b3da770dea0747dced2a6660888841",
+      "published_lf_sha256": "e0e6c5eaf6074de404ca474cc76e93092ebf005fbd5d235c84307b1be19ab032",
+      "published_bytes": 8550,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-harmonic_martingale_baseline_optimized-shared-floors-mean-Lower.json",
+      "original_manifest_windows_sha256": "14385f85b99876290938ad9ed47598db69552be091906e82c14566383656789d",
+      "published_lf_sha256": "57da69dfbbaad15ad09f0410e3d4c65c63fe4cd2bb9debce5d5723c38c8ac577",
+      "published_bytes": 8723,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-harmonic_martingale_baseline_optimized-shared-floors-mean-Middle.json",
+      "original_manifest_windows_sha256": "052515e63554268d648fa504754cff712863e45b3fb2cccb0fbb781cf0d212dc",
+      "published_lf_sha256": "e597b3699ed40a9f6a5ea82af52333c3c537792b0d0818e65f05343100e5b828",
+      "published_bytes": 8604,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-harmonic_martingale_baseline_optimized-shared-floors-mean-Upper.json",
+      "original_manifest_windows_sha256": "5d03b057739bb357781f5fc04bfb576d7863f33cfbdead9d80a1aa7b4cccc2af",
+      "published_lf_sha256": "6be17ea551f2f8eb4467b093843ada25fb46441c65ade51f0c78878c71fc1704",
+      "published_bytes": 8682,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-harmonic_martingale_baseline_optimized-shared-floors-mean-Control-Large.json",
+      "original_manifest_windows_sha256": "43c108aa8c6ce40b1954501ef003b59ed4bd6f27ba0cc236de97923c088568e0",
+      "published_lf_sha256": "5b5619ccae193ce349a343eac92ff4c7b4ce92d9c35f09817ddec6de53fd8627",
+      "published_bytes": 8710,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-harmonic_martingale_baseline_optimized-shared-floors-mean-Lower-Large.json",
+      "original_manifest_windows_sha256": "e14a2b9e63a312fd80de4f2bc9ae55ac9807a9303888793866d402af4fce142f",
+      "published_lf_sha256": "e66b519ae3f099c60df12dedb19dbb10761850cfd9dc776097a67fe25c71319a",
+      "published_bytes": 8802,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-harmonic_martingale_baseline_optimized-shared-floors-mean-Middle-Large.json",
+      "original_manifest_windows_sha256": "54fb0a293014ffdef258c22240d7694adfa1cf1097586bc61ace94e278696f2c",
+      "published_lf_sha256": "d5217cf397dbf3b298938d3574a555136cae45c8674d369f99c6f9da0d53ea25",
+      "published_bytes": 8851,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-harmonic_martingale_baseline_optimized-shared-floors-mean-Upper-Large.json",
+      "original_manifest_windows_sha256": "afe2aeb2d1ec05f9976e93b233faed18beda4119f781aa7c0e0c9214f5e9cd52",
+      "published_lf_sha256": "5cadf70e1d7a7e2411be13ec171826effef97d0991fa574766c7e7cd094aaaff",
+      "published_bytes": 8855,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-harmonic_martingale_baseline_optimized-shared-floors-shortfall_6-Control.json",
+      "original_manifest_windows_sha256": "3d27a2b05d5653100a694dfbf7d3dc15b3fda1824e89e8172906a7d13e8d39c4",
+      "published_lf_sha256": "67efc064c70f88ecb0e21ec958b0cff6b8cb913b40b81491ff3b455505363a17",
+      "published_bytes": 8376,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-harmonic_martingale_baseline_optimized-shared-floors-shortfall_6-Gikuriro.json",
+      "original_manifest_windows_sha256": "37757d92e4b69e66361837d8fcf3d1c69a6963f9ce684b60ad47ae465d0de3ee",
+      "published_lf_sha256": "1bae8c94874849348983d4847fd4e5ae8134b320c58ab66b4b9cdbb752254fc3",
+      "published_bytes": 8415,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-harmonic_martingale_baseline_optimized-shared-floors-shortfall_6-Lower.json",
+      "original_manifest_windows_sha256": "bf40767f8c447d341130929e6d864d4f98026b321b84a466aa465cbb1eca2d2a",
+      "published_lf_sha256": "8ff5acf3377c972d9485f6431bed66b464876c703cf9ea39714f03495ea80f7f",
+      "published_bytes": 8426,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-harmonic_martingale_baseline_optimized-shared-floors-shortfall_6-Middle.json",
+      "original_manifest_windows_sha256": "3913640a55a343575cc4f6068806e62773212e0192d2ef0630db48b39388b8e4",
+      "published_lf_sha256": "7562e115784c7f1453976463b92aa88b7b1fe737b1cac339e5fdd634cf95fd9d",
+      "published_bytes": 8332,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-harmonic_martingale_baseline_optimized-shared-floors-shortfall_6-Upper.json",
+      "original_manifest_windows_sha256": "2d5e681ac35f68f274eb49a5408347f304f886a9771c1a4b1510f89ce4ea6e0a",
+      "published_lf_sha256": "0f166ceea0ab540ca394542cdcb9e14f6c5bef57442efed7c4f5527c4c52d29a",
+      "published_bytes": 8356,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-harmonic_martingale_baseline_optimized-shared-floors-shortfall_6-Control-Large.json",
+      "original_manifest_windows_sha256": "561190735a299420c54acecad8e5966713e9da087374bcf3da86bf98b756959e",
+      "published_lf_sha256": "eaf1be092de7495528fc5e5df2ad1f48913c50dc514b4b0b44a300588cdb9405",
+      "published_bytes": 8348,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-harmonic_martingale_baseline_optimized-shared-floors-shortfall_6-Lower-Large.json",
+      "original_manifest_windows_sha256": "24bf18a62635356f09180c0b3dccf9fd5c2009d5c3d4b39dbc632bb5ca8a6fad",
+      "published_lf_sha256": "83585de96b2e51f003322d6e155f301134736e4dd10d151d5871118a4d33fb75",
+      "published_bytes": 8315,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-harmonic_martingale_baseline_optimized-shared-floors-shortfall_6-Middle-Large.json",
+      "original_manifest_windows_sha256": "dacde99834112f45d59ce064b0d3c489370aa3dd8981b222642a8b8e791e1b75",
+      "published_lf_sha256": "f132a167f13d14eceb9d0ac926d8390c1975e73546169fb0fe92cfadcc570981",
+      "published_bytes": 8425,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-harmonic_martingale_baseline_optimized-shared-floors-shortfall_6-Upper-Large.json",
+      "original_manifest_windows_sha256": "101b479229a47779db17de4264b577b51b9f856df5e1fe7a869c6c5d157a83c7",
+      "published_lf_sha256": "cb6b93ddcb6c646ec03a0e4ec07efd330fdee6930b00394913833945a9453a31",
+      "published_bytes": 8414,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/summary-harmonic_martingale_baseline_optimized-shared-floors.json",
+      "original_manifest_windows_sha256": "e5dcdc9be11f01b670cb9f9c9e23a17a0652cd4ff7b6cd9a82fa415cad1de511",
+      "published_lf_sha256": "4e30a2b0a44eaed4d2de5e797f46f1c50a518ca1fe635d18ab9ac24859aaf355",
+      "published_bytes": 6710,
+      "crlf_reconstruction_matches_original": true
+    },
+    {
+      "path": "docs/referee/round-6-review/summary.json",
+      "original_manifest_windows_sha256": "d90e23dfa71a6852eaff2012f10f652e03349e5b65b86d00512407a4c743c6c5",
+      "published_lf_sha256": "e16b0094d10fcfd2a13041193ff5d9bc998668a85dd74d36c46f65e2bee299e7",
+      "published_bytes": 2607,
+      "crlf_reconstruction_matches_original": true
+    }
+  ]
+}

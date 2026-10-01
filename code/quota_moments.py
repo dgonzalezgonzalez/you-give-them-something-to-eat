@@ -1,12 +1,13 @@
-"""Outward bound for the relaxed quota exponential moment.
+"""Two outward implementations of the relaxed quota exponential moment.
 
 Integer proxy weights make every centered residual an exact integer/quota.
 Decimal exp/ln are correctly rounded; next_plus supplies an upper enclosure.
 An IEEE positive-sum error bound encloses the finite averages. A deterministic
 Lipschitz correction accounts for the difference from actual fixed weights.
-This certifies moment constants, not subsequent floating-point LP solutions.
+The sorted-threshold recurrence additionally uses directed actual weights.
+These certify moment constants, not subsequent floating-point LP solutions.
 """
-from decimal import Decimal,localcontext,ROUND_CEILING
+from decimal import Decimal,localcontext,ROUND_CEILING,ROUND_FLOOR
 import itertools,math
 import numpy as np
 
@@ -62,3 +63,79 @@ def quota_upper_log_moment(weights,quota,lam):
                           'quota_subsets':len(choices),'weight_drift_log_allowance':str(drift),
                           'Decimal_precision':80,'positive_sum_error_factor':float(gamma),
                           'normalizer_scope':'Outward Decimal elementary functions, exact int64 residuals, IEEE positive-sum enclosure and known-weight Lipschitz relaxation.'}
+
+
+def quota_upper_log_moment_dp(weights,quota,lam):
+    """Enclose the same relaxed moment using sorted threshold populations.
+
+    Symmetry and convexity reduce each signed box maximum to the n+1
+    populations with the largest m weights active. A positive elementary
+    symmetric-mean recurrence evaluates the quota average without listing
+    subsets. This is an adaptation of established symmetric-convex range
+    computation, not a new concentration theorem. Exact input Decimals,
+    directed arithmetic and adjacent exp/ln values supply the enclosure.
+    """
+    exact=[decimal_weight(x) for x in weights];n=len(exact);k=int(quota)
+    if n<1 or k!=quota or not 1<=k<=n or any(not x.is_finite() or x<=0 for x in exact) or not np.isfinite(lam) or lam<0:
+        raise ValueError('Positive fixed weights, valid quota and nonnegative lambda required')
+    if k==n or lam==0:return 0.,{'full_or_zero':True,'algorithm':'sorted_threshold_symmetric_mean'}
+    exact.sort(reverse=True);q=min(k,n-k);best=Decimal(0);best_pattern=None
+    # Complementing a k-subset multiplies its residual by -(n-k)/k.
+    # Thus lambda/k remains the factor denominator for either quota.
+    with localcontext() as ctx:
+        ctx.prec=80
+        L=Decimal.from_float(float(lam));K=Decimal(k);N=Decimal(n)
+        Slo=Decimal(0);Shi=Decimal(0)
+        for m in range(n+1):
+            if m:
+                ctx.rounding=ROUND_FLOOR;Slo+=exact[m-1]
+                ctx.rounding=ROUND_CEILING;Shi+=exact[m-1]
+            population=exact[:m]+[Decimal(0)]*(n-m)
+            for sign in [-1,1]:
+                factors=[]
+                for x in population:
+                    if sign==1:
+                        ctx.rounding=ROUND_CEILING;num=N*x-Slo
+                    else:
+                        ctx.rounding=ROUND_FLOOR;num=(N*x-Shi).copy_negate()
+                    ctx.rounding=ROUND_CEILING
+                    argument=L*num/K
+                    factors.append(argument.exp().next_plus())
+                dp=[Decimal(1)]+[Decimal(0)]*q
+                for t,a in enumerate(factors,1):
+                    T=Decimal(t)
+                    for j in range(min(t,q),0,-1):
+                        # Both nonnegative rational coefficients and every
+                        # product/sum are rounded upward independently.
+                        c0=Decimal(t-j)/T;c1=Decimal(j)/T
+                        dp[j]=c0*dp[j]+c1*a*dp[j-1]
+                bound=dp[q].ln().next_plus()
+                if bound>best:best=bound;best_pattern={'active_largest_weights':m,'sign':sign}
+        upper_B=float(np.nextafter(float(best),np.inf))
+    return upper_B,{'algorithm':'sorted_threshold_symmetric_mean','Decimal_precision':80,
+                   'original_quota':k,'evaluated_quota':q,'threshold_populations':2*(n+1),
+                   'recurrence_steps':2*(n+1)*sum(min(t,q) for t in range(1,n+1)),
+                   'implicit_quota_subsets':math.comb(n,q),'maximizing_threshold':best_pattern,
+                   'normalizer_scope':'Directed actual-weight arithmetic; adjacent Decimal exp/ln; positive symmetric-mean recurrence. No integer-weight approximation, subset enumeration or arbitrary numerical cushion.'}
+
+
+def quota_log_moment_dp_float(weights,quota,lam):
+    """Stable diagnostic recurrence for selecting scales from baseline only.
+
+    Vectorization uses more memory than the directed routine. The returned
+    floating value is not an enclosure and cannot certify a confidence set.
+    """
+    w=np.sort(np.asarray(weights,dtype=float))[::-1];n=len(w);k=int(quota)
+    if not n or k!=quota or not 1<=k<=n or np.any(~np.isfinite(w)) or np.any(w<=0) or not np.isfinite(lam) or lam<0:
+        raise ValueError('Positive fixed weights, valid quota and nonnegative lambda required')
+    if k==n or lam==0:return 0.
+    q=min(k,n-k)
+    populations=np.tri(n+1,n,k=-1)*w
+    residual=(n*populations-populations.sum(axis=1)[:,None])*float(lam)/k
+    factors=np.r_[residual,-residual];dp=np.full((len(factors),q+1),-np.inf);dp[:,0]=0.
+    for t in range(1,n+1):
+        j=np.arange(1,min(t,q)+1)
+        with np.errstate(divide='ignore'):
+            c0=np.log((t-j)/t);c1=np.log(j/t)
+        dp[:,j]=np.logaddexp(dp[:,j]+c0,dp[:,j-1]+c1+factors[:,t-1,None])
+    return max(0.,float(dp[:,q].max()))

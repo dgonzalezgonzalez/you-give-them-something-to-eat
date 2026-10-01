@@ -1,7 +1,8 @@
 {
   "python": "3.12.10",
   "platform": "Windows-11-10.0.26200-SP0",
-  "seconds": 326.1945447921753,
+  "seconds": 1014.1278579235077,
   "pdf_compiled": true,
-  "source_reextracted": false
+  "source_reextracted": false,
+  "execution_scope": "Actual complete master in the new source copy used by output/clean-run.json; copied verbatim runtime fields. The earlier warm 838.881210-second run preceded regional integration."
 }

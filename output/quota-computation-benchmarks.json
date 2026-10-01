@@ -1,0 +1,700 @@
+{
+  "scope": "Declared 16 cases with three actual serial wall-clock calls each; fixed lambda .1/max(weight), positive integer weights. Existing exhaustive certified implementation is attempted only under the stated size guard. Dynamic-program and hybrid timings concern moment calculation, not end-to-end inference or optimized decisions. Larger cases become computationally accessible; the symmetric-convex reduction and symmetric-mean recurrence are adaptations of established ideas, not new general algorithms.",
+  "python": "3.12.10",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "rows": [
+    {
+      "n": 12,
+      "k": 3,
+      "weight_shape": "equal",
+      "fixed_lambda": 0.1,
+      "quota_upper_log_moment": 0.04892273001909347,
+      "quota_moment_receipt": {
+        "algorithm": "sorted_threshold_symmetric_mean",
+        "Decimal_precision": 80,
+        "original_quota": 3,
+        "evaluated_quota": 3,
+        "threshold_populations": 26,
+        "recurrence_steps": 858,
+        "implicit_quota_subsets": 220,
+        "maximizing_threshold": {
+          "active_largest_weights": 6,
+          "sign": 1
+        },
+        "normalizer_scope": "Directed actual-weight arithmetic; adjacent Decimal exp/ln; positive symmetric-mean recurrence. No integer-weight approximation, subset enumeration or arbitrary numerical cushion."
+      },
+      "quota_timing": {
+        "seconds_all_three_runs": [
+          0.011936899973079562,
+          0.011770499870181084,
+          0.012091000098735094
+        ],
+        "median_seconds": 0.011936899973079562
+      },
+      "weight_sensitive_hybrid_upper_log_moment": 0.04958842975206613,
+      "weight_sensitive_hybrid_timing": {
+        "seconds_all_three_runs": [
+          0.009171099867671728,
+          0.009062000084668398,
+          0.009384999983012676
+        ],
+        "median_seconds": 0.009171099867671728
+      },
+      "implicit_population_subset_pairs": 901120,
+      "enumerated_reference": {
+        "upper_log_moment": 0.04892273001914338,
+        "directed_difference": 4.9911463850804694e-14,
+        "seconds_all_three_runs": [
+          0.0553768000099808,
+          0.05813340004533529,
+          0.05710949981585145
+        ],
+        "median_seconds": 0.05710949981585145
+      },
+      "enumeration_guard": "Exhaustive reference is timed only if 2**n * choose(n,k) <= 4,000,000; skipped cases are not attempted or estimated."
+    },
+    {
+      "n": 12,
+      "k": 3,
+      "weight_shape": "concentrated",
+      "fixed_lambda": 0.01,
+      "quota_upper_log_moment": 0.015964649536482863,
+      "quota_moment_receipt": {
+        "algorithm": "sorted_threshold_symmetric_mean",
+        "Decimal_precision": 80,
+        "original_quota": 3,
+        "evaluated_quota": 3,
+        "threshold_populations": 26,
+        "recurrence_steps": 858,
+        "implicit_quota_subsets": 220,
+        "maximizing_threshold": {
+          "active_largest_weights": 1,
+          "sign": 1
+        },
+        "normalizer_scope": "Directed actual-weight arithmetic; adjacent Decimal exp/ln; positive symmetric-mean recurrence. No integer-weight approximation, subset enumeration or arbitrary numerical cushion."
+      },
+      "quota_timing": {
+        "seconds_all_three_runs": [
+          0.010539900045841932,
+          0.016198799945414066,
+          0.010197399882599711
+        ],
+        "median_seconds": 0.010539900045841932
+      },
+      "weight_sensitive_hybrid_upper_log_moment": 0.01762562093179794,
+      "weight_sensitive_hybrid_timing": {
+        "seconds_all_three_runs": [
+          0.009050799999386072,
+          0.009977900190278888,
+          0.007499199826270342
+        ],
+        "median_seconds": 0.009050799999386072
+      },
+      "implicit_population_subset_pairs": 901120,
+      "enumerated_reference": {
+        "upper_log_moment": 0.015964649536532392,
+        "directed_difference": 4.9529824686089796e-14,
+        "seconds_all_three_runs": [
+          0.06589119997806847,
+          0.06791669991798699,
+          0.0610829999204725
+        ],
+        "median_seconds": 0.06589119997806847
+      },
+      "enumeration_guard": "Exhaustive reference is timed only if 2**n * choose(n,k) <= 4,000,000; skipped cases are not attempted or estimated."
+    },
+    {
+      "n": 12,
+      "k": 6,
+      "weight_shape": "equal",
+      "fixed_lambda": 0.1,
+      "quota_upper_log_moment": 0.01635702954178237,
+      "quota_moment_receipt": {
+        "algorithm": "sorted_threshold_symmetric_mean",
+        "Decimal_precision": 80,
+        "original_quota": 6,
+        "evaluated_quota": 6,
+        "threshold_populations": 26,
+        "recurrence_steps": 1482,
+        "implicit_quota_subsets": 924,
+        "maximizing_threshold": {
+          "active_largest_weights": 6,
+          "sign": 1
+        },
+        "normalizer_scope": "Directed actual-weight arithmetic; adjacent Decimal exp/ln; positive symmetric-mean recurrence. No integer-weight approximation, subset enumeration or arbitrary numerical cushion."
+      },
+      "quota_timing": {
+        "seconds_all_three_runs": [
+          0.013775399886071682,
+          0.018525599967688322,
+          0.01246220013126731
+        ],
+        "median_seconds": 0.013775399886071682
+      },
+      "weight_sensitive_hybrid_upper_log_moment": 0.016995794915762454,
+      "weight_sensitive_hybrid_timing": {
+        "seconds_all_three_runs": [
+          0.008726099971681833,
+          0.008729199878871441,
+          0.008135499898344278
+        ],
+        "median_seconds": 0.008726099971681833
+      },
+      "implicit_population_subset_pairs": 3784704,
+      "enumerated_reference": {
+        "upper_log_moment": 0.016357029541988245,
+        "directed_difference": 2.058735126819755e-13,
+        "seconds_all_three_runs": [
+          0.20778009993955493,
+          0.21370350010693073,
+          0.2079086999874562
+        ],
+        "median_seconds": 0.2079086999874562
+      },
+      "enumeration_guard": "Exhaustive reference is timed only if 2**n * choose(n,k) <= 4,000,000; skipped cases are not attempted or estimated."
+    },
+    {
+      "n": 12,
+      "k": 6,
+      "weight_shape": "concentrated",
+      "fixed_lambda": 0.01,
+      "quota_upper_log_moment": 0.004991688821646531,
+      "quota_moment_receipt": {
+        "algorithm": "sorted_threshold_symmetric_mean",
+        "Decimal_precision": 80,
+        "original_quota": 6,
+        "evaluated_quota": 6,
+        "threshold_populations": 26,
+        "recurrence_steps": 1482,
+        "implicit_quota_subsets": 924,
+        "maximizing_threshold": {
+          "active_largest_weights": 1,
+          "sign": -1
+        },
+        "normalizer_scope": "Directed actual-weight arithmetic; adjacent Decimal exp/ln; positive symmetric-mean recurrence. No integer-weight approximation, subset enumeration or arbitrary numerical cushion."
+      },
+      "quota_timing": {
+        "seconds_all_three_runs": [
+          0.009066500002518296,
+          0.009528700029477477,
+          0.009359299903735518
+        ],
+        "median_seconds": 0.009359299903735518
+      },
+      "weight_sensitive_hybrid_upper_log_moment": 0.005541679655224302,
+      "weight_sensitive_hybrid_timing": {
+        "seconds_all_three_runs": [
+          0.004888799972832203,
+          0.004933499963954091,
+          0.00482430006377399
+        ],
+        "median_seconds": 0.004888799972832203
+      },
+      "implicit_population_subset_pairs": 3784704,
+      "enumerated_reference": {
+        "upper_log_moment": 0.004991688821852572,
+        "directed_difference": 2.0604091349740727e-13,
+        "seconds_all_three_runs": [
+          0.22177089983597398,
+          0.21770339994691312,
+          0.2328451001085341
+        ],
+        "median_seconds": 0.22177089983597398
+      },
+      "enumeration_guard": "Exhaustive reference is timed only if 2**n * choose(n,k) <= 4,000,000; skipped cases are not attempted or estimated."
+    },
+    {
+      "n": 24,
+      "k": 6,
+      "weight_shape": "equal",
+      "fixed_lambda": 0.1,
+      "quota_upper_log_moment": 0.09361832855985591,
+      "quota_moment_receipt": {
+        "algorithm": "sorted_threshold_symmetric_mean",
+        "Decimal_precision": 80,
+        "original_quota": 6,
+        "evaluated_quota": 6,
+        "threshold_populations": 50,
+        "recurrence_steps": 6450,
+        "implicit_quota_subsets": 134596,
+        "maximizing_threshold": {
+          "active_largest_weights": 12,
+          "sign": 1
+        },
+        "normalizer_scope": "Directed actual-weight arithmetic; adjacent Decimal exp/ln; positive symmetric-mean recurrence. No integer-weight approximation, subset enumeration or arbitrary numerical cushion."
+      },
+      "quota_timing": {
+        "seconds_all_three_runs": [
+          0.051241499837487936,
+          0.04636080004274845,
+          0.045451699988916516
+        ],
+        "median_seconds": 0.04636080004274845
+      },
+      "weight_sensitive_hybrid_upper_log_moment": 0.09448197321744961,
+      "weight_sensitive_hybrid_timing": {
+        "seconds_all_three_runs": [
+          0.019920899998396635,
+          0.01814529998227954,
+          0.0287432000041008
+        ],
+        "median_seconds": 0.019920899998396635
+      },
+      "implicit_population_subset_pairs": 2258146164736,
+      "enumerated_reference": null,
+      "enumeration_guard": "Exhaustive reference is timed only if 2**n * choose(n,k) <= 4,000,000; skipped cases are not attempted or estimated."
+    },
+    {
+      "n": 24,
+      "k": 6,
+      "weight_shape": "concentrated",
+      "fixed_lambda": 0.01,
+      "quota_upper_log_moment": 0.015971396014288767,
+      "quota_moment_receipt": {
+        "algorithm": "sorted_threshold_symmetric_mean",
+        "Decimal_precision": 80,
+        "original_quota": 6,
+        "evaluated_quota": 6,
+        "threshold_populations": 50,
+        "recurrence_steps": 6450,
+        "implicit_quota_subsets": 134596,
+        "maximizing_threshold": {
+          "active_largest_weights": 2,
+          "sign": 1
+        },
+        "normalizer_scope": "Directed actual-weight arithmetic; adjacent Decimal exp/ln; positive symmetric-mean recurrence. No integer-weight approximation, subset enumeration or arbitrary numerical cushion."
+      },
+      "quota_timing": {
+        "seconds_all_three_runs": [
+          0.03554509999230504,
+          0.038230499951168895,
+          0.05246490007266402
+        ],
+        "median_seconds": 0.038230499951168895
+      },
+      "weight_sensitive_hybrid_upper_log_moment": 0.019437589726687115,
+      "weight_sensitive_hybrid_timing": {
+        "seconds_all_three_runs": [
+          0.018021399853751063,
+          0.018304399913176894,
+          0.018456999910995364
+        ],
+        "median_seconds": 0.018304399913176894
+      },
+      "implicit_population_subset_pairs": 2258146164736,
+      "enumerated_reference": null,
+      "enumeration_guard": "Exhaustive reference is timed only if 2**n * choose(n,k) <= 4,000,000; skipped cases are not attempted or estimated."
+    },
+    {
+      "n": 24,
+      "k": 12,
+      "weight_shape": "equal",
+      "fixed_lambda": 0.1,
+      "quota_upper_log_moment": 0.03129139408137693,
+      "quota_moment_receipt": {
+        "algorithm": "sorted_threshold_symmetric_mean",
+        "Decimal_precision": 80,
+        "original_quota": 12,
+        "evaluated_quota": 12,
+        "threshold_populations": 50,
+        "recurrence_steps": 11100,
+        "implicit_quota_subsets": 2704156,
+        "maximizing_threshold": {
+          "active_largest_weights": 12,
+          "sign": 1
+        },
+        "normalizer_scope": "Directed actual-weight arithmetic; adjacent Decimal exp/ln; positive symmetric-mean recurrence. No integer-weight approximation, subset enumeration or arbitrary numerical cushion."
+      },
+      "quota_timing": {
+        "seconds_all_three_runs": [
+          0.08291869983077049,
+          0.06275529996491969,
+          0.04640479991212487
+        ],
+        "median_seconds": 0.06275529996491969
+      },
+      "weight_sensitive_hybrid_upper_log_moment": 0.031935670922470835,
+      "weight_sensitive_hybrid_timing": {
+        "seconds_all_three_runs": [
+          0.015070900088176131,
+          0.015226299874484539,
+          0.015368100022897124
+        ],
+        "median_seconds": 0.015226299874484539
+      },
+      "implicit_population_subset_pairs": 45368209309696,
+      "enumerated_reference": null,
+      "enumeration_guard": "Exhaustive reference is timed only if 2**n * choose(n,k) <= 4,000,000; skipped cases are not attempted or estimated."
+    },
+    {
+      "n": 24,
+      "k": 12,
+      "weight_shape": "concentrated",
+      "fixed_lambda": 0.01,
+      "quota_upper_log_moment": 0.005000670544288769,
+      "quota_moment_receipt": {
+        "algorithm": "sorted_threshold_symmetric_mean",
+        "Decimal_precision": 80,
+        "original_quota": 12,
+        "evaluated_quota": 12,
+        "threshold_populations": 50,
+        "recurrence_steps": 11100,
+        "implicit_quota_subsets": 2704156,
+        "maximizing_threshold": {
+          "active_largest_weights": 3,
+          "sign": 1
+        },
+        "normalizer_scope": "Directed actual-weight arithmetic; adjacent Decimal exp/ln; positive symmetric-mean recurrence. No integer-weight approximation, subset enumeration or arbitrary numerical cushion."
+      },
+      "quota_timing": {
+        "seconds_all_three_runs": [
+          0.038777200039476156,
+          0.04262760002166033,
+          0.05036900006234646
+        ],
+        "median_seconds": 0.04262760002166033
+      },
+      "weight_sensitive_hybrid_upper_log_moment": 0.00614166965549096,
+      "weight_sensitive_hybrid_timing": {
+        "seconds_all_three_runs": [
+          0.010438100202009082,
+          0.010146199958398938,
+          0.009714300045743585
+        ],
+        "median_seconds": 0.010146199958398938
+      },
+      "implicit_population_subset_pairs": 45368209309696,
+      "enumerated_reference": null,
+      "enumeration_guard": "Exhaustive reference is timed only if 2**n * choose(n,k) <= 4,000,000; skipped cases are not attempted or estimated."
+    },
+    {
+      "n": 48,
+      "k": 12,
+      "weight_shape": "equal",
+      "fixed_lambda": 0.1,
+      "quota_upper_log_moment": 0.1834879974334869,
+      "quota_moment_receipt": {
+        "algorithm": "sorted_threshold_symmetric_mean",
+        "Decimal_precision": 80,
+        "original_quota": 12,
+        "evaluated_quota": 12,
+        "threshold_populations": 98,
+        "recurrence_steps": 49980,
+        "implicit_quota_subsets": 69668534468,
+        "maximizing_threshold": {
+          "active_largest_weights": 23,
+          "sign": 1
+        },
+        "normalizer_scope": "Directed actual-weight arithmetic; adjacent Decimal exp/ln; positive symmetric-mean recurrence. No integer-weight approximation, subset enumeration or arbitrary numerical cushion."
+      },
+      "quota_timing": {
+        "seconds_all_three_runs": [
+          0.3756240999791771,
+          0.3468251000158489,
+          0.38319940003566444
+        ],
+        "median_seconds": 0.3756240999791771
+      },
+      "weight_sensitive_hybrid_upper_log_moment": 0.18442851920127054,
+      "weight_sensitive_hybrid_timing": {
+        "seconds_all_three_runs": [
+          0.05951980012468994,
+          0.049379599979147315,
+          0.03812279994599521
+        ],
+        "median_seconds": 0.049379599979147315
+      },
+      "implicit_population_subset_pairs": 19609949116845834798891008,
+      "enumerated_reference": null,
+      "enumeration_guard": "Exhaustive reference is timed only if 2**n * choose(n,k) <= 4,000,000; skipped cases are not attempted or estimated."
+    },
+    {
+      "n": 48,
+      "k": 12,
+      "weight_shape": "concentrated",
+      "fixed_lambda": 0.01,
+      "quota_upper_log_moment": 0.016508093580663533,
+      "quota_moment_receipt": {
+        "algorithm": "sorted_threshold_symmetric_mean",
+        "Decimal_precision": 80,
+        "original_quota": 12,
+        "evaluated_quota": 12,
+        "threshold_populations": 98,
+        "recurrence_steps": 49980,
+        "implicit_quota_subsets": 69668534468,
+        "maximizing_threshold": {
+          "active_largest_weights": 14,
+          "sign": 1
+        },
+        "normalizer_scope": "Directed actual-weight arithmetic; adjacent Decimal exp/ln; positive symmetric-mean recurrence. No integer-weight approximation, subset enumeration or arbitrary numerical cushion."
+      },
+      "quota_timing": {
+        "seconds_all_three_runs": [
+          0.28017579996958375,
+          0.29513420001603663,
+          0.2928407001309097
+        ],
+        "median_seconds": 0.2928407001309097
+      },
+      "weight_sensitive_hybrid_upper_log_moment": 0.023061527316465463,
+      "weight_sensitive_hybrid_timing": {
+        "seconds_all_three_runs": [
+          0.03457689983770251,
+          0.020165299996733665,
+          0.021153600187972188
+        ],
+        "median_seconds": 0.021153600187972188
+      },
+      "implicit_population_subset_pairs": 19609949116845834798891008,
+      "enumerated_reference": null,
+      "enumeration_guard": "Exhaustive reference is timed only if 2**n * choose(n,k) <= 4,000,000; skipped cases are not attempted or estimated."
+    },
+    {
+      "n": 48,
+      "k": 24,
+      "weight_shape": "equal",
+      "fixed_lambda": 0.1,
+      "quota_upper_log_moment": 0.061251117059325746,
+      "quota_moment_receipt": {
+        "algorithm": "sorted_threshold_symmetric_mean",
+        "Decimal_precision": 80,
+        "original_quota": 24,
+        "evaluated_quota": 24,
+        "threshold_populations": 98,
+        "recurrence_steps": 85848,
+        "implicit_quota_subsets": 32247603683100,
+        "maximizing_threshold": {
+          "active_largest_weights": 24,
+          "sign": 1
+        },
+        "normalizer_scope": "Directed actual-weight arithmetic; adjacent Decimal exp/ln; positive symmetric-mean recurrence. No integer-weight approximation, subset enumeration or arbitrary numerical cushion."
+      },
+      "quota_timing": {
+        "seconds_all_three_runs": [
+          0.27194459992460907,
+          0.44528020010329783,
+          0.40756240021437407
+        ],
+        "median_seconds": 0.40756240021437407
+      },
+      "weight_sensitive_hybrid_upper_log_moment": 0.061905370279675395,
+      "weight_sensitive_hybrid_timing": {
+        "seconds_all_three_runs": [
+          0.05150659987702966,
+          0.051350099965929985,
+          0.0599539999384433
+        ],
+        "median_seconds": 0.05150659987702966
+      },
+      "implicit_population_subset_pairs": 9076893495675037148617113600,
+      "enumerated_reference": null,
+      "enumeration_guard": "Exhaustive reference is timed only if 2**n * choose(n,k) <= 4,000,000; skipped cases are not attempted or estimated."
+    },
+    {
+      "n": 48,
+      "k": 24,
+      "weight_shape": "concentrated",
+      "fixed_lambda": 0.01,
+      "quota_upper_log_moment": 0.005201144904826998,
+      "quota_moment_receipt": {
+        "algorithm": "sorted_threshold_symmetric_mean",
+        "Decimal_precision": 80,
+        "original_quota": 24,
+        "evaluated_quota": 24,
+        "threshold_populations": 98,
+        "recurrence_steps": 85848,
+        "implicit_quota_subsets": 32247603683100,
+        "maximizing_threshold": {
+          "active_largest_weights": 15,
+          "sign": 1
+        },
+        "normalizer_scope": "Directed actual-weight arithmetic; adjacent Decimal exp/ln; positive symmetric-mean recurrence. No integer-weight approximation, subset enumeration or arbitrary numerical cushion."
+      },
+      "quota_timing": {
+        "seconds_all_three_runs": [
+          0.3354026998858899,
+          0.3473040999379009,
+          0.30394210014492273
+        ],
+        "median_seconds": 0.3354026998858899
+      },
+      "weight_sensitive_hybrid_upper_log_moment": 0.007341649656024278,
+      "weight_sensitive_hybrid_timing": {
+        "seconds_all_three_runs": [
+          0.03354780003428459,
+          0.034015600103884935,
+          0.0340676000341773
+        ],
+        "median_seconds": 0.034015600103884935
+      },
+      "implicit_population_subset_pairs": 9076893495675037148617113600,
+      "enumerated_reference": null,
+      "enumeration_guard": "Exhaustive reference is timed only if 2**n * choose(n,k) <= 4,000,000; skipped cases are not attempted or estimated."
+    },
+    {
+      "n": 96,
+      "k": 24,
+      "weight_shape": "equal",
+      "fixed_lambda": 0.1,
+      "quota_upper_log_moment": 0.3631109826535745,
+      "quota_moment_receipt": {
+        "algorithm": "sorted_threshold_symmetric_mean",
+        "Decimal_precision": 80,
+        "original_quota": 24,
+        "evaluated_quota": 24,
+        "threshold_populations": 194,
+        "recurrence_steps": 393432,
+        "implicit_quota_subsets": 26101718353106752508100,
+        "maximizing_threshold": {
+          "active_largest_weights": 46,
+          "sign": 1
+        },
+        "normalizer_scope": "Directed actual-weight arithmetic; adjacent Decimal exp/ln; positive symmetric-mean recurrence. No integer-weight approximation, subset enumeration or arbitrary numerical cushion."
+      },
+      "quota_timing": {
+        "seconds_all_three_runs": [
+          1.554738299921155,
+          1.4937003999948502,
+          1.620062200119719
+        ],
+        "median_seconds": 1.554738299921155
+      },
+      "weight_sensitive_hybrid_upper_log_moment": 0.3644017636842423,
+      "weight_sensitive_hybrid_timing": {
+        "seconds_all_three_runs": [
+          0.08848470007069409,
+          0.08112169988453388,
+          0.07426780019886792
+        ],
+        "median_seconds": 0.08112169988453388
+      },
+      "implicit_population_subset_pairs": 2067991183581497889919346102861787651673949837721600,
+      "enumerated_reference": null,
+      "enumeration_guard": "Exhaustive reference is timed only if 2**n * choose(n,k) <= 4,000,000; skipped cases are not attempted or estimated."
+    },
+    {
+      "n": 96,
+      "k": 24,
+      "weight_shape": "concentrated",
+      "fixed_lambda": 0.01,
+      "quota_upper_log_moment": 0.018133684190290898,
+      "quota_moment_receipt": {
+        "algorithm": "sorted_threshold_symmetric_mean",
+        "Decimal_precision": 80,
+        "original_quota": 24,
+        "evaluated_quota": 24,
+        "threshold_populations": 194,
+        "recurrence_steps": 393432,
+        "implicit_quota_subsets": 26101718353106752508100,
+        "maximizing_threshold": {
+          "active_largest_weights": 38,
+          "sign": 1
+        },
+        "normalizer_scope": "Directed actual-weight arithmetic; adjacent Decimal exp/ln; positive symmetric-mean recurrence. No integer-weight approximation, subset enumeration or arbitrary numerical cushion."
+      },
+      "quota_timing": {
+        "seconds_all_three_runs": [
+          1.4843753001186997,
+          1.5714547999668866,
+          1.387814300134778
+        ],
+        "median_seconds": 1.4843753001186997
+      },
+      "weight_sensitive_hybrid_upper_log_moment": 0.030309402496022157,
+      "weight_sensitive_hybrid_timing": {
+        "seconds_all_three_runs": [
+          0.07309020007960498,
+          0.06394589995034039,
+          0.05882610008120537
+        ],
+        "median_seconds": 0.06394589995034039
+      },
+      "implicit_population_subset_pairs": 2067991183581497889919346102861787651673949837721600,
+      "enumerated_reference": null,
+      "enumeration_guard": "Exhaustive reference is timed only if 2**n * choose(n,k) <= 4,000,000; skipped cases are not attempted or estimated."
+    },
+    {
+      "n": 96,
+      "k": 48,
+      "weight_shape": "equal",
+      "fixed_lambda": 0.1,
+      "quota_upper_log_moment": 0.12121268239552649,
+      "quota_moment_receipt": {
+        "algorithm": "sorted_threshold_symmetric_mean",
+        "Decimal_precision": 80,
+        "original_quota": 48,
+        "evaluated_quota": 48,
+        "threshold_populations": 194,
+        "recurrence_steps": 675120,
+        "implicit_quota_subsets": 6435067013866298908421603100,
+        "maximizing_threshold": {
+          "active_largest_weights": 48,
+          "sign": -1
+        },
+        "normalizer_scope": "Directed actual-weight arithmetic; adjacent Decimal exp/ln; positive symmetric-mean recurrence. No integer-weight approximation, subset enumeration or arbitrary numerical cushion."
+      },
+      "quota_timing": {
+        "seconds_all_three_runs": [
+          2.259346100036055,
+          2.3185725000221282,
+          2.390043599996716
+        ],
+        "median_seconds": 2.3185725000221282
+      },
+      "weight_sensitive_hybrid_upper_log_moment": 0.12189018951273967,
+      "weight_sensitive_hybrid_timing": {
+        "seconds_all_three_runs": [
+          0.06015930022113025,
+          0.06859240005724132,
+          0.10516340006142855
+        ],
+        "median_seconds": 0.06859240005724132
+      },
+      "implicit_population_subset_pairs": 509838535164780851512867045576851977342967702535903641600,
+      "enumerated_reference": null,
+      "enumeration_guard": "Exhaustive reference is timed only if 2**n * choose(n,k) <= 4,000,000; skipped cases are not attempted or estimated."
+    },
+    {
+      "n": 96,
+      "k": 48,
+      "weight_shape": "concentrated",
+      "fixed_lambda": 0.01,
+      "quota_upper_log_moment": 0.005752935638057089,
+      "quota_moment_receipt": {
+        "algorithm": "sorted_threshold_symmetric_mean",
+        "Decimal_precision": 80,
+        "original_quota": 48,
+        "evaluated_quota": 48,
+        "threshold_populations": 194,
+        "recurrence_steps": 675120,
+        "implicit_quota_subsets": 6435067013866298908421603100,
+        "maximizing_threshold": {
+          "active_largest_weights": 39,
+          "sign": 1
+        },
+        "normalizer_scope": "Directed actual-weight arithmetic; adjacent Decimal exp/ln; positive symmetric-mean recurrence. No integer-weight approximation, subset enumeration or arbitrary numerical cushion."
+      },
+      "quota_timing": {
+        "seconds_all_three_runs": [
+          2.200388199882582,
+          2.2361594999674708,
+          2.164985200157389
+        ],
+        "median_seconds": 2.200388199882582
+      },
+      "weight_sensitive_hybrid_upper_log_moment": 0.009741609657090913,
+      "weight_sensitive_hybrid_timing": {
+        "seconds_all_three_runs": [
+          0.043491399846971035,
+          0.0349671000149101,
+          0.03598529985174537
+        ],
+        "median_seconds": 0.03598529985174537
+      },
+      "implicit_population_subset_pairs": 509838535164780851512867045576851977342967702535903641600,
+      "enumerated_reference": null,
+      "enumeration_guard": "Exhaustive reference is timed only if 2**n * choose(n,k) <= 4,000,000; skipped cases are not attempted or estimated."
+    }
+  ],
+  "seconds": 30.821639500092715
+}

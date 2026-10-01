@@ -11,3 +11,9 @@ serfling_baseline_optimized,shared,True,mean,6.632
 serfling_baseline_optimized,shared,True,shortfall_6,0.558
 harmonic_martingale_baseline_optimized,shared,True,mean,6.616
 harmonic_martingale_baseline_optimized,shared,True,shortfall_6,0.558
+weight_sensitive_product_baseline_optimized,shared,True,mean,7.815
+weight_sensitive_product_baseline_optimized,shared,True,shortfall_6,0.642
+weight_sensitive_hybrid_baseline_optimized,shared,True,mean,6.609
+weight_sensitive_hybrid_baseline_optimized,shared,True,shortfall_6,0.557
+empirical_bernstein_fixed_forecast,shared,True,mean,7.812
+empirical_bernstein_fixed_forecast,shared,True,shortfall_6,0.645

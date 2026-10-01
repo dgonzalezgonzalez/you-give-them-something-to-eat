@@ -2,5 +2,15 @@
   "ClassicalMeanCertificate": "6.616",
   "ClassicalShortfallCertificate": "0.558",
   "SeparateQuotaMeanCertificate": "6.878",
-  "SeparateQuotaShortfallCertificate": "0.577"
+  "SeparateQuotaShortfallCertificate": "0.577",
+  "HybridMeanCertificate": "6.609",
+  "HybridShortfallCertificate": "0.557",
+  "EmpBernMeanCertificate": "7.812",
+  "EmpBernShortfallCertificate": "0.645",
+  "QuotaRegionalMeanLower": "5.866228",
+  "QuotaRegionalMeanUpper": "5.867129",
+  "QuotaRegionalMeanGap": "0.000901",
+  "QuotaRegionalShortfallLower": "0.502242",
+  "QuotaRegionalShortfallUpper": "0.502549",
+  "QuotaRegionalShortfallGap": "0.000306"
 }

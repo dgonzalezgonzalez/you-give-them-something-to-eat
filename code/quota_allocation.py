@@ -11,7 +11,7 @@ from fractions import Fraction
 import json,time
 import numpy as np,pandas as pd
 from scipy.optimize import minimize,linprog
-from quota_moments import quota_upper_log_moment
+from quota_moments import quota_upper_log_moment_dp
 from quota_models import build_models,ARMS
 from quota_arithmetic import I,tangent_support_upper
 
@@ -32,7 +32,7 @@ def select_moments():
             lam=float(scale*base);blocks=[]
             for row in ds.itertuples():
                 key=(int(row.block),int(row.villages),lam)
-                if key not in cache:cache[key]=quota_upper_log_moment(weights[int(row.block)],int(row.villages),lam)
+                if key not in cache:cache[key]=quota_upper_log_moment_dp(weights[int(row.block)],int(row.villages),lam)
                 bound,detail=cache[key];blocks.append({'block':int(row.block),'upper_log_moment':bound,'detail':detail})
             with localcontext() as ctx:
                 ctx.prec=100;ctx.rounding=ROUND_CEILING
@@ -43,7 +43,7 @@ def select_moments():
             candidates.append(record);grid.append(record)
         chosen=min(candidates,key=lambda row:row['selection_threshold']);selected.append(chosen)
         print(arm,'baseline-selected scale',chosen['scale'],'log normalizer upper',chosen['certified_upper_log_normalizer'],flush=True)
-    receipt={'scope':'Fixed four-point grid selected using baseline weights and conditional quotas only. Outward Decimal moment constants, exact integer proxy residuals, positive-sum rounding enclosure and explicit weight drift. No endline outcomes select lambda.',
+    receipt={'scope':'Fixed four-point grid selected using baseline weights and conditional quotas only. Sorted threshold populations and directed actual-weight symmetric-mean recurrence enclose the same relaxed moment. No endline outcomes select lambda; no new concentration or general symmetric-convex algorithm is claimed.',
              'event_terms':276,'event_cap':5520,'rows':selected,'all_grid_receipts':grid,'seconds':time.time()-begin}
     (OUT/'quota-normalizers.json').write_text(json.dumps(receipt,indent=2)+'\n',encoding='utf8')
     return selected

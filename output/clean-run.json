@@ -1,6 +1,6 @@
 {
   "scope": "Fresh copy with no prior outputs; same installed interpreter and pinned statistical package versions, not a fresh package installation",
-  "checked_files": 101,
+  "checked_files": 103,
   "checks": {
     "output/allocation_certificates.csv": true,
     "output/allocation_cost_sensitivity.csv": true,
@@ -21,6 +21,7 @@
     "output/cost_scenarios.csv": true,
     "output/cr2_sensitivity.csv": true,
     "output/descriptives.csv": true,
+    "output/designed_decisions.csv": true,
     "output/diet_observation_intervals.csv": true,
     "output/distributions.csv": true,
     "output/distribution_allocation_certificates.csv": true,
@@ -63,6 +64,7 @@
     "output/tables/decision_bounds.tex": true,
     "output/tables/decision_costs.tex": true,
     "output/tables/design.tex": true,
+    "output/tables/designed_decision_performance.tex": true,
     "output/tables/diet_intervals.tex": true,
     "output/tables/diet_itt.tex": true,
     "output/tables/distribution_allocations.tex": true,
@@ -106,7 +108,7 @@
     "paper_pdf_page_text": true
   },
   "all_passed": true,
-  "pdf_pages": 34,
+  "pdf_pages": 38,
   "excluded_from_byte_comparison": [
     "runtime metadata",
     "PDF creation timestamps",
@@ -115,10 +117,8 @@
   "master": {
     "python": "3.12.10",
     "platform": "Windows-11-10.0.26200-SP0",
-    "seconds": 498.5367865562439,
+    "seconds": 1014.1278579235077,
     "pdf_compiled": true,
     "source_reextracted": false
-  },
-  "source_copy_directory": "C:\\Users\\dgonzalez\\Documents\\ChatGPT\\You give them something to eat\\tmp\\clean-20261001-020412",
-  "comparison_recovery": "Cold scientific master completed successfully in 498.536787 seconds. First comparison wrapper failed because two newly added path entries were strings. Corrected both to Path objects and reran comparison against the same completed cold outputs; scientific master was not repeated."
+  }
 }

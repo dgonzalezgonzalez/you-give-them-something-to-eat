@@ -33,6 +33,10 @@ def build_models(moment_rows):
             L=dot(w[assigned],z[lo[assigned].astype(int)])/W
             H=(dot(w[assigned],z[hi[assigned].astype(int)])+sum((I(x) for x in w[~assigned]),I(0)))/W
             AA.extend([z,-z]);bb.extend([H.upper_float(),-max(0.,L.lower_float())])
+        if moments[arm].get('method')=='empirical_bernstein_fixed_forecast':
+            from empbern_models import affine_rows
+            from quota_benchmarks import baseline_weights
+            C,inter,empbern_receipts=affine_rows(full,lo,hi,zz,arm,lam,baseline_weights())
         C=np.array(C);inter=np.array(inter);AA=np.array(AA);bb=np.array(bb)
         floor=np.array([max(0.,(sum((I(x) for x in w[assigned&(lo==hi)&(lo==s)]),I(0))/W).lower_float()) for s in range(13)])
         seed=floor+(1-floor.sum())/13
