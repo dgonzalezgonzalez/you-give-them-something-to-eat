@@ -1,0 +1,18 @@
+{
+  "status": "prepared_not_submitted",
+  "prepared_at_utc": "2026-10-01T08:43:56.536767+00:00",
+  "referee_destination": "Existing author-designated ChatGPT Pro conversation; private URL omitted.",
+  "scientific_source": "c8af01aed8725f9ef06fc0974e35ec363ab418de",
+  "tag": "v0.7.0",
+  "request_characters": 7245,
+  "request_sha256_lf": "fee31c074a81364a3119ee3512ba5918ccc090e0128bf6ce031cd4fc71baeee7",
+  "pdf_sha256": "45fa80dfd97908aac11bc13fe7e19576009a2c5f2c48fc34f4b35c09aba71590",
+  "hosted_run": 36836273460,
+  "hosted_comparisons": 112,
+  "hosted_master_seconds": 903.8446516990662,
+  "attachment_delivered": false,
+  "prior_genuine_reports": 6,
+  "prior_recommendations": "Reject at unchanged leading general-interest standard",
+  "recommendation": null,
+  "whole_delivered_request_matches": false
+}

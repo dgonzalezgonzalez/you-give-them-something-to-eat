@@ -1,0 +1,40 @@
+Act again as independent expert economist referee at the UNCHANGED leading general-interest journal standard. Six prior recommendations were Reject. Do not reward verification counts or lower the standard. Give honest Reject/R&R/Accept, detailed major/minor comments and precise retrieval/execution scope.
+
+Review immutable public tag v0.7.0. Scientific/verification source: c8af01aed8725f9ef06fc0974e35ec363ab418de. Resolve and record the tag commit. Paper/code/data/output/master/workflow are identical to the hosted source; freeze additions concern actual execution receipts and review documentation.
+
+Manuscript, ALL ten major/eight minor sixth-report responses, and self-contained proofs:
+https://github.com/dgonzalezgonzalez/you-give-them-something-to-eat/blob/v0.7.0/paper/paper.tex
+https://github.com/dgonzalezgonzalez/you-give-them-something-to-eat/blob/v0.7.0/paper/paper.pdf
+https://github.com/dgonzalezgonzalez/you-give-them-something-to-eat/blob/v0.7.0/docs/referee/round-6-response.md
+https://github.com/dgonzalezgonzalez/you-give-them-something-to-eat/blob/v0.7.0/docs/quota-methods-round7.md
+
+Your sixth review authenticated six harmonic models, generated eighteen supports and checked 108 exact dual/tangent inequalities and 33 catalogue rows. No microdata, empirical regeneration, master/Stata, PDF inspection or CI ZIP download/hash. Failed ZIP and reconstructed visible preview retain those limits.
+
+The empirical center remains Catholic-affiliated Gikuriro Rwanda: unchanged microdata, costs, estimates and rational proposals. Causal interpretation, diet measurement, child cohort and bundled saving remain scoped. No new field effects or concentration theorem.
+
+First, actual-weight quota moments use sorted-threshold maximization and a positive symmetric-mean recurrence. Convexity/exchange shows a maximizing binary population activates the m largest weights for some m, either sign. Complexity O(n^2 min(k,n-k)). General symmetric-convex algorithms/ESP recurrences are prior art (Xiang 2006); specialization and directed enclosure are proved. Independent 160-digit exhaustive checks: 743/743.
+
+Second, the omitted weight-sensitive product bound is included, with positive inclusion expansion and negative-association attribution. A baseline-only product/harmonic minimum protects the SAME moment. Comparable searches in all 33 cases give quota gains of 1.39–6.74% over this cheap hybrid; old 49.23% over coarse harmonic is historical. Actual timings cover 16 cases through n=96; exhaustive-size skips are explicit.
+
+Third, restricted fixed-forecast empirical Bernstein follows Waudby-Smith/Ramdas: baseline forecasts/scales, observed compensation, directed missing-box minima, fixed full-population denominator. Field tests average ALL k! sample orders; identifier order is not assumed random. Placeholder zero normalizer is NOT a zero MGF bound; actual tests include observed compensation. Complete/interior/missing/order checks: 786/786. Not the whole variance-adaptive/betting family.
+
+Standalone 95% field events keep target, missing envelopes, 23 scores, scalar restrictions, costs and proposals fixed. Same-proposal mean/shortfall upper certificates: quota 5.868/.503, hybrid 6.609/.557, empirical Bernstein 7.812/.645. All broad. Historical quota search diagnostics are explicitly source-quota provenance.
+
+Fourth, EXACT lower certificates bracket eight implemented shared regions' optimal decision values. Nineteen rational distributions per region satisfy exact logical constraints/directed exponential membership. An exact feasible probability/cost dual of a finite-adversary LP supplies LOWER bounds; existing proposals supply UPPER bounds. Quota mean [5.866228,5.867129], gap <=.000901; shortfall [.502242,.502549], gap <=.000306. Better policy search cannot materially resolve this outer region's broadness. Scope: stored outer relaxations ONLY, not sharper conceptual tests, jointly attainable finite populations, sampling minimax risk, all inference procedures or exact optima. Checks 732/732 include independent 160-digit membership/exact dual replay. Three initial wrong toy expectations allowed an infeasible comparator; correction history explicit, field values unchanged.
+
+Fifth, 144 predeclared known-population cells vary n=8/24/64, blocks=8/32, weights, four effects and complete/coarse/assignment-dependent reporting. Five methods, 256 draws/cell, all 720 rows. Two-arm rectangles have closed-form minimax decisions/exact rounding bounds. Four Bonferroni tests at cap80 differ from the field event. Missing outcomes stay in the target. Actual regret, certificates, coverage, tolerances, fallbacks and costs reported; checks 1111/1111. Coverage is not a tuning criterion.
+
+Empirical Bernstein has LOWER average actual regret in complete/coarse designed populations (.016551 vs .018669; .028845 vs .030923). Assignment-dependent reporting: no method certificate <=.10. Broad quota dominance contradicted. Not Rwanda data, organizational tolerances or an impossibility claim.
+
+@HOSTED_RECEIPT@
+https://github.com/dgonzalezgonzalez/you-give-them-something-to-eat/blob/v0.7.0/docs/hosted-reproduction-c8af01a.json
+
+First hosted master completed in 919.16 seconds, but comparison failed five maximum-rounding diagnostics (drift <=3.24e-12). Failed receipt/artifact preserved. Only that column now requires identical upward 1e-9 displays and the analytic 5e-7 ceiling; other tolerances/per-draw exact checks unchanged. The new full run above is distinct.
+
+Small LF-hashed views contain summaries, models/witnesses, 152 regional populations, 16 duals and all decision cells. Maximum15459bytes; inspection aliases only. All 535 alias/canonical hashes verified against Git LF objects:
+https://github.com/dgonzalezgonzalez/you-give-them-something-to-eat/blob/v0.7.0/docs/referee/round-7-review/summary.json
+https://github.com/dgonzalezgonzalez/you-give-them-something-to-eat/tree/v0.7.0/docs/referee/round-7-review
+
+Sixth manifest hashes covered CRLF, explaining all 145 alias hashes plus the canonical mismatch. Parsed values/your Git-blob checks unchanged; frozen files preserved with separate public LF correction.
+
+Assignment law remains unverified beyond conditional uniform quotas/independent blocks. HDDS is a household proxy; broader-frame representation, organizational objectives/tolerances, marginal/spillover costs and saving/Catholic channels remain unidentified. National-average costs and lottery protect expected expenditure only. Institutional sensitivities retain the older region. No operational recommendation, DOI archive or journal certification. Evaluate ALL prior points, economic importance, proofs, competitors, regional limits and decision performance. Separate receipt arithmetic, empirical regeneration, microdata/master, PDF inspection and artifact download/hash. Technical tightening alone does not establish importance.
