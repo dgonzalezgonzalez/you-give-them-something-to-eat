@@ -1,6 +1,6 @@
 # Response ledger: first JDE report, ninth overall
 
-Status: substantive revision and local cold/visual/style verification complete; publication and the next genuine review remain. No tenth submission or favorable recommendation is claimed. The genuine recommendation is Reject on incremental contribution. This ledger distinguishes planned work from completed work. The report was recovered from its original Markdown prefix and visible rendered tail; the referee's linked audit files have not been received author-side.
+Status: substantive revision and local cold/visual/style verification complete; published as scientific source `51e2f8a614aba1520bce7a0df659b35592289926`. The next genuine review remains pending backend selection. No tenth submission or favorable recommendation is claimed. The genuine recommendation is Reject on incremental contribution. This ledger distinguishes completed work from remaining limits. The report was recovered from its original Markdown prefix and visible rendered tail; the referee's linked audit files have not been received author-side.
 
 | Point | Disposition and next evidence |
 |---|---|
