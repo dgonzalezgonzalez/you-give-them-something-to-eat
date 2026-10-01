@@ -1,0 +1,73 @@
+{
+  "scope": "Author-initiated full public microdata-to-manuscript run in a new GitHub-hosted Ubuntu environment; not an independent scientific replicator or journal certification.",
+  "source_commit": "00b45eead2752f3660fcc08c00fc4e16ff7ceb4a",
+  "workflow_run_url": "https://github.com/dgonzalezgonzalez/you-give-them-something-to-eat/actions/runs/36834020046",
+  "python": "3.12.10",
+  "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+  "requirements_lock_sha256": "0ebe740d822b94d59c941e3cfa03317d586d9d3c15a4fbc75e2ca93816fbc2a9",
+  "checks": {
+    "output/allocation_certificates.csv": true,
+    "output/allocation_cost_sensitivity.csv": true,
+    "output/allocation_frontier.csv": true,
+    "output/arm_effects.csv": true,
+    "output/assignment_probabilities.csv": true,
+    "output/attrition.csv": true,
+    "output/attrition_bounds.csv": true,
+    "output/attrition_effects.csv": true,
+    "output/balance.csv": true,
+    "output/baseline_child_effects.csv": true,
+    "output/block_covariance_mean.csv": true,
+    "output/block_scores_mean.csv": true,
+    "output/child_cohort_accounting.csv": true,
+    "output/child_effects.csv": true,
+    "output/cluster_leverage.csv": true,
+    "output/coherent_distributions.csv": true,
+    "output/cost_scenarios.csv": true,
+    "output/cr2_sensitivity.csv": true,
+    "output/descriptives.csv": true
+  },
+  "all_passed": false,
+  "execution_error": "AssertionError: DataFrame.iloc[:, 16] (column name=\"maximum_rational_policy_rounding_bound\") are different\n\nDataFrame.iloc[:, 16] (column name=\"maximum_rational_policy_rounding_bound\") values are different (0.69444 %)\n[index]: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, ...]\n[left]:  [2.488473489151185e-07, 2.590382986848184e-07, 2.9234375e-07, 2.590382986848184e-07, 2.54475508143815e-07, 3.426501467147895e-07, 3.457625003386618e-07, 3.703125e-07, 3.457625003386618e-07, 3.3505558330215105e-07, 4.541796875e-07, 4.541796875e-07, 4.541796875e-07, 4.541796875e-07, 4.541796875e-07, 2.0762308743148446e-07, 2.322654286156073e-07, 2.7390625e-07, 2.322654286156073e-07, 2.070475377553106e-07, 2.9332876338609885e-07, 2.417382720017067e-07, 3.234375e-07, 2.417382720017067e-07, 2.860029169934348e-07, 4.254384101941748e-07, 4.254384101941748e-07, 4.254384101941748e-07, 4.254384101941748e-07, 4.254384101941748e-07, 2.3689765235395267e-07, 2.4581024857615975e-07, 2.8390625e-07, 2.4581024857615975e-07, 2.369547124631055e-07, 2.943271193985076e-07, 3.1003329143992705e-07, 3.234375e-07, 3.1003329143992705e-07, 3.1243553632531377e-07, 4.08515625e-07, 4.08515625e-07, 4.08515625e-07, 4.08515625e-07, 4.08515625e-07, 2.91484557969743e-07, 2.8390905867747175e-07, 3.1078125e-07, 2.8390905867747175e-07, 2.8058814534344586e-07, 3.350092340562496e-07, 3.304823303621266e-07, 3.609375e-07, 3.304823303621266e-07, 3.540892271949752e-07, 3.904410362656196e-07, 3.935314942802329e-07, 3.828515625e-07, 3.935314942802329e-07, 3.869089363479253e-07, 3.12681660899654e-07, 3.12681660899654e-07, 3.12681660899654e-07, 3.12681660899654e-07, 3.12681660899654e-07, 3.683679354094579e-07, 3.683679354094579e-07, 3.683679354094579e-07, 3.683679354094579e-07, 3.683679354094579e-07, 4.544298457087753e-07, 4.627210311835578e-07, 4.544298457087753e-07, 4.544298457087753e-07, 4.627210311835578e-07, 2.579065743944637e-07, 2.579065743944637e-07, 2.579065743944637e-07, 2.579065743944637e-07, 2.579065743944637e-07, 2.583621683967705e-07, 2.583621683967705e-07, 2.583621683967705e-07, 2.583621683967705e-07, 2.583621683967705e-07, 4.295338640043173e-07, 4.295338640043173e-07, 4.295338640043173e-07, 4.295338640043173e-07, 4.295338640043173e-07, 2.7261245674740485e-07, 2.7261245674740485e-07, 2.7261245674740485e-07, 2.7261245674740485e-07, 2.7261245674740485e-07, 3.30161476355248e-07, 3.30161476355248e-07, 3.30161476355248e-07, 3.30161476355248e-07, 3.30161476355248e-07, ...]\n[right]: [2.4884734891579426e-07, 2.590382986848184e-07, 2.9234375e-07, 2.590382986703476e-07, 2.54475334173851e-07, 3.426501467149565e-07, 3.457625003386618e-07, 3.703125e-07, 3.4576250034201254e-07, 3.350555539325568e-07, 4.541796875e-07, 4.541796875e-07, 4.541796875e-07, 4.541796875e-07, 4.541796875e-07, 2.0762308743142938e-07, 2.322654286156073e-07, 2.7390625e-07, 2.3226542860837518e-07, 2.0704762874504705e-07, 2.933287633860538e-07, 2.417382720017067e-07, 3.234375e-07, 2.4173827200243053e-07, 2.860030804588133e-07, 4.254384101941748e-07, 4.254384101941748e-07, 4.254384101941748e-07, 4.254384101941748e-07, 4.254384101941748e-07, 2.368976523541569e-07, 2.4581024857615975e-07, 2.8390625e-07, 2.458102485722214e-07, 2.369548844791027e-07, 2.943271193985269e-07, 3.1003329143992705e-07, 3.234375e-07, 3.1003329143580894e-07, 3.124356997371842e-07, 4.08515625e-07, 4.08515625e-07, 4.08515625e-07, 4.08515625e-07, 4.08515625e-07, 2.914845579689388e-07, 2.8390905867747175e-07, 3.1078125e-07, 2.8390905869023786e-07, 2.80587844262372e-07, 3.350092340556057e-07, 3.304823303621266e-07, 3.609375e-07, 3.304823303500541e-07, 3.540894422577617e-07, 3.904410362653617e-07, 3.935314942802329e-07, 3.828515625e-07, 3.935314942753634e-07, 3.869089294769988e-07, 3.12681660899654e-07, 3.12681660899654e-07, 3.12681660899654e-07, 3.12681660899654e-07, 3.12681660899654e-07, 3.683679354094579e-07, 3.683679354094579e-07, 3.683679354094579e-07, 3.683679354094579e-07, 3.683679354094579e-07, 4.544298457087753e-07, 4.627210311835578e-07, 4.544298457087753e-07, 4.544298457087753e-07, 4.627210311835578e-07, 2.579065743944637e-07, 2.579065743944637e-07, 2.579065743944637e-07, 2.579065743944637e-07, 2.579065743944637e-07, 2.583621683967705e-07, 2.583621683967705e-07, 2.583621683967705e-07, 2.583621683967705e-07, 2.583621683967705e-07, 4.295338640043173e-07, 4.295338640043173e-07, 4.295338640043173e-07, 4.295338640043173e-07, 4.295338640043173e-07, 2.7261245674740485e-07, 2.7261245674740485e-07, 2.7261245674740485e-07, 2.7261245674740485e-07, 2.7261245674740485e-07, 3.30161476355248e-07, 3.30161476355248e-07, 3.30161476355248e-07, 3.30161476355248e-07, 3.30161476355248e-07, ...]\nAt positional index 124, first diff: 1.1665598904872067e-07 != 1.166581905272403e-07",
+  "pdf_pages": null,
+  "master": {
+    "python": "3.12.10",
+    "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+    "seconds": 919.1576461791992,
+    "pdf_compiled": true,
+    "source_reextracted": false
+  },
+  "comparison_scope": "CSV rtol=1e-10/atol=1e-12; exact generated table/macro/definition text; exact quota event/model constants, cold interval and dual validation, equal outward display thresholds with actual upper bounds below them; successful cold PDF compilation with title/author. Solver tangent candidates, runtime metadata, PNG/PDF bytes and cross-platform PDF-text identity are excluded.",
+  "artifact_verification": {
+    "artifact_id": 11148788075,
+    "bytes": 2539051,
+    "downloaded_archive_sha256": "66f14c506ad7e980aaaafc44dfe640cc626d7bf32fb81e9eb1d13b18ce456065",
+    "GitHub_digest_sha256": "66f14c506ad7e980aaaafc44dfe640cc626d7bf32fb81e9eb1d13b18ce456065",
+    "expires_at": "2026-10-31T08:20:29Z",
+    "downloaded_pdf_sha256": "952d550caa2d33f470f4a5a36bbaf9ed4432a1be0e7c60bd3064bcfcf3efdb90",
+    "actual_pdf_pages": 38,
+    "scope": "Actual failed-run artifact downloaded and hash matched. PDF compiled during completed full master, 38 pages/title/author inspected afterward. Original failed receipt retained unchanged above; pdf_pages null reflects early comparison abort, not failed compilation. No independent replication or complete hosted comparison pass is asserted."
+  },
+  "post_failure_diagnosis": {
+    "scope": "Author-side read-only comparison of downloaded completed hosted outputs, not a rerun or replacement for original failure.",
+    "numeric_csv_tolerance": {
+      "rtol": 1e-10,
+      "atol": 1e-12
+    },
+    "differences": [
+      {
+        "file": "designed_decisions.csv",
+        "column": "maximum_rational_policy_rounding_bound",
+        "bad": 5,
+        "max_abs": 3.239841353204401e-12,
+        "first": 124
+      }
+    ],
+    "retained_generated_tables_exactly_match": true,
+    "rounding_upward_1e-9_displays_match": {
+      "passed": 720,
+      "total": 720
+    },
+    "analytic_rounding_ceiling": "1/(2*1000000) = 0.0000005",
+    "correction": "Only this optimizer-sensitive maximum realized rounding diagnostic receives an upward display comparison and separate universal ceiling; all other CSV tolerances and exact per-draw checks remain unchanged."
+  }
+}

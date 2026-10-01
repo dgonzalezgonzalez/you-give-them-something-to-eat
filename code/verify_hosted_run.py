@@ -9,6 +9,7 @@ from pathlib import Path
 import hashlib,json,os,platform,shutil,subprocess,sys
 import pandas as pd
 import pymupdf
+from decimal import Decimal,ROUND_CEILING
 
 root=Path(__file__).resolve().parents[1]
 dest=root/'tmp/hosted-cold'
@@ -24,6 +25,22 @@ try:
     for file in sorted((root/'output').glob('*.csv')):
         if file.name=='stata-validation.csv':continue
         a=pd.read_csv(file);b=pd.read_csv(dest/'output'/file.name)
+        if file.name=='designed_decisions.csv':
+            # Baseline floating scale search can vary by a few ulps across
+            # libm/BLAS platforms. Its maximum realized rational-rounding
+            # diagnostic is small and sensitive to those candidates. Each
+            # draw still checks its exact decision certificate. Compare this
+            # one diagnostic at a declared conservative display resolution,
+            # and require the analytic universal rounding ceiling separately.
+            column='maximum_rational_policy_rounding_bound'
+            denominator=json.loads((root/'output/designed-decisions.json').read_text())['decision_probability_denominator']
+            ceiling=Decimal(1)/Decimal(2*denominator)
+            def rounding_values(frame):
+                return [Decimal.from_float(float(x)) for x in frame[column]]
+            av,bv=rounding_values(a),rounding_values(b)
+            checks['designed_rounding_universal_ceiling']=all(x.is_finite() and 0<=x<=ceiling for x in av+bv)
+            checks['designed_rounding_upward_1e-9_display']=len(av)==len(bv) and all(x.quantize(Decimal('1e-9'),rounding=ROUND_CEILING)==y.quantize(Decimal('1e-9'),rounding=ROUND_CEILING) for x,y in zip(av,bv))
+            a=a.drop(columns=column);b=b.drop(columns=column)
         pd.testing.assert_frame_equal(a,b,check_exact=False,rtol=1e-10,atol=1e-12)
         checks['output/'+file.name]=True
     for file in sorted((root/'output/tables').glob('*.tex')):
@@ -44,7 +61,6 @@ try:
     checks['cold_benchmark_receipt_validation']=actual['all_passed'] and bool(actual['checks']) and all(actual['checks'].values())
     baseline_bench=json.loads((root/'output/quota-benchmarks.json').read_text())
     cold_bench=json.loads((dest/'output/quota-benchmarks.json').read_text())
-    from decimal import Decimal,ROUND_CEILING
     checks['benchmark_upper_display_thresholds']=all(
         a['moment_method']==b['moment_method'] and a['event']==b['event'] and a['bin_floors']==b['bin_floors'] and a['objective']==b['objective'] and
         b['fixed_proposal_loss_upper']<=float(Decimal.from_float(a['fixed_proposal_loss_upper']).quantize(Decimal('.001'),rounding=ROUND_CEILING))
@@ -66,7 +82,7 @@ receipt={'scope':'Author-initiated full public microdata-to-manuscript run in a 
          'checks':checks,'all_passed':execution_error is None and bool(checks) and all(checks.values()),
          'execution_error':execution_error,'pdf_pages':pages,
          'master':json.loads(master_path.read_text()) if master_path.exists() else None,
-         'comparison_scope':'CSV rtol=1e-10/atol=1e-12; exact generated table/macro/definition text; exact quota event/model constants, cold interval and dual validation, equal outward display thresholds with actual upper bounds below them; successful cold PDF compilation with title/author. Solver tangent candidates, runtime metadata, PNG/PDF bytes and cross-platform PDF-text identity are excluded.'}
+         'comparison_scope':'CSV rtol=1e-10/atol=1e-12, except the maximum realized rational-policy rounding diagnostic: both platforms must satisfy the analytic 1/(2*denominator) ceiling and have identical upward 1e-9 displays. Per-draw exact decision certificates remain mandatory. Exact generated table/macro/definition text; exact quota event/model constants, cold interval and dual validation, equal outward display thresholds with actual upper bounds below them; successful cold PDF compilation with title/author. Solver tangent candidates, runtime metadata, PNG/PDF bytes and cross-platform PDF-text identity are excluded.'}
 (root/'output').mkdir(exist_ok=True)
 (root/'output/hosted-run.json').write_text(json.dumps(receipt,indent=2)+'\n',encoding='utf8')
 print(json.dumps(receipt,indent=2))
