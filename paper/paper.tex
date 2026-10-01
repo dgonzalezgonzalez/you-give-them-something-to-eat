@@ -19,6 +19,7 @@
 \input{distribution-results.tex}
 \input{quota-comparison-results.tex}
 \input{community-results.tex}
+\input{population-revision-results.tex}
 \onehalfspacing
 \setlength{\emergencystretch}{1em}
 \title{You give them something to eat:\\Whose Diets Count in the Cash Benchmark?}
@@ -41,6 +42,8 @@ A cash benchmark for food-security aid requires a choice about whose diets count
 I examine these choices in Rwanda's Gikuriro program, implemented by Catholic Relief Services (CRS) and SNV with USAID support. Nutrition and health activities, agricultural support, saving groups, and water, sanitation, and hygiene interventions formed a single package aimed at maternal and child nutrition. The experiment of \citet{mcintosh2024} assigned 248 villages to Gikuriro, control, or four GiveDirectly cash amounts. The title recalls Mark 6:37. Religious affiliation was not randomized, and the bundled intervention supplies no separate variation identifying a Catholic delivery mechanism.
 
 The parent study already develops equal-cost cash benchmarking and the coverage--intensity tradeoff. Its earlier manuscript also estimates broader-population effects and discusses welfare weights across groups \citep{mcintosh2020}; \citet{ozler2018} examines the same population question. I use that existing variation to describe a cash-package frontier under stated weights, retain missing-diet uncertainty, and distinguish fitted comparisons from protected allocation losses. This is a reanalysis of the same experiment. For mean diet, the Gikuriro--control/large lottery contrast remains exactly the parent cost-effectiveness comparison multiplied by Gikuriro's cost, with the same studentized statistic.
+
+The incremental allocation question is whether a benchmark fitted through all cash amounts selects the same intervention as a menu retaining each observed package. A corrected-release population crosswalk reproduces the earlier pooled dietary coefficients at published rounding. Splitting the three small cash arms changes a pooled effect near zero into a positive upper-cash estimate and negative lower and middle estimates. On the same source-score sample, a reconstruction of the parent's population cost-linear specification favors Gikuriro over interpolated cash by \PopulationLinearGKDifference\ groups, while its unrestricted upper-cash comparison is \PopulationSourceGKUpper. Both are uncertain fitted comparisons. This contrast identifies how the benchmark changes; it does not establish that the small-arm response is nonlinear in the population or that upper cash is the causal optimum.
 
 At the source's expected budget of \$\GikuriroCost\ per eligible household, a lower/large lottery offers cash in every assigned village and reserves the large package for \LowerLargeShare\ percent. It has the highest fitted eligible mean. Gikuriro minus this lottery is \CommunityEligibleLowerLarge\ food groups among identified eligible diets, compared with \CommunityIneligibleLowerLarge\ among identified baseline-ineligible diets. The fixed baseline-weight aggregate gives \CommunityAggregateLowerLarge. That reversal does not make Gikuriro the fitted winner: upper cash exceeds it by approximately 0.406 groups in the aggregate. Baseline eligibility is the survey definition, not verified receipt; the providers could treat households outside that definition. These results cannot isolate a spillover channel.
 
@@ -127,6 +130,8 @@ I use the corrected CC BY 4.0 release of \citet{data2025}, DOI \href{https://doi
 
 The population extension fixes the 995 released baseline-ineligible households alongside the eligible cohort. The source expansion weights match stratum village-frame counts divided by released sample counts within floating precision; their eligible aggregate share is \CommunityEligibleShare percent. This is a released-frame convention, distinct from the providers' receipt shares and national representation. The household extract contains 5,506 rows. There are \BaselineN\ baseline eligible households, compared with 1,794 in the original paper, and \EndlineN\ eligible endline panel households. Complete endline food modules identify \DietN\ integer diets. Item-level information identifies two further diets, giving \IdentifiedDietN. Table \ref{tab:design} reports the released assignment and initial complete-module sample; Table \ref{tab:intervalcounts} accounts for the full baseline cohort.
 
+The two cost columns have different denominators. Eligible costs apply the parent's participation adjustment: beneficiary cost times the non-averted share plus beneficiary cost times the avertable share and eligible compliance. For Gikuriro this gives approximately \$124.488. The population column reports average spending per village household, including participation outside survey eligibility. Cash entries equal beneficiary cost times population participation up to rounding. Gikuriro's \$28.021 population entry exceeds that product by \$1.482; the numeric workbook contains no formula identifying this additional accounting. I retain the published value and disclose that unresolved component. Multiplying eligible cost by the baseline eligible share instead gives \$14.405, an invalid conversion that would omit other coverage and cost components. Each column defines a hypothetical trial-delivery menu with its own budget. Neither identifies marginal costs for a different mixed rollout, verified receipt in this analysis frame, or a hard realized spending cap.
+
 \begin{table}[t]
 \centering\caption{Village assignment, household observation, and provider costs}\label{tab:design}
 \resizebox{\textwidth}{!}{\input{../output/tables/design.tex}}
@@ -178,6 +183,22 @@ For exploratory standard errors, common block ratio scores retain covariance acr
 
 \section{Results: diet comparisons and feasible allocations}
 
+\subsection{From the parent's population benchmark to observed packages}
+
+Table \ref{tab:populationbridge} separates pooling, observed-score selection and controls on the corrected release. With source scores, the parent's released selected controls, block effects and an eligibility indicator, the pooled population estimator gives Gikuriro 0.125, small cash 0.001 and large cash $-0.276$ groups relative to control, on 2,718 households. These reproduce the December 2020 Table VIII rounding of 0.12, 0.00 and $-0.28$, and its sample count. They do not verify an unavailable historical population program, covariate selection or all original table entries. The current released controls are held fixed throughout this first comparison.
+
+\begin{table}[t]
+\centering\caption{Parent-style population estimator bridge on the corrected release}\label{tab:populationbridge}
+\resizebox{\textwidth}{!}{\input{../output/tables/population_parent_bridge.tex}}
+\begin{minipage}{\textwidth}\footnotesize\emph{Notes:} Food-group effects relative to control. All rows pool eligibility strata with source weights, block effects and an eligibility indicator. Source controls are the released fixed diet covariate list; selection is not rerun. The pooled row repeats its common small-cash coefficient in three columns. Common-sample rows retain households with both a source score and identified item score. The seven-row ladder is descriptive and specified after review, not a prespecified specification search or robustness acceptance rule.\end{minipage}
+\end{table}
+
+Splitting cash changes upper to 0.294, lower to $-0.195$ and middle to $-0.113$, with the same source score and 2,718 households. Restricting to the 2,692 households with an identified item score changes those estimates further; replacing source scores on this common sample makes no additional change. Thus this score bridge concerns which observations remain, rather than altering observed scores for retained households. The complete-module restriction loses four more identified diets. The pooled assignment-weighted respondent means and baseline-share averages of stratum ratios differ by at most 0.014 groups across arms. This small numerical difference does not make the estimands identical: fixed group weights value each stratum using the baseline frame, while pooled ratios weight its package-specific observed composition.
+
+I also reconstruct the population cost-linear specification described in the earlier paper, centered at the published Gikuriro population cost. Its Gikuriro-minus-cost-equivalent cash coefficient is \PopulationLinearGKDifference\ (village SE \PopulationLinearGKSE). The same source sample with separate cash arms instead gives Gikuriro minus upper \PopulationSourceGKUpper. Upper costs \$26.692 per village household and is feasible at the \$28.021 budget. The difference arises before replacing scores or changing aggregation. The historical population cost-benchmark program is unavailable in the corrected release; this numerical reconstruction is explicitly distinct from a historical execution claim.
+
+This distinction has a simple economic source. If each stratum's cash-package mean is affine in provider cost, every cash lottery exhausting a fixed budget has the same mean within that stratum. Changing population priorities then cannot distinguish those lotteries. A fitted frontier over different budget-exhausting lotteries consequently uses deviations from that affine response, together with options that leave funds unspent. Keeping observed packages permits those deviations; pooling or a cost-linear fit can remove them. This accounting implication supplies no test that the deviations reflect causal response rather than selection and sampling error. The uncertainty comparisons below address that limit directly.
+
 \subsection{Whose diets enter the benchmark?}
 
 Table \ref{tab:communitycomparison} reports Gikuriro minus two cash comparators. The lower/large contrast changes from \CommunityEligibleLowerLarge\ among identified eligible diets to \CommunityIneligibleLowerLarge\ among identified baseline-ineligible diets. Its weighted aggregate is \CommunityAggregateLowerLarge. Estimated missing-diet endpoints in the latter two rows are positive, but contain sampling error and are not confidence limits. Upper cash gives the adverse comparison: Gikuriro minus upper is \CommunityAggregateUpper\ in the aggregate and is negative in both fitted strata. Thus adding the broader sample changes the relevant cash benchmark without producing a fitted Gikuriro optimum.
@@ -190,13 +211,37 @@ Table \ref{tab:communitycomparison} reports Gikuriro minus two cash comparators.
 
 Table \ref{tab:communityfrontier} reports the fitted optimum across every feasible vertex as $\theta$ varies. At the expansion-weight share $\tau=\CommunityEligibleShare$ percent, upper cash is preferred under both published cost columns and both regression specifications. Strong priority for eligible diets instead selects lower/large cash. The exact rational roots stored in the replication files solve crossings of fitted lines; they do not give precise causal preference thresholds. Regression adjustment changes the upper-to-upper/large switch from 84.4 to 77.3 percent under eligible costs. The 64-test exploratory Holm family retains all non-Gikuriro comparisons across two strata, two specifications and both cost conventions. For the ineligible baseline-adjusted lower/large comparison, adjusted $p=\CommunityIneligibleAncovaHolm$. The full file reports every estimate and adjustment.
 
+Opposite subgroup signs alone do not test a difference. Table \ref{tab:crossstratum} estimates ineligible minus eligible contrasts using shared scores across strata and arms. For Gikuriro minus lower/large, the block-ratio difference is \CrossRatioEstimate\ groups with Holm $p=\CrossRatioHolm$. Baseline ANCOVA gives \CrossANCOVAEstimate\ with adjusted $p=\CrossANCOVAHolm$. Separate stratum CR1 corrections are retained and their common village indexing supplies cross-equation covariance; the working $t$ reference uses the smaller stratum village degrees of freedom. The regression family includes all eight comparators, two cost conventions and both specifications (32 tests); the distinct ratio family has 16 tests and retains its documented approximation failures. Neither tests an identified full-baseline reversal or isolates a receipt mechanism.
+
+\begin{table}[t]
+\centering\caption{Direct cross-stratum differences with shared covariance}\label{tab:crossstratum}
+\resizebox{\textwidth}{!}{\input{../output/tables/population_cross_stratum.tex}}
+\begin{minipage}{\textwidth}\footnotesize\emph{Notes:} Ineligible minus eligible Gikuriro--cash contrasts under eligible costs. Joint SEs retain cross-stratum covariance. Holm adjustment uses the full separate 16-test ratio or 32-test regression family, including both cost menus. All tests are exploratory and specified after review; observed-diet selection remains. Ratio inference uses 21 block degrees of freedom and has no validated nominal coverage. Village CR1 inference is a working approximation.\end{minipage}
+\end{table}
+
+The allocation conclusion also needs comparisons within cash. Table \ref{tab:cashuncertainty} reports upper minus lower/large at eligible and aggregate weights. The aggregate ratio difference is 0.850 groups, but its Holm $p$ is 0.122 across all 224 ratio cash comparisons. Baseline ANCOVA reduces it to 0.522 and its adjusted $p$ is one. Block WLS gives a more favorable adjusted comparison, which the table retains. The 448-test regression family covers all 28 unordered cash/control-vertex pairs, both cost conventions, both specifications, and eligible, ineligible, aggregate and cross-stratum objectives. These families differ from the Gikuriro tests and from the finite events. No single favorable row certifies a cash winner or a population-weight switch.
+
+\begin{table}[t]
+\centering\caption{Sampling sensitivity of the cash frontier}\label{tab:cashuncertainty}
+\resizebox{\textwidth}{!}{\input{../output/tables/population_cash_uncertainty.tex}}
+\begin{minipage}{\textwidth}\footnotesize\emph{Notes:} Upper minus lower/large cash, food groups, under eligible costs. Holm adjustments include every cash/control-vertex pair and the four stated population objectives under both source cost conventions: 224 ratio tests and 448 regression tests. Selected rows illustrate the frontier; every contrast is in the package. Displayed pointwise $p$ values rounded to zero are positive. These tests retain selection, approximation and post-review specification limits and do not form confidence sets for frontier crossings.\end{minipage}
+\end{table}
+
 \begin{table}[t]
 \centering\caption{Fitted cash frontier over the eligible welfare share}\label{tab:communityfrontier}
 \input{../output/tables/community_frontiers.tex}
 \begin{minipage}{\textwidth}\footnotesize\emph{Notes:} Switches are percent total eligible welfare weight. From zero to the first switch, upper cash is fitted best; then upper/large; beyond the second switch, lower/large. All nine vertices, including Gikuriro, are compared. Ratios use identified follow-up diets from fixed baseline strata. WLS and ANCOVA restrict to identified endline panel diets; village CR1 inference and baseline imputation are separate from block ratios. Common within-stratum control levels cancel from rankings. Costs use each source column's own Gikuriro budget. Fitted switches have sampling and missingness uncertainty.\end{minipage}
 \end{table}
 
-To examine what these fits can establish for all baseline diets, I construct separate simultaneous events for both strata. The classical event protects 36 primitives: an identified-diet ratio and two missing-item endpoints for each of six arms in two strata. The mean-only quota event instead protects 24 one-sided endpoint tests, each with threshold 480, using baseline-only moment scales. Each event has conditional failure probability at most 0.05 under the stated law. Assigned item intervals supply additional deterministic bounds. Neither event is intersected with another 95 percent construction, and the smaller realized certificate is not selected as a jointly protected bound. Appendix Table \ref{tab:communitybounds} reports both cost conventions and eligible, aggregate and uncertain-weight objectives.
+To examine what these fits can establish for all baseline diets, I construct separate simultaneous events for both strata. The classical event protects 36 primitives: an identified-diet ratio and two missing-item endpoints for each of six arms in two strata. The mean-only quota event instead protects 24 one-sided endpoint tests, each with threshold 480, using baseline-only moment scales. Each event has conditional failure probability at most 0.05 under the stated law. Assigned item intervals supply additional deterministic bounds. Neither event is intersected with another 95 percent construction, and the smaller realized certificate is not selected as a jointly protected bound. Table \ref{tab:communitybounds} reports both cost conventions and eligible, aggregate and uncertain-weight objectives.
+
+\begin{table}[t]
+\centering\caption{Regional regret brackets across population objectives}\label{tab:communitybounds}
+\resizebox{\textwidth}{!}{\input{../output/tables/community_regional_bounds.tex}}
+\begin{minipage}{\textwidth}\footnotesize\emph{Notes:} Food groups. Each bracket rounds its exact feasible lower witness downward and upper witness upward to three decimals. Exact optimization gaps are below $10^{-8}$ groups. Classical boxes use their standalone 36-primitive conditional event; quota mean boxes use their separate 24 one-sided tests with cap 480. Both retain factual item intervals. Population weighting does not change menus within a cost convention. All-weights chooses one fixed allocation against every $\theta\in[0,1]$. Values concern the defined outer games, not actual regret, statistically sharp means, attained household populations or minimax sampling risk. The older eligible-only distributional certificates have different information and events.\end{minipage}
+\end{table}
+
+Both mean boxes admit all six arm means equal to five in both strata. Every feasible allocation can therefore tie under either event: neither construction certifies a unique frontier winner or preference switch. This is a limitation of these outer sets, rather than proof that the experiment can never rank packages.
 
 The quota mean-box regional upper bounds are \CommunityEligibleQuotaUpper\ groups for eligible-only weight, \CommunityAggregateQuotaUpper\ for baseline aggregation, and \CommunityUnknownQuotaUpper\ for unrestricted population weights under the original costs. The last asks whether one fixed allocation can protect every stated $\theta$, rather than estimating a donor's priority. Exact feasible rational witnesses leave optimization gaps below $10^{-8}$ groups in all twelve games. Their broad values concern those boxes: they do not prove that no stronger valid analysis can rank the interventions. The older eligible-only shared distributional region below has different protected information and a separate event, so its smaller bound is not a population result.
 
@@ -207,7 +252,7 @@ The fitted aggregation averages stratum identified-diet ratios with baseline gro
 Large cash has a higher observed mean than control. The initial ANCOVA estimate is \LargeDietEstimate\ groups, and the reconstructed parent specification reproduces the original paper's published rounding (Appendix Table \ref{tab:crosswalk}). That is an assignment comparison among measured outcomes. In the full weighted baseline sample, the item-informed estimated region for large cash minus control is [\LargeIdentificationLo, \LargeIdentificationHi] groups. Its positive sample endpoints are consistent with a full-baseline improvement, but the finite conditional envelope [\LargeFiniteLo, \LargeFiniteHi] is wide and includes zero. I consequently do not claim an established positive full-baseline effect from these bounds.
 
 \begin{table}[t]
-\centering\caption{Mean dietary comparisons for the weighted baseline sample}\label{tab:populationbounds}
+\centering\caption{Mean dietary comparisons for the eligible weighted baseline sample}\label{tab:populationbounds}
 \resizebox{\textwidth}{!}{\input{../output/tables/decision_bounds.tex}}
 \begin{minipage}{\textwidth}\footnotesize\emph{Notes:} Units are food groups. Positive values favor the first policy. ID columns are estimated missing-diet endpoint regions, not confidence limits. Approximate columns are the exploratory block endpoint bands, which failed stress diagnostics. Finite columns derive from the simultaneous 276-primitive conditional-assignment family. Large cash is unaffordable as a pure equal-budget policy, so its direct comparison is not included in the nine-policy multiplier family; no such approximate band is invented.\end{minipage}
 \end{table}
@@ -221,7 +266,7 @@ One common diet distribution also permits comparisons across every survival thre
 Restricting the target to eligible households, Table \ref{tab:allocation} separates diversification from information learned about diets. Support and costs alone yield \SupportMeanLoss\ groups; assigned outcome consistency gives \LogicalMeanLoss. Classical protected survival and shortfall information projected into a common distribution region gives \TightMeanLoss. The separate shared quota event gives \QuotaMeanLoss. These are broad conditional bounds, even though the quota regional optimum is bracketed within \QuotaRegionalMeanGap\ groups. Its near-optimal numerical allocation leaves the statistical and missing-diet uncertainty consequential.
 
 \begin{table}[t]
-\centering\caption{Diversification and incremental outcome information}\label{tab:allocation}
+\centering\caption{Eligible-only diversification and incremental outcome information}\label{tab:allocation}
 \input{../output/tables/information_benchmarks.tex}
 \begin{minipage}{\textwidth}\footnotesize\emph{Notes:} Same original-budget comparator menu and full weighted baseline target. Support-only uses no outcomes; consistency uses assigned item intervals. The first three finite rows inherit one 276-primitive event. The quota row uses a separate 276-term conditional event and verifies a numerical allocation proposal, rounding its upper bounds upward. Its exact minimax optimum is not claimed. Mean loss is in groups; shortfall loss is on a unit-range objective. No joint 95 percent coverage across the separate procedures is asserted.\end{minipage}
 \end{table}
@@ -491,7 +536,7 @@ The quota mixture gives a verified mean-loss bound of \QuotaMeanLoss\ and a six-
 \end{figure}
 
 \begin{table}[t]
-\centering\caption{Diversified allocations by information region}\label{tab:shares}
+\centering\caption{Eligible-only allocations by information region}\label{tab:shares}
 \resizebox{\textwidth}{!}{\input{../output/tables/distribution_allocations.tex}}
 \begin{minipage}{\textwidth}\footnotesize\emph{Notes:} Percent village shares; expected USD per eligible household. Support-only is a no-outcome benchmark. Other rows use the weighted baseline target. The first four rows minimize their specified box bounds; the quota row is a verified numerical proposal. The objective leaves unspent resources unvalued. None is an operational recommendation or an estimate of household preferences.\end{minipage}
 \end{table}
@@ -581,16 +626,6 @@ $1/(f-\underline f)=\beta R/(Rs+y)$. Strict concavity gives the unique interior 
 
 \clearpage
 \clearpage
-\section{Population mean-box uncertainty}
-
-Table \ref{tab:communitybounds} compares the two mean events at fixed eligible, aggregate and unrestricted population weights. The cost convention changes the menu but does not recover a rollout cost or an institutional priority. Each column retains its own conditional coverage statement.
-
-\begin{table}[!h]
-\centering\caption{Regional regret brackets across population objectives}\label{tab:communitybounds}
-\resizebox{\textwidth}{!}{\input{../output/tables/community_regional_bounds.tex}}
-\begin{minipage}{\textwidth}\footnotesize\emph{Notes:} Food groups. Each bracket rounds its exact feasible lower witness downward and upper witness upward to three decimals. Exact optimization gaps are below $10^{-8}$ groups. Classical boxes use their standalone 36-primitive conditional event; quota mean boxes use their separate 24 one-sided tests with cap 480. Both retain factual item intervals. Population weighting does not change menus within a cost convention. All-weights chooses one fixed allocation against every $\theta\in[0,1]$. Values concern the defined outer games, not actual regret, statistically sharp means, attained household populations or minimax sampling risk. The older eligible-only distributional certificates have different information and events.\end{minipage}
-\end{table}
-
 \section{Regression crosswalk and supplementary estimates}
 
 \begin{table}[p]

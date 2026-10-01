@@ -25,31 +25,31 @@
       },
       "quota_timing": {
         "seconds_all_three_runs": [
-          0.014136099999632279,
-          0.013886400000046706,
-          0.011988300000211893
+          0.011219300002267119,
+          0.010756799998489441,
+          0.011741299997083843
         ],
-        "median_seconds": 0.013886400000046706
+        "median_seconds": 0.011219300002267119
       },
       "weight_sensitive_hybrid_upper_log_moment": 0.04958842975206613,
       "weight_sensitive_hybrid_timing": {
         "seconds_all_three_runs": [
-          0.011299000000235537,
-          0.011575300000004063,
-          0.009148900000127469
+          0.010249799997836817,
+          0.009015600000566337,
+          0.010202200002822792
         ],
-        "median_seconds": 0.011299000000235537
+        "median_seconds": 0.010202200002822792
       },
       "implicit_population_subset_pairs": 901120,
       "enumerated_reference": {
         "upper_log_moment": 0.04892273001914338,
         "directed_difference": 4.9911463850804694e-14,
         "seconds_all_three_runs": [
-          0.06542649999983041,
-          0.06684130000030564,
-          0.06562710000025618
+          0.05000859999927343,
+          0.05689940000229399,
+          0.06438060000073165
         ],
-        "median_seconds": 0.06562710000025618
+        "median_seconds": 0.05689940000229399
       },
       "enumeration_guard": "Exhaustive reference is timed only if 2**n * choose(n,k) <= 4,000,000; skipped cases are not attempted or estimated."
     },
@@ -75,31 +75,31 @@
       },
       "quota_timing": {
         "seconds_all_three_runs": [
-          0.01228979999996227,
-          0.011627299999872776,
-          0.010471400000369613
+          0.01070139999865205,
+          0.009714499999972759,
+          0.00877050000053714
         ],
-        "median_seconds": 0.011627299999872776
+        "median_seconds": 0.009714499999972759
       },
       "weight_sensitive_hybrid_upper_log_moment": 0.01762562093179794,
       "weight_sensitive_hybrid_timing": {
         "seconds_all_three_runs": [
-          0.006727299999965908,
-          0.005563600000186852,
-          0.00554599999986749
+          0.004925299999740673,
+          0.005232700001215562,
+          0.00491880000117817
         ],
-        "median_seconds": 0.005563600000186852
+        "median_seconds": 0.004925299999740673
       },
       "implicit_population_subset_pairs": 901120,
       "enumerated_reference": {
         "upper_log_moment": 0.015964649536532392,
         "directed_difference": 4.9529824686089796e-14,
         "seconds_all_three_runs": [
-          0.07405540000036126,
-          0.0754809000000023,
-          0.08176379999986239
+          0.05448940000133007,
+          0.06112860000212095,
+          0.05296199999793316
         ],
-        "median_seconds": 0.0754809000000023
+        "median_seconds": 0.05448940000133007
       },
       "enumeration_guard": "Exhaustive reference is timed only if 2**n * choose(n,k) <= 4,000,000; skipped cases are not attempted or estimated."
     },
@@ -125,31 +125,31 @@
       },
       "quota_timing": {
         "seconds_all_three_runs": [
-          0.012212900000122318,
-          0.012871500000073866,
-          0.013177099999666098
+          0.009723300001496682,
+          0.009999000001698732,
+          0.010639500000252156
         ],
-        "median_seconds": 0.012871500000073866
+        "median_seconds": 0.009999000001698732
       },
       "weight_sensitive_hybrid_upper_log_moment": 0.016995794915762454,
       "weight_sensitive_hybrid_timing": {
         "seconds_all_three_runs": [
-          0.01049879999982295,
-          0.011736499999642547,
-          0.008679600000050414
+          0.007350100000621751,
+          0.007494000001315726,
+          0.007348499999352498
         ],
-        "median_seconds": 0.01049879999982295
+        "median_seconds": 0.007350100000621751
       },
       "implicit_population_subset_pairs": 3784704,
       "enumerated_reference": {
         "upper_log_moment": 0.016357029541988245,
         "directed_difference": 2.058735126819755e-13,
         "seconds_all_three_runs": [
-          0.39019350000035047,
-          0.35366220000014437,
-          0.3462306000001263
+          0.19871689999854425,
+          0.19287220000114758,
+          0.19125850000273203
         ],
-        "median_seconds": 0.35366220000014437
+        "median_seconds": 0.19287220000114758
       },
       "enumeration_guard": "Exhaustive reference is timed only if 2**n * choose(n,k) <= 4,000,000; skipped cases are not attempted or estimated."
     },
@@ -175,31 +175,31 @@
       },
       "quota_timing": {
         "seconds_all_three_runs": [
-          0.01238759999978356,
-          0.011314500000025873,
-          0.016249299999799405
+          0.00929069999983767,
+          0.008357899998372886,
+          0.008791700001893332
         ],
-        "median_seconds": 0.01238759999978356
+        "median_seconds": 0.008791700001893332
       },
       "weight_sensitive_hybrid_upper_log_moment": 0.005541679655224302,
       "weight_sensitive_hybrid_timing": {
         "seconds_all_three_runs": [
-          0.008675200000197947,
-          0.008532099999683851,
-          0.007744699999875593
+          0.004543900002317969,
+          0.0045788000024913345,
+          0.004670099999202648
         ],
-        "median_seconds": 0.008532099999683851
+        "median_seconds": 0.0045788000024913345
       },
       "implicit_population_subset_pairs": 3784704,
       "enumerated_reference": {
         "upper_log_moment": 0.004991688821852572,
         "directed_difference": 2.0604091349740727e-13,
         "seconds_all_three_runs": [
-          0.41848709999976563,
-          0.3871586999998726,
-          0.4290015999999923
+          0.2528407000027073,
+          0.23260920000029728,
+          0.24087209999925108
         ],
-        "median_seconds": 0.41848709999976563
+        "median_seconds": 0.24087209999925108
       },
       "enumeration_guard": "Exhaustive reference is timed only if 2**n * choose(n,k) <= 4,000,000; skipped cases are not attempted or estimated."
     },
@@ -225,20 +225,20 @@
       },
       "quota_timing": {
         "seconds_all_three_runs": [
-          0.10487469999998211,
-          0.08365099999991799,
-          0.09654350000027989
+          0.06727639999735402,
+          0.05523459999676561,
+          0.04411739999704878
         ],
-        "median_seconds": 0.09654350000027989
+        "median_seconds": 0.05523459999676561
       },
       "weight_sensitive_hybrid_upper_log_moment": 0.09448197321744961,
       "weight_sensitive_hybrid_timing": {
         "seconds_all_three_runs": [
-          0.03432389999989027,
-          0.033960100000058446,
-          0.03489099999978862
+          0.017141699998319382,
+          0.01770780000151717,
+          0.018422599998302758
         ],
-        "median_seconds": 0.03432389999989027
+        "median_seconds": 0.01770780000151717
       },
       "implicit_population_subset_pairs": 2258146164736,
       "enumerated_reference": null,
@@ -266,20 +266,20 @@
       },
       "quota_timing": {
         "seconds_all_three_runs": [
-          0.06788490000008096,
-          0.06846049999967363,
-          0.07000779999998485
+          0.03263680000236491,
+          0.033482099999673665,
+          0.0515739999973448
         ],
-        "median_seconds": 0.06846049999967363
+        "median_seconds": 0.033482099999673665
       },
       "weight_sensitive_hybrid_upper_log_moment": 0.019437589726687115,
       "weight_sensitive_hybrid_timing": {
         "seconds_all_three_runs": [
-          0.02161210000031133,
-          0.01982499999985521,
-          0.024147800000264397
+          0.01043760000175098,
+          0.011052699999709148,
+          0.009382100000948412
         ],
-        "median_seconds": 0.02161210000031133
+        "median_seconds": 0.01043760000175098
       },
       "implicit_population_subset_pairs": 2258146164736,
       "enumerated_reference": null,
@@ -307,20 +307,20 @@
       },
       "quota_timing": {
         "seconds_all_three_runs": [
-          0.08873100000027989,
-          0.08869700000013836,
-          0.09495710000010149
+          0.06222749999869848,
+          0.0735337999976764,
+          0.08109540000077686
         ],
-        "median_seconds": 0.08873100000027989
+        "median_seconds": 0.0735337999976764
       },
       "weight_sensitive_hybrid_upper_log_moment": 0.031935670922470835,
       "weight_sensitive_hybrid_timing": {
         "seconds_all_three_runs": [
-          0.03187049999996816,
-          0.030398999999761145,
-          0.030755199999930483
+          0.02802739999970072,
+          0.015493599999899743,
+          0.018058400000882102
         ],
-        "median_seconds": 0.030755199999930483
+        "median_seconds": 0.018058400000882102
       },
       "implicit_population_subset_pairs": 45368209309696,
       "enumerated_reference": null,
@@ -348,20 +348,20 @@
       },
       "quota_timing": {
         "seconds_all_three_runs": [
-          0.07217220000029556,
-          0.06764969999994719,
-          0.07163990000026388
+          0.0373691000022518,
+          0.04511550000097486,
+          0.0394717999988643
         ],
-        "median_seconds": 0.07163990000026388
+        "median_seconds": 0.0394717999988643
       },
       "weight_sensitive_hybrid_upper_log_moment": 0.00614166965549096,
       "weight_sensitive_hybrid_timing": {
         "seconds_all_three_runs": [
-          0.024374600000101054,
-          0.021301000000221393,
-          0.01910459999999148
+          0.01807840000037686,
+          0.022050399998988723,
+          0.00826500000039232
         ],
-        "median_seconds": 0.021301000000221393
+        "median_seconds": 0.01807840000037686
       },
       "implicit_population_subset_pairs": 45368209309696,
       "enumerated_reference": null,
@@ -389,20 +389,20 @@
       },
       "quota_timing": {
         "seconds_all_three_runs": [
-          0.42685260000007474,
-          0.4276415000003908,
-          0.4126556999999593
+          0.32767469999816967,
+          0.28250389999811887,
+          0.25991800000338117
         ],
-        "median_seconds": 0.42685260000007474
+        "median_seconds": 0.28250389999811887
       },
       "weight_sensitive_hybrid_upper_log_moment": 0.18442851920127054,
       "weight_sensitive_hybrid_timing": {
         "seconds_all_three_runs": [
-          0.06926149999981135,
-          0.06324139999969702,
-          0.07108359999983804
+          0.03400659999897471,
+          0.03368209999825922,
+          0.06362769999759621
         ],
-        "median_seconds": 0.06926149999981135
+        "median_seconds": 0.03400659999897471
       },
       "implicit_population_subset_pairs": 19609949116845834798891008,
       "enumerated_reference": null,
@@ -430,20 +430,20 @@
       },
       "quota_timing": {
         "seconds_all_three_runs": [
-          0.280499299999974,
-          0.2908800999998675,
-          0.21812520000003133
+          0.1835326999971585,
+          0.1800489999986894,
+          0.18178619999889634
         ],
-        "median_seconds": 0.280499299999974
+        "median_seconds": 0.18178619999889634
       },
       "weight_sensitive_hybrid_upper_log_moment": 0.023061527316465463,
       "weight_sensitive_hybrid_timing": {
         "seconds_all_three_runs": [
-          0.04292859999986831,
-          0.04281630000014047,
-          0.04116230000045107
+          0.02801069999986794,
+          0.01929569999992964,
+          0.019167999998899177
         ],
-        "median_seconds": 0.04281630000014047
+        "median_seconds": 0.01929569999992964
       },
       "implicit_population_subset_pairs": 19609949116845834798891008,
       "enumerated_reference": null,
@@ -471,20 +471,20 @@
       },
       "quota_timing": {
         "seconds_all_three_runs": [
-          0.5342760000003182,
-          0.4781116999997721,
-          0.48137110000016037
+          0.2823133999991114,
+          0.3419071999996959,
+          0.29598020000048564
         ],
-        "median_seconds": 0.48137110000016037
+        "median_seconds": 0.29598020000048564
       },
       "weight_sensitive_hybrid_upper_log_moment": 0.061905370279675395,
       "weight_sensitive_hybrid_timing": {
         "seconds_all_three_runs": [
-          0.061682200000177545,
-          0.06393409999964206,
-          0.051300199999786855
+          0.051315799999429146,
+          0.046634400001494214,
+          0.04469690000041737
         ],
-        "median_seconds": 0.061682200000177545
+        "median_seconds": 0.046634400001494214
       },
       "implicit_population_subset_pairs": 9076893495675037148617113600,
       "enumerated_reference": null,
@@ -512,20 +512,20 @@
       },
       "quota_timing": {
         "seconds_all_three_runs": [
-          0.3876350000000457,
-          0.4034096000000318,
-          0.3812447999998767
+          0.32502910000039265,
+          0.2506265000010899,
+          0.2951199000017368
         ],
-        "median_seconds": 0.3876350000000457
+        "median_seconds": 0.2951199000017368
       },
       "weight_sensitive_hybrid_upper_log_moment": 0.007341649656024278,
       "weight_sensitive_hybrid_timing": {
         "seconds_all_three_runs": [
-          0.040829699999903823,
-          0.037006300000030024,
-          0.03567400000019916
+          0.01810939999995753,
+          0.030649200001789723,
+          0.02977129999999306
         ],
-        "median_seconds": 0.037006300000030024
+        "median_seconds": 0.02977129999999306
       },
       "implicit_population_subset_pairs": 9076893495675037148617113600,
       "enumerated_reference": null,
@@ -553,20 +553,20 @@
       },
       "quota_timing": {
         "seconds_all_three_runs": [
-          2.24531879999995,
-          2.0994682999998986,
-          2.1223119000001134
+          1.4357945999981894,
+          1.613276500000211,
+          1.4406698999991931
         ],
-        "median_seconds": 2.1223119000001134
+        "median_seconds": 1.4406698999991931
       },
       "weight_sensitive_hybrid_upper_log_moment": 0.3644017636842423,
       "weight_sensitive_hybrid_timing": {
         "seconds_all_three_runs": [
-          0.12272239999992962,
-          0.1370894000001499,
-          0.11839140000029147
+          0.087949299999309,
+          0.08480309999868041,
+          0.08811939999941387
         ],
-        "median_seconds": 0.12272239999992962
+        "median_seconds": 0.087949299999309
       },
       "implicit_population_subset_pairs": 2067991183581497889919346102861787651673949837721600,
       "enumerated_reference": null,
@@ -594,20 +594,20 @@
       },
       "quota_timing": {
         "seconds_all_three_runs": [
-          1.9300409000002219,
-          2.0113158999997722,
-          2.0861070000000836
+          1.1547561999977916,
+          1.2308946000011929,
+          1.2156012000014016
         ],
-        "median_seconds": 2.0113158999997722
+        "median_seconds": 1.2156012000014016
       },
       "weight_sensitive_hybrid_upper_log_moment": 0.030309402496022157,
       "weight_sensitive_hybrid_timing": {
         "seconds_all_three_runs": [
-          0.11168240000006335,
-          0.0623302999997577,
-          0.1109747000000425
+          0.05696679999891785,
+          0.07283620000089286,
+          0.050841799999034265
         ],
-        "median_seconds": 0.1109747000000425
+        "median_seconds": 0.05696679999891785
       },
       "implicit_population_subset_pairs": 2067991183581497889919346102861787651673949837721600,
       "enumerated_reference": null,
@@ -635,20 +635,20 @@
       },
       "quota_timing": {
         "seconds_all_three_runs": [
-          3.5182721999999558,
-          2.7794850000000224,
-          2.710190000000239
+          1.9354658000011113,
+          2.025532799998473,
+          2.0322841000015615
         ],
-        "median_seconds": 2.7794850000000224
+        "median_seconds": 2.025532799998473
       },
       "weight_sensitive_hybrid_upper_log_moment": 0.12189018951273967,
       "weight_sensitive_hybrid_timing": {
         "seconds_all_three_runs": [
-          0.10596309999982623,
-          0.11137289999987843,
-          0.10101039999972272
+          0.08320330000060494,
+          0.08763250000265543,
+          0.09977689999868744
         ],
-        "median_seconds": 0.10596309999982623
+        "median_seconds": 0.08763250000265543
       },
       "implicit_population_subset_pairs": 509838535164780851512867045576851977342967702535903641600,
       "enumerated_reference": null,
@@ -676,25 +676,25 @@
       },
       "quota_timing": {
         "seconds_all_three_runs": [
-          2.602804399999968,
-          2.940331199999946,
-          2.7439624000003278
+          2.1544082000000344,
+          1.8106823000016448,
+          1.7794073000004573
         ],
-        "median_seconds": 2.7439624000003278
+        "median_seconds": 1.8106823000016448
       },
       "weight_sensitive_hybrid_upper_log_moment": 0.009741609657090913,
       "weight_sensitive_hybrid_timing": {
         "seconds_all_three_runs": [
-          0.11186429999997927,
-          0.08135709999987739,
-          0.06604960000004212
+          0.06620530000145664,
+          0.045444199997291435,
+          0.04896639999788022
         ],
-        "median_seconds": 0.08135709999987739
+        "median_seconds": 0.04896639999788022
       },
       "implicit_population_subset_pairs": 509838535164780851512867045576851977342967702535903641600,
       "enumerated_reference": null,
       "enumeration_guard": "Exhaustive reference is timed only if 2**n * choose(n,k) <= 4,000,000; skipped cases are not attempted or estimated."
     }
   ],
-  "seconds": 40.775170100000196
+  "seconds": 27.078012600002694
 }

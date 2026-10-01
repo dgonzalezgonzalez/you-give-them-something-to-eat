@@ -1,26 +1,7 @@
 {
-  "scope": "Local split execution after a validator JSON-serialization failure. Original default master completed through the 144-cell simulation, then failed when a NumPy boolean was written to JSON. After conversion to Python bool, the failing validator and every remaining default program were executed, followed by three PDF compiler passes. This is not a successful uninterrupted run.py invocation. A new full cold hosted master is required.",
   "python": "3.12.10",
   "platform": "Windows-11-10.0.26200-SP0",
-  "seconds": 208.49983589999965,
+  "seconds": 1070.0662822723389,
   "pdf_compiled": true,
-  "source_reextracted": false,
-  "master_completed_in_one_invocation": false,
-  "remaining_programs_executed": [
-    "code/validate_designed_decisions.py",
-    "code/validate_quota_benchmarks.py",
-    "code/validate_quota_benchmark_receipts.py",
-    "code/build_exhibits.py",
-    "code/build_revision_exhibits.py",
-    "code/build_decision_exhibits.py",
-    "code/build_distribution_exhibits.py",
-    "code/build_quota_comparison_exhibits.py",
-    "code/validate.py",
-    "code/validate_revision.py",
-    "code/validate_decision.py",
-    "code/validate_distribution_regions.py",
-    "code/validate_institutional_allocations.py"
-  ],
-  "original_failure_log": "tmp/round8-master.log",
-  "full_hosted_master_pending": true
+  "source_reextracted": false
 }

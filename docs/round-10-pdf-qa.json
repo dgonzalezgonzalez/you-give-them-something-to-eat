@@ -1,0 +1,19 @@
+{
+  "pdf_sha256": "fce3d4f1e39e1e4384985a18d4e6e77da03dcbd29ed72a95a86f90fa8de206b3",
+  "pdf_bytes": 642899,
+  "pages": 44,
+  "all_pages_rendered_again": true,
+  "all_page_pixels_equal_prior_inspected_draft": true,
+  "pdf_text_equal_prior_inspected_draft": true,
+  "inspected_draft_pdf_sha256": "3201e8100ddb0302ec3c11f521419dab0cdf9d9ef167f4b04c9b85a2ad1d318d",
+  "contact_sheets_inspected": 6,
+  "enlarged_pages_inspected": [
+    8,
+    10,
+    12,
+    13,
+    14
+  ],
+  "overfull_or_unresolved_warning": false,
+  "scope": "Author QA. All 44 actual cold PDF page rasters match the prior inspected draft pixels exactly; PDF bytes differ. No independent referee QA or cross-platform identity claim."
+}

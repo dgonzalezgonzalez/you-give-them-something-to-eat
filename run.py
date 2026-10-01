@@ -29,7 +29,7 @@ def main():
         subprocess.run([sys.executable,script],check=True)
     # Separate population events and observed-diet sensitivities; never select
     # or intersect them with earlier confidence constructions after outcomes.
-    for script in ['code/community_decision.py','code/validate_community_decision.py','code/build_community_exhibits.py']:
+    for script in ['code/community_decision.py','code/validate_community_decision.py','code/build_community_exhibits.py','code/population_uncertainty.py','code/population_crosswalk.py','code/validate_population_revision.py','code/build_population_revision_exhibits.py']:
         subprocess.run([sys.executable,script],check=True)
     if args.pdf:
         compiler=os.environ.get('PDFLATEX') or shutil.which('pdflatex')

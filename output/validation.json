@@ -31,30 +31,10 @@
     "mixture_identity_shortfall_6_Control+Large": true,
     "mixture_identity_shortfall_6_Lower+Large": true,
     "mixture_identity_shortfall_6_Middle+Large": true,
-    "mixture_identity_shortfall_6_Upper+Large": true,
-    "independent_stata_agreement": true
+    "mixture_identity_shortfall_6_Upper+Large": true
   },
   "independent_stata": {
-    "Gikuriro": {
-      "coefficient_error": 1.1712852909795402e-14,
-      "se_error": 4.801714581503802e-15
-    },
-    "Lower": {
-      "coefficient_error": 1.6986412276764895e-14,
-      "se_error": 0.0
-    },
-    "Middle": {
-      "coefficient_error": 1.2079226507921703e-13,
-      "se_error": 5.10702591327572e-15
-    },
-    "Upper": {
-      "coefficient_error": 2.070565940925917e-14,
-      "se_error": 2.6922908347160046e-15
-    },
-    "Large": {
-      "coefficient_error": 1.9317880628477724e-14,
-      "se_error": 2.4980018054066022e-15
-    }
+    "status": "Not run in this environment; optional proprietary validation."
   },
   "all_passed": true
 }

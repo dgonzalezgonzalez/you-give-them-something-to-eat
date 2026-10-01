@@ -1,0 +1,20 @@
+# Objective audit: post-first-JDE revision in development
+
+The active goal is unchanged except for the user's authorized specialized-journal switch after two genuine general-interest Rejects. All eight such reports and the first JDE Reject remain archived. No tenth report, simulated Accept or real journal acceptance exists.
+
+| Requirement | Current evidence and remaining work |
+|---|---|
+| Catholic food-security intervention | Same Catholic Relief Services/SNV Gikuriro Rwanda RCT, required title prefix retained; no Catholic mechanism claim. |
+| LaTeX paper and complete research structure | Existing theory/proofs, causal/measurement assumptions, data/results, robustness, calibration, discussion, references and appendices retained. Three new main tables and population bounds near the frontier; current draft compiles to 44 pages, 26 tables and one figure. |
+| Incremental empirical contribution | Direct corrected-release parent population bridge implemented. Pooling masks the upper-cash fitted estimate; cost-linear and observed-package benchmarks give different fits. Every selection, sampling and historical-version limit retained. Importance remains for a genuine JDE referee to judge. |
+| Response to every ninth point | Ledger in referee/round-9-response.md. Technical points accepted by the genuine referee remain closed. Public-source protocol search did not recover the original generator. No investigator contact. |
+| Cross-stratum and frontier uncertainty | Shared covariance for all 48 direct stratum differences and 672 cash pairs; four complete exploratory Holm families. All 734 independent author implementation checks pass. No nominal-coverage validation or protected preference threshold claimed. |
+| Costs and deployment | Both published source menus retained; eligible arithmetic verified; cash population arithmetic verified; Gikuriro 1.482-dollar population residual disclosed and unresolved. Original average costs do not establish marginal rollout costs. |
+| JPE replication | Immutable canonical inputs and extraction references remain unchanged. New scripts and independent validator integrated into default master; new tables/macros added to output map. Full empty-output source-copy master passed in 1,070.066282 seconds; 124 local comparisons pass. Initial warm output-map mismatch and clean regeneration are preserved; this reuses the existing locked environment, not a fresh provision. |
+| Scientific numerical history | No additional simulation cells, draws or certificate precision. Earlier adverse cases, tolerance repairs, partial execution and exact-event distinctions retained. |
+| Diego writing and requested detector | Current draft uses the discovered writing skill. Actual pinned LR-only screen is attached to its PDF hash; full neural ensemble unmeasured. No authorship or undetectability guarantee. The actual final cold PDF has its own hash/QA receipt: all 44 page rasters match the inspected draft. LR-only second score 0.07871720464261393; full ensemble unmeasured. |
+| Public publication | Approved existing public repository. Genuine ninth report/status archive pushed as 9ddfe00. Revised scientific source passes local checks and awaits commit/push; v0.9.0 unchanged. |
+| Genuine referee loop | Ninth completed recommendation Reject on contribution after independently reported execution. Referee audit files have not been received. Requested Pro backend currently unavailable; no weaker substitute or invented report. Next backend requires user selection if Pro remains unavailable. |
+| Writer skill afterward | Requirements and private setup checkout prepared; no skill created, globally installed or pushed yet. Completion remains after the paper/referee phase as requested. All original instructions except topic must carry forward. |
+
+Publication, execution correctness and a simulated Accept remain different claims. No requirement is marked satisfied by the elapsed effort or earlier source's verification.

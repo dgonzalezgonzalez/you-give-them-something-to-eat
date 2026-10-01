@@ -93,3 +93,7 @@ memory, codebook, output map, limitations and full clean-run results. Preserve
 ChatGPT referee prompts/reports verbatim; simulated referee acceptance is not real
 journal acceptance. Writing must be original, sourced and scientifically honest;
 detector scores do not establish authorship and cannot be guaranteed.
+
+## First JDE revision: declared after the ninth report
+
+The new parent-population bridge and joint uncertainty families are post-review exploratory analyses, not prespecified trial endpoints. Fixed current released covariates are held unchanged; the seven-step score/pooling/observation ladder is reported in full. Four separately declared Holm families retain every comparison: cross-stratum Gikuriro comparisons (16 ratio, 32 regression) and all unordered cash/control-vertex pairs across four objectives and two cost menus (224 ratio, 448 regression). Regression families include both specifications. No significance threshold determines which findings are retained. Their working asymptotic assessments inherit selection and approximation limits, and do not replace any finite event. No further simulation cells, draws or optimization precision are added. Cost residuals and historical-version limitations are preserved in `docs/population-parent-bridge.md`.

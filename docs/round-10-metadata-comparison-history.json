@@ -1,0 +1,11 @@
+{
+  "phase": "After successful full master, before copying results",
+  "master_seconds": 1070.0662822723389,
+  "initial_comparison_failure": "docs/output-map.csv only; all 65 CSVs, 42 tables, seven macros and eight validation reports passed",
+  "cause": "Partial warm exhibit invocations appended eight duplicate output-map records and retained three old builder line numbers. Full cold master initialized and regenerated the correct map.",
+  "working_map_rows": 63,
+  "cold_map_rows": 55,
+  "working_map_sha256": "6cae23967ebe11bf59ef3f040c8012817f2a8de9fba0bd797da985d71e0bd0f1",
+  "cold_map_sha256": "f2d2eab476ae1cf57928048eb0dc7337479c78ff45a749f1419fbc3d8a5d08b8",
+  "scientific_execution_failure": false
+}
