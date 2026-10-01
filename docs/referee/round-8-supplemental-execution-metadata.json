@@ -1,5 +1,5 @@
 {
-  "status": "active_execution_report_pending",
+  "status": "completed_partial_execution_reject_unchanged",
   "original_review_recommendation": "Reject",
   "new_review": false,
   "freeze": "v0.8.0",
@@ -12,7 +12,47 @@
   "supported_read_confirmed_at_utc": "2026-10-01T11:45:08Z",
   "same_chat_human_continuation_observed": true,
   "continuation_turn_id": "979fe114-a274-461d-bed3-d52c01fc25ae",
-  "actual_supplemental_execution": null,
-  "report_received": false,
-  "scope": "Same frozen eighth-source supplemental field execution only. Original eighth Reject is unchanged. Active processing after a human keep-going message; no completed data retrieval or execution inferred. No local attachments, ninth submission, new recommendation or acceptance."
+  "actual_supplemental_execution": {
+    "summary_path": "docs/referee/round-8-supplemental-audit/supplemental_summary.json",
+    "scope": "Supplemental partial execution for the frozen eighth manuscript; not a ninth review. Existing Reject unchanged.",
+    "verified_household_parts": 2,
+    "required_household_parts": 36,
+    "quota_populations": 19,
+    "quota_lower_values": [
+      5.866228120555938,
+      0.5022426232557802
+    ],
+    "not_executed": [
+      "full household counts/assignment probabilities/weighted means/lower-large field contrast",
+      "child cohort microdata",
+      "hybrid empirical region membership and complete certificates",
+      "upstream empirical constants regeneration",
+      "full master or Stata",
+      "PDF compilation or visual inspection",
+      "all remaining canonical input reconstruction"
+    ]
+  },
+  "report_received": true,
+  "scope": "Completed same-eighth supplemental report, not a ninth review. Adds actual hosted artifact-byte hashing and quota membership/both-objective chains conditional on published constants. Full microdata/regeneration, hybrid chain, master/Stata/PDF and acceptance remain absent.",
+  "report_path": "docs/referee/round-8-supplemental-execution-report.md",
+  "report_characters_lf": 5367,
+  "report_sha256_lf": "6d5778563c31a92cd4d96907872a52a46134d02676e3b1221a73110b1b936a5d",
+  "report_directly_retrieved_in_full": true,
+  "report_message_id": "4f6a0588-4776-43c1-b0ed-0750ef6f369a",
+  "completed_report_turn_id": "979fe114-a274-461d-bed3-d52c01fc25ae",
+  "completed_at_unix_seconds": 1790863920.934641,
+  "actual_supplemental_zip_downloaded": true,
+  "actual_supplemental_zip_bytes": 79966,
+  "actual_supplemental_zip_sha256": "9b4993e1f62b00ec501f02fc7da1aeb46ae904ab820b7a7ddce6d417de5682b2",
+  "actual_separate_summary_bytes": 65943,
+  "actual_separate_summary_sha256": "ece2de2ace1edd756627908cbb276b2da69e5ab31367b2c7c65d64e2905d8b18",
+  "separate_summary_matches_exact_zip_member": true,
+  "author_archive_checks": {
+    "zip_crc": true,
+    "two_parts_match_frozen_bytes": true,
+    "partial_csv_is_exact_frozen_prefix": true,
+    "costs_match_frozen_bytes": true,
+    "full_household_file_received": false
+  },
+  "final_report_overrides_interim_status": "Interim visible progress said seven parts; final report and received bundle verify exactly two. Neither interim progress nor the incomplete prefix supports full-sample inference."
 }

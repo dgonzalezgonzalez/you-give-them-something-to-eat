@@ -98,6 +98,24 @@ receipt={'scope':'Author-initiated full public microdata-to-manuscript run in a 
          'master':json.loads(master_path.read_text()) if master_path.exists() else None,
          'comparison_scope':'CSV rtol=1e-10/atol=1e-12, except the maximum realized rational-policy rounding diagnostic: both platforms must satisfy the analytic 1/(2*denominator) ceiling and have identical upward 1e-9 displays. Per-draw exact decision certificates remain mandatory. Exact generated table/macro/definition text; exact quota event/model constants, cold interval and dual validation, equal outward display thresholds with actual upper bounds below them; successful cold PDF compilation with title/author. Solver tangent candidates, runtime metadata, PNG/PDF bytes and cross-platform PDF-text identity are excluded.'}
 (root/'output').mkdir(exist_ok=True)
+source_delivery_error=None
+if receipt['all_passed']:
+    try:
+        # Transport the unchanged public ninth freeze through the EXISTING
+        # artifact upload path. This is separate from the 130 scientific
+        # comparisons above; it changes no scientific input or computation.
+        subprocess.run([sys.executable,str(root/'docs/referee/build_public_frozen_bundle.py')],cwd=root,check=True)
+        bundle_dir=root/'tmp/public-review-v0.9.0'
+        bundle_manifest=json.loads((bundle_dir/'manifest.json').read_text(encoding='utf8'))
+        shutil.copy2(bundle_dir/'source.zip',dest/'output/public-frozen-source-v0.9.0.zip')
+        shutil.copy2(bundle_dir/'manifest.json',dest/'output/public-frozen-source-v0.9.0.json')
+        receipt['public_frozen_source_delivery']={
+            'status':'packaged','scope':'Separate delivery of already-public frozen v0.9.0, not another scientific comparison or new referee execution.',
+            'manifest':bundle_manifest,'artifact_inner_zip':'output/public-frozen-source-v0.9.0.zip'}
+    except Exception as error:
+        source_delivery_error=f'{type(error).__name__}: {error}'
+        receipt['public_frozen_source_delivery']={'status':'failed','error':source_delivery_error}
 (root/'output/hosted-run.json').write_text(json.dumps(receipt,indent=2)+'\n',encoding='utf8')
 print(json.dumps(receipt,indent=2))
 if not receipt['all_passed']:raise RuntimeError('Hosted reproduction failed; preserve the actual receipt and logs.')
+if source_delivery_error:raise RuntimeError('Scientific comparisons passed but public frozen-source delivery failed; preserve the actual receipt and logs.')

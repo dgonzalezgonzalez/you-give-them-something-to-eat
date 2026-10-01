@@ -23,8 +23,8 @@
     "requirements-lock.txt"
   ],
   "request_path": "docs/referee/round-9-prepared-request.txt",
-  "prepared_request_characters_lf": 8860,
-  "prepared_request_sha256_lf": "96c2ed9513433adc886796f670da3a96c2c74f15ec298dac4b9fe26f708e16d5",
+  "prepared_request_characters_lf": 9755,
+  "prepared_request_sha256_lf": "516157b61eae5e1349fb0a6da108c09efcaa778c85c9418d72c7f79ba9079f68",
   "send_accepted": false,
   "delivery_confirmed": false,
   "recommendation": null,
@@ -32,7 +32,7 @@
   "prior_genuine_recommendations": 8,
   "prior_recommendation": "Reject",
   "same_eighth_supplemental_thread_id": "6abd01e3-4184-83ed-9ff0-e9475053b958",
-  "same_eighth_supplemental_last_observed_status": "active",
+  "same_eighth_supplemental_last_observed_status": "idle_completed_partial_execution",
   "investigator_contact": "Public sources only; draft unsent.",
   "hosted_run_id": 36867532625,
   "hosted_job_id": 110386681289,
@@ -51,5 +51,8 @@
   "independent_referee_pdf_rendering": false,
   "scope": "A public freeze and prepared request, not delivery, a ninth report, independent field replication, acceptance or a DOI archive.",
   "prepared_request_updated_after_freeze": true,
-  "post_freeze_eighth_audit_receipt": "docs/referee/round-8-received-audit/receipt.json"
+  "post_freeze_eighth_audit_receipt": "docs/referee/round-8-received-audit/receipt.json",
+  "completed_eighth_supplemental_report": "docs/referee/round-8-supplemental-execution-report.md",
+  "public_source_delivery_status": "pending_existing_hosted_artifact_wrapper_execution",
+  "new_workflow_publication": "Rejected for missing OAuth workflow scope; unpublished workflow removed, existing workflow unchanged."
 }
