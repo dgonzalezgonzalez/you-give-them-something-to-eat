@@ -1,0 +1,7 @@
+{
+  "scope": "Exact rational hierarchy/enclosure of classical coefficients and independent 160-digit complete binary population/centering enumeration. Synthetic moment checks are not field coverage estimates or evidence of methodological dominance.",
+  "checks": 7138,
+  "passed": 7138,
+  "independent_moment_inequalities": 6720,
+  "all_passed": true
+}

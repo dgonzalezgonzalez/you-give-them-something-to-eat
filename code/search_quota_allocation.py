@@ -5,7 +5,7 @@ optimization bound; outer LP support values supply an upper one. The shared
 sum of exponential terms is retained instead of taking its scalar box image.
 """
 from pathlib import Path
-import json,itertools,time
+import json,itertools,time,argparse
 import numpy as np
 from scipy.linalg import block_diag
 from scipy.optimize import linprog,minimize,minimize_scalar
@@ -13,7 +13,13 @@ from scipy.special import logsumexp
 r=Path(__file__).resolve().parents[1];start=time.time()
 from quota_models import build_models,ARMS
 from referee_revision import objective
-moment_rows=json.loads((r/'output/quota-normalizers.json').read_text())['rows']
+parser=argparse.ArgumentParser()
+parser.add_argument('--moment-method',choices=['quota','harmonic_martingale'],default='quota')
+args=parser.parse_args()
+if args.moment_method=='quota':moment_rows=json.loads((r/'output/quota-normalizers.json').read_text())['rows']
+else:
+    from quota_benchmarks import classical_rows
+    moment_rows=classical_rows(args.moment_method)
 models,names=build_models(moment_rows);arms=ARMS;n=78
 T=np.array([objective(np.arange(13),name) for name in names])
 mean_map=block_diag(*[T[0][None,:]]*6)
@@ -98,9 +104,10 @@ for name in ['mean','shortfall_6']:
         if gap<3e-4:break
     scenario={'objective':name,'lower_optimization_bound':float(fit.fun),'upper_loss_bound':upper,
               'optimization_gap':gap,'q':dict(zip(arms,q.tolist())),'expected_cost':float(q@costs),
-              'iterations':receipt}
+              'iterations':receipt,'last_comparator_support_scales':dict(zip(policies,[x['dual_tau'] for x in calls[-len(comp):]]))}
     scenarios.append(scenario);print(name,'direct joint',upper,'lower',fit.fun,'gap',gap,flush=True)
 report={'scope':'Approximate exchange-search receipt on the quota mixture region. Floating tangents, support cushions and witness feasibility are diagnostics, not formal numerical enclosures. The separately enclosed production verification certifies allocation upper bounds; this search does not certify minimax optimality. No sharpness or novelty claim.',
-        'scenarios':scenarios,'total_cuts':len(cuts),'support_calls':calls,'seconds':time.time()-start}
-(r/'output/quota-search.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf8')
+        'moment_method':args.moment_method,'moment_rows':moment_rows,'scenarios':scenarios,'total_cuts':len(cuts),'support_calls':calls,'seconds':time.time()-start}
+destination='quota-search.json' if args.moment_method=='quota' else 'harmonic-allocation-search.json'
+(r/'output'/destination).write_text(json.dumps(report,indent=2)+'\n',encoding='utf8')
 print('Seconds',report['seconds'])

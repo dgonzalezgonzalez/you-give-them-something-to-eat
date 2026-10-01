@@ -1,0 +1,1656 @@
+{
+  "scope": "Deterministic design catalogue; 22 identical independent blocks and log(5520) scalar tail penalty. Radii normalize by total fixed weight. Classical quadratic moments use analytically optimized lambda; quota moments use a common six-point baseline-only grid around the harmonic-martingale lambda. These are untruncated analytic tail radii, not joint-region allocation bounds or simulated coverage. Production scales and event are unchanged.",
+  "rows": [
+    {
+      "n": 6,
+      "k": 1,
+      "weight_shape": "equal",
+      "blocks": 22,
+      "quota_radius": 0.43287866814596704,
+      "hoeffding_radius": 0.4425169010452683,
+      "serfling_radius": 0.4425169010452683,
+      "harmonic_martingale_radius": 0.4425169010452683,
+      "quota_over_martingale": 0.9782195146071601,
+      "selected_scale": 1.0,
+      "quota_grid": [
+        {
+          "scale": 0.5,
+          "lambda": 0.1475056336817561,
+          "block_log_moment_upper": 0.09487264521294814,
+          "radius": 0.5497135357826645
+        },
+        {
+          "scale": 0.75,
+          "lambda": 0.22125845052263415,
+          "block_log_moment_upper": 0.21185373017673895,
+          "radius": 0.45459366950929814
+        },
+        {
+          "scale": 1.0,
+          "lambda": 0.2950112673635122,
+          "block_log_moment_upper": 0.37458209160481,
+          "radius": 0.43287866814596704
+        },
+        {
+          "scale": 1.25,
+          "lambda": 0.3687640842043902,
+          "block_log_moment_upper": 0.5743395206298938,
+          "radius": 0.4365853298572621
+        },
+        {
+          "scale": 1.5,
+          "lambda": 0.4425169010452683,
+          "block_log_moment_upper": 0.8029952194357839,
+          "radius": 0.44994049268150293
+        },
+        {
+          "scale": 2.0,
+          "lambda": 0.5900225347270244,
+          "block_log_moment_upper": 1.3178759614064484,
+          "radius": 0.4828963517522761
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "k": 1,
+      "weight_shape": "alternating",
+      "blocks": 22,
+      "quota_radius": 0.6493180022189505,
+      "hoeffding_radius": 0.6637753515679025,
+      "serfling_radius": 0.6637753515679025,
+      "harmonic_martingale_radius": 0.6637753515679025,
+      "quota_over_martingale": 0.9782195146071601,
+      "selected_scale": 1.0,
+      "quota_grid": [
+        {
+          "scale": 0.5,
+          "lambda": 0.049168544560585364,
+          "block_log_moment_upper": 0.09487264521294794,
+          "radius": 0.8245703036739963
+        },
+        {
+          "scale": 0.75,
+          "lambda": 0.07375281684087805,
+          "block_log_moment_upper": 0.21185373017673895,
+          "radius": 0.6818905042639473
+        },
+        {
+          "scale": 1.0,
+          "lambda": 0.09833708912117073,
+          "block_log_moment_upper": 0.37458209160481,
+          "radius": 0.6493180022189505
+        },
+        {
+          "scale": 1.25,
+          "lambda": 0.12292136140146341,
+          "block_log_moment_upper": 0.5743395206298938,
+          "radius": 0.6548779947858931
+        },
+        {
+          "scale": 1.5,
+          "lambda": 0.1475056336817561,
+          "block_log_moment_upper": 0.8029952194357837,
+          "radius": 0.6749107390222544
+        },
+        {
+          "scale": 2.0,
+          "lambda": 0.19667417824234146,
+          "block_log_moment_upper": 1.3178759614064484,
+          "radius": 0.7243445276284141
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "k": 1,
+      "weight_shape": "concentrated",
+      "blocks": 22,
+      "quota_radius": 1.5615073500393863,
+      "hoeffding_radius": 1.7700676041810732,
+      "serfling_radius": 1.7700676041810732,
+      "harmonic_martingale_radius": 1.7700676041810732,
+      "quota_over_martingale": 0.882173848247916,
+      "selected_scale": 1.0,
+      "quota_grid": [
+        {
+          "scale": 0.5,
+          "lambda": 0.01475056336817561,
+          "block_log_moment_upper": 0.06532711618498739,
+          "radius": 2.065320129138553
+        },
+        {
+          "scale": 0.75,
+          "lambda": 0.022125845052263414,
+          "block_log_moment_upper": 0.15852340641864116,
+          "radius": 1.6576868078650737
+        },
+        {
+          "scale": 1.0,
+          "lambda": 0.02950112673635122,
+          "block_log_moment_upper": 0.2993509780774226,
+          "radius": 1.5615073500393863
+        },
+        {
+          "scale": 1.25,
+          "lambda": 0.03687640842043902,
+          "block_log_moment_upper": 0.48843505922223374,
+          "radius": 1.5910397502374622
+        },
+        {
+          "scale": 1.5,
+          "lambda": 0.04425169010452683,
+          "block_log_moment_upper": 0.7220094536849987,
+          "radius": 1.677754177638352
+        },
+        {
+          "scale": 2.0,
+          "lambda": 0.05900225347270244,
+          "block_log_moment_upper": 1.2937989082684913,
+          "radius": 1.9043807363162055
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "k": 3,
+      "weight_shape": "equal",
+      "blocks": 22,
+      "quota_radius": 0.19680807595952163,
+      "hoeffding_radius": 0.25548725193944466,
+      "serfling_radius": 0.20860446767917706,
+      "harmonic_martingale_radius": 0.2045228245409396,
+      "quota_over_martingale": 0.9622792781258813,
+      "selected_scale": 1.0,
+      "quota_grid": [
+        {
+          "scale": 0.5,
+          "lambda": 0.3191513516893726,
+          "block_log_moment_upper": 0.09136835774701188,
+          "radius": 0.2522370502332165
+        },
+        {
+          "scale": 0.75,
+          "lambda": 0.4787270275340589,
+          "block_log_moment_upper": 0.20476583428180267,
+          "radius": 0.20763685614860022
+        },
+        {
+          "scale": 1.0,
+          "lambda": 0.6383027033787452,
+          "block_log_moment_upper": 0.36209634616897696,
+          "radius": 0.19680807595952163
+        },
+        {
+          "scale": 1.25,
+          "lambda": 0.7978783792234314,
+          "block_log_moment_upper": 0.5620272365638468,
+          "radius": 0.19920948622801832
+        },
+        {
+          "scale": 1.5,
+          "lambda": 0.9574540550681178,
+          "block_log_moment_upper": 0.8027998312081587,
+          "radius": 0.20791985444923794
+        },
+        {
+          "scale": 2.0,
+          "lambda": 1.2766054067574903,
+          "block_log_moment_upper": 1.3968224145225525,
+          "radius": 0.23349225224921213
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "k": 3,
+      "weight_shape": "alternating",
+      "blocks": 22,
+      "quota_radius": 0.2952121139392824,
+      "hoeffding_radius": 0.383230877909167,
+      "serfling_radius": 0.31290670151876565,
+      "harmonic_martingale_radius": 0.30678423681140937,
+      "quota_over_martingale": 0.9622792781258811,
+      "selected_scale": 1.0,
+      "quota_grid": [
+        {
+          "scale": 0.5,
+          "lambda": 0.10638378389645753,
+          "block_log_moment_upper": 0.09136835774701169,
+          "radius": 0.37835557534982467
+        },
+        {
+          "scale": 0.75,
+          "lambda": 0.1595756758446863,
+          "block_log_moment_upper": 0.2047658342818025,
+          "radius": 0.31145528422290025
+        },
+        {
+          "scale": 1.0,
+          "lambda": 0.21276756779291506,
+          "block_log_moment_upper": 0.3620963461689768,
+          "radius": 0.2952121139392824
+        },
+        {
+          "scale": 1.25,
+          "lambda": 0.2659594597411438,
+          "block_log_moment_upper": 0.5620272365638469,
+          "radius": 0.2988142293420275
+        },
+        {
+          "scale": 1.5,
+          "lambda": 0.3191513516893726,
+          "block_log_moment_upper": 0.8027998312081587,
+          "radius": 0.31187978167385694
+        },
+        {
+          "scale": 2.0,
+          "lambda": 0.4255351355858301,
+          "block_log_moment_upper": 1.396822414522552,
+          "radius": 0.3502383783738181
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "k": 3,
+      "weight_shape": "concentrated",
+      "blocks": 22,
+      "quota_radius": 0.5483561642861303,
+      "hoeffding_radius": 1.0219490077577784,
+      "serfling_radius": 0.8344178707167084,
+      "harmonic_martingale_radius": 0.8180912981637584,
+      "quota_over_martingale": 0.6702872472998304,
+      "selected_scale": 2.0,
+      "quota_grid": [
+        {
+          "scale": 0.5,
+          "lambda": 0.03191513516893726,
+          "block_log_moment_upper": 0.050086992799944156,
+          "radius": 0.922716669031044
+        },
+        {
+          "scale": 0.75,
+          "lambda": 0.04787270275340588,
+          "block_log_moment_upper": 0.11046301193770199,
+          "radius": 0.699223006682927
+        },
+        {
+          "scale": 1.0,
+          "lambda": 0.06383027033787451,
+          "block_log_moment_upper": 0.19122054083423778,
+          "radius": 0.6087633690309932
+        },
+        {
+          "scale": 1.25,
+          "lambda": 0.07978783792234315,
+          "block_log_moment_upper": 0.2893459855327025,
+          "radius": 0.5689993351425469
+        },
+        {
+          "scale": 1.5,
+          "lambda": 0.09574540550681176,
+          "block_log_moment_upper": 0.40176649241862894,
+          "radius": 0.552443502738867
+        },
+        {
+          "scale": 2.0,
+          "lambda": 0.12766054067574903,
+          "block_log_moment_upper": 0.6584092508132934,
+          "radius": 0.5483561642861303
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "k": 5,
+      "weight_shape": "equal",
+      "blocks": 22,
+      "quota_radius": 0.08657573362919341,
+      "hoeffding_radius": 0.08850338020905366,
+      "serfling_radius": 0.08850338020905366,
+      "harmonic_martingale_radius": 0.08850338020905366,
+      "quota_over_martingale": 0.9782195146071601,
+      "selected_scale": 1.0,
+      "quota_grid": [
+        {
+          "scale": 0.5,
+          "lambda": 0.7375281684087804,
+          "block_log_moment_upper": 0.09487264521294814,
+          "radius": 0.10994270715653288
+        },
+        {
+          "scale": 0.75,
+          "lambda": 1.1062922526131707,
+          "block_log_moment_upper": 0.21185373017673895,
+          "radius": 0.09091873390185963
+        },
+        {
+          "scale": 1.0,
+          "lambda": 1.4750563368175609,
+          "block_log_moment_upper": 0.37458209160481,
+          "radius": 0.08657573362919341
+        },
+        {
+          "scale": 1.25,
+          "lambda": 1.843820421021951,
+          "block_log_moment_upper": 0.5743395206298938,
+          "radius": 0.08731706597145242
+        },
+        {
+          "scale": 1.5,
+          "lambda": 2.2125845052263413,
+          "block_log_moment_upper": 0.8029952194357837,
+          "radius": 0.08998809853630058
+        },
+        {
+          "scale": 2.0,
+          "lambda": 2.9501126736351218,
+          "block_log_moment_upper": 1.3178759614064481,
+          "radius": 0.0965792703504552
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "k": 5,
+      "weight_shape": "alternating",
+      "blocks": 22,
+      "quota_radius": 0.12986360044379008,
+      "hoeffding_radius": 0.1327550703135805,
+      "serfling_radius": 0.1327550703135805,
+      "harmonic_martingale_radius": 0.1327550703135805,
+      "quota_over_martingale": 0.9782195146071598,
+      "selected_scale": 1.0,
+      "quota_grid": [
+        {
+          "scale": 0.5,
+          "lambda": 0.24584272280292682,
+          "block_log_moment_upper": 0.09487264521294794,
+          "radius": 0.16491406073479925
+        },
+        {
+          "scale": 0.75,
+          "lambda": 0.3687640842043902,
+          "block_log_moment_upper": 0.21185373017673895,
+          "radius": 0.13637810085278945
+        },
+        {
+          "scale": 1.0,
+          "lambda": 0.49168544560585364,
+          "block_log_moment_upper": 0.37458209160481,
+          "radius": 0.12986360044379008
+        },
+        {
+          "scale": 1.25,
+          "lambda": 0.6146068070073171,
+          "block_log_moment_upper": 0.5743395206298938,
+          "radius": 0.13097559895717864
+        },
+        {
+          "scale": 1.5,
+          "lambda": 0.7375281684087804,
+          "block_log_moment_upper": 0.8029952194357837,
+          "radius": 0.13498214780445086
+        },
+        {
+          "scale": 2.0,
+          "lambda": 0.9833708912117073,
+          "block_log_moment_upper": 1.3178759614064484,
+          "radius": 0.1448689055256828
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "k": 5,
+      "weight_shape": "concentrated",
+      "blocks": 22,
+      "quota_radius": 0.31230147000787734,
+      "hoeffding_radius": 0.3540135208362146,
+      "serfling_radius": 0.3540135208362146,
+      "harmonic_martingale_radius": 0.3540135208362146,
+      "quota_over_martingale": 0.8821738482479162,
+      "selected_scale": 1.0,
+      "quota_grid": [
+        {
+          "scale": 0.5,
+          "lambda": 0.07375281684087805,
+          "block_log_moment_upper": 0.06532711618498739,
+          "radius": 0.41306402582771057
+        },
+        {
+          "scale": 0.75,
+          "lambda": 0.11062922526131708,
+          "block_log_moment_upper": 0.15852340641864135,
+          "radius": 0.3315373615730149
+        },
+        {
+          "scale": 1.0,
+          "lambda": 0.1475056336817561,
+          "block_log_moment_upper": 0.2993509780774229,
+          "radius": 0.31230147000787734
+        },
+        {
+          "scale": 1.25,
+          "lambda": 0.1843820421021951,
+          "block_log_moment_upper": 0.48843505922223357,
+          "radius": 0.3182079500474924
+        },
+        {
+          "scale": 1.5,
+          "lambda": 0.22125845052263415,
+          "block_log_moment_upper": 0.7220094536849989,
+          "radius": 0.3355508355276705
+        },
+        {
+          "scale": 2.0,
+          "lambda": 0.2950112673635122,
+          "block_log_moment_upper": 1.293798908268491,
+          "radius": 0.380876147263241
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "k": 1,
+      "weight_shape": "equal",
+      "blocks": 22,
+      "quota_radius": 0.43213715391330154,
+      "hoeffding_radius": 0.44251690104526825,
+      "serfling_radius": 0.44251690104526825,
+      "harmonic_martingale_radius": 0.44251690104526825,
+      "quota_over_martingale": 0.9765438402297206,
+      "selected_scale": 1.0,
+      "quota_grid": [
+        {
+          "scale": 0.5,
+          "lambda": 0.08850338020905366,
+          "block_log_moment_upper": 0.09656931338205291,
+          "radius": 0.5516306017355095
+        },
+        {
+          "scale": 0.75,
+          "lambda": 0.13275507031358047,
+          "block_log_moment_upper": 0.21505967517844474,
+          "radius": 0.4570086017556772
+        },
+        {
+          "scale": 1.0,
+          "lambda": 0.1770067604181073,
+          "block_log_moment_upper": 0.3732695612835297,
+          "radius": 0.43213715391330154
+        },
+        {
+          "scale": 1.25,
+          "lambda": 0.22125845052263415,
+          "block_log_moment_upper": 0.572216898222644,
+          "radius": 0.4356259891395467
+        },
+        {
+          "scale": 1.5,
+          "lambda": 0.26551014062716094,
+          "block_log_moment_upper": 0.806472548769926,
+          "radius": 0.4512501712218135
+        },
+        {
+          "scale": 2.0,
+          "lambda": 0.3540135208362146,
+          "block_log_moment_upper": 1.3396179763569596,
+          "radius": 0.48903792931099593
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "k": 1,
+      "weight_shape": "alternating",
+      "blocks": 22,
+      "quota_radius": 0.6482057308699523,
+      "hoeffding_radius": 0.6637753515679025,
+      "serfling_radius": 0.6637753515679025,
+      "harmonic_martingale_radius": 0.6637753515679025,
+      "quota_over_martingale": 0.9765438402297204,
+      "selected_scale": 1.0,
+      "quota_grid": [
+        {
+          "scale": 0.5,
+          "lambda": 0.02950112673635122,
+          "block_log_moment_upper": 0.09656931338205291,
+          "radius": 0.8274459026032641
+        },
+        {
+          "scale": 0.75,
+          "lambda": 0.04425169010452683,
+          "block_log_moment_upper": 0.21505967517844474,
+          "radius": 0.6855129026335158
+        },
+        {
+          "scale": 1.0,
+          "lambda": 0.05900225347270244,
+          "block_log_moment_upper": 0.3732695612835297,
+          "radius": 0.6482057308699523
+        },
+        {
+          "scale": 1.25,
+          "lambda": 0.07375281684087805,
+          "block_log_moment_upper": 0.5722168982226437,
+          "radius": 0.6534389837093199
+        },
+        {
+          "scale": 1.5,
+          "lambda": 0.08850338020905366,
+          "block_log_moment_upper": 0.806472548769926,
+          "radius": 0.6768752568327202
+        },
+        {
+          "scale": 2.0,
+          "lambda": 0.11800450694540487,
+          "block_log_moment_upper": 1.3396179763569596,
+          "radius": 0.7335568939664938
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "k": 1,
+      "weight_shape": "concentrated",
+      "blocks": 22,
+      "quota_radius": 1.8181892496031562,
+      "hoeffding_radius": 2.329036321290886,
+      "serfling_radius": 2.329036321290886,
+      "harmonic_martingale_radius": 2.329036321290886,
+      "quota_over_martingale": 0.7806616122652013,
+      "selected_scale": 1.0,
+      "quota_grid": [
+        {
+          "scale": 0.5,
+          "lambda": 0.008850338020905365,
+          "block_log_moment_upper": 0.04454619715680168,
+          "radius": 2.5939456035042006
+        },
+        {
+          "scale": 0.75,
+          "lambda": 0.013275507031358047,
+          "block_log_moment_upper": 0.1118989684414151,
+          "radius": 1.996321348438367
+        },
+        {
+          "scale": 1.0,
+          "lambda": 0.01770067604181073,
+          "block_log_moment_upper": 0.21983798348722441,
+          "radius": 1.8181892496031562
+        },
+        {
+          "scale": 1.25,
+          "lambda": 0.022125845052263414,
+          "block_log_moment_upper": 0.3742376689577472,
+          "radius": 1.8218277326811316
+        },
+        {
+          "scale": 1.5,
+          "lambda": 0.026551014062716094,
+          "block_log_moment_upper": 0.5771955620080629,
+          "radius": 1.9205094154159796
+        },
+        {
+          "scale": 2.0,
+          "lambda": 0.03540135208362146,
+          "block_log_moment_upper": 1.1155087710119531,
+          "radius": 2.2406982215542888
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "k": 2,
+      "weight_shape": "equal",
+      "blocks": 22,
+      "quota_radius": 0.2917649018100123,
+      "hoeffding_radius": 0.31290670151876565,
+      "serfling_radius": 0.2968493615789303,
+      "harmonic_martingale_radius": 0.29603383981392606,
+      "quota_over_martingale": 0.9855795607468489,
+      "selected_scale": 1.0,
+      "quota_grid": [
+        {
+          "scale": 0.5,
+          "lambda": 0.13229650220649938,
+          "block_log_moment_upper": 0.09606716130214472,
+          "radius": 0.3686488823130808
+        },
+        {
+          "scale": 0.75,
+          "lambda": 0.1984447533097491,
+          "block_log_moment_upper": 0.21485655090551384,
+          "radius": 0.30562610308988886
+        },
+        {
+          "scale": 1.0,
+          "lambda": 0.26459300441299877,
+          "block_log_moment_upper": 0.3803471041003319,
+          "radius": 0.2917649018100123
+        },
+        {
+          "scale": 1.25,
+          "lambda": 0.33074125551624844,
+          "block_log_moment_upper": 0.5884446994450075,
+          "radius": 0.29633046936845586
+        },
+        {
+          "scale": 1.5,
+          "lambda": 0.3968895066194982,
+          "block_log_moment_upper": 0.8345996351222609,
+          "radius": 0.30896308168693576
+        },
+        {
+          "scale": 2.0,
+          "lambda": 0.5291860088259975,
+          "block_log_moment_upper": 1.4226967854665413,
+          "radius": 0.3428547184973918
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "k": 2,
+      "weight_shape": "alternating",
+      "blocks": 22,
+      "quota_radius": 0.4376473527150184,
+      "hoeffding_radius": 0.4693600522781485,
+      "serfling_radius": 0.44527404236839546,
+      "harmonic_martingale_radius": 0.4440507597208891,
+      "quota_over_martingale": 0.9855795607468489,
+      "selected_scale": 1.0,
+      "quota_grid": [
+        {
+          "scale": 0.5,
+          "lambda": 0.04409883406883312,
+          "block_log_moment_upper": 0.09606716130214472,
+          "radius": 0.5529733234696212
+        },
+        {
+          "scale": 0.75,
+          "lambda": 0.06614825110324968,
+          "block_log_moment_upper": 0.21485655090551348,
+          "radius": 0.45843915463483315
+        },
+        {
+          "scale": 1.0,
+          "lambda": 0.08819766813766625,
+          "block_log_moment_upper": 0.38034710410033173,
+          "radius": 0.4376473527150184
+        },
+        {
+          "scale": 1.25,
+          "lambda": 0.11024708517208281,
+          "block_log_moment_upper": 0.5884446994450075,
+          "radius": 0.44449570405268385
+        },
+        {
+          "scale": 1.5,
+          "lambda": 0.13229650220649936,
+          "block_log_moment_upper": 0.8345996351222604,
+          "radius": 0.46344462253040364
+        },
+        {
+          "scale": 2.0,
+          "lambda": 0.1763953362753325,
+          "block_log_moment_upper": 1.4226967854665409,
+          "radius": 0.5142820777460877
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "k": 2,
+      "weight_shape": "concentrated",
+      "blocks": 22,
+      "quota_radius": 1.0713644458979348,
+      "hoeffding_radius": 1.6468773764145561,
+      "serfling_radius": 1.5623650609417383,
+      "harmonic_martingale_radius": 1.5580728411259266,
+      "quota_over_martingale": 0.6876215396474811,
+      "selected_scale": 1.5,
+      "quota_grid": [
+        {
+          "scale": 0.5,
+          "lambda": 0.013229650220649938,
+          "block_log_moment_upper": 0.03958117541629482,
+          "radius": 1.7155388152074407
+        },
+        {
+          "scale": 0.75,
+          "lambda": 0.019844475330974908,
+          "block_log_moment_upper": 0.09381071651043188,
+          "radius": 1.287520300354702
+        },
+        {
+          "scale": 1.0,
+          "lambda": 0.026459300441299877,
+          "block_log_moment_upper": 0.1742471972000309,
+          "radius": 1.1256406377128765
+        },
+        {
+          "scale": 1.25,
+          "lambda": 0.033074125551624846,
+          "block_log_moment_upper": 0.2818804667708784,
+          "radius": 1.0717916847606979
+        },
+        {
+          "scale": 1.5,
+          "lambda": 0.039688950661949815,
+          "block_log_moment_upper": 0.4162628666285808,
+          "radius": 1.0713644458979348
+        },
+        {
+          "scale": 2.0,
+          "lambda": 0.05291860088259975,
+          "block_log_moment_upper": 0.7570973580311561,
+          "radius": 1.1425091946512722
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "k": 5,
+      "weight_shape": "equal",
+      "blocks": 22,
+      "quota_radius": 0.14678589085086,
+      "hoeffding_radius": 0.19789957438595351,
+      "serfling_radius": 0.1532923511636668,
+      "harmonic_martingale_radius": 0.1508175375175183,
+      "quota_over_martingale": 0.9732680513617986,
+      "selected_scale": 1.0,
+      "quota_grid": [
+        {
+          "scale": 0.5,
+          "lambda": 0.2596796247093771,
+          "block_log_moment_upper": 0.09340832783189185,
+          "radius": 0.18678814088558413
+        },
+        {
+          "scale": 0.75,
+          "lambda": 0.38951943706406567,
+          "block_log_moment_upper": 0.2094757316193867,
+          "radius": 0.15432301699027515
+        },
+        {
+          "scale": 1.0,
+          "lambda": 0.5193592494187542,
+          "block_log_moment_upper": 0.3707036855542428,
+          "radius": 0.14678589085086
+        },
+        {
+          "scale": 1.25,
+          "lambda": 0.6491990617734428,
+          "block_log_moment_upper": 0.5758868014808425,
+          "radius": 0.1490342906934
+        },
+        {
+          "scale": 1.5,
+          "lambda": 0.7790388741281313,
+          "block_log_moment_upper": 0.8235610458123531,
+          "radius": 0.1559875253457377
+        },
+        {
+          "scale": 2.0,
+          "lambda": 1.0387184988375084,
+          "block_log_moment_upper": 1.4395768900519317,
+          "radius": 0.17629601355158048
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "k": 5,
+      "weight_shape": "alternating",
+      "blocks": 22,
+      "quota_radius": 0.22017883627628998,
+      "hoeffding_radius": 0.2968493615789303,
+      "serfling_radius": 0.2299385267455002,
+      "harmonic_martingale_radius": 0.22622630627627743,
+      "quota_over_martingale": 0.9732680513617986,
+      "selected_scale": 1.0,
+      "quota_grid": [
+        {
+          "scale": 0.5,
+          "lambda": 0.08655987490312571,
+          "block_log_moment_upper": 0.09340832783189164,
+          "radius": 0.280182211328376
+        },
+        {
+          "scale": 0.75,
+          "lambda": 0.12983981235468856,
+          "block_log_moment_upper": 0.20947573161938635,
+          "radius": 0.23148452548541262
+        },
+        {
+          "scale": 1.0,
+          "lambda": 0.17311974980625142,
+          "block_log_moment_upper": 0.3707036855542427,
+          "radius": 0.22017883627628998
+        },
+        {
+          "scale": 1.25,
+          "lambda": 0.21639968725781428,
+          "block_log_moment_upper": 0.5758868014808424,
+          "radius": 0.22355143604009992
+        },
+        {
+          "scale": 1.5,
+          "lambda": 0.2596796247093771,
+          "block_log_moment_upper": 0.8235610458123531,
+          "radius": 0.2339812880186066
+        },
+        {
+          "scale": 2.0,
+          "lambda": 0.34623949961250283,
+          "block_log_moment_upper": 1.4395768900519317,
+          "radius": 0.2644440203273707
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "k": 5,
+      "weight_shape": "concentrated",
+      "blocks": 22,
+      "quota_radius": 0.4333374532666469,
+      "hoeffding_radius": 1.0415767072944921,
+      "serfling_radius": 0.8068018482298251,
+      "harmonic_martingale_radius": 0.7937765132500962,
+      "quota_over_martingale": 0.5459187139366956,
+      "selected_scale": 2.0,
+      "quota_grid": [
+        {
+          "scale": 0.5,
+          "lambda": 0.02596796247093771,
+          "block_log_moment_upper": 0.03334449160364898,
+          "radius": 0.8613587598072304
+        },
+        {
+          "scale": 0.75,
+          "lambda": 0.03895194370640656,
+          "block_log_moment_upper": 0.0740185232598484,
+          "radius": 0.629197624684327
+        },
+        {
+          "scale": 1.0,
+          "lambda": 0.05193592494187542,
+          "block_log_moment_upper": 0.1292072387458813,
+          "radius": 0.5278261573986658
+        },
+        {
+          "scale": 1.25,
+          "lambda": 0.06491990617734428,
+          "block_log_moment_upper": 0.19740361693768893,
+          "radius": 0.47754879175351544
+        },
+        {
+          "scale": 1.5,
+          "lambda": 0.07790388741281312,
+          "block_log_moment_upper": 0.2769585601809113,
+          "radius": 0.4517043526368836
+        },
+        {
+          "scale": 2.0,
+          "lambda": 0.10387184988375084,
+          "block_log_moment_upper": 0.46357727957826506,
+          "radius": 0.4333374532666469
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "k": 9,
+      "weight_shape": "equal",
+      "blocks": 22,
+      "quota_radius": 0.048015239323700165,
+      "hoeffding_radius": 0.04916854456058537,
+      "serfling_radius": 0.04916854456058537,
+      "harmonic_martingale_radius": 0.04916854456058537,
+      "quota_over_martingale": 0.9765438402297203,
+      "selected_scale": 1.0,
+      "quota_grid": [
+        {
+          "scale": 0.5,
+          "lambda": 0.7965304218814829,
+          "block_log_moment_upper": 0.09656931338205291,
+          "radius": 0.06129228908172327
+        },
+        {
+          "scale": 0.75,
+          "lambda": 1.1947956328222245,
+          "block_log_moment_upper": 0.2150596751784449,
+          "radius": 0.050778733528408594
+        },
+        {
+          "scale": 1.0,
+          "lambda": 1.5930608437629659,
+          "block_log_moment_upper": 0.3732695612835297,
+          "radius": 0.048015239323700165
+        },
+        {
+          "scale": 1.25,
+          "lambda": 1.9913260547037073,
+          "block_log_moment_upper": 0.572216898222644,
+          "radius": 0.04840288768217186
+        },
+        {
+          "scale": 1.5,
+          "lambda": 2.389591265644449,
+          "block_log_moment_upper": 0.8064725487699265,
+          "radius": 0.05013890791353485
+        },
+        {
+          "scale": 2.0,
+          "lambda": 3.1861216875259317,
+          "block_log_moment_upper": 1.3396179763569598,
+          "radius": 0.05433754770122177
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "k": 9,
+      "weight_shape": "alternating",
+      "blocks": 22,
+      "quota_radius": 0.07202285898555026,
+      "hoeffding_radius": 0.07375281684087805,
+      "serfling_radius": 0.07375281684087805,
+      "harmonic_martingale_radius": 0.07375281684087805,
+      "quota_over_martingale": 0.9765438402297206,
+      "selected_scale": 1.0,
+      "quota_grid": [
+        {
+          "scale": 0.5,
+          "lambda": 0.265510140627161,
+          "block_log_moment_upper": 0.09656931338205312,
+          "radius": 0.09193843362258494
+        },
+        {
+          "scale": 0.75,
+          "lambda": 0.3982652109407415,
+          "block_log_moment_upper": 0.2150596751784449,
+          "radius": 0.07616810029261287
+        },
+        {
+          "scale": 1.0,
+          "lambda": 0.531020281254322,
+          "block_log_moment_upper": 0.3732695612835299,
+          "radius": 0.07202285898555026
+        },
+        {
+          "scale": 1.25,
+          "lambda": 0.6637753515679025,
+          "block_log_moment_upper": 0.5722168982226437,
+          "radius": 0.07260433152325776
+        },
+        {
+          "scale": 1.5,
+          "lambda": 0.796530421881483,
+          "block_log_moment_upper": 0.8064725487699265,
+          "radius": 0.07520836187030226
+        },
+        {
+          "scale": 2.0,
+          "lambda": 1.062040562508644,
+          "block_log_moment_upper": 1.3396179763569598,
+          "radius": 0.08150632155183266
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "k": 9,
+      "weight_shape": "concentrated",
+      "blocks": 22,
+      "quota_radius": 0.20202102773368408,
+      "hoeffding_radius": 0.2587818134767651,
+      "serfling_radius": 0.2587818134767651,
+      "harmonic_martingale_radius": 0.2587818134767651,
+      "quota_over_martingale": 0.7806616122652015,
+      "selected_scale": 1.0,
+      "quota_grid": [
+        {
+          "scale": 0.5,
+          "lambda": 0.0796530421881483,
+          "block_log_moment_upper": 0.04454619715680147,
+          "radius": 0.2882161781671332
+        },
+        {
+          "scale": 0.75,
+          "lambda": 0.11947956328222245,
+          "block_log_moment_upper": 0.1118989684414151,
+          "radius": 0.2218134831598185
+        },
+        {
+          "scale": 1.0,
+          "lambda": 0.1593060843762966,
+          "block_log_moment_upper": 0.2198379834872246,
+          "radius": 0.20202102773368408
+        },
+        {
+          "scale": 1.25,
+          "lambda": 0.19913260547037073,
+          "block_log_moment_upper": 0.3742376689577472,
+          "radius": 0.20242530363123684
+        },
+        {
+          "scale": 1.5,
+          "lambda": 0.2389591265644449,
+          "block_log_moment_upper": 0.5771955620080633,
+          "radius": 0.21338993504622
+        },
+        {
+          "scale": 2.0,
+          "lambda": 0.3186121687525932,
+          "block_log_moment_upper": 1.1155087710119531,
+          "radius": 0.2489664690615876
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "k": 1,
+      "weight_shape": "equal",
+      "blocks": 22,
+      "quota_radius": 0.43287866814596787,
+      "hoeffding_radius": 0.4425169010452683,
+      "serfling_radius": 0.4425169010452683,
+      "harmonic_martingale_radius": 0.4425169010452683,
+      "quota_over_martingale": 0.9782195146071619,
+      "selected_scale": 1.0,
+      "quota_grid": [
+        {
+          "scale": 0.5,
+          "lambda": 0.07375281684087805,
+          "block_log_moment_upper": 0.09681997404868074,
+          "radius": 0.5519138233096863
+        },
+        {
+          "scale": 0.75,
+          "lambda": 0.11062922526131708,
+          "block_log_moment_upper": 0.21460473217500603,
+          "radius": 0.45666590825074055
+        },
+        {
+          "scale": 1.0,
+          "lambda": 0.1475056336817561,
+          "block_log_moment_upper": 0.3745820916048115,
+          "radius": 0.43287866814596787
+        },
+        {
+          "scale": 1.25,
+          "lambda": 0.1843820421021951,
+          "block_log_moment_upper": 0.5743395206298952,
+          "radius": 0.4365853298572628
+        },
+        {
+          "scale": 1.5,
+          "lambda": 0.22125845052263415,
+          "block_log_moment_upper": 0.8029952194357851,
+          "radius": 0.44994049268150343
+        },
+        {
+          "scale": 2.0,
+          "lambda": 0.2950112673635122,
+          "block_log_moment_upper": 1.3522546083438876,
+          "radius": 0.4926074630274142
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "k": 1,
+      "weight_shape": "alternating",
+      "blocks": 22,
+      "quota_radius": 0.6493180022189514,
+      "hoeffding_radius": 0.6637753515679025,
+      "serfling_radius": 0.6637753515679025,
+      "harmonic_martingale_radius": 0.6637753515679025,
+      "quota_over_martingale": 0.9782195146071614,
+      "selected_scale": 1.0,
+      "quota_grid": [
+        {
+          "scale": 0.5,
+          "lambda": 0.024584272280292682,
+          "block_log_moment_upper": 0.09681997404868034,
+          "radius": 0.8278707349645288
+        },
+        {
+          "scale": 0.75,
+          "lambda": 0.03687640842043902,
+          "block_log_moment_upper": 0.21460473217500603,
+          "radius": 0.6849988623761109
+        },
+        {
+          "scale": 1.0,
+          "lambda": 0.049168544560585364,
+          "block_log_moment_upper": 0.3745820916048112,
+          "radius": 0.6493180022189514
+        },
+        {
+          "scale": 1.25,
+          "lambda": 0.061460680700731705,
+          "block_log_moment_upper": 0.5743395206298952,
+          "radius": 0.654877994785894
+        },
+        {
+          "scale": 1.5,
+          "lambda": 0.07375281684087805,
+          "block_log_moment_upper": 0.8029952194357849,
+          "radius": 0.6749107390222551
+        },
+        {
+          "scale": 2.0,
+          "lambda": 0.09833708912117073,
+          "block_log_moment_upper": 1.3522546083438876,
+          "radius": 0.7389111945411212
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "k": 1,
+      "weight_shape": "concentrated",
+      "blocks": 22,
+      "quota_radius": 1.8724764729252847,
+      "hoeffding_radius": 2.528668005972962,
+      "serfling_radius": 2.528668005972962,
+      "harmonic_martingale_radius": 2.528668005972962,
+      "quota_over_martingale": 0.7404991357118893,
+      "selected_scale": 1.25,
+      "quota_grid": [
+        {
+          "scale": 0.5,
+          "lambda": 0.007375281684087805,
+          "block_log_moment_upper": 0.03831512576091575,
+          "radius": 2.776052428194458
+        },
+        {
+          "scale": 0.75,
+          "lambda": 0.011062922526131707,
+          "block_log_moment_upper": 0.09718366448821698,
+          "radius": 2.104094313384695
+        },
+        {
+          "scale": 1.0,
+          "lambda": 0.01475056336817561,
+          "block_log_moment_upper": 0.19319872231780896,
+          "radius": 1.8880348697506482
+        },
+        {
+          "scale": 1.25,
+          "lambda": 0.01843820421021951,
+          "block_log_moment_upper": 0.3333847598977717,
+          "radius": 1.8724764729252847
+        },
+        {
+          "scale": 1.5,
+          "lambda": 0.022125845052263414,
+          "block_log_moment_upper": 0.5217271000149896,
+          "radius": 1.9657457758840866
+        },
+        {
+          "scale": 2.0,
+          "lambda": 0.02950112673635122,
+          "block_log_moment_upper": 1.037169592145118,
+          "radius": 2.3063074042911285
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "k": 3,
+      "weight_shape": "equal",
+      "blocks": 22,
+      "quota_radius": 0.2291030572870444,
+      "hoeffding_radius": 0.25548725193944466,
+      "serfling_radius": 0.23322688507039888,
+      "harmonic_martingale_radius": 0.23226500911347867,
+      "quota_over_martingale": 0.9863864477972684,
+      "selected_scale": 1.0,
+      "quota_grid": [
+        {
+          "scale": 0.5,
+          "lambda": 0.14051564665876598,
+          "block_log_moment_upper": 0.09627421754465991,
+          "radius": 0.28936079632882
+        },
+        {
+          "scale": 0.75,
+          "lambda": 0.21077346998814897,
+          "block_log_moment_upper": 0.21479837902575982,
+          "radius": 0.23976799771545937
+        },
+        {
+          "scale": 1.0,
+          "lambda": 0.28103129331753196,
+          "block_log_moment_upper": 0.38097912648712895,
+          "radius": 0.2291030572870444
+        },
+        {
+          "scale": 1.25,
+          "lambda": 0.351289116646915,
+          "block_log_moment_upper": 0.5920315117662812,
+          "radius": 0.2333486105350462
+        },
+        {
+          "scale": 1.5,
+          "lambda": 0.42154693997629794,
+          "block_log_moment_upper": 0.8452468559868039,
+          "radius": 0.24451394655238262
+        },
+        {
+          "scale": 2.0,
+          "lambda": 0.5620625866350639,
+          "block_log_moment_upper": 1.4641116934533531,
+          "radius": 0.27514049043077965
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "k": 3,
+      "weight_shape": "alternating",
+      "blocks": 22,
+      "quota_radius": 0.3436545859305666,
+      "hoeffding_radius": 0.383230877909167,
+      "serfling_radius": 0.3498403276055983,
+      "harmonic_martingale_radius": 0.34839751367021804,
+      "quota_over_martingale": 0.9863864477972683,
+      "selected_scale": 1.0,
+      "quota_grid": [
+        {
+          "scale": 0.5,
+          "lambda": 0.04683854888625533,
+          "block_log_moment_upper": 0.09627421754465991,
+          "radius": 0.43404119449323003
+        },
+        {
+          "scale": 0.75,
+          "lambda": 0.07025782332938299,
+          "block_log_moment_upper": 0.2147983790257593,
+          "radius": 0.35965199657318875
+        },
+        {
+          "scale": 1.0,
+          "lambda": 0.09367709777251065,
+          "block_log_moment_upper": 0.3809791264871288,
+          "radius": 0.3436545859305666
+        },
+        {
+          "scale": 1.25,
+          "lambda": 0.11709637221563832,
+          "block_log_moment_upper": 0.5920315117662811,
+          "radius": 0.3500229158025694
+        },
+        {
+          "scale": 1.5,
+          "lambda": 0.14051564665876598,
+          "block_log_moment_upper": 0.8452468559868035,
+          "radius": 0.3667709198285738
+        },
+        {
+          "scale": 2.0,
+          "lambda": 0.1873541955450213,
+          "block_log_moment_upper": 1.4641116934533527,
+          "radius": 0.41271073564616934
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "k": 3,
+      "weight_shape": "concentrated",
+      "blocks": 22,
+      "quota_radius": 0.804177582305594,
+      "hoeffding_radius": 1.4599271539396836,
+      "serfling_radius": 1.3327250575451366,
+      "harmonic_martingale_radius": 1.3272286235055926,
+      "quota_over_martingale": 0.6059073531593446,
+      "selected_scale": 1.5,
+      "quota_grid": [
+        {
+          "scale": 0.5,
+          "lambda": 0.014051564665876596,
+          "block_log_moment_upper": 0.032236759097786866,
+          "radius": 1.436475088441212
+        },
+        {
+          "scale": 0.75,
+          "lambda": 0.021077346998814896,
+          "block_log_moment_upper": 0.0750715353040649,
+          "radius": 1.054424631587652
+        },
+        {
+          "scale": 1.0,
+          "lambda": 0.028103129331753192,
+          "block_log_moment_upper": 0.13727161829520804,
+          "radius": 0.89621274060312
+        },
+        {
+          "scale": 1.25,
+          "lambda": 0.03512891166469149,
+          "block_log_moment_upper": 0.21914854231383066,
+          "radius": 0.8279585766647126
+        },
+        {
+          "scale": 1.5,
+          "lambda": 0.04215469399762979,
+          "block_log_moment_upper": 0.3202546425173517,
+          "radius": 0.804177582305594
+        },
+        {
+          "scale": 2.0,
+          "lambda": 0.056206258663506384,
+          "block_log_moment_upper": 0.5750610370669776,
+          "radius": 0.8190101748834454
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "k": 6,
+      "weight_shape": "equal",
+      "blocks": 22,
+      "quota_radius": 0.1328483318267905,
+      "hoeffding_radius": 0.1806567683530972,
+      "serfling_radius": 0.13797888596402844,
+      "harmonic_martingale_radius": 0.1359766541728581,
+      "quota_over_martingale": 0.9769936805321687,
+      "selected_scale": 1.0,
+      "quota_grid": [
+        {
+          "scale": 0.5,
+          "lambda": 0.24001817187158864,
+          "block_log_moment_upper": 0.09405030204948936,
+          "radius": 0.16863053662549135
+        },
+        {
+          "scale": 0.75,
+          "lambda": 0.360027257807383,
+          "block_log_moment_upper": 0.21100428775379967,
+          "radius": 0.13949098994277523
+        },
+        {
+          "scale": 1.0,
+          "lambda": 0.4800363437431773,
+          "block_log_moment_upper": 0.373621914368739,
+          "radius": 0.1328483318267905
+        },
+        {
+          "scale": 1.25,
+          "lambda": 0.6000454296789716,
+          "block_log_moment_upper": 0.5808264567352083,
+          "radius": 0.13505489529863615
+        },
+        {
+          "scale": 1.5,
+          "lambda": 0.720054515614766,
+          "block_log_moment_upper": 0.8312908695077025,
+          "radius": 0.14153248798171503
+        },
+        {
+          "scale": 2.0,
+          "lambda": 0.9600726874863545,
+          "block_log_moment_upper": 1.4556881982216048,
+          "radius": 0.16034641940147165
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "k": 6,
+      "weight_shape": "alternating",
+      "blocks": 22,
+      "quota_radius": 0.19927249774018568,
+      "hoeffding_radius": 0.27098515252964583,
+      "serfling_radius": 0.20696832894604267,
+      "harmonic_martingale_radius": 0.2039649812592872,
+      "quota_over_martingale": 0.9769936805321681,
+      "selected_scale": 1.0,
+      "quota_grid": [
+        {
+          "scale": 0.5,
+          "lambda": 0.08000605729052954,
+          "block_log_moment_upper": 0.09405030204948915,
+          "radius": 0.25294580493823693
+        },
+        {
+          "scale": 0.75,
+          "lambda": 0.1200090859357943,
+          "block_log_moment_upper": 0.2110042877537993,
+          "radius": 0.20923648491416275
+        },
+        {
+          "scale": 1.0,
+          "lambda": 0.16001211458105907,
+          "block_log_moment_upper": 0.3736219143687388,
+          "radius": 0.19927249774018568
+        },
+        {
+          "scale": 1.25,
+          "lambda": 0.20001514322632385,
+          "block_log_moment_upper": 0.5808264567352082,
+          "radius": 0.2025823429479542
+        },
+        {
+          "scale": 1.5,
+          "lambda": 0.2400181718715886,
+          "block_log_moment_upper": 0.8312908695077018,
+          "radius": 0.21229873197257246
+        },
+        {
+          "scale": 2.0,
+          "lambda": 0.32002422916211815,
+          "block_log_moment_upper": 1.4556881982216046,
+          "radius": 0.24051962910220745
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "k": 6,
+      "weight_shape": "concentrated",
+      "blocks": 22,
+      "quota_radius": 0.3944921787462588,
+      "hoeffding_radius": 1.032324390589127,
+      "serfling_radius": 0.7884507769373054,
+      "harmonic_martingale_radius": 0.7770094524163321,
+      "quota_over_martingale": 0.5077057653796528,
+      "selected_scale": 2.0,
+      "quota_grid": [
+        {
+          "scale": 0.5,
+          "lambda": 0.024001817187158863,
+          "block_log_moment_upper": 0.028531973390475206,
+          "radius": 0.8336162246849473
+        },
+        {
+          "scale": 0.75,
+          "lambda": 0.03600272578073829,
+          "block_log_moment_upper": 0.06345627652535304,
+          "radius": 0.601936820427463
+        },
+        {
+          "scale": 1.0,
+          "lambda": 0.048003634374317726,
+          "block_log_moment_upper": 0.11104663732752847,
+          "radius": 0.49866170035726853
+        },
+        {
+          "scale": 1.25,
+          "lambda": 0.06000454296789716,
+          "block_log_moment_upper": 0.17015968550199762,
+          "radius": 0.4458409259223217
+        },
+        {
+          "scale": 1.5,
+          "lambda": 0.07200545156147659,
+          "block_log_moment_upper": 0.2395171428369119,
+          "radius": 0.4174019662144595
+        },
+        {
+          "scale": 2.0,
+          "lambda": 0.09600726874863545,
+          "block_log_moment_upper": 0.4037140336852475,
+          "radius": 0.3944921787462588
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "k": 11,
+      "weight_shape": "equal",
+      "blocks": 22,
+      "quota_radius": 0.03935260619508798,
+      "hoeffding_radius": 0.04022880918593348,
+      "serfling_radius": 0.04022880918593348,
+      "harmonic_martingale_radius": 0.04022880918593348,
+      "quota_over_martingale": 0.9782195146071617,
+      "selected_scale": 1.0,
+      "quota_grid": [
+        {
+          "scale": 0.5,
+          "lambda": 0.8112809852496585,
+          "block_log_moment_upper": 0.09681997404868055,
+          "radius": 0.05017398393724419
+        },
+        {
+          "scale": 0.75,
+          "lambda": 1.2169214778744877,
+          "block_log_moment_upper": 0.21460473217500603,
+          "radius": 0.041515082568249144
+        },
+        {
+          "scale": 1.0,
+          "lambda": 1.622561970499317,
+          "block_log_moment_upper": 0.3745820916048115,
+          "radius": 0.03935260619508798
+        },
+        {
+          "scale": 1.25,
+          "lambda": 2.0282024631241464,
+          "block_log_moment_upper": 0.5743395206298954,
+          "radius": 0.03968957544156935
+        },
+        {
+          "scale": 1.5,
+          "lambda": 2.4338429557489754,
+          "block_log_moment_upper": 0.8029952194357849,
+          "radius": 0.04090368115286394
+        },
+        {
+          "scale": 2.0,
+          "lambda": 3.245123940998634,
+          "block_log_moment_upper": 1.3522546083438876,
+          "radius": 0.04478249663885583
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "k": 11,
+      "weight_shape": "alternating",
+      "blocks": 22,
+      "quota_radius": 0.05902890929263195,
+      "hoeffding_radius": 0.06034321377890023,
+      "serfling_radius": 0.06034321377890023,
+      "harmonic_martingale_radius": 0.06034321377890023,
+      "quota_over_martingale": 0.9782195146071613,
+      "selected_scale": 1.0,
+      "quota_grid": [
+        {
+          "scale": 0.5,
+          "lambda": 0.2704269950832195,
+          "block_log_moment_upper": 0.09681997404868034,
+          "radius": 0.07526097590586625
+        },
+        {
+          "scale": 0.75,
+          "lambda": 0.40564049262482926,
+          "block_log_moment_upper": 0.21460473217500603,
+          "radius": 0.062272623852373706
+        },
+        {
+          "scale": 1.0,
+          "lambda": 0.540853990166439,
+          "block_log_moment_upper": 0.3745820916048112,
+          "radius": 0.05902890929263195
+        },
+        {
+          "scale": 1.25,
+          "lambda": 0.6760674877080487,
+          "block_log_moment_upper": 0.5743395206298952,
+          "radius": 0.05953436316235401
+        },
+        {
+          "scale": 1.5,
+          "lambda": 0.8112809852496585,
+          "block_log_moment_upper": 0.8029952194357847,
+          "radius": 0.0613555217292959
+        },
+        {
+          "scale": 2.0,
+          "lambda": 1.081707980332878,
+          "block_log_moment_upper": 1.3522546083438873,
+          "radius": 0.06717374495828374
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "k": 11,
+      "weight_shape": "concentrated",
+      "blocks": 22,
+      "quota_radius": 0.17022513390229857,
+      "hoeffding_radius": 0.22987890963390561,
+      "serfling_radius": 0.22987890963390561,
+      "harmonic_martingale_radius": 0.22987890963390561,
+      "quota_over_martingale": 0.7404991357118891,
+      "selected_scale": 1.25,
+      "quota_grid": [
+        {
+          "scale": 0.5,
+          "lambda": 0.08112809852496584,
+          "block_log_moment_upper": 0.03831512576091575,
+          "radius": 0.25236840256313253
+        },
+        {
+          "scale": 0.75,
+          "lambda": 0.12169214778744877,
+          "block_log_moment_upper": 0.09718366448821698,
+          "radius": 0.19128130121679046
+        },
+        {
+          "scale": 1.0,
+          "lambda": 0.1622561970499317,
+          "block_log_moment_upper": 0.19319872231780896,
+          "radius": 0.1716395336136953
+        },
+        {
+          "scale": 1.25,
+          "lambda": 0.2028202463124146,
+          "block_log_moment_upper": 0.33338475989777144,
+          "radius": 0.17022513390229857
+        },
+        {
+          "scale": 1.5,
+          "lambda": 0.24338429557489755,
+          "block_log_moment_upper": 0.5217271000149893,
+          "radius": 0.17870416144400783
+        },
+        {
+          "scale": 2.0,
+          "lambda": 0.3245123940998634,
+          "block_log_moment_upper": 1.0371695921451178,
+          "radius": 0.20966430948101167
+        }
+      ]
+    }
+  ],
+  "seconds": 6.334463596343994
+}

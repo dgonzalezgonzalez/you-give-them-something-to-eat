@@ -8,7 +8,7 @@ number-sections: true
 
 # Paper and audit scope
 
-*You give them something to eat: Dietary Diversity, Coverage, and Catholic Aid in Rwanda*. Fourth-report revision, preparing fifth scientific submission; all four genuine recommendations Reject. Public branch codex/research. Internal self-audit follows the retained public JPE TEMPLATE.qmd criteria/MIT attribution. No journal manuscript ID, official JPE certification or independent full replication is asserted.
+*You give them something to eat: Dietary Diversity, Coverage, and Catholic Aid in Rwanda*. Sixth revision in progress; all five genuine recommendations Reject at the unchanged leading general-interest standard. Public branch codex/research. Internal self-audit follows the retained public JPE TEMPLATE.qmd criteria/MIT attribution. No journal manuscript ID, official JPE certification or independent full replication is asserted.
 
 # Data, rights and sources
 
@@ -28,7 +28,7 @@ Master checks references, estimates initial ANCOVA, constructs conditional ratio
 
 # Exhibits and inferential scope
 
-Output map derives actual manuscript numbering: 16 cited tables, 1 cited figure, four generated macro sets. Total generated output is 32 tables/six figures; unused supplementary plots/tables are labeled uncited. Numerical sources and builder lines are provided. Source facts, mathematical claims and citations need review beyond successful execution.
+Output map derives actual manuscript numbering: 18 cited tables, 1 cited figure, five generated macro sets. Total generated output is 34 tables/six figures; unused supplementary plots/tables are labeled uncited. Numerical sources and builder lines are provided. Source facts, mathematical claims and citations need review beyond successful execution.
 
 Initial families: 204 primary, 96 economic, 80 food, ten heterogeneity, five observation. Revised exploratory block families: 184 GK/cash, 828 pairwise and 1,656 endpoints after affine deduplication. Separate finite families: 276 full-baseline primitive arm/endpoints and 138 observed primitives. Child baseline-cohort, endline-due and ineligible estimates each have separate fifteen-test Holm families. Separate events do not create one paper-wide 95% guarantee. All extensions retain exploratory amendment history.
 
@@ -69,3 +69,13 @@ The current full numerical/PDF master takes 124.34 seconds on Windows. New quota
 The shared 276-term event verifies 5.8671294071 mean groups and 0.5025483675 shortfall units, rounded upward to 5.868/0.503. Exact-rational shares, ideal cost vertices, directed constants and feasible dual tangents are retained for replay. The default master verifies published numerical proposals; optional exchange search does not establish a certified minimax gap. Baseline-only lambda selection and missing-endpoint event validity are derived in docs/quota-inference.md and the manuscript appendix. The new event is not intersected with the earlier nominal 95% regions. Current bound width, unrecovered original assignment law and economic-contribution objection remain material. Fifth genuine review is not yet submitted.
 
 Optional production-region exchange search also completed in 387.29 seconds: mean floating upper 5.8671824456 / gap 0.00019747,shortfall upper 0.5025619383 / gap 0.00013635. Actual output/quota-search.json is retained. These are numerical diagnostics; the separately enclosed canonical proposal verification supplies the reported 5.868 / 0.503 bounds. No certified minimax gap is inferred.
+
+
+# Sixth-revision comparison update
+
+The genuine fifth review rejects on contribution while accepting inspected conditional coverage/certificate arguments. It independently recomputes authenticated model receipts and fixtures, not microdata/PDF outputs; full execution limits are preserved. New established-method comparisons and component ablations are in docs/quota-benchmarks.md. The default master now reproduces their empirical table and complete 33-design catalogue, with 7,138 classical moment checks and 1,180 shared-support receipt checks. Initial full master takes 326.19 seconds; the added receipt replay also ran separately and is included in the new cold-source master. The 34-page PDF and all current contact sheets/new formulas/tables/references were inspected; no overfull or unresolved log messages remain. Requested LR-only second score is 0.129599 below its necessary threshold, without full-ensemble or authorship inference. New cold/hosted source verification remains pending, and earlier hosted success is not attributed to this source. No sixth recommendation or acceptance is manufactured.
+
+
+Actual sixth-revision fresh-source audit completed: **102/102** output comparisons pass, including both new tables, both benchmark CSVs, five macro files, output map and 34-page PDF text. Cold scientific master took 498.536787 seconds using the same installed interpreter. Its initial comparison wrapper failed with `AttributeError: 'str' object has no attribute 'relative_to'` because two added paths were strings. Both entries were corrected to Path objects, and the comparison was rerun against the already completed cold outputs; the scientific master was not repeated. The error and recovery are recorded in output/clean-run.json. This remains internal reproduction, not fresh environment provisioning or external scientific replication.
+
+Optional harmonic allocation search completed in 711.336830 seconds. Mean: 30 iterations, floating upper 6.54311824495414, diagnostic gap 0.00041404881027; it exhausted the iteration limit without reaching the 0.0003 stopping target. Shortfall: nine iterations, floating upper 0.5474535432253077, gap 0.00009834471497. Directed verification of exact-rational proposals gives **6.544 groups / 0.548 shortfall units**, respectively 6.543115241696492 and 0.5474520405798181 before upward display rounding. These remain verified proposals, not certified minimax optima or gaps. Optional receipts are separate from the manuscript's fixed-proposal comparison and production quota inputs. No observed minimum across separately valid confidence events is asserted.

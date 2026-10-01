@@ -1,6 +1,6 @@
 {
   "scope": "Fresh copy with no prior outputs; same installed interpreter and pinned statistical package versions, not a fresh package installation",
-  "checked_files": 95,
+  "checked_files": 101,
   "checks": {
     "output/allocation_certificates.csv": true,
     "output/allocation_cost_sensitivity.csv": true,
@@ -45,6 +45,8 @@
     "output/policy_tolerances.csv": true,
     "output/population_bounds.csv": true,
     "output/quota_allocations.csv": true,
+    "output/quota_benchmarks.csv": true,
+    "output/quota_design_benchmarks.csv": true,
     "output/robustness.csv": true,
     "output/secondary.csv": true,
     "output/unused_resource_sensitivity.csv": true,
@@ -75,6 +77,8 @@
     "output/tables/original_crosswalk.tex": true,
     "output/tables/policies.tex": true,
     "output/tables/population_bounds.tex": true,
+    "output/tables/quota_design_comparison.tex": true,
+    "output/tables/quota_method_comparison.tex": true,
     "output/tables/regret.tex": true,
     "output/tables/retention.tex": true,
     "output/tables/robustness.tex": true,
@@ -92,15 +96,17 @@
     "output/revision-numbers.json": true,
     "output/decision-numbers.json": true,
     "output/distribution-numbers.json": true,
+    "output/quota-comparison-numbers.json": true,
     "paper/results.tex": true,
     "paper/revision-results.tex": true,
     "paper/decision-results.tex": true,
     "paper/distribution-results.tex": true,
+    "paper/quota-comparison-results.tex": true,
     "docs/output-map.csv": true,
     "paper_pdf_page_text": true
   },
   "all_passed": true,
-  "pdf_pages": 31,
+  "pdf_pages": 34,
   "excluded_from_byte_comparison": [
     "runtime metadata",
     "PDF creation timestamps",
@@ -109,8 +115,10 @@
   "master": {
     "python": "3.12.10",
     "platform": "Windows-11-10.0.26200-SP0",
-    "seconds": 111.39041376113892,
+    "seconds": 498.5367865562439,
     "pdf_compiled": true,
     "source_reextracted": false
-  }
+  },
+  "source_copy_directory": "C:\\Users\\dgonzalez\\Documents\\ChatGPT\\You give them something to eat\\tmp\\clean-20261001-020412",
+  "comparison_recovery": "Cold scientific master completed successfully in 498.536787 seconds. First comparison wrapper failed because two newly added path entries were strings. Corrected both to Path objects and reran comparison against the same completed cold outputs; scientific master was not repeated."
 }

@@ -1,0 +1,732 @@
+{
+  "canonical_source": "output/quota-benchmarks.json",
+  "canonical_sha256": "944e104a5bfb066c4efb51c877da569bb952b363c525d7e202c8a0ba536ff9fc",
+  "scope": "Public inspection aliases; original master inputs unchanged. Every comparator view round-trips its canonical JSON. Model views regenerate the same constants used by the internal receipt replay.",
+  "files": [
+    {
+      "path": "docs/referee/round-6-review/model-quota-shared-floors-Control.json",
+      "bytes": 14835,
+      "sha256": "45c0da3f7f7fc88989e9c3ea636fec5f975670cca98c669d925554d6fc7fc546"
+    },
+    {
+      "path": "docs/referee/round-6-review/model-quota-shared-floors-Gikuriro.json",
+      "bytes": 15019,
+      "sha256": "d89dab100a1a7f40f685ab6258e9834185633a8a29b26c1a2cc52350dcdf1ab8"
+    },
+    {
+      "path": "docs/referee/round-6-review/model-quota-shared-floors-Lower.json",
+      "bytes": 15151,
+      "sha256": "3a3e7d606560571992020ae8a9ad4471e2109202431a65aae9a4ac403690a07b"
+    },
+    {
+      "path": "docs/referee/round-6-review/model-quota-shared-floors-Middle.json",
+      "bytes": 15118,
+      "sha256": "a97f5d14c51e52f826ac22519f276ea5a90ab856b8fb077a83f5b6b66cfb0435"
+    },
+    {
+      "path": "docs/referee/round-6-review/model-quota-shared-floors-Upper.json",
+      "bytes": 15161,
+      "sha256": "467a59d24917e4eee1b1922b63ef5140af665dca6cec38c78ca91062b77e9ed4"
+    },
+    {
+      "path": "docs/referee/round-6-review/model-quota-shared-floors-Large.json",
+      "bytes": 15143,
+      "sha256": "481bbbade17b36236125639d8a732a5a42f449a8cf7355adf3eeb50d9c42dfea"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-floors-mean-Control.json",
+      "bytes": 8552,
+      "sha256": "ca608c015c6de87cca2f109f51e08bd8c2f442abaaeff984992753f34c370f78"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-floors-mean-Gikuriro.json",
+      "bytes": 8471,
+      "sha256": "38cc76d20aae489d82d689f710c3ad4ed23f1216ea5de5fd275f6aa1a0df18b9"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-floors-mean-Lower.json",
+      "bytes": 8713,
+      "sha256": "42c15347bb0cd34ae42505dbec21bb22d63ab182341a177d5bd27cfe6faadd38"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-floors-mean-Middle.json",
+      "bytes": 8653,
+      "sha256": "447340baa16a117dcb8529f52d67af59e672ec32824f5eb99f111ded659be32b"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-floors-mean-Upper.json",
+      "bytes": 8607,
+      "sha256": "c46b3fefe663e4c710cc4beeaa3a3a6b7b3027ae627dda46a9b27c1918a60331"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-floors-mean-Control-Large.json",
+      "bytes": 8724,
+      "sha256": "e896af3772cbffd7acecd99991ce5809085e83586e2295b90788181dfeb5038c"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-floors-mean-Lower-Large.json",
+      "bytes": 8702,
+      "sha256": "46aa8da09a06762869d059bce9ac2377e98fbeb9c0d273e21f999d9d4344d474"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-floors-mean-Middle-Large.json",
+      "bytes": 8865,
+      "sha256": "71f73ab689ca99a8b819d1dc68692234e0d6bd76a35d6c675a1e013697d580b7"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-floors-mean-Upper-Large.json",
+      "bytes": 8839,
+      "sha256": "e773130b64a284c96d0fd7bd5aad31268423ceca4708cce2a86d333c2433fc53"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-floors-shortfall_6-Control.json",
+      "bytes": 8395,
+      "sha256": "599213056e25516c33edb1478e8b3c20d85e97b447c05504f9a7eacaa7c25fdb"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-floors-shortfall_6-Gikuriro.json",
+      "bytes": 8346,
+      "sha256": "bc5ffdbe6d0406993bbf25c8d487b3df53557f634ec1954ffb7f3d3b69c785d1"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-floors-shortfall_6-Lower.json",
+      "bytes": 8412,
+      "sha256": "2f2dc6b75f955086fdb8d52171c4c44be0ef1c616468db2d805f64463210605c"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-floors-shortfall_6-Middle.json",
+      "bytes": 8416,
+      "sha256": "9c79839ab8adb809c5da6350ff5691a48209e3783105bd8b3a7ecba1905cfb9b"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-floors-shortfall_6-Upper.json",
+      "bytes": 8505,
+      "sha256": "c62269e2bbfe5c4013a5c13b798f6bfcb3ba7f3b1bd94086485d22b4e7d446cb"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-floors-shortfall_6-Control-Large.json",
+      "bytes": 8338,
+      "sha256": "c1134ac527cafd9510b899f829f1091851409b78765ee09a27d33b1e0f8b0b36"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-floors-shortfall_6-Lower-Large.json",
+      "bytes": 8374,
+      "sha256": "15361936b24feeb24e2fd3afd5ccaa137e18f8e9b5191c4705e2f06e1ab916ae"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-floors-shortfall_6-Middle-Large.json",
+      "bytes": 8312,
+      "sha256": "e1bc01c84ada475c1f0f0fa3ba41aefd53015aaaf03b8685a2ee6ff5a484b155"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-floors-shortfall_6-Upper-Large.json",
+      "bytes": 8426,
+      "sha256": "ef348effc909957e326f697a2b4d3aff08644d295639d0a3ceb00fd2e7d98749"
+    },
+    {
+      "path": "docs/referee/round-6-review/summary-quota-shared-floors.json",
+      "bytes": 5571,
+      "sha256": "293f63f5b8423ca07f1d234ec1632ca010a4d66a6eb2261ad23ada2a4fb537be"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-separate-floors-mean-Control.json",
+      "bytes": 60,
+      "sha256": "27913aca272333a4a52346271c22fe4f4ad07b7e80d0be1b103c60bc345e95f0"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-separate-floors-mean-Gikuriro.json",
+      "bytes": 61,
+      "sha256": "8f7e4d9db734bcb1503c1dcdaf00316caddac448c5d4fc2a3099118619ba200f"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-separate-floors-mean-Lower.json",
+      "bytes": 57,
+      "sha256": "78692cd972e7846a32dfea151fc5607f810970afb565462e74dd5cf9dec44797"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-separate-floors-mean-Middle.json",
+      "bytes": 59,
+      "sha256": "b7b2c5731ac61eeb8604773c4ceeaae51cc68033ed91933699b5838e288c1b75"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-separate-floors-mean-Upper.json",
+      "bytes": 58,
+      "sha256": "de3d1ab2e4cb7a4faaa7953d8217b43a4a35a94aec901e9e24a66ab4c75296b1"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-separate-floors-mean-Control-Large.json",
+      "bytes": 65,
+      "sha256": "dbe12af59f6588d4855c7bd040881f964cd483dd9461191df3d9a331d325faa0"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-separate-floors-mean-Lower-Large.json",
+      "bytes": 64,
+      "sha256": "2b031e6b5689d702f91ac5fa1115aa571afd9ec2c6179df5aff79faef7182b22"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-separate-floors-mean-Middle-Large.json",
+      "bytes": 66,
+      "sha256": "ee74c927324bf0299ad140cc8f5733d43eecc0d3407bb548bacceef6c344f466"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-separate-floors-mean-Upper-Large.json",
+      "bytes": 64,
+      "sha256": "c302fa26f64a9cbbdfee4ff4c6c9bd2193a1414f0877b591c2943d21e4572151"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-separate-floors-shortfall_6-Control.json",
+      "bytes": 61,
+      "sha256": "8a335de0b9769374c7cb33697939dd39e207391500264451c67538890b39dd13"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-separate-floors-shortfall_6-Gikuriro.json",
+      "bytes": 62,
+      "sha256": "737c214a393fad342e0e563003285bf86a928fcf8f59f3ec1b08a81929febcd0"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-separate-floors-shortfall_6-Lower.json",
+      "bytes": 58,
+      "sha256": "2deea567069f1fcdf4700eab1af47537030f8d1052d0e7680a82fbf7b9f0a1cb"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-separate-floors-shortfall_6-Middle.json",
+      "bytes": 60,
+      "sha256": "9ab350d64df109a266f96b11d82806fb11dc1576507b8fa301c20028295d46ff"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-separate-floors-shortfall_6-Upper.json",
+      "bytes": 59,
+      "sha256": "d7b6ed8c5ba98c5177316dec1848e832828f2f84cb8f1845aec6e90e4bce0a48"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-separate-floors-shortfall_6-Control-Large.json",
+      "bytes": 67,
+      "sha256": "ad3db3157fdb3c904cef14b595af089be08bc9c69d661ff1dd898ddddab08966"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-separate-floors-shortfall_6-Lower-Large.json",
+      "bytes": 65,
+      "sha256": "b222440392f81aa83907222c9fdeec117720bf964b65034ac6782498e68beae9"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-separate-floors-shortfall_6-Middle-Large.json",
+      "bytes": 66,
+      "sha256": "77fc43e522539ee5bf162b50d75014d7655bdf0fc98f1d7102b0247c570dce09"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-separate-floors-shortfall_6-Upper-Large.json",
+      "bytes": 65,
+      "sha256": "4b02d56ce7547bb62407fb836358c0d2c9bae800b68e4a6f1053f6e173b25224"
+    },
+    {
+      "path": "docs/referee/round-6-review/summary-quota-separate-floors.json",
+      "bytes": 4747,
+      "sha256": "1bd3bb649f867364a13583d6e624e3e73c4bbf0e40af590ca3abf896ab92c72e"
+    },
+    {
+      "path": "docs/referee/round-6-review/model-quota-shared-no-floors-Control.json",
+      "bytes": 14648,
+      "sha256": "ac16bb004488d851e344e7d234d0f3a2680c4a1b7011f088a030b44ea14de5e6"
+    },
+    {
+      "path": "docs/referee/round-6-review/model-quota-shared-no-floors-Gikuriro.json",
+      "bytes": 14835,
+      "sha256": "be4d6292b45f7febc97805198d33371b0632d2868470a172f893505a94883f07"
+    },
+    {
+      "path": "docs/referee/round-6-review/model-quota-shared-no-floors-Lower.json",
+      "bytes": 14978,
+      "sha256": "b23bc247a9b916aaa53681b3923b9108fcc3a70336387f0dc50d2d831ee0777a"
+    },
+    {
+      "path": "docs/referee/round-6-review/model-quota-shared-no-floors-Middle.json",
+      "bytes": 14966,
+      "sha256": "e46234f6ccb6f998ef91c2fcee8064982be37573cafcc2f643af1baae340c5b3"
+    },
+    {
+      "path": "docs/referee/round-6-review/model-quota-shared-no-floors-Upper.json",
+      "bytes": 14973,
+      "sha256": "380c265c6f4874bc4a49220f05b8d979dda995edb825aceee972dca14cada033"
+    },
+    {
+      "path": "docs/referee/round-6-review/model-quota-shared-no-floors-Large.json",
+      "bytes": 14970,
+      "sha256": "df7d624d5ca2c0d8e676cee29b0abc4672b41b8012fcfcc628e5b3caa28470c9"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-no-floors-mean-Control.json",
+      "bytes": 9032,
+      "sha256": "6e8f1dadfa8fc836eb43c75961a3d08ca6371ddae17d653de8c148dfdd1c85c1"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-no-floors-mean-Gikuriro.json",
+      "bytes": 9018,
+      "sha256": "b85e462428c9e09b5e49815763e9c9dae15f2b409381a3fe4acc7005b04b1f08"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-no-floors-mean-Lower.json",
+      "bytes": 8942,
+      "sha256": "b69b6b0eadb8b14e709ee117affecd8b277d4b9012d11d8a9916393d76e2e024"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-no-floors-mean-Middle.json",
+      "bytes": 9128,
+      "sha256": "cfe5df01d2f845fdc0210dac0bd72a5fca067d086ffbb7783632a1c1cce47d56"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-no-floors-mean-Upper.json",
+      "bytes": 9083,
+      "sha256": "b5ef874d9e420f26a312b6768b57d30e29b76ed6619f82d104b85c4cff7c6787"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-no-floors-mean-Control-Large.json",
+      "bytes": 9184,
+      "sha256": "b4e5ddcb12426c5375ebc99c11f696529a81b1ee28b3b57d0a237a6691f40772"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-no-floors-mean-Lower-Large.json",
+      "bytes": 9230,
+      "sha256": "38f418fd47aa08901e525a842d52fe987ffde9009fe6e628d95fb880087a2cb8"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-no-floors-mean-Middle-Large.json",
+      "bytes": 9188,
+      "sha256": "515f393cec9173d74b95cdfafc512eabed1ce30483eee18251b7c0232a204e27"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-no-floors-mean-Upper-Large.json",
+      "bytes": 9184,
+      "sha256": "24d450f1fa253ca88c3e4d682949cda8d80ace17dbfbe71d9d209a412b691cca"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-no-floors-shortfall_6-Control.json",
+      "bytes": 8466,
+      "sha256": "8bc3d4d724dcc48e440d32dd3e2adbf957382f2dc6a9c0b052c4dddd3622a959"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-no-floors-shortfall_6-Gikuriro.json",
+      "bytes": 8548,
+      "sha256": "2e6c202233b9d4f697e14713711b417e08ca0389a8f9de9cf913145d246809db"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-no-floors-shortfall_6-Lower.json",
+      "bytes": 8556,
+      "sha256": "62c3380a1f6a27e05b614a4e9b8877069f3979b9c4705d5d9dafe63134f34991"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-no-floors-shortfall_6-Middle.json",
+      "bytes": 8355,
+      "sha256": "d6d0498a524cd28db7610aae2d5b0c61dd00aa484c948d517eff6e6ab0f66eb6"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-no-floors-shortfall_6-Upper.json",
+      "bytes": 8655,
+      "sha256": "ddf6ce3e57c8af1a7fdf0253ffef3e4f66b240a8b92d2789f90c2768858d773a"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-no-floors-shortfall_6-Control-Large.json",
+      "bytes": 8784,
+      "sha256": "240bc59644fcaf6ebb98eea1f06e49fb1c5c4a80d13a5c5c80d4a942c3d216bd"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-no-floors-shortfall_6-Lower-Large.json",
+      "bytes": 8672,
+      "sha256": "cab852c2b9af7e265c2ad5d70ec55d164a343a08197f8fffc44c89f63fd031f6"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-no-floors-shortfall_6-Middle-Large.json",
+      "bytes": 8531,
+      "sha256": "6437463e88fde4581438c2d547ec7936c905b807486731ff03b09294ef71b82c"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-quota-shared-no-floors-shortfall_6-Upper-Large.json",
+      "bytes": 8833,
+      "sha256": "5394ee7091f3a2f983df536654fdee391a105f6585f7b52966f16e45e92f715b"
+    },
+    {
+      "path": "docs/referee/round-6-review/summary-quota-shared-no-floors.json",
+      "bytes": 5630,
+      "sha256": "c05f37b9e2c4f8b17e8cd7a31cfbbaeaa21fd7712da19f7419e8902ee05efe05"
+    },
+    {
+      "path": "docs/referee/round-6-review/model-hoeffding_baseline_optimized-shared-floors-Control.json",
+      "bytes": 15009,
+      "sha256": "473fd490437f1653728a686ea0f3cea2e17d49cce3bfbea85ce38d0c055edaa2"
+    },
+    {
+      "path": "docs/referee/round-6-review/model-hoeffding_baseline_optimized-shared-floors-Gikuriro.json",
+      "bytes": 15038,
+      "sha256": "b1ed54d509da1fcb0e924d4e9409d9207a88b7a40724b9b4f7d694df411b2761"
+    },
+    {
+      "path": "docs/referee/round-6-review/model-hoeffding_baseline_optimized-shared-floors-Lower.json",
+      "bytes": 14850,
+      "sha256": "5278f0ceac04932838f89007960afc88ffc15b79672b32026799086d1b03fd8b"
+    },
+    {
+      "path": "docs/referee/round-6-review/model-hoeffding_baseline_optimized-shared-floors-Middle.json",
+      "bytes": 14822,
+      "sha256": "b3f1f60894f8cf989cadb811916b7361af0efe159a0e053ca3bace765ca2708f"
+    },
+    {
+      "path": "docs/referee/round-6-review/model-hoeffding_baseline_optimized-shared-floors-Upper.json",
+      "bytes": 14835,
+      "sha256": "f8137c6fea06efdd84bd61beeff3b6edc89653acfb22ad23380572ad8772e5d6"
+    },
+    {
+      "path": "docs/referee/round-6-review/model-hoeffding_baseline_optimized-shared-floors-Large.json",
+      "bytes": 14853,
+      "sha256": "f67db690911ba7ea5ee4d17d368c527eff6f1f5376744a2f4f56ae8ee6e79cc7"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-hoeffding_baseline_optimized-shared-floors-mean-Control.json",
+      "bytes": 8612,
+      "sha256": "d5093569d4d9dd2221a41d1a571106c96c623209ef6e826657e83804421337f7"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-hoeffding_baseline_optimized-shared-floors-mean-Gikuriro.json",
+      "bytes": 8556,
+      "sha256": "0979c83136d6b9fc7b4309c5ed0a96a97469289940602fe16f2932e59ae3a28e"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-hoeffding_baseline_optimized-shared-floors-mean-Lower.json",
+      "bytes": 8843,
+      "sha256": "0751df886383ab0178d51c51b88ded407a6390e78a4021ccba5f94483658c7e6"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-hoeffding_baseline_optimized-shared-floors-mean-Middle.json",
+      "bytes": 8607,
+      "sha256": "465c117b1549f9234c638d6ba0f7c8e98ff72f8bf92d4ab09e454e2b1976412b"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-hoeffding_baseline_optimized-shared-floors-mean-Upper.json",
+      "bytes": 8723,
+      "sha256": "174cb9c1752b9f400faf886cdd8a83612dae1a63ff0a401b47e6247440d730e4"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-hoeffding_baseline_optimized-shared-floors-mean-Control-Large.json",
+      "bytes": 8592,
+      "sha256": "f3d68c07acd031dc7cd350bea6f1ccf0501179f9fc14f5701939006814489936"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-hoeffding_baseline_optimized-shared-floors-mean-Lower-Large.json",
+      "bytes": 8863,
+      "sha256": "17fc8eb64aae92e18c4da37061c5d1cc1260fb591f31382ab1015b3f14266611"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-hoeffding_baseline_optimized-shared-floors-mean-Middle-Large.json",
+      "bytes": 8767,
+      "sha256": "ff6eacf11a0bc1a7e11aaab6353be82a666238cd8f207e0d1456ea64cd5f5b51"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-hoeffding_baseline_optimized-shared-floors-mean-Upper-Large.json",
+      "bytes": 8833,
+      "sha256": "8be46890d507a02881425a68f5d3f613b1762fb41f9bdd4b59bb202430c724c4"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-hoeffding_baseline_optimized-shared-floors-shortfall_6-Control.json",
+      "bytes": 8413,
+      "sha256": "d12c79ff1e58c9154acd6a6139bf2a89b6533c5c6ce4d85bfe1e3c808834b245"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-hoeffding_baseline_optimized-shared-floors-shortfall_6-Gikuriro.json",
+      "bytes": 8404,
+      "sha256": "7dfa16ab6e3f4bb3735cf812661d151feb9d99180b383a993b469e7fe9879f47"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-hoeffding_baseline_optimized-shared-floors-shortfall_6-Lower.json",
+      "bytes": 8462,
+      "sha256": "bf29aa2765ced279f3fab90baafa500273c9c2aba2b68606904dfba8d7aa5911"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-hoeffding_baseline_optimized-shared-floors-shortfall_6-Middle.json",
+      "bytes": 8395,
+      "sha256": "a1c130d61becf8b125ce690590bf2cf118181f29fe96742e6b9d02c945ba075b"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-hoeffding_baseline_optimized-shared-floors-shortfall_6-Upper.json",
+      "bytes": 8467,
+      "sha256": "f5901dd45d681ba032474f42a85f9492f3ee3a5d34d15b73c20c44b6085edfd4"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-hoeffding_baseline_optimized-shared-floors-shortfall_6-Control-Large.json",
+      "bytes": 8403,
+      "sha256": "096b943748794872c19b0acd82e61c032533ada3faff505074f615c06cfede67"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-hoeffding_baseline_optimized-shared-floors-shortfall_6-Lower-Large.json",
+      "bytes": 8368,
+      "sha256": "bde22449107a5396fccfe59d21d3ba387cb9820b4652834b8421c7abb4f49331"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-hoeffding_baseline_optimized-shared-floors-shortfall_6-Middle-Large.json",
+      "bytes": 8368,
+      "sha256": "2cb41ca3b8824cce8fe6ae9f28a443c81a3f36250f44268912faa2531fd22099"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-hoeffding_baseline_optimized-shared-floors-shortfall_6-Upper-Large.json",
+      "bytes": 8403,
+      "sha256": "af0eca8ca49d38ad44d1d61d9a351aedb434d43ec20490140cf3cb6cca129240"
+    },
+    {
+      "path": "docs/referee/round-6-review/summary-hoeffding_baseline_optimized-shared-floors.json",
+      "bytes": 6465,
+      "sha256": "78dd04064af89b6b2d1e17a43be769d7f20d2ea92e0d43309b513baedaa72997"
+    },
+    {
+      "path": "docs/referee/round-6-review/model-serfling_baseline_optimized-shared-floors-Control.json",
+      "bytes": 14855,
+      "sha256": "9ba1ba38c373487f1005c957a45827d2cdcb8980a1b3ad18abe9cef23323fa30"
+    },
+    {
+      "path": "docs/referee/round-6-review/model-serfling_baseline_optimized-shared-floors-Gikuriro.json",
+      "bytes": 14886,
+      "sha256": "c525c0010aab775eb39c9c1ea48aff8edd6577b62a8e73902c0c3e5804e8ab50"
+    },
+    {
+      "path": "docs/referee/round-6-review/model-serfling_baseline_optimized-shared-floors-Lower.json",
+      "bytes": 14850,
+      "sha256": "5278f0ceac04932838f89007960afc88ffc15b79672b32026799086d1b03fd8b"
+    },
+    {
+      "path": "docs/referee/round-6-review/model-serfling_baseline_optimized-shared-floors-Middle.json",
+      "bytes": 14822,
+      "sha256": "b3f1f60894f8cf989cadb811916b7361af0efe159a0e053ca3bace765ca2708f"
+    },
+    {
+      "path": "docs/referee/round-6-review/model-serfling_baseline_optimized-shared-floors-Upper.json",
+      "bytes": 14835,
+      "sha256": "f8137c6fea06efdd84bd61beeff3b6edc89653acfb22ad23380572ad8772e5d6"
+    },
+    {
+      "path": "docs/referee/round-6-review/model-serfling_baseline_optimized-shared-floors-Large.json",
+      "bytes": 15120,
+      "sha256": "b3f9c15cfa41b08abfb8d340a9db50c06237132dce9ce7aa65b76b4c949d503b"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-serfling_baseline_optimized-shared-floors-mean-Control.json",
+      "bytes": 8566,
+      "sha256": "3796e48d665bf7e8f142f4208ddbc17ec337cdb33a363c0b439fa61201d332fa"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-serfling_baseline_optimized-shared-floors-mean-Gikuriro.json",
+      "bytes": 8468,
+      "sha256": "752a81cbb4b9378f7d97104107d92bc61319715ebcb6c25de8dcc3b1649a7eac"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-serfling_baseline_optimized-shared-floors-mean-Lower.json",
+      "bytes": 8732,
+      "sha256": "eb30c1459c65d763f05ef8096fbdcaf3a375d25c5b057353cab94931d9e9de84"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-serfling_baseline_optimized-shared-floors-mean-Middle.json",
+      "bytes": 8562,
+      "sha256": "4e927f865596bba91aef7a452beb470efc8457d5f7f64dca5e627faf36ea14f4"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-serfling_baseline_optimized-shared-floors-mean-Upper.json",
+      "bytes": 8735,
+      "sha256": "6a84cb1673c6a391d125155a8becb91dec8b06f014dd1005fa78e51d86d80bff"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-serfling_baseline_optimized-shared-floors-mean-Control-Large.json",
+      "bytes": 8698,
+      "sha256": "c1134214641c3f9cc4a5a948c7b74c8889c45bd5e1c1e8b3f70e0cf2ce173168"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-serfling_baseline_optimized-shared-floors-mean-Lower-Large.json",
+      "bytes": 8861,
+      "sha256": "c7593a1f8f24df2935c9f42d9c385c91f28e67f53c21acff5413eb6397b81b8a"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-serfling_baseline_optimized-shared-floors-mean-Middle-Large.json",
+      "bytes": 8753,
+      "sha256": "f6477604e09989c9f486ce019fa0fcd999ea4360630ea190895981e943421d46"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-serfling_baseline_optimized-shared-floors-mean-Upper-Large.json",
+      "bytes": 8868,
+      "sha256": "17e415f0440c993317a126cf2307f3da46aa099b1f069b42c01302b8fb2f81b4"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-serfling_baseline_optimized-shared-floors-shortfall_6-Control.json",
+      "bytes": 8354,
+      "sha256": "90f400ba78eb3d8eabc0530e79e44affb3881001d737a99c89f3e20c038c9b48"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-serfling_baseline_optimized-shared-floors-shortfall_6-Gikuriro.json",
+      "bytes": 8361,
+      "sha256": "eb6faeb89a965bafdac5a376715394a5e554339925f993a73408246470a9d41f"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-serfling_baseline_optimized-shared-floors-shortfall_6-Lower.json",
+      "bytes": 8350,
+      "sha256": "30b2f1cdfe893c567fe76bd561744d1ed179fd6fee66123b28bddef6efed3bce"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-serfling_baseline_optimized-shared-floors-shortfall_6-Middle.json",
+      "bytes": 8430,
+      "sha256": "b03b393ae1c836d379473d1deffeae63b9e089fac20f885380bcd3629d5799d6"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-serfling_baseline_optimized-shared-floors-shortfall_6-Upper.json",
+      "bytes": 8458,
+      "sha256": "5f973c762f432caa2f5c743501bbbdb332c6c64f9c63c4972601439afd6ac986"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-serfling_baseline_optimized-shared-floors-shortfall_6-Control-Large.json",
+      "bytes": 8420,
+      "sha256": "2ee1225001421d4ba83d001933520b97b9f6adb8a7a081c868434052ae948c1f"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-serfling_baseline_optimized-shared-floors-shortfall_6-Lower-Large.json",
+      "bytes": 8360,
+      "sha256": "d5e8adf22d875a075dc0295d201cb6299270b1ad784638a05f4e7de881b88f6d"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-serfling_baseline_optimized-shared-floors-shortfall_6-Middle-Large.json",
+      "bytes": 8346,
+      "sha256": "639d1792a25ea4e7c83059ba7cc45ca2c3671960d764d0da0e35c1bd397401c4"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-serfling_baseline_optimized-shared-floors-shortfall_6-Upper-Large.json",
+      "bytes": 8440,
+      "sha256": "bbb961ac224e5a5252999de0842f4e128a7bbbccff35fbd3e006876cc0b7d960"
+    },
+    {
+      "path": "docs/referee/round-6-review/summary-serfling_baseline_optimized-shared-floors.json",
+      "bytes": 6439,
+      "sha256": "341432733957078d10250aa927f33d885c6415ee1cd57d75c0d9668cc540c663"
+    },
+    {
+      "path": "docs/referee/round-6-review/model-harmonic_martingale_baseline_optimized-shared-floors-Control.json",
+      "bytes": 15012,
+      "sha256": "623935e493359c96190ea7f27c5f98913037ce40b6cb1533cca8512bc6b83cac"
+    },
+    {
+      "path": "docs/referee/round-6-review/model-harmonic_martingale_baseline_optimized-shared-floors-Gikuriro.json",
+      "bytes": 15031,
+      "sha256": "4ee58ca3de932695ddffa112fef661962214980fe36462b9eb1763e8f3902041"
+    },
+    {
+      "path": "docs/referee/round-6-review/model-harmonic_martingale_baseline_optimized-shared-floors-Lower.json",
+      "bytes": 14850,
+      "sha256": "5278f0ceac04932838f89007960afc88ffc15b79672b32026799086d1b03fd8b"
+    },
+    {
+      "path": "docs/referee/round-6-review/model-harmonic_martingale_baseline_optimized-shared-floors-Middle.json",
+      "bytes": 14822,
+      "sha256": "b3f1f60894f8cf989cadb811916b7361af0efe159a0e053ca3bace765ca2708f"
+    },
+    {
+      "path": "docs/referee/round-6-review/model-harmonic_martingale_baseline_optimized-shared-floors-Upper.json",
+      "bytes": 14835,
+      "sha256": "f8137c6fea06efdd84bd61beeff3b6edc89653acfb22ad23380572ad8772e5d6"
+    },
+    {
+      "path": "docs/referee/round-6-review/model-harmonic_martingale_baseline_optimized-shared-floors-Large.json",
+      "bytes": 15148,
+      "sha256": "0ec7a23689a7ca4e751d67e186d1e9916f38470bb2f6ac1f2cf2c924dac2c514"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-harmonic_martingale_baseline_optimized-shared-floors-mean-Control.json",
+      "bytes": 8476,
+      "sha256": "aece2a654e540bb627535cf480549ca488c65f2db0b0883dbab9afdd0550b90d"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-harmonic_martingale_baseline_optimized-shared-floors-mean-Gikuriro.json",
+      "bytes": 8551,
+      "sha256": "ad9dafbd6e5ffd29f73da59528c656afb9b3da770dea0747dced2a6660888841"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-harmonic_martingale_baseline_optimized-shared-floors-mean-Lower.json",
+      "bytes": 8724,
+      "sha256": "14385f85b99876290938ad9ed47598db69552be091906e82c14566383656789d"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-harmonic_martingale_baseline_optimized-shared-floors-mean-Middle.json",
+      "bytes": 8605,
+      "sha256": "052515e63554268d648fa504754cff712863e45b3fb2cccb0fbb781cf0d212dc"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-harmonic_martingale_baseline_optimized-shared-floors-mean-Upper.json",
+      "bytes": 8683,
+      "sha256": "5d03b057739bb357781f5fc04bfb576d7863f33cfbdead9d80a1aa7b4cccc2af"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-harmonic_martingale_baseline_optimized-shared-floors-mean-Control-Large.json",
+      "bytes": 8711,
+      "sha256": "43c108aa8c6ce40b1954501ef003b59ed4bd6f27ba0cc236de97923c088568e0"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-harmonic_martingale_baseline_optimized-shared-floors-mean-Lower-Large.json",
+      "bytes": 8803,
+      "sha256": "e14a2b9e63a312fd80de4f2bc9ae55ac9807a9303888793866d402af4fce142f"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-harmonic_martingale_baseline_optimized-shared-floors-mean-Middle-Large.json",
+      "bytes": 8852,
+      "sha256": "54fb0a293014ffdef258c22240d7694adfa1cf1097586bc61ace94e278696f2c"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-harmonic_martingale_baseline_optimized-shared-floors-mean-Upper-Large.json",
+      "bytes": 8856,
+      "sha256": "afe2aeb2d1ec05f9976e93b233faed18beda4119f781aa7c0e0c9214f5e9cd52"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-harmonic_martingale_baseline_optimized-shared-floors-shortfall_6-Control.json",
+      "bytes": 8377,
+      "sha256": "3d27a2b05d5653100a694dfbf7d3dc15b3fda1824e89e8172906a7d13e8d39c4"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-harmonic_martingale_baseline_optimized-shared-floors-shortfall_6-Gikuriro.json",
+      "bytes": 8416,
+      "sha256": "37757d92e4b69e66361837d8fcf3d1c69a6963f9ce684b60ad47ae465d0de3ee"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-harmonic_martingale_baseline_optimized-shared-floors-shortfall_6-Lower.json",
+      "bytes": 8427,
+      "sha256": "bf40767f8c447d341130929e6d864d4f98026b321b84a466aa465cbb1eca2d2a"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-harmonic_martingale_baseline_optimized-shared-floors-shortfall_6-Middle.json",
+      "bytes": 8333,
+      "sha256": "3913640a55a343575cc4f6068806e62773212e0192d2ef0630db48b39388b8e4"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-harmonic_martingale_baseline_optimized-shared-floors-shortfall_6-Upper.json",
+      "bytes": 8357,
+      "sha256": "2d5e681ac35f68f274eb49a5408347f304f886a9771c1a4b1510f89ce4ea6e0a"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-harmonic_martingale_baseline_optimized-shared-floors-shortfall_6-Control-Large.json",
+      "bytes": 8349,
+      "sha256": "561190735a299420c54acecad8e5966713e9da087374bcf3da86bf98b756959e"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-harmonic_martingale_baseline_optimized-shared-floors-shortfall_6-Lower-Large.json",
+      "bytes": 8316,
+      "sha256": "24bf18a62635356f09180c0b3dccf9fd5c2009d5c3d4b39dbc632bb5ca8a6fad"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-harmonic_martingale_baseline_optimized-shared-floors-shortfall_6-Middle-Large.json",
+      "bytes": 8426,
+      "sha256": "dacde99834112f45d59ce064b0d3c489370aa3dd8981b222642a8b8e791e1b75"
+    },
+    {
+      "path": "docs/referee/round-6-review/witness-harmonic_martingale_baseline_optimized-shared-floors-shortfall_6-Upper-Large.json",
+      "bytes": 8415,
+      "sha256": "101b479229a47779db17de4264b577b51b9f856df5e1fe7a869c6c5d157a83c7"
+    },
+    {
+      "path": "docs/referee/round-6-review/summary-harmonic_martingale_baseline_optimized-shared-floors.json",
+      "bytes": 6711,
+      "sha256": "e5dcdc9be11f01b670cb9f9c9e23a17a0652cd4ff7b6cd9a82fa415cad1de511"
+    },
+    {
+      "path": "docs/referee/round-6-review/summary.json",
+      "bytes": 2608,
+      "sha256": "d90e23dfa71a6852eaff2012f10f652e03349e5b65b86d00512407a4c743c6c5"
+    }
+  ]
+}

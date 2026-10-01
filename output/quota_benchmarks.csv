@@ -1,0 +1,13 @@
+moment_method,event,bin_floors,objective,reported_conservative_loss_upper
+quota,shared,True,mean,5.868
+quota,shared,True,shortfall_6,0.503
+quota,separate,True,mean,6.878
+quota,separate,True,shortfall_6,0.577
+quota,shared,False,mean,5.868
+quota,shared,False,shortfall_6,0.503
+hoeffding_baseline_optimized,shared,True,mean,6.959
+hoeffding_baseline_optimized,shared,True,shortfall_6,0.571
+serfling_baseline_optimized,shared,True,mean,6.632
+serfling_baseline_optimized,shared,True,shortfall_6,0.558
+harmonic_martingale_baseline_optimized,shared,True,mean,6.616
+harmonic_martingale_baseline_optimized,shared,True,shortfall_6,0.558

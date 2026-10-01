@@ -29,7 +29,7 @@ try:
     for file in sorted((root/'output/tables').glob('*.tex')):
         relative=file.relative_to(root)
         checks[relative.as_posix()]=file.read_text(encoding='utf8')==(dest/relative).read_text(encoding='utf8')
-    for relative in ['output/policies.json','output/numbers.json','output/revision-numbers.json','output/decision-numbers.json','output/distribution-numbers.json','paper/results.tex','paper/revision-results.tex','paper/decision-results.tex','paper/distribution-results.tex','docs/output-map.csv']:
+    for relative in ['output/policies.json','output/numbers.json','output/revision-numbers.json','output/decision-numbers.json','output/distribution-numbers.json','output/quota-comparison-numbers.json','paper/results.tex','paper/revision-results.tex','paper/decision-results.tex','paper/distribution-results.tex','paper/quota-comparison-results.tex','docs/output-map.csv']:
         checks[relative]=(root/relative).read_text(encoding='utf8')==(dest/relative).read_text(encoding='utf8')
     for leaf in ['quota-enclosure-validation.json','quota-allocation-validation.json']:
         actual=json.loads((dest/'output'/leaf).read_text())
@@ -38,6 +38,17 @@ try:
     cold=json.loads((dest/'output/quota-loss-bound.json').read_text())
     checks['quota_event_and_outward_constants']=all(baseline[key]==cold[key] for key in ['event_terms','event_cap','transformations','models'])
     checks['quota_display_bounds']=all(a['reported_conservative_loss_upper']==b['reported_conservative_loss_upper'] and b['conditional_loss_upper']<=float(a['reported_conservative_loss_upper']) for a,b in zip(baseline['scenarios'],cold['scenarios']))
+    actual=json.loads((dest/'output/quota-benchmark-validation.json').read_text())
+    checks['cold_classical_moment_validation']=actual['all_passed'] and actual['passed']==actual['checks'] and actual['independent_moment_inequalities']>0
+    actual=json.loads((dest/'output/quota-benchmark-receipt-validation.json').read_text())
+    checks['cold_benchmark_receipt_validation']=actual['all_passed'] and bool(actual['checks']) and all(actual['checks'].values())
+    baseline_bench=json.loads((root/'output/quota-benchmarks.json').read_text())
+    cold_bench=json.loads((dest/'output/quota-benchmarks.json').read_text())
+    from decimal import Decimal,ROUND_CEILING
+    checks['benchmark_upper_display_thresholds']=all(
+        a['moment_method']==b['moment_method'] and a['event']==b['event'] and a['bin_floors']==b['bin_floors'] and a['objective']==b['objective'] and
+        b['fixed_proposal_loss_upper']<=float(Decimal.from_float(a['fixed_proposal_loss_upper']).quantize(Decimal('.001'),rounding=ROUND_CEILING))
+        for a,b in zip(baseline_bench['rows'],cold_bench['rows'])) and len(baseline_bench['rows'])==len(cold_bench['rows'])
     with pymupdf.open(dest/'paper/paper.pdf') as pdf:
         pages=len(pdf)
         pdf_text='\n'.join(page.get_text() for page in pdf)

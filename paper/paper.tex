@@ -17,6 +17,7 @@
 \input{revision-results.tex}
 \input{decision-results.tex}
 \input{distribution-results.tex}
+\input{quota-comparison-results.tex}
 \onehalfspacing
 \setlength{\emergencystretch}{1em}
 \title{You give them something to eat:\\Dietary Diversity, Coverage, and Catholic Aid in Rwanda}
@@ -294,6 +295,12 @@ The intersected mean allocation spends \$\TightAllocationCost\ and retains a con
 
 The quota proposal spends \$\QuotaAllocationCost. It assigns approximately 10.4 percent to control, 5.8 percent to Gikuriro, 29.3 percent to lower cash, 24.9 percent to middle cash, 29.2 percent to upper cash and 0.4 percent to large cash. These shares differ sharply from the fitted lower/large winner because the protected distributions still allow several affordable packages to outperform it. The master checks exact rational shares and costs, then verifies the loss bounds through the nine comparator vertices. It does not infer a positive effect for each chosen package from its share.
 
+\subsection{What changes the guarantee?}
+
+I compare the quota construction with established range-based exponential bounds under the same weighted target, item-endpoint rules, score functions, costs and rational allocation proposals. Appendix \ref{app:methodcomparison} adapts without-replacement Hoeffding, Serfling and an unrelaxed harmonic martingale bound to the block residual. Each alternative uses its own baseline-optimal statistical scale and the same shared-event construction. I separately choose support multipliers and verify the resulting upper certificates. The harmonic comparator gives \ClassicalMeanCertificate\ groups and \ClassicalShortfallCertificate\ shortfall units, compared with \QuotaMeanLoss\ and \QuotaShortfallLoss\ for quota enumeration. These are certificates for fixed proposals, not a comparison of method-specific minimax optima. The improvements remain too small to support a small-loss interpretation in this experiment.
+
+An ablation using the same quota moments but separate tail inequalities gives \SeparateQuotaMeanCertificate\ groups and \SeparateQuotaShortfallCertificate\ shortfall units. Thus, retaining the shared exponential constraint matters beyond improving the moment constants. Removing identified-bin floors barely changes the displayed bounds while retaining scalar consistency. A deterministic design catalogue also shows that moment gains depend on weight concentration: in twelve-village half-quota blocks, the scalar radius decreases by about 2.3 percent with equal weights and 49.2 percent when one village has weight ten and the others weight one. This limited comparison neither establishes dominance over variance-adaptive inference nor measures the value of field information.
+
 \subsection{Assistance requirements and the comparator}
 
 CRS implemented the bundled programme; the experiment does not reveal a CRS mandate to optimize only HDDS or to randomize the listed packages at scale. I therefore treat \eqref{eq:planner} as a benchmark rather than an observed organizational rule. Table \ref{tab:institutional} makes several alternative hypothetical rules explicit. A minimum assisted share excludes some control allocations; universal assistance excludes them all. Here assistance means village assignment or an offer under the original participation pattern, rather than verified receipt by every household. A binding expected budget is different from a hard realized spending cap. Every own-menu calculation changes both choice and comparator to the stated class.
@@ -318,7 +325,7 @@ Unused expected funds require a separate choice of objective. The original crite
 
 The simplest back-of-the-envelope calculation is reach: the \$\GikuriroCost\ budget finances only \LargeCoverage\ percent large-cash coverage at its \$\LargeCost\ standardized cost. Combining lower with large cash instead uses \LowerLargeShare\ percent large packages and reaches every village. These shares follow from source costs and the lottery definition. They do not assume a linear household response to dollars. Changes in prices, implementation scale, or participation may alter both costs and outcomes.
 
-I rebuild the policy set in \CostScenarioN\ accounting scenarios: a five-by-five grid of Gikuriro and cash cost factors, three common-take-up settings, and four Gikuriro avertable-cost settings. The source decomposition is $c_a^{elig}=c_a^{benef}(1-s_a+s_ar_a)$, where $s_a$ is the avertable share and $r_a$ compliance. The scenarios use coherent H\'ajek mean point estimates and the same coherent finite and finite-and-consistency regions as the main allocations. They no longer substitute initial ANCOVA means for the headline decision. Outcomes remain fixed as costs change, making these accounting sensitivities rather than treatment-delivery forecasts.
+I rebuild the policy set in \CostScenarioN\ accounting scenarios: a five-by-five grid of Gikuriro and cash cost factors, three common-take-up settings, and four Gikuriro avertable-cost settings. The source decomposition is $c_a^{elig}=c_a^{benef}(1-s_a+s_ar_a)$, where $s_a$ is the avertable share and $r_a$ compliance. The scenarios use coherent H\'ajek mean point estimates and the earlier coherent finite and finite-and-consistency regions. They no longer substitute initial ANCOVA means for the headline decision. Outcomes remain fixed as costs change, making these accounting sensitivities rather than treatment-delivery forecasts.
 
 \begin{table}[t]
 \centering\caption{Diversified mean-loss bounds under selected cost scenarios}\label{tab:costs}
@@ -366,7 +373,7 @@ The verified quota allocation assigns some villages to control and leaves expect
 
 Gikuriro's stated objective concerns maternal and child nutrition, whereas the main outcome records household food-group variety. The child follow-up regressions and saving illustration address parts of that gap but do not identify the full nutritional or intertemporal benefit of the package. Repeated dietary measures and separate variation in saving terms or program saturation could examine those responses. Original assignment documentation, provider objectives and rollout costs would also make the decision benchmark more informative. The current evidence supports conditional dietary comparisons and quantifies the remaining loss bound; it leaves the wider welfare ranking open.
 \clearpage
-\begin{singlespace}\small
+\begin{singlespace}\footnotesize
 \begin{thebibliography}{99}
 \bibitem[Banerjee and Duflo(2007)]{banerjeeduflo2007} Banerjee, Abhijit V., and Esther Duflo. 2007. ``The Economic Lives of the Poor.'' \emph{Journal of Economic Perspectives} 21(1): 141--167. \href{https://doi.org/10.1257/jep.21.1.141}{doi:10.1257/jep.21.1.141}.
 \bibitem[Cunha et al.(2019)]{cunha2019} Cunha, Jesse M., Giacomo De Giorgi, and Seema Jayachandran. 2019. ``The Price Effects of Cash Versus In-Kind Transfers.'' \emph{Review of Economic Studies} 86(1): 240--281. \href{https://doi.org/10.1093/restud/rdy018}{doi:10.1093/restud/rdy018}.
@@ -384,6 +391,9 @@ Gikuriro's stated objective concerns maternal and child nutrition, whereas the m
 
 \bibitem[McIntosh(2025)]{data2025} McIntosh, Craig. 2025. ``Replication Package EJ MS 20220682.'' Corrected dataset, created July 15, 2025, nominal publication date May 23, 2024, version 1. Zenodo. \href{https://doi.org/10.5281/zenodo.15881329}{doi:10.5281/zenodo.15881329}. Accessed September 30, 2026. CC BY 4.0. The record lists McIntosh as creator; the underlying paper is coauthored with Andrew Zeitlin.
 \bibitem[Stoye(2007)]{stoye2007} Stoye, J\"org. 2007. ``Minimax Regret Treatment Choice with Incomplete Data and Many Treatments.'' \emph{Econometric Theory} 23(1): 190--199. \href{https://doi.org/10.1017/S0266466607070089}{doi:10.1017/S0266466607070089}.
+\bibitem[Bardenet and Maillard(2015)]{bardenet2015} Bardenet, R\'emi, and Odalric-Ambrym Maillard. 2015. ``Concentration Inequalities for Sampling without Replacement.'' \emph{Bernoulli} 21(3): 1361--1385. \href{https://doi.org/10.3150/14-BEJ605}{doi:10.3150/14-BEJ605}.
+\bibitem[Vovk and Wang(2021)]{vovk2021} Vovk, Vladimir, and Ruodu Wang. 2021. ``E-values: Calibration, Combination, and Applications.'' \emph{Annals of Statistics} 49(3): 1736--1754. \href{https://doi.org/10.1214/20-AOS2020}{doi:10.1214/20-AOS2020}.
+\bibitem[Waudby-Smith and Ramdas(2020)]{waudby2020} Waudby-Smith, Ian, and Aaditya Ramdas. 2020. ``Confidence Sequences for Sampling without Replacement.'' \emph{Advances in Neural Information Processing Systems} 33. \href{https://proceedings.neurips.cc/paper_files/paper/2020/file/e96c7de8f6390b1e6c71556e4e0a4959-Paper.pdf}{Conference paper}.
 \end{thebibliography}
 \end{singlespace}\normalsize
 
@@ -570,6 +580,43 @@ The common-slope ANCOVA need not preserve assignment-adjusted target weights und
 \clearpage
 
 \clearpage
+\clearpage
+\section{Established-method comparisons and component ablations}\label{app:methodcomparison}
+
+This appendix separates three sources of numerical tightening while preserving the same weighted released-baseline target. Averaging expectation-bounded nonnegative tests is established e-value theory \citep{vovk2021}; the shared-event aggregation is not a new theorem. The concentration comparisons use the range-based moments in \citet{bardenet2015}, including the unrelaxed sum in the proof of Proposition 2.2. The latter also follows from predictable scales in the Hoeffding process of \citet{waudby2020}. I do not implement their variance-adaptive empirical-Bernstein or betting procedures, and do not establish superiority over them.
+
+For one block write $t_j=W_j(y_j-u)$, $W_{\max}=\max_jW_j$, and $G=(n/k)\sum_{j\in A}t_j-\sum_jt_j$. Since $0\leq y_j,u\leq1$, the $t_j$ have range at most $W_{\max}$. Under uniform quota sampling, the standard exponential inequalities imply $\log\E e^{\lambda G}\leq\lambda^2 V/8$, with forward coefficients
+\[
+\frac{V_H}{W_{\max}^2}=\frac{n^2}{k},\qquad
+\frac{V_S}{W_{\max}^2}=\frac{n^2}{k}\left(1-\frac{k-1}{n}\right),\qquad
+\frac{V_M}{W_{\max}^2}=\frac{n^2(n-k)^2}{k^2}\sum_{t=1}^k\frac{1}{(n-t)^2}.
+\]
+The harmonic expression applies for $k<n$; at $k=n$ the residual is zero. Complementing the sampled subset gives $G_k=-(n-k)G_{n-k}/k$, so I use the smaller forward or rescaled complementary coefficient. Selection uses baseline design quantities alone. Independent blocks add their coefficients.
+
+For completeness, choosing predictable scales $\lambda_t=\Lambda(n-k)/(n-t)$ in the without-replacement Hoeffding process, with $\Lambda=\lambda n/k$, makes the coefficient on sample position $j$ equal to
+\[
+\lambda_j+\sum_{t=j+1}^k\frac{\lambda_t}{n-t+1}=\Lambda.
+\]
+Its centered outcome sum is therefore $\lambda G$; its quadratic compensation is the displayed harmonic coefficient. This retains an established martingale calculation before the integral relaxation leading to Serfling's simpler bound. It is not a new concentration inequality.
+
+Every alternative uses the same missing-item lower/upper numerators and deterministic restrictions. Its 276 expectation-bounded terms yield a standalone conditional 95 percent shared event. Classical scales minimize $(\lambda^2V/8+\log5520)/\lambda$ analytically; the quota procedure retains its submitted four-point baseline grid. Support scales may depend on outcomes because they certify deterministic bounds within the event. No observed minimum across independently valid events is asserted as a jointly valid 95 percent guarantee.
+
+\begin{table}[htbp]
+\centering\caption{Existing-method comparisons for the same allocation proposals}\label{tab:methodcomparison}
+\input{../output/tables/quota_method_comparison.tex}
+\begin{minipage}{\textwidth}\footnotesize\emph{Notes:} Upper certificates rounded upward to three decimals. Mean and shortfall columns use their respective fixed rational proposals and original budget/comparator menu. Classical moment scales use baseline-only analytic optimization; support multipliers are selected numerically and independently enclosed. Each row has its own conditional event; joint coverage across rows is not asserted. These are not method-specific minimax optima. Separate quota tests retain the same statistical scales and constants; removing bin floors retains scalar logical consistency.\end{minipage}
+\end{table}
+
+The shared sum constraint implies every individual tail inequality, so the quota shared region is contained in the separable Bonferroni region when constants and floors are held fixed. Differences between valid upper certificates need not equal differences in the exact support or optimized loss. Nearly identical displayed mean bounds with and without bin floors do not support attributing substantial mean tightening to that component.
+
+\begin{table}[htbp]
+\centering\caption{Weight concentration and quota-moment gains in twelve-village blocks}\label{tab:designcomparison}
+\input{../output/tables/quota_design_comparison.tex}
+\begin{minipage}{\textwidth}\footnotesize\emph{Notes:} Twenty-two identical independent blocks, family penalty $\log5520$, normalized scalar tail radius. Equal weights are all one; alternating weights are one/three; concentrated weights are eleven ones and one ten. Radii above one are retained untruncated. The harmonic method optimizes its quadratic scale analytically; quota enumeration uses six baseline-only scales around that optimum. The complete catalogue additionally includes six- and ten-village blocks. These are designed examples, not simulated field observations, allocation losses or coverage estimates.\end{minipage}
+\end{table}
+
+Enumeration reduces dependence on a worst-case maximum-weight envelope when a heavy village is exceptional. Its advantages are small in many equal-weight cases, and its computation grows exponentially with block size. The catalogue varies quota fractions and weight shapes but fixes block count and family penalty. It omits variance-adaptive inference, larger blocks, unequal block sizes and treatment-dependent endpoint patterns. The comparison provides a limited account of when moment enumeration helps; it does not establish a general methodological advantage or resolve the experiment's broad decision uncertainty.
+
 \section{Replication and verification}
 The public package contains a single master script, frozen independent input hashes, corrected source attribution, codebooks, extraction programs, dependency locks, numerical outputs, generated LaTeX tables and in-text macros, and the compiled PDF. The source ZIP is excluded; its numeric research extract is redistributed under CC BY 4.0. Recreating this extract from the verified archive is distinct from recreating the parent's entire upstream survey processing.
 

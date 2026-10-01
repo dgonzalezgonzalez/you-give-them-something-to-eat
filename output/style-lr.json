@@ -2,7 +2,7 @@
   "scope": "Official PDF extraction, reference cut, 250-word windows and prose gate; logistic-regression component only",
   "source": "https://github.com/paulgp/econ-ai-detector",
   "source_commit": "11285447a3ccdc300bef25bc0a4a1eb42fd489cb",
-  "paper_sha256": "f8f46c5fc0c0db2db6507a24b0b32f55fccd315a24724b55a9936a2312b5272c",
+  "paper_sha256": "59ae9f4ee1b13ec10bc96b82be503bb3434a618f58bd36f09a1a6c5ae8e9af8a",
   "model_sha256": "081804b5e4e29fa3b9bdf74649ba13293592e75a0dc57415bde6737e88314c0f",
   "versions": {
     "numpy": "2.5.2",
@@ -12,9 +12,9 @@
     "pysbd": "0.3.4",
     "pymupdf": "1.28.2"
   },
-  "windows_total": 32,
-  "windows_scored": 31,
-  "lr_k2": 0.15976645463354291,
+  "windows_total": 33,
+  "windows_scored": 32,
+  "lr_k2": 0.12959874075513503,
   "lr_k2_threshold": 0.33489,
   "lr_necessary_condition_met": false,
   "nn_margins": null,
@@ -43,14 +43,15 @@
     0.006803718081142228,
     0.016133553741729645,
     0.02536687067441845,
-    0.01901146697825268,
-    0.009886557474209943,
-    0.035883970210193857,
-    0.18204983571322614,
-    0.01755091979819284,
-    0.04628411163196457,
-    0.05739279176890984,
-    0.09270688123904386
+    0.0761198542475093,
+    0.03182551928473723,
+    0.0027835822781972935,
+    0.04386214796931087,
+    0.05853767255680627,
+    0.04416369042882646,
+    0.1211427817451459,
+    0.04495735461864431,
+    0.07264615552594011
   ],
   "interpretation": "A non-flag is not evidence of human authorship. If the LR necessary condition fails, the documented AND rule cannot flag this PDF on these windows; no neural margins are inferred."
 }
