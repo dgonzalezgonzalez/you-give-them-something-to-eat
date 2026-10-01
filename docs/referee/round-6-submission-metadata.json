@@ -1,0 +1,15 @@
+{
+  "status": "prepared_not_submitted",
+  "prepared_at_utc": "2026-10-01T00:46:49.998330+00:00",
+  "referee_chat_url": "https://chatgpt.com/c/6abd01e3-4184-83ed-9ff0-e9475053b958",
+  "scientific_source": "9b902642b371487b5c0912c7bbba3929b80f69dd",
+  "tag": "v0.6.0",
+  "request_characters": 7399,
+  "request_sha256": "63959a9731f7bdffe46f554370ef79580d757a2798288cb6855551fe7d092291",
+  "pdf_sha256": "59ae9f4ee1b13ec10bc96b82be503bb3434a618f58bd36f09a1a6c5ae8e9af8a",
+  "hosted_run": 36795813270,
+  "hosted_comparisons": 104,
+  "hosted_master_seconds": 299.54376697540283,
+  "attachment_delivered": false,
+  "recommendation": null
+}
