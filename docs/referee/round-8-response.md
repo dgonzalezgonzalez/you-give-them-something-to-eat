@@ -52,6 +52,8 @@ A zero-epigraph analytic fixture revealed a zero suggested state-dual vector. Pr
 
 The supplemental Pro request uses the same frozen eighth package and public byte links; the user supplied a continuation in that chat. Active processing is not completed execution or a ninth recommendation. Prior rejected local uploads are not retried or bypassed. There is no independently authenticated full field/master/PDF audit or durable DOI deposit. CI artifact expiry remains distinct from archival preservation.
 
+Final scientific source `559dd4552e7b1897063c0e880ea8325439e794e8` subsequently passed hosted run `36867532625`/job `110386681289`: 130/130 comparisons, full cold master 859.1725852489471 seconds, 41-page PDF and the complete 1,753-check population validator. Artifact 11166491962 was actually downloaded/hash matched (3,163,022 bytes, SHA256 `22209bf99a4b6f2e96b0716def6479cba374e6f802b5a550435544d44f1af5b8`), expiring 31 October at 13:33:46 UTC. All actual artifact page renders and selected higher-resolution population tables/proof were inspected author-side. The dedicated source receipt retains those scopes. Forty-six small certificate/code aliases and all 41 public author-rendered pages now aid ordinary review by link. They do not establish referee execution or resolve importance.
+
 ## Minor comments: all eight dispositions
 
 1. **Religious context retained:** Catholic affiliation remains a setting characteristic; no identified religious mechanism is introduced.
