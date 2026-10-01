@@ -1,5 +1,5 @@
 {
-  "status": "delivered_text_verified_referee_active",
+  "status": "completed_genuine_first_jde_reject",
   "round_overall": 9,
   "assessment_for_target": 1,
   "simulated_journal_target": "Journal of Development Economics",
@@ -24,7 +24,9 @@
     "type": "active",
     "activeFlags": []
   },
-  "next_recommendation": null,
+  "next_recommendation": "Reject",
   "acceptance": false,
-  "scope": "Actual first field-journal request, not a completed ninth report, independent field execution, simulated acceptance or real editorial decision. Public source only; investigator draft remains unsent."
+  "scope": "Completed genuine first JDE assessment of frozen v0.9.0: Reject for incremental contribution. Full-body report reconstruction scope is disclosed; no simulated acceptance or real journal decision.",
+  "recommendation": "Reject",
+  "report_metadata": "docs/referee/round-9-metadata.json"
 }

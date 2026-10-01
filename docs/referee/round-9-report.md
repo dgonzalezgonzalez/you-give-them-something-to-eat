@@ -1,0 +1,234 @@
+> Retrieval scope: supported chat read supplied the original first 20,000 Markdown characters. The completion from major comment 10 onward was retrieved as actual visible browser text (4,677 characters, matching character count and FNV1a transcription checksum). This file combines the unchanged original portion through comment 9 with that rendered completion. Full original Markdown byte identity is not authenticated. Exact fragments and source IDs are in round-9-source-fragments.json. No new message or reassessment was requested.
+
+# Referee report — first JDE assessment
+
+**Manuscript:** *You give them something to eat: Whose Diets Count in the Cash Benchmark?*  
+**Author:** Diego González-González  
+**Reviewed tag:** `v0.9.0`  
+**Resolved commit:** `f44a2f6cee1c19f86a6925c4b5685f8c468d58e4`  
+**Scientific source:** `559dd4552e7b1897063c0e880ea8325439e794e8`
+
+## Recommendation: **Reject**
+
+The population question is well suited to the **Journal of Development Economics**. A carefully identified, consequential result about how targeting affects cash benchmarking could meet JDE’s standard without appealing to economists across every field. My assessment therefore concerns the contribution to development economics, not the broader audience requirement applied in the earlier reports. JDE nevertheless requires substantial value added, relevance to its development-economics readership, and methodological rigor. :chatgpt-content-reference{index="0"}
+
+**The revised paper does not yet provide sufficient incremental evidence for that standard.** Its strongest empirical addition is the fitted allocation frontier across population weights, separating the smaller cash arms. However, the underlying concern about eligible versus broader-population outcomes was already investigated in the parent research and explicitly discussed in its policy reception. The frontier remains composition-sensitive and statistically unresolved for the full baseline population. The precisely solved uncertainty games clarify limitations of the specified regions but do not establish a sufficiently important new development finding.
+
+This recommendation is **not** based on an inability to access the evidence. Access and independent execution improved decisively in this round: I obtained the complete source, reconstructed the inputs, independently reproduced the principal population calculations and new certificate chain, ran the unchanged master, and rendered the actual manuscript.
+
+This is a simulated expert recommendation, not a JDE editorial decision. The earlier general-interest recommendations remain separate.
+
+## What I actually retrieved, verified, and executed
+
+### Complete source and input verification
+
+The public artifact download succeeded. I independently calculated:
+
+- **Outer artifact:** 18,343,090 bytes; SHA256  
+  `abf081e5ddb4dfce9e00364295731abf88b983aad06db0aca8faee854c999872`.
+- **Inner frozen-source ZIP:** 15,632,930 bytes; SHA256  
+  `7cc8d9fc77ee33f349363e6b93e5e016b5df34f49f5f6e98a034c2874f25b6db`.
+
+I reconstructed the Git tree from the inner archive’s **1,983 regular files** and checked its correspondence with the frozen repository. The scientific code, data, paper, output, workflow, master and dependency identifiers also match the stated successful scientific source; documentation differs as disclosed.  
+
+I additionally verified **all eighty ASCII parts**, decoded and decompressed them, and matched all nine reconstructed files to the canonical bytes and hashes: the three microdata CSVs, costs, two codebooks, provenance and two immutable-reference files.
+
+### Independent empirical and mathematical reconstruction
+
+My own programs imported **no author estimator, scoring or game functions**. From the complete canonical inputs, I reconstructed household and child-cohort counts, assignment quotas, dietary intervals, all 36 stratum/arm mean-and-endpoint rows, 54 population-policy comparisons, 72 exploratory regression rows and their Holm adjustment, and the fitted frontiers.
+
+I independently evaluated **132 distinct selected quota-moment cases at 90 digits**, explicitly averaging subsets at the proved sorted-threshold candidates rather than using the production recurrence. I reconstructed the classical thresholds and both sets of population mean boxes, then replayed **all twelve population games with exact fractions**, including state construction, feasible allocations, costs and lower/upper witnesses. Independent direct-allocation linear programs also agreed.
+
+### Cold master and PDF
+
+In a separate copy with an empty output directory, the unchanged command `python run.py --pdf` completed successfully in **672.765 seconds**, using the existing Python 3.13.5 environment—not a newly installed copy of the author’s lock.
+
+Of 59 regenerated CSVs, 58 matched the frozen outputs within \(10^{-10}\) relative/\(10^{-12}\) absolute tolerance. The remaining difference was confined to five maximum policy-rounding diagnostics, at most \(3.24\times10^{-12}\); both versions satisfy the analytic ceiling and have identical upward \(10^{-9}\) displays. **All 45 generated table/macro text files matched byte-for-byte.** Solver-selected JSON witnesses can differ. Stata’s separate validation CSV was not regenerated.
+
+The actual frozen PDF has **41 pages**, 631,676 bytes, and SHA256  
+`583197f5deb609d59582b7ba7d513b5d6de6a13a526942390ed60dc1e5e9db6e`.
+
+I independently rendered all 41 pages, inspected all seven contact sheets, and enlarged pages **8, 10, 18 and 31**. I also inspected page 10 of the independently compiled 41-page PDF. No author-generated page images were used. The two PDFs are not byte- or extracted-text-identical.
+
+**Remaining limits:** I did not execute Stata, re-extract the original corrected donor archive, reconstruct upstream survey cleaning, or recover the historical assignment generator. Older eligible-only certificate validations ran through the supplied master; my separate mathematical reconstruction concentrated on the **new population mean-event/game chain**. High-precision checks are not themselves new formal coverage proofs.
+
+The **:chatgpt-content-reference{index="11"}[execution summary](sandbox:/mnt/data/jde_v09_independent_audit/summary.json)** and **:chatgpt-content-reference{index="12"}[audit bundle](sandbox:/mnt/data/jde_v09_independent_audit.zip)** contain programs, hashes, numerical comparisons and selected independent renders. These activities expand this review’s scope; they do not retroactively expand any earlier report.
+
+# Major comments
+
+## 1. Contribution beyond the parent study: the allocation implication must carry the paper
+
+**Disposition of the earlier importance objection: reassessed for JDE; unresolved.**
+
+The parent’s December 2020 manuscript already analyzes total causal effects, contrasts targeted and broader populations, and benchmarks broader-population effects at comparable costs. Its discussion recognizes that outcomes among ineligible households can reflect both treatment outside the survey eligibility definition and spillovers. Özler’s 2018 discussion explicitly asks how donors should weight targeted and other households. Thus, the population question is not newly discovered here. The manuscript now attributes this overlap appropriately. :chatgpt-content-reference{index="3"}
+
+The defensible incremental contribution is narrower: **a frontier over observed cash packages under stipulated population priorities, accompanied by explicit observation and uncertainty accounting**. That is potentially useful. But a sign reversal against lower/large cash is not the same as reversing the best cash-versus-Gikuriro comparison. Upper cash has higher fitted means than Gikuriro in both strata, and Gikuriro never wins this fitted frontier.
+
+**Revision priority:** provide a direct crosswalk from the parent’s broader-population analysis to the new frontier. Separate changes caused by splitting the small cash arms, score reconstruction, observation rules, covariates, aggregation and the lottery menu. Use the corrected release and disclose any inability to reproduce historical versions exactly. The existing eligible-only crosswalk does not adequately identify the value added of the new population result.
+
+The issue is not that a reanalysis needs new observations. It needs an important conclusion that is not primarily a reformulation of the parent analysis.
+
+## 2. The population estimand is legitimate, but it is not the parent TCE estimator
+
+**Disposition: substantially clarified; the comparison between estimators still needs development.**
+
+I reproduced the fixed-cohort accounting:
+
+| Baseline stratum | Households | Identified diets | Partial intervals | Completely unobserved diets |
+|---|---:|---:|---:|---:|
+| Eligible | 1,793 | 1,730 | 15 | 48 |
+| Ineligible | 995 | 962 | 4 | 29 |
+
+Both strata cover all 248 villages and 22 blocks. The reconstructed expansion-weight totals are approximately 4,002 and 30,584, producing eligible share **0.11571156**.
+
+The fitted aggregate averages stratum-specific identified-diet ratios using this **baseline** share. It is neither a pooled respondent mean nor automatically equal to the parent’s weighted total-causal-effect regression. That is an acceptable estimand when stated clearly, but its composition depends on potential observation under each assignment. The population methods note correctly acknowledges this. 
+
+**Revision priority:** explain which substantive question this aggregation answers relative to the parent estimator, and demonstrate the numerical bridge. Do not interpret the baseline share as a national eligibility rate, verified receipt share, or estimated provider preference. Its legitimacy does not depend on recovering those objects, but its interpretation does.
+
+## 3. The fitted reversal reproduces; uncertainty about the full baseline ranking remains material
+
+**Disposition: empirical implementation verified; substantive limitation remains.**
+
+My direct reconstruction gives the following identified-diet contrasts under eligible-household costs:
+
+| Population objective | Gikuriro minus lower/large | Gikuriro minus upper |
+|---|---:|---:|
+| Eligible | −0.237386 | −0.145307 |
+| Ineligible | +0.534111 | −0.439646 |
+| Baseline-weighted aggregate | +0.444840 | −0.405587 |
+
+The independently reconstructed means and contrasts agree with the publication to approximately machine precision. The sign reversal is therefore not a transcription or optimization error.
+
+But the reversal concerns observed compositions. The eligible Gikuriro–lower/large estimated missingness interval is approximately \([-0.574,0.101]\); the aggregate interval is \([0.035,0.797]\). These are **estimated endpoints**, not confidence intervals. The finite uncertainty construction remains much wider.
+
+The regression checks also reproduce. The ineligible baseline-adjusted contrast has Holm-adjusted \(p\approx0.209\), as reported. This does not prove no difference; nor should its nominal significance be used to establish a robust population reversal. 
+
+**Revision priority:** directly assess the cross-stratum contrast, with covariance and inferential scope stated, rather than relying on opposite signs or significance within one subgroup. Keep that assessment distinct from the policy ranking among all cash alternatives. No arbitrary significance requirement should determine retention of the result.
+
+## 4. The population-weight frontier is descriptive, not a protected preference threshold
+
+**Disposition: new finding verified; policy interpretation requires restraint.**
+
+I independently reproduce the eligible-cost ratio frontier:
+
+\[
+\begin{array}{ll}
+\text{Upper cash:}&0\leq\theta<0.8439747,\\
+\text{Upper/large:}&0.8439747<\theta<0.9142402,\\
+\text{Lower/large:}&0.9142402<\theta\leq1.
+\end{array}
+\]
+
+The alternative regressions preserve the sequence but move the switch points: baseline ANCOVA gives approximately **77.3% and 94.8%**. The per-household-priority conversion is algebraically correct, but the resulting values around 41.3 and 81.5 are calibrations of fitted crossings—not estimated donor preferences or confidence limits for causal thresholds. 
+
+Both new mean-box constructions admit all six means equal to five in both strata. Thus, these events do not certify any unique fitted winner or switch. This is a property of the stated outer sets, not an impossibility result about the experiment.
+
+**Revision priority:** make uncertainty about the **cash frontier itself** as prominent as the Gikuriro-versus-cash tests. The 64-test regression family centers on Gikuriro contrasts, whereas the new allocation conclusion concerns comparisons among cash packages. The exact roots should not receive more substantive emphasis than their sampling and selection sensitivity supports.
+
+## 5. New finite events and exact games: mathematically sound within the stated model
+
+**Disposition: independently reconstructed; no central error identified.**
+
+For the classical construction, I reproduced the 36 primitives and verified the high-precision thresholds against the directed enclosures. For the quota construction, I reconstructed the selected moment calculations and endpoint inversions; the resulting published boxes enclose the independent reference values.
+
+The population-weight proposition is correct: for a fixed menu and allocation, regret is convex in \(\theta\), so its maximum over an interval occurs at an endpoint. At a fixed endpoint, box corners and comparator vertices suffice. This does not imply joint attainability with the original finite household weights.
+
+All twelve exact games replayed successfully. Under eligible costs, the quota upper values round upward to:
+
+| Protected objective | Upper loss bound, food groups |
+|---|---:|
+| Eligible only | 7.772 |
+| Baseline-weighted aggregate | 7.477 |
+| Every \(\theta\in[0,1]\), one fixed allocation | 7.777 |
+
+The exact witness gaps are tiny. They show that these **box games** are solved accurately, not that actual losses are large or that sharper inference is impossible. 
+
+**Revision priority:** treat this technical request as closed. The remaining economic contribution cannot be supplied by solving these already tightly bracketed games more accurately. Keep the 36-primitive, 24-tail and older eligible-only events separate; their intersections do not inherit a joint 95% claim.
+
+## 6. Historical assignment and transport assumptions remain distinct from verification
+
+**Disposition: transparent and conditional; not historically established.**
+
+The calculations correctly use uniform quota-consistent labels and independent blocks as assumptions. Matching all 132 released quota/probability cells does not verify that the historical assignment generator permitted every such labeling with equal probability.
+
+The public documentation audit does not recover the full generator or all restrictions. Its registry discrepancy should remain documented without being interpreted as proof of an invalid experiment. Likewise, post-registration chronology should not be used to infer when researchers first received endline data.
+
+**Revision priority:** seek the original assignment protocol or investigator confirmation where feasible. Pending that, the correct claim is conditional validity under the specified law. The independently successful computation does not strengthen the historical assignment assumption, wider-frame representativeness or transport to a different saturation regime.
+
+This is not a reason to abandon the conditional exercise. It is a reason to keep its scope local to each inference claim.
+
+## 7. Cost denominators and normative weights need a clearer economic bridge
+
+**Disposition: no identified feasibility/sign error; interpretation remains incomplete.**
+
+The two published cost columns correctly define separate menus and budgets. My exact replay confirms their vertices and allocation feasibility. Holding the menu fixed while varying \(\theta\) is also internally consistent.
+
+However, the columns cannot be interpreted as merely changing units using the paper’s baseline eligible share. For example, multiplying the \$124.488 eligible-household Gikuriro cost by 0.1157116 gives about \$14.405, not its published population cost of \$28.021. The paper does not commit that rescaling error, but the denominator difference is important to the central population argument. 
+
+**Revision priority:** explain which population and coverage convention each cost column represents, and why each is relevant to the corresponding hypothetical deployment. Robustness across them is useful, but does not establish marginal mixed-rollout costs.
+
+Actual donor preferences are **not required** for a valid normative sensitivity analysis. They are required only for interpreting a particular \(\theta\) or allocation as an organizational recommendation. Similarly, expected unit expenditure is not a hard realized cap.
+
+## 8. Eligibility, nutrition and mechanisms: boundaries remain appropriate
+
+**Disposition: earlier concerns remain properly scoped; no new identification supplied.**
+
+Baseline ineligibility is not nonreceipt. The original design and implementation allowed effects in that stratum through treatment outside the survey eligibility definition as well as possible spillovers. The new contrasts cannot isolate either mechanism. :chatgpt-content-reference{index="9"}
+
+I independently reconstructed the baseline child accounting: **2,265** flagged children, **2,213** linked endline rows, **2,156** physically measured, and **3,017** endline-due children, including **806** outside that baseline cohort. These counts reproduce, but valid follow-up scores still select the child regressions.
+
+The household diversity score remains distinct from individual nutrient intake and comprehensive welfare. The saving illustration remains compatible with bundled treatment effects, not identified mediation.
+
+**Revision priority:** retain these limitations without making the paper responsible for identifying every mechanism. The narrower population-dependent dietary benchmark must instead establish its own sufficient contribution. Neither nonsignificant child results nor the title’s religious context strengthens its causal interpretation.
+
+## 9. Earlier computational and simulation additions should remain closed, not expanded mechanically
+
+**Disposition: accepted requests retained; no demand for additional cells or draws.**
+
+The polynomial sorted-threshold calculation, weight-sensitive comparator, restricted empirical-Bernstein adaptation, exact regional certificates, paired Monte Carlo summaries and adverse synthetic cases remain useful supporting material. Their preservation improves transparency.
+
+They do not establish that the new population frontier is causally stable. Nor does the designed catalogue become an empirical distribution of development-policy problems. The current paper correctly distinguishes its two-arm synthetic decisions from the field population-weight problem.
+
+**Revision priority:** retain these materials in a concise technical appendix, and do not expand them merely to compensate for weak empirical contribution. For the JDE paper, space is better spent establishing the incremental population-allocation result relative to the parent analysis and explaining its uncertainty.
+
+The earlier general-interest requests are not being reopened as additional JDE publication hurdles.
+
+10. Replication and manuscript presentation: access-based objections are now largely resolved
+
+Disposition: substantial new independent execution achieved; several presentation fixes remain.
+
+This review now includes actual field-input reconstruction, independent population estimates, independent new-event calculations, exact games, an uninterrupted cold master and independent PDF rendering. That is materially different from the earlier receipt-level reviews.
+
+It remains reproduction from released processed inputs, not upstream raw-survey cleaning or execution of the original assignment program. I did not execute Stata, and the separately preserved Stata validation file is not generated by the default master. Older numerical witnesses and PDF bytes also need not match across environments.
+
+The independently rendered manuscript is generally legible on the inspected pages. However, Table 2 on page 8 is stale relative to the new main contribution: its “weighted released baseline” row still describes only eligible households and the older 276-primitive/276-term events. It omits the new two-stratum 36-primitive and 24-tail constructions.
+
+Revision priority: replace or expand that scope table, label inherited eligible-only tables explicitly, and bring the new population uncertainty summary—currently Table 12 on page 31—closer to the main frontier results. A durable archive remains a publication requirement, not the principal reason for rejection.
+
+Minor comments and closure of the eight earlier minor points
+
+Religious context — closed. The new title and text do not assert an identified Catholic mechanism. Retain the setting description without making affiliation explanatory.
+
+Assignment versus receipt — corrected. The residual recipient-specific wording has been removed, and “weakly exceeds” matches the weak inequality. Continue distinguishing baseline eligibility from treatment receipt.
+
+Ceiling and saving — retained appropriately. No new mathematical repair is needed to the twelve-group ceiling or reachable-threshold qualification. The illustrative model need not occupy substantial main-text space.
+
+PDF inspection — now independently performed within the stated scope. I found no clipping in the enlarged pages checked. The principal issue is target labeling and organization, especially Table 2, rather than rendering failure.
+
+Historical search diagnostics — closed. Preserve source-quota labels; do not attribute those diagnostics to another method’s optimizer.
+
+Exact tolerance comparisons — retained. The unchanged master executes their checks. The tiny cross-platform maximum-rounding differences remain documented and do not change the upward displays or analytic ceiling.
+
+Historical percentage comparisons — correctly qualified. Keep the current hybrid comparison distinct from the older coarse-harmonic percentage. No further simulation expansion is requested.
+
+Center of gravity — improved but not fully reflected in the exhibits. Main Tables 3–4 effectively present the new population findings. Table 2 and subsequent generic “baseline” captions should identify when they revert to eligible-only results. A reader should not need appendix provenance to determine the population behind a number.
+
+Overall judgment and conditions for reconsideration
+
+The revised question is relevant to JDE, and the independent calculations now provide strong evidence that the principal new results are implemented correctly. The paper’s narrow empirical message is credible: which households enter a fitted cash benchmark can change the preferred cash package, and reversing one Gikuriro comparison does not make Gikuriro the fitted optimum.
+
+The difficulty is the incremental contribution. The parent research already investigated the population distinction and its cost-benchmarking implications. The new frontier refines that analysis, but its substantive ranking remains selection- and sampling-sensitive, while the new finite games provide very broad protection. Exact optimization establishes properties of those regions, not an important new welfare conclusion.
+
+I would reconsider for a development-economics contribution that clearly exceeds the parent analysis—for example, a consequential, well-supported allocation implication or a genuinely useful methodological insight demonstrated by the application. Such a contribution need not require a new experiment, measured donor preferences, a religious mechanism or uniform method dominance. It does require more than additional precision, compression or successful reproduction.
+
+Final recommendation: Reject for JDE on incremental contribution, not journal fit or computational failure.

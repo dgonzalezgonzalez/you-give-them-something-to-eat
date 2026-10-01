@@ -1,6 +1,6 @@
 {
   "round": 9,
-  "status": "frozen_delivered_text_verified_referee_active",
+  "status": "completed_genuine_first_jde_reject",
   "recorded_at_utc": "2026-10-01T13:54:31Z",
   "review_ref": "v0.9.0",
   "freeze_commit": "f44a2f6cee1c19f86a6925c4b5685f8c468d58e4",
@@ -27,7 +27,7 @@
   "prepared_request_sha256_lf": "828c529089b7b626e04fed3b35af48c72272fb953de257df15ca31f949b04db6",
   "send_accepted": true,
   "delivery_confirmed": true,
-  "recommendation": null,
+  "recommendation": "Reject",
   "acceptance": false,
   "prior_genuine_recommendations": 8,
   "prior_recommendation": "Reject",
@@ -49,7 +49,7 @@
   "pdf_pages": 41,
   "author_actual_hosted_all_page_render_inspection": true,
   "independent_referee_pdf_rendering": false,
-  "scope": "Verified public freeze and delivered first Journal of Development Economics request; referee active. No ninth recommendation, independent field execution, acceptance or DOI archive.",
+  "scope": "Completed genuine first JDE assessment of frozen v0.9.0: Reject for incremental contribution. Full-body report reconstruction scope is disclosed; no simulated acceptance or real journal decision.",
   "prepared_request_updated_after_freeze": true,
   "post_freeze_eighth_audit_receipt": "docs/referee/round-8-received-audit/receipt.json",
   "completed_eighth_supplemental_report": "docs/referee/round-8-supplemental-execution-report.md",
@@ -72,5 +72,7 @@
   "actual_submission_turn_id": "aac819e9-5a64-4181-903d-987a41cc799d",
   "delivered_request_path": "docs/referee/round-9-delivered-request.txt",
   "delivered_request_characters": 13584,
-  "delivered_request_sha256_utf8_lf": "76363fa0b14967470f8498c2ce2d0db437828ebd2909611950f7decb6fa82836"
+  "delivered_request_sha256_utf8_lf": "76363fa0b14967470f8498c2ce2d0db437828ebd2909611950f7decb6fa82836",
+  "next_recommendation": "Reject",
+  "report_metadata": "docs/referee/round-9-metadata.json"
 }
