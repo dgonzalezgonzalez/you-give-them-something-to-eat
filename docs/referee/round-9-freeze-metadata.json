@@ -1,6 +1,6 @@
 {
   "round": 9,
-  "status": "frozen_prepared_not_delivered",
+  "status": "frozen_delivered_text_verified_referee_active",
   "recorded_at_utc": "2026-10-01T13:54:31Z",
   "review_ref": "v0.9.0",
   "freeze_commit": "f44a2f6cee1c19f86a6925c4b5685f8c468d58e4",
@@ -25,8 +25,8 @@
   "request_path": "docs/referee/round-9-prepared-request.txt",
   "prepared_request_characters_lf": 13460,
   "prepared_request_sha256_lf": "828c529089b7b626e04fed3b35af48c72272fb953de257df15ca31f949b04db6",
-  "send_accepted": false,
-  "delivery_confirmed": false,
+  "send_accepted": true,
+  "delivery_confirmed": true,
   "recommendation": null,
   "acceptance": false,
   "prior_genuine_recommendations": 8,
@@ -49,7 +49,7 @@
   "pdf_pages": 41,
   "author_actual_hosted_all_page_render_inspection": true,
   "independent_referee_pdf_rendering": false,
-  "scope": "A public freeze and prepared request, not delivery, a ninth report, independent field replication, acceptance or a DOI archive.",
+  "scope": "Verified public freeze and delivered first Journal of Development Economics request; referee active. No ninth recommendation, independent field execution, acceptance or DOI archive.",
   "prepared_request_updated_after_freeze": true,
   "post_freeze_eighth_audit_receipt": "docs/referee/round-8-received-audit/receipt.json",
   "completed_eighth_supplemental_report": "docs/referee/round-8-supplemental-execution-report.md",
@@ -68,5 +68,9 @@
   "delivery_source_regular_file_payloads_verified": 1983,
   "delivery_actual_comparisons": 130,
   "delivery_master_seconds": 1024.9883737564087,
-  "delivery_receipt": "docs/hosted-public-source-delivery-83a046e.json"
+  "delivery_receipt": "docs/hosted-public-source-delivery-83a046e.json",
+  "actual_submission_turn_id": "aac819e9-5a64-4181-903d-987a41cc799d",
+  "delivered_request_path": "docs/referee/round-9-delivered-request.txt",
+  "delivered_request_characters": 13584,
+  "delivered_request_sha256_utf8_lf": "76363fa0b14967470f8498c2ce2d0db437828ebd2909611950f7decb6fa82836"
 }

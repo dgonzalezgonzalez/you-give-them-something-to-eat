@@ -1,0 +1,30 @@
+{
+  "status": "delivered_text_verified_referee_active",
+  "round_overall": 9,
+  "assessment_for_target": 1,
+  "simulated_journal_target": "Journal of Development Economics",
+  "target_transition": "Explicit user amendment after two general-interest Rejects; eight genuine Rejects preserved.",
+  "thread_id": "6abd01e3-4184-83ed-9ff0-e9475053b958",
+  "thread_title": "Referee Report Request",
+  "submission_turn_id": "aac819e9-5a64-4181-903d-987a41cc799d",
+  "submission_started_at_unix": 1790872225.969,
+  "send_accepted": true,
+  "delivery_confirmed_from_full_supported_chat_read": true,
+  "delivered_request_characters": 13584,
+  "delivered_request_sha256_utf8_lf": "76363fa0b14967470f8498c2ce2d0db437828ebd2909611950f7decb6fa82836",
+  "comparison": "Exact sent prompt and entire retrieved user-message text agree. Prepared-only header was omitted, final LF trimmed, and two immutable post-publication receipt/target links appended before sending. Prepared snapshot remains separate.",
+  "freeze_ref": "v0.9.0",
+  "freeze_commit": "f44a2f6cee1c19f86a6925c4b5685f8c468d58e4",
+  "annotated_tag_object": "826a4ece8fdb90f5d5d16bf3be2ad210bc8742ff",
+  "public_receipt_commit": "ebeb8a8eb4ccdb03f9f69a44419f69e7fe579c64",
+  "model_observation": "Designated chat UI: latest Pro (visible 6), maximum reasoning 5/5; sending tool omitted model/thinking overrides.",
+  "attachment_uploads": false,
+  "public_source_artifact_id": 11177335489,
+  "latest_observed_thread_status": {
+    "type": "active",
+    "activeFlags": []
+  },
+  "next_recommendation": null,
+  "acceptance": false,
+  "scope": "Actual first field-journal request, not a completed ninth report, independent field execution, simulated acceptance or real editorial decision. Public source only; investigator draft remains unsent."
+}
