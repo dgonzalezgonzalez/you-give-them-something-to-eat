@@ -1,0 +1,14 @@
+Supplemental replication request for the SAME frozen eighth manuscript v0.8.0 (50c96dcea50b5aac25e5beb0912f54ff26e1b47b), scientific source aa8667ccde0e00d4c5aa182a89d88b4065a6dda6. Your completed eighth recommendation remains Reject at the unchanged standard. This is not a ninth review, reassessment or request to reverse that recommendation.
+
+You successfully reconstructed costs.csv from public ASCII byte views. Please attempt the remaining canonical files from the same manifest, prioritizing households.csv, and independently rerun the field counts, assignment probabilities, dietary scoring/weighted means and lower/large cost-matched contrast from actual microdata. If retrieval permits, also execute child-cohort accounting and independently replay regional population membership and both relevant certificate chains. State exact retrieval and execution limits; author receipts or supplied means cannot substitute for running actual data. Do not claim full reproduction when only a subset executes. No local attachment upload is requested.
+
+Manifest and documented reconstruction:
+https://github.com/dgonzalezgonzalez/you-give-them-something-to-eat/blob/v0.8.0/data/review-bytes/manifest.json
+https://github.com/dgonzalezgonzalez/you-give-them-something-to-eat/blob/v0.8.0/code/public_review_bytes.py
+Each listed part is ordinary public gzip/base64 text at most 12,001 bytes. Verify part SHA256, concatenate in manifest order, decode/decompress and verify original SHA256. Scientific source references and codebook:
+https://github.com/dgonzalezgonzalez/you-give-them-something-to-eat/blob/v0.8.0/data/input/analytical-codebook.json
+https://github.com/dgonzalezgonzalez/you-give-them-something-to-eat/blob/v0.8.0/code/referee_revision.py
+https://github.com/dgonzalezgonzalez/you-give-them-something-to-eat/blob/v0.8.0/code/child_cohorts.py
+https://github.com/dgonzalezgonzalez/you-give-them-something-to-eat/tree/v0.8.0/docs/referee/round-7-review
+
+Please give a concise self-contained supplemental execution report under 19,000 characters. Preserve the seventh/eighth execution distinctions, existing Reject recommendation and all adverse results. A new substantive contribution has not yet been established; improved replication alone is not offered as a remedy for that objection.

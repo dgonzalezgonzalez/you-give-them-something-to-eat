@@ -1,0 +1,37 @@
+The receipt appropriately distinguishes tolerance-based CSV comparisons, exact generated/model checks and successful compilation from cross-platform PDF byte/text identity or full visual inspection. These are not interchangeable verification claims. 
+
+The local split execution and repaired serialization/compilation failures should remain separately documented. They need not imply erroneous scientific results, but they should not be described as a successful uninterrupted master. The later hosted invocation is a distinct execution record.
+
+The public byte views demonstrably work for the cost file I reconstructed. I did not independently verify all eighty parts, all historical hashes, or every alias. My synthetic reconstruction likewise does not resolve the independent Rwanda microdata-to-exhibit requirement.
+
+**Priority:** complete external field-data execution, rendered-PDF review and durable preservation. Neither author-initiated CI nor an expiring artifact supplies all three. Their completion would improve verification, but would not alone resolve the publication-importance objection.
+
+# Minor comments: dispositions of all eight seventh-report points
+
+1. **Religious context — maintained.** Catholic affiliation remains a setting characteristic, not an identified mechanism. No new result changes that boundary.
+
+2. **Assignment and receipt — mostly resolved.** “Weakly exceeds” now matches the corollary’s inequality. One residual introductory phrase, “stronger recipient-level response,” should become “stronger observed assignment response” unless an actual recipient-specific estimand is intended. 
+
+3. **Dietary ceiling and saving — maintained.** Keep the twelve-group ceiling, reachable-threshold qualification and illustrative—not mediated-causal—interpretation. No further mathematical repair is requested.
+
+4. **PDF presentation — not verified by this referee.** I cannot endorse the reported absence of clipping or unresolved references without the actual rendered PDF. Author inspection and source-text inspection remain different activities.
+
+5. **Inherited search diagnostics — resolved and retained.** `label_source_search` explicitly preserves historical quota-search provenance without assigning it to another comparator’s optimization. 
+
+6. **Exact tolerance classification — resolved in code.** Certificates are compared as fractions with \(1/20\) and \(1/10\) before conversion to floats. My ordinary floating reconstruction is not an independent certification of those exact comparisons, nor did I byte-diff every seventh/eighth CSV entry. 
+
+7. **Misleading 49.2% comparison — resolved in the main text.** The current hybrid comparison is now explicit; the older harmonic comparison remains labeled historical. Do not reopen the old percentage as the principal methodological gain. 
+
+8. **Center of gravity and history — improved.** The abstract and introduction now foreground regional near-optimality and adverse performance evidence. Preserve the amendment/failure records, but keep validation counts and prose-screen results outside the scientific-merit argument. A shorter presentation would make the remaining contribution easier to assess.
+
+# Overall assessment and conditions for reconsideration
+
+The eighth revision successfully completes the principal **specific** requests from the seventh report. I would not keep those issues open merely to produce another round. The paired calculations, benchmark definitions, exact threshold comparisons and revised interpretations are credible within the inspected and executed scope.
+
+The remaining problem is substantive rather than an undiscovered numerical hurdle. The paper explains more clearly why one implemented region yields a broad guarantee and why that regional ordering need not carry over to actual performance in designed populations. Those are legitimate findings. But they do not yet establish an important economic implication for the Rwanda intervention or a sufficiently consequential and transferable methodological advantage.
+
+The strongest honest contribution is now a careful methodological application connecting selection, region construction, optimization accuracy and decision-rule performance. A focused article in that form could be useful. At the requested general-interest standard, however, I would not recommend an R&R conditioned merely on more catalogue cells, more accurate certificates or completion of the replication checklist.
+
+I would reconsider for a substantive advance demonstrating consequential applicability or a broadly useful methodological insight. That need not require a new experiment, a positive treatment ranking or uniform dominance. It does require importance beyond the correctness and precision established here.
+
+**Final recommendation: Reject at the unchanged leading general-interest economics-journal standard.**

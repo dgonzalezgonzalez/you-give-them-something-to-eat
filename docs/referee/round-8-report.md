@@ -1,0 +1,207 @@
+# Eighth-round referee report
+
+**Manuscript:** *You give them something to eat: Dietary Diversity, Coverage, and Catholic Aid in Rwanda*  
+**Reviewed tag:** `v0.8.0`  
+**Resolved commit:** `50c96dcea50b5aac25e5beb0912f54ff26e1b47b`  
+**Scientific/verification source:** `aa8667ccde0e00d4c5aa182a89d88b4065a6dda6`
+
+## Recommendation: **Reject**
+
+The eighth submission substantially addresses the concrete requests concerning paired Monte Carlo uncertainty, simple decision benchmarks, effect-specific comparisons, exact tolerance classification, and presentation of the regional optimization result. **My independent reconstruction confirms the principal new simulation findings.** I found no new material mathematical or coding error in the components examined.
+
+The recommendation nevertheless remains reject at the unchanged leading general-interest standard. The paper now distinguishes its statistical and computational achievements more convincingly, but it still does not establish a sufficiently consequential economic finding or a broadly important methodological contribution. Its strongest conclusions concern the behavior of specified outer regions and a constructed decision catalogue, rather than an identified improvement in the Rwanda allocation decision or a demonstrated domain of substantial methodological advantage.
+
+This is not a rejection because the results are adverse or because no unique winner is identified. Adverse findings and methodological diagnostics can be important contributions. Here, their economic reach remains too limited. This is a simulated recommendation, not a journal decision.
+
+## Retrieval, source verification, and independent execution
+
+I resolved the tag and compared its Git-tree entries with the stated hosted source. **Code, data, paper, canonical outputs, master script, workflow, and dependency files match.** The differing entries concern documentation. This establishes source/freeze correspondence, not correctness of the analysis.  
+
+I inspected the revised main text and relevant technical appendix, all-point response, round-eight methods note, simulation and aggregation code, selected public draw and effect-summary views, assignment audit, input-byte manifest, and hosted receipt.
+
+**Independent execution in this round:**
+
+- I independently implemented the declared synthetic experiment: **all 144 cells, 256 assignments per cell, and seven decision rules**, including baseline scale selection and the two simple benchmarks. This used ordinary floating-point calculations, not the author’s modules or directed-arithmetic validators.
+- I recomputed the twelve published effect-specific quota-minus-empirical-Bernstein means and paired standard errors. Maximum discrepancies were approximately \(6.8\times10^{-17}\) and \(1.1\times10^{-17}\), respectively. I also checked 32 published paired draw values against the reconstruction.
+- I reconstructed **only `costs.csv`** from its public gzip/base64 view. Both the part hash and decompressed original-file hash match the manifest. This is byte verification of a 531-byte cost input, not household-data replication.
+
+The **:chatgpt-content-reference{index="23"}[audit summary](sandbox:/mnt/data/referee_round8/summary.json)** and **:chatgpt-content-reference{index="24"}[programs, reconstructed results, and receipts](sandbox:/mnt/data/referee_round8_audit_v0.8.0.zip)** document these calculations.
+
+**Limits:** direct archive/PDF downloads failed. I did not reconstruct the other eight canonical files, execute Rwanda household or child microdata, regenerate empirical constants, replay field-region population memberships or certificate chains, run the master or Stata, inspect or compile the manuscript PDF, or download and independently hash the hosted artifact. My public-registry request also failed; I inspected the repository’s assignment audit instead. GitHub job/artifact metadata was accessible and checked separately.
+
+The synthetic reconstruction confirms numerical performance summaries. It does **not** replace the exact decision-certificate checks, establish field coverage, or constitute full scientific replication.
+
+# Major comments: dispositions of all ten seventh-report points
+
+## 1. Economic importance and the central contribution
+
+**Disposition: presentation materially improved; the publication obstacle remains.**
+
+The abstract now foregrounds the regional optimization bracket and the adverse decision-performance findings. This is a more accurate account of the paper than emphasizing a succession of tighter upper bounds. The central result is that the broad quota guarantee cannot be substantially improved by searching harder **within its implemented outer region**. That is a legitimate computational-statistical finding. 
+
+Its economic significance remains limited. Near-optimality within a conservative region does not establish that the region is decision-relevant, that its width captures the experiment’s sharp information content, or that the selected rule improves an actual organizational decision. The unchanged field evidence still leaves the broader nutritional and welfare ranking unresolved.
+
+The simulations add a useful warning: stronger regional protection in the field calculation need not predict lower actual regret elsewhere. But this is demonstrated using particular known populations and reporting rules, not an empirical distribution of aid decisions. The distinction between confidence-region optimization and repeated-sampling treatment-rule performance is also established in the decision-theoretic literature; the paper needs an important application or methodological implication beyond restating it. :chatgpt-content-reference{index="3"}
+
+**Priority:** retain the sharpened claim, but do not equate its precision with general-interest importance. A convincing publication case would require a consequential application-level implication or a demonstrated, transferable methodological advantage. Neither a positive treatment ranking nor a new experiment is intrinsically required.
+
+## 2. Assignment evidence, population, and tuning
+
+**Disposition: the additional documentation is useful; the assignment law remains a maintained assumption.**
+
+The assignment audit distinguishes computer randomization from verification of uniform quota-consistent labels and independent blocks. That is correct. Its reported registry counts sum to 243 rather than 248; documenting the discrepancy is preferable to silently treating either count as a recovered assignment mechanism. I did not independently retrieve the registry page or access its restricted analysis plan in this round. 
+
+The discrepancy is a documentation issue, not evidence that the trial’s causal design was invalid. Equally, registry confirmation of computer assignment is insufficient to verify every restriction needed by this paper’s exact conditional argument. Registration timing should not be used to infer when investigators obtained endline data.
+
+The target remains the fixed weighted released-baseline sample. Extending it to the eligible frame or deployment population requires further sampling and transport assumptions. Baseline-only statistical scales remain distinct from outcome-dependent support multipliers; the new paired-performance calculations do not change that separation.
+
+**Priority:** retain the conditional formulation and seek original assignment documentation or investigator confirmation where possible. Until then, describe the finite result as valid under the stipulated design model, rather than independently verified under the complete historical randomization law.
+
+## 3. Missing outcomes and empirical-Bernstein interpretation
+
+**Disposition: the accepted construction is maintained; the benchmark does not introduce an ignorability assumption.**
+
+The confidence-region rules continue to retain nonreporters in the fixed population target and use item-informed endpoint information. The empirical-Bernstein comparator retains observed compensation, a fixed population denominator, and the required handling of sample order. Nothing in the new summaries resolves observation selection or turns unidentified diets into observed scores. 
+
+The empirical-best benchmark’s use of interval midpoints is also properly labeled. Assigning midpoint 0.5 to an unreported \([0,1]\) interval defines a decision rule; it does not assert that the missing outcome equals 0.5. The inspected code implements that convention explicitly. 
+
+The resulting failure under selective reporting is therefore interpretable: it shows how this particular midpoint rule can select the wrong arm when reporting depends on arm and outcome. It is not a finding that all empirical-success rules fail, or that every certificate-driven procedure handles selection well. Indeed, the effect-specific results show that the latter procedures can also perform worse than no learning.
+
+**Priority:** maintain these distinctions. The new exercise clarifies selection sensitivity; it does not establish a new selection-robust ranking for the Rwanda population.
+
+## 4. Regional certificates and the location of conservatism
+
+**Disposition: the strengthened interpretation is correct, conditional on the certificate chains.**
+
+The manuscript now correctly uses both sides of the regional brackets. An upper bound for the quota region below a lower bound for the hybrid region establishes an ordering of their optimized regional values—not merely an ordering of upper certificates for a quota-selected proposal. The reported separation exceeding 0.665 groups is therefore meaningful **for those implemented regions**. 
+
+The quota bracket,
+\[
+[5.866228,\;5.867129],
+\]
+also establishes that further allocation optimization cannot materially narrow that region’s guarantee. The floor-ablation bounds correctly combine containment with lower and upper certificates; equal displayed values alone would not establish that conclusion.
+
+The essential qualification is retained: the feasible adversarial distributions need not correspond to jointly attainable finite-household potential outcomes. Thus, the regional lower bound is not a lower bound on actual regret, sharp identification, statistical minimax risk, or the performance of every valid inference procedure.
+
+I retain my favorable assessment of the algebra. I did not independently replay empirical membership or either full certificate chain in this round.
+
+**Priority:** treat this point as addressed. Further optimization checks are not the missing contribution. The substantive question is whether the specified regions yield useful protection or reveal an important limitation relevant beyond this application.
+
+## 5. Dietary measurement, child cohorts, and saving
+
+**Disposition: the earlier corrections remain; the substantive evidence boundaries are unchanged.**
+
+HDDS remains a household food-access proxy, not a measure of individual nutrient adequacy or comprehensive welfare. Coherent distributions improve statistical interpretation but do not establish nutritional equivalence across food groups or intrahousehold allocation.
+
+The child analysis continues to distinguish baseline membership, linkage, physical measurement and valid-score availability. Fixing the cohort before treatment does not remove selection from missing follow-up scores. The retained Holm nonrejections therefore do not establish zero full-cohort nutritional effects. 
+
+The saving illustration remains compatible with the bundled response rather than identified by it. Its significance level is not the identification problem; the missing ingredient is variation separating saving terms or access from the other program components.
+
+**Priority:** retain these qualifications and keep the auxiliary evidence subordinate to its actual scope. Broader nutritional or mechanism claims require additional measurement or identifying variation. Those requirements should not be disguised as problems that a tighter moment bound can solve.
+
+## 6. Computation, proofs, and prior art
+
+**Disposition: the seventh-round computational objection remains closed; no new central proof error identified.**
+
+The sorted-threshold argument, positive symmetric-mean recurrence and complementary-quota handling remain a defensible polynomial implementation of the relaxed moment problem. The product/harmonic minimum still combines baseline bounds on the **same moment**, rather than intersecting outcome-selected confidence events. The empirical-Bernstein comparator remains a restricted adaptation, not the full variance-adaptive or betting family. 
+
+The relevant coverage logic is unchanged: endpoint ordering produces computable expectation-bounded tests; the common event protects data-selected allocations; separate methods retain separate events. A retrospective minimum of their realized certificates would require additional justification. The manuscript does not make that claim.
+
+My current reconstruction numerically implements the designed methods, but it does not independently certify their directed arithmetic or replace the earlier proof and enclosure assessments. The maintained field claims and their numerical chains must continue to be distinguished.
+
+**Priority:** preserve the established scope and attribution. I am not asking for another algorithmic repair. Whether this specialization is sufficiently useful to merit a general-interest contribution remains a performance and application question, not a consequence of polynomial complexity alone.
+
+## 7. Institutions and opportunity costs
+
+**Disposition: interpretation remains appropriate; the institutional application is still hypothetical.**
+
+The paper correctly distinguishes actual dietary opportunity cost at a fixed true mean vector from differences between optimized worst-case bounds. It also keeps the institutional exercises attached to their earlier region rather than relabeling them as implications of the latest quota construction. 
+
+The new optimization and simulation findings do not identify CRS’s admissible menu, mandates, objective, loss tolerance or implementation choice. A mathematically explicit diet-only lottery is not necessarily an operational decision available to the organization.
+
+**Priority:** either keep these sections explicitly illustrative or ground the relevant decision in documentary and economic evidence. No further arbitrary institutional constraints are required. Such additions would not resolve the present contribution objection.
+
+## 8. Costs, unused resources, and transport
+
+**Disposition: the conditional cost formulation remains acceptable; operational interpretation remains unsupported.**
+
+My reconstruction verifies the bytes of the published cost input, not its economic validity for mixed deployment. The analysis still assumes proportional allocation of standardized average costs. That does not identify marginal activation costs, provider capacity constraints, changing participation or spillovers.
+
+The expected-budget constraint is internally coherent but is not a hard realized expenditure cap. Likewise, a diet-only objective leaves unused resources unvalued; adding a hypothetical resource value changes both choice and comparator values. The narrow regional optimization bracket does not justify an operational recommendation to leave funds unspent. 
+
+**Priority:** preserve the benchmark’s conditional interpretation. Accounts, objectives and transport evidence are substantive information needs. They are not defects in the mathematics of the expected-cost problem actually specified, and they are not repaired by reproducing its numerical optimum.
+
+## 9. Performance additions: correctly implemented, informative, but not a general ranking
+
+**Disposition: the concrete seventh-round requests are substantially addressed.**
+
+The paired Monte Carlo calculations are correct. For draw-level differences \(d_{cr}\) within cell \(c\), the code uses their sample standard deviation divided by \(\sqrt{256}\). For an equally weighted average over \(C\) independent cells, it combines the cell variances and divides by \(C^2\). It does not incorrectly add marginal variances while ignoring pairing.  
+
+My independently generated synthetic draws reproduce:
+
+| Reporting regime | Quota minus EB average actual regret | Paired Monte Carlo SE |
+|---|---:|---:|
+| Complete | 0.002117773 | 0.000025105 |
+| Coarse intervals | 0.002077695 | 0.000009449 |
+| Assignment-dependent | 0.000074498 | 0.000005295 |
+
+These numbers agree with the published effect-level summaries and their aggregation. Positive differences favor the restricted empirical-Bernstein rule. They measure simulation uncertainty conditional on the catalogue, not uncertainty about performance across real economic problems. More draws would make them more precise without improving that external relevance. 
+
+The simple benchmarks materially improve interpretation. With complete reporting, empirical-best average regret is approximately **0.003369**, compared with **0.018669** for quota and **0.016551** for EB. But selective reporting reverses the comparison:
+
+| True effect under assignment-dependent reporting | Empirical best | Quota | EB | Half allocation |
+|---|---:|---:|---:|---:|
+| −0.16 | 0.151510 | 0.087803 | 0.087537 | **0.080000** |
+| +0.16 | **0.002240** | 0.052585 | 0.052555 | 0.080000 |
+
+I reproduce these patterns. The half rule’s equal-effect average is exactly \(9/200=0.045\). The published effect-specific values preserve the adverse evidence. 
+
+The key lesson is not simply that certification is costly or midpoint decisions are good. Under the constructed selective-reporting rule, the midpoint ranking is systematically distorted; certificate-based mixing mitigates the harmful-arm loss but does not beat half allocation in that case. Conversely, under complete reporting, cautious mixing sacrifices actual performance relative to this empirical rule.
+
+These are useful demonstrations. They remain two-arm, equal-cost, half-quota problems with constant treatment shifts and specified reporting thresholds—not the six-package coverage/intensity problem. Nor do the benchmark differences establish a necessary price of every valid certification procedure.
+
+**Priority:** regard the requested additions as completed. Interpret the findings by problem class, without promoting small Monte Carlo errors into evidence of broad relevance. The paper still needs a compelling account of where its particular protection is economically valuable.
+
+## 10. Reproducibility, hosted evidence, and preservation
+
+**Disposition: evidence strengthened; independent field replication remains incomplete.**
+
+GitHub metadata corroborates successful job `110325867142` in run `36848976068`, attached to the stated scientific source. It also records artifact `11155805912`, size **3,091,917 bytes**, the reported digest, and expiry **31 October 2026 at 10:43:19 UTC**. I compared those records with the author receipt; I did not download the archive or recompute its hash. 
+
+The receipt appropriately distinguishes tolerance-based CSV comparisons, exact generated/model checks and successful compilation from cross-platform PDF byte/text identity or full visual inspection. These are not interchangeable verification claims. 
+
+The local split execution and repaired serialization/compilation failures should remain separately documented. They need not imply erroneous scientific results, but they should not be described as a successful uninterrupted master. The later hosted invocation is a distinct execution record.
+
+The public byte views demonstrably work for the cost file I reconstructed. I did not independently verify all eighty parts, all historical hashes, or every alias. My synthetic reconstruction likewise does not resolve the independent Rwanda microdata-to-exhibit requirement.
+
+**Priority:** complete external field-data execution, rendered-PDF review and durable preservation. Neither author-initiated CI nor an expiring artifact supplies all three. Their completion would improve verification, but would not alone resolve the publication-importance objection.
+
+# Minor comments: dispositions of all eight seventh-report points
+
+1. **Religious context — maintained.** Catholic affiliation remains a setting characteristic, not an identified mechanism. No new result changes that boundary.
+
+2. **Assignment and receipt — mostly resolved.** “Weakly exceeds” now matches the corollary’s inequality. One residual introductory phrase, “stronger recipient-level response,” should become “stronger observed assignment response” unless an actual recipient-specific estimand is intended. 
+
+3. **Dietary ceiling and saving — maintained.** Keep the twelve-group ceiling, reachable-threshold qualification and illustrative—not mediated-causal—interpretation. No further mathematical repair is requested.
+
+4. **PDF presentation — not verified by this referee.** I cannot endorse the reported absence of clipping or unresolved references without the actual rendered PDF. Author inspection and source-text inspection remain different activities.
+
+5. **Inherited search diagnostics — resolved and retained.** `label_source_search` explicitly preserves historical quota-search provenance without assigning it to another comparator’s optimization. 
+
+6. **Exact tolerance classification — resolved in code.** Certificates are compared as fractions with \(1/20\) and \(1/10\) before conversion to floats. My ordinary floating reconstruction is not an independent certification of those exact comparisons, nor did I byte-diff every seventh/eighth CSV entry. 
+
+7. **Misleading 49.2% comparison — resolved in the main text.** The current hybrid comparison is now explicit; the older harmonic comparison remains labeled historical. Do not reopen the old percentage as the principal methodological gain. 
+
+8. **Center of gravity and history — improved.** The abstract and introduction now foreground regional near-optimality and adverse performance evidence. Preserve the amendment/failure records, but keep validation counts and prose-screen results outside the scientific-merit argument. A shorter presentation would make the remaining contribution easier to assess.
+
+# Overall assessment and conditions for reconsideration
+
+The eighth revision successfully completes the principal **specific** requests from the seventh report. I would not keep those issues open merely to produce another round. The paired calculations, benchmark definitions, exact threshold comparisons and revised interpretations are credible within the inspected and executed scope.
+
+The remaining problem is substantive rather than an undiscovered numerical hurdle. The paper explains more clearly why one implemented region yields a broad guarantee and why that regional ordering need not carry over to actual performance in designed populations. Those are legitimate findings. But they do not yet establish an important economic implication for the Rwanda intervention or a sufficiently consequential and transferable methodological advantage.
+
+The strongest honest contribution is now a careful methodological application connecting selection, region construction, optimization accuracy and decision-rule performance. A focused article in that form could be useful. At the requested general-interest standard, however, I would not recommend an R&R conditioned merely on more catalogue cells, more accurate certificates or completion of the replication checklist.
+
+I would reconsider for a substantive advance demonstrating consequential applicability or a broadly useful methodological insight. That need not require a new experiment, a positive treatment ranking or uniform dominance. It does require importance beyond the correctness and precision established here.
+
+**Final recommendation: Reject at the unchanged leading general-interest economics-journal standard.**
