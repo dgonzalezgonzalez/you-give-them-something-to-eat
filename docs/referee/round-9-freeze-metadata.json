@@ -23,8 +23,8 @@
     "requirements-lock.txt"
   ],
   "request_path": "docs/referee/round-9-prepared-request.txt",
-  "prepared_request_characters_lf": 9755,
-  "prepared_request_sha256_lf": "516157b61eae5e1349fb0a6da108c09efcaa778c85c9418d72c7f79ba9079f68",
+  "prepared_request_characters_lf": 11628,
+  "prepared_request_sha256_lf": "246bbc5256a551cf3da8df9dcba08c4d6149aa8bbfb77015126da9e13e4756a1",
   "send_accepted": false,
   "delivery_confirmed": false,
   "recommendation": null,
@@ -53,6 +53,12 @@
   "prepared_request_updated_after_freeze": true,
   "post_freeze_eighth_audit_receipt": "docs/referee/round-8-received-audit/receipt.json",
   "completed_eighth_supplemental_report": "docs/referee/round-8-supplemental-execution-report.md",
-  "public_source_delivery_status": "pending_existing_hosted_artifact_wrapper_execution",
-  "new_workflow_publication": "Rejected for missing OAuth workflow scope; unpublished workflow removed, existing workflow unchanged."
+  "public_source_delivery_status": "first_attempt_cancelled_during_tex_installation_single_retry_running",
+  "new_workflow_publication": "Rejected for missing OAuth workflow scope; unpublished workflow removed, existing workflow unchanged.",
+  "simulated_journal_target": "Journal of Development Economics",
+  "assessment_number_for_target": 1,
+  "user_authorized_target_transition_after_two_general_interest_rejections": true,
+  "delivery_run_id": 36878350333,
+  "delivery_first_job_id": 110423464648,
+  "delivery_retry_job_id": 110461012630
 }
