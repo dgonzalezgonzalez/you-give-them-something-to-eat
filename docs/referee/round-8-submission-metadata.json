@@ -1,0 +1,16 @@
+{
+  "round": 8,
+  "status": "verified_scientific_source_ready_for_freeze_and_submission",
+  "review_ref": "v0.8.0",
+  "scientific_source": "aa8667ccde0e00d4c5aa182a89d88b4065a6dda6",
+  "prior_recommendations": 7,
+  "prior_recommendation": "Reject at unchanged leading general-interest standard",
+  "next_recommendation": null,
+  "acceptance": false,
+  "hosted_run_id": 36848976068,
+  "hosted_artifact_id": 11155805912,
+  "actual_hosted_checks": 118,
+  "actual_hosted_master_seconds": 1024.5666828155518,
+  "local_pdf_sha256": "cd31b40121e0610321cd978b87e63e8ad300d41da15f0ce1701369ede0e07292",
+  "scope": "No eighth referee request has been sent yet. Author CI and artifact inspection are not independent scientific replication or real journal acceptance. Actual immutable tag identity and delivery are recorded after verification."
+}

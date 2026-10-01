@@ -36,3 +36,5 @@
 8. **Center of gravity/history:** revised abstract/introduction foreground regional near-optimality and adverse decision evidence. Amendment, failure and prose-screen records remain outside the merit argument. Acceptance and general-interest importance remain unachieved.
 
 The final local split execution and failed serialization/macro-write history are recorded in round-8-numerical-audit.md. New independent draw-summary checks pass 5,294/5,294; original 720-row scientific statistics match exactly. Hosted full-master execution and the next genuine recommendation remain pending.
+
+Actual eighth-source hosted full cold default-master execution now passes 118/118 comparisons in 1024.566683 seconds, with a 39-page PDF. The artifact was downloaded/hash matched; docs/hosted-reproduction-aa8667c.json gives exact scope. This resolves the new full author-side execution gate, not independent journal replication, durable archiving or scientific importance. The genuine eighth recommendation remains pending.
