@@ -1,0 +1,192 @@
+"""Independent high-precision primitive/moment and exact game replay.
+
+No confidence coverage, favorable policy sign or simulated acceptance is a
+validation criterion. Original source-file pilot replay remains separate.
+"""
+from pathlib import Path
+from fractions import Fraction
+from decimal import Decimal, localcontext
+import itertools, json, math, time
+import numpy as np
+import pandas as pd
+from scipy.stats import t as student_t
+from community_decision import solve_box_decision
+
+ROOT=Path(__file__).resolve().parents[1]
+ARMS=['Control','Gikuriro','Lower','Middle','Upper','Large']
+TX=['treat_GK','treat_GD_lower','treat_GD_mid','treat_GD_upper','treat_GD_huge']
+GROUPS=[['cereals'],['tubers'],['vitaveg','leafyveg','otherveg'],['vitaafruits','otherfruits'],['organmeat','fleshmeat'],['eggs'],['fish'],['legumes'],['milk'],['oils'],['sweets'],['spices']]
+
+def decimal_fraction(x):
+    return Decimal(x.numerator)/Decimal(x.denominator)
+
+def reference_moment(weights,k,lam):
+    """All subsets of every sorted threshold population at 160 digits.
+
+    This enumerates subsets directly, not a symmetric-mean recurrence.
+    Sorted-threshold reduction is attributed/proved in the existing paper.
+    """
+    with localcontext() as ctx:
+        ctx.prec=160
+        w=[decimal_fraction(x) for x in sorted(weights,reverse=True)];n=len(w);l=decimal_fraction(Fraction(lam))
+        subsets=list(itertools.combinations(range(n),k));best=Decimal(0)
+        for sign in [-1,1]:
+            active=[(sign*l*n*x/k).exp() for x in w]
+            for m in range(n+1):
+                total=Decimal(0)
+                for subset in subsets:
+                    product=Decimal(1)
+                    for j in subset:
+                        if j<m:product*=active[j]
+                    total+=product
+                value=(total/len(subsets)).ln()-sign*l*sum(w[:m],Decimal(0))
+                best=max(best,value)
+        return best
+
+def reference_ancova(sample,baseline_control):
+    """Whitened least squares and direct village score sandwich.
+
+    Independent of estimate.regress and its normal-equation coefficient path.
+    Baseline missing-value imputation follows the declared block rule.
+    """
+    y=sample.point.to_numpy();w=sample.samp_wgt.to_numpy()
+    columns=[np.ones(len(sample)),*[sample[t].to_numpy() for t in TX]]
+    if baseline_control:
+        lag=sample.dietarydiversity.to_numpy().copy();missing=~np.isfinite(lag)
+        mean=np.average(lag[~missing],weights=w[~missing]) if (~missing).any() else 0.
+        for block in sample.block.unique():
+            ix=sample.block.eq(block).to_numpy();valid=ix&~missing
+            lag[ix&missing]=np.average(lag[valid],weights=w[valid]) if valid.any() else mean
+        if np.ptp(lag)>1e-12:columns.append(lag)
+        if missing.any():columns.append(missing.astype(float))
+    columns.extend(sample.block.eq(k).to_numpy().astype(float) for k in sorted(sample.block.unique())[1:])
+    X=np.column_stack(columns);root=np.sqrt(w);weighted=X*root[:,None]
+    beta=np.linalg.lstsq(weighted,y*root,rcond=None)[0]
+    inverse=np.linalg.pinv(weighted);bread=inverse@inverse.T
+    scores=X*(w*(y-X@beta))[:,None];village_scores=[]
+    for village in sorted(sample.vid.unique()):village_scores.append(scores[sample.vid.eq(village)].sum(axis=0))
+    G=len(village_scores);N=len(sample);K=X.shape[1]
+    covariance=bread@np.asarray(village_scores).T@np.asarray(village_scores)@bread*G/(G-1)*(N-1)/(N-K)
+    return beta,covariance,N,G
+
+def validate_fitted_results(report,b,e,require):
+    estimates=pd.read_csv(ROOT/'output/community_arm_estimates.csv')
+    ancova=pd.read_csv(ROOT/'output/community_ancova.csv');fits={}
+    counts=pd.crosstab(b.drop_duplicates('vid').block,b.drop_duplicates('vid').arm).reindex(columns=ARMS)
+    blocks=sorted(counts.index);means={};influences={}
+    for g in [0,1]:
+        for scope,column in [('identified_diets','point'),('lower_endpoint','lower'),('upper_endpoint','upper')]:
+            mu=[];scores=[]
+            for arm in ARMS:
+                sample=b[b.eligible.eq(g)&b.arm.eq(arm)&b[column].notna()]
+                terms=[(int(z.block),Fraction(float(z.samp_wgt))*Fraction(int(counts.loc[z.block].sum()),int(counts.loc[z.block,arm])),Fraction(float(getattr(z,column)))) for z in sample.itertuples()]
+                D=sum((w for _,w,_ in terms),Fraction(0));N=sum((w*y for _,w,y in terms),Fraction(0));center=N/D
+                score=np.array([float(sum((w*(y-center)/D for k,w,y in terms if k==block),Fraction(0))) for block in blocks])*np.sqrt(len(blocks)/(len(blocks)-1))
+                row=estimates[estimates.eligible.eq(g)&estimates.scope.eq(scope)&estimates.arm.eq(arm)]
+                require(f'independent_ratio_and_score_{g}_{scope}_{arm}',len(row)==1 and abs(row.iloc[0].estimate-float(center))<=1e-12 and abs(row.iloc[0].block_se-np.linalg.norm(score))<=1e-12)
+                mu.append(float(center));scores.append(score)
+            means[g,scope]=np.array(mu);influences[g,scope]=np.column_stack(scores)
+    W={g:sum((Fraction(float(w)) for w in b[b.eligible.eq(g)].samp_wgt),Fraction(0)) for g in [0,1]};tau=W[1]/(W[0]+W[1])
+    require('independent_population_share',Fraction(report['baseline_eligible_weight_share_exact'])==tau and report['baseline_eligible_weight_share']==float(tau))
+    comparisons=pd.read_csv(ROOT/'output/community_policy_comparisons.csv')
+    require('complete_population_comparison_family',len(comparisons)==54 and not comparisons.duplicated(['cost_convention','population','policy']).any())
+    for i,row in comparisons.iterrows():
+        theta={'eligible':1.,'ineligible':0.,'baseline_weight_aggregate':float(tau)}[row.population]
+        menu=report['menus'][row.cost_convention];q=menu['vertices'][menu['labels'].index(row.policy)]
+        c=np.array([float(Fraction(int(a=='Gikuriro'))-Fraction(v)) for a,v in zip(ARMS,q)])
+        center=theta*means[1,'identified_diets']+(1-theta)*means[0,'identified_diets']
+        score=theta*influences[1,'identified_diets']+(1-theta)*influences[0,'identified_diets']
+        lower=theta*means[1,'lower_endpoint']+(1-theta)*means[0,'lower_endpoint'];upper=theta*means[1,'upper_endpoint']+(1-theta)*means[0,'upper_endpoint']
+        low=np.maximum(c,0)@lower+np.minimum(c,0)@upper;high=np.maximum(c,0)@upper+np.minimum(c,0)@lower
+        require(f'independent_population_contrast_{i}',max(abs(row.gikuriro_minus_policy_identified-c@center),abs(row.exploratory_block_se-np.linalg.norm(score@c)),abs(row.estimated_missingness_lower-low),abs(row.estimated_missingness_upper-high))<=2e-12)
+    for control in [False,True]:
+        for g in [0,1]:
+            sample=b[b.eligible.eq(g)&b.point.notna()&b.hhid.map(e.sample_panel).eq(1)]
+            fits[control,g]=reference_ancova(sample,control)
+    tests=ancova[ancova.policy.ne('Gikuriro')].copy()
+    require('declared_ancova_family_complete',len(ancova)==72 and len(tests)==64 and not ancova.duplicated(['eligible','baseline_control','cost_convention','policy']).any())
+    recomputed_p=[]
+    for i,row in ancova.iterrows():
+        beta,cov,N,G=fits[bool(row.baseline_control),int(row.eligible)]
+        menu=report['menus'][row.cost_convention];v=list(map(Fraction,menu['vertices'][menu['labels'].index(row.policy)]))
+        c=np.zeros(len(beta));c[1]=1
+        for a in range(1,6):c[a]-=float(v[a])
+        value=float(c@beta);se=float(np.sqrt(max(c@cov@c,0)))
+        p=float(2*student_t.sf(abs(value/se),G-1)) if se>1e-12 else 1.
+        require(f'independent_ancova_fit_{i}',row.N==N and row.villages==G and abs(row.estimate-value)<=1e-10 and abs(row.se-se)<=1e-10 and abs(row.p-p)<=1e-9)
+        if row.policy!='Gikuriro':recomputed_p.append(p)
+    order=np.argsort(recomputed_p);adjusted=np.zeros(64);last=0.
+    for rank,index in enumerate(order):
+        last=max(last,min(1.,(64-rank)*recomputed_p[index]));adjusted[index]=last
+    require('independent_holm_64',np.allclose(tests.p_holm_64,adjusted,rtol=0,atol=1e-8))
+    require('six_declared_fitted_frontiers',len(report['fitted_frontiers'])==6)
+    require('complete_frontier_design',{(z['estimator'],z['cost_convention']) for z in report['fitted_frontiers']}==set(itertools.product(['assignment_weighted_ratios','block_wls','baseline_ancova'],['cost_eligible','cost_population'])))
+    for i,frontier in enumerate(report['fitted_frontiers']):
+        menu=report['menus'][frontier['cost_convention']];vertices=[list(map(Fraction,v)) for v in menu['vertices']]
+        if frontier['estimator']=='assignment_weighted_ratios':
+            fitted_means={g:means[g,'identified_diets'] for g in [0,1]}
+        else:
+            control=frontier['estimator']=='baseline_ancova';fitted_means={g:np.r_[0.,fits[control,g][0][1:6]] for g in [0,1]}
+        # CSV and alternate least-squares paths can differ by a few ulps. Bounds
+        # below verify the entire fitted segment using floating affine endpoint
+        # values, not false exact equality with an independently fitted root.
+        intercept=np.array([sum(float(q)*fitted_means[0][a] for a,q in enumerate(v)) for v in vertices])
+        slope=np.array([sum(float(q)*(fitted_means[1][a]-fitted_means[0][a]) for a,q in enumerate(v)) for v in vertices])
+        segments=frontier['segments'];previous=Fraction(0)
+        for j,segment in enumerate(segments):
+            left=Fraction(segment['theta_lower_exact']);right=Fraction(segment['theta_upper_exact'])
+            require(f'frontier_partition_{i}_{j}',left==previous and left<right<=1 and float(left)==segment['theta_lower'] and float(right)==segment['theta_upper'])
+            best=menu['labels'].index(segment['policy'])
+            for t in [float(left),float(right)]:
+                values=intercept+t*slope
+                require(f'whole_segment_optimality_{i}_{j}_{t}',values[best]>=values.max()-1e-10)
+            previous=right
+        require(f'frontier_covers_unit_interval_{i}',previous==1)
+    require('no_causal_or_importance_pass_claim',report['causal_welfare_ranking_identified'] is False and report['general_interest_importance_established'] is False)
+
+def main():
+    begin=time.perf_counter();report=json.loads((ROOT/'output/community-decision.json').read_text());checks={};moment_cache={}
+    def require(name,value):
+        checks[name]=bool(value)
+        if not value:raise ValueError(name)
+    raw=pd.read_csv(ROOT/'data/input/households.csv');b=raw[raw['round'].eq(1)].copy();e=raw[raw['round'].eq(2)].set_index('hhid')
+    b['arm']='Control'
+    for a,t in zip(ARMS[1:],TX):b.loc[b[t].eq(1),'arm']=a
+    villagers=b.drop_duplicates('vid');counts=pd.crosstab(villagers.block,villagers.arm).reindex(columns=ARMS)
+    lower=[];upper=[]
+    for record in b.itertuples():
+        response=e.loc[record.hhid] if record.hhid in e.index else None;l=h=0
+        for group in GROUPS:
+            values=[response['m9_'+name] if response is not None else np.nan for name in group]
+            l+=int(any(x==1 for x in values));h+=int(not all(x==0 for x in values))
+        lower.append(l);upper.append(h)
+    b['lower']=lower;b['upper']=upper;b['point']=[float(l) if l==h else np.nan for l,h in zip(lower,upper)]
+    validate_fitted_results(report,b,e,require)
+    require('fixed_baseline_membership',len(b)==2788 and b.hhid.nunique()==2788)
+    require('baseline_strata',{int(k):int(v) for k,v in b.groupby('eligible').size().items()}=={0:995,1:1793})
+    require('fixed_primitive_family',report['family_size']==36 and len(report['finite_primitives'])==36)
+    require('quota_one_sided_family',report['quota_mean_test_family']==24 and Fraction(report['quota_mean_test_cap'])==480 and Fraction(24,480)==Fraction(1,20))
+    for row in report['finite_primitives']:
+        g=row['eligible'];a=row['arm'];scope=row['scope'];s=b[b.eligible.eq(g)];selected=s[s.arm.eq(a)]
+        column={'identified_diets':'point','lower_endpoint':'lower','upper_endpoint':'upper'}[scope]
+        selected=selected[selected[column].notna()];N=D=Fraction(0)
+        for record in selected.itertuples():
+            factor=Fraction(float(record.samp_wgt))*Fraction(int(counts.loc[record.block].sum()),int(counts.loc[record.block,a]));D+=factor;N+=factor*Fraction(float(getattr(record,column)))
+        V=Fraction(0)
+        for block,part in s.groupby('block'):
+            w=[sum((Fraction(float(x)) for x in village.samp_wgt),Fraction(0)) for _,village in part.groupby('vid')]
+            V+=Fraction(int(counts.loc[block].sum())**2,int(counts.loc[block,a]))*max(w)**2
+        key=f'{g}_{a}_{scope}'
+        require('exact_primitive_totals_'+key,Fraction(row['exact_observed_numerator'])==N and Fraction(row['exact_observed_denominator'])==D and Fraction(row['exact_range_proxy'])==V)
+        with localcontext() as ctx:
+            ctx.prec=160;threshold=12*(decimal_fraction(V)/2*Decimal(1440).ln()).sqrt()
+            require('threshold_enclosure_'+key,Decimal(row['threshold_lower'])<=threshold<=Decimal(row['threshold_upper']))
+            low=max(Decimal(0),(decimal_fraction(N)-threshold)/decimal_fraction(D));high=min(Decimal(12),(decimal_fraction(N)+threshold)/decimal_fraction(D))
+            require('finite_interval_enclosure_'+key,Decimal.from_float(row['finite_lower'])<=low and Decimal.from_float(row['finite_upper'])>=high)
+    for box in report['mean_boxes']:
+        g=box['eligible'];a=box['arm'];s=b[b.eligible.eq(g)];assigned=s[s.arm.eq(a)]
+        W=sum((Fraction(float(x)) for x in s.samp_wgt),Fraction(0));wa=sum((Fraction(float(x)) for x in assigned.samp_wgt),Fraction(0))
+        L=sum((Fraction(float(z.samp_wgt))*z.lower for z in assigned.itertuples()),Fraction(0))/W
+        H=(sum((Fraction(float(z.samp_wgt))*z.upper for z in assigned.itertuples()),Fraction(0))+12*(W-wa))/W
+        require(f'logical_facts_{g}_{a}',Fraction(box['exact_logical_lower'])==L and Fraction(box['exact_logical_upper'])==H and Fraction(box['logical_lower'])<=L and Fraction(box['logical_upper'])>=H)
+    for row in report['quota_mean_normalizers']:

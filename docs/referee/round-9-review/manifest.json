@@ -1,0 +1,299 @@
+{
+  "scope": "Small public inspection aliases of the stated scientific commit. Not scientific inputs, new observations, external replication, assignment-law evidence or a ninth submission. Code chunks concatenate to the exact published LF object. JSON aliases retain complete selected subobjects.",
+  "source_commit": "559dd4552e7b1897063c0e880ea8325439e794e8",
+  "canonical_output": "output/community-decision.json",
+  "canonical_sha256": "f52c9355c3419fb9db78dbcc000b92f169a13d1eb0a4e651aff6a3b93fbe25dc",
+  "canonical_code_sha256": {
+    "code/community_decision.py": "aab193c99c67c937f4607fed483abe70623f204841040155dc4ee6f91b319d61",
+    "code/validate_community_decision.py": "43cfbf8c702afcf33be840086d18cf991d121cb38e867505d71c4596fed82bec",
+    "code/build_community_exhibits.py": "bcb23ab7df814371c5c06d76cd82a2993d01abe9efb0ef076cebacda2397f84c"
+  },
+  "files": [
+    {
+      "file": "population-metadata.json",
+      "bytes": 13100,
+      "sha256": "c2e153f3e29d9af2e0a3c3339507976f9d207bd9527501588c25c8652e0f54ee",
+      "source": "output/community-decision.json selected named fields"
+    },
+    {
+      "file": "game-01.json",
+      "bytes": 5828,
+      "sha256": "cefccc330abe230f3d3b475f7546e2f5616898361f0ae48f7c552ec547f96d59",
+      "source": "output/community-decision.json decisions[0]"
+    },
+    {
+      "file": "game-02.json",
+      "bytes": 8417,
+      "sha256": "c43ebacfa3b5c4065f901746d770e032f9ff230c086f14b920a737dc2427891e",
+      "source": "output/community-decision.json decisions[1]"
+    },
+    {
+      "file": "game-03.json",
+      "bytes": 10032,
+      "sha256": "fdc330a8d03f7054fff03aacec42be89213b048030512c5fb045eb65e119abe7",
+      "source": "output/community-decision.json decisions[2]"
+    },
+    {
+      "file": "game-04.json",
+      "bytes": 5849,
+      "sha256": "25c5dc9bf18e0b2cc329ce8c5face7ac730f30b554ef144782fb45f62281698a",
+      "source": "output/community-decision.json decisions[3]"
+    },
+    {
+      "file": "game-05.json",
+      "bytes": 8422,
+      "sha256": "f0ddc02c9d2d8d7605eb1638854ad0ba4bb097722828bd10655c75b6bbf5977b",
+      "source": "output/community-decision.json decisions[4]"
+    },
+    {
+      "file": "game-06.json",
+      "bytes": 10163,
+      "sha256": "daa615b51f9bf6e7df42da45f04ecead9f8002d9b1ab8cfdc8a5dcbb243336dd",
+      "source": "output/community-decision.json decisions[5]"
+    },
+    {
+      "file": "game-07.json",
+      "bytes": 5735,
+      "sha256": "338bfe830c9b94a631bc158e416ebf9a503a62bb5d80f6d542ab6b57dcca30ec",
+      "source": "output/community-decision.json decisions[6]"
+    },
+    {
+      "file": "game-08.json",
+      "bytes": 8437,
+      "sha256": "212978d9e547bf8cacfefbd36f06f82abf1c85f0fb98164be265ece9fdf1ab9d",
+      "source": "output/community-decision.json decisions[7]"
+    },
+    {
+      "file": "game-09.json",
+      "bytes": 10050,
+      "sha256": "1c2e59c1e4bcf826b91fab6b88aa250e792a0eae42a895dd20204ba1218aa142",
+      "source": "output/community-decision.json decisions[8]"
+    },
+    {
+      "file": "game-10.json",
+      "bytes": 5721,
+      "sha256": "792691500190da454ec0b074a24f71804467b91a396c6bb68c03782428853a39",
+      "source": "output/community-decision.json decisions[9]"
+    },
+    {
+      "file": "game-11.json",
+      "bytes": 8426,
+      "sha256": "f1031f6797d8ece6de0c383a355ff5348de9223c88cadc4effc37ebb9bb0afbb",
+      "source": "output/community-decision.json decisions[10]"
+    },
+    {
+      "file": "game-12.json",
+      "bytes": 10141,
+      "sha256": "7264e4d20daae4e16b0a6f0117c5471b22ea668b60c01036244c12dd8d411453",
+      "source": "output/community-decision.json decisions[11]"
+    },
+    {
+      "file": "moment-01.json",
+      "bytes": 10425,
+      "sha256": "0f5f222498867b07e48fdbc934416be825120283487097d961d02763ebe44f16",
+      "source": "output/community-decision.json quota_mean_normalizers[0]"
+    },
+    {
+      "file": "moment-02.json",
+      "bytes": 10425,
+      "sha256": "6dbe9c3ac516be15ae9c3bf967a7225f5c1b60743f97ec2fc941b0b3e7e3a9c3",
+      "source": "output/community-decision.json quota_mean_normalizers[1]"
+    },
+    {
+      "file": "moment-03.json",
+      "bytes": 10382,
+      "sha256": "052330bdfd0bf4e4458de0cce94220e0c87fcb3add31daef1cd448da24e50498",
+      "source": "output/community-decision.json quota_mean_normalizers[2]"
+    },
+    {
+      "file": "moment-04.json",
+      "bytes": 10384,
+      "sha256": "2ad150c3490aff43f4b8841dba76cf398a270a53f2059e9c6e4c7bde2a324f80",
+      "source": "output/community-decision.json quota_mean_normalizers[3]"
+    },
+    {
+      "file": "moment-05.json",
+      "bytes": 10382,
+      "sha256": "39610f6425645f05624d0cf1bab0c4a6229dcc86716c1802b696ebf88262c2c5",
+      "source": "output/community-decision.json quota_mean_normalizers[4]"
+    },
+    {
+      "file": "moment-06.json",
+      "bytes": 10394,
+      "sha256": "f0a2564eb26e1c8c4d758e42fed0d0579f5893d1faaf64b1c9661eac95c067f0",
+      "source": "output/community-decision.json quota_mean_normalizers[5]"
+    },
+    {
+      "file": "moment-07.json",
+      "bytes": 10435,
+      "sha256": "1f790a3006add32885e4c3366601cc8269199c3c5fb143cf7cfe25b5b0e68f39",
+      "source": "output/community-decision.json quota_mean_normalizers[6]"
+    },
+    {
+      "file": "moment-08.json",
+      "bytes": 10441,
+      "sha256": "5502811f2d8457de2f8d3b9ef4a674155e35f4baf1c88b2dfdd08d0cb10efd86",
+      "source": "output/community-decision.json quota_mean_normalizers[7]"
+    },
+    {
+      "file": "moment-09.json",
+      "bytes": 10382,
+      "sha256": "66d71ea9b2c6790961b3c7bace64067c977e7df9590a2a2173887c825e0d6e60",
+      "source": "output/community-decision.json quota_mean_normalizers[8]"
+    },
+    {
+      "file": "moment-10.json",
+      "bytes": 10397,
+      "sha256": "8e8fafd72accdd0a49695176efcaaf52423d020e28725ffb564a42f4634ac7c0",
+      "source": "output/community-decision.json quota_mean_normalizers[9]"
+    },
+    {
+      "file": "moment-11.json",
+      "bytes": 10369,
+      "sha256": "7f025b947d2e49fefaedb22e99bb57bb58006314557fa22395ec84a89b39adfc",
+      "source": "output/community-decision.json quota_mean_normalizers[10]"
+    },
+    {
+      "file": "moment-12.json",
+      "bytes": 10380,
+      "sha256": "a815b292f8a2bffbb78f6aa70786ac8c5220a7be9aa715ad79df46b46d919dc9",
+      "source": "output/community-decision.json quota_mean_normalizers[11]"
+    },
+    {
+      "file": "classical-0-control.json",
+      "bytes": 6418,
+      "sha256": "872e9507474db1e4ccd971a22275bcd96106ffef75665debde5602e660fa724a",
+      "source": "output/community-decision.json finite_primitives eligible=0, arm=Control"
+    },
+    {
+      "file": "classical-0-gikuriro.json",
+      "bytes": 6419,
+      "sha256": "8b9a5d81325d661ad80a6f9906caa6f5c5e87f1ba266e6cbf206905341a5d5f0",
+      "source": "output/community-decision.json finite_primitives eligible=0, arm=Gikuriro"
+    },
+    {
+      "file": "classical-0-lower.json",
+      "bytes": 6316,
+      "sha256": "66a9a49b95c6550001f4e443eaa249412db04e55cfdd73374bda9a4216da0227",
+      "source": "output/community-decision.json finite_primitives eligible=0, arm=Lower"
+    },
+    {
+      "file": "classical-0-middle.json",
+      "bytes": 6321,
+      "sha256": "8aa3e203fdb97179cad5dbb54f6b77ad884ee72b292369dde2e77b72f53e6335",
+      "source": "output/community-decision.json finite_primitives eligible=0, arm=Middle"
+    },
+    {
+      "file": "classical-0-upper.json",
+      "bytes": 6315,
+      "sha256": "92e77e74903abc632544973c0c5c78bdd885337c78ab320123bcfb51e98c6d05",
+      "source": "output/community-decision.json finite_primitives eligible=0, arm=Upper"
+    },
+    {
+      "file": "classical-0-large.json",
+      "bytes": 6354,
+      "sha256": "8b5dc7373b97a1b201607548cef482e0f6003ddc07c9c42e2e6b89467306df95",
+      "source": "output/community-decision.json finite_primitives eligible=0, arm=Large"
+    },
+    {
+      "file": "classical-1-control.json",
+      "bytes": 6592,
+      "sha256": "a144b5e38e42e0cfe3152b022866536c5c412365f08b3cef95d8aa8852d715e3",
+      "source": "output/community-decision.json finite_primitives eligible=1, arm=Control"
+    },
+    {
+      "file": "classical-1-gikuriro.json",
+      "bytes": 6604,
+      "sha256": "8031f6a9d2e3d5390e1a182d18a9b4778d13a76aebb2f63ba971af3054fdf82b",
+      "source": "output/community-decision.json finite_primitives eligible=1, arm=Gikuriro"
+    },
+    {
+      "file": "classical-1-lower.json",
+      "bytes": 6530,
+      "sha256": "82dfdda3ae1bd25e440663fed1eda7589252fe58277fdc95f5a7c17562a44053",
+      "source": "output/community-decision.json finite_primitives eligible=1, arm=Lower"
+    },
+    {
+      "file": "classical-1-middle.json",
+      "bytes": 6531,
+      "sha256": "4b56d43414f2fea65bc0187af88168f83e8018e2b95621ffe8b912b96494a0a1",
+      "source": "output/community-decision.json finite_primitives eligible=1, arm=Middle"
+    },
+    {
+      "file": "classical-1-upper.json",
+      "bytes": 6502,
+      "sha256": "b849071929201b83c83a7c1ef7b84a84f7f4a3e528c14775d2db4cd594d90d44",
+      "source": "output/community-decision.json finite_primitives eligible=1, arm=Upper"
+    },
+    {
+      "file": "classical-1-large.json",
+      "bytes": 6523,
+      "sha256": "88a55dbb23992e4199d277796bd7dda81ca99b67768c7d349eb0b6d08dff64a4",
+      "source": "output/community-decision.json finite_primitives eligible=1, arm=Large"
+    },
+    {
+      "file": "community_arm_estimates.csv",
+      "bytes": 4345,
+      "sha256": "9fb2eda6ffa2e261f30b01d24f007f215883688895a055bfe5742aba5f5ce6ca",
+      "source": "output/community_arm_estimates.csv"
+    },
+    {
+      "file": "community_policy_comparisons.csv",
+      "bytes": 6208,
+      "sha256": "7842ea793a77a864be02505a700017e1dd95b5658705a1bcd7229d22dd1a2ccf",
+      "source": "output/community_policy_comparisons.csv"
+    },
+    {
+      "file": "community_ancova.csv",
+      "bytes": 9930,
+      "sha256": "9f83ab51d7f3e1091604467181afc9b0ec3375865f5a401e866a53a54f76131b",
+      "source": "output/community_ancova.csv"
+    },
+    {
+      "file": "community-results.tex",
+      "bytes": 750,
+      "sha256": "e8dc26ae6831f9a1a47da3c5e0bc8b874868b076868e7f9e2c37481067e82324",
+      "source": "paper/community-results.tex"
+    },
+    {
+      "file": "community_decision-part-01.txt",
+      "bytes": 13928,
+      "sha256": "426dbd78344264225416b5a19f3d90b19272aa941060fbf965bd608f9c358381",
+      "source": "code/community_decision.py",
+      "first_line": 1,
+      "last_line": 204
+    },
+    {
+      "file": "community_decision-part-02.txt",
+      "bytes": 11152,
+      "sha256": "14c440079a5b9b4104df18010a3210527437b9ccb7172688b7110c02fd4b5773",
+      "source": "code/community_decision.py",
+      "first_line": 205,
+      "last_line": 312
+    },
+    {
+      "file": "validate_community_decision-part-01.txt",
+      "bytes": 13965,
+      "sha256": "48ea0992b8fda2702ba00942e9bbd05e76187d1391dffcffb6e7e591d12479bf",
+      "source": "code/validate_community_decision.py",
+      "first_line": 1,
+      "last_line": 192
+    },
+    {
+      "file": "validate_community_decision-part-02.txt",
+      "bytes": 5854,
+      "sha256": "f837fb35d9703a891e9f80c75bc366ca7f35fbd34fe737f1f24586348944dfb9",
+      "source": "code/validate_community_decision.py",
+      "first_line": 193,
+      "last_line": 240
+    },
+    {
+      "file": "build_community_exhibits-part-01.txt",
+      "bytes": 6784,
+      "sha256": "bcb23ab7df814371c5c06d76cd82a2993d01abe9efb0ef076cebacda2397f84c",
+      "source": "code/build_community_exhibits.py",
+      "first_line": 1,
+      "last_line": 84
+    }
+  ]
+}

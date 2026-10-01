@@ -1,0 +1,204 @@
+"""Population choice under separate conditional assignment events.
+
+Baseline eligibility is not receipt. Fitted and asymptotic results are separate
+from the finite event; reported average costs do not identify mixed-rollout cost.
+The 36 fixed primitives protect every policy and every stipulated welfare weight.
+"""
+from pathlib import Path
+from fractions import Fraction
+from decimal import Decimal, localcontext, ROUND_FLOOR, ROUND_CEILING
+import hashlib, itertools, json, sys
+import numpy as np
+import pandas as pd
+from scipy.optimize import linprog
+from scipy.stats import t as student_t
+from estimate import ARMS, TX, regress, contrast, holm
+from referee_revision import GROUPS, score_interval
+from blocked_inference import hajek_block
+from quota_arithmetic import I, calc
+from weighted_product_moments import ilog
+from quota_allocation import exact_vertices
+from quota_moments import quota_upper_log_moment_dp
+
+ROOT=Path(__file__).resolve().parents[1]
+OUT=ROOT/'output'
+FAMILY=36
+ALPHA=Fraction(1,20)
+UNIT=10**12
+
+def fraction_interval(x):
+    return I(x.numerator)/I(x.denominator)
+
+def sqrt_interval(x):
+    if x.lo<0:raise ValueError('Nonnegative square root required')
+    return I(calc(ROUND_FLOOR,lambda:x.lo.sqrt().next_minus()),calc(ROUND_CEILING,lambda:x.hi.sqrt().next_plus()))
+
+def load_population():
+    references={}
+    for name in ['input-reference.json','revision-reference.json']:
+        references.update(json.loads((ROOT/'data/input'/name).read_text())['files'])
+    verified={}
+    for name in ['households.csv','revision_households.csv','costs.csv']:
+        digest=hashlib.sha256((ROOT/'data/input'/name).read_bytes()).hexdigest()
+        if digest!=references[name]:raise ValueError('Immutable population input mismatch: '+name)
+        verified[name]=digest
+    d=pd.read_csv(ROOT/'data/input/households.csv')
+    aux=pd.read_csv(ROOT/'data/input/revision_households.csv')
+    d=d.merge(aux[['hhid','round','nEligible','nIneligible']],on=['hhid','round'],validate='one_to_one')
+    d['arm']='Control'
+    for a,t in zip(ARMS[1:],TX):d.loc[d[t].eq(1),'arm']=a
+    baseline=d[d['round'].eq(1)].copy()
+    foods=['m9_'+name for group in GROUPS for name in group]
+    endline=d[d['round'].eq(2)][['hhid','sample_panel',*foods]].rename(columns={'sample_panel':'endline_panel'})
+    full=baseline.drop(columns=foods).merge(endline,on='hhid',how='left',validate='one_to_one')
+    if len(full)!=len(baseline) or full.hhid.duplicated().any():raise ValueError('Baseline membership changed')
+    lower,upper=score_interval(full);point=(lower+upper)/2;point[lower!=upper]=np.nan
+    villages=baseline.drop_duplicates('vid')
+    if baseline.groupby('vid')[TX].nunique().max().max()!=1:raise ValueError('Assignment not village constant')
+    counts=pd.crosstab(villages.block,villages.arm).reindex(columns=ARMS)
+    if counts.isna().any().any() or (counts<=0).any().any():raise ValueError('Positive quota for each arm/block required')
+    probabilities=counts.div(counts.sum(axis=1),axis=0)
+    assignment={a:probabilities[a].to_dict() for a in ARMS}
+    return full,lower,upper,point,counts,assignment,verified
+
+def exact_weight_sum(values):
+    return sum((Fraction(float(w)) for w in values),Fraction(0))
+
+def finite_primitives(full,lower,upper,point,counts):
+    """Directed Hoeffding inversion of fixed potential observation ratios.
+
+    For each block, sampling without replacement is bounded by with-replacement
+    draws of village residuals of width 12*Wmax. No order or observation-MAR
+    assumption enters. Conditional uniform quotas and independent blocks enter.
+    """
+    rows=[];boxes={};weights={};diagnostics=[]
+    threshold_log=ilog(fraction_interval(Fraction(2*FAMILY)/ALPHA))
+    for g in [0,1]:
+        keep=full.eligible.eq(g).to_numpy();sample=full[keep].copy()
+        population_weight=exact_weight_sum(sample.samp_wgt);weights[g]=population_weight
+        village={}
+        for (block,vid),v in sample.groupby(['block','vid']):village.setdefault(block,{})[vid]=exact_weight_sum(v.samp_wgt)
+        frame='nEligible' if g else 'nIneligible'
+        expected=sample[frame]/sample.groupby('vid').hhid.transform('count')
+        if expected.isna().any() or (sample.samp_wgt<=0).any():raise ValueError('Invalid fixed frame weights')
+        diagnostics.append({'eligible':g,'baseline_households':len(sample),'identified_diets':int(np.isfinite(point[keep]).sum()),'baseline_weight_sum_exact':str(population_weight),'max_abs_source_frame_discrepancy':float(abs(sample.samp_wgt-expected).max())})
+        for a in ARMS:
+            proxy=Fraction(0);blocks=[]
+            for block,w in village.items():
+                n=int(counts.loc[block].sum());k=int(counts.loc[block,a])
+                if len(w)!=n:raise ValueError('Each stratum must cover every baseline village')
+                maximum=max(w.values());proxy+=Fraction(n*n,k)*maximum*maximum
+                blocks.append({'block':int(block),'n':n,'k':k,'maximum_village_weight_exact':str(maximum)})
+            threshold=I(12)*sqrt_interval(fraction_interval(proxy)/I(2)*threshold_log)
+            arm=sample.arm.eq(a).to_numpy()
+            for scope,values in [('identified_diets',point[keep]),('lower_endpoint',lower[keep]),('upper_endpoint',upper[keep])]:
+                selected=arm&np.isfinite(values);numerator=Fraction(0);denominator=Fraction(0)
+                for w,y,block in zip(sample.loc[selected,'samp_wgt'],values[selected],sample.loc[selected,'block']):
+                    factor=Fraction(float(w))*Fraction(int(counts.loc[block].sum()),int(counts.loc[block,a]))
+                    numerator+=factor*Fraction(float(y));denominator+=factor
+                if denominator<=0:
+                    flo,fhi=0.,12.;center=None
+                else:
+                    center=float(numerator/denominator)
+                    flo=max(0.,((fraction_interval(numerator)-threshold)/fraction_interval(denominator)).lower_float())
+                    fhi=min(12.,((fraction_interval(numerator)+threshold)/fraction_interval(denominator)).upper_float())
+                rows.append({'eligible':g,'arm':a,'scope':scope,'estimate':center,'finite_lower':flo,'finite_upper':fhi,'exact_observed_numerator':str(numerator),'exact_observed_denominator':str(denominator),'exact_range_proxy':str(proxy),'threshold_lower':str(threshold.lo),'threshold_upper':str(threshold.hi),'family_size':FAMILY,'conditional_failure_probability':str(ALPHA),'blocks':blocks})
+            # Factual potential-diet information is deterministic; no extra event.
+            exact_lo=sum((Fraction(float(w))*int(y) for w,y in zip(sample.loc[arm,'samp_wgt'],lower[keep][arm])),Fraction(0))
+            assigned_weight=exact_weight_sum(sample.loc[arm,'samp_wgt'])
+            exact_hi=sum((Fraction(float(w))*int(y) for w,y in zip(sample.loc[arm,'samp_wgt'],upper[keep][arm])),Fraction(0))+12*(population_weight-assigned_weight)
+            logical_lo=max(0.,fraction_interval(exact_lo/population_weight).lower_float())
+            logical_hi=min(12.,fraction_interval(exact_hi/population_weight).upper_float())
+            mean_lo=max(logical_lo,next(z['finite_lower'] for z in rows if z['eligible']==g and z['arm']==a and z['scope']=='lower_endpoint'))
+            mean_hi=min(logical_hi,next(z['finite_upper'] for z in rows if z['eligible']==g and z['arm']==a and z['scope']=='upper_endpoint'))
+            if mean_lo>mean_hi:raise ValueError('Empty finite/logical population region')
+            boxes[g,a]={'lower':mean_lo,'upper':mean_hi,'logical_lower':logical_lo,'logical_upper':logical_hi,'exact_logical_lower':str(exact_lo/population_weight),'exact_logical_upper':str(exact_hi/population_weight)}
+    return rows,boxes,weights,diagnostics
+
+def quota_mean_boxes(full,lower,upper,counts,logical_boxes):
+    """A second standalone event: 24 one-sided endpoint tests, cap 480.
+
+    Sorted-threshold moments are existing attributed machinery. Every scale is
+    baseline-only, and this event is never intersected with the 36-primitive
+    classical event or selected by whichever realized certificate is smaller.
+    """
+    cap=Fraction(24)/ALPHA;logcap=ilog(fraction_interval(cap));cache={};rows=[];boxes={}
+    for g in [0,1]:
+        keep=full.eligible.eq(g).to_numpy();sample=full[keep];village={}
+        for (block,vid),v in sample.groupby(['block','vid']):village.setdefault(block,[]).append(exact_weight_sum(v.samp_wgt))
+        decimal_weights={}
+        with localcontext() as ctx:
+            ctx.prec=120
+            for block,w in village.items():
+                converted=[Decimal(x.numerator)/Decimal(x.denominator) for x in w]
+                if any(Fraction(d)!=f for d,f in zip(converted,w)):raise ValueError('Baseline Decimal weight not exact')
+                decimal_weights[block]=converted
+        for a in ARMS:
+            proxy=sum((Fraction(int(counts.loc[b].sum())**2,int(counts.loc[b,a]))*max(w)**2 for b,w in village.items()),Fraction(0))
+            base=float(np.sqrt(8*np.log(float(cap))/float(proxy)));candidates=[]
+            for multiplier in [1.,1.25,1.5,2.]:
+                lam=float(base*multiplier);B=I(0);block_rows=[]
+                for block,w in decimal_weights.items():
+                    k=int(counts.loc[block,a]);key=(g,int(block),k,lam)
+                    if key not in cache:cache[key]=quota_upper_log_moment_dp(w,k,lam)
+                    bound,detail=cache[key];B+=I(bound)
+                    block_rows.append({'block':int(block),'n':len(w),'k':k,'certified_upper_log_moment':bound})
+                upper_B=B.upper_float()
+                threshold=I(12)*(I(upper_B)+logcap)/I(lam)
+                candidates.append({'scale_multiplier':multiplier,'fixed_lambda_normalized':lam,'log_normalizer_upper':upper_B,'threshold_lower':str(threshold.lo),'threshold_upper':str(threshold.hi),'baseline_selection_metric':float(threshold.hi),'blocks':block_rows})
+            chosen=min(candidates,key=lambda z:z['baseline_selection_metric'])
+            lam=chosen['fixed_lambda_normalized'];threshold=I(12)*(I(chosen['log_normalizer_upper'])+logcap)/I(lam)
+            arm=sample.arm.eq(a).to_numpy();denominator=Fraction(0);Nlo=Fraction(0);Nhi=Fraction(0)
+            for w,l,h,block in zip(sample.loc[arm,'samp_wgt'],lower[keep][arm],upper[keep][arm],sample.loc[arm,'block']):
+                factor=Fraction(float(w))*Fraction(int(counts.loc[block].sum()),int(counts.loc[block,a]));denominator+=factor;Nlo+=factor*int(l);Nhi+=factor*int(h)
+            if denominator<=0:raise ValueError('Positive quota endpoint denominator required')
+            raw_lower=max(0.,((fraction_interval(Nlo)-threshold)/fraction_interval(denominator)).lower_float())
+            raw_upper=min(12.,((fraction_interval(Nhi)+threshold)/fraction_interval(denominator)).upper_float())
+            lower_bound=max(raw_lower,logical_boxes[g,a]['logical_lower']);upper_bound=min(raw_upper,logical_boxes[g,a]['logical_upper'])
+            if lower_bound>upper_bound:raise ValueError('Empty quota mean-only population region')
+            boxes[g,a]={'lower':lower_bound,'upper':upper_bound,'logical_lower':logical_boxes[g,a]['logical_lower'],'logical_upper':logical_boxes[g,a]['logical_upper']}
+            rows.append({'eligible':g,'arm':a,'one_sided_test_family':24,'test_cap':str(cap),'exact_observed_denominator':str(denominator),'exact_lower_numerator':str(Nlo),'exact_upper_numerator':str(Nhi),'quota_lower_before_logical':raw_lower,'quota_upper_before_logical':raw_upper,'chosen':chosen,'baseline_grid':candidates})
+    return rows,boxes
+
+def estimates(full,lower,upper,point,assignment):
+    rows=[];mus={};influences={}
+    for g in [0,1]:
+        keep=full.eligible.eq(g).to_numpy();sample=full[keep]
+        for scope,y in [('identified_diets',point),('lower_endpoint',lower),('upper_endpoint',upper)]:
+            mu,influence,info=hajek_block(sample,y[keep],assignment,ARMS)
+            mus[g,scope]=mu;influences[g,scope]=influence
+            for i,a in enumerate(ARMS):rows.append({'eligible':g,'scope':scope,'arm':a,'estimate':float(mu[i]),'block_se':float(np.linalg.norm(influence[:,i]))})
+    # This entire family is an asymptotic sensitivity, never the finite event.
+    critical=float(student_t.ppf(1-float(ALPHA)/(2*FAMILY),len(full.block.unique())-1))
+    for z in rows:
+        z['asymptotic_bonferroni_lower']=max(0.,z['estimate']-critical*z['block_se'])
+        z['asymptotic_bonferroni_upper']=min(12.,z['estimate']+critical*z['block_se'])
+        z['asymptotic_critical']=critical
+    return rows,mus,influences
+
+def menus():
+    d=pd.read_csv(ROOT/'data/input/costs.csv',dtype=str).set_index('treatment')
+    aliases={'Gikuriro':'Gikuriro','Lower':'GD_Lower','Middle':'GD_Mid','Upper':'GD_Upper','Large':'GD_Large'}
+    out={}
+    for column in ['cost_eligible','cost_population']:
+        cost=[Fraction(0) if a=='Control' else Fraction(d.loc[aliases[a],column]) for a in ARMS]
+        labels,vertices=exact_vertices(cost,cost[1])
+        out[column]={'costs':cost,'budget':cost[1],'labels':labels,'vertices':vertices}
+    return out
+
+def fitted_frontier(means,vertices,labels):
+    """Point ranking only; exact arithmetic on the stored fitted floats.
+
+    Theta is a total eligible welfare share. It is not a receipt rate, estimated
+    institutional preference, or identified full-baseline causal ranking.
+    """
+    intercept=[sum((r[a]*Fraction(float(means[0][a])) for a in range(len(r))),Fraction(0)) for r in vertices]
+    slope=[sum((r[a]*(Fraction(float(means[1][a]))-Fraction(float(means[0][a]))) for a in range(len(r))),Fraction(0)) for r in vertices]
+    roots={Fraction(0),Fraction(1)}
+    for a in range(len(vertices)):
+        for b in range(a):
+            if slope[a]!=slope[b]:
+                root=(intercept[b]-intercept[a])/(slope[a]-slope[b])
+                if 0<root<1:roots.add(root)
+    roots=sorted(roots);segments=[]
+    for left,right in zip(roots[:-1],roots[1:]):

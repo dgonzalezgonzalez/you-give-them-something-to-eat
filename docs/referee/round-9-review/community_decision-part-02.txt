@@ -1,0 +1,108 @@
+        midpoint=(left+right)/2;best=max(range(len(vertices)),key=lambda a:intercept[a]+midpoint*slope[a])
+        if segments and segments[-1]['policy']==labels[best]:segments[-1].update(theta_upper=float(right),theta_upper_exact=str(right))
+        else:segments.append({'theta_lower':float(left),'theta_upper':float(right),'theta_lower_exact':str(left),'theta_upper_exact':str(right),'policy':labels[best]})
+    return segments
+
+def ancillary_ancova(full,point,menu):
+    rows=[];frontiers=[]
+    for baseline_control in [False,True]:
+        treatment_effects={}
+        fits={}
+        for g in [0,1]:
+            keep=full.eligible.eq(g).to_numpy()&full.endline_panel.eq(1).to_numpy();sample=full[keep]
+            fit=regress(sample,point[keep],sample.dietarydiversity.to_numpy() if baseline_control else None)
+            treatment_effects[g]=np.r_[0.,fit['beta'][1:6]];fits[g]=fit
+        for column,model in menu.items():
+            frontiers.append({'estimator':'baseline_ancova' if baseline_control else 'block_wls','cost_convention':column,'segments':fitted_frontier(treatment_effects,model['vertices'],model['labels'])})
+            for g,fit in fits.items():
+                for name,v in zip(model['labels'],model['vertices']):
+                    c=np.zeros(len(fit['beta']));c[1]=1.
+                    for ai in range(1,6):c[ai]-=float(v[ai])
+                    rows.append({'eligible':g,'baseline_control':baseline_control,'cost_convention':column,'policy':name,**contrast(fit,c)})
+    tests=[z for z in rows if z['policy']!='Gikuriro']
+    if len(tests)!=64:raise ValueError('All 64 exploratory ANCOVA contrasts required')
+    for row,p in zip(tests,holm([z['p'] for z in tests])):row['p_holm_64']=float(p)
+    for row in rows:
+        if row['policy']=='Gikuriro':row['p_holm_64']=1.
+    return rows,frontiers
+
+def rational_simplex(values):
+    values=np.maximum(np.asarray(values,dtype=float),0.)
+    if not np.isfinite(values).all() or values.sum()<=0:raise ValueError('Invalid simplex proposal')
+    scaled=values/values.sum()*UNIT;integers=np.floor(scaled).astype(np.int64)
+    remainder=UNIT-int(integers.sum())
+    if not 0<=remainder<=len(values):raise ValueError('Rational rounding failed')
+    order=np.argsort(-(scaled-integers),kind='stable');integers[order[:remainder]]+=1
+    return [Fraction(int(x),UNIT) for x in integers]
+
+def solve_box_decision(bounds,vertices,theta_interval):
+    """Exact feasible primal/dual replay of a finite zero-sum regional game.
+
+    Theta can vary continuously, but convex regret attains its maximum at an
+    endpoint. Every arm-box support has a corner maximizer. These are outer
+    regional values, not statistical minimax risk or jointly sharp populations.
+    """
+    theta=[Fraction(str(x)) for x in theta_interval]
+    if len(theta)!=2 or not 0<=theta[0]<=theta[1]<=1:raise ValueError('Valid weight interval required')
+    n=len(vertices[0]);states=[];payoffs=[]
+    for t in sorted(set(theta)):
+        lower=[t*bounds[1][a][0]+(1-t)*bounds[0][a][0] for a in range(n)]
+        upper=[t*bounds[1][a][1]+(1-t)*bounds[0][a][1] for a in range(n)]
+        for bits in itertools.product([0,1],repeat=n):
+            mu=[upper[a] if bits[a] else lower[a] for a in range(n)]
+            comparator_values=[sum((r[a]*mu[a] for a in range(n)),Fraction(0)) for r in vertices]
+            # Once mu is fixed, its highest-valued comparator is exact.
+            best=max(range(len(vertices)),key=lambda i:comparator_values[i])
+            payoffs.append([comparator_values[best]-v for v in comparator_values])
+            states.append({'theta':str(t),'corner_bits':list(bits),'comparator_index':best})
+    A=np.array([[float(v) for v in row]+[-1.] for row in payoffs]);m=len(vertices)
+    fit=linprog(np.r_[np.zeros(m),1.],A_ub=A,b_ub=np.zeros(len(A)),A_eq=[np.r_[np.ones(m),0.]],b_eq=[1.],bounds=[(0,None)]*(m+1),method='highs')
+    if not fit.success:raise ValueError('Population regional game candidate failed')
+    x=rational_simplex(fit.x[:m]);dual=np.maximum(-fit.ineqlin.marginals,0.)
+    if not np.isfinite(dual).all():raise ValueError('Nonfinite game dual proposal')
+    # At a zero optimum the t>=0 bound can carry all dual mass. Any state
+    # probability remains feasible for a lower bound; exact replay, not solver
+    # status, determines its value and whether the bracket is informative.
+    if dual.sum()<=0:dual=np.r_[1.,np.zeros(len(states)-1)]
+    w=rational_simplex(dual)
+    q=[sum((x[j]*vertices[j][a] for j in range(m)),Fraction(0)) for a in range(n)]
+    upper=max(sum((x[j]*row[j] for j in range(m)),Fraction(0)) for row in payoffs)
+    lower=min(sum((w[s]*payoffs[s][j] for s in range(len(states))),Fraction(0)) for j in range(m))
+    if lower>upper or min(q)<0 or sum(q)!=1:raise ValueError('Exact regional game replay failed')
+    return {'theta_interval':[str(t) for t in theta],'allocation':[str(v) for v in q],'primal_vertex_weights':[str(v) for v in x],'dual_state_weights':[str(v) for v in w],'states':states,'exact_regional_lower':str(lower),'exact_proposal_upper':str(upper),'exact_bracket_gap':str(upper-lower),'regional_lower':float(lower),'proposal_upper':float(upper),'candidate_solver_objective':float(fit.fun),'scope':'Feasible exact rational player/state mixtures bracket the implemented mean-box game. Field bounds are standalone; no intersection or outcome-selected minimum with earlier confidence events. No attained finite-potential-outcome, actual regret or statistical minimax-risk lower bound.'}
+
+def main():
+    full,lo,hi,point,counts,assignment,verified=load_population()
+    finite,boxes,weights,diagnostics=finite_primitives(full,lo,hi,point,counts)
+    quota_rows,quota_boxes=quota_mean_boxes(full,lo,hi,counts,boxes)
+    rows,mus,influences=estimates(full,lo,hi,point,assignment)
+    tau=weights[1]/(weights[0]+weights[1]);menu=menus();comparisons=[];decisions=[];frontiers=[]
+    ancillary,ancillary_frontiers=ancillary_ancova(full,point,menu)
+    for column,model in menu.items():
+        frontiers.append({'estimator':'assignment_weighted_ratios','cost_convention':column,'segments':fitted_frontier({g:mus[g,'identified_diets'] for g in [0,1]},model['vertices'],model['labels'])})
+        for name,v in zip(model['labels'],model['vertices']):
+            c=np.array([float(Fraction(int(a=='Gikuriro'))-v[i]) for i,a in enumerate(ARMS)])
+            for population,t in [('eligible',Fraction(1)),('ineligible',Fraction(0)),('baseline_weight_aggregate',tau)]:
+                tf=float(t);means=tf*mus[1,'identified_diets']+(1-tf)*mus[0,'identified_diets']
+                influence=tf*influences[1,'identified_diets']+(1-tf)*influences[0,'identified_diets']
+                l=tf*mus[1,'lower_endpoint']+(1-tf)*mus[0,'lower_endpoint'];h=tf*mus[1,'upper_endpoint']+(1-tf)*mus[0,'upper_endpoint']
+                cp=np.maximum(c,0);cn=np.minimum(c,0)
+                comparisons.append({'cost_convention':column,'population':population,'policy':name,'gikuriro_minus_policy_identified':float(c@means),'exploratory_block_se':float(np.linalg.norm(influence@c)),'estimated_missingness_lower':float(cp@l+cn@h),'estimated_missingness_upper':float(cp@h+cn@l)})
+        for method,source_boxes in [('classical_mean_family',boxes),('quota_mean_only',quota_boxes)]:
+            region={g:[(Fraction(source_boxes[g,a]['lower']),Fraction(source_boxes[g,a]['upper'])) for a in ARMS] for g in [0,1]}
+            for population,interval in [('eligible',[1,1]),('baseline_weight_aggregate',[str(tau),str(tau)]),('unknown_population_weight',[0,1])]:
+                result=solve_box_decision(region,model['vertices'],interval)
+                q=[Fraction(s) for s in result['allocation']];expected=sum((c*p for c,p in zip(model['costs'],q)),Fraction(0))
+                if expected>model['budget']:raise ValueError('Exact cost infeasibility')
+                decisions.append({'method':method,'cost_convention':column,'population':population,'exact_expected_cost':str(expected),'exact_budget':str(model['budget']),**result})
+    pd.DataFrame(rows).to_csv(OUT/'community_arm_estimates.csv',index=False,lineterminator='\n')
+    pd.DataFrame([{k:v for k,v in z.items() if k not in ['blocks','threshold_lower','threshold_upper']} for z in finite]).to_csv(OUT/'community_finite_primitives.csv',index=False,lineterminator='\n')
+    pd.DataFrame(comparisons).to_csv(OUT/'community_policy_comparisons.csv',index=False,lineterminator='\n')
+    pd.DataFrame(ancillary).to_csv(OUT/'community_ancova.csv',index=False,lineterminator='\n')
+    report={'scope':'Baseline-defined eligible/ineligible released fixed weighted samples. Arbitrary arm-dependent missingness via item endpoints. Two separate standalone conditional 95% events: classical 36-primitive family and quota 24 one-sided endpoint tests. Neither events nor realized certificate minima are combined into joint 95% protection. Uniform quota labels and independent blocks are maintained; broader-frame/national transport and historical assignment law unverified. Baseline eligibility is not receipt; no isolated spillover, Catholic mechanism or institutional preference claim. Source average costs remain conditional accounting. Fitted ratios, asymptotic sensitivities and finite regional certificates are separate.','family_size':FAMILY,'alpha':str(ALPHA),'normative_weight_scope':'Any stated total eligible welfare weight theta in [0,1]; each simultaneous mean event separately protects outcome-selected theta/policy. No actual preference or welfare beyond HDDS is recovered.','asymptotic_scope':'Bonferroni-t block linearization sensitivity only; no finite-coverage claim, combination with finite event or pass criterion. Earlier failed approximation diagnostics remain.','input_hashes':verified,'baseline_diagnostics':diagnostics,'baseline_eligible_weight_share_exact':str(tau),'baseline_eligible_weight_share':float(tau),'finite_primitives':finite,'quota_mean_test_family':24,'quota_mean_test_cap':'480','quota_mean_normalizers':quota_rows,'mean_boxes':[{'eligible':g,'arm':a,**boxes[g,a]} for g in [0,1] for a in ARMS],'quota_mean_boxes':[{'eligible':g,'arm':a,**quota_boxes[g,a]} for g in [0,1] for a in ARMS],'menus':{k:{'costs':[str(x) for x in v['costs']],'budget':str(v['budget']),'labels':v['labels'],'vertices':[[str(x) for x in z] for z in v['vertices']]} for k,v in menu.items()},'decisions':decisions,'causal_welfare_ranking_identified':False,'general_interest_importance_established':False}
+    report['fitted_frontiers']=frontiers+ancillary_frontiers
+    report['ancova_multiplicity']='Separate exploratory 64-test Holm family: two baseline specifications, two source cost conventions, two baseline strata and eight non-Gikuriro cash/control comparisons. Observed panel diets still select samples; inference is village CR1/G-1 t, distinct from block ratios and finite events.'
+    (OUT/'community-decision.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf8',newline='\n')
+    print(pd.DataFrame([{k:z[k] for k in ['method','cost_convention','population','regional_lower','proposal_upper']} for z in decisions]).to_string(index=False))
+
+if __name__=='__main__':main()

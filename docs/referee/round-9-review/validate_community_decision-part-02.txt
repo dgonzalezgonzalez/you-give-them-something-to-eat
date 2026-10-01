@@ -1,0 +1,48 @@
+        g=row['eligible'];a=row['arm'];chosen=row['chosen'];s=b[b.eligible.eq(g)];lam=chosen['fixed_lambda_normalized'];total_reference=Decimal(0)
+        for block_row in chosen['blocks']:
+            block=block_row['block'];part=s[s.block.eq(block)]
+            w=tuple(sorted([sum((Fraction(float(x)) for x in v.samp_wgt),Fraction(0)) for _,v in part.groupby('vid')],reverse=True));k=int(counts.loc[block,a]);key=(w,k,lam)
+            if key not in moment_cache:moment_cache[key]=reference_moment(w,k,lam)
+            reference=moment_cache[key]
+            require(f'quota_subset_reference_{g}_{a}_{block}',Decimal.from_float(block_row['certified_upper_log_moment'])>=reference)
+            with localcontext() as ctx:
+                ctx.prec=160;total_reference+=reference
+        require(f'quota_joint_normalizer_{g}_{a}',Decimal.from_float(chosen['log_normalizer_upper'])>=total_reference)
+        with localcontext() as ctx:
+            ctx.prec=160;threshold=12*(Decimal.from_float(chosen['log_normalizer_upper'])+Decimal(480).ln())/Decimal.from_float(lam)
+            require(f'quota_threshold_enclosure_{g}_{a}',Decimal(chosen['threshold_lower'])<=threshold<=Decimal(chosen['threshold_upper']))
+            D=decimal_fraction(Fraction(row['exact_observed_denominator']));Nlo=decimal_fraction(Fraction(row['exact_lower_numerator']));Nhi=decimal_fraction(Fraction(row['exact_upper_numerator']))
+            require(f'quota_endpoint_enclosure_{g}_{a}',Decimal.from_float(row['quota_lower_before_logical'])<=max(Decimal(0),(Nlo-threshold)/D) and Decimal.from_float(row['quota_upper_before_logical'])>=min(Decimal(12),(Nhi+threshold)/D))
+    require('twelve_population_boxes_per_event',len(report['mean_boxes'])==12 and len(report['quota_mean_boxes'])==12)
+    for index,decision in enumerate(report['decisions']):
+        menu=report['menus'][decision['cost_convention']];vertices=[[Fraction(z) for z in v] for v in menu['vertices']]
+        source=report['mean_boxes'] if decision['method']=='classical_mean_family' else report['quota_mean_boxes']
+        boxes={(z['eligible'],z['arm']):(Fraction(z['lower']),Fraction(z['upper'])) for z in source}
+        player=[Fraction(z) for z in decision['primal_vertex_weights']];dual=[Fraction(z) for z in decision['dual_state_weights']];q=[Fraction(z) for z in decision['allocation']]
+        require(f'exact_simplexes_{index}',min(player)>=0 and min(dual)>=0 and sum(player)==sum(dual)==1)
+        recomputed=[sum((player[j]*vertices[j][a] for j in range(len(vertices))),Fraction(0)) for a in range(6)]
+        require(f'exact_policy_{index}',q==recomputed and sum(q)==1 and min(q)>=0)
+        cost=sum((Fraction(c)*v for c,v in zip(menu['costs'],q)),Fraction(0))
+        require(f'exact_cost_{index}',cost==Fraction(decision['exact_expected_cost']) and cost<=Fraction(menu['budget']))
+        endpoints=sorted(set(Fraction(z) for z in decision['theta_interval']));keys=[];payoffs=[]
+        for state in decision['states']:
+            theta=Fraction(state['theta']);bits=state['corner_bits'];keys.append((theta,tuple(bits)))
+            means=[theta*boxes[1,a][bit]+(1-theta)*boxes[0,a][bit] for a,bit in zip(ARMS,bits)]
+            values=[sum((v[a]*means[a] for a in range(6)),Fraction(0)) for v in vertices]
+            require(f'exact_state_comparator_{index}_{len(keys)}',values[state['comparator_index']]==max(values))
+            payoffs.append([max(values)-v for v in values])
+        require(f'complete_endpoint_corners_{index}',set(keys)==set(itertools.product(endpoints,itertools.product([0,1],repeat=6))) and len(set(keys))==len(keys))
+        U=max(sum((player[j]*v for j,v in enumerate(row)),Fraction(0)) for row in payoffs)
+        L=min(sum((dual[s]*payoffs[s][j] for s in range(len(payoffs))),Fraction(0)) for j in range(len(vertices)))
+        require(f'exact_game_bracket_{index}',L==Fraction(decision['exact_regional_lower']) and U==Fraction(decision['exact_proposal_upper']) and 0<=L<=U and U-L==Fraction(decision['exact_bracket_gap']))
+        require(f'implementation_optimization_gap_{index}',U-L<=Fraction(1,10**8))
+    require('all_two_cost_three_population_two_event_cases',len(report['decisions'])==12)
+    toy=solve_box_decision({0:[(Fraction(0),Fraction(0)),(Fraction(1),Fraction(1))],1:[(Fraction(1),Fraction(1)),(Fraction(0),Fraction(0))]},[[Fraction(1),Fraction(0)],[Fraction(0),Fraction(1)]],[0,1])
+    require('opposite_preference_toy',Fraction(toy['exact_regional_lower'])==Fraction(1,2)==Fraction(toy['exact_proposal_upper']) and list(map(Fraction,toy['allocation']))==[Fraction(1,2)]*2)
+    known=solve_box_decision({0:[(Fraction(0),Fraction(0)),(Fraction(1),Fraction(1))],1:[(Fraction(0),Fraction(0)),(Fraction(1),Fraction(1))]},[[Fraction(1),Fraction(0)],[Fraction(0),Fraction(1)]],[0,1])
+    require('common_known_best_toy',Fraction(known['exact_proposal_upper'])==0 and list(map(Fraction,known['allocation']))==[Fraction(0),Fraction(1)])
+    audit={'scope':'Independent canonical-input exact totals, 160-digit all-subset threshold moments for selected field scales, directed endpoint enclosures and exact feasible primal/dual game replay, plus analytic preference toys. Not assignment-law verification, observation ignorability, full-frame transport, field treatment superiority, finite-population sharpness, statistical minimax risk, novel economics or simulated acceptance. Coverage/favorable signs are never pass criteria.','checks':checks,'all_passed':all(checks.values()),'check_count':len(checks),'independent_selected_moment_cases':len(moment_cache),'moment_reference_precision':160,'seconds':time.perf_counter()-begin}
+    (ROOT/'output/community-validation.json').write_text(json.dumps(audit,indent=2)+'\n',encoding='utf8',newline='\n')
+    print(json.dumps({k:v for k,v in audit.items() if k!='checks'},indent=2))
+
+if __name__=='__main__':main()
