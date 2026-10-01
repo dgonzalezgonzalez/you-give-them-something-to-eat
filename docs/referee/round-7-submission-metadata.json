@@ -1,5 +1,5 @@
 {
-  "status": "submitted_awaiting_genuine_report",
+  "status": "submitted_report_not_retrieved_browser_access_changed",
   "prepared_at_utc": "2026-10-01T08:43:56.536767+00:00",
   "referee_destination": "Existing author-designated ChatGPT Pro conversation; private URL omitted.",
   "scientific_source": "c8af01aed8725f9ef06fc0974e35ec363ab418de",
@@ -27,5 +27,9 @@
   "local_capture_raw_sha256": "f6191fd67c1d7e75b62a81f98cbe465dec8f8690f3eb29ee455531328db04ce6",
   "links_verified": 7,
   "delivery_method": "Ordinary text using documented browser textbox fill; whole composer and copied delivered message verified. No attachment delivered.",
-  "delivered_request_hash_convention": "UTF-8 LF, matching published Git contents; raw local capture digest recorded separately."
+  "delivered_request_hash_convention": "UTF-8 LF, matching published Git contents; raw local capture digest recorded separately.",
+  "access_limitation_recorded_at_utc": "2026-10-01T09:12:29.341281+00:00",
+  "review_runtime_status": "Unknown after the browser-control connector disappeared from the available tools. The last supported observation showed active thinking; neither completion nor termination is inferred.",
+  "access_limitation": "Current Windows Computer Use guidance explicitly forbids ChatGPT desktop app UI automation. The available application identifies itself as ChatGPT.exe. No desktop UI action, review restart, credential extraction or alternate private-session access was used after that identification.",
+  "next_required_evidence": "Genuine seventh final report supplied by the author or retrieved after the existing supported browser connector is restored. Do not fabricate a recommendation or duplicate the already verified submission."
 }
