@@ -1,0 +1,45 @@
+{
+  "scope": "Exploratory observed-panel ANCOVA point rankings with original eligible cost menu. Within-stratum policy contrasts cancel the common control level. Baseline/block WLS and village-CR1 inference are distinct from assignment-weighted ratio estimands and finite protection. Eligibility is baseline-defined; identified follow-up diets still select this sample. Theta is stipulated total welfare weight, not measured preferences. Switches have sampling and specification uncertainty; no full-target ranking, new externality or general-interest importance is established.",
+  "specifications": [
+    {
+      "baseline_diet_control": false,
+      "frontier": [
+        {
+          "theta_lower": 0.0,
+          "theta_upper": 0.8422330141256129,
+          "policy": "Upper"
+        },
+        {
+          "theta_lower": 0.8422330141256129,
+          "theta_upper": 0.951297512277171,
+          "policy": "Upper+Large"
+        },
+        {
+          "theta_lower": 0.951297512277171,
+          "theta_upper": 1.0,
+          "policy": "Lower+Large"
+        }
+      ]
+    },
+    {
+      "baseline_diet_control": true,
+      "frontier": [
+        {
+          "theta_lower": 0.0,
+          "theta_upper": 0.77331220019244,
+          "policy": "Upper"
+        },
+        {
+          "theta_lower": 0.77331220019244,
+          "theta_upper": 0.9483681441406737,
+          "policy": "Upper+Large"
+        },
+        {
+          "theta_lower": 0.9483681441406737,
+          "theta_upper": 1.0,
+          "policy": "Lower+Large"
+        }
+      ]
+    }
+  ]
+}

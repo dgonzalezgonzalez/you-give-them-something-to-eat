@@ -20,7 +20,7 @@
 1. Religious setting retained without a Catholic mechanism claim.
 2. Replace the residual introduction phrase with **stronger observed assignment response**. No recipient-specific estimand is asserted. Keep the corrected weak coverage inequality.
 3. Twelve-group ceiling and illustrative saving model retained.
-4. Referee PDF inspection remains unavailable. New local compilation/inspection must be recorded separately after execution.
+4. Referee PDF inspection remains unavailable. The corrected ongoing source compiles locally in three project passes to 39 pages; changed page 2 was rendered/inspected with no warning matches. New hosted source c15b5e4 passes 118/118 default comparisons and actually compiles a 39-page PDF. Its artifact was downloaded/hash matched. The dedicated receipt/working-status record distinguishes these from all-page visual inspection, prior LR screening, the frozen eighth PDF and independent referee rendering.
 5. Historical source-search labels retained.
 6. Exact Fraction threshold comparisons retained; the independent ordinary-float reconstruction does not certify them.
 7. Current hybrid comparison and labeled historical harmonic comparison retained.

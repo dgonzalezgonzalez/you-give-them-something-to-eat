@@ -35,6 +35,7 @@ python docs/exploration/community_diet_pilot.py
 python docs/exploration/community_ancova_pilot.py
 python docs/exploration/community_frontier_pilot.py
 python docs/exploration/community_cost_frontier.py
+python docs/exploration/community_ancova_frontier.py
 ```
 
 The JSON/CSV files here are the actually generated pilot outputs. An independent author-side replay read the original public Stata file directly and recomputed all 36 stratum/endpoint arm ratios without importing the pilot/scoring/estimator modules. Maximum discrepancy was 1.78e−13; this verifies source mapping, not independent field replication or novel causal content. Its receipt is `community-source-audit.json`. Replaying that audit requires the original corrected source archive extracted at the documented ignored source path.
@@ -42,3 +43,5 @@ The JSON/CSV files here are the actually generated pilot outputs. An independent
 Next requirements include explicit treatment of source population-cost denominators, full-target missingness and sampling uncertainty, alternative estimators/weight conventions, multiple-comparison accounting, prior-art overlap and integration into a shorter economic argument. The source population-cost column must not be silently substituted for the original eligible budget. Marginal mixed-rollout costs, actual institutional welfare weights and full historical assignment restrictions remain unresolved. No investigator contact was made.
 
 The executed cost-column sensitivity now recomputes every menu vertex separately under the two published average-cost conventions. Both choose upper cash at the baseline-weight aggregate point objective. The lower/large share changes from 15.2871% to 18.1080%; the upper/large-to-lower/large switch changes from theta 0.91424 to 0.91244. These remain fitted sensitivity results. The source Gikuriro population budget is $28.02094, whereas multiplying its eligible cost by the released baseline eligible-weight share yields $14.40467. Their differing denominators are preserved rather than silently equated or labeled an accounting error. Neither identifies the cost of a proposed mixed rollout.
+
+The two ANCOVA specifications retain the fitted sequence upper, upper/large, lower/large under the original eligible cost menu. Their switch weights differ: without baseline diet, approximately 0.84223 and 0.95130; with baseline diet, 0.77331 and 0.94837. This is specification/estimand sensitivity, not independent confirmation of precise thresholds or a full-baseline causal ranking. Gikuriro remains outside the fitted optimal frontier in both specifications. Within-stratum common control levels cancel from policy comparisons, allowing the reported contrast coefficients to reconstruct these point rankings.

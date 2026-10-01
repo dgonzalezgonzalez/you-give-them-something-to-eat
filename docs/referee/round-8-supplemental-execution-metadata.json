@@ -1,0 +1,18 @@
+{
+  "status": "active_execution_report_pending",
+  "original_review_recommendation": "Reject",
+  "new_review": false,
+  "freeze": "v0.8.0",
+  "freeze_commit": "50c96dcea50b5aac25e5beb0912f54ff26e1b47b",
+  "scientific_source": "aa8667ccde0e00d4c5aa182a89d88b4065a6dda6",
+  "delivered_request_turn_id": "3f6b438b-9cbc-41b9-88cc-3fff384ffaab",
+  "delivered_request_characters": 2292,
+  "entire_delivered_text_matches_prepared_request": true,
+  "request_file_has_one_added_final_LF": true,
+  "supported_read_confirmed_at_utc": "2026-10-01T11:45:08Z",
+  "same_chat_human_continuation_observed": true,
+  "continuation_turn_id": "979fe114-a274-461d-bed3-d52c01fc25ae",
+  "actual_supplemental_execution": null,
+  "report_received": false,
+  "scope": "Same frozen eighth-source supplemental field execution only. Original eighth Reject is unchanged. Active processing after a human keep-going message; no completed data retrieval or execution inferred. No local attachments, ninth submission, new recommendation or acceptance."
+}
