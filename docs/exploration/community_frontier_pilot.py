@@ -28,4 +28,4 @@ for c in x['policy_comparisons']:
     if c['policy']=='Lower+Large' and c['population']=='eligible':de=c['gikuriro_minus_policy_identified_mean']
     if c['policy']=='Lower+Large' and c['population']=='ineligible':di=c['gikuriro_minus_policy_identified_mean']
 out['gikuriro_vs_lower_large_crossing_theta']=di/(di-de)
-(r/'docs/exploration/community-frontier-pilot.json').write_text(json.dumps(out,indent=2)+'\n',encoding='utf8');print(json.dumps(out,indent=2))
+(r/'docs/exploration/community-frontier-pilot.json').write_text(json.dumps(out,indent=2)+'\n',encoding='utf8',newline='\n');print(json.dumps(out,indent=2))

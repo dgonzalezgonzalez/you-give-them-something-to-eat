@@ -29,4 +29,4 @@ for g in [0,1]:
 assert max_error<1e-9
 baseline_counts=b.groupby('eligible').size().to_dict();assert baseline_counts=={0:995,1:1793}
 receipt={'scope':'Author-side independent source-file replay of pilot dietary point/endpoint arm ratios. Original public Stata source read directly; no imports of pilot, scoring or estimator modules. Defined group mapping/estimand are necessarily shared. Not external scientific replication, finite confidence certification, institutional preference identification or novelty evidence.','source_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),'compared_arm_ratios':checked,'maximum_absolute_discrepancy':max_error,'tolerance':1e-9,'baseline_counts':baseline_counts,'source_program_count':248,'passed':True}
-(r/'docs/exploration/community-source-audit.json').write_text(json.dumps(receipt,indent=2)+'\n',encoding='utf8');print(json.dumps(receipt,indent=2))
+(r/'docs/exploration/community-source-audit.json').write_text(json.dumps(receipt,indent=2)+'\n',encoding='utf8',newline='\n');print(json.dumps(receipt,indent=2))

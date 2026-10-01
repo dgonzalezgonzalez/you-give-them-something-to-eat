@@ -36,6 +36,6 @@ for label,v in vertices.items():
         else:mu=moments[g,'identified'];I=influence[g,'identified'];L=moments[g,'lower_endpoint'];H=moments[g,'upper_endpoint']
         rows.append({'population':scope,'policy':label,'gikuriro_minus_policy_identified_mean':float(c@mu),'exploratory_block_se':float(np.linalg.norm(I@c)),'gikuriro_minus_policy_missingness_lower':float(cp@L+cn@H),'gikuriro_minus_policy_missingness_upper':float(cp@H+cn@L)})
 result={'scope':'Exploratory pilot from existing public data, prompted after eighth rejection. No new observations. Point ratios select identified diets. Endpoint estimates retain full baseline membership but have sampling error; these are not finite confidence bounds. Community aggregation uses fixed released baseline expansion-weight shares and maintained assignment model. No verified institutional welfare function, new spillover mechanism or leading-journal importance claimed. Frozen eighth science unchanged.','weight_diagnostics':diagnostics,'arm_means':accounting,'policy_comparisons':rows}
-(r/'docs/exploration/community-diet-pilot.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf8')
-pd.DataFrame(rows).to_csv(r/'docs/exploration/community-diet-pilot.csv',index=False)
+(r/'docs/exploration/community-diet-pilot.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf8',newline='\n')
+pd.DataFrame(rows).to_csv(r/'docs/exploration/community-diet-pilot.csv',index=False,lineterminator='\n')
 print(json.dumps(diagnostics,indent=2));print(pd.DataFrame(rows)[pd.DataFrame(rows).policy.eq('Lower+Large')].to_string(index=False))

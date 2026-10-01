@@ -1,0 +1,280 @@
+{
+  "scope": "Exploratory fitted identified-diet benchmark. Recomputes the menu under each published source average-cost column. cost_population is not inferred by scaling cost_eligible by released baseline eligible share. Neither convention establishes marginal rollout costs, real institutional preferences, exact expenditure caps or full-target causal ranking. No uncertainty interval for frontier switches is asserted.",
+  "baseline_eligible_expansion_weight_share": 0.11571155857462465,
+  "scaled_original_eligible_budget": 14.404665954217867,
+  "reported_source_population_budget": 28.0209407806,
+  "menus": [
+    {
+      "cost_column": "cost_eligible",
+      "budget": 124.487701416,
+      "fitted_frontier": [
+        {
+          "theta_lower": 0.0,
+          "theta_upper": 0.8439747452999932,
+          "policy": "Upper"
+        },
+        {
+          "theta_lower": 0.8439747452999932,
+          "theta_upper": 0.9142401560343854,
+          "policy": "Upper+Large"
+        },
+        {
+          "theta_lower": 0.9142401560343854,
+          "theta_upper": 1.0,
+          "policy": "Lower+Large"
+        }
+      ],
+      "baseline_weight_fitted_best": "Upper",
+      "lower_large_cash_share": 0.15287127031638495
+    },
+    {
+      "cost_column": "cost_population",
+      "budget": 28.0209407806,
+      "fitted_frontier": [
+        {
+          "theta_lower": 0.0,
+          "theta_upper": 0.8439747453000331,
+          "policy": "Upper"
+        },
+        {
+          "theta_lower": 0.8439747453000331,
+          "theta_upper": 0.912439319800681,
+          "policy": "Upper+Large"
+        },
+        {
+          "theta_lower": 0.912439319800681,
+          "theta_upper": 1.0,
+          "policy": "Lower+Large"
+        }
+      ],
+      "baseline_weight_fitted_best": "Upper",
+      "lower_large_cash_share": 0.1810804252866141
+    }
+  ],
+  "policy_rows": [
+    {
+      "cost_column": "cost_eligible",
+      "policy": "Gikuriro",
+      "budget": 124.487701416,
+      "expected_cost": 124.487701416,
+      "eligible_mean": 5.029335065650604,
+      "ineligible_mean": 4.882894035164137,
+      "baseline_weight_aggregate_mean": 4.899838955041,
+      "shares": {
+        "Gikuriro": 1.0
+      }
+    },
+    {
+      "cost_column": "cost_eligible",
+      "policy": "Control",
+      "budget": 124.487701416,
+      "expected_cost": 0.0,
+      "eligible_mean": 4.874818079754252,
+      "ineligible_mean": 4.816681212128357,
+      "baseline_weight_aggregate_mean": 4.823408319691996,
+      "shares": {
+        "Control": 1.0
+      }
+    },
+    {
+      "cost_column": "cost_eligible",
+      "policy": "Lower",
+      "budget": 124.487701416,
+      "expected_cost": 53.5771102905,
+      "eligible_mean": 5.2504411829833355,
+      "ineligible_mean": 4.351002840217652,
+      "baseline_weight_aggregate_mean": 4.455078252700846,
+      "shares": {
+        "Lower": 1.0
+      }
+    },
+    {
+      "cost_column": "cost_eligible",
+      "policy": "Middle",
+      "budget": 124.487701416,
+      "expected_cost": 95.8629302979,
+      "eligible_mean": 4.503452128501066,
+      "ineligible_mean": 4.6028866387643275,
+      "baseline_weight_aggregate_mean": 4.591380916605661,
+      "shares": {
+        "Middle": 1.0
+      }
+    },
+    {
+      "cost_column": "cost_eligible",
+      "policy": "Upper",
+      "budget": 124.487701416,
+      "expected_cost": 121.24092865,
+      "eligible_mean": 5.17464232869284,
+      "ineligible_mean": 5.322539730126974,
+      "baseline_weight_aggregate_mean": 5.305426291297893,
+      "shares": {
+        "Upper": 1.0
+      }
+    },
+    {
+      "cost_column": "cost_eligible",
+      "policy": "Control+Large",
+      "budget": 124.487701416,
+      "expected_cost": 124.487701416,
+      "eligible_mean": 4.99080859859881,
+      "ineligible_mean": 4.701151616113185,
+      "baseline_weight_aggregate_mean": 4.734668277008619,
+      "shares": {
+        "Control": 0.7594139774417443,
+        "Large": 0.24058602255825573
+      }
+    },
+    {
+      "cost_column": "cost_eligible",
+      "policy": "Lower+Large",
+      "budget": 124.487701416,
+      "expected_cost": 124.487701416,
+      "eligible_mean": 5.266720981428833,
+      "ineligible_mean": 4.348782781038098,
+      "baseline_weight_aggregate_mean": 4.454998840880496,
+      "shares": {
+        "Lower": 0.8471287296836151,
+        "Large": 0.15287127031638495
+      }
+    },
+    {
+      "cost_column": "cost_eligible",
+      "policy": "Middle+Large",
+      "budget": 124.487701416,
+      "expected_cost": 124.48770141600001,
+      "eligible_mean": 4.561403608990578,
+      "ineligible_mean": 4.584797652799548,
+      "baseline_weight_aggregate_mean": 4.582090691529048,
+      "shares": {
+        "Middle": 0.9320999833250724,
+        "Large": 0.06790001667492766
+      }
+    },
+    {
+      "cost_column": "cost_eligible",
+      "policy": "Upper+Large",
+      "budget": 124.487701416,
+      "expected_cost": 124.487701416,
+      "eligible_mean": 5.1761361961698436,
+      "ineligible_mean": 5.314459074044467,
+      "baseline_weight_aggregate_mean": 5.298453518259065,
+      "shares": {
+        "Upper": 0.9918051012877037,
+        "Large": 0.008194898712296256
+      }
+    },
+    {
+      "cost_column": "cost_population",
+      "policy": "Gikuriro",
+      "budget": 28.0209407806,
+      "expected_cost": 28.0209407806,
+      "eligible_mean": 5.029335065650604,
+      "ineligible_mean": 4.882894035164137,
+      "baseline_weight_aggregate_mean": 4.899838955041,
+      "shares": {
+        "Gikuriro": 1.0
+      }
+    },
+    {
+      "cost_column": "cost_population",
+      "policy": "Control",
+      "budget": 28.0209407806,
+      "expected_cost": 0.0,
+      "eligible_mean": 4.874818079754252,
+      "ineligible_mean": 4.816681212128357,
+      "baseline_weight_aggregate_mean": 4.823408319691996,
+      "shares": {
+        "Control": 1.0
+      }
+    },
+    {
+      "cost_column": "cost_population",
+      "policy": "Lower",
+      "budget": 28.0209407806,
+      "expected_cost": 12.2017908096,
+      "eligible_mean": 5.2504411829833355,
+      "ineligible_mean": 4.351002840217652,
+      "baseline_weight_aggregate_mean": 4.455078252700846,
+      "shares": {
+        "Lower": 1.0
+      }
+    },
+    {
+      "cost_column": "cost_population",
+      "policy": "Middle",
+      "budget": 28.0209407806,
+      "expected_cost": 20.8293743134,
+      "eligible_mean": 4.503452128501066,
+      "ineligible_mean": 4.6028866387643275,
+      "baseline_weight_aggregate_mean": 4.591380916605661,
+      "shares": {
+        "Middle": 1.0
+      }
+    },
+    {
+      "cost_column": "cost_population",
+      "policy": "Upper",
+      "budget": 28.0209407806,
+      "expected_cost": 26.6922473907,
+      "eligible_mean": 5.17464232869284,
+      "ineligible_mean": 5.322539730126974,
+      "baseline_weight_aggregate_mean": 5.305426291297893,
+      "shares": {
+        "Upper": 1.0
+      }
+    },
+    {
+      "cost_column": "cost_population",
+      "policy": "Control+Large",
+      "budget": 28.0209407806,
+      "expected_cost": 28.0209407806,
+      "eligible_mean": 5.010506559988526,
+      "ineligible_mean": 4.681531930432442,
+      "baseline_weight_aggregate_mean": 4.719598097549887,
+      "shares": {
+        "Control": 0.7185567226379361,
+        "Large": 0.2814432773620639
+      }
+    },
+    {
+      "cost_column": "cost_population",
+      "policy": "Lower+Large",
+      "budget": 28.0209407806,
+      "expected_cost": 28.0209407806,
+      "eligible_mean": 5.269725073409508,
+      "ineligible_mean": 4.348373116139589,
+      "baseline_weight_aggregate_mean": 4.454984187111072,
+      "shares": {
+        "Lower": 0.818919574713386,
+        "Large": 0.1810804252866141
+      }
+    },
+    {
+      "cost_column": "cost_population",
+      "policy": "Middle+Large",
+      "budget": 28.0209407806,
+      "expected_cost": 28.0209407806,
+      "eligible_mean": 4.581411022295335,
+      "ineligible_mean": 4.5785525350665015,
+      "baseline_weight_aggregate_mean": 4.578883295078915,
+      "shares": {
+        "Middle": 0.9086578954691638,
+        "Large": 0.09134210453083626
+      }
+    },
+    {
+      "cost_column": "cost_population",
+      "policy": "Upper+Large",
+      "budget": 28.0209407806,
+      "expected_cost": 28.0209407806,
+      "eligible_mean": 5.177966232083951,
+      "ineligible_mean": 5.30456000932274,
+      "baseline_weight_aggregate_mean": 5.289911646052592,
+      "shares": {
+        "Upper": 0.9817660856542307,
+        "Large": 0.018233914345769233
+      }
+    }
+  ]
+}

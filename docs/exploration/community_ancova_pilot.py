@@ -12,5 +12,5 @@ for g in [0,1]:
     for usebase in [False,True]:
         f=regress(s,s.score.to_numpy(),lag.to_numpy() if usebase else None)
         for name,q in vertices.items():rows.append({'eligible':g,'baseline_control':usebase,'policy':name,**contrast(f,policy_c(f,q))})
-pd.DataFrame(rows).to_csv(r/'docs/exploration/community-ancova-pilot.csv',index=False)
+pd.DataFrame(rows).to_csv(r/'docs/exploration/community-ancova-pilot.csv',index=False,lineterminator='\n')
 print(pd.DataFrame(rows)[pd.DataFrame(rows).policy.isin(['Lower+Large','Upper','Control'])].to_string(index=False))
