@@ -1,0 +1,79 @@
+{
+  "scope": "Compare every original seventh 720-row statistic and exact-tolerance count with the eighth generated CSV. New uncertainty columns, benchmark/pair/draw outputs and runtime JSON are outside the original CSV comparison.",
+  "checks": {
+    "unchanged_720_case": true,
+    "unchanged_720_n": true,
+    "unchanged_720_blocks": true,
+    "unchanged_720_weight_shape": true,
+    "unchanged_720_effect_thousandths": true,
+    "unchanged_720_reporting": true,
+    "unchanged_720_method": true,
+    "unchanged_720_repetitions": true,
+    "unchanged_720_true_effect": true,
+    "unchanged_720_mean_actual_regret": true,
+    "unchanged_720_p95_actual_regret": true,
+    "unchanged_720_mean_certified_loss_upper": true,
+    "unchanged_720_certificates_at_most_005": true,
+    "unchanged_720_certificates_at_most_010": true,
+    "unchanged_720_joint_mean_interval_coverage_count": true,
+    "unchanged_720_empty_region_fallback_count": true,
+    "unchanged_720_maximum_rational_policy_rounding_bound": true,
+    "unchanged_720_mean_probability_arm_1": true,
+    "all_benchmark_rows": true,
+    "no_learning_grid_average": true,
+    "effect_cells": true
+  },
+  "all_passed": true,
+  "benchmark_averages": [
+    {
+      "reporting": "assignment_dependent",
+      "method": "empirical_best_midpoint",
+      "mean_regret": 0.038743489583333325
+    },
+    {
+      "reporting": "assignment_dependent",
+      "method": "no_learning_half",
+      "mean_regret": 0.045000000000000005
+    },
+    {
+      "reporting": "coarse_interval",
+      "method": "empirical_best_midpoint",
+      "mean_regret": 0.003999023437499998
+    },
+    {
+      "reporting": "coarse_interval",
+      "method": "no_learning_half",
+      "mean_regret": 0.045000000000000005
+    },
+    {
+      "reporting": "complete",
+      "method": "empirical_best_midpoint",
+      "mean_regret": 0.0033691406249999997
+    },
+    {
+      "reporting": "complete",
+      "method": "no_learning_half",
+      "mean_regret": 0.045000000000000005
+    }
+  ],
+  "quota_minus_empbern": [
+    {
+      "reporting": "assignment_dependent",
+      "cells": 48,
+      "quota_minus_eb": 7.449808593749996e-05,
+      "paired_mc_se": 5.2953298583113935e-06
+    },
+    {
+      "reporting": "coarse_interval",
+      "cells": 48,
+      "quota_minus_eb": 0.002077695442708327,
+      "paired_mc_se": 9.449121204282226e-06
+    },
+    {
+      "reporting": "complete",
+      "cells": 48,
+      "quota_minus_eb": 0.002117772718098948,
+      "paired_mc_se": 2.5104858441057427e-05
+    }
+  ]
+}

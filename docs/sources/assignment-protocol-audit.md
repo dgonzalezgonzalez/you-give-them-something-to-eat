@@ -1,0 +1,9 @@
+# Assignment documentation audit, 1 October 2026
+
+The public [AEA registry entry AEARCTR-0002559](https://www.socialscienceregistry.org/trials/2559) was retrieved successfully by a direct public HTTP GET after the web tool could not open it. No account, access request or investigator contact was used. Its analysis-plan section requires permission; no original randomization program or accessible assignment protocol was obtained.
+
+The entry records initial registration on 31 October 2017, after its listed intervention dates. This does not establish when the researchers first received follow-up data. It describes computer assignment at village level but leaves detailed restrictions unspecified. Its displayed arm counts are internally inconsistent: 74 + 74 + 61 + 34 = 243, although it states 248 villages. The released data and accepted paper give 66 smaller-cash villages and 248 overall. The registry discrepancy is preserved rather than treated as an alternative verified law.
+
+The accepted parent paper separately describes 22 district/poverty blocks and computer randomization. These sources corroborate blocked computer assignment; neither verifies that every quota-consistent labeling was equally likely or that blocks were independently randomized without additional restrictions. The manuscript's uniform-quota model remains a maintained conditional assumption. The unavailable protocol remains an unresolved evidence requirement.
+
+Sources: registry entry above; accepted parent paper in the corrected public replication archive, `1-paper/20220682_accepted.tex`, lines 75 and 124. The raw archive and temporary registry HTML are excluded from redistribution. No historical freeze or immutable input was changed.

@@ -43,5 +43,6 @@ Figure 1,output/figures/information_regions.pdf,code/build_distribution_exhibits
 Distribution in-text numbers,paper/distribution-results.tex,code/build_distribution_exhibits.py,96,code/distribution_regions.py; code/institutional_allocations.py,distribution-numbers.json
 Table 17,output/tables/quota_method_comparison.tex,code/build_quota_comparison_exhibits.py,35,code/quota_benchmarks.py,quota-benchmarks.json
 Table 18,output/tables/quota_design_comparison.tex,code/build_quota_comparison_exhibits.py,42,code/benchmark_quota_designs.py,quota-design-benchmarks.json
-Quota comparison in-text numbers,paper/quota-comparison-results.tex,code/build_quota_comparison_exhibits.py,56,code/quota_benchmarks.py,quota-comparison-numbers.json
-Table 19,output/tables/designed_decision_performance.tex,code/build_quota_comparison_exhibits.py,84,code/designed_decisions.py,designed-decisions.json
+Quota comparison in-text numbers,paper/quota-comparison-results.tex,code/build_quota_comparison_exhibits.py,64,code/quota_benchmarks.py,quota-comparison-numbers.json
+Table 19,output/tables/designed_decision_performance.tex,code/build_quota_comparison_exhibits.py,92,code/designed_decisions.py,designed-decisions.json
+Table 20,output/tables/designed_decision_effects.tex,code/build_quota_comparison_exhibits.py,121,code/designed_decisions.py,designed_decisions.csv; designed_decision_benchmarks.csv; designed_decision_pairs.csv

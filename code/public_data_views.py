@@ -4,7 +4,7 @@ These are exact row partitions with repeated original headers, not new inputs.
 Default scientific computation continues to read the immutable input CSVs.
 """
 from pathlib import Path
-import argparse,hashlib,json
+import argparse,hashlib,json,subprocess,sys
 
 ROOT=Path(__file__).resolve().parents[1]
 DEST=ROOT/'data/public-views'
@@ -42,5 +42,6 @@ def main():
         assert sha(reconstructed)==references[name]
         assert reconstructed==(ROOT/'data/input'/name).read_bytes()
     print(f'{count} public CSV parts reconstruct all three immutable source extracts byte for byte.')
+    subprocess.run([sys.executable,str(ROOT/'code/public_review_bytes.py'),'--verify'],check=True)
 
 if __name__=='__main__':main()

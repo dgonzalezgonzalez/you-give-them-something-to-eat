@@ -12,5 +12,14 @@
   "QuotaRegionalMeanGap": "0.000901",
   "QuotaRegionalShortfallLower": "0.502242",
   "QuotaRegionalShortfallUpper": "0.502549",
-  "QuotaRegionalShortfallGap": "0.000306"
+  "QuotaRegionalShortfallGap": "0.000306",
+  "BenchmarkEmpiricalCompleteRegret": "0.0034",
+  "BenchmarkEmpiricalSelectedNegativeRegret": "0.1515",
+  "BenchmarkEmpiricalSelectedPositiveRegret": "0.0022",
+  "BenchmarkQuotaCompleteRegret": "0.0187",
+  "BenchmarkQuotaSelectedNegativeRegret": "0.0878",
+  "BenchmarkQuotaSelectedPositiveRegret": "0.0526",
+  "BenchmarkEBCompleteRegret": "0.0166",
+  "BenchmarkEBSelectedNegativeRegret": "0.0875",
+  "BenchmarkEBSelectedPositiveRegret": "0.0526"
 }

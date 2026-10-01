@@ -1,0 +1,3632 @@
+{
+  "files": [
+    {
+      "path": "docs/referee/round-8-review/case-000.json",
+      "bytes": 9836,
+      "sha256": "60ec8bcf1c5b79259455f4b05f618c832531325be8422a7881c6c902788c88cf"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-000-0.json",
+      "bytes": 16252,
+      "sha256": "c2b5628dd7ec6df4b0000bd81d612e8e9d543be364f17d6bdad49411097eea31"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-000-1.json",
+      "bytes": 16315,
+      "sha256": "101aa41790177ca32295ba5f447e6b345be31f685e33d7a1b09f14d4621bea42"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-000-2.json",
+      "bytes": 16355,
+      "sha256": "13882642fe88794658c0e2744d8a814cf73fa3ae43e6b036549a2412fc9a9728"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-000-3.json",
+      "bytes": 16350,
+      "sha256": "949711ad5ff3c654fe0d420eb4fe4d47a09e74b1fe6e30e3eddff4daa56c9d08"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-001.json",
+      "bytes": 10031,
+      "sha256": "3e3ab9800719de62224589bd7a380f7e6be01ca22e5db121278427fb0cb0cf38"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-001-0.json",
+      "bytes": 16246,
+      "sha256": "1df8f50903eb51a50d8f6254248078fbbfc1455a7df9eb3b974a7667eec584a0"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-001-1.json",
+      "bytes": 16291,
+      "sha256": "fb4406f8ea86859d0c5f4ac5c4af8b8b89ee0f19ab80046a7cb81fbd8387243b"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-001-2.json",
+      "bytes": 16364,
+      "sha256": "f62f0038bb6a9ea402259065fea11f3de6bea21c8be4aead97b6d3943b52d185"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-001-3.json",
+      "bytes": 16318,
+      "sha256": "7f4cc3ce440801a85c6da06354cefc9cee0e78b2b536dee972b0d2be3eb2b1de"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-002.json",
+      "bytes": 10182,
+      "sha256": "e4fafac0b70c6699af0afdf312450cdebe9ace9ffd9093601d986484c4cdc504"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-002-0.json",
+      "bytes": 16368,
+      "sha256": "b5216ab8849041b852e5b3c9eea7504b752163711de3b06886f2df209c19a0c3"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-002-1.json",
+      "bytes": 16372,
+      "sha256": "6ffd965170e8cd9f3250ddd3085766d5409edab7dd9e866e2d7fc3eec04ca31b"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-002-2.json",
+      "bytes": 16416,
+      "sha256": "1a9cebbd0dfd78c62d9c89ae5c06d1192a4dd7db7eeec01f93a5a36982bb3bc8"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-002-3.json",
+      "bytes": 16439,
+      "sha256": "898049e138beb450192b4af2cf54beef91c9fbe2167650d2ac55daef5ac69083"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-003.json",
+      "bytes": 8926,
+      "sha256": "93c62466a9dddbbc80267f3a45ac0edad2f940d49bd327bdc0621b2a0f9368e3"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-003-0.json",
+      "bytes": 14090,
+      "sha256": "1f99f1af6d98af5085a8f797d3d9df1490f27e957c952e44840455bd226c21cd"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-003-1.json",
+      "bytes": 14128,
+      "sha256": "b47a3eea6b88875253c0c4e2039bc449e080d7166d9ebf85ddeec567cc2f078f"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-003-2.json",
+      "bytes": 14164,
+      "sha256": "b7a619392c69bdc1668609f2d6055dd717a7bc548a02e1c94c836074044b37fc"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-003-3.json",
+      "bytes": 14164,
+      "sha256": "ceb2dac2a7185838776348def042b6e91ea7bc853b6c28b87aa0ffed35fa174b"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-004.json",
+      "bytes": 9133,
+      "sha256": "3b225f69c47d2f23c67fe5e70c21aefc7da78d05767f2193fe28e9ab5f581bd4"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-004-0.json",
+      "bytes": 14090,
+      "sha256": "5136fa18841ddd181ef14bd1ef4aa6b9a6b5bab048530bd103fd09186b44aaf1"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-004-1.json",
+      "bytes": 14128,
+      "sha256": "8cb2df338b50dde1bf075f72097a84f4a5c81f7d6db50744d80a131fd5d42ad0"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-004-2.json",
+      "bytes": 14164,
+      "sha256": "bfaa34f70d481f50e83dad7c2be7de3e65802bd3c2ea09a206416f79bafbcd16"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-004-3.json",
+      "bytes": 14164,
+      "sha256": "db84210c2bce47ab03e46b0bac17d7f18fe2b463f6046fac4ed57c016b6c0fd0"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-005.json",
+      "bytes": 9280,
+      "sha256": "04c9b2b08b79f756920533f7b3cd0bdc69e41d87fb7c67b22637fa643ad459b3"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-005-0.json",
+      "bytes": 14090,
+      "sha256": "14e22fdaad0983a3f906cee8b0237aa581b5466f5e28fe7e8a71a157b2d1a4e8"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-005-1.json",
+      "bytes": 14128,
+      "sha256": "c9daac72b5f57fc059c63839cbd664c1515a54e354c3e95fe5d01f3465225a2c"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-005-2.json",
+      "bytes": 14164,
+      "sha256": "691e54b585165306afe2088a7088494efedb403edda90a1672e8b588fee5eeeb"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-005-3.json",
+      "bytes": 14164,
+      "sha256": "61ca5542b3b0c5f9aac7462a1f91279e963e2ff7168f870785665ce9abf387ce"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-006.json",
+      "bytes": 9873,
+      "sha256": "a22026e94084f86785653fea7e829d1eaee04aac06ac273795181be19cf2c4d6"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-006-0.json",
+      "bytes": 16245,
+      "sha256": "3f031591458e19925dea69cf4ed6e320ff2869c6515c4a2b7aedb69d1b403b10"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-006-1.json",
+      "bytes": 16326,
+      "sha256": "7a8a6470ef69946f1de651bb9eb3a66fed5562cdf32e16b4b4e0b25f30d5f995"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-006-2.json",
+      "bytes": 16343,
+      "sha256": "5ce7d9afe8494f9407d369342d29d531fe566b19853e726478d8572a3fe7fb19"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-006-3.json",
+      "bytes": 16327,
+      "sha256": "78d1dbc8d1ba0b66732ba65c2e50982be341beb30337cee2c4da415181c830df"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-007.json",
+      "bytes": 10087,
+      "sha256": "e96bab75545c04a0cc7ab70b8c390066190b39346931926c678c4504a49b021c"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-007-0.json",
+      "bytes": 16317,
+      "sha256": "3500b5f33a98de8d0359d3ffe757c096045bbd7b6807a06376e8f9b71f2eae03"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-007-1.json",
+      "bytes": 16307,
+      "sha256": "e5302e92caa75be5527d8dda6b96583c9b0188a72d4786f40c63d4d4aab7c11c"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-007-2.json",
+      "bytes": 16365,
+      "sha256": "4b04b005c23fdc172f8c4b831f1146f530b12988f77df654e59ab284d639b4a6"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-007-3.json",
+      "bytes": 16325,
+      "sha256": "0c8b0cdb90063cc26f1ecb5491902e7791e54df98337c3d36fc21b4a510f2f47"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-008.json",
+      "bytes": 10091,
+      "sha256": "9b835c0f35ba49051d176e37a9775fd54664624e443a67f8cb30cefe80a72576"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-008-0.json",
+      "bytes": 16298,
+      "sha256": "5eaf43c9bc9cca631ca924e1245c138538cf437014afe6f7daf883b294bdc2e9"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-008-1.json",
+      "bytes": 16337,
+      "sha256": "cc7c82e3e2fc00971870ce6d8dde424faab4734a04cbd3fc69092a5c5776799e"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-008-2.json",
+      "bytes": 16388,
+      "sha256": "063775be7a6da14deba2bcfa8f415d91575427e982c78f727a2e3bba38118fb6"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-008-3.json",
+      "bytes": 16368,
+      "sha256": "ba2ed1ddbe840db2b8dd068c400719984aa2144b4d6925cad6ea1a3207db9845"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-009.json",
+      "bytes": 9830,
+      "sha256": "6be1cc7d5fc168718f9f6aefd54b8e3e6ea00517fd17969289dda9aa6697dd71"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-009-0.json",
+      "bytes": 16268,
+      "sha256": "17e2583b2c6c7958b059d637ff046f8af409fe400b32a8a7985a32cfc2940487"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-009-1.json",
+      "bytes": 16299,
+      "sha256": "7fe3595b5515889b28ac07abfc487681df73c31f4cc18a339fbdc8801e47086f"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-009-2.json",
+      "bytes": 16324,
+      "sha256": "745cb91966d9a67d604a70a424c2a00e71cc4b54b9fed6bab383ce7838afac12"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-009-3.json",
+      "bytes": 16321,
+      "sha256": "6157cc5715c3316cab9cdf510bf5874a67441264418bd60ba627b45e070d8852"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-010.json",
+      "bytes": 10040,
+      "sha256": "827c0fbade3fc86d07f3011e1ad1406f140fb4c809ab265d64b0051364e525f3"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-010-0.json",
+      "bytes": 16354,
+      "sha256": "9e8fb7623a080ae80793c37879f1af4f63a1fe5a958811e29f9209ed93fcf268"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-010-1.json",
+      "bytes": 16384,
+      "sha256": "43a9283650595b936d3608cf69ba8d1342d5b2ca5622a591e39fe8c1fdfe4483"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-010-2.json",
+      "bytes": 16448,
+      "sha256": "ad14fd7964a1e6a5ed247c8ba7576406a84679cc92ea3db86bc9de220f029024"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-010-3.json",
+      "bytes": 16459,
+      "sha256": "91e3b5b3c755d39857c30e755a40f3de05005ce45174b193814a04755cce2d2a"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-011.json",
+      "bytes": 10169,
+      "sha256": "f1bf810473f3b2a28f033affce35f56f99abcdf31af696afec39afd6893148a4"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-011-0.json",
+      "bytes": 16385,
+      "sha256": "547969b409050f8fa172d9d74071600af934f31959ab69542178d24162903d08"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-011-1.json",
+      "bytes": 16437,
+      "sha256": "4bbbc096a16ffee6975a4f7a399fcef71ab29c2c71785f67d9861dfd104b0abf"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-011-2.json",
+      "bytes": 16436,
+      "sha256": "193352d60650a77121b69e211f98dd57f582e67ff68697863e456f46351aa278"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-011-3.json",
+      "bytes": 16462,
+      "sha256": "f599de4d82dcd99cbd4d55cbf494c467deb12fd89367e71b1d9a289f3bb4698b"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-012.json",
+      "bytes": 10097,
+      "sha256": "acb6d3202f8ce68ad465d0d349cf20e94f6aa7388d0a361f095a448a24674fe6"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-012-0.json",
+      "bytes": 16348,
+      "sha256": "8cce69157beac2b3cad3ac8da8a0b891bed7d5958747e1953be413e31a0aa94d"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-012-1.json",
+      "bytes": 16427,
+      "sha256": "0129aad35d5fe45c0dd6bf109c4801391bf634462c2c165ccadab510b63bb741"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-012-2.json",
+      "bytes": 16450,
+      "sha256": "e7a2e9c050316c0727afcb6a02ef329b800da45d8a7d3be30daab7d6717e8a2f"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-012-3.json",
+      "bytes": 16459,
+      "sha256": "7c9255bf9c7d7e008c6568c582b9b03c6531d2300f6bd49408c1fe8702e9153b"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-013.json",
+      "bytes": 10333,
+      "sha256": "adb31a8adfd701c1bfd4f8e24d80c79ac7fcccb674f5e34033cf07952d282ac9"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-013-0.json",
+      "bytes": 16316,
+      "sha256": "f122e38ad5532b60b04661e63fd4657d970bea0fa1cb5dc73c1a0eb0bc9a00df"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-013-1.json",
+      "bytes": 16337,
+      "sha256": "990604e3e7a34b72c6b19332b572047958c48448d864071716a7b3c4d8133371"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-013-2.json",
+      "bytes": 16429,
+      "sha256": "a6ce635e1831091bb385022920483a4f98185758a83ce688c224e037065d27f0"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-013-3.json",
+      "bytes": 16478,
+      "sha256": "2236d7af4f3941df54d6104f990af28fc63a93970b9b53eb215ccead72a58756"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-014.json",
+      "bytes": 10478,
+      "sha256": "d78703d7a26d554c650196d53fb0eadeac9d04e4098cb704ca9c5fbf149d2c42"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-014-0.json",
+      "bytes": 16443,
+      "sha256": "74e502899bc1711416a1f344d192d07d19429f8e41c788be68676ae8067d017d"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-014-1.json",
+      "bytes": 16392,
+      "sha256": "b4c669a3f23e27fa0bdd1bf4316620e0973e8ad2b225eb6d12e9dcb7c04b53eb"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-014-2.json",
+      "bytes": 16497,
+      "sha256": "bcf9fed8b5bd60ceca9738e567f492ee4c68fd304eda4ca7cef011a319fa53e2"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-014-3.json",
+      "bytes": 16457,
+      "sha256": "76a07f0c1e0afa4ef4a35ca4dea8d421d83ee7c5aa567bed6b56108b8921aa90"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-015.json",
+      "bytes": 9165,
+      "sha256": "5bf21b928f8caeb94ea9397e84367303e198542c630c2cb09ae6ead2b86c9891"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-015-0.json",
+      "bytes": 14155,
+      "sha256": "3e30d3b528e6adcdfc05c909dd997a70a0ba0b73ec7ec6b7d322d9d0a7fa548f"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-015-1.json",
+      "bytes": 14193,
+      "sha256": "0d27cae5d3b22c0ed5732f88705bcf3923d9cf6b7020c1c7b7921672c70b11ba"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-015-2.json",
+      "bytes": 14229,
+      "sha256": "377999510e7968e8587cb9e6ea415b71b72782ca4bcab54e7a491c9f3f4ad871"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-015-3.json",
+      "bytes": 14229,
+      "sha256": "765f5fe847e3f14f1c4863821099950adf5f7154f404ee037decff206dfa1c22"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-016.json",
+      "bytes": 9357,
+      "sha256": "4b50a440ef3a37cd7a45bbde8b66d61a39a4065d27cb00d243a82b815c930012"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-016-0.json",
+      "bytes": 14155,
+      "sha256": "b0ab76c04809e3e58b03f82c0a729c6b01609a0ea07baa19b5539d8aca65118e"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-016-1.json",
+      "bytes": 14193,
+      "sha256": "0a87e0b48f4c719b3350d33a5ab46ce0f72d9611c6957e74548df425fdc13f7d"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-016-2.json",
+      "bytes": 14229,
+      "sha256": "6538c12e21e74874efb6b9dffb156d0e4c65e852ae5752f6a471ab848c1659cb"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-016-3.json",
+      "bytes": 14229,
+      "sha256": "307c743ba50462b371eb8f776094de6d9531bfb59b879cc676a5eab7e276a242"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-017.json",
+      "bytes": 9493,
+      "sha256": "dd95bf4c9b561ea26ad2755a86ee10c3719528e7e81beeeaf8b79bd38f9e1a3e"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-017-0.json",
+      "bytes": 14155,
+      "sha256": "aa9347893b8c940508989ae4a197080184d0c39049b51b6b9d0e82d78c06b1e1"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-017-1.json",
+      "bytes": 14193,
+      "sha256": "8eee82fdf805a368ca4103692e6e6029749a604a8b2fa1be2d4a88e7dc8670dc"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-017-2.json",
+      "bytes": 14229,
+      "sha256": "2339960069c73eeb5c5dea04ebf97641db360712a2c38d22ab9dbed8e8802f6e"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-017-3.json",
+      "bytes": 14229,
+      "sha256": "12f5a8f9a2da261a4d6e7d291411c77a21202e5ceba9666abdbcaea1d47f88a1"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-018.json",
+      "bytes": 10103,
+      "sha256": "1e047efbf4dd799e9b2794753c703729a7c90c60e1ffd7360db5e7c527539a78"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-018-0.json",
+      "bytes": 16387,
+      "sha256": "b3c2009e22041ec4881e4164fb0170aa96857b4d6ba7f6b01bf6b902f8ce40fe"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-018-1.json",
+      "bytes": 16440,
+      "sha256": "b1ff5154eb2b66ecd9bddbf490d8ce21e140c41685e6d7abc58bd031e1dce1b5"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-018-2.json",
+      "bytes": 16513,
+      "sha256": "aba8c4c3fdecd1ef34a2a1a064b2fa02e12451e80efff1549aa454cc09201e62"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-018-3.json",
+      "bytes": 16503,
+      "sha256": "66f9113f22736ab597e733c5bc39a6d3c7aba26b6c28a9757a4414078e60eccd"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-019.json",
+      "bytes": 10294,
+      "sha256": "c06a559c75ca52f586908ded1e24911bfb72ded3d1864020f7b037d57655e216"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-019-0.json",
+      "bytes": 16428,
+      "sha256": "3f320bd80cab92e7425e46056c5ffc6c3cf335efc36ee7ba3d50ee297769437a"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-019-1.json",
+      "bytes": 16363,
+      "sha256": "d5666b25f6ef921c66baecc3638206d7c6ad0294cd0df4396197bad0b75a5c80"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-019-2.json",
+      "bytes": 16436,
+      "sha256": "9d35bd3b4073633cf0ea1f1bb63eacda7d44343a1077012aa29f50d22d127666"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-019-3.json",
+      "bytes": 16273,
+      "sha256": "f57e1af0f0b21763bccdef5a430e153b883a0730a37fbd91f8000cba0b5b410f"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-020.json",
+      "bytes": 10396,
+      "sha256": "41cf99f18c6b2cd98309d724d8dc5e25018c513b40b6eed5c2590f53d17fb5d7"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-020-0.json",
+      "bytes": 16364,
+      "sha256": "cec4e7297ca0da8b1755f00ce8654ab5af7bd794161dc6dc4c334b857314f861"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-020-1.json",
+      "bytes": 16396,
+      "sha256": "041485f3bc0ea4d18424095b5ead3ef342dd75623f5cf3b0834e3a10c245bf82"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-020-2.json",
+      "bytes": 16441,
+      "sha256": "4ce7ba1ca1c57ed781a3ab497f98ce038284a6bf53e82e6027d94d760ca7a8ab"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-020-3.json",
+      "bytes": 16473,
+      "sha256": "b32c9ed84d7457aae0a9ec0624cf03838b9c6d565bf3ab4881f631a7acd05c1a"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-021.json",
+      "bytes": 10094,
+      "sha256": "9d40d0f6625c7c919e7430ea79990eceb42d44f85073fcff3792ea9223b23c68"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-021-0.json",
+      "bytes": 16349,
+      "sha256": "f6b0ca475ae375ed68257eef09bbebe24ff711b7403a966b19443d10ca4e81bd"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-021-1.json",
+      "bytes": 16376,
+      "sha256": "23b44139810e11da70b2f4bb97b3639e3e4aeb2701a0f9141d3cb631698e165a"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-021-2.json",
+      "bytes": 16498,
+      "sha256": "5184cd1be85a4452408aad33ca8bda83b1d371d9a33baef35c342121826fb574"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-021-3.json",
+      "bytes": 16442,
+      "sha256": "fcbb1af796c63b273ada64e8e2b83064f847d4ae96a61889d73a2a9759d1a33f"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-022.json",
+      "bytes": 10278,
+      "sha256": "128f5ff17d23014e3a5d9e9dcb8d511b1462c28ad4c15128c21f1f36cba34693"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-022-0.json",
+      "bytes": 16248,
+      "sha256": "03b3edd9d3222f0ba3d186045d4e5a6c23d5b8b7ca021c574d5067fcb5e372bf"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-022-1.json",
+      "bytes": 16373,
+      "sha256": "9eb7a741f0db3d02b73f3145190dff9a3909e5babd9a111a3c8cd6a829e9e72a"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-022-2.json",
+      "bytes": 16503,
+      "sha256": "2d7548a1ef48b69af24cca7eac5cb3215a7581492ea1ef9f37d2db06099f562d"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-022-3.json",
+      "bytes": 16469,
+      "sha256": "04a22d7cb05327e23388038e7adb96913b3debee56318c4d5cf0b998758fb1dc"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-023.json",
+      "bytes": 10429,
+      "sha256": "3c44671a7ef9f5247b07a1e2e9203904c462e005efeb4e87f930563f204e01e0"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-023-0.json",
+      "bytes": 16349,
+      "sha256": "2fd882b429124b8c45f6c8c60a6ae0772cd640e40184078e2b53044bbac75c89"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-023-1.json",
+      "bytes": 16431,
+      "sha256": "99a58b886deb3c9ef7e72bf73f00c243a5cf5f95fa04f82718a84a0b9cd4b268"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-023-2.json",
+      "bytes": 16419,
+      "sha256": "2890c3b4813f009d1be0b51d8c4963ae4b2bd63aef75149f2d9bd26cf8e32309"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-023-3.json",
+      "bytes": 16469,
+      "sha256": "d0ff89d8e8989943a65d062039e0bafbc567b2ac100bc32d9a6274c508039f81"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-024.json",
+      "bytes": 9918,
+      "sha256": "e36beda05c475abd7b31144566ee0fbc2b4ddaa688fc856c1e152d237962bafc"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-024-0.json",
+      "bytes": 15928,
+      "sha256": "74df9205b56767868fb6e75c2b37037bf9f3f0242533fce11b3e59d5bea7b67d"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-024-1.json",
+      "bytes": 16027,
+      "sha256": "d72dd5f08bfdb823d56f92710b9717431a4db43d91f2d8876ca940c607b226b6"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-024-2.json",
+      "bytes": 16062,
+      "sha256": "f3eeebc04a8a0e1ad3eeee0d01428633e654136f170a3d24abfeeeffdc14ed18"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-024-3.json",
+      "bytes": 15992,
+      "sha256": "0f98d142b7dee65933a4d9354fdabe80aaa45ac68f4ee5dffb3a02af798f3c87"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-025.json",
+      "bytes": 10066,
+      "sha256": "91ecfe2bdcbceed9d8b39b6841c4d39c118bb9297589188b809af53e8a0a283c"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-025-0.json",
+      "bytes": 16390,
+      "sha256": "55c3e32bb47ea225345acc27317d93ccd8c7ab690a936e443a358ef70c2c339d"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-025-1.json",
+      "bytes": 16421,
+      "sha256": "2fbc5fc9b4bb19b0c3019ad3d848e649ca2a461e2d4d9a2712741e1a78d0297e"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-025-2.json",
+      "bytes": 16473,
+      "sha256": "44ad903094d7ca3091bfe34a8e67e268e29aa1bfede07672079381485de4bd32"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-025-3.json",
+      "bytes": 16450,
+      "sha256": "8d2ecdf0b637b396b5a991a6b40038f363831bd45421533f0d8835e12c1ba8f3"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-026.json",
+      "bytes": 10229,
+      "sha256": "7b82bf08690b62f1ac517d987dd1581f1a1bbccb5d5e03d463ce45f018767b5e"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-026-0.json",
+      "bytes": 16422,
+      "sha256": "966ac431c78f72fdf0aed0aca6d46d4574b7e20926a1b3db240af970dda27468"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-026-1.json",
+      "bytes": 16486,
+      "sha256": "d2a478b180423e263e8b3c93d01d0a82fc0418326241a52b17c051571bbb2e83"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-026-2.json",
+      "bytes": 16509,
+      "sha256": "78a8f3f28882c3a6818d636dcaa842a5715f91c9982a6f69bffda1e07b353390"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-026-3.json",
+      "bytes": 16515,
+      "sha256": "90c1ac9f1f59fe5f64a0fda5a0b6751159f4987708cf4a172df314e716d51012"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-027.json",
+      "bytes": 8991,
+      "sha256": "6eafed3a67983a34ee30c30dd463d00701bf75bed20782cb69693299c923d98f"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-027-0.json",
+      "bytes": 14155,
+      "sha256": "61ccb86065b94360e931aaab8fc1fb1dc1a27419f664c960e63df1cdad6afa5b"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-027-1.json",
+      "bytes": 14193,
+      "sha256": "28ad8c1356d53bfd6fd376065de84d83dd4e478ca56fdf47225af25fa7e7a8b8"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-027-2.json",
+      "bytes": 14229,
+      "sha256": "f6733c6b5b047e4a15c16f1410065c15ad99ea112f3dc709448694e5a97355db"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-027-3.json",
+      "bytes": 14229,
+      "sha256": "a6b2b489aef48053a16ec3a111aada37b13395aa49ebf8ad1b7bd03a6fce24f5"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-028.json",
+      "bytes": 9186,
+      "sha256": "fd2ef5f3c25a3f267ee167f7859f62dd60c7862c808a1a22ca9c812418052ddb"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-028-0.json",
+      "bytes": 14155,
+      "sha256": "d3fba91827420709a9ad8dc3c8c471a08f1fa366ae5aedff3140870dd765011e"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-028-1.json",
+      "bytes": 14193,
+      "sha256": "196e365790e0cac5cf10bd9cd9efc0034e5a865ed4fda15b97216dc5849d7e29"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-028-2.json",
+      "bytes": 14229,
+      "sha256": "fc78c6347ecbf6bf51269e181e2256462ccb5aebe62b15b0a160da33ea924c88"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-028-3.json",
+      "bytes": 14229,
+      "sha256": "25a0bfe36b4fc2f7220c8d36ca6ebdc94b31c84deb023144f6b59e214e06450e"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-029.json",
+      "bytes": 9331,
+      "sha256": "8f3eb595525b100d6e0dbb30ef4233b0c88a3f84f74cebe3d306173d0b8b7b76"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-029-0.json",
+      "bytes": 14155,
+      "sha256": "3b1a9e05af3a596eb9a8e68e7517e7dfb7fcc973e6ce92eab4671ab62c12eb0a"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-029-1.json",
+      "bytes": 14193,
+      "sha256": "1e032e4ad0d6b707a83a0a4de2a7a1b5dcce781a4413f78b08da4b1c175e8f2f"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-029-2.json",
+      "bytes": 14229,
+      "sha256": "5007735cf2b1f81a4537c83598b69efba3047d0dbd30710bf2d6052bda8579da"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-029-3.json",
+      "bytes": 14229,
+      "sha256": "007099644206eaf79a0b02422945e7e909923be079f7aa696b45d03eeaeb54e5"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-030.json",
+      "bytes": 9958,
+      "sha256": "4466b102ec03c1c0139058a3292a92f5ca19499dfc43a9c08121d00275e60ad0"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-030-0.json",
+      "bytes": 16363,
+      "sha256": "3090b109c172470d9a2f45207868a65cc07de129cf3262858abc13c4254d5adc"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-030-1.json",
+      "bytes": 16435,
+      "sha256": "34587c57a7f62460bf4811220886d5258a9db121450c52a3019c94bb52669fac"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-030-2.json",
+      "bytes": 16462,
+      "sha256": "04782074f9f3c6215bedb8fd5cee3c195ec7326a6851f49dc169f6dbe6321ddf"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-030-3.json",
+      "bytes": 16458,
+      "sha256": "e266d0db84b94551a355c36980308ee3bcdb5df0a13f58a46858d337f023d6f9"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-031.json",
+      "bytes": 10122,
+      "sha256": "07a17682c4f5bd25385eba8e2a19d676199f93dac9c538277c94efc8acbb4db8"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-031-0.json",
+      "bytes": 16390,
+      "sha256": "d2bc6e572915c722f23bc327d473c016461d59d7885af33a6665d362c4d4781c"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-031-1.json",
+      "bytes": 16371,
+      "sha256": "30f6b89a21dcef21a2d6ed68b938471a7417e089567119e72f0f2e4ca4bcab23"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-031-2.json",
+      "bytes": 16453,
+      "sha256": "658f0a5d08e5a8f6bc589af777867e86158b78cf7c424ab471aeb2432df81651"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-031-3.json",
+      "bytes": 16451,
+      "sha256": "2376fb001f417c8809045c8c7ac821e99cbacbb8df3fff1c7b92a31e02cb369a"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-032.json",
+      "bytes": 10224,
+      "sha256": "15f115e861500c746995ed04f5c49731c4cace13e2434c58555db2971a8aef35"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-032-0.json",
+      "bytes": 16366,
+      "sha256": "2fd96e1fcf35359f9f8eaf77381ea9b673836f5c455f30fc13fe9a2067040283"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-032-1.json",
+      "bytes": 16393,
+      "sha256": "8329bc413a0a8a52266192df904af422443c228140df6f8d4819cd3455977939"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-032-2.json",
+      "bytes": 16451,
+      "sha256": "914dcc296f2ba3ef2d607e95ba29264afb320bc15096cc7a20f26146ee9e79ec"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-032-3.json",
+      "bytes": 16465,
+      "sha256": "ca0488a725c448db62683ee11cde2a81f760a2479bd652f9cb0909a99ab58d04"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-033.json",
+      "bytes": 9799,
+      "sha256": "b2e0ad95cf4b314de9ca3e1701ba8dc5e60dc3dcbb71ebc6ce5f4c5aee5f4b2a"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-033-0.json",
+      "bytes": 15910,
+      "sha256": "65917e12e1047cbfd1c6f73ff3b310d59f6d83d4f31ec85ac7f8d5652e8b2e08"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-033-1.json",
+      "bytes": 15976,
+      "sha256": "39439f6177dc37339fdf2ffab4e68ba9542bd6d4546ac3fefd6afbbfa6c9916e"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-033-2.json",
+      "bytes": 15969,
+      "sha256": "d41b7805b54159b67ebea5ed0325d85192d80d5836a9cb561d7ea405d19acaa9"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-033-3.json",
+      "bytes": 15997,
+      "sha256": "521fba5d1a04831cf3adbdfedbc07ef8de0f4f841042556c27d09b4fb843d151"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-034.json",
+      "bytes": 10052,
+      "sha256": "1b2b15c896bb81ccb2df42af9ae7759e02b57fa48361cdf449b45ddefdba9be2"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-034-0.json",
+      "bytes": 16365,
+      "sha256": "937b6f1e86ffb0b4b9695cbe4e74a12b92d4ff3ec2185d7e4d8b122625a8a9ce"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-034-1.json",
+      "bytes": 16426,
+      "sha256": "cc4bd9f1bf636dfb0da6a544517ac3caffb164388906603037a5a250362de9dd"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-034-2.json",
+      "bytes": 16449,
+      "sha256": "a4dd773988aecc1bab754c814a9ea3bec1ad2db137e5d09ffa490aecc9010393"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-034-3.json",
+      "bytes": 16451,
+      "sha256": "dd57170acc67618cda4f7458714dfaf40125611a9b1ac1f8329539d603229453"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-035.json",
+      "bytes": 10186,
+      "sha256": "f990595a45bbcfe72e89a5acee801e3ce4c3036d832c2c99ddfaa50bb8445811"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-035-0.json",
+      "bytes": 16384,
+      "sha256": "2cebb91f6fef003af17c6f37cee276e915058f887c6a8ae6ffe903da6575ab23"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-035-1.json",
+      "bytes": 16426,
+      "sha256": "b0be54d8c6a3bd8d2484daea8ecd8fd795ec45a82e3aef2b7e1d49df0fa8fb93"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-035-2.json",
+      "bytes": 16459,
+      "sha256": "29dcbc250d228ccaccac343b0136b7b5669e642ed9067bbb7a50c4a9452e219c"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-035-3.json",
+      "bytes": 16468,
+      "sha256": "0338f35acfe51d289e1d74d62ef236d40e1a553a07035c0ce74ad4e5e29245c8"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-036.json",
+      "bytes": 10148,
+      "sha256": "30cb409ac0338e180e6efe56fa66448092be734d016ff482d7a344d9755a08d5"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-036-0.json",
+      "bytes": 16397,
+      "sha256": "66836a7a80dd1956119fad58e1c406e8dec034ea1c18807479c283a85a3af2db"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-036-1.json",
+      "bytes": 16440,
+      "sha256": "e449ad174337c134745736edc1b546f0a1003d60f7bd5545a474d031291b794b"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-036-2.json",
+      "bytes": 16448,
+      "sha256": "e3dc595e6d88b6d11bc7969097a8954797984237023d0bfdc2ecebbc6d63eeda"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-036-3.json",
+      "bytes": 16453,
+      "sha256": "bb480bdcc32c73df3673582a78a019d19f850706bddab9ca6175d22d3a1234e4"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-037.json",
+      "bytes": 10319,
+      "sha256": "5dc207a17607d0da088d528607ac50e57b6693147a9d8a9ab5ef51562e6bf00f"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-037-0.json",
+      "bytes": 16313,
+      "sha256": "f4ffbce326b2ce59a55955806afdc487a22b8db4ed5c3b0889ddc6907c475d12"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-037-1.json",
+      "bytes": 16395,
+      "sha256": "08a494f5e1ada6f993c67d5813da6e5498ae377d16a7c29ec7f8d2f35b053bbd"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-037-2.json",
+      "bytes": 16459,
+      "sha256": "7e5ddb2b09c4b1e38fe7c9da9f8da36d3d40253bb0304b3181e66798b89674b7"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-037-3.json",
+      "bytes": 16433,
+      "sha256": "dd4c9957918c946c9abb2e9c4b9194d963edea297bd06591b9fe4abaa270330b"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-038.json",
+      "bytes": 10554,
+      "sha256": "59514bbb2a0ce030490761b510faf9c64ed45b75d9aeef8d4c48e574af3fb171"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-038-0.json",
+      "bytes": 16432,
+      "sha256": "d5b0124e8273eab1bbf5cdebec57137a47d53ee1fecd4360a5ca83269ea3c059"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-038-1.json",
+      "bytes": 16438,
+      "sha256": "b72da088b23255148be037300cbe2c2ff53ccded292174a7376a82cd4d944cb8"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-038-2.json",
+      "bytes": 16510,
+      "sha256": "a21c2e33089da3ce229c2e9834db7d34638821ad9b077b79405227fb48addd75"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-038-3.json",
+      "bytes": 16508,
+      "sha256": "9ed7e3ba8b3df2d762c49837e0093a27f2fb597564715de183893c2497889661"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-039.json",
+      "bytes": 9194,
+      "sha256": "9fc1ed9f9198a25b65ac5d160de430818f18851764bb6db7ef8b400a16fe7061"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-039-0.json",
+      "bytes": 14155,
+      "sha256": "61699137601c85b73b51d7ce38182abccef34545fdd2e2d8994b6ec877218082"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-039-1.json",
+      "bytes": 14193,
+      "sha256": "f9039fd61c28f574bfec0958174f9fcc3dd29877ce908b6967bb02961ee55b79"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-039-2.json",
+      "bytes": 14229,
+      "sha256": "9ba2c10e6c1ff083b9416111975a35b87c3760798110dd669852bbb66fea9f02"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-039-3.json",
+      "bytes": 14229,
+      "sha256": "b67bedab4d923ad3358f01c046c0c42b2bbd7a6cc3464d236af0f4d035cc90f9"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-040.json",
+      "bytes": 9378,
+      "sha256": "e10e8cc041dbbe522530e286b3c7aa50d143df9f9871632ac64e1df22da70851"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-040-0.json",
+      "bytes": 14155,
+      "sha256": "d6354a351c684d8e43408df4a52a6b5e8c3d363f9f3ab9804e14f63a33bdd63e"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-040-1.json",
+      "bytes": 14193,
+      "sha256": "86b7b05d39eea2ed2d9ee0af8d7ed049328433ff9533dee89935fe210530261f"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-040-2.json",
+      "bytes": 14229,
+      "sha256": "f388e82104d1d33ed47cf96e7f4783dce3f3456f71ee1da5cf7b61b35ce0b1b2"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-040-3.json",
+      "bytes": 14229,
+      "sha256": "11f26e5437a12c4fbc542e47625e4edcc8934dafe024fb5c9718e61e7a0e4288"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-041.json",
+      "bytes": 9522,
+      "sha256": "de4e858612dd36558644b87e3d401d63907921dd6b1d93d8be4645512dee0578"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-041-0.json",
+      "bytes": 14155,
+      "sha256": "4eeee9e914fc1412492d743b2e45274795f4e80a58f61b95640c474246f24ecf"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-041-1.json",
+      "bytes": 14193,
+      "sha256": "26c8d964402cfa8a28b5acb95c9393b80bbe09daf12865049231e17a46144cb7"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-041-2.json",
+      "bytes": 14229,
+      "sha256": "fe7809b545d4b8c86e3dc4cfcdfee9768e2d26ca5e162f018ab95c78afcd0b93"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-041-3.json",
+      "bytes": 14229,
+      "sha256": "8779e66614d21d033adcc4fdd0c176d9b75feac6ff23e9977827c2fcf942ad34"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-042.json",
+      "bytes": 10136,
+      "sha256": "d7c7bedd0d3f8ca59bd615e5510d2ca0fd7cc58c7abe4e369f877d6045eae8d9"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-042-0.json",
+      "bytes": 16396,
+      "sha256": "e6feecfc0d8bb9906aa6ecbc0b891fe3afdcd188d3e0b8ea42b95975252a0a86"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-042-1.json",
+      "bytes": 16434,
+      "sha256": "c5bf655909caba7a9f79fb7198de4de7bd35d30f99263d1586abccb0b32afea8"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-042-2.json",
+      "bytes": 16485,
+      "sha256": "7df1deb9eac24bf293bfa68617db4298abc643d3b7b78cc13e93652390a05d3c"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-042-3.json",
+      "bytes": 16485,
+      "sha256": "02b61c44b54ad011fa05ea786b3dd6b395b3e26c84d588b5e7f6b353572600f8"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-043.json",
+      "bytes": 10347,
+      "sha256": "9e2c54678a50fe95fe391f9d9459d09209654fb48f359c100792586f31d7e563"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-043-0.json",
+      "bytes": 16394,
+      "sha256": "f1ebad6126f1c17adfeed9a285ae4e05d5bf2e81bfd6fee7e3c19c4a61482143"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-043-1.json",
+      "bytes": 16437,
+      "sha256": "aaccbcd988c69944e0f073160553ae10fe3786eebf5da22963f89ed421ad015a"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-043-2.json",
+      "bytes": 16448,
+      "sha256": "e863c307e7be5286504a472c56497de17ab50bc790d4d2975a0de27b7e5d8ad9"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-043-3.json",
+      "bytes": 16435,
+      "sha256": "9d274669c9b3d3723b5ba8eb027fb79b4c2eff1232788849ee73192a967420e9"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-044.json",
+      "bytes": 10450,
+      "sha256": "cdecc1613f230892eeee143c2b7db38362a6d7615d4b493fb89860a995e338db"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-044-0.json",
+      "bytes": 16381,
+      "sha256": "ea56bf0d4082fe5379d913cd53b56370ce7c1a8b9fe16a86571c50a01ab2780a"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-044-1.json",
+      "bytes": 16428,
+      "sha256": "0ab26a473346004d0d89d68abf99449378931e57ca91f757e1f80fa353d31246"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-044-2.json",
+      "bytes": 16420,
+      "sha256": "ac105bfb2eb3a0d38f1018a11eb631a679db83376aef78eb91fcd37e7a38f43b"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-044-3.json",
+      "bytes": 16459,
+      "sha256": "16a6af3168c7541c7e44e4c25222bb61cb5638265a26825917eeb20bcb0415dd"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-045.json",
+      "bytes": 10127,
+      "sha256": "98773b86b131de3286919bcf82f34e61bd0056dda7744f99041a4bf740ae7acd"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-045-0.json",
+      "bytes": 16417,
+      "sha256": "b00aac7be16e861eeea7a7045f6803f66f5547f08945819b18f22307889610b2"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-045-1.json",
+      "bytes": 16448,
+      "sha256": "c46a1f7c288e1c3e4094e94f6a5b60ed9e729c5b2dd6fde662f382ea2fe9de88"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-045-2.json",
+      "bytes": 16435,
+      "sha256": "60057e70d9654fa43771b365d2621f0599af0da1b35505284bbc97c9ebc7eca2"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-045-3.json",
+      "bytes": 16430,
+      "sha256": "11f0f6f66ef0d34417ad9ce74034e075f098ac195140d32daa8c0020fe7d0683"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-046.json",
+      "bytes": 10350,
+      "sha256": "877d8ba98885694c40ac35b71e32fe0887f8021133c9378de1f1adedad71befd"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-046-0.json",
+      "bytes": 16375,
+      "sha256": "c08cf47b0f27d659750929f44a2319973986f4edf4d3f966defcf975e3933202"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-046-1.json",
+      "bytes": 16437,
+      "sha256": "dea462284149a0171e2d604580e0c08463acef1a203d24b20f6a248217860275"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-046-2.json",
+      "bytes": 16437,
+      "sha256": "cd5d2cdf25208dd7585c9a6111ec2557970abeb9215550f5a291a9ebe6d9dcc3"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-046-3.json",
+      "bytes": 16413,
+      "sha256": "4c45f52ce48e743993f2faa71439fe131777babf0d81f1abb260b696bf49e597"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-047.json",
+      "bytes": 10480,
+      "sha256": "3e38303ef04b80e01defc3374bc0827c7dbc10dcc6fd71ecb0e15667c098566b"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-047-0.json",
+      "bytes": 16406,
+      "sha256": "36e13959d9ed2593aacc920ed83453ca061dd89140fbab0c786615411b296502"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-047-1.json",
+      "bytes": 16414,
+      "sha256": "c1b0da97de65cd3421283e7293c6643de7fc7784d56a1dacb45feeeee9aa22ca"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-047-2.json",
+      "bytes": 16475,
+      "sha256": "0f402b78c32f0a59286e4c55d0e8b5224d85c6c1145cdaf64243b1a561abf2bd"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-047-3.json",
+      "bytes": 16439,
+      "sha256": "09b35bb2a37b044af3a2679cba980003d29911391380d785f864a8201e906f30"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-048.json",
+      "bytes": 9907,
+      "sha256": "58bd4eec33b316248a75a65c05a6a68080785ea12c5890c081a7c37790941650"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-048-0.json",
+      "bytes": 16085,
+      "sha256": "f8b9170ec76977ade042a2d01fb50c5f9eb4dbdb2dcc4f4aaf8717accb82f1a6"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-048-1.json",
+      "bytes": 16133,
+      "sha256": "b1e5dee753f6add77330dbd20efbad3c2dc4e16c1523423cf6ebf571ec277de9"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-048-2.json",
+      "bytes": 16177,
+      "sha256": "5438deb66a2d3d439da3d21d799050898a663507ac8ce2777918cffac05d3e8a"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-048-3.json",
+      "bytes": 16162,
+      "sha256": "7a5ebcff20801011d002f3c0d728343a53db83854fe35c4c809d140f40c489e8"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-049.json",
+      "bytes": 10060,
+      "sha256": "828059bc57847bbbb384352b7776c8a7d72d05020f9925897997fd872236ed1d"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-049-0.json",
+      "bytes": 16365,
+      "sha256": "d25cc41d6bca9340369d697ca8099dc03720bd6e7bdb66b384cf6e5dcaf54471"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-049-1.json",
+      "bytes": 16399,
+      "sha256": "ac830ebe7999188ecd9a657141428460263b57911ae38ce13b200e561a1c078e"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-049-2.json",
+      "bytes": 16432,
+      "sha256": "981af18394bb30aec13407304d31ccf561145b97eb9e7ef585b10bf4423f7650"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-049-3.json",
+      "bytes": 16439,
+      "sha256": "984f9184b3933c0933ce622ff8a9561b140965078727b8bb724551125724f1c6"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-050.json",
+      "bytes": 10266,
+      "sha256": "b6f08101bcd64293c3bfb8d49d3b9bab0ad3ea45fdda3aef7244d2c0cc6e73ac"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-050-0.json",
+      "bytes": 16432,
+      "sha256": "f90920b67dca10a7d2d38a9f09fea6b68a29c9e584973606397d4c13f7bae39c"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-050-1.json",
+      "bytes": 16483,
+      "sha256": "926d1e267188c30cfd1008445e5a38728e121e9605062688a0b8e93275b05fea"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-050-2.json",
+      "bytes": 16532,
+      "sha256": "786c3e3cee2f18c457009fc038496e196243c9a886de8448044d17d382bc2c86"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-050-3.json",
+      "bytes": 16515,
+      "sha256": "a97c20afb77c4f71afe67de3b04a719822809c9b48d76ea76cefbd5374f5b5dc"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-051.json",
+      "bytes": 8990,
+      "sha256": "8e23ac8d170b5f00701004b6c470cc4623d0c686c696190d35913a1d03de8a5d"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-051-0.json",
+      "bytes": 14155,
+      "sha256": "c6a3bdff6a95f8f4b736ff55254a4781dc7592d94167b61c676318dae5eeba12"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-051-1.json",
+      "bytes": 14193,
+      "sha256": "9ba315cb21d67cc3b83288fb1ef45340325c181b019dd3da4996edf2a0baef37"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-051-2.json",
+      "bytes": 14229,
+      "sha256": "718becb72127f11794cf5d061c96c70e9a750260bb8b549fa64162d683f5a2bd"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-051-3.json",
+      "bytes": 14229,
+      "sha256": "298f6b4bfd5edbe4f3573c91fea1205ef933ab4c7b40f4083edc3b7b6a6b3d83"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-052.json",
+      "bytes": 9185,
+      "sha256": "1845be44d754cf4297826793b12b7ea99d84b3e9a0efb8b533e58bb52a8ee10b"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-052-0.json",
+      "bytes": 14155,
+      "sha256": "36d32be9df96ea51e51f63d70a043d0f855c61ec6e8269469ad9b4980e7f232d"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-052-1.json",
+      "bytes": 14193,
+      "sha256": "d5db51ef74f0f732d6b7892adb3d6581325412e24736de0cf6dadea36683fa00"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-052-2.json",
+      "bytes": 14229,
+      "sha256": "2558dd555f7391f4c4d08f2cafd8d5c33b7db9327b4adb6fffd740909f51aec4"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-052-3.json",
+      "bytes": 14229,
+      "sha256": "a1ad7ceda48e37172c6efb00dcbf760783551d576ab6698d47c466bb8b147b13"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-053.json",
+      "bytes": 9330,
+      "sha256": "13f5e865d1b706d0e039f8226b6f65fd7ce3f8cff1fda492d6af3335450efb1a"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-053-0.json",
+      "bytes": 14155,
+      "sha256": "1897f4113fcde4f5ce3ebc9e0d3c33a5e57347420e26a620f35d987a2d332924"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-053-1.json",
+      "bytes": 14193,
+      "sha256": "5e936941560a20e174d11824efbff949fdf205c16d48a56f85f02afb740bf337"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-053-2.json",
+      "bytes": 14229,
+      "sha256": "e7bc2f7ea969b9a8db9cbae7e2766e5f905194dbfbd2d73be3b5438d1acbace2"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-053-3.json",
+      "bytes": 14229,
+      "sha256": "b30f1b0f85f87c95536fb32e0fda37bc9ccfe359ffa18c678bb2d088552bafce"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-054.json",
+      "bytes": 9931,
+      "sha256": "86de8091f26b918d7ca588b89f3d307ff8914a4d9c7770967f063b7e7e1b0b68"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-054-0.json",
+      "bytes": 16393,
+      "sha256": "7c526b26e24c49c7d82a9a710a472a00f54892dff3bff2767e4fb4ee03ef313a"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-054-1.json",
+      "bytes": 16437,
+      "sha256": "6f29a188fa7139027bb9dbe13bf1eca0c7d09e145883aa9c955a06a152102564"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-054-2.json",
+      "bytes": 16452,
+      "sha256": "28a6d7dc419205ddeb535b1d45cd3ae241bfe496d0116c474763d58ae3207755"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-054-3.json",
+      "bytes": 16453,
+      "sha256": "310d800e3d2150c25f93a773cec782dab176862f3fc70b6d942afe034360aa44"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-055.json",
+      "bytes": 10129,
+      "sha256": "0920f6c4350fe32ac79916bf05728936d025c1648dc2c8ce72eac6c15c2bc7d9"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-055-0.json",
+      "bytes": 16314,
+      "sha256": "121383764154859b619658bb0b320847414f28a60c4db7fb38689f0be17efc36"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-055-1.json",
+      "bytes": 16401,
+      "sha256": "d31ab63840b4508491ef8f13319761db59e31139e328c37217611254744c30b2"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-055-2.json",
+      "bytes": 16439,
+      "sha256": "90dd7bce116162423bf5ca3d23e48cf49058136c9f4501a92188c0bde6b56a4d"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-055-3.json",
+      "bytes": 16429,
+      "sha256": "57254b25a0c8729caa9fbac9b65fd37b552a59fd946232b04682d6594b4544ba"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-056.json",
+      "bytes": 10212,
+      "sha256": "e8744ccfaa2d54c18adc54cff26fdaf57daf685fcd8458dbda512d51740d8ed0"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-056-0.json",
+      "bytes": 16374,
+      "sha256": "8cd397a8f7850c4782698319618b0cb028e9f12f082a8f42180c0fd52f8e723d"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-056-1.json",
+      "bytes": 16425,
+      "sha256": "609cbccd5f03b00930f0690bc65c4acae216863cb7d37ab8e09a260cbb688f11"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-056-2.json",
+      "bytes": 16470,
+      "sha256": "80063adac9bff2cbc175d56a4835b32300250ec06cc22ff53f7122005b53423e"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-056-3.json",
+      "bytes": 16464,
+      "sha256": "9428b115b510aa880821ca5d8c326be376cd8fe0764986f6778e8293c0fdd2ae"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-057.json",
+      "bytes": 9898,
+      "sha256": "eb2a3e68d25c9535f0a22dc6a8240333eee085c8475c0fa314617775eb9267c1"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-057-0.json",
+      "bytes": 16017,
+      "sha256": "d4c116a99686e1d74947c27f237fbb77ba4dcba55fd015098d5487eae8afc73b"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-057-1.json",
+      "bytes": 16028,
+      "sha256": "52ae8aa326c137068bb8f01f5fa8154b83649856b50df7de6be6083ccea1ef1f"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-057-2.json",
+      "bytes": 16095,
+      "sha256": "73c32f0dc4f89287ae928830c8fd234370b6209ec74ce77167b558ce86ad1c5b"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-057-3.json",
+      "bytes": 16086,
+      "sha256": "cf07113703a4209aae879f90ff1a4f5066dff9af52a402cc084566ba91af4b5a"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-058.json",
+      "bytes": 10113,
+      "sha256": "621e3d9ee8e65ffcd68ca5e7e671698a19a265d2baff3e32d79efa57a830060b"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-058-0.json",
+      "bytes": 16391,
+      "sha256": "e680c5f5d2bd4ac3797d12b5b13a61b9741b2892a9e9eb108489e4e87c432157"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-058-1.json",
+      "bytes": 16406,
+      "sha256": "4cb07fe0f79b281f53983ba9ce9440aa813087aee214b9b8f2f77a2b6c7f117b"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-058-2.json",
+      "bytes": 16451,
+      "sha256": "96b183dee1271dccdb6e1ce0f78b99482ca5d04b8a2b51233642661811248501"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-058-3.json",
+      "bytes": 16445,
+      "sha256": "5faa9a76fa598e0d1cd033760e5c5c8c381e6492e62e11c626302fbc913bf0b3"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-059.json",
+      "bytes": 10206,
+      "sha256": "fe7129013383daf9999a8c95923a4a9ebfe6a6f5ff2e1ded1cbcd611f42c0397"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-059-0.json",
+      "bytes": 16378,
+      "sha256": "fa965b4f400cc547f4efb3190b39d7e037d105bd0b1cc1b67e8d9e19dc4de3f6"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-059-1.json",
+      "bytes": 16432,
+      "sha256": "1459d8f29ff65c80a71b0e11af202d5ff03b8e6908d643e53a64476ed25eb57c"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-059-2.json",
+      "bytes": 16448,
+      "sha256": "0548d4f2cdd4f2af72fc24a2e7b9de1c0108b7f89a3a13e8b074f45a64a5d250"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-059-3.json",
+      "bytes": 16453,
+      "sha256": "13058af1d2f8a7e9f55696532dfb88c3d40dc08c7b98da2d9634e3895800eb88"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-060.json",
+      "bytes": 10131,
+      "sha256": "9a16ae081c0daa5c82b0d92af5f701a3acfc8d35187de17b09adf76cdbd4c5c9"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-060-0.json",
+      "bytes": 16383,
+      "sha256": "edf6b47e2a2006a06032c861e309bb863a7f9bb5cf4518d9a9a4dac071711219"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-060-1.json",
+      "bytes": 16414,
+      "sha256": "d9391b15bd4b5e1aa9290ed2b4a7016b00c9ea182797fce5d6be827cde868a50"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-060-2.json",
+      "bytes": 16437,
+      "sha256": "2e2bcc9fa9d5a9c1f58ec19545227796dbf59fbc497c95b554256a5ee860a557"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-060-3.json",
+      "bytes": 16457,
+      "sha256": "55c13c6126df319406a847554487896fef56088fb3ac7559f1df521f06ca407f"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-061.json",
+      "bytes": 10341,
+      "sha256": "482a627d0fa9d1c2606711b512b5bbb9933faf9e05605c2ef5fcf92b1b89a865"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-061-0.json",
+      "bytes": 16349,
+      "sha256": "c835e81c09c7a8f503051cfda06e8d6db58b6320a6f9b73d92347e60fe02b748"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-061-1.json",
+      "bytes": 16395,
+      "sha256": "289739f97bec5d59badbc8cdab90ddffecd2665cf4a81c35b5b4553775ad93ef"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-061-2.json",
+      "bytes": 16439,
+      "sha256": "078dee738a6b84574e926136c65d8912ec83297aaf02eec15e7d3481015edf6c"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-061-3.json",
+      "bytes": 16459,
+      "sha256": "f162ae1ed6ad8497d751963c100878194b00945a4c29ec612cd17625bee7a46c"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-062.json",
+      "bytes": 10479,
+      "sha256": "73e29ba8d99273a8ff553f07cb035dd414e582b6665cd41092f56388ddc5caaa"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-062-0.json",
+      "bytes": 16424,
+      "sha256": "c201743ea532f14b0606aa46c29cc2fa346e3e324ec978d11dba8e64eef47e7b"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-062-1.json",
+      "bytes": 16484,
+      "sha256": "96fdbf7ef8b9228c1c830aace672c41757bdd9584075733e0aac22551983b140"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-062-2.json",
+      "bytes": 16502,
+      "sha256": "397fe3567c34566c232430bad54c462cae41b5c182889d1ebed040f048852ca7"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-062-3.json",
+      "bytes": 16507,
+      "sha256": "53154e87bd3b381e9e8feafc505947542ccef2ccafe2731dcae3fd806cb1d253"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-063.json",
+      "bytes": 9183,
+      "sha256": "680551466633f3b72179797b23c2be9a47caa347814b4c537d148a7c7e54cd07"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-063-0.json",
+      "bytes": 14155,
+      "sha256": "3359923d76d59632ee14e6d55ef0c013b73350580a5517e822678db54ad6e371"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-063-1.json",
+      "bytes": 14193,
+      "sha256": "6cbf8ab17070da56beb54024cf08af58051accc9bc43a1cba182db0506f6eb79"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-063-2.json",
+      "bytes": 14229,
+      "sha256": "ca2a427e53df0fb6e5f9ef711d2803c6d99b05a1b427d3f1007838fc3aaa3252"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-063-3.json",
+      "bytes": 14229,
+      "sha256": "3b15620b0674cf38ac795269462d0c2fe0395927fb7d13c9a9e52f53f3d56804"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-064.json",
+      "bytes": 9372,
+      "sha256": "1dc3054ef5c8c79f6f87f5f59aee7ce1e0af45d1f6f0640b9a279faeb31049c1"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-064-0.json",
+      "bytes": 14155,
+      "sha256": "aed4f2824b400bedc82b6ce2d0cc4a88f2c715ee5b6a91e364fd09658d47c312"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-064-1.json",
+      "bytes": 14193,
+      "sha256": "5847c37b2db34763a209be4b9fc153f84c72c4dd8d5962806a75c56b278ef319"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-064-2.json",
+      "bytes": 14229,
+      "sha256": "0ecc037578eb797909841d75a761b43d50fb0e42b7e8b531fa988dca4349c5b7"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-064-3.json",
+      "bytes": 14229,
+      "sha256": "7b3749daee93e9009075e34c3e2d305fa3e4384c48b0acd22c3f77b0b43b9cb8"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-065.json",
+      "bytes": 9528,
+      "sha256": "49faf962ac84c1e3b039887e8e9122afc5c28c58a1474695696e6e35fdeda77c"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-065-0.json",
+      "bytes": 14155,
+      "sha256": "5dc0cbbbb0a13da89d6de1faa45cc778ad21fce9be0033bce9f338cedeb9e160"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-065-1.json",
+      "bytes": 14193,
+      "sha256": "b1e24cf885c985a01e227d00ce4ffb56b39da78517d5ada1ae359b226c2b1dbc"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-065-2.json",
+      "bytes": 14229,
+      "sha256": "fc97d1742fdc34227eb7dc8592017332a7435c2f04c17cd4af2a9fe9e196c7df"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-065-3.json",
+      "bytes": 14229,
+      "sha256": "928638c90ceb048c28d1eafd2499f18f4e45ad6df63864ee4e2581bab2f3def6"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-066.json",
+      "bytes": 10179,
+      "sha256": "7894e5fa8e798de1e558ff0d0622f4a8db7668d7ea9426c19f29d91485a02335"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-066-0.json",
+      "bytes": 16388,
+      "sha256": "2237d928c1c62bec59ee1a72b411be082d95c33875b16fb08b776eef5e964f31"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-066-1.json",
+      "bytes": 16372,
+      "sha256": "b7d9e319d09d2f7c3c5876548a1d353dbd3177b159e8ccac4789aa71c63ce0a1"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-066-2.json",
+      "bytes": 16472,
+      "sha256": "421434c455c964c7770b3794d38f217a20ac80a6e7ba989a0c0c3159d35f2cfe"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-066-3.json",
+      "bytes": 16483,
+      "sha256": "e069a94226b4caef808e99e77fdf0556d8fe96f537829a34d516dead742f5f74"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-067.json",
+      "bytes": 10378,
+      "sha256": "3deb0acaa6270de5ad77a6a88e21c1331cbe6ad81eae8f1f77f4143e3f88a5d3"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-067-0.json",
+      "bytes": 16402,
+      "sha256": "4af5dad36f4f61cbfcbd274e26f6259a22f7d379fbaa021441d00fd1562a2b9a"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-067-1.json",
+      "bytes": 16447,
+      "sha256": "f338ce07a33a4c5665d55b51d589bf1c4db08fac7b1d55fa835da8b56e8c9af0"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-067-2.json",
+      "bytes": 16491,
+      "sha256": "dfe534557772c7668bd6c5e3abcb59bfcc7e086607cc95bf342e53bf00b03b7e"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-067-3.json",
+      "bytes": 16504,
+      "sha256": "a7dd5310b597e7a8eb011f6c806a722c7e6d8623b64e4b2538665a363919aade"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-068.json",
+      "bytes": 10449,
+      "sha256": "f83c2844b2b00284c2d72e75268dcf4aa5116d9b1748431f4623b8bc5de926ed"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-068-0.json",
+      "bytes": 16409,
+      "sha256": "f8947a686f0415fa18ad3202ae98a7b0ff792ddf805b5ee346a486f7ae271ccc"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-068-1.json",
+      "bytes": 16449,
+      "sha256": "ea3b6157c5a7766993363c3fc27fbfad9ccfedaac0ab7badda6e68d5e437ff3c"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-068-2.json",
+      "bytes": 16406,
+      "sha256": "16e73573811852deab6194bd08f6e5d54624530b03ac54d1db4d1734c38b7b9b"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-068-3.json",
+      "bytes": 16479,
+      "sha256": "7437a865129005d32d958752f053d4ed3b4b93ced03cc6336c56ce66ec11c42b"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-069.json",
+      "bytes": 10117,
+      "sha256": "52b9732ba88b6b9a0c5a8d6b58f8fb93a77b3b9395684d87cd254f0639292b56"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-069-0.json",
+      "bytes": 16381,
+      "sha256": "cfb9b801dd5b629480e49124dd362b8c7dfc90226440a488ae2a624353c75122"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-069-1.json",
+      "bytes": 16427,
+      "sha256": "67fc98151776524baf9e22f058769e6f69ccbe5047a8e70fa8fbc6de5d7c0dc5"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-069-2.json",
+      "bytes": 16379,
+      "sha256": "78a0b6fa81f233bd4e0ee49edb7022d1b6ac674a58b86253dec6232058b85eea"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-069-3.json",
+      "bytes": 16426,
+      "sha256": "19e77a428acfaa84966fe75bf4bb626f54a76b7803efb39b7cdccefb434d165a"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-070.json",
+      "bytes": 10341,
+      "sha256": "05d3f780285fc39bda7b20a0bee2fff49627b784925c4d4d36d1a77334ad6e06"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-070-0.json",
+      "bytes": 16391,
+      "sha256": "8fb8f70f12bac9fd1659c375261b91d2b674c6040e322f0e4cbfc58f070f9d22"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-070-1.json",
+      "bytes": 16429,
+      "sha256": "2ccc1f4f21270904d1785611de67d98474462c19f5b1f93859736a2e60233e00"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-070-2.json",
+      "bytes": 16427,
+      "sha256": "d2454847f1eda6502cb572d098f8a767bac53c4a3d6a209c135e4b087b4e0a4e"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-070-3.json",
+      "bytes": 16444,
+      "sha256": "59e20b5fec0adaaf995e260dc7063008429c9a3bd4bd7f52e010cba8b499106e"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-071.json",
+      "bytes": 10480,
+      "sha256": "c5d8804b2b176c6faf6b68b65098e8517c06eb1b28b9e8ac67cd98dd27e95749"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-071-0.json",
+      "bytes": 16387,
+      "sha256": "3213a9c5b903f0d2f46499aa52e18b234d722143afbed0611c5ce533c3503f60"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-071-1.json",
+      "bytes": 16459,
+      "sha256": "eb3a95b7283f34f8f5eb95d54e4ae4eff6bf6d825ddb1e5c9fc8df9a200bf49c"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-071-2.json",
+      "bytes": 16410,
+      "sha256": "db4f5d767989eb5cff7ea982d93ac325c8754eb3d19e8c925985063108bad45a"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-071-3.json",
+      "bytes": 16435,
+      "sha256": "c8591d862b0b61503cc5123b0ebd047a6ed888b607d9b2ae4cf89b6c0c4d6620"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-072.json",
+      "bytes": 9201,
+      "sha256": "7db468fe2fb2d9762a607c624793bae04f669abc71e685d4628b4cd84d608edf"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-072-0.json",
+      "bytes": 14648,
+      "sha256": "9f4734437b4eb5624dbcb5d2c45391930040470af37c9b54882cf7fec5a01536"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-072-1.json",
+      "bytes": 14684,
+      "sha256": "4e5d54dabd055a441217e8441589f23d99ea00151e415d4b309210091d970ea2"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-072-2.json",
+      "bytes": 14727,
+      "sha256": "a2090df8f07f89e0265c56dc09d8a0d4198ab2d97466c6817d0034ac51cc1fe8"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-072-3.json",
+      "bytes": 14727,
+      "sha256": "358fa23f4e8809856c86db4eeb9d405b46ef6c3c531caa348e6b2871ed185bb5"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-073.json",
+      "bytes": 10122,
+      "sha256": "241de395c35a965a84749213b170ac9590dacca40793f17e1ba7d353086fbd48"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-073-0.json",
+      "bytes": 16393,
+      "sha256": "5674f25db6dcd209f1f38aac122832272ed74b03656718472536c3c4b2d31fe2"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-073-1.json",
+      "bytes": 16418,
+      "sha256": "0dbe4480929130142d715b3de7bc188adf756d48d85ad29efc8b319f82a28646"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-073-2.json",
+      "bytes": 16442,
+      "sha256": "7e098f0a8d1acfa423f66372dbb94fa57941e5aa0405a064274e1aae59756bfe"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-073-3.json",
+      "bytes": 16472,
+      "sha256": "772df7db16a819d29ec63f0ba2a2a2b559b44b0587ed1fd0463dfaa5bb87aa09"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-074.json",
+      "bytes": 10342,
+      "sha256": "e4d796ba487d344bf38e7320e7cd51e116e2c83b46f07e15d648f5f6090c88d8"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-074-0.json",
+      "bytes": 16475,
+      "sha256": "bf4982e5eb1ef66a1ccbca2e27d3aa138ae0e5f9a1bebf5cf496190bcb8eee65"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-074-1.json",
+      "bytes": 16500,
+      "sha256": "244e3794cc3b1c8b24b70b2b65c0140e0a9bf5a92f13c90c4a005d28264a86dc"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-074-2.json",
+      "bytes": 16502,
+      "sha256": "5bb69afd887b507bb883f4e3a9bcb58528bb77afa313dbe77999330296f52df1"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-074-3.json",
+      "bytes": 16499,
+      "sha256": "ee29efe50aa91b6c921979bab8c4222e59772ceab4b7b04f4d2d2c1b28902b0b"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-075.json",
+      "bytes": 9015,
+      "sha256": "11e7363289d247c13c16ad83a67e73f9919ee9d9bbf9cf40912d5c5a4aae88ab"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-075-0.json",
+      "bytes": 14155,
+      "sha256": "32f01e6246db33fc3d8f364b9ff31e3959d2b998fb22273eddcad0d4829f8f5a"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-075-1.json",
+      "bytes": 14193,
+      "sha256": "71321329c87a1145014acde0531fa15ba19685d223f7e0ff8ef8587d65774b13"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-075-2.json",
+      "bytes": 14229,
+      "sha256": "e0b42429c1d1cec8549504f1916de14780484d81d07d2dd2d195a85f1030bca5"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-075-3.json",
+      "bytes": 14229,
+      "sha256": "6d4cc632385f82d84b4ac284f65beddea956f3540b437ed957f7a71d9a5865c4"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-076.json",
+      "bytes": 9214,
+      "sha256": "31f470ac21fef12bbc671a7f1ec8fbd7d58ce31d26d72cd591f9f1ff338edf5b"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-076-0.json",
+      "bytes": 14155,
+      "sha256": "c4e923ecf6b77b73e763dddb220985af057c64f8db5762c8da356ea24aaf1d2d"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-076-1.json",
+      "bytes": 14193,
+      "sha256": "66e403c2e62bd7989ea8bcbad38628ebe451256ade3dea4300c6e2889ce9d219"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-076-2.json",
+      "bytes": 14229,
+      "sha256": "9e27342693042afc892a61c150eb118c98857e34f62bdd0213bba5dba72368a3"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-076-3.json",
+      "bytes": 14229,
+      "sha256": "05e9ed82d750a65c1c588adb60a882297830af3059309b0b2081e53b0ceaa111"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-077.json",
+      "bytes": 9353,
+      "sha256": "d82e7d9425d9da519164245499c4c8c7fc41ee5d34299d99d4b3bb415dfc5aa0"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-077-0.json",
+      "bytes": 14155,
+      "sha256": "0b9db32c6933b1f8af838504ef727ace5c130c2c1c3d63d58e0a82b18f7be083"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-077-1.json",
+      "bytes": 14193,
+      "sha256": "f552509f628e4ba4a05e312d403ca60f64a2dffbb15723f59efced2e0b8ba735"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-077-2.json",
+      "bytes": 14229,
+      "sha256": "09aa690776f50bd5184396c49879c8f4eaf046b50261e86570d3ead76d916175"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-077-3.json",
+      "bytes": 14229,
+      "sha256": "77fe1da96ee0bcb87f247a9a16061c0a0729f93dd829efdf6e5374764c0d9fc0"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-078.json",
+      "bytes": 9913,
+      "sha256": "dd932d28bc79780461329e084122e7524f0ef1cd7cc77084e568b5b0f635d266"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-078-0.json",
+      "bytes": 16318,
+      "sha256": "1dc7f71c010077cfda54b6928c7f59be3a4bc69493ac988ada6b574d202950b2"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-078-1.json",
+      "bytes": 16385,
+      "sha256": "d43828bc4d5f099307fa182c082c498c44391cacd84ba0a5e251312c5669d6d2"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-078-2.json",
+      "bytes": 16428,
+      "sha256": "d75f911d07c608c0055cf5340aa5b83e86afc1fc1e64db9402c52346490edd87"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-078-3.json",
+      "bytes": 16430,
+      "sha256": "8f730923c65132e98581a3aec29b48600d73d4a6d9ea7f01c40c9c5f6cc73c14"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-079.json",
+      "bytes": 10123,
+      "sha256": "26f8eb3e56fd39a4feef3078c853c49888b462bf2999b28914afb952fdadfe7d"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-079-0.json",
+      "bytes": 16362,
+      "sha256": "e6a175bb9c404e518c6703249eee582d69461a9331750a692234a02cd245c29e"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-079-1.json",
+      "bytes": 16418,
+      "sha256": "01df0f436e4dbccc748826e9d4cb6eac5186347cc2e6c572e6ffe4b6fdaf1f07"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-079-2.json",
+      "bytes": 16459,
+      "sha256": "7f02c6efc31c91598c1c9c3dc6e3512b28fc1c9d5aaf3089e920c3e9ba7b0a4c"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-079-3.json",
+      "bytes": 16459,
+      "sha256": "bd260061f0371257f72ac1eafde6e09fcd86aeee02e3080aa3e974f9a5424b5f"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-080.json",
+      "bytes": 10257,
+      "sha256": "02e73b070e544cf3502cc708aa6167de3d033622b6f2c7348d7b513598b19bca"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-080-0.json",
+      "bytes": 16379,
+      "sha256": "17e4b27b24d51eaf9b76af1f47cca4d18f3f6337e170f74fc33c6fc010bb6882"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-080-1.json",
+      "bytes": 16424,
+      "sha256": "7cee2ad15fed616e2c958605ecdfe423d3d1d3925b87577f38b056a30c5ddd60"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-080-2.json",
+      "bytes": 16447,
+      "sha256": "d4dd672cef907646a15989fef3bf252d96be0417ac1105c3539747f001246f01"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-080-3.json",
+      "bytes": 16465,
+      "sha256": "adca82116ce8199cf8b2f81c46f4a6a88372672e5b4c52a0a02fe03734dc2b27"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-081.json",
+      "bytes": 9162,
+      "sha256": "bac511846b7e5022d51ff3643a55d0050c1439d91e57629bd23d9edfd9003dc1"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-081-0.json",
+      "bytes": 14650,
+      "sha256": "30a9ccc83bbedd27add50346db0f228f58e8e777dac826879f4230caab992e35"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-081-1.json",
+      "bytes": 14697,
+      "sha256": "12068185f185e2e7690e03b18549b0378be263da5d635bba1a15a3045d4d32af"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-081-2.json",
+      "bytes": 14724,
+      "sha256": "e0b08532f35034fa0d4f13b9df20b001899e6824f171c841bca4150769cd88cf"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-081-3.json",
+      "bytes": 14728,
+      "sha256": "90f7ff421151c6cc34fa512090df48266c92e58d0951b4f9f69b85324ad2c6eb"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-082.json",
+      "bytes": 10078,
+      "sha256": "dd7a659f0543556e14cc13938adeba13364f8d9374587314859c81426148902e"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-082-0.json",
+      "bytes": 16370,
+      "sha256": "4328913247a0f43950beab48b2853cac70d56c0a9e3448494b6316959c58cb75"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-082-1.json",
+      "bytes": 16421,
+      "sha256": "a102ea45acd883faccf821f3f30b4cdaafc3fc4925dfa344d01a2704c6cc8350"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-082-2.json",
+      "bytes": 16458,
+      "sha256": "1d582787c511397fa92ddc3187f935bd9ffcbf5c3720f4e73c93f272f09d68ef"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-082-3.json",
+      "bytes": 16461,
+      "sha256": "a1cb6b16dac6361bf4c3abcd59152f9d9993445197c8b6ef067964d740c70126"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-083.json",
+      "bytes": 10217,
+      "sha256": "189ce71aadc8db0cc113a6687467d08dedb6e6b64567c5b369b727dfba4b50f4"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-083-0.json",
+      "bytes": 16377,
+      "sha256": "cd92cc8da95d4c29907350b1bf18f072508a1f7dba01b178ed840661cb49df67"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-083-1.json",
+      "bytes": 16407,
+      "sha256": "c169cf707d7a14267ca10e094d15a5dd39af6ddd655ed0964ac91cacb22701dc"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-083-2.json",
+      "bytes": 16459,
+      "sha256": "96e06a5632b7d3f58d0f7b4f37e06fc5bb66f4f3e7e87b759f0072a72460f2f3"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-083-3.json",
+      "bytes": 16440,
+      "sha256": "45e57c1a09d2a5f6cae2db60b8236e553e27f64d4146d6658f6f7875cbd7d94f"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-084.json",
+      "bytes": 10120,
+      "sha256": "69498ae14087c8c2c0abdaf4d1adbfcc89f026b26d2c4724d856bec326830282"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-084-0.json",
+      "bytes": 16351,
+      "sha256": "b972af87de4664e9ed852b0d7295f961d16a3c76163cb68f046d1468cf3506c8"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-084-1.json",
+      "bytes": 16403,
+      "sha256": "7cfdeb7ac7ec1b99d1e939bac92003e8ca4d19c8540996fc45c10b7fe845a013"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-084-2.json",
+      "bytes": 16439,
+      "sha256": "0a60dd2e53cf9163dd1ef31709068c397b921b17bb0d7c3855629695c8dcf9db"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-084-3.json",
+      "bytes": 16451,
+      "sha256": "63f35232db98ea9544868a1dd08871b04d24245ac851202e836d47408767fea2"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-085.json",
+      "bytes": 10286,
+      "sha256": "d7acde6fb7ef764fe78e93d52f13c0d72c39f50cf558ab95f409e25d2ecafc99"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-085-0.json",
+      "bytes": 16350,
+      "sha256": "e780a4ca4c33432efa2cf468b385603ebcf2ee0c9316f12704944919f7667d8a"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-085-1.json",
+      "bytes": 16417,
+      "sha256": "4de4dd0bbea941042d46bf37253853319442707350ab566f745b9fc3c97809bc"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-085-2.json",
+      "bytes": 16477,
+      "sha256": "369d61f45082b0b3c8ad9cce1957c3ef83415fdca3ac32201e1389ac7efea48a"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-085-3.json",
+      "bytes": 16459,
+      "sha256": "a523717c723eb3444c2316dd1c8e9b56f48f3e0205eb09500cc404ae07cde57d"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-086.json",
+      "bytes": 10519,
+      "sha256": "cd83dc0abeffdd968f5e85893c59102146c1df8910ea42717cee997d9f61981a"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-086-0.json",
+      "bytes": 16465,
+      "sha256": "c3dc7d96539e3c4bf46250bb7e1860e481b3b631c88991829a63b0ca2eb33a2d"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-086-1.json",
+      "bytes": 16476,
+      "sha256": "8ac496fbd0058932aae4e1a298b18017048e88061a103461bd8aa0a802deec49"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-086-2.json",
+      "bytes": 16514,
+      "sha256": "cf9d8c2a8837a5bd5d4a50fff306e030e9675ebd94e78925d284ae11acb33c6c"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-086-3.json",
+      "bytes": 16517,
+      "sha256": "281e136daaee8e7e6cd3c85172ad71e1abb5d847fb4bea12c031bd37ad1f0bf5"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-087.json",
+      "bytes": 9214,
+      "sha256": "534b65f983c5a52c94678dead98f256b3add7b42e0d727036d546b1441dc616f"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-087-0.json",
+      "bytes": 14155,
+      "sha256": "12e75c5625f5f25a107a5b6e3a50a63693c2199bce17afa2176612628fdcf1ee"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-087-1.json",
+      "bytes": 14193,
+      "sha256": "88ebb0df5ee0317bc282d47aa2fb9a376443d683fb44c96621e39d905d741e3e"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-087-2.json",
+      "bytes": 14229,
+      "sha256": "8942d47679b483778fe96f5c1db9598ce72bd654889d1d2ca43eb92168b9254c"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-087-3.json",
+      "bytes": 14229,
+      "sha256": "91fd1c6c5de3512d8c260fcc1e1af41de378f85e1cb8c659fc5e4a31816ee640"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-088.json",
+      "bytes": 9409,
+      "sha256": "c3eadb3e20060afbc30b3ec8af8c0c6d4988747884031ef5249272acb47cfaaa"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-088-0.json",
+      "bytes": 14155,
+      "sha256": "b3a676f7ae68fd2fce24034c9137e287631700fb4119ee267cf5c53d72f4a1ea"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-088-1.json",
+      "bytes": 14193,
+      "sha256": "25a7143a09d336c412cb0cbdd41afe35e24c792c53f06a35a310c4db08c11609"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-088-2.json",
+      "bytes": 14229,
+      "sha256": "96e5969e0b59e29f0e042b98337a490e625e54b8f5d7edeae23adcaeaadb5793"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-088-3.json",
+      "bytes": 14229,
+      "sha256": "b1e3322c4554186633bc4085b8247d1b49561e1cd686185cd0b9bde48d0e20b9"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-089.json",
+      "bytes": 9556,
+      "sha256": "0c9027999badf14a5fe21c6f2728d4886d1a851520861fd7f7ed5112be953cf8"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-089-0.json",
+      "bytes": 14155,
+      "sha256": "1bfcfd011547f77b15a048ae65d10ea8179f74d423ea521188aba8423958081f"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-089-1.json",
+      "bytes": 14193,
+      "sha256": "dd90d36b612d68a705c8058ee8b0e341952f9934389df90a54df726d0e74ea69"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-089-2.json",
+      "bytes": 14229,
+      "sha256": "d92f03fc5879f598733d10bb563c3bfff0c62e751036b8eac11afc96f95814b2"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-089-3.json",
+      "bytes": 14229,
+      "sha256": "9cbf595f54b0e59cf311ad3931cb1eb06c2af841aa81950aa8413939a123d927"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-090.json",
+      "bytes": 10159,
+      "sha256": "13da2d2ab00fd7514e60db392d4dcade6efb67ee01f78ac80ed464ce2c1d8730"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-090-0.json",
+      "bytes": 16395,
+      "sha256": "54da0a5dc2af05593e1d894f26dabc71a31947fa2ff264c1b6ba4013517c5563"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-090-1.json",
+      "bytes": 16435,
+      "sha256": "d4d7c5af0f462a586dd8b33876194e934682692a039a58a805b73fca45d49c80"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-090-2.json",
+      "bytes": 16475,
+      "sha256": "a8b977224b319a372a05ba9afabc14f9599ee1bd38a45fea002755b417d74711"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-090-3.json",
+      "bytes": 16488,
+      "sha256": "be17b2e1a47fad07a780610c73b020b1f3d45ac7786cb8fefb72c780d1b60cb4"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-091.json",
+      "bytes": 10376,
+      "sha256": "cf4f57e90f8fb432f101a66278129e5fe187fc8e544dd89aca341db77807d01f"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-091-0.json",
+      "bytes": 16402,
+      "sha256": "9583359447a59fa25046f92ac3669aaab0bdb6714539d07c3fa535034accd3b4"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-091-1.json",
+      "bytes": 16429,
+      "sha256": "fb8d897c188b79f40f91b86aac2e9b76486ca846e7a07e102c2b25e6ebf2bc20"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-091-2.json",
+      "bytes": 16474,
+      "sha256": "26f5095c00872a66b4e2bf0320050e8e8c99f567bb87f0bba645faa44095b1ff"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-091-3.json",
+      "bytes": 16445,
+      "sha256": "bf5a345b6ab8d553bf934b0b2067dc0596af0a1397b16c995dc80ba03402a2e3"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-092.json",
+      "bytes": 10463,
+      "sha256": "904ce8019774b06733e2da056b1b1289349dd56e5ea21560095f16bdc932b3fb"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-092-0.json",
+      "bytes": 16390,
+      "sha256": "2a90ece09f3b8001da5ccdf2d1843b4c706cf52381f7e80d8297c0979b40537e"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-092-1.json",
+      "bytes": 16425,
+      "sha256": "2b8a01d9f93bcd409e9c02da086edae483e1dae18b416989eadcf044a3df2ede"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-092-2.json",
+      "bytes": 16436,
+      "sha256": "bdca4de772871f2ad7cd6e0bdd44a2e33ae890eed61405586d3249ccadbedba9"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-092-3.json",
+      "bytes": 16450,
+      "sha256": "8a33a6c050fd3b12e7a53146320ca3bbd9fe088ff421c20f267718f2324e53c7"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-093.json",
+      "bytes": 10012,
+      "sha256": "7f4dc7378d275c03a841aa5f9284f4dd8e95706f5be073680836cb8388d6a136"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-093-0.json",
+      "bytes": 16356,
+      "sha256": "fba68104b06d0140e0b19d7c1208dcdf38068fb3263e818dee178b864eca8649"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-093-1.json",
+      "bytes": 16413,
+      "sha256": "cafdb8f01480c5397b1ca5a3ac6c43b3998556c98ab05b859894ff6cd5f46ad0"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-093-2.json",
+      "bytes": 16440,
+      "sha256": "5b6c537488b76b3f51aa113e6d837c3476d46753e3094f8897a8fcedc3340240"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-093-3.json",
+      "bytes": 16463,
+      "sha256": "46c62543ee17efaddc2c174b9ef9e3930d3a76624675f955457dc809cd5b0eb6"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-094.json",
+      "bytes": 10262,
+      "sha256": "18b263ff8185e6410cd26437d370d87419b5c7e02c9315c199da8516ff358fd9"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-094-0.json",
+      "bytes": 16386,
+      "sha256": "fdb48e08ac5b4ae32eb730624af520d48b3c5ae712b2c5a62d1e2cb1b027095a"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-094-1.json",
+      "bytes": 16418,
+      "sha256": "fd6ac18c0c14158386fa564d881f99ad9b540bdc34e466d040da3b51f30e57b4"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-094-2.json",
+      "bytes": 16441,
+      "sha256": "360dfbef3cdd3c2b717379dd600af9e4eadbe742eebd3080272de3c3cdf388ed"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-094-3.json",
+      "bytes": 16427,
+      "sha256": "c5fa7b33c1f22a59bb9b2d45a7953ca21f58595424c097607eb79eb68cdaf959"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-095.json",
+      "bytes": 10398,
+      "sha256": "368217f4f02d43cb67ee4bbb34b894d078cbc37888aa2e26ec300b94cec2b16d"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-095-0.json",
+      "bytes": 16388,
+      "sha256": "cd136dcb731bf7a482af71cf48ab1710539dce7543f2745512a76f8521480e5a"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-095-1.json",
+      "bytes": 16420,
+      "sha256": "d2b9d383a05da78457a2078d5a1dfefa98f0f342398add709d39d2b0094eb40e"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-095-2.json",
+      "bytes": 16454,
+      "sha256": "7efe8bdb65d5e943806730e8c88883f3db57aee957a7fbab04078e0506ef511f"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-095-3.json",
+      "bytes": 16460,
+      "sha256": "e7b3de4b2f9aa3ab3a7d1a723add9a2b51df4c1e5b2a2c78166e1bd0ae46ce51"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-096.json",
+      "bytes": 9748,
+      "sha256": "4cef46578a892e2ab1fe2ad04a138d048dc4d3f0e9cd6400b8f9230718e070e3"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-096-0.json",
+      "bytes": 14662,
+      "sha256": "2113cf8efb213bd9bf693b98d25c64b566ef42528021c8db8452e4a70edbd24f"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-096-1.json",
+      "bytes": 14708,
+      "sha256": "54e86c98e7703ec5280cf6839adf0d850af18b52571a3ceeca307c2767a1bd10"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-096-2.json",
+      "bytes": 14745,
+      "sha256": "c4446d8405816c6f6587fa96690f6423cc56ae0d25590f175d08dd2b7e361534"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-096-3.json",
+      "bytes": 14763,
+      "sha256": "c1640b83851650955b425caec87e181238f86db737cd8146237052553ec5c41d"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-097.json",
+      "bytes": 10076,
+      "sha256": "83b0cfe75d69dda38de475204fdc5da56588f491e313e54eb63e315a8d4e7e64"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-097-0.json",
+      "bytes": 16378,
+      "sha256": "f8253deacac54a718e11787ccf1a0067ffa0afa15c51386df7586c649efb5da5"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-097-1.json",
+      "bytes": 16433,
+      "sha256": "58a44ce57ee77762ffb2f024dbbbcff129d234180c8a929d6bdfa35bf5b8b886"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-097-2.json",
+      "bytes": 16466,
+      "sha256": "71dd36dfe80d5550bb2a0acb882bac464f803582daef8ac8cf5ab51efa25403a"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-097-3.json",
+      "bytes": 16456,
+      "sha256": "32007acc363c5cd4b0fc4144d380f40f0e692be30c0c7b6957bc563ab64623cb"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-098.json",
+      "bytes": 10310,
+      "sha256": "a670f56ccda5ee86a8e402e2bae74cf8709c52ec200bdf4b64191c18e4d0cd1a"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-098-0.json",
+      "bytes": 16434,
+      "sha256": "31e529822af8babee05cc1b61cf3358baaae742f07346ccb5fed188749665b16"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-098-1.json",
+      "bytes": 16494,
+      "sha256": "f910ee9eef01e1b8eb009ae65235139346e526a188288841700986034fd99156"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-098-2.json",
+      "bytes": 16496,
+      "sha256": "274f9cfa02e380599b3e73ee4a2c9bc2f351b6cbfdeb9421d29b029f2eb0874e"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-098-3.json",
+      "bytes": 16524,
+      "sha256": "67c2c71fa05e06e99987d50166e01384d118be2728c1a8b263a86788f0bfcef7"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-099.json",
+      "bytes": 8990,
+      "sha256": "9d04a0d315d004e3465fae2aadaf4776618df2ce1479a5964eadbacc8d33fa5d"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-099-0.json",
+      "bytes": 14155,
+      "sha256": "1113615950139e20e25d9aad4edd0b7d4312456d6e4ac2fbd82ebb0f8a5a5ec3"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-099-1.json",
+      "bytes": 14193,
+      "sha256": "460339ce977772c416fa23841129f7f1c024a57ed224a93e34f375d991617933"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-099-2.json",
+      "bytes": 14229,
+      "sha256": "8a960d1a22527c68974afbe2bf8a912f7c884e34cdb20a2292dac8d70690208e"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-099-3.json",
+      "bytes": 14229,
+      "sha256": "2186083ccb3e9805edd93bee13ad116efd7cfc537f7fc83df0693cf1ec29013e"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-100.json",
+      "bytes": 9201,
+      "sha256": "32a66b4ea1d320839e6e64bc1ffd1dd12c7ed00ae55c80ff60bd687f83284d26"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-100-0.json",
+      "bytes": 14220,
+      "sha256": "8c752587c225af4d43cc364046174911897ca473439386f95539671b4b4c7fd2"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-100-1.json",
+      "bytes": 14258,
+      "sha256": "af18cb2a221def93da1616a92024fa80efd6df0957a9bd017bf26a9aaf290d27"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-100-2.json",
+      "bytes": 14294,
+      "sha256": "b76235302e328bd70a782f86d7e17b92f73433495b1d725dc0e6376d6849cc19"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-100-3.json",
+      "bytes": 14294,
+      "sha256": "bd71a7c2c57b71cc298cca9263aab5abb8d6260929dbe571b2ad67b47ed30b10"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-101.json",
+      "bytes": 9355,
+      "sha256": "ca7d51388a6517a61328b72bee35369d954c7ece13132082cfa985d319c5a76d"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-101-0.json",
+      "bytes": 14220,
+      "sha256": "37a601925a62905e2ad8be7ba6fd527fde48d511fe6747e30697991889160b60"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-101-1.json",
+      "bytes": 14258,
+      "sha256": "094e6b75fb4d0a3945e2dad8e4b5391dc1d4faad0430adfb9b4ba07a4c2b6f5e"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-101-2.json",
+      "bytes": 14294,
+      "sha256": "ceb92033b53e619c6993d6cb3dfdb94ff9fc4af67e8b519aee5c75846281a81e"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-101-3.json",
+      "bytes": 14294,
+      "sha256": "1cd4f877daeb55a4d40f20f885dee20b7b243d65a75420eb68111a7170a63325"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-102.json",
+      "bytes": 9876,
+      "sha256": "d1feed96b50ee7bf93e9ec013b7f3a25cf1dff1de0cbf25d55ef41e65a242f12"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-102-0.json",
+      "bytes": 16435,
+      "sha256": "f1c6ff40f45c65abb65614e3e8e1da64a1e132a66532e5ea4d439046983642ac"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-102-1.json",
+      "bytes": 16472,
+      "sha256": "5c4dddd0499a7a93bb64a54f95b95362f9279ebe4b3c086eb6526ec6a9a2e4d4"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-102-2.json",
+      "bytes": 16524,
+      "sha256": "39626d4238671ae7c7d6aeedeae7e89db6a84b957ad22076657df0355842bc0d"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-102-3.json",
+      "bytes": 16492,
+      "sha256": "a65c78fd941f228a74a5d81665c758f1536cfac97d392ba1f397f26d1b502ef4"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-103.json",
+      "bytes": 10148,
+      "sha256": "9393eb47ab5194c0b5bfad088ca5d58744556f775908d8e2888b71bb942a6136"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-103-0.json",
+      "bytes": 16437,
+      "sha256": "a15b9147386f3d299596a0403f2bb12b4b9200fe3abefdee100e05252d61ba18"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-103-1.json",
+      "bytes": 16494,
+      "sha256": "f995b74d80373432e2df93b78ca95e5f44e27925d1ca7f18ff649a2bb466e76a"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-103-2.json",
+      "bytes": 16513,
+      "sha256": "6cca7f3aea0796a1ca98cb278cef2473607d6891072221f9efb10da8aac1ff6c"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-103-3.json",
+      "bytes": 16513,
+      "sha256": "33342d76e9e1f0dc4536deb96f4de7cb20729ab340d4af9d54ed000703b0ceb3"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-104.json",
+      "bytes": 10244,
+      "sha256": "5eb7c29ab7bac4f1736c5abeaa3b5c827d3610157276c50dd642695bd4122d62"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-104-0.json",
+      "bytes": 16440,
+      "sha256": "547a28c93b784d4ec7eb7464b228d172597c172981dc929965d0255600aa81d2"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-104-1.json",
+      "bytes": 16471,
+      "sha256": "09447c65cff0244986d3813fb69d7ced874aa06c912b632b1a7defbe5dfaf555"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-104-2.json",
+      "bytes": 16534,
+      "sha256": "b84c42d4fea76ce2f5ff4667995ee999e81ad94b9d89501967150122f27d5eaa"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-104-3.json",
+      "bytes": 16530,
+      "sha256": "9deaede28ca00e2d8f7f4754434d8052e9057e7c065e9a779ed8102b030cc449"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-105.json",
+      "bytes": 9656,
+      "sha256": "900de2960e1954cec92dd60d3cf7a203bbdbced9185411a784682afeede3390c"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-105-0.json",
+      "bytes": 14716,
+      "sha256": "c1a804ae6ad1960a0c46e2dbfa5e03fb034dc4ce57de80114010ffa57c6383f5"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-105-1.json",
+      "bytes": 14769,
+      "sha256": "13b39ecf88b22fcde6744c9e1c4ff0b5c15cadabfdb1a803d7a87f866950f644"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-105-2.json",
+      "bytes": 14812,
+      "sha256": "76f74b4f3f66f3302791d0558a94455afd83033f6e9412e1de935397350ca695"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-105-3.json",
+      "bytes": 14808,
+      "sha256": "bf6c9d3ce57e3cbb21e8ac9ad82848072dac6bbfb9173888b073d4ce3959a588"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-106.json",
+      "bytes": 10018,
+      "sha256": "5cda4a2d6925f4dcb316e2e28a791b9ac30e1bf879ec45948497f13df792538d"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-106-0.json",
+      "bytes": 16439,
+      "sha256": "0d1c17e34437eb60ad1db164233ea91a9ca5cb8f36fec7b1df823974ecb80eee"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-106-1.json",
+      "bytes": 16479,
+      "sha256": "6187bff1bc60ba2802b3bf165d7ec628c6ed5640ab48244769eeafa7376cc7ad"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-106-2.json",
+      "bytes": 16489,
+      "sha256": "8735480ff73de241fce183f2769685bf2712eb6d3bdc73cee20146ab6635789d"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-106-3.json",
+      "bytes": 16526,
+      "sha256": "7de0f99dd5d2d5fa6d8309ac0f8b9de58d20006a3a9cfb85a40d22490d208e78"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-107.json",
+      "bytes": 10270,
+      "sha256": "5b960d38c4335f98cda3fdcc7ce0e2db419d3964bb2180c57d11403b4d4fc3b5"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-107-0.json",
+      "bytes": 16441,
+      "sha256": "93fb3916d604a64fb147fea4f151e196a9039be2e6b700b4811aeedc0775d0cf"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-107-1.json",
+      "bytes": 16486,
+      "sha256": "0720b324ea77e9a9f6e5b4342333375db62ffb213c3cbc69d7e9c7da64d82af9"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-107-2.json",
+      "bytes": 16509,
+      "sha256": "a1bd1bf66b17a344a41c614227c13bb21fa1570d81d634e00b7d74a586000c16"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-107-3.json",
+      "bytes": 16512,
+      "sha256": "5a11bb056a25600e890f604296f5efcf30ec2363dc05cba9972a0bbf9bcecc12"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-108.json",
+      "bytes": 10103,
+      "sha256": "a7529195e659a4b70e84fef0bd4bea7d9a3fe74c2d2e9474d58d386a919dc804"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-108-0.json",
+      "bytes": 16444,
+      "sha256": "cf2674d9d0f2bd4cd7588d4756c17489718c4a47f49b3b900102b7303800a70e"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-108-1.json",
+      "bytes": 16480,
+      "sha256": "004db0c6df00ef34f4c5bf8f945ef477072510252ad53932f745d8ff09e51846"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-108-2.json",
+      "bytes": 16527,
+      "sha256": "89578a26e5d5e15d21598164f9e8e78d081abacae6083ac235f08a7a8e5168d3"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-108-3.json",
+      "bytes": 16512,
+      "sha256": "9aed0f53689ac18c67c5690a439df8a3fba5c917b8daecae819cd8be1a98acc0"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-109.json",
+      "bytes": 10259,
+      "sha256": "502f15bec57c3367f3250897551ddad0724cca343b1ce894ebf2203f2fbc8234"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-109-0.json",
+      "bytes": 16412,
+      "sha256": "5cd2ee5b7454f09938f66c78f88ca7b034f5ba04254f59abd286d65fd90b3a70"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-109-1.json",
+      "bytes": 16483,
+      "sha256": "1af4f31b2624ad7e283fd988a95f1ada5f31423de122cd5194138a2650d687a0"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-109-2.json",
+      "bytes": 16539,
+      "sha256": "90f3d46c5e582b8d1111005a0c1b10eda90b3937ad81adede9b094f36de21f27"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-109-3.json",
+      "bytes": 16518,
+      "sha256": "fedc36233c1b4d502327124991ff8b62ef3e5199785077f2cf6f755dafd4457f"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-110.json",
+      "bytes": 10482,
+      "sha256": "e1845ffa00f0b0746d05d50c4b30fc414bf4ad529432e4f908503fbcf2d1332e"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-110-0.json",
+      "bytes": 16507,
+      "sha256": "852b2b19e2fb7a15b8ae9ccc81dd654cbeb38ef35bbc4492d4a4023d45436d19"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-110-1.json",
+      "bytes": 16566,
+      "sha256": "4bf5545944b6205620097110f444651107f8ee84e2c256649240bbd23d9410c7"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-110-2.json",
+      "bytes": 16575,
+      "sha256": "a1c2c522a68624502e58c36e9bb91e8ee675d719ccdafb69b41e1388073950ea"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-110-3.json",
+      "bytes": 16574,
+      "sha256": "50fd4b1ea79fd4df08d8a2e1383de728a252ecf160a335874abf5c2dafc22344"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-111.json",
+      "bytes": 9223,
+      "sha256": "62c0dc6524a1c9da8cdedf6501d4ed33217ea191583ada0cad9c316dbe103356"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-111-0.json",
+      "bytes": 14220,
+      "sha256": "036db26086518d634bff205bf3c588a9f923e503b3e344a79965a398ca40f410"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-111-1.json",
+      "bytes": 14258,
+      "sha256": "1127fcd23c91af0d4a042f8c3458daa74620072954584c2911433b6c72ad2153"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-111-2.json",
+      "bytes": 14294,
+      "sha256": "a6ccffdcd5c3a8bae0c7b6c3e81363fac979ac135a47607d3bab52a867f1dc4c"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-111-3.json",
+      "bytes": 14294,
+      "sha256": "2937e26a4d8c44bcb0df869b348cf07860e6f3582eeba0d9e8f109630e6f8122"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-112.json",
+      "bytes": 9414,
+      "sha256": "3aa229df079e175520c684747b34a611f79be709aad60447468b8fb849298dcf"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-112-0.json",
+      "bytes": 14220,
+      "sha256": "2bd82f668ab6d36fbe22caa8a689065c285b1a887a7105e6be4c1f5966f79dc2"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-112-1.json",
+      "bytes": 14258,
+      "sha256": "6c86f9ff1cb091e98fa97985f9aad0900f8faa2aa4b429212a70b2645e104384"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-112-2.json",
+      "bytes": 14294,
+      "sha256": "1856367120717cc14dc6f8ee871d183694e8c2196fc61d14309d4c834cd1defd"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-112-3.json",
+      "bytes": 14294,
+      "sha256": "d9b5300dbf60d4e10a5daffa71e684ce04fa0052a52b7f29e98fb6eadcb1a190"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-113.json",
+      "bytes": 9536,
+      "sha256": "18d82b7ce56025cb0a36e616f51710baaf7de38646670debc2b439be621a19be"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-113-0.json",
+      "bytes": 14220,
+      "sha256": "6336f94409c39d7be2c215bf616136a4d127e2a50ae73afd56740bf0f048e2cf"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-113-1.json",
+      "bytes": 14258,
+      "sha256": "bf79bdb566a63aa7869c2f01f727fb36b1d0474948390d22ee1b65cb09d996d4"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-113-2.json",
+      "bytes": 14294,
+      "sha256": "e1a2b77394726df0cfdf24ba2761eac03348705ba672dc023070115ce8044ac3"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-113-3.json",
+      "bytes": 14294,
+      "sha256": "d6ffb7d33f2274000949afc900e101352d77e35808490c89521e95d7e6f15193"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-114.json",
+      "bytes": 10183,
+      "sha256": "40ebbd2fffb85011c6b4d9d988a4525fced1af012e28dd6874a301784d1ee229"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-114-0.json",
+      "bytes": 16453,
+      "sha256": "c89a9278b764252052be9dba4d61bdf5894f74a86417aaad3ec0180d668d9c91"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-114-1.json",
+      "bytes": 16492,
+      "sha256": "6ff1faf0f9239c15861ca46ca613afe4030a35c69258c93efea24db0397d657e"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-114-2.json",
+      "bytes": 16534,
+      "sha256": "4caa82b4fe0c0204e9a959542354c586eee0638b8fdc0c5903c0ed128ca4b52e"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-114-3.json",
+      "bytes": 16511,
+      "sha256": "88a5b34d188e72c7a9d52bb1d8ea2333fd1c19ad7d8b2e6f0923d8390ba610dd"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-115.json",
+      "bytes": 10352,
+      "sha256": "92e678781ea50d00d4714c7d78502a6c13cdfd16b80e23d590c119b497ff4b3e"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-115-0.json",
+      "bytes": 16470,
+      "sha256": "707c53c02a212646c09c25e7431bae14a68401c38e0a19b8917b46d9a9772d60"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-115-1.json",
+      "bytes": 16506,
+      "sha256": "269585aee6e932a97e08c91936d09a47d96f4afd2f2fd51cc35f21353efc87d7"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-115-2.json",
+      "bytes": 16540,
+      "sha256": "95a2e2806aaea947144e63e1520fd28deabe45551964b5e53f7e40a283fba404"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-115-3.json",
+      "bytes": 16529,
+      "sha256": "8ac224c1783af1b552fad9e7097f8c4d86f2d03f8652b2716618a0e541608afa"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-116.json",
+      "bytes": 10446,
+      "sha256": "2bedbb2b1a22342c3408992a27d6e84dbb0293091b02a26706846fdbd7475f73"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-116-0.json",
+      "bytes": 16427,
+      "sha256": "2f5fb9b97ef655a97a87b80e8b57793c52c3a2f773849ff63432c20aaf4c26ef"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-116-1.json",
+      "bytes": 16489,
+      "sha256": "3f2dc456329a3c5e3d75359e9e21768ac6ccf3e6f312694a7c9aef13a5564362"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-116-2.json",
+      "bytes": 16509,
+      "sha256": "5cfcdc16992fa5e1f6a52c542de02471326dce99846641385e7f47986acfcedb"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-116-3.json",
+      "bytes": 16511,
+      "sha256": "6106d22d955a008119163a019f39d7c2960ce3890e3f972d241138e9466a429f"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-117.json",
+      "bytes": 10003,
+      "sha256": "8a92ac963408ad794e5d1c52bcce6e69de9725a6a57974f924b3c0f2b5c4bc72"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-117-0.json",
+      "bytes": 16452,
+      "sha256": "7d517af0c7fcffaca8d11d6beb8faf9004ace696e0af63387d3771e53254be86"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-117-1.json",
+      "bytes": 16471,
+      "sha256": "5cc905966e2334b501f83ea0c3b288c712da239a2abd8b2d487de0bc5c3c1a83"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-117-2.json",
+      "bytes": 16542,
+      "sha256": "ac4331f468558b848d7cc58814c546326beb5f51feea8874cb5c760f40f669e4"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-117-3.json",
+      "bytes": 16543,
+      "sha256": "24c25b992e6402619ae780f24c6d4c2ec2081b6bf1bae5c2d0be07b3652593b9"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-118.json",
+      "bytes": 10261,
+      "sha256": "442f51cbd2d1e6b9cdfdf7803e2bcc46a3cc48d5bca5c2a3ae48105b72587166"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-118-0.json",
+      "bytes": 16451,
+      "sha256": "389218cabbec20236086b0bc6c823a0d53c2ccb1e48fb3e616ce97c5ba63098d"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-118-1.json",
+      "bytes": 16480,
+      "sha256": "5b6a87d495b781f83c168dbafc201020fbb50a5b7d334df58e7ac988be347522"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-118-2.json",
+      "bytes": 16542,
+      "sha256": "aceda98942ede92824801224bb630044b6ce01778b377af3dc7f6a8590567ac6"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-118-3.json",
+      "bytes": 16517,
+      "sha256": "333175c5fc4fe0b316c677287bbf1589c9b77de63ce4ab9bb5a18ca0e338e90f"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-119.json",
+      "bytes": 10416,
+      "sha256": "db39bccb2914e42c6dcfc58d773db60d46378d884e416b3008181b42c4039955"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-119-0.json",
+      "bytes": 16460,
+      "sha256": "6c87f10598272320e8065372c653bd2d3d7c87519bbe560f7ed06f33c401af26"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-119-1.json",
+      "bytes": 16464,
+      "sha256": "a55b05350c177ac48ede1246ab6864725e031427a4e6d5a8180aba8e9f6bfd2d"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-119-2.json",
+      "bytes": 16518,
+      "sha256": "56d8536a01057e9e5be959fdf6730c94c11d8a4cd985667f84946ccf474a9836"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-119-3.json",
+      "bytes": 16505,
+      "sha256": "73588dc9f0ad090f4f1ee63d30b1ff416cc1944cdafa121b707dc748b21a0787"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-120.json",
+      "bytes": 8926,
+      "sha256": "102394a243c1b639e38a5e1a255f08e1c40a92a061034a161627b0bac5fed2da"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-120-0.json",
+      "bytes": 14284,
+      "sha256": "c6e7594f93f70767786120b349afcac49bb5b304803478d9516245df6aa6eb91"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-120-1.json",
+      "bytes": 14322,
+      "sha256": "08bca555144606fef6f3a044fba638d647244502acfec0d85c3c46ab7504c89a"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-120-2.json",
+      "bytes": 14358,
+      "sha256": "49b88f7694af98a48e9ca849b4b2190bf463cc3db9570551e0a754d5cfc4d4fa"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-120-3.json",
+      "bytes": 14358,
+      "sha256": "1a0535f5766ea1c34d230f0ae766bb4a55a86b53e89ec62d425c817aafe32ee8"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-121.json",
+      "bytes": 10163,
+      "sha256": "1fa3f6169703aa127991e3c8990eb183dc1eba2e770e1bef9d700a2af20de910"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-121-0.json",
+      "bytes": 16432,
+      "sha256": "42e4f98a7ae47a276dc4f58fc9fa0556ea9026d0147faa4718b6d7dc25361fb4"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-121-1.json",
+      "bytes": 16459,
+      "sha256": "2d87ee6abc8570c0ea9c83d05178a84ffe7e0868919ae449ed3c49eb7cdc9a5f"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-121-2.json",
+      "bytes": 16531,
+      "sha256": "cf441ef7ced1abaf10a8de6334e77d715182b1640052ea418bb68febf9a1bd49"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-121-3.json",
+      "bytes": 16508,
+      "sha256": "82f645763a560804b385ee263188301ae70bed9690d3cc2b4a196a6e4546edcd"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-122.json",
+      "bytes": 10348,
+      "sha256": "f96e34c056c1eb1ca1378c54e75eef6c7671a2203d9ec7288776068d26992e15"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-122-0.json",
+      "bytes": 16518,
+      "sha256": "b137452067d702bd8895a47775626f08fd276ade2a5da027f078557c8803e82f"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-122-1.json",
+      "bytes": 16556,
+      "sha256": "124f062f943e06e60ae916eb24db3ca41a7176b51ac85a5f1a326e040f665758"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-122-2.json",
+      "bytes": 16603,
+      "sha256": "08320cc56c864832e240d5bc103ba89e8228d54ddc9b84908b759771288a2089"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-122-3.json",
+      "bytes": 16587,
+      "sha256": "d65ef4e3cd578e415f20282b897f7bbb5618eedd7017448a8029100b52ecd347"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-123.json",
+      "bytes": 9058,
+      "sha256": "7c6b20439fa856098adcb539d8b796b499a36e43e0f0805e337639c47985947c"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-123-0.json",
+      "bytes": 14220,
+      "sha256": "1232cd76e2862059831b7d2939db97aba988ac6419d5ea8814ee5e1b393c8b2d"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-123-1.json",
+      "bytes": 14258,
+      "sha256": "67b157505156297904e6e2b4c71edd4c14d8b8abf7fb895bd4f114e95445c079"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-123-2.json",
+      "bytes": 14294,
+      "sha256": "38eb4640ac610e91478e0907e0642fa7789cae5c39fa06192b46ebb750a02b79"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-123-3.json",
+      "bytes": 14294,
+      "sha256": "03ffd78640466c1851cf17f967f705a79ae959ead842f6042cf26c5a26f612f3"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-124.json",
+      "bytes": 9251,
+      "sha256": "49e56c1fb20924249a20ca67a0f4c50432919ba02d2826dbaabab558a1b1fcfc"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-124-0.json",
+      "bytes": 14220,
+      "sha256": "8b744a79ada71ee35e9b61d6365132cdcb5d382939a2cbebae217063133be3a9"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-124-1.json",
+      "bytes": 14258,
+      "sha256": "9d597b2001ce1c7ff371ca943e3c932d0074b117579384092339eb7e3f8b0a63"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-124-2.json",
+      "bytes": 14294,
+      "sha256": "e1535446b5532502e224362a86af64231be119864aa908ae8cb8ece62b688788"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-124-3.json",
+      "bytes": 14294,
+      "sha256": "aeaee40a307dc8659e05f4819a761e2ef1d2b34d039bb86c144c2dead1b59fcb"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-125.json",
+      "bytes": 9389,
+      "sha256": "a55d254bd48150efa56c11cf8e7f893bc4838c11b94011c8b26cdf4cb8c2fda4"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-125-0.json",
+      "bytes": 14220,
+      "sha256": "7e79d68aa0bdc9930542cc8733f2aff4bd316dd23a24aa530b2fa8b188a185b4"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-125-1.json",
+      "bytes": 14258,
+      "sha256": "cf7e6da8e1a2a01dafe8dc3cbf5255a2865898d6d9168bc3c10ebcab8b3c3047"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-125-2.json",
+      "bytes": 14294,
+      "sha256": "6b86a821012a5b356c4bc1f433647bf15fcbb6742e66a498caa2d20e0c954c2b"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-125-3.json",
+      "bytes": 14294,
+      "sha256": "c1e6ea94d0f64b5e129e234c80edfff7a9b3584ffcb8e97e07f2e9869e49b035"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-126.json",
+      "bytes": 9899,
+      "sha256": "1db12bb50151a57302d37ca3010175c042663cda63c5a04cdcf6e96beca02aea"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-126-0.json",
+      "bytes": 16048,
+      "sha256": "0980cb6ae1ad714de62abb70c23340e580b864b68e57a40b3b576473c1b0c857"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-126-1.json",
+      "bytes": 16079,
+      "sha256": "8142617943d1033e360f8de84e08248340922d2a22879623a6e13ca918dc1a93"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-126-2.json",
+      "bytes": 16095,
+      "sha256": "8cda81a0666426d9673f843d61d7b854a9fd0158e1d93ff9216fffbefbb86c0e"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-126-3.json",
+      "bytes": 16104,
+      "sha256": "fd3e634d0aac550903a11342bf07a9e9d865509f5ac2c6a84e0ccdd09fb6e3dd"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-127.json",
+      "bytes": 10133,
+      "sha256": "8a11881f30caa5fd74d48698496cfe4342125eaf68455ac0b7efa1dddfd3c074"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-127-0.json",
+      "bytes": 16460,
+      "sha256": "ab04abe10b2f3a54e3f071893245f26a51b7da388eaf0061f88c5c9adc758350"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-127-1.json",
+      "bytes": 16475,
+      "sha256": "25e5d8baed766f2e848c2657cb3f436c927f0eb56a2b6787403eb75faf21d112"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-127-2.json",
+      "bytes": 16511,
+      "sha256": "b779e2f6fa8f040b282b4d0d202d7c3bbe690d5a6341d1d77f048b6df70c6035"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-127-3.json",
+      "bytes": 16531,
+      "sha256": "fb5803cc7c10745a89a768c15ab2a2dfdb80ac0e081090133de2abd9ac59c273"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-128.json",
+      "bytes": 10240,
+      "sha256": "31d04273517bf2362ec821408b49b5cf3d2b2670c6d1ae64c07f09ce8960ab26"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-128-0.json",
+      "bytes": 16432,
+      "sha256": "a6bff974b47cf840b1704954fbb822c5fd38bb7ceec61d591b2dc24501d69887"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-128-1.json",
+      "bytes": 16470,
+      "sha256": "26b3cb5a4b1e395f9dd2edb98b5e21872e5ef61d098b6794ad5b83bcd62843e2"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-128-2.json",
+      "bytes": 16506,
+      "sha256": "64659dd392a6853d0d2972eb0702af73e36c7c3ee8f882e1e054b763eace9cd0"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-128-3.json",
+      "bytes": 16524,
+      "sha256": "bc02f25ac393848fb7378357404548c5e3656df54ce8544472cc65fe3a749a5b"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-129.json",
+      "bytes": 8892,
+      "sha256": "86bda733dcbaaa711bd97b07de4d00fefef722fbd7f5e3e58241213024e50fb0"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-129-0.json",
+      "bytes": 14284,
+      "sha256": "74c22592433ac629e6d582a56dac190348b35f2f5297d146827bcaf6777c62ce"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-129-1.json",
+      "bytes": 14322,
+      "sha256": "ae75594d77353a0b8bd29874e577f332cd046ca4971345e0753f62305d934ac8"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-129-2.json",
+      "bytes": 14358,
+      "sha256": "43bd0824849ca3374e129a2061bbd8bcd7eb6f69bcb09be5df9137ac7d1771b7"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-129-3.json",
+      "bytes": 14358,
+      "sha256": "ec0a32c02bf9cf5a8c176f8fcde73c9850036d7d6ec76dc02b5e6e34936e56b8"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-130.json",
+      "bytes": 10131,
+      "sha256": "bcf6b6b20f477d971c7ab97fe08b4efc501ee5762337bb21cf1e9b049f3779d6"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-130-0.json",
+      "bytes": 16431,
+      "sha256": "5e516502e91b0a7d92a0c69949e38ca60d99bc01ad02574f722fba280c6031d7"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-130-1.json",
+      "bytes": 16479,
+      "sha256": "a186d6da7948aeec5b7675c341f9ba040a39433947db1724c6621eabef8c4a4a"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-130-2.json",
+      "bytes": 16516,
+      "sha256": "ef670645410a33dd985d36b341b2a20cf136ae21af37766c32db050d1495c7e1"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-130-3.json",
+      "bytes": 16514,
+      "sha256": "f716be4635221197fb8a8c1d2a6c42419a3d4671db9b8276eb9893eb007e2d18"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-131.json",
+      "bytes": 10255,
+      "sha256": "87b42a6cf9b37ef0421ba53ae1ec6be844f73b0bcc36f52c9927383943ac10ce"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-131-0.json",
+      "bytes": 16420,
+      "sha256": "6ece899e73d361b0db50fffb002d3633f7c8bc68a004970c1bca21cd3613d882"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-131-1.json",
+      "bytes": 16492,
+      "sha256": "740b5e1778b1cf06bb0b85abcdb6d3c8f9818a326dd8c102a6b518f8bab15ea6"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-131-2.json",
+      "bytes": 16514,
+      "sha256": "a1485dc4ea716d5c0ff2794b6fb3d5c5b3f55daa96b31bead3c08e3e09ea5d16"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-131-3.json",
+      "bytes": 16517,
+      "sha256": "d32e198039de315c03909d84f84e7969aa3daa645b17191f70f40ed76ecb0ffb"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-132.json",
+      "bytes": 10022,
+      "sha256": "bf06531f11322043813c8e6da2f4edc28be5481f263a3d5a4c9960efff5527b4"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-132-0.json",
+      "bytes": 15548,
+      "sha256": "5b70505b5f9772d051207c4c80e06a7cd241decfc1768e5841045adc3b8350e5"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-132-1.json",
+      "bytes": 15597,
+      "sha256": "cec9cef48ac4472f8021fa884f56a034170183b7202957680823bcf369d7e1c2"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-132-2.json",
+      "bytes": 15609,
+      "sha256": "5489f8855f569e1aae69642278e766b816d0f9d7971cbb1d874d4057708c719b"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-132-3.json",
+      "bytes": 15708,
+      "sha256": "c6cd6553471e254ab8d507a0335ef835ee6df8df73e7c8e8b0ec7a705175fc7c"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-133.json",
+      "bytes": 10266,
+      "sha256": "06e1f566cafaf149a3095e1902c5969dfb73530a798ef2424058db6e322ca66d"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-133-0.json",
+      "bytes": 16405,
+      "sha256": "ea42eccaee156ee89ed677575409562ab74849274581339dd43db92c21db3a6e"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-133-1.json",
+      "bytes": 16466,
+      "sha256": "06dd62d4369e675389e7714894349087444ab856f60fcbc8a66acc1a37b24e5f"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-133-2.json",
+      "bytes": 16498,
+      "sha256": "f292d7a81f37f2c5f4f0e0fd0d64f4a53cb90c8466dd416509d25c6e1c46cf04"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-133-3.json",
+      "bytes": 16492,
+      "sha256": "efbfeb3f03386569f5bc2130e80cbfb0c2467fc6d0623e97bef031dbdb8b2b35"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-134.json",
+      "bytes": 10498,
+      "sha256": "f562b8f6e233e2b7b9ee0fe4fd3bdef27a50af69e466fd656279231980cb58d1"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-134-0.json",
+      "bytes": 16507,
+      "sha256": "05f6f8d64bcde58df339f5416390779eee32fa43cb3dd2ab1c947e73f023076e"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-134-1.json",
+      "bytes": 16551,
+      "sha256": "34e9143750c95494c8ede85adc7cdd26cc6768c0961ee2181997a9a50f31a669"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-134-2.json",
+      "bytes": 16587,
+      "sha256": "feb486608c3b460a3a1eabacbb33346c720b965ea4d6fad16432d189a742f8ca"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-134-3.json",
+      "bytes": 16573,
+      "sha256": "226a804e15af3f469becb62e2caf7f5aebc0a8dc560ff6eb97f3ad8b2a227159"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-135.json",
+      "bytes": 9248,
+      "sha256": "03a8f6f6ef267db9882b3daa431b5abcd6369c5f29fa6850263a9644d6235031"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-135-0.json",
+      "bytes": 14220,
+      "sha256": "86e24a21657c73445e9a8463f6067683a78f61f751e8d0ffad277962f5c92baa"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-135-1.json",
+      "bytes": 14258,
+      "sha256": "36b84dfcb5982e5f47eb697e6aff0a1ea3550692f4d56642e404f4c82ac6df53"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-135-2.json",
+      "bytes": 14294,
+      "sha256": "7df84f69995dfbbae4d1ba2a1713203254ba2db6824ec103c5f550e702b019ca"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-135-3.json",
+      "bytes": 14294,
+      "sha256": "7d3929ec7e7e071b9954cfdad1447f00dabcd095497ecdf83280efba3557e55a"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-136.json",
+      "bytes": 9429,
+      "sha256": "f8abf5d1d519f51de06e8d44331b2820d0cda1837fdb75528c05ca87b0cd10be"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-136-0.json",
+      "bytes": 14220,
+      "sha256": "ed9a3063d32d2cd430b89518e3a97d6439810ef8f9ddb8c982d950ac27795ee8"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-136-1.json",
+      "bytes": 14258,
+      "sha256": "6335b8dae37489e808511e749faa8bff5bb86e2807f6c68f5f0219fe37dbdb4c"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-136-2.json",
+      "bytes": 14294,
+      "sha256": "df73a988da31e3702d0ad4b09e32a330ecba21068fcc3af80a12db82f516eb23"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-136-3.json",
+      "bytes": 14294,
+      "sha256": "c0a0103e0cd592531457c12b44ae34855b56e1ec1990e84788b6afb3eb9aa762"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-137.json",
+      "bytes": 9558,
+      "sha256": "e5007d4c41a15654bc9a35444ebdafa7c2db73dadfbcee86a6cf518984951258"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-137-0.json",
+      "bytes": 14220,
+      "sha256": "03909c6c7298713561d53844fed5037f6fac664abf265c65953288bc30e5cf81"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-137-1.json",
+      "bytes": 14258,
+      "sha256": "86f2828f0bb02ef06aa23794bb271db37c2f1616643627c5908a29bb674c95b4"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-137-2.json",
+      "bytes": 14294,
+      "sha256": "d73cf94e08fe565491a321ac2da932c6ad339d09171dc828e3f7e0f5e0b46d79"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-137-3.json",
+      "bytes": 14294,
+      "sha256": "c0c9b56cbf890e6a1afb6df1ec4931321801ac7db7cd9fd8385dafe080ac922d"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-138.json",
+      "bytes": 10172,
+      "sha256": "002a886a1f6b062c868368cab1b4560b6784de990b41c1ed3ce76dd38a83fb96"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-138-0.json",
+      "bytes": 16446,
+      "sha256": "1c050ad6f8a5d4b8728ab8bfa948df4687f528f9d00d27d2610a371c2905643a"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-138-1.json",
+      "bytes": 16487,
+      "sha256": "8369027180c0f63638e356ab03beafe6601fae07c4874749a26f20fded59b7f2"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-138-2.json",
+      "bytes": 16511,
+      "sha256": "0954b0978ad62296fc9dbbec59084c0f6257b6d62ebf4a9072e35d79cf3c1057"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-138-3.json",
+      "bytes": 16523,
+      "sha256": "8247182823d6214f93347c1f7c113d78b73c7b57d8a15857d5cf80f6862e6f9f"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-139.json",
+      "bytes": 10365,
+      "sha256": "5bbbce410e7a126752ed9710d0b2545584cd7f69c3f0e737f2a7e1bee35e95db"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-139-0.json",
+      "bytes": 16462,
+      "sha256": "6178b983e9a29acb3bde2ffbbd458a60e2080ba4f4f8f718360129d5106f2be1"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-139-1.json",
+      "bytes": 16505,
+      "sha256": "a8e3636eed2d52ccdbf2872d58e75030e0a881f3becaaebfa652ed3a49498556"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-139-2.json",
+      "bytes": 16541,
+      "sha256": "f2ca2f842a517702b03e5153d7a394eb5eae1641f040d74629dc0d3925567dd7"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-139-3.json",
+      "bytes": 16532,
+      "sha256": "db78e24885da433a7bb70f0a65e4aa55fb1c4d098fd596b9b63e538ade9854e0"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-140.json",
+      "bytes": 10473,
+      "sha256": "bede2f7497d0a5fefe6362425ee8930cc6da9e3463874dde1a41203cf17dfc36"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-140-0.json",
+      "bytes": 16447,
+      "sha256": "c1b397c5931c51eaec02c271e1f93c687836d787561e39971815d2b6bdc76d9d"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-140-1.json",
+      "bytes": 16482,
+      "sha256": "35ca64e47b8438761cc26fd0142578e3aa1384bdc4ebbba79cfbb97b0e509196"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-140-2.json",
+      "bytes": 16523,
+      "sha256": "da530f1ceccdaf528337185b36a3f1d8d6d99c1c5ea8f2734f9cfc215bc05af2"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-140-3.json",
+      "bytes": 16540,
+      "sha256": "837828454ea269a641623d3fe115df01762d3fa82551e06bdf25f01b44ea4d0f"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-141.json",
+      "bytes": 10087,
+      "sha256": "d9554b9b331695c4b942b7ea73f6aef88fe983f484b27d8fb762ec6e8835c85c"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-141-0.json",
+      "bytes": 15528,
+      "sha256": "0d283838f08c407c2ee32e7c7432eba4c6c834d1306555e0b2bcbd4be5f9f413"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-141-1.json",
+      "bytes": 15629,
+      "sha256": "fd89911dd845914006676456c9d2192d3e6937fe885f159278c29e28fb4cbb58"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-141-2.json",
+      "bytes": 15707,
+      "sha256": "375c261d616ee09de8cee46160c03e6bf94cfbf4afa6615e2b00589f2f173ea5"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-141-3.json",
+      "bytes": 15609,
+      "sha256": "c7f724bca365448110e3c20d34a0043a1d0bb702a01a60e776538b1fdf81a2c3"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-142.json",
+      "bytes": 10253,
+      "sha256": "2caa9417c17067ff3dc48f436bc754ce114edccda911f476e305936abfe55cd2"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-142-0.json",
+      "bytes": 16423,
+      "sha256": "de229ba0d0a57e33a9d93f143c97861c11af4e0d4dc7cc356f75ef9b3908838d"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-142-1.json",
+      "bytes": 16470,
+      "sha256": "c8352f3fee13ae1498b7cf25927aefb02a004587a47cfc93fcd33950dd264285"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-142-2.json",
+      "bytes": 16516,
+      "sha256": "8e2e759b14107ff9f429329458d0c5a2316754ba94bd1ee5f195061e87a26903"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-142-3.json",
+      "bytes": 16521,
+      "sha256": "cee547afe1238c01131c018a9c0a6d51fdd9f50b8ce2411546b1de8522756900"
+    },
+    {
+      "path": "docs/referee/round-8-review/case-143.json",
+      "bytes": 10398,
+      "sha256": "386c28fd5f2fabde6b55f6633adf100b06d7161daf2c35079dbe7c02b12158fa"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-143-0.json",
+      "bytes": 16429,
+      "sha256": "467f8877620f930c90e6ff8d0cf78b86d51cdef73fe18176d4ef32c3eabc119d"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-143-1.json",
+      "bytes": 16484,
+      "sha256": "07898fc13a141cdba767707ddf6bc7b1037ade538638aad634a4a46f34c2400e"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-143-2.json",
+      "bytes": 16513,
+      "sha256": "466b8205c679d95b93d9efde431e02150b00be25479a80404ec829b045ad54cb"
+    },
+    {
+      "path": "docs/referee/round-8-review/draws-143-3.json",
+      "bytes": 16520,
+      "sha256": "0fc847a7c7554ef30f44b5cd0f2cfda7d670e58ca13269f97a1d54830137ba35"
+    },
+    {
+      "path": "docs/referee/round-8-review/effects-assignment_dependent.json",
+      "bytes": 4938,
+      "sha256": "ad7a2658710e9d8e15c5766877988586bd770215f31842e5c33eced4f70ad0a2"
+    },
+    {
+      "path": "docs/referee/round-8-review/effects-coarse_interval.json",
+      "bytes": 4796,
+      "sha256": "60e40453eb1644bfb70ff1288b0fb8142a6f1136430ff14dce3228d08f01edd1"
+    },
+    {
+      "path": "docs/referee/round-8-review/effects-complete.json",
+      "bytes": 4581,
+      "sha256": "dd8b8760ae672e5b62d4cb3d01fdba549670367418f0fb4ee14f0cad9f1431cd"
+    },
+    {
+      "path": "docs/referee/round-8-review/summary.json",
+      "bytes": 4320,
+      "sha256": "b45eb32364edad558a292458323f6773d33f61c85c7c77ed81e005fe3f34bcfb"
+    }
+  ],
+  "canonical_sources": {
+    "output/designed-decisions.json": "b57fe281c4fed12e7633db01ebc56fc23ea31371639014e49e2fbf574b8cbe5c",
+    "output/designed_decision_draws.csv": "c6cd090377a69dcb0cc772876e1120bb61362a438625d8660b19922d23005311",
+    "output/designed_decision_effect_summary.csv": "edbeae78862500a6ca92392ed427e7d968c050fe10cc84c166b7bae17b92bdc7",
+    "output/designed_decision_effect_pairs.csv": "c56fd1cc3182165177c5a7fb26309d616c88fe0a7ccdad3c4dd29ac38510f5e0"
+  },
+  "hash_convention": "SHA256 of UTF-8 LF published bytes; CRLF is explicitly normalized for canonical sources.",
+  "scope": "Inspection copies, separate from default scientific inputs. JSON numbers round-trip their source CSV parser, within the declared numerical replication tolerance; original CSV bytes are canonical. Historical round-seven views are not rewritten."
+}

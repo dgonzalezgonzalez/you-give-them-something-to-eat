@@ -23,6 +23,31 @@ DECISION_METHODS=METHODS+['empirical_bernstein_fixed_forecast']
 GRID={'n':[8,24,64],'blocks':[8,32],'weight_shape':['equal','concentrated'],
       'effect_thousandths':[-160,0,40,160],'reporting':['complete','coarse_interval','assignment_dependent']}
 
+def reported_interval(value,reporting,arm):
+    if reporting=='complete':lower=upper=value
+    elif reporting=='coarse_interval':lower=(value//200)*200;upper=min(1000,lower+200)
+    elif reporting=='assignment_dependent':
+        reported=(value<=500) if arm==0 else (value>=500)
+        lower,upper=(value,value) if reported else (0,1000)
+    else:raise ValueError('Unknown reporting pattern')
+    if not lower<=value<=upper:raise AssertionError('Truth outside reported interval')
+    return lower,upper
+
+def empirical_best_probability(weights,selected,potential,reporting):
+    """HT reported-interval midpoints; missing intervals use midpoint 0.5.
+
+    Common HT denominator cancels in the comparison. No confidence or
+    welfare certificate is asserted for this deterministic selection rule.
+    """
+    scores=[sum(int(weights[slot])*sum(reported_interval(int(potential[a][b,slot]),reporting,a))
+                for b,slots in enumerate(selected[a]) for slot in slots) for a in [0,1]]
+    return Fraction(1 if scores[1]>scores[0] else 0) if scores[1]!=scores[0] else Fraction(1,2)
+
+def monte_carlo_summary(draws):
+    draws=np.asarray(draws,dtype=float)
+    return {'mean_actual_regret':float(draws.mean()),
+            'mc_standard_error':0.0 if np.ptp(draws)==0 else float(draws.std(ddof=1)/np.sqrt(len(draws)))}
+
 def rectangle_decision(bounds,denominator=DENOMINATOR):
     """Exact minimax mixture for a product of two mean intervals.
 
@@ -46,15 +71,7 @@ def observed_bounds(weights,selected,y,reporting,arm,total,radius):
     for block,slots in enumerate(selected):
         for slot in slots:
             w=int(weights[slot]);value=int(y[block,slot]);assigned_mass+=w
-            if reporting=='complete':lower=upper=value
-            elif reporting=='coarse_interval':lower=(value//200)*200;upper=min(1000,lower+200)
-            elif reporting=='assignment_dependent':
-                # Reporting depends on assigned arm and its observed potential
-                # outcome. Unreported units remain in the fixed target.
-                reported=(value<=500) if arm==0 else (value>=500)
-                lower,upper=(value,value) if reported else (0,1000)
-            else:raise ValueError('Unknown reporting pattern')
-            if not lower<=value<=upper:raise AssertionError('Truth outside reported interval')
+            lower,upper=reported_interval(value,reporting,arm)
             lo+=w*lower;hi+=w*upper
     logical=(Fraction(lo,1000*total),Fraction(hi+1000*(total-assigned_mass),1000*total))
     # Every design has k=n/2 in both arms, so the HT expansion factor is 2.
@@ -76,11 +93,7 @@ def empirical_bounds(weights,selected,y,reporting,arm,total,lam,table):
     for block,slots in enumerate(selected):
         for position,slot in enumerate(slots):
             w=int(weights[slot]);value=int(y[block,slot]);assigned_mass+=w
-            if reporting=='complete':lower=upper=value
-            elif reporting=='coarse_interval':lower=(value//200)*200;upper=min(1000,lower+200)
-            else:
-                reported=(value<=500) if arm==0 else (value>=500)
-                lower,upper=(value,value) if reported else (0,1000)
+            lower,upper=reported_interval(value,reporting,arm)
             lo+=w*lower;hi+=w*upper
             for sign in [-1,1]:g[sign]+=min(table[w,position,lower,sign],table[w,position,upper,sign])
     logical=(Fraction(lo,1000*total),Fraction(hi+1000*(total-assigned_mass),1000*total))
@@ -89,7 +102,7 @@ def empirical_bounds(weights,selected,y,reporting,arm,total,lam,table):
             min(logical[1],(logcap-Fraction(g[-1],DYADIC))/denominator)),logical
 
 def main():
-    start=time.perf_counter();rows=[];settings=[];cache={}
+    start=time.perf_counter();rows=[];settings=[];cache={};benchmark_rows=[];paired_rows=[];draw_rows=[]
     all_cases=list(itertools.product(*(GRID[name] for name in GRID)))
     for case_index,(n,blocks,shape,effect,reporting) in enumerate(all_cases):
         weights=np.ones(n,dtype=np.int64)
@@ -120,12 +133,22 @@ def main():
             # samples receive an independent conditional uniform ordering.
             samples.append([[order_rng.permutation(slots).tolist() for slots in controls],
                             [order_rng.permutation(slots).tolist() for slots in treated]])
+        case_fields={'case':case_index,'n':n,'blocks':blocks,'weight_shape':shape,
+                     'effect_thousandths':effect,'reporting':reporting,'repetitions':REPETITIONS}
+        regret_draws={}
+        benchmark_probabilities={'no_learning_half':[Fraction(1,2)]*REPETITIONS,
+            'empirical_best_midpoint':[empirical_best_probability(weights,selected,potential,reporting) for selected in samples]}
+        for benchmark,probabilities in benchmark_probabilities.items():
+            draws=[float(max(means)-(1-q)*means[0]-q*means[1]) for q in probabilities]
+            regret_draws[benchmark]=draws
+            benchmark_rows.append({**case_fields,'method':benchmark,**monte_carlo_summary(draws),
+                                   'comparable_certificate':False})
         for method in DECISION_METHODS:
             begin=time.perf_counter();moment=cache[key][method]
             # Stored Decimal upper is converted to an exact rational, so all
             # subsequent interval and policy calculations avoid float error.
             radius=Fraction(Decimal(moment['radius_numerator_upper']))/total if method!='empirical_bernstein_fixed_forecast' else None
-            losses=[];actual=[];coverages=[];fallbacks=[];roundings=[];q_values=[]
+            losses=[];actual=[];coverages=[];fallbacks=[];roundings=[];q_values=[];counts={Fraction(1,20):0,Fraction(1,10):0}
             for selected in samples:
                 if method=='empirical_bernstein_fixed_forecast':
                     results=[empirical_bounds(weights,selected[a],potential[a],reporting,a,total,moment['lambda'],moment['lookup_table']) for a in [0,1]]
@@ -137,26 +160,41 @@ def main():
                 q,upper,lower,rounding=rectangle_decision(bounds)
                 regret=max(means)-(1-q)*means[0]-q*means[1]
                 if regret<0 or (covered and regret>upper):raise AssertionError('Decision guarantee failed on covered draw')
+                for tolerance in counts:counts[tolerance]+=int(upper<=tolerance)
                 losses.append(float(upper));actual.append(float(regret));roundings.append(float(rounding));q_values.append(float(q))
-            rows.append({'case':case_index,'n':n,'blocks':blocks,'weight_shape':shape,
-                'effect_thousandths':effect,'reporting':reporting,'method':method,'repetitions':REPETITIONS,
+            regret_draws[method]=actual
+            rows.append({**case_fields,'method':method,
                 'true_effect':float(means[1]-means[0]),'mean_actual_regret':float(np.mean(actual)),
+                'mc_standard_error':monte_carlo_summary(actual)['mc_standard_error'],
                 'p95_actual_regret':float(np.quantile(actual,.95)),'mean_certified_loss_upper':float(np.mean(losses)),
-                'certificates_at_most_005':int(sum(x<=.05 for x in losses)),
-                'certificates_at_most_010':int(sum(x<=.10 for x in losses)),
+                'certificates_at_most_005':counts[Fraction(1,20)],
+                'certificates_at_most_010':counts[Fraction(1,10)],
                 'joint_mean_interval_coverage_count':int(sum(coverages)),'empty_region_fallback_count':int(sum(fallbacks)),
                 'maximum_rational_policy_rounding_bound':max(roundings),'mean_probability_arm_1':float(np.mean(q_values)),
                 'baseline_setup_seconds':moment['baseline_setup_seconds'],'decision_seconds':time.perf_counter()-begin})
+        for first,second in itertools.combinations(regret_draws,2):
+            differences=np.asarray(regret_draws[first])-np.asarray(regret_draws[second])
+            summary=monte_carlo_summary(differences)
+            paired_rows.append({**case_fields,'first_method':first,'second_method':second,
+                               'mean_regret_difference':summary['mean_actual_regret'],
+                               'paired_mc_standard_error':summary['mc_standard_error']})
+        draw_rows.extend({'case':case_index,'repetition':i,**{method:values[i] for method,values in regret_draws.items()}}
+                         for i in range(REPETITIONS))
         print('Designed decision case',case_index+1,'/',len(all_cases),flush=True)
     report={'scope':'Designed, known bounded potential outcomes; no new field observations. All 144 cells fixed in code, 256 uniform half-quota draws each, seed 20261001. Two arms, one normalized mean, equal costs, four Bonferroni exponential tests at cap 80 (failure <= .05), fixed weighted population target, arbitrary reporting endpoints. Baseline-only scales and directed moments followed by exact rational interval and minimax rectangular-region decisions. Coverage counts are diagnostics, not a proof or tuned pass criterion. Empty pre-fallback regions and all cases are retained. This is a different procedure from the field shared distributional event and establishes neither field minimax optimality nor superiority over all variance-adaptive or betting methods.',
         'seed':SEED,'grid':GRID,'repetitions_per_case':REPETITIONS,'methods':DECISION_METHODS,
         'event_terms':4,'event_cap':80,'failure_bound':'4/80 = 0.05',
         'decision_probability_denominator':DENOMINATOR,'baseline_moment_settings':settings,
         'empirical_bernstein_scope':'Established WoR empirical-Bernstein process with fixed baseline forecast and telescoping predictable scales, baseline-only heuristic variance proxy, explicitly randomized sample order, and directed endpoint minima quantized downward to dyadic 2**-50. Compensation uses realized scores. All subsequent interval/decision arithmetic is exact rational. This restricted adaptation is not the full optimized variance-adaptive or betting family.',
-        'rows':rows,'seconds':time.perf_counter()-start}
+        'monte_carlo_scope':'Per-cell MC standard errors use sample standard deviation / sqrt(256). Paired differences use the same assignments for both rules. Equal-cell summaries combine independent cell variances and divide by the square of cell count; they condition on the declared grid, not a sampled population of policy problems. No multiple-comparison or coverage certificate follows from these simulation standard errors.',
+        'benchmark_scope':'No-learning assigns each arm probability 1/2: exact regret abs(effect)/2, with equal-effect-grid average 0.045. Empirical-best-arm compares HT reported-interval midpoints, including midpoint 0.5 for unreported [0,1]; ties use probability 1/2. Both use the same potential population and assignment draws, and have no comparable loss certificate.',
+        'rows':rows,'benchmark_rows':benchmark_rows,'paired_rows':paired_rows,'seconds':time.perf_counter()-start}
     (ROOT/'output/designed-decisions.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf8')
     # Machine timings are retained in JSON, outside the deterministic CSV.
     pd.DataFrame([{k:v for k,v in row.items() if not k.endswith('_seconds')} for row in rows]).to_csv(ROOT/'output/designed_decisions.csv',index=False)
+    pd.DataFrame(benchmark_rows).to_csv(ROOT/'output/designed_decision_benchmarks.csv',index=False)
+    pd.DataFrame(paired_rows).to_csv(ROOT/'output/designed_decision_pairs.csv',index=False)
+    pd.DataFrame(draw_rows).to_csv(ROOT/'output/designed_decision_draws.csv',index=False)
     print('Designed decision experiment:',len(rows),'rows;',report['seconds'],'seconds',flush=True)
 
 if __name__=='__main__':main()
