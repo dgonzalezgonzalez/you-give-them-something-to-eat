@@ -23,8 +23,8 @@
     "requirements-lock.txt"
   ],
   "request_path": "docs/referee/round-9-prepared-request.txt",
-  "prepared_request_characters_lf": 11628,
-  "prepared_request_sha256_lf": "246bbc5256a551cf3da8df9dcba08c4d6149aa8bbfb77015126da9e13e4756a1",
+  "prepared_request_characters_lf": 13460,
+  "prepared_request_sha256_lf": "828c529089b7b626e04fed3b35af48c72272fb953de257df15ca31f949b04db6",
   "send_accepted": false,
   "delivery_confirmed": false,
   "recommendation": null,
@@ -53,12 +53,20 @@
   "prepared_request_updated_after_freeze": true,
   "post_freeze_eighth_audit_receipt": "docs/referee/round-8-received-audit/receipt.json",
   "completed_eighth_supplemental_report": "docs/referee/round-8-supplemental-execution-report.md",
-  "public_source_delivery_status": "first_attempt_cancelled_during_tex_installation_single_retry_running",
+  "public_source_delivery_status": "successful_single_retry_artifact_downloaded_all_frozen_file_payloads_verified",
   "new_workflow_publication": "Rejected for missing OAuth workflow scope; unpublished workflow removed, existing workflow unchanged.",
   "simulated_journal_target": "Journal of Development Economics",
   "assessment_number_for_target": 1,
   "user_authorized_target_transition_after_two_general_interest_rejections": true,
   "delivery_run_id": 36878350333,
   "delivery_first_job_id": 110423464648,
-  "delivery_retry_job_id": 110461012630
+  "delivery_retry_job_id": 110461012630,
+  "delivery_artifact_id": 11177335489,
+  "delivery_artifact_actual_bytes": 18343090,
+  "delivery_artifact_actual_sha256": "abf081e5ddb4dfce9e00364295731abf88b983aad06db0aca8faee854c999872",
+  "delivery_source_zip_actual_sha256": "7cc8d9fc77ee33f349363e6b93e5e016b5df34f49f5f6e98a034c2874f25b6db",
+  "delivery_source_regular_file_payloads_verified": 1983,
+  "delivery_actual_comparisons": 130,
+  "delivery_master_seconds": 1024.9883737564087,
+  "delivery_receipt": "docs/hosted-public-source-delivery-83a046e.json"
 }
