@@ -1,0 +1,28 @@
+{
+  "scope": "Exploratory fitted identified-diet objective only, using original eligible-household cost menu and published point ratios. Theta is a stipulated total eligible welfare share, not an estimated preference or household population proportion. Switches have sampling and missingness uncertainty. Same source village-package delivery and no cross-village interference/transport conditions remain assumed. Earlier parent manuscripts already studied broader-population effects; this frontier is not a new externality discovery.",
+  "eligible_baseline_expansion_share": 0.11571155857462465,
+  "segments": [
+    {
+      "theta_lower": 0.0,
+      "theta_upper": 0.8439747452999932,
+      "policy": "Upper",
+      "theta_lower_relative_eligible_household_weight": 0.0,
+      "theta_upper_relative_eligible_household_weight": 41.338218457040206
+    },
+    {
+      "theta_lower": 0.8439747452999932,
+      "theta_upper": 0.9142401560343854,
+      "policy": "Upper+Large",
+      "theta_lower_relative_eligible_household_weight": 41.338218457040206,
+      "theta_upper_relative_eligible_household_weight": 81.46921199847796
+    },
+    {
+      "theta_lower": 0.9142401560343854,
+      "theta_upper": 1.0,
+      "policy": "Lower+Large",
+      "theta_lower_relative_eligible_household_weight": 81.46921199847796,
+      "theta_upper_relative_eligible_household_weight": null
+    }
+  ],
+  "gikuriro_vs_lower_large_crossing_theta": 0.6923048780494099
+}

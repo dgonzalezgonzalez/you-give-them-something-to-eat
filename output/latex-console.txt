@@ -185,5 +185,5 @@ nts/type1/public/lm/lmsy8.pfb><C:/Users/dgonzalez/AppData/Local/Programs/MiKTeX
 /fonts/type1/public/lm/lmsy9.pfb><C:/Users/dgonzalez/AppData/Local/Programs/MiK
 TeX/fonts/type1/public/lm/lmtt9.pfb><C:/Users/dgonzalez/AppData/Local/Programs/
 MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on paper.pdf (39 pages, 607155 bytes).
+Output written on paper.pdf (39 pages, 607154 bytes).
 Transcript written on paper.log.

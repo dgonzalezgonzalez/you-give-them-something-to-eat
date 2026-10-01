@@ -1,0 +1,469 @@
+{
+  "scope": "Exploratory pilot from existing public data, prompted after eighth rejection. No new observations. Point ratios select identified diets. Endpoint estimates retain full baseline membership but have sampling error; these are not finite confidence bounds. Community aggregation uses fixed released baseline expansion-weight shares and maintained assignment model. No verified institutional welfare function, new spillover mechanism or leading-journal importance claimed. Frozen eighth science unchanged.",
+  "weight_diagnostics": [
+    {
+      "eligible": 0,
+      "baseline_n": 995,
+      "baseline_weight_sum": 30584.00000667529,
+      "population_share_from_baseline_weights": 0.8842884414253754,
+      "max_abs_weight_frame_discrepancy": 3.814700001214533e-06,
+      "missing_frame_counts": 0
+    },
+    {
+      "eligible": 1,
+      "baseline_n": 1793,
+      "baseline_weight_sum": 4001.99996113754,
+      "population_share_from_baseline_weights": 0.11571155857462465,
+      "max_abs_weight_frame_discrepancy": 4.76840000374068e-07,
+      "missing_frame_counts": 0
+    }
+  ],
+  "arm_means": [
+    {
+      "eligible": 0,
+      "scope": "identified",
+      "arm": "Control",
+      "mean": 4.816681212128357,
+      "identified_count": 288
+    },
+    {
+      "eligible": 0,
+      "scope": "identified",
+      "arm": "Gikuriro",
+      "mean": 4.882894035164137,
+      "identified_count": 286
+    },
+    {
+      "eligible": 0,
+      "scope": "identified",
+      "arm": "Lower",
+      "mean": 4.351002840217652,
+      "identified_count": 85
+    },
+    {
+      "eligible": 0,
+      "scope": "identified",
+      "arm": "Middle",
+      "mean": 4.6028866387643275,
+      "identified_count": 86
+    },
+    {
+      "eligible": 0,
+      "scope": "identified",
+      "arm": "Upper",
+      "mean": 5.322539730126974,
+      "identified_count": 84
+    },
+    {
+      "eligible": 0,
+      "scope": "identified",
+      "arm": "Large",
+      "mean": 4.336480430774992,
+      "identified_count": 133
+    },
+    {
+      "eligible": 0,
+      "scope": "lower_endpoint",
+      "arm": "Control",
+      "mean": 4.647882989486987,
+      "identified_count": 288
+    },
+    {
+      "eligible": 0,
+      "scope": "lower_endpoint",
+      "arm": "Gikuriro",
+      "mean": 4.694838577081405,
+      "identified_count": 286
+    },
+    {
+      "eligible": 0,
+      "scope": "lower_endpoint",
+      "arm": "Lower",
+      "mean": 4.280474465577467,
+      "identified_count": 85
+    },
+    {
+      "eligible": 0,
+      "scope": "lower_endpoint",
+      "arm": "Middle",
+      "mean": 4.553496202802821,
+      "identified_count": 86
+    },
+    {
+      "eligible": 0,
+      "scope": "lower_endpoint",
+      "arm": "Upper",
+      "mean": 5.20899620033782,
+      "identified_count": 84
+    },
+    {
+      "eligible": 0,
+      "scope": "lower_endpoint",
+      "arm": "Large",
+      "mean": 4.208889768831051,
+      "identified_count": 133
+    },
+    {
+      "eligible": 0,
+      "scope": "upper_endpoint",
+      "arm": "Control",
+      "mean": 5.038245286903154,
+      "identified_count": 288
+    },
+    {
+      "eligible": 0,
+      "scope": "upper_endpoint",
+      "arm": "Gikuriro",
+      "mean": 5.156995953576045,
+      "identified_count": 286
+    },
+    {
+      "eligible": 0,
+      "scope": "upper_endpoint",
+      "arm": "Lower",
+      "mean": 4.582851917839293,
+      "identified_count": 85
+    },
+    {
+      "eligible": 0,
+      "scope": "upper_endpoint",
+      "arm": "Middle",
+      "mean": 4.682260015178006,
+      "identified_count": 86
+    },
+    {
+      "eligible": 0,
+      "scope": "upper_endpoint",
+      "arm": "Upper",
+      "mean": 5.522921227084752,
+      "identified_count": 84
+    },
+    {
+      "eligible": 0,
+      "scope": "upper_endpoint",
+      "arm": "Large",
+      "mean": 4.561961336377284,
+      "identified_count": 133
+    },
+    {
+      "eligible": 1,
+      "scope": "identified",
+      "arm": "Control",
+      "mean": 4.874818079754252,
+      "identified_count": 498
+    },
+    {
+      "eligible": 1,
+      "scope": "identified",
+      "arm": "Gikuriro",
+      "mean": 5.029335065650604,
+      "identified_count": 522
+    },
+    {
+      "eligible": 1,
+      "scope": "identified",
+      "arm": "Lower",
+      "mean": 5.2504411829833355,
+      "identified_count": 160
+    },
+    {
+      "eligible": 1,
+      "scope": "identified",
+      "arm": "Middle",
+      "mean": 4.503452128501066,
+      "identified_count": 149
+    },
+    {
+      "eligible": 1,
+      "scope": "identified",
+      "arm": "Upper",
+      "mean": 5.17464232869284,
+      "identified_count": 164
+    },
+    {
+      "eligible": 1,
+      "scope": "identified",
+      "arm": "Large",
+      "mean": 5.356934694889162,
+      "identified_count": 237
+    },
+    {
+      "eligible": 1,
+      "scope": "lower_endpoint",
+      "arm": "Control",
+      "mean": 4.751633867419864,
+      "identified_count": 498
+    },
+    {
+      "eligible": 1,
+      "scope": "lower_endpoint",
+      "arm": "Gikuriro",
+      "mean": 4.91286658968149,
+      "identified_count": 522
+    },
+    {
+      "eligible": 1,
+      "scope": "lower_endpoint",
+      "arm": "Lower",
+      "mean": 5.065723524982744,
+      "identified_count": 160
+    },
+    {
+      "eligible": 1,
+      "scope": "lower_endpoint",
+      "arm": "Middle",
+      "mean": 4.4125312268394845,
+      "identified_count": 149
+    },
+    {
+      "eligible": 1,
+      "scope": "lower_endpoint",
+      "arm": "Upper",
+      "mean": 5.191979522355594,
+      "identified_count": 164
+    },
+    {
+      "eligible": 1,
+      "scope": "lower_endpoint",
+      "arm": "Large",
+      "mean": 5.2649645065055175,
+      "identified_count": 237
+    },
+    {
+      "eligible": 1,
+      "scope": "upper_endpoint",
+      "arm": "Control",
+      "mean": 5.094023817956708,
+      "identified_count": 498
+    },
+    {
+      "eligible": 1,
+      "scope": "upper_endpoint",
+      "arm": "Gikuriro",
+      "mean": 5.197656463643615,
+      "identified_count": 522
+    },
+    {
+      "eligible": 1,
+      "scope": "upper_endpoint",
+      "arm": "Lower",
+      "mean": 5.487899837173638,
+      "identified_count": 160
+    },
+    {
+      "eligible": 1,
+      "scope": "upper_endpoint",
+      "arm": "Middle",
+      "mean": 4.654801109766412,
+      "identified_count": 149
+    },
+    {
+      "eligible": 1,
+      "scope": "upper_endpoint",
+      "arm": "Upper",
+      "mean": 5.2036811313567535,
+      "identified_count": 164
+    },
+    {
+      "eligible": 1,
+      "scope": "upper_endpoint",
+      "arm": "Large",
+      "mean": 5.482326440411304,
+      "identified_count": 237
+    }
+  ],
+  "policy_comparisons": [
+    {
+      "population": "eligible",
+      "policy": "Control",
+      "gikuriro_minus_policy_identified_mean": 0.15451698589635132,
+      "exploratory_block_se": 0.13395268842307756,
+      "gikuriro_minus_policy_missingness_lower": -0.18115722827521807,
+      "gikuriro_minus_policy_missingness_upper": 0.4460225962237514
+    },
+    {
+      "population": "ineligible",
+      "policy": "Control",
+      "gikuriro_minus_policy_identified_mean": 0.06621282303578013,
+      "exploratory_block_se": 0.14152239710526868,
+      "gikuriro_minus_policy_missingness_lower": -0.3434067098217497,
+      "gikuriro_minus_policy_missingness_upper": 0.5091129640890584
+    },
+    {
+      "population": "community",
+      "policy": "Control",
+      "gikuriro_minus_policy_identified_mean": 0.07643063534900385,
+      "exploratory_block_se": 0.13213229932285941,
+      "gikuriro_minus_policy_missingness_lower": -0.32463256943407615,
+      "gikuriro_minus_policy_missingness_upper": 0.5018126792923177
+    },
+    {
+      "population": "eligible",
+      "policy": "Lower",
+      "gikuriro_minus_policy_identified_mean": -0.22110611733273178,
+      "exploratory_block_se": 0.17649869965847118,
+      "gikuriro_minus_policy_missingness_lower": -0.575033247492148,
+      "gikuriro_minus_policy_missingness_upper": 0.13193293866087163
+    },
+    {
+      "population": "ineligible",
+      "policy": "Lower",
+      "gikuriro_minus_policy_identified_mean": 0.5318911949464846,
+      "exploratory_block_se": 0.19230944856190776,
+      "gikuriro_minus_policy_missingness_lower": 0.11198665924211149,
+      "gikuriro_minus_policy_missingness_upper": 0.8765214879985779
+    },
+    {
+      "population": "community",
+      "policy": "Lower",
+      "gikuriro_minus_policy_identified_mean": 0.44476070234015275,
+      "exploratory_block_se": 0.169792184431793,
+      "gikuriro_minus_policy_missingness_lower": 0.0324905150620971,
+      "gikuriro_minus_policy_missingness_upper": 0.7903639864578933
+    },
+    {
+      "population": "eligible",
+      "policy": "Middle",
+      "gikuriro_minus_policy_identified_mean": 0.5258829371495377,
+      "exploratory_block_se": 0.30255639235484044,
+      "gikuriro_minus_policy_missingness_lower": 0.25806547991507767,
+      "gikuriro_minus_policy_missingness_upper": 0.7851252368041308
+    },
+    {
+      "population": "ineligible",
+      "policy": "Middle",
+      "gikuriro_minus_policy_identified_mean": 0.2800073963998093,
+      "exploratory_block_se": 0.23060589949187443,
+      "gikuriro_minus_policy_missingness_lower": 0.0125785619033989,
+      "gikuriro_minus_policy_missingness_upper": 0.6034997507732243
+    },
+    {
+      "population": "community",
+      "policy": "Middle",
+      "gikuriro_minus_policy_identified_mean": 0.30845803843533925,
+      "exploratory_block_se": 0.20809728797493593,
+      "gikuriro_minus_policy_missingness_lower": 0.0409842357962118,
+      "gikuriro_minus_policy_missingness_upper": 0.6245159188387346
+    },
+    {
+      "population": "eligible",
+      "policy": "Upper",
+      "gikuriro_minus_policy_identified_mean": -0.14530726304223585,
+      "exploratory_block_se": 0.13903276934936878,
+      "gikuriro_minus_policy_missingness_lower": -0.2908145416752639,
+      "gikuriro_minus_policy_missingness_upper": 0.005676941288021098
+    },
+    {
+      "population": "ineligible",
+      "policy": "Upper",
+      "gikuriro_minus_policy_identified_mean": -0.4396456949628371,
+      "exploratory_block_se": 0.2211952359770357,
+      "gikuriro_minus_policy_missingness_lower": -0.8280826500033474,
+      "gikuriro_minus_policy_missingness_upper": -0.05200024676177506
+    },
+    {
+      "population": "community",
+      "policy": "Upper",
+      "gikuriro_minus_policy_identified_mean": -0.40558733625689314,
+      "exploratory_block_se": 0.19940799289006642,
+      "gikuriro_minus_policy_missingness_lower": -0.7659145198162642,
+      "gikuriro_minus_policy_missingness_upper": -0.04532632943833104
+    },
+    {
+      "population": "eligible",
+      "policy": "Control+Large",
+      "gikuriro_minus_policy_identified_mean": 0.03852646705179385,
+      "exploratory_block_se": 0.12106013821984472,
+      "gikuriro_minus_policy_missingness_lower": -0.27457741176051,
+      "gikuriro_minus_policy_missingness_upper": 0.3225224195088465
+    },
+    {
+      "population": "ineligible",
+      "policy": "Control+Large",
+      "gikuriro_minus_policy_identified_mean": 0.18174241905095245,
+      "exploratory_block_se": 0.11914172155265529,
+      "gikuriro_minus_policy_missingness_lower": -0.2288194485563979,
+      "gikuriro_minus_policy_missingness_upper": 0.6147285969767085
+    },
+    {
+      "population": "community",
+      "policy": "Control+Large",
+      "gikuriro_minus_policy_identified_mean": 0.16517067803238095,
+      "exploratory_block_se": 0.11023096354917435,
+      "gikuriro_minus_policy_missingness_lower": -0.23411417379594646,
+      "gikuriro_minus_policy_missingness_upper": 0.5809169647567689
+    },
+    {
+      "population": "eligible",
+      "policy": "Lower+Large",
+      "gikuriro_minus_policy_identified_mean": -0.23738591577822868,
+      "exploratory_block_se": 0.1569074313820416,
+      "gikuriro_minus_policy_missingness_lower": -0.5741812352491129,
+      "gikuriro_minus_policy_missingness_upper": 0.1014747167164014
+    },
+    {
+      "population": "ineligible",
+      "policy": "Lower+Large",
+      "gikuriro_minus_policy_identified_mean": 0.5341112541260387,
+      "exploratory_block_se": 0.16534724764705558,
+      "gikuriro_minus_policy_missingness_lower": 0.11518022896785673,
+      "gikuriro_minus_policy_missingness_upper": 0.8874647315254158
+    },
+    {
+      "population": "community",
+      "policy": "Lower+Large",
+      "gikuriro_minus_policy_identified_mean": 0.4448401141605036,
+      "exploratory_block_se": 0.14508333901016898,
+      "gikuriro_minus_policy_missingness_lower": 0.03541313952202607,
+      "gikuriro_minus_policy_missingness_upper": 0.796516601887773
+    },
+    {
+      "population": "eligible",
+      "policy": "Middle+Large",
+      "gikuriro_minus_policy_identified_mean": 0.4679314566600258,
+      "exploratory_block_se": 0.28843184946259665,
+      "gikuriro_minus_policy_missingness_lower": 0.2018764961653643,
+      "gikuriro_minus_policy_missingness_upper": 0.7272450029005437
+    },
+    {
+      "population": "ineligible",
+      "policy": "Middle+Large",
+      "gikuriro_minus_policy_identified_mean": 0.29809638236458924,
+      "exploratory_block_se": 0.21788635307267987,
+      "gikuriro_minus_policy_missingness_lower": 0.02074684419993922,
+      "gikuriro_minus_policy_missingness_upper": 0.6268985333861945
+    },
+    {
+      "population": "community",
+      "policy": "Middle+Large",
+      "gikuriro_minus_policy_identified_mean": 0.31774826351195157,
+      "exploratory_block_se": 0.19710128665973375,
+      "gikuriro_minus_policy_missingness_lower": 0.04170563853293885,
+      "gikuriro_minus_policy_missingness_upper": 0.6385097797711614
+    },
+    {
+      "population": "eligible",
+      "policy": "Upper+Large",
+      "gikuriro_minus_policy_identified_mean": -0.14680113051923938,
+      "exploratory_block_se": 0.13823657134230652,
+      "gikuriro_minus_policy_missingness_lower": -0.29309801175962225,
+      "gikuriro_minus_policy_missingness_upper": 0.005078836735394887
+    },
+    {
+      "population": "ineligible",
+      "policy": "Upper+Large",
+      "gikuriro_minus_policy_identified_mean": -0.4315650388803297,
+      "exploratory_block_se": 0.2197342388938548,
+      "gikuriro_minus_policy_missingness_lower": -0.8202076810324197,
+      "gikuriro_minus_policy_missingness_upper": -0.043804475854060776
+    },
+    {
+      "population": "community",
+      "policy": "Upper+Large",
+      "gikuriro_minus_policy_identified_mean": -0.3986145632180662,
+      "exploratory_block_se": 0.19807349801120358,
+      "gikuriro_minus_policy_missingness_lower": -0.7592149996611095,
+      "gikuriro_minus_policy_missingness_upper": -0.03814811156604403
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "scope": "Author-side independent source-file replay of pilot dietary point/endpoint arm ratios. Original public Stata source read directly; no imports of pilot, scoring or estimator modules. Defined group mapping/estimand are necessarily shared. Not external scientific replication, finite confidence certification, institutional preference identification or novelty evidence.",
+  "source_sha256": "ae21b9766e303b55667bb5deab26a10b494bd06fc70ed2bc36d245e7df31e4db",
+  "compared_arm_ratios": 36,
+  "maximum_absolute_discrepancy": 1.7763568394002505e-13,
+  "tolerance": 1e-09,
+  "baseline_counts": {
+    "0.0": 995,
+    "1.0": 1793
+  },
+  "source_program_count": 248,
+  "passed": true
+}

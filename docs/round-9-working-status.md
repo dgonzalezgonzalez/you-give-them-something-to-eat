@@ -1,0 +1,9 @@
+# Development after the eighth genuine rejection
+
+The eighth report remains Reject. Its independent full synthetic reconstruction confirms the performance additions, but its Rwanda-data/PDF execution remains incomplete. A supplemental execution request for the same v0.8.0 freeze was accepted; that is not a ninth assessment. No ninth freeze or review exists yet.
+
+One residual recipient-specific phrase is corrected to “stronger observed assignment response.” Three local project PDF passes succeeded. The current local PDF has 39 pages and SHA256 `d3539409de5e6d1fd771fa69dfa11395c6dbd4356d6b3d948fba411a55a39064`; the changed introduction page 2 was rendered/inspected and the log has no overfull, undefined or LaTeX-warning matches. Earlier all-page QA and LR screening concern their historical PDF hashes. No new full cold local master, all-page visual review, LR screen or hosted receipt is attributed to this minor phrase correction.
+
+Exploratory population/decision work is preserved in `exploration/README.md`, with executed scripts and every pilot comparison. Broader-population effects were already discussed in earlier versions of the original study; no rediscovery, new field observations or identified spillover channel is claimed. The potential allocation extension remains preliminary. It is separate from default canonical exhibits and finite events, and does not establish general-interest importance.
+
+The user chose public sources only. The prepared investigator email remains unsent. Released-script searches found balance analyses but no original randomization generator. The original assignment law, operational costs/objectives, independent full replication, durable DOI preservation and acceptance remain unresolved. Goal active; eight genuine Reject recommendations retained.
