@@ -84,3 +84,8 @@ Optional harmonic allocation search completed in 711.336830 seconds. Mean: 30 it
 ### Sixth revision: actual hosted execution
 
 Scientific source `9b902642b371487b5c0912c7bbba3929b80f69dd` passed [hosted run 36795813270](https://github.com/dgonzalezgonzalez/you-give-them-something-to-eat/actions/runs/36795813270): 104/104 comparisons, 34-page PDF, master 299.543767 seconds. Artifact ZIP downloaded and SHA256 matched GitHub; actual scope in `docs/hosted-reproduction-9b90264.json`. This is author-initiated CI, without a claim of independent scientific replication, PDF byte/text identity across operating systems or DOI preservation. The sixth frozen submission is `v0.6.0`, commit `50b87f33654b080ee3d554d827ae8786b7708f20`; the genuine Pro referee is responding. No sixth recommendation has been received.
+
+
+### Sixth referee outcome
+
+The genuine Pro sixth report recommends **Reject** at the unchanged leading general-interest standard. It independently authenticated six harmonic models, recomputed eighteen supports with fresh candidates, checked 108 exact duals/160-digit tangents, and reproduced all 33 design rows. It did not execute microdata, regenerate empirical constants, inspect the PDF or download/hash the hosted artifact. Its omitted weight-sensitive product bound reduces the concentrated-weight example's comparison gain from 49.23% to about 5.89%. Report and actual scope are preserved under `docs/referee/`; its audit ZIP download timed out and only the displayed summary was reconstructed. Methodological and economic importance remain unresolved. Sixth freeze is preserved; substantive seventh-revision work is beginning without an acceptance claim.

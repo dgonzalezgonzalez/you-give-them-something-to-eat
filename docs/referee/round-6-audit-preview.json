@@ -1,0 +1,221 @@
+{
+  "review_tag": "v0.6.0",
+  "resolved_review_commit": "50b87f33654b080ee3d554d827ae8786b7708f20",
+  "hosted_scientific_commit": "9b902642b371487b5c0912c7bbba3929b80f69dd",
+  "provenance": {
+    "code_tree_equal": "32570d7d4b9f29dce8bb6bce532142f1aeebbcc1",
+    "data_tree_equal": "b153e5bb866759fc6d491b9f35fe870bd7775d6c",
+    "paper_tree_equal": "9dd2c54a1e06666f8bec64802d026e4d1c2346c0",
+    "output_tree_equal": "9d1b1ba33de050fb688b703d4dfd40757fefeb1e"
+  },
+  "execution_scope": {
+    "microdata": false,
+    "empirical_HT_or_moment_regeneration": false,
+    "full_master": false,
+    "Stata": false,
+    "manuscript_PDF_read_or_rendered": false,
+    "hosted_artifact_download_or_local_hash": false,
+    "original_18_harmonic_witness_replay": false,
+    "fresh_harmonic_receipt_candidates_and_directed_supports": true,
+    "authenticated_harmonic_model_files": 6,
+    "fresh_supports": 18,
+    "exact_dual_and_160digit_tangent_checks": 108,
+    "independent_design_catalogue_rows": 33
+  },
+  "access_limits": [
+    "Direct codeload retrieval failed with name resolution error.",
+    "GitHub text fetch rejected the binary manuscript PDF; web raw-PDF retrieval failed.",
+    "Did not reconstruct all public microdata parts.",
+    "Hosted API metadata inspected, not the artifact ZIP bytes."
+  ],
+  "harmonic_model_results": [
+    {
+      "objective": "mean",
+      "upper_recomputed": 6.615934958571769,
+      "upward_display": "6.616",
+      "canonical_upper": 6.615935003947654,
+      "difference_from_canonical_max": -4.5375885271425886e-8,
+      "maximum_absolute_comparator_difference": 5.165207817015016e-8,
+      "expected_cost_fraction": "29649739083667948252700079/351843720888320000000000",
+      "expected_cost_float": 84.26962689233036,
+      "q_numerators": [
+        103747744257,
+        58226316832,
+        292797321646,
+        249008856471,
+        292309421021,
+        3910339773
+      ],
+      "denominator": 1000000000000,
+      "upper_by_comparator": {
+        "Control": 6.209621750813231,
+        "Gikuriro": 6.615934958571769,
+        "Lower": 6.488991289826977,
+        "Middle": 6.585390109793183,
+        "Upper": 6.496470376749492,
+        "Control+Large": 6.5786396679286625,
+        "Lower+Large": 6.318684942260313,
+        "Middle+Large": 6.499328713303554,
+        "Upper+Large": 6.456568673131765
+      }
+    },
+    {
+      "objective": "shortfall_6",
+      "upper_recomputed": 0.5571867484429327,
+      "upward_display": "0.558",
+      "canonical_upper": 0.5571867884258052,
+      "difference_from_canonical_max": -3.998287245732257e-8,
+      "maximum_absolute_comparator_difference": 1.3193768855224164e-7,
+      "expected_cost_fraction": "1370031947596110720084746893/17592186044416000000000000",
+      "expected_cost_float": 77.8772998498943,
+      "q_numerators": [
+        211562566021,
+        192570449276,
+        208562541161,
+        180187224115,
+        206243633928,
+        873585499
+      ],
+      "denominator": 1000000000000,
+      "upper_by_comparator": {
+        "Control": 0.5413079118049963,
+        "Gikuriro": 0.5571867484429327,
+        "Lower": 0.5445324602806227,
+        "Middle": 0.5522418494991406,
+        "Upper": 0.5441107130335803,
+        "Control+Large": 0.5537275260904541,
+        "Lower+Large": 0.5434238854358233,
+        "Middle+Large": 0.5521956517350411,
+        "Upper+Large": 0.543619049534952
+      }
+    }
+  ],
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "harmonic_independent_checks": {
+    "scope": "Exact Fraction feasibility of 108 fresh arm duals and separate 160-digit evaluation of their convex tangent supports, conditional on six authenticated current harmonic model receipts. Not microdata execution or regeneration of model constants.",
+    "arms_checked": 108,
+    "all_exact_duals_feasible": true,
+    "minimum_exact_dual_slack": "0",
+    "maximum_tangent_upper_violation_160_digit": "0.0",
+    "maximum_gradient_error_allowance_violation_160_digit": "0.0"
+  },
+  "catalogue_comparison": {
+    "scope": "Independent direct finite sums, compared with manually transcribed frozen output/quota_design_benchmarks.csv; not household inference or interval-certified field execution.",
+    "compared_rows": 33,
+    "max_absolute_difference": 1.0219602941674566e-13,
+    "quota_vs_harmonic_pct": 49.22942346204787,
+    "quota_vs_product_pct": 5.887015023755704,
+    "fraction_of_harmonic_to_quota_gain_recovered_by_product": 0.9354891236664811
+  },
+  "catalogue_details": {
+    "scope": "Independent equation-level checks. No household data or author modules. \n\n All numbers are floating-point diagnostics, not interval-certified field bounds. \n The extra product bound is derived from negative association of inclusion \n indicators; it is not part of the submitted manuscript. \n ",
+    "rows": 33,
+    "coefficient_and_predictable_scale_checks": "exact fractions, all 1<=k<n<=30",
+    "telescoping_max_error": "0",
+    "selected_n12_k6": [
+      {
+        "n": 12,
+        "k": 6,
+        "weight_shape": "equal",
+        "blocks": 22,
+        "quota_radius": 0.13284833182675485,
+        "hoeffding_radius": 0.1806567683530972,
+        "serfling_radius": 0.13797888596402844,
+        "harmonic_radius": 0.1359766541728581,
+        "selected_scale": 1,
+        "quota_over_martingale": 0.9769936805319065,
+        "product_bound_radius": 0.2540875324219652,
+        "product_lambda": 0.2597776274661451
+      },
+      {
+        "n": 12,
+        "k": 6,
+        "weight_shape": "alternating",
+        "blocks": 22,
+        "quota_radius": 0.1992724977401321,
+        "hoeffding_radius": 0.27098515252964583,
+        "serfling_radius": 0.20696832894604267,
+        "harmonic_radius": 0.2039649812592872,
+        "selected_scale": 1,
+        "quota_over_martingale": 0.9769936805319053,
+        "product_bound_radius": 0.2830714905604573,
+        "product_lambda": 0.11744989586240231
+      },
+      {
+        "n": 12,
+        "k": 6,
+        "weight_shape": "concentrated",
+        "blocks": 22,
+        "quota_radius": 0.3944921787461566,
+        "hoeffding_radius": 1.032324390589127,
+        "serfling_radius": 0.7884507769373054,
+        "harmonic_radius": 0.7770094524163321,
+        "selected_scale": 2,
+        "quota_over_martingale": 0.5077057653795213,
+        "product_bound_radius": 0.4191687032833281,
+        "product_lambda": 0.10172443489159402
+      }
+    ],
+    "quota_support_exceedances": 4,
+    "harmonic_support_exceedances": 5,
+    "boundary_scale_cases": [
+      {
+        "n": 6,
+        "k": 3,
+        "weight_shape": "concentrated"
+      },
+      {
+        "n": 10,
+        "k": 5,
+        "weight_shape": "concentrated"
+      },
+      {
+        "n": 12,
+        "k": 6,
+        "weight_shape": "concentrated"
+      }
+    ],
+    "seconds": 2.8266363820000038
+  },
+  "extra_comparator": {
+    "source_theorem": "Negative association of simple-random-sample inclusion indicators, Joag-Dev and Proschan (1983), DOI 10.1214/aos/1176346079",
+    "n": 12,
+    "k": 6,
+    "weights": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      10
+    ],
+    "blocks": 22,
+    "penalty": "log(5520)",
+    "fixed_scale": "0.1",
+    "radius_at_fixed_scale_100digit": "0.4192056299726450093904929436730284319039210155261476675844973961731404863715526174543126192123934208",
+    "optimized_scalar_radius_diagnostic": 0.4191687032833281,
+    "paper_quota_radius": 0.3944921787462588,
+    "paper_harmonic_radius": 0.7770094524163321,
+    "scope": "Independent theoretical consequence and numerical design diagnostic; not run on Rwanda microdata and not an operational allocation."
+  },
+  "hosted_metadata_checked": {
+    "run_id": 36795813270,
+    "status": "completed",
+    "conclusion": "success",
+    "source_commit": "9b902642b371487b5c0912c7bbba3929b80f69dd",
+    "artifact_id": 11133194460,
+    "artifact_size_bytes": 1950207,
+    "API_digest": "2102a0a11b3d0c4cfa8890a54786ff11a7fd7511bd3c6c4ffa65a924ab46b3e7",
+    "caveat": "API metadata corroboration only; artifact not downloaded or hashed by referee."
+  }
+}

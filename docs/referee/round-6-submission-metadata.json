@@ -1,5 +1,5 @@
 {
-  "status": "submitted_response_running",
+  "status": "completed_reject",
   "prepared_at_utc": "2026-10-01T00:46:49.998330+00:00",
   "referee_chat_url": "https://chatgpt.com/c/6abd01e3-4184-83ed-9ff0-e9475053b958",
   "scientific_source": "9b902642b371487b5c0912c7bbba3929b80f69dd",
@@ -11,7 +11,7 @@
   "hosted_comparisons": 104,
   "hosted_master_seconds": 299.54376697540283,
   "attachment_delivered": false,
-  "recommendation": null,
+  "recommendation": "Reject at unchanged leading general-interest economics-journal standard",
   "submitted_at_recorded_utc": "2026-10-01T00:50:34.139357+00:00",
   "freeze_commit": "50b87f33654b080ee3d554d827ae8786b7708f20",
   "tag_object": "0a53b51869f667bf82e52d6f8b943100e436b851",
@@ -22,5 +22,30 @@
   "delivered_request_sha256": "2163cb9ab67a608e8a03552d7db3ef3e8952d326ed186b884328cb23b33ebbaf",
   "whole_delivered_request_matches": true,
   "links_verified": 9,
-  "delivery_method": "Ordinary text through documented browser textbox fill; native AX setValue showed stale state and did not send. Actual rendered whole text and copied sent message verified."
+  "delivery_method": "Ordinary text through documented browser textbox fill; native AX setValue showed stale state and did not send. Actual rendered whole text and copied sent message verified.",
+  "local_capture_bytes": 7433,
+  "local_capture_raw_sha256": "a2c135dcbe72a5a8f8f234444a3eba5e084008ca16ffe9cd60de274dc80455b4",
+  "delivered_request_hash_convention": "UTF-8 text with LF newlines, matching published Git contents; local raw capture digest is recorded separately.",
+  "report_recorded_at_utc": "2026-10-01T01:17:39.902045+00:00",
+  "report_characters_lf": 30597,
+  "report_sha256_lf": "22755c45fbf4089e93efecba03bef3329be298bb16e938fbb1df75052488fc64",
+  "local_report_raw_sha256": "22755c45fbf4089e93efecba03bef3329be298bb16e938fbb1df75052488fc64",
+  "report_path": "docs/referee/round-6-report.md",
+  "audit_download": "One native ZIP download attempt timed out after 15000ms; original ZIP not received or executed.",
+  "audit_preview": "docs/referee/round-6-audit-preview.json; reconstructed displayed JSON via overlapping visible preview text. Original downloaded bytes are not authenticated.",
+  "independent_referee_scope": {
+    "authenticated_harmonic_models": 6,
+    "fresh_harmonic_supports": 18,
+    "original_witness_replay": false,
+    "exact_dual_and_160_digit_checks": 108,
+    "catalogue_cases": 33,
+    "catalogue_max_absolute_difference": 1.0219602941674566e-13,
+    "microdata_execution": false,
+    "empirical_constant_regeneration": false,
+    "full_master": false,
+    "Stata": false,
+    "PDF_read_compile_or_render": false,
+    "hosted_artifact_download_or_hash": false,
+    "hosted_metadata": true
+  }
 }
