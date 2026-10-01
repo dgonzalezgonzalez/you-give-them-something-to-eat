@@ -1,6 +1,6 @@
 {
   "round": 8,
-  "status": "verified_scientific_source_ready_for_freeze_and_submission",
+  "status": "delivered_verified_referee_active",
   "review_ref": "v0.8.0",
   "scientific_source": "aa8667ccde0e00d4c5aa182a89d88b4065a6dda6",
   "prior_recommendations": 7,
@@ -12,5 +12,17 @@
   "actual_hosted_checks": 118,
   "actual_hosted_master_seconds": 1024.5666828155518,
   "local_pdf_sha256": "cd31b40121e0610321cd978b87e63e8ad300d41da15f0ce1701369ede0e07292",
-  "scope": "No eighth referee request has been sent yet. Author CI and artifact inspection are not independent scientific replication or real journal acceptance. Actual immutable tag identity and delivery are recorded after verification."
+  "scope": "Same author-designated existing Pro referee chat; no attachment or new conversation. Full delivered user-message text confirmed through supported app read. Referee active; no eighth report received or recommendation inferred.",
+  "freeze_commit": "50c96dcea50b5aac25e5beb0912f54ff26e1b47b",
+  "annotated_tag_object": "4ce1462a84229d9c924c813cbc9cd506dc60cda7",
+  "tag_verified_through_github_api": true,
+  "science_tree_diff_from_hosted_source_empty": true,
+  "request_characters": 9344,
+  "request_lf_sha256": "4c9043ef39f801df047f355760aa598c996ced6c37c1f23bc3792e56788874e5",
+  "send_accepted": true,
+  "submission_turn_id": "ada88880-abe0-43d6-bbbe-46962582b1e4",
+  "delivery_confirmed_from_supported_chat_read": true,
+  "delivered_request_characters": 9343,
+  "delivered_request_lf_sha256": "157f0c2c547d38e1e7f6152d4b922afcf0629df5be92b984d36c43c386590576",
+  "delivery_comparison": "All content matches the prepared request exactly; app removed one final LF. The delivered file preserves the actual 9343-character message without adding that newline."
 }
