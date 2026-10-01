@@ -46,14 +46,28 @@ try:
     for file in sorted((root/'output/tables').glob('*.tex')):
         relative=file.relative_to(root)
         checks[relative.as_posix()]=file.read_text(encoding='utf8')==(dest/relative).read_text(encoding='utf8')
-    for relative in ['output/policies.json','output/numbers.json','output/revision-numbers.json','output/decision-numbers.json','output/distribution-numbers.json','output/quota-comparison-numbers.json','paper/results.tex','paper/revision-results.tex','paper/decision-results.tex','paper/distribution-results.tex','paper/quota-comparison-results.tex','docs/output-map.csv']:
+    for relative in ['output/policies.json','output/numbers.json','output/revision-numbers.json','output/decision-numbers.json','output/distribution-numbers.json','output/quota-comparison-numbers.json','output/community-numbers.json','paper/results.tex','paper/revision-results.tex','paper/decision-results.tex','paper/distribution-results.tex','paper/quota-comparison-results.tex','paper/community-results.tex','docs/output-map.csv']:
         checks[relative]=(root/relative).read_text(encoding='utf8')==(dest/relative).read_text(encoding='utf8')
-    for leaf in ['quota-enclosure-validation.json','quota-dp-validation.json','empbern-quota-validation.json','designed-decision-validation.json','regional-minimax-validation.json','quota-allocation-validation.json']:
+    for leaf in ['quota-enclosure-validation.json','quota-dp-validation.json','empbern-quota-validation.json','designed-decision-validation.json','regional-minimax-validation.json','quota-allocation-validation.json','community-validation.json']:
         actual=json.loads((dest/'output'/leaf).read_text())
         checks['cold_'+leaf]=actual['all_passed'] and bool(actual['checks']) and all(actual['checks'].values())
     baseline=json.loads((root/'output/quota-loss-bound.json').read_text())
     cold=json.loads((dest/'output/quota-loss-bound.json').read_text())
     checks['quota_event_and_outward_constants']=all(baseline[key]==cold[key] for key in ['event_terms','event_cap','transformations','models'])
+    community=json.loads((root/'output/community-decision.json').read_text())
+    cold_community=json.loads((dest/'output/community-decision.json').read_text())
+    checks['community_fixed_events_and_menus']=all(community[key]==cold_community[key] for key in ['family_size','alpha','quota_mean_test_family','quota_mean_test_cap','input_hashes','baseline_eligible_weight_share_exact','menus'])
+    def community_display(row):
+        from fractions import Fraction
+        from decimal import localcontext,ROUND_FLOOR
+        with localcontext() as ctx:
+            ctx.prec=100
+            f=Fraction(row['exact_regional_lower']);lower=(Decimal(f.numerator)/Decimal(f.denominator)).quantize(Decimal('.001'),rounding=ROUND_FLOOR)
+            f=Fraction(row['exact_proposal_upper']);upper=(Decimal(f.numerator)/Decimal(f.denominator)).quantize(Decimal('.001'),rounding=ROUND_CEILING)
+        return lower,upper
+    checks['community_regional_outward_displays']=len(community['decisions'])==len(cold_community['decisions'])==12 and all(
+        (a['method'],a['cost_convention'],a['population'],a['theta_interval'])==(b['method'],b['cost_convention'],b['population'],b['theta_interval']) and community_display(a)==community_display(b)
+        for a,b in zip(community['decisions'],cold_community['decisions']))
     checks['quota_display_bounds']=all(a['reported_conservative_loss_upper']==b['reported_conservative_loss_upper'] and b['conditional_loss_upper']<=float(a['reported_conservative_loss_upper']) for a,b in zip(baseline['scenarios'],cold['scenarios']))
     actual=json.loads((dest/'output/quota-benchmark-validation.json').read_text())
     checks['cold_classical_moment_validation']=actual['all_passed'] and actual['passed']==actual['checks'] and actual['independent_moment_inequalities']>0

@@ -97,6 +97,7 @@ quecounter.sty)))
 (C:\Users\dgonzalez\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.st
 y)) (results.tex) (revision-results.tex) (decision-results.tex)
 (distribution-results.tex) (quota-comparison-results.tex)
+(community-results.tex)
 (C:\Users\dgonzalez\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd)
 (C:\Users\dgonzalez\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend
 -pdftex.def) (paper.aux)
@@ -127,11 +128,11 @@ ltx)) (paper.out) (paper.out)
 [1{C:/Users/dgonzalez/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/User
 s/dgonzalez/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/User
 s/dgonzalez/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
-[2] [3] [4{C:/Users/dgonzalez/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/
-lm-mathit.enc}{C:/Users/dgonzalez/AppData/Local/Programs/MiKTeX/fonts/enc/dvips
-/lm/lm-mathsy.enc}{C:/Users/dgonzalez/AppData/Local/Programs/MiKTeX/fonts/enc/d
-vips/lm/lm-rm.enc}] [5{C:/Users/dgonzalez/AppData/Local/Programs/MiKTeX/fonts/e
-nc/dvips/lm/lm-mathex.enc}] [6] (../output/tables/design.tex) [7]
+[2{C:/Users/dgonzalez/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathi
+t.enc}{C:/Users/dgonzalez/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-r
+m.enc}] [3{C:/Users/dgonzalez/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/
+lm-mathsy.enc}{C:/Users/dgonzalez/AppData/Local/Programs/MiKTeX/fonts/enc/dvips
+/lm/lm-mathex.enc}] [4] [5] [6] (../output/tables/design.tex)
 (../output/tables/estimand_scope.tex
 Underfull \hbox (badness 1616) in paragraph at lines 5--5
 []|\T1/lmr/m/n/10 Weighted re-leased base-
@@ -147,21 +148,24 @@ Underfull \hbox (badness 2384) in paragraph at lines 9--10
 
 Underfull \hbox (badness 1533) in paragraph at lines 9--10
 \T1/lmr/m/n/10 spillovers are ad-di-tional main-tained as-
-) [8] [9] [10] [11] (../output/tables/block_stress.tex) [12]
-(../output/tables/decision_bounds.tex) [13]
-(../output/tables/information_benchmarks.tex) [14]
-(../output/tables/distribution_allocations.tex) [15 <../output/figures/informat
-ion_regions.pdf>] [16] (../output/tables/institutional_rules.tex) [17]
-(../output/tables/distribution_costs.tex) [18]
-(../output/tables/child_cohorts.tex) [19] [20] [21] [22] [23] [24] [25]
-[26] [27] [28] (../output/tables/unused_resource_values.tex)
-(../output/tables/secondary.tex) (../output/tables/baseline_child_effects.tex)
+) [7] [8] (../output/tables/community_comparisons.tex) [9]
+(../output/tables/community_frontiers.tex) [10]
+(../output/tables/decision_bounds.tex) [11]
+(../output/tables/information_benchmarks.tex) [12]
+(../output/tables/child_cohorts.tex) [13] [14] [15] [16] [17] [18] [19]
+[20] [21] [22] [23] (../output/tables/block_stress.tex) [24]
+(../output/tables/distribution_allocations.tex) [25] [26 <../output/figures/inf
+ormation_regions.pdf>] (../output/tables/institutional_rules.tex) [27]
+(../output/tables/distribution_costs.tex) [28] [29] [30]
+(../output/tables/community_regional_bounds.tex)
+(../output/tables/unused_resource_values.tex) (../output/tables/secondary.tex)
+(../output/tables/baseline_child_effects.tex)
 (../output/tables/diet_intervals.tex) (../output/tables/original_crosswalk.tex)
 (../output/tables/additional_populations.tex) (../output/tables/retention.tex)
-[29] [30] [31] [32] (../output/tables/quota_method_comparison.tex) [33]
-(../output/tables/quota_design_comparison.tex) [34] [35] [36] [37]
+[31] [32] [33] [34] (../output/tables/quota_method_comparison.tex)
+(../output/tables/quota_design_comparison.tex) [35] [36] [37] [38]
 (../output/tables/designed_decision_performance.tex)
-(../output/tables/designed_decision_effects.tex) [38] [39] (paper.aux) )
+(../output/tables/designed_decision_effects.tex) [39] [40] [41] (paper.aux) )
 (see the transcript file for additional information)<C:/Users/dgonzalez/AppData
 /Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/dgonzalez/App
 Data/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/dgonzalez
@@ -185,5 +189,5 @@ nts/type1/public/lm/lmsy8.pfb><C:/Users/dgonzalez/AppData/Local/Programs/MiKTeX
 /fonts/type1/public/lm/lmsy9.pfb><C:/Users/dgonzalez/AppData/Local/Programs/MiK
 TeX/fonts/type1/public/lm/lmtt9.pfb><C:/Users/dgonzalez/AppData/Local/Programs/
 MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on paper.pdf (39 pages, 607154 bytes).
+Output written on paper.pdf (41 pages, 631676 bytes).
 Transcript written on paper.log.

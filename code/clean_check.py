@@ -19,10 +19,13 @@ files+=list((root/'output/tables').glob('*.tex'))
 files+=list((root/'output/figures').glob('*.png'))
 files+=[root/'output/policies.json',root/'output/numbers.json',root/'output/revision-numbers.json',root/'output/decision-numbers.json',root/'output/distribution-numbers.json',root/'output/quota-comparison-numbers.json',root/'paper/results.tex',root/'paper/revision-results.tex',root/'paper/decision-results.tex',root/'paper/distribution-results.tex',root/'paper/quota-comparison-results.tex',root/'docs/output-map.csv']
 checks={}
+files.extend([root/'output/community-numbers.json',root/'paper/community-results.tex'])
 for file in files:
     relative=file.relative_to(root)
     checks[str(relative).replace('\\','/')]=hashlib.sha256(file.read_bytes()).hexdigest()==hashlib.sha256((dest/relative).read_bytes()).hexdigest()
 original=pymupdf.open(root/'paper/paper.pdf');copy=pymupdf.open(dest/'paper/paper.pdf')
+community=json.loads((dest/'output/community-validation.json').read_text())
+checks['cold_community_validation']=community['all_passed'] and bool(community['checks']) and all(community['checks'].values())
 checks['paper_pdf_page_text']=len(original)==len(copy) and all(a.get_text()==b.get_text() for a,b in zip(original,copy))
 report={'scope':'Fresh copy with no prior outputs; same installed interpreter and pinned statistical package versions, not a fresh package installation',
         'checked_files':len(files),'checks':checks,'all_passed':all(checks.values()),

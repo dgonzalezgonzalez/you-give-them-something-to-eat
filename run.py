@@ -27,6 +27,10 @@ def main():
             raise RuntimeError('Supplementary reference mismatch: '+filename)
     for script in ['code/estimate.py','code/referee_revision.py','code/policy_allocation.py','code/distribution_regions.py','code/institutional_allocations.py','code/child_cohorts.py','code/finite_cluster.py','code/validate_blocked_inference.py','code/quota_allocation.py','code/validate_quota_enclosures.py','code/validate_quota_dp.py','code/validate_empbern_quota.py','code/validate_quota_allocation.py','code/quota_benchmarks.py','code/regional_lower_bounds.py','code/validate_regional_lower_bounds.py','code/benchmark_quota_designs.py','code/computation_benchmarks.py','code/designed_decisions.py','code/validate_designed_decisions.py','code/validate_quota_benchmarks.py','code/validate_quota_benchmark_receipts.py','code/build_exhibits.py','code/build_revision_exhibits.py','code/build_decision_exhibits.py','code/build_distribution_exhibits.py','code/build_quota_comparison_exhibits.py','code/validate.py','code/validate_revision.py','code/validate_decision.py','code/validate_distribution_regions.py','code/validate_institutional_allocations.py']:
         subprocess.run([sys.executable,script],check=True)
+    # Separate population events and observed-diet sensitivities; never select
+    # or intersect them with earlier confidence constructions after outcomes.
+    for script in ['code/community_decision.py','code/validate_community_decision.py','code/build_community_exhibits.py']:
+        subprocess.run([sys.executable,script],check=True)
     if args.pdf:
         compiler=os.environ.get('PDFLATEX') or shutil.which('pdflatex')
         if compiler is None:

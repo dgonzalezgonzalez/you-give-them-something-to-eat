@@ -1,0 +1,17 @@
+{
+  "CommunityEligibleShare": "11.57",
+  "CommunityEligibleLowerLarge": "-0.237",
+  "CommunityEligibleUpper": "-0.145",
+  "CommunityIneligibleLowerLarge": "0.534",
+  "CommunityIneligibleUpper": "-0.440",
+  "CommunityAggregateLowerLarge": "0.445",
+  "CommunityAggregateUpper": "-0.406",
+  "CommunityFirstSwitch": "84.4",
+  "CommunitySecondSwitch": "91.4",
+  "CommunityFirstPriority": "41.3",
+  "CommunitySecondPriority": "81.5",
+  "CommunityEligibleQuotaUpper": "7.772",
+  "CommunityAggregateQuotaUpper": "7.477",
+  "CommunityUnknownQuotaUpper": "7.777",
+  "CommunityIneligibleAncovaHolm": "0.209"
+}

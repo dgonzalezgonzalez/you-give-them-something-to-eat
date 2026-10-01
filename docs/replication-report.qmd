@@ -8,7 +8,9 @@ number-sections: true
 
 # Paper and audit scope
 
-*You give them something to eat: Dietary Diversity, Coverage, and Catholic Aid in Rwanda*. Seventh revision reviewed Reject; eighth revision in progress; all seven genuine recommendations Reject at the unchanged leading general-interest standard. Public branch codex/research. Internal self-audit follows the retained public JPE TEMPLATE.qmd criteria/MIT attribution. No journal manuscript ID, official JPE certification or independent full replication is asserted.
+*You give them something to eat: Whose Diets Count in the Cash Benchmark?* Eight genuine recommendations remain Reject at the unchanged leading general-interest standard. Public branch codex/research; current population-choice development has no ninth freeze or report. Historical version-specific evidence below remains attached to its actual source. Internal self-audit follows the retained public JPE TEMPLATE.qmd criteria/MIT attribution. No journal manuscript ID, official JPE certification or independent full replication is asserted.
+
+The developing default master adds two standalone population mean events, fixed baseline eligible/ineligible cohorts, exact population-weight games, a 64-test exploratory ANCOVA Holm family, independent canonical-input regression/ratio/game/moment replay and three population tables. Six macro files and 23 cited tables are now generated. The fitted aggregate combines group ratios using baseline expansion shares; it is not a pooled respondent ratio or a reproduction of the earlier parent TCE specification. Missingness, eligibility/receipt, historical assignment-law, cost, transport and prior-art boundaries are retained. Final-source cold/hosted and visual/style evidence must be recorded after actual execution; historical 118-check successes exclude this extension. See docs/population-decision-methods.md and docs/round-9-working-status.md.
 
 # Data, rights and sources
 
