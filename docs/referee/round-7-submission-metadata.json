@@ -1,5 +1,5 @@
 {
-  "status": "prepared_not_submitted",
+  "status": "submitted_awaiting_genuine_report",
   "prepared_at_utc": "2026-10-01T08:43:56.536767+00:00",
   "referee_destination": "Existing author-designated ChatGPT Pro conversation; private URL omitted.",
   "scientific_source": "c8af01aed8725f9ef06fc0974e35ec363ab418de",
@@ -14,5 +14,18 @@
   "prior_genuine_reports": 6,
   "prior_recommendations": "Reject at unchanged leading general-interest standard",
   "recommendation": null,
-  "whole_delivered_request_matches": false
+  "whole_delivered_request_matches": true,
+  "submitted_at_recorded_utc": "2026-10-01T08:48:11.215208+00:00",
+  "freeze_commit": "77c0afa2708814f9d6e83a5a211fd3ed7e5a78d3",
+  "tag_object": "be00bd4671da035290ab17d182e1256ff728d6af",
+  "tag_resolution_verified_via_github": true,
+  "model": "Pro",
+  "thinking_power": "5 de 5",
+  "delivered_request_characters_lf": 7244,
+  "delivered_request_sha256_lf": "f6191fd67c1d7e75b62a81f98cbe465dec8f8690f3eb29ee455531328db04ce6",
+  "local_capture_bytes": 7246,
+  "local_capture_raw_sha256": "f6191fd67c1d7e75b62a81f98cbe465dec8f8690f3eb29ee455531328db04ce6",
+  "links_verified": 7,
+  "delivery_method": "Ordinary text using documented browser textbox fill; whole composer and copied delivered message verified. No attachment delivered.",
+  "delivered_request_hash_convention": "UTF-8 LF, matching published Git contents; raw local capture digest recorded separately."
 }

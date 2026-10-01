@@ -1,6 +1,6 @@
 # Data and Code for: You give them something to eat: Dietary Diversity, Coverage, and Catholic Aid in Rwanda
 
-Diego González-González. Research draft, 1 October 2026. Six genuine simulated Pro recommendations: **Reject at the unchanged leading general-interest standard**. Seventh revised package prepared for genuine review; acceptance remains unachieved.
+Diego González-González. Research draft, 1 October 2026. Six genuine simulated Pro recommendations: **Reject at the unchanged leading general-interest standard**. Seventh revised package frozen at v0.7.0 and submitted to Pro; genuine recommendation pending, acceptance unachieved.
 
 This package reanalyzes Catholic Relief Services/SNV's village-randomized Gikuriro evaluation in Rwanda. It studies lotteries over the observed aid packages at a fixed expected provider budget, using the full weighted released baseline and item-informed diet intervals. The quota procedure verifies upper losses of **5.868 food groups / 0.503 normalized shortfall units**. Exact adversarial populations and a policy dual now bracket its implemented region's optimized mean loss at **[5.866228, 5.867129] groups**, with certified width at most **0.000901**. The broad result persists despite near-optimal allocation within that relaxation. It is not a lower bound for all inference procedures or a small-loss deployment recommendation.
 
