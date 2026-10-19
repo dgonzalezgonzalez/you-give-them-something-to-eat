@@ -1,0 +1,16 @@
+{
+  "scope": "Actual public shallow-clone packaging check; no new scientific master or referee execution. Tag initially absent and then fetched successfully by the builder.",
+  "clone_source": "ccfe3029a259b078604b6336608ea62c79cb5ee2",
+  "shallow": true,
+  "frozen_ref": "v0.10.0",
+  "frozen_commit": "d43048349402b0eca068ddf01d69c2126a0ac9ad",
+  "all_manifest_values_equal_local": true,
+  "zip_sha256": "c58694a8efe3f2255de00d2783e7ad2b7fa0879a3b69ceb4c1da8f953579ec44",
+  "regular_payload_count": 2034,
+  "all_regular_payloads_equal_frozen_git_tar": true,
+  "hosted_run_id": 39225853792,
+  "hosted_job_id": 117971835995,
+  "hosted_source": "ccfe3029a259b078604b6336608ea62c79cb5ee2",
+  "hosted_status_at_20261019_0853utc": "in_progress: statistical lock installation",
+  "hosted_pass_claimed": false
+}
