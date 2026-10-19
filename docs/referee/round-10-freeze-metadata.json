@@ -1,0 +1,24 @@
+{
+  "status": "Prepared immutable source only; no tenth submission or recommendation.",
+  "target": "Food Policy",
+  "ref": "v0.10.0",
+  "commit": "d43048349402b0eca068ddf01d69c2126a0ac9ad",
+  "annotated_tag_object": "961a2b66e75be78ec21c887cf1088a6a728baa1f",
+  "remote_tag_identities_read_back": true,
+  "scientific_and_verification_source": "51e2f8a614aba1520bce7a0df659b35592289926",
+  "scientific_verification_input_paper_output_workflow_dependency_diff_empty": true,
+  "compared_paths": [
+    "code",
+    "data",
+    "paper",
+    "output",
+    "run.py",
+    "requirements.txt",
+    "requirements-lock.txt",
+    ".github"
+  ],
+  "scope": "Public prepared freeze. Historical 51e2f8a hosted evidence retains actual source scope; later wrapper transport changes are separate. Nine genuine prior Rejects remain unchanged.",
+  "local_packaging_manifest": "round-10-source-delivery-local.json",
+  "hosted_delivery_status": "pending",
+  "referee_route": "User selected restoration of designated Pro chat; user sign-in/readiness pending."
+}

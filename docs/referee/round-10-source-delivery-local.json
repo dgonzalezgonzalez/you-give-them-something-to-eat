@@ -1,0 +1,63 @@
+{
+  "scope": "Already-public frozen Git source archive, including all nine canonical inputs, default code/output, dependencies, LaTeX/PDF and documentation. Packaging only, not new scientific execution or independent referee replication.",
+  "ref": "v0.10.0",
+  "commit": "d43048349402b0eca068ddf01d69c2126a0ac9ad",
+  "annotated_tag_object": "961a2b66e75be78ec21c887cf1088a6a728baa1f",
+  "source_zip_bytes": 16457141,
+  "source_zip_sha256": "c58694a8efe3f2255de00d2783e7ad2b7fa0879a3b69ceb4c1da8f953579ec44",
+  "archive_members": 2058,
+  "regular_file_count": 2034,
+  "all_regular_payloads_equal_frozen_git_tar": true,
+  "canonical_inputs": [
+    {
+      "path": "data/input/households.csv",
+      "bytes": 1399460,
+      "sha256": "e4ac2298b37e7f428a3bb095d4bc43767a4a74c22ea05401d00f696945fc2156"
+    },
+    {
+      "path": "data/input/costs.csv",
+      "bytes": 531,
+      "sha256": "5a4ef59498b23cb337b9060ae76e793d50229284a49f9af545f55b0e99ff09bc"
+    },
+    {
+      "path": "data/input/codebook.json",
+      "bytes": 3467,
+      "sha256": "acb895c12da36aa5113c37b9ef8ecc527069c1c82262238c4f459d62bc573a28"
+    },
+    {
+      "path": "data/input/revision_households.csv",
+      "bytes": 465516,
+      "sha256": "8bb609a361e1b8f8ab914750c69ddc59d3d8308ffb58529922eff22d7675ec74"
+    },
+    {
+      "path": "data/input/children.csv",
+      "bytes": 809489,
+      "sha256": "de053d7a0bf87a2e0b142a4094968bc9a41804fdb4ea42c4d02874a98eacf570"
+    },
+    {
+      "path": "data/input/analytical-codebook.json",
+      "bytes": 7715,
+      "sha256": "207b53cc22d7108b7b6abed0b450640af965c990a9044a8e6cfac81ab963f73d"
+    },
+    {
+      "path": "data/input/provenance.json",
+      "bytes": 1901,
+      "sha256": "530cf0771d22b675b68d2cea98e5ce5e4580f09e58a4bc19a8572c264e39b967"
+    },
+    {
+      "path": "data/input/input-reference.json",
+      "bytes": 346,
+      "sha256": "ccc976598e1483e429b0777b1901514dff093f592b8ead06dad4e2586b647cb3"
+    },
+    {
+      "path": "data/input/revision-reference.json",
+      "bytes": 572,
+      "sha256": "e00016abe386d62e7fff32eeb646a41419f73c3d420a13a705893b3a3c09563a"
+    }
+  ],
+  "all_nine_input_bytes_equal_frozen_git_blobs": true,
+  "local_frozen_pdf_sha256": "fce3d4f1e39e1e4384985a18d4e6e77da03dcbd29ed72a95a86f90fa8de206b3",
+  "source_licensing": "Unchanged frozen README: research extracts CC BY 4.0; original code MIT; manuscript for reading/review. No full original donor archive is added.",
+  "retention": "GitHub workflow artifact expires after 30 days; this is not DOI preservation. Frozen public Git source remains the scientific reference.",
+  "extraction": "Unzip the outer GitHub artifact, then source.zip. Read source/README.md before running source/run.py. The source archive contains inputs; previous cold-run artifacts contained only outputs."
+}

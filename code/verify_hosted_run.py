@@ -101,17 +101,17 @@ receipt={'scope':'Author-initiated full public microdata-to-manuscript run in a 
 source_delivery_error=None
 if receipt['all_passed']:
     try:
-        # Transport the unchanged public ninth freeze through the EXISTING
-        # artifact upload path. This is separate from the 130 scientific
+        # Transport the unchanged public tenth freeze through the EXISTING
+        # artifact upload path. This is separate from the 142 scientific
         # comparisons above; it changes no scientific input or computation.
-        subprocess.run([sys.executable,str(root/'docs/referee/build_public_frozen_bundle.py')],cwd=root,check=True)
-        bundle_dir=root/'tmp/public-review-v0.9.0'
+        subprocess.run([sys.executable,str(root/'docs/referee/build_public_frozen_bundle_v10.py')],cwd=root,check=True)
+        bundle_dir=root/'tmp/public-review-v0.10.0'
         bundle_manifest=json.loads((bundle_dir/'manifest.json').read_text(encoding='utf8'))
-        shutil.copy2(bundle_dir/'source.zip',dest/'output/public-frozen-source-v0.9.0.zip')
-        shutil.copy2(bundle_dir/'manifest.json',dest/'output/public-frozen-source-v0.9.0.json')
+        shutil.copy2(bundle_dir/'source.zip',dest/'output/public-frozen-source-v0.10.0.zip')
+        shutil.copy2(bundle_dir/'manifest.json',dest/'output/public-frozen-source-v0.10.0.json')
         receipt['public_frozen_source_delivery']={
-            'status':'packaged','scope':'Separate delivery of already-public frozen v0.9.0, not another scientific comparison or new referee execution.',
-            'manifest':bundle_manifest,'artifact_inner_zip':'output/public-frozen-source-v0.9.0.zip'}
+            'status':'packaged','scope':'Separate delivery of already-public frozen v0.10.0, not another scientific comparison or new referee execution.',
+            'manifest':bundle_manifest,'artifact_inner_zip':'output/public-frozen-source-v0.10.0.zip'}
     except Exception as error:
         source_delivery_error=f'{type(error).__name__}: {error}'
         receipt['public_frozen_source_delivery']={'status':'failed','error':source_delivery_error}
