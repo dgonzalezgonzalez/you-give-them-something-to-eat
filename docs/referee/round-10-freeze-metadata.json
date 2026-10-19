@@ -19,6 +19,8 @@
   ],
   "scope": "Public prepared freeze. Historical 51e2f8a hosted evidence retains actual source scope; later wrapper transport changes are separate. Nine genuine prior Rejects remain unchanged.",
   "local_packaging_manifest": "round-10-source-delivery-local.json",
-  "hosted_delivery_status": "pending",
-  "referee_route": "User selected restoration of designated Pro chat; user sign-in/readiness pending."
+  "hosted_delivery_status": "completed and actually downloaded/hash/payload/PDF verified author-side",
+  "referee_route": "User selected restoration of designated Pro chat; user sign-in/readiness pending.",
+  "hosted_delivery_receipt": "../hosted-public-source-delivery-ccfe302.json",
+  "hosted_artifact_id": 12175195780
 }

@@ -14,7 +14,7 @@ Run the standard-library builder from the repository root:
 python docs/referee/build_public_frozen_bundle_v10.py
 ```
 
-It writes ignored `tmp/public-review-v0.10.0/source.zip` and `manifest.json`. If the hosted checkout is shallow, it fetches only the already-public tag and authenticates both pinned Git identities. After its scientific comparisons pass, the unchanged existing workflow will upload the inner archive as `tmp/hosted-cold/output/public-frozen-source-v0.10.0.zip` with its JSON manifest. Hosted execution, actual artifact retrieval and hashes remain pending. Compression bytes can vary by Git build even when every regular payload agrees; measure the hosted archive independently.
+It writes ignored `tmp/public-review-v0.10.0/source.zip` and `manifest.json`. If the hosted checkout is shallow, it fetches only the already-public tag and authenticates both pinned Git identities. After its scientific comparisons pass, the unchanged existing workflow will upload the inner archive as `tmp/hosted-cold/output/public-frozen-source-v0.10.0.zip` with its JSON manifest. Hosted execution, actual archive retrieval and hashes are now verified in the completed section below. Compression bytes can vary by Git build even when every regular payload agrees; measure the hosted archive independently.
 
 The source ZIP includes the nine public inputs, all default programs and output references, lock, LaTeX/PDF and documentation under `source/`. It excludes ignored private/raw-source materials. Unzip the outer Actions artifact and the inner source ZIP, then read `source/README.md` before running from `source/`. Artifacts expire after 30 days and do not provide a durable DOI archive. This is public source delivery, not a local ChatGPT upload or real journal submission. The user is restoring the designated Pro chat and will signal readiness.
 
@@ -22,4 +22,14 @@ The source ZIP includes the nine public inputs, all default programs and output 
 
 A new public depth-one clone of delivery source **ccfe3029a259b078604b6336608ea62c79cb5ee2** ran the builder successfully. Its frozen tag was initially absent; the builder's public fetch then succeeded. All manifest fields and the complete ZIP hash agree with the local packaging result. This proves the shallow-checkout packaging path, not another scientific master. [The actual receipt](round-10-shallow-packaging.json) preserves that scope.
 
-[Hosted run 39225853792](https://github.com/dgonzalezgonzalez/you-give-them-something-to-eat/actions/runs/39225853792), job **117971835995**, is confirmed live on that delivery source. Statistical setup has passed and TeX installation is running. No new hosted comparison pass, final archive, actual hosted-byte hash or referee retrieval is claimed until observed. The source51e2f8a receipt remains separate successful evidence.
+[Hosted run 39225853792](https://github.com/dgonzalezgonzalez/you-give-them-something-to-eat/actions/runs/39225853792), job **117971835995**, completed successfully on that delivery source. The source 51e2f8a receipt remains separate successful evidence.
+
+## Actual completed delivery and author QA
+
+Delivery source **ccfe3029a259b078604b6336608ea62c79cb5ee2** passed run **39225853792**, job **117971835995**: 142 comparisons, an uninterrupted **785.121840-second** cold master, 734 new and 1,753 retained population checks, and a 44-page compiled PDF.
+
+Artifact **12175195780** was actually downloaded: **19,201,317 bytes**, SHA256 **10398860412d83b9bb200aa75fbe31dd4030d7558ea089d28b319b5ed5fbc2dd**, matching GitHub. It expires **18 November 2026 at 09:06:43 UTC**. Both ZIP CRC checks pass. The inner v0.10.0 ZIP has **16,457,141 bytes**, SHA256 **adcccdfdaa010f7226454632c32a747093f95ceb33eb377f7d1a394347043281**. All 2,034 regular payloads equal the frozen Git tar; all nine input hashes and the frozen PDF hash pass. Hosted compression bytes differ from the local ZIP; the payloads agree exactly.
+
+The actual hosted PDF has **44 pages**, **558,566 bytes**, SHA256 **0964abe577f9fd65ea63b5dc80329350136e7c88575ad7cf910cb2ec6a3c99f3**. All six contact sheets and enlarged pages 8/10/12/13/14 were inspected author-side; no clipping was found. All 44 page rasters equal the earlier inspected source51e2f8a hosted PDF, while PDF bytes differ. This is author reproduction, delivery and QA evidence, not independent referee execution, a new recommendation or DOI preservation.
+
+The complete actual receipt is [hosted-public-source-delivery-ccfe302.json](../hosted-public-source-delivery-ccfe302.json). Referee retrieval and independent execution remain unclaimed; no tenth submission has been sent.
