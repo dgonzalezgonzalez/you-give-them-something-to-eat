@@ -1,0 +1,76 @@
+{
+  "retrieved_at_utc": "2026-10-19T08:46:09.559731+00:00",
+  "scope": "Public-source journal selection evidence only. Not a new referee report, real submission, official Clarivate authentication or scientific validation. No rank determines the paper's merit.",
+  "ordering_source": {
+    "url": "https://ideas.repec.org/top/top.journals.simple10.html",
+    "name": "IDEAS/RePEc Simple Impact Factors (Last 10 Years)",
+    "snapshot_sha256": "943bfa3f28b72a38ff798304335ae1c29ca8c47407de0ce121082b94e089e302",
+    "scope": "Live snapshot retrieved 19 October 2026. Experimental CitEc/RePEc citation-per-item ordering excluding same-series citations; not a JCR ranking or a universal quality ranking."
+  },
+  "q1_source": {
+    "url": "https://www.niic.nsc.ru/phocadownload/publications/2025/JCR_JournalImpactFactor_2026.pdf",
+    "host": "Nikolaev Institute of Inorganic Chemistry institutional website",
+    "displayed_heading": "Journal Citation Reports: Journal Impact Factor 2026",
+    "bytes": 5396526,
+    "sha256": "2a525e49239015e2b5b06ee66a435986cb6d4aaf4f6a9dc63cb387069c124bce",
+    "pages": 731,
+    "header_and_selected_pages_actually_rendered_and_inspected": [
+      1,
+      49,
+      72,
+      85,
+      95
+    ],
+    "scope": "Institutionally hosted compilation, not an authenticated Clarivate export received from JCR. Column labels retained verbatim; no relabeling as official metric years. A single reported JIF quartile is supplied, without category-specific ranks or an all-category claim. Full licensed table is not republished."
+  },
+  "corroboration": {
+    "url": "https://kniznica.umb.sk/app/cmsFile.php?ID=21915&disposition=i",
+    "scope": "Public indexed text of UMB-hosted 2025 Clarivate-labelled agriculture export reports Food Policy Q1, JIF6.0. Direct local download failed at a managed challenge; no local bytes/hash or visual inspection claimed. Not used to establish the 2026 value."
+  },
+  "journals": [
+    {
+      "title": "Journal of Development Economics",
+      "eissn": "1872-6089",
+      "repec_simple10_rank": 53,
+      "repec_simple10_impact": "13.753",
+      "institutional_jcr_compilation_page_1based": 85,
+      "reported_jif_2026_column": "5.0",
+      "reported_jif_2025_column": "4.6",
+      "reported_jif_quartile": "Q1"
+    },
+    {
+      "title": "Food Policy",
+      "eissn": "1873-5657",
+      "repec_simple10_rank": 127,
+      "repec_simple10_impact": "8.049",
+      "institutional_jcr_compilation_page_1based": 49,
+      "reported_jif_2026_column": "6.8",
+      "reported_jif_2025_column": "6.0",
+      "reported_jif_quartile": "Q1"
+    },
+    {
+      "title": "Agricultural Economics",
+      "eissn": "1574-0862",
+      "repec_simple10_rank": 167,
+      "repec_simple10_impact": "6.735",
+      "institutional_jcr_compilation_page_1based": 95,
+      "reported_jif_2026_column": "4.7",
+      "reported_jif_2025_column": "4.0",
+      "reported_jif_quartile": "Q1"
+    },
+    {
+      "title": "Journal of Agricultural Economics",
+      "eissn": "1477-9552",
+      "repec_simple10_rank": 181,
+      "repec_simple10_impact": "6.349",
+      "institutional_jcr_compilation_page_1based": 72,
+      "reported_jif_2026_column": "5.5",
+      "reported_jif_2025_column": "4.2",
+      "reported_jif_quartile": "Q1"
+    }
+  ],
+  "selected_next_simulated_target": "Food Policy",
+  "selection_reason": "Next lower-ranked, topically matched journal after the genuine JDE Reject under the declared RePEc ordering. Its official publisher scope explicitly covers food needs, security and aid. Q1 screening is based on the named current institutional compilation, with the limits above.",
+  "publisher_scope_url": "https://shop.elsevier.com/journals/food-policy/0306-9192",
+  "further_targets": "Agricultural Economics, then Journal of Agricultural Economics, only after a genuine adverse decision and fresh verification of fit, JCR status and journal standards. No automatic acceptance or changed scientific standard."
+}
